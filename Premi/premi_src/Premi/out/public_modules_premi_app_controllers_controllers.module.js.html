@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: public/modules/premi/app/controllers/controllers.module.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: public/modules/premi/app/controllers/controllers.module.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @namespace Front-End::Controllers
+ * @classdesc Package contenente i controller della componente front-end
+ * dell’applicazione.
+ * @author: Giacomo Manzoli (giacomo.manzoli@gmail.com)
+ * @description Data: 2015-05-05 Requisiti: -
+ */
+(function () {
+	'use strict';
+	angular
+		.module('premi.controllers', [
+			'ngMaterial',
+			'premi.services'
+		]);
+})();
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Back-End__App__Controllers.ErrorHandler.html">ErrorHandler</a></li><li><a href="Back-End__App__Controllers.NotFoundHandler.html">NotFoundHandler</a></li><li><a href="Back-End__App__Controllers.ProjectController.html">ProjectController</a></li><li><a href="Back-End__App__Controllers.StaticController.html">StaticController</a></li><li><a href="Back-End__App__Controllers.UserController.html">UserController</a></li><li><a href="Back-End__App__Controllers__Errors.PremiError.html">PremiError</a></li><li><a href="Back-End__App__Controllers__Projects.NodeController.html">NodeController</a></li><li><a href="Back-End__App__Controllers__Projects.PathController.html">PathController</a></li><li><a href="Back-End__App__Controllers__Projects.ProjectManagementController.html">ProjectManagementController</a></li><li><a href="Back-End__App__Controllers__Users.AuthenticationController.html">AuthenticationController</a></li><li><a href="Back-End__App__Controllers__Users.AuthorizationController.html">AuthorizationController</a></li><li><a href="Back-End__App__Models.NodeContentModel.html">NodeContentModel</a></li><li><a href="Back-End__App__Models.NodeModel.html">NodeModel</a></li><li><a href="Back-End__App__Models.PathModel.html">PathModel</a></li><li><a href="Back-End__App__Models.ProjectModel.html">ProjectModel</a></li><li><a href="Back-End__App__Models.RelationModel.html">RelationModel</a></li><li><a href="Back-End__App__Models.UserModel.html">UserModel</a></li><li><a href="Back-End__App__Routers.ProjectRouter.html">ProjectRouter</a></li><li><a href="Back-End__App__Routers.StaticRouter.html">StaticRouter</a></li><li><a href="Back-End__App__Routers.UserRouter.html">UserRouter</a></li><li><a href="Fron-End__Controllers.NodeContentsEditorController.html">NodeContentsEditorController</a></li><li><a href="Front-End.AppConfig.html">AppConfig</a></li><li><a href="Front-End.AppRouter.html">AppRouter</a></li><li><a href="Front-End.AppRun.html">AppRun</a></li><li><a href="Front-End__Controllers.AddToPathController.html">AddToPathController</a></li><li><a href="Front-End__Controllers.ContextMenuController.html">ContextMenuController</a></li><li><a href="Front-End__Controllers.DashboardController.html">DashboardController</a></li><li><a href="Front-End__Controllers.EditableNodeContentController.html">EditableNodeContentController</a></li><li><a href="Front-End__Controllers.ErrorMessageController.html">ErrorMessageController</a></li><li><a href="Front-End__Controllers.HeaderController.html">HeaderController</a></li><li><a href="Front-End__Controllers.HierarchicalMenuController.html">HierarchicalMenuController</a></li><li><a href="Front-End__Controllers.LoginController.html">LoginController</a></li><li><a href="Front-End__Controllers.MindmapEditorController.html">MindmapEditorController</a></li><li><a href="Front-End__Controllers.NodeController.html">NodeController</a></li><li><a href="Front-End__Controllers.PathController.html">PathController</a></li><li><a href="Front-End__Controllers.PathsEditorController.html">PathsEditorController</a></li><li><a href="Front-End__Controllers.PathsListController.html">PathsListController</a></li><li><a href="Front-End__Controllers.PresentationController.html">PresentationController</a></li><li><a href="Front-End__Controllers.PresentationViewerController.html">PresentationViewerController</a></li><li><a href="Front-End__Controllers.ProjectSettingsEditorController.html">ProjectSettingsEditorController</a></li><li><a href="Front-End__Controllers.ProjectsListController.html">ProjectsListController</a></li><li><a href="Front-End__Controllers.RegistrationController.html">RegistrationController</a></li><li><a href="Front-End__Directives.premiAddToPath.html">premiAddToPath</a></li><li><a href="Front-End__Directives.premiAssociationAdder.html">premiAssociationAdder</a></li><li><a href="Front-End__Directives.premiContextMenu.html">premiContextMenu</a></li><li><a href="Front-End__Directives.premiEditableNodeContent.html">premiEditableNodeContent</a></li><li><a href="Front-End__Directives.premiErrorMessage.html">premiErrorMessage</a></li><li><a href="Front-End__Directives.premiHeader.html">premiHeader</a></li><li><a href="Front-End__Directives.premiHierarchicalMenu.html">premiHierarchicalMenu</a></li><li><a href="Front-End__Directives.premiMindmap.html">premiMindmap</a></li><li><a href="Front-End__Directives.premiNode.html">premiNode</a></li><li><a href="Front-End__Directives.premiNodeContent.html">premiNodeContent</a></li><li><a href="Front-End__Directives.premiNodeContentsEditor.html">premiNodeContentsEditor</a></li><li><a href="Front-End__Directives.premiPath.html">premiPath</a></li><li><a href="Front-End__Directives.premiPathsList.html">premiPathsList</a></li><li><a href="Front-End__Directives.premiPresentation.html">premiPresentation</a></li><li><a href="Front-End__Directives.premiProjectList.html">premiProjectList</a></li><li><a href="Front-End__Directives.premiProjectSettingsEditor.html">premiProjectSettingsEditor</a></li><li><a href="Front-End__Directives.premiSmartMenu.html">premiSmartMenu</a></li><li><a href="Front-End__Model.ErrorInfo.html">ErrorInfo</a></li><li><a href="Front-End__Model.Node.html">Node</a></li><li><a href="Front-End__Model.NodeContent.html">NodeContent</a></li><li><a href="Front-End__Model.NodeReference.html">NodeReference</a></li><li><a href="Front-End__Model.Path.html">Path</a></li><li><a href="Front-End__Model.PresentationNode.html">PresentationNode</a></li><li><a href="Front-End__Model.Project.html">Project</a></li><li><a href="Front-End__Services.AuthenticationService.html">AuthenticationService</a></li><li><a href="Front-End__Services.MindmapAdapterService.html">MindmapAdapterService</a></li><li><a href="Front-End__Services.MindmapService.html">MindmapService</a></li><li><a href="Front-End__Services.PathService.html">PathService</a></li><li><a href="Front-End__Services.PresentationService.html">PresentationService</a></li><li><a href="Front-End__Services.ProjectService.html">ProjectService</a></li><li><a href="Premi.Front-End.Controllers.AssociationAdderController.html">AssociationAdderController</a></li><li><a href="Premi.Front-End.Controllers.SmartMenuController.html">SmartMenuController</a></li></ul><h3>Namespaces</h3><ul><li><a href="Back-End__App__Controllers.html">Back-End::App::Controllers</a></li><li><a href="Back-End__App__Controllers__Errors.html">Back-End::App::Controllers::Errors</a></li><li><a href="Back-End__App__Controllers__Projects.html">Back-End::App::Controllers::Projects</a></li><li><a href="Back-End__App__Controllers__Users.html">Back-End::App::Controllers::Users</a></li><li><a href="Back-End__App__Models.html">Back-End::App::Models</a></li><li><a href="Front-End__Controllers.html">Front-End::Controllers</a></li><li><a href="Front-End__Directives.html">Front-End::Directives</a></li><li><a href="Front-End__Model.html">Front-End::Model</a></li><li><a href="Front-End__Services.html">Front-End::Services</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Wed Jun 17 2015 12:57:05 GMT+0200 (CEST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

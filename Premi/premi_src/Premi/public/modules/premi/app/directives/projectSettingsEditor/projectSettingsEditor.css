@@ -1,0 +1,8 @@
+#projectSettingsEditor {
+    width:25em;
+    height: 100%;
+}
+
+md-input-container.projectName {
+    width: 100%;
+}

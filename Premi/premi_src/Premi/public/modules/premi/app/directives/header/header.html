@@ -1,0 +1,121 @@
+<header id="header" ng-hide="currentLocationContains('/presentation')">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <md-button aria-label="Mostra il menu"
+                       ng-click="toggleSidenav()"
+                       ng-show="currentLocationContains('/editor') ||
+                                currentLocationContains('/paths')">
+                <md-icon md-svg-icon="assets/img/burger.svg"></md-icon>
+            </md-button>
+            <h2 style="margin-left: .5em;">
+                <span id="toolbar-title">{{ getTitle() }}</span>
+            </h2>
+            <span flex></span>
+
+            <!--bottoni per spostarsi dall'editing della mappa a quello dei
+            percorsi e viceversa -->
+            <div ng-show="currentLocationContains('/editor') ||
+                          currentLocationContains('/paths')"
+                 class="hideMobile navigationTabContainer"
+                 layout="row">
+                <div ng-click="mapClicked()"
+                     ng-class="{'tabActive':currentLocationContains('/editor')}"
+                     class="navigationTab">
+                    <span>Mappa</span>
+                </div>
+                <div ng-click="pathClicked()"
+                     ng-class="{'tabActive':currentLocationContains('/paths')}"
+                     class="navigationTab">
+                    <span>Percorsi</span>
+                </div>
+            </div>
+
+            <span flex></span>
+
+            <!-- bottoni visibili solo nella fase di editing del progetto -->
+            <div ng-show="currentLocationContains('/editor') ||
+                          currentLocationContains('/paths')"
+                 layout="row">
+                <!-- scaling della mappa -->
+                <md-button aria-label="adatta dimensione della mappa"
+                           ng-click="fitMindmap()">
+                    <md-icon
+                            md-svg-icon="assets/img/arrow_expand.svg"></md-icon>
+                </md-button>
+
+                <!-- zoom in nella mappa -->
+                <md-button aria-label="zoom in" ng-click="zoomMindmap(0.3)">
+                    <md-icon md-svg-icon="assets/img/zoom_in.svg"></md-icon>
+                </md-button>
+
+                <!-- zoom out mappa -->
+                <md-button aria-label="zoom out" ng-click="zoomMindmap(-0.3)">
+                    <md-icon md-svg-icon="assets/img/zoom_out.svg"></md-icon>
+                </md-button>
+                <!-- modifica delle impostazioni del progetto -->
+                <md-button class="md-icon-button hideMobile"
+                           ng-click="showProjectSettingsEditor($event)"
+                           aria-label="Project settings">
+                    <md-icon md-svg-src="assets/img/settings.svg"></md-icon>
+                </md-button>
+
+            </div>
+            <!-- bottone per il manuale utente -->
+            <md-button
+                    ng-hide="currentLocationContains('/editor') ||
+                             currentLocationContains('/paths')"
+                    ng-click="showManual($event)"
+                    aria-label="Manuale utente">
+                <md-icon md-svg-icon="assets/img/help.svg"></md-icon>
+            </md-button>
+
+
+            <!-- bottone per il logout -->
+            <md-button class="exit"
+                       ng-show="currentLocationContains('/dashboard')"
+                       layout="row"
+                       layout-align="center center"
+                       aria-label="logout"
+                       ng-click="logout()">
+                <md-icon md-svg-src="assets/img/exit_to_app.svg"></md-icon>
+                <span>Esci</span>
+            </md-button>
+        </div>
+    </md-toolbar>
+</header>
+
+
+<!-- sidenav -->
+<div id="headerSidenav"
+     ng-class="{'sidenavOpened':sidenavOpen, 'sidenavClosed': !sidenavOpen}"
+     class="md-whiteframe-z2"
+     ng-show="currentLocationContains('/editor') ||
+              currentLocationContains('/paths') && sidenavOpen"
+     ng-mouseleave="sidenavOpen = false;">
+    <ul ng-show="sidenavOpen" class="sidenavButtonList">
+        <li>
+            <md-button class="sidenavButtonListButton"
+                       ng-click="printPage()"
+                       aria-label="stampa">
+                <md-icon md-svg-icon="assets/img/print.svg"></md-icon>
+                Stampa
+            </md-button>
+        </li>
+        <li>
+            <md-button class="sidenavButtonListButton"
+                       ng-click="showManual()"
+                       aria-label="manuale utente">
+                <md-icon md-svg-icon="assets/img/help.svg"></md-icon>
+                Manuale utente
+            </md-button>
+        </li>
+        <li>
+            <md-button class="sidenavButtonListButton"
+                       aria-label="torna alla dashboard"
+                       ng-click="setCurrentLocation('/dashboard')">
+                <md-icon md-svg-icon="assets/img/close.svg"></md-icon>
+                Chiudi progetto
+            </md-button>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Manuale Utente</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="keywords" content="Inserisci i contenuti" />
+		<meta name="description" content="Inserisci le descrizioni" />  
+		<link href="css/userManual.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="css/angular-material.min.css" rel="stylesheet" type="text/css" media="screen"/> 
+		<link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 736px)" href="css/userManualMedia.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body>
+	<div id="header" class="md-whiteframe-z1">
+		<h1>Manuale utente</h1>
+	</div>
+	
+	<!-- colonna contenente il logo e il nav -->
+	<div id="nav" >
+		<div id="logoPremi" >
+			<h1>Premi</h1>
+		</div>
+		<a id="menu" class="md-whiteframe-z1"></a>
+		<ul id="navul" class="md-whiteframe-z1">
+			<li>
+				<a class="intLink" href="#intro">Introduzione</a>
+			</li>
+			<li>
+				<a class="intLink" href="#acces">Accesso/uscita</a>
+			</li>
+			<li>
+				<a class="intLink" href="#dash">Dashboard</a>
+			</li>
+			<li>
+				<a class="intLink" href="#editPro">Modifica progetto</a>
+			</li>
+			<li>
+				<a class="intLink" href="#pres">Presentazione</a>
+			</li>
+			<li>
+				<a class="intLink" href="#stampa">Stampa progetto</a>
+			</li>
+			<li>
+				<a class="intLink" href="#err">Messaggi d'errore</a>
+			</li>
+			<li>
+				<a class="intLink" href="#errors">Segnalazione errori</a>
+			</li>
+		</ul>
+		<div id="logo" >
+			<h1>Pragma</h1>
+		</div>
+	</div>
+	
+	<!-- colonna contenente il titolo e i contenuti del manuale -->
+	<div id="corpo">
+		<div id="doc" class="md-whiteframe-z1">
+			
+			<!-- inizio sezione -->
+			<div class="section" id="intro">
+				<h1>Introduzione</h1>
+				<h2>Scopo documento</h2>
+				<p>
+					Questo documento ha lo scopo di illustrare il funzionamento dell'applicazione <strong><cite>Premi</cite></strong> coprendo tutti gli aspetti e funzionalità che offre. All'utente non è richiesta nessuna conoscenza informatica particolare per l'utilizzo dell'applicazione, poiché andrà ad interfacciarsi, tramite <cite>web browser</cite>, alle funzionalità offerte da <strong><cite>Premi</cite></strong> che verranno fornite con le stesse modalità di un sito <cite>web</cite>.
+				</p>
+				<h2>Scopo del progetto</h2>
+				<p>
+					Lo scopo del prodotto è di permettere la creazione e l’esecuzione di presentazioni a partire da mappe mentali. L’utente sarà guidato nella creazione di una mappa mentale e di uno o più percorsi di presentazione, utilizzando i nodi di tale mappa. L’utente potrà eseguire una presentazione seguendo un percorso creato oppure visitando qualsiasi nodo della mappa costruita; rompendo così la sequenzialità nella presentazione. Il prodotto sarà utilizzabile attraverso un browser.
+				</p>
+				<h2>Prerequisiti</h2>
+				<p>
+					L’utente deve possedere una connessione ad internet, un <cite>web browser</cite> (<cite>Chrome >=31, Firefox >=33</cite>) che supporti <cite>CSS3</cite>, <cite>HTML5</cite> e <cite>JavaScript</cite>, una <cite>piattaforma</cite> che fornisca <strong><cite>Premi</cite></strong> come servizio raggiungibile tramite un <cite>URL</cite> e le relative credenziali di accesso (ottenibili mediante registrazione).
+				</p>
+				<h2>Come accedere al manuale</h2>
+				<p>
+					All'interno del <cite>header</cite> delle pagine di accesso, registrazione e dashboard è presente un riferimento, identificato da un'icona con un punto di domanda <img src="img/manualButton.png" alt="icna punto di domanda" width="39" height="36">, che permette di accedere alla documentazione relativa all'applicazione <strong><cite>Premi</cite></strong>.</br>Se l'utente si trova nelle pagine di modifica mappa mentale, modifica percorsi o presentazione, potrà trovare il riferimento al manuale utente all'interno del menù, al quale potrà accedere tramite il pulsante <img src="img/buttonMenu.png" alt="buttonMenu" width="30" height="26">.</br>Il manuale integrato nell'applicazione è contestuale, perciò se l'utente vi accede da una determinata vista otterrà le informazioni relative agli strumenti di quella vista. Per accedere al manuale utente in versione completa è necessario selezionare il link <cite>Manuale completo</cite> presente nella parte bassa di ogni finestra del manuale contestuale.
+				</p>
+			</div>
+			<!-- fine sezione -->
+			
+			<!-- inizio sezione -->
+			<div class="section" id="acces">
+				<h1>Accesso/uscita</h1>
+				<p>
+					Per poter usufruire delle funzionalità offerte dall'applicazione <strong><cite>Premi</cite></strong> è necessario avere un account nel sistema.</br>Se l'utente dispone già di un account può accedere al sistema direttamente tramite autenticazione.
+				</p>
+				<h2>Registrazione</h2>
+				<p>
+					Il primo passo per un nuovo utente che decide di utilizzare l'applicazione <strong><cite>Premi</cite></strong> consiste nell'effettuare la registrazione.</br>Per poter effettuare la registrazione l'utente deve eseguire le seguenti azioni:
+				</p>
+					<ol>
+						<li>Premere il pulsante <strong><cite>Registrati</cite></strong> presente nella parte bassa della casella di autenticazione, in questo modo verrà visualizzata la pagina di registrazione;</li>
+						<li>Inserire un indirizzo e-mail, che verrà utilizzato per identificare l'utente nel sistema;</li>
+						<li>Inserire una password, per proteggere il proprio account;</li>
+						<li>Reinserire la password utilizzata al punto precedente per confermarla;</li>
+						<li>Premere il pulsante <strong><cite>Crea account</cite></strong> per confermare i dati inseriti ed accedere al sistema.</li>
+					</ol>
+				<img class="imgLarga" src="img/imgRegistrazione.png" alt="imgRegistrazione" width="490" height="440">
+				<p>
+					Se i dati inseriti non sono corretti o se i campi obbligatori non sono stati compilati verrà visualizzato un messaggio d'errore.
+				</p>
+				<h2>Autenticazione</h2>
+				<p>
+					L'autenticazione permette all'utente di accedere all'applicazione <strong><cite>Premi</cite></strong> e di usufruire delle sue funzionalità.</br> Per poter eseguire la procedura di autenticazione l'utente deve aver già effettuato la registrazione al sistema.</br>
+Per autenticarsi l'utente deve:
+					<ol>
+						<li>Inserire l'indirizzo e-mail utilizzato in fase di registrazione;</li>
+						<li>Inserire la password utilizzata in fase di registrazione;</li>
+						<li>Premere il pulsante <strong><cite>Accedi</cite></strong> per confermare i dati ed accedere al sistema.</li>
+					</ol>
+				</p>
+				<img class="imgLarga" src="img/imgAccesso.png" alt="imgAccesso" width="486" height="375">
+				<p>
+					Se i dati inseriti non sono corretti o se i campi obbligatori non sono stati compilati verrà visualizzato un messaggio d'errore.
+				</p>
+				<h2>Uscita</h2>
+				<p>
+					L'utente può deautenticarsi dal sistema in ogni momento eseguendo la procedura di <cite>Logout</cite>.</br>Per effettuare questa procedura l'utente deve trovarsi nella <cite>Dashboard</cite> e premere il pulsante <strong><cite>Esci</cite></strong> presente nella barra di intestazione dell'applicazione .</br>
+Una volta effettuata la deautenticazione l'utente verrà reindirizzato alla pagina d'accesso dell'applicazione.
+				</p>
+				<img class="imgLarga" src="img/imgEsci.png" alt="imgEsci" width="1276" height="122">
+				<p>
+					L'utente può accedere alla <cite>Dashboard</cite> sia dalle pagine dedicate alla modifica del <cite>progetto</cite>, sia dalla pagina di presentazione tramite il pulsante <strong><cite>Chiudi progetto</cite></strong> presente all'interno del menu della pagina.
+				</p>
+			</div>
+			<!-- fine sezione -->
+			
+			<!-- inizio sezione -->
+			<div class="section" id="dash">
+				<h1>Dashboard</h1>
+				<img class="imgLarga" src="img/dashboard.png" alt="dashboard" width="1596" height="1277">
+				<p>
+					In seguito all'autenticazione o alla registrazione l'utente verrà reindirizzato alla <cite>Dashboard</cite>.</br>
+La <cite>Dashboard</cite> presenta una finestra che contiene al suo interno la lista dei <cite>progetti</cite> personali dell'utente. Per ogni <cite>progetto</cite>, all'interno della lista, sono presenti dei pulsanti che permettono di eseguite varie azioni sul rispettivo <cite>progetto</cite>.
+Mediante i pulsanti presenti nella lista dei <cite>progetti</cite> l'utente può crearne di nuovi, eliminare dei <cite>progetti</cite> già esistenti oppure può modificare o effettuare una presentazione di un determinato <cite>progetto</cite>.
+			 	</p>
+			 	<img class="imgLarga" src="img/dashboardVuota.png" alt="dashboardVuota" width="374" height="414">
+			 	<h2>Creazione nuovo progetto</h2>
+			 	<p>
+			 		L'utente può creare un nuovo <cite>progetto</cite> premendo il pulsante <strong><cite>più</cite></strong> che si trova nella parte alta della finestra contenente la lista <cite>progetti</cite>.</br>Effettuando questa azione verrà aggiunto il nuovo <cite>progetto</cite> alla lista <cite>progetti</cite>.
+			 	</p>
+			 	<img class="imgLarga" src="img/imgCreaProg.png" alt="imgCreaProg" width="744" height="146">
+			 	<h2>Eliminazione di un progetto</h2>
+			 	<p>
+			 		Per poter eliminare un <cite>progetto</cite> l'utente dovrà premere il pulsante contenente l'icona rappresentante un cestino, che si trova nella riga relativa al <cite>progetto</cite> che desidera eliminare e confermare l'operazione.
+			 	</p>
+			 	<img class="imgLarga" src="img/imgEliminaProg.png" alt="imgEliminaProg" width="712" height="82">
+			 	<h2>Modificare un progetto</h2>
+			 	<p>
+			 	Per poter accedere alla modalità di editing del progetto l'utente dovrà premere il pulsante contenente l'icona rappresentante una matita, che si trova nella riga relativa al progetto che si desidera modificare.
+			 	</p>
+			 	<img class="imgLarga" src="img/imgModificaProg.png" alt="imgModificaProg" width="712" height="82">
+			 	<h2>Avviare la presentazione di un progetto</h2>
+			 	<p>
+			 		Per poter avviare la presentazione di un <cite>progetto</cite>, l'utente deve premere il pulsante contenente l'icona rappresentante il simbolo <cite>play</cite>, che si trova nella riga relativa al <cite>progetto</cite> che si desidera presentare.</br>Successivamente, verrà visualizzata una nuova finestra nella quale l'utente dovrà selezionare il <cite>percorso</cite> di presentazione e, una volta selezionato, verrà avviata la presentazione.
+				</p>
+				<img class="imgLarga" src="img/imgPresentProg.png" alt="imgPresentProg" width="712" height="82">
+			</div>
+			<!-- fine sezione -->
+			
+			<!-- inizio sezione -->
+			<div class="section" id="editPro">
+				<h1>Modifica progetto</h1>
+				<p>
+					La pagina per la modifica di un <cite>progetto</cite> permette all'utente di creare e modificare la <cite>mappa mentale</cite> che sta alla base della presentazione e di definire vari <cite>percorsi di presentazione</cite> ad essa associati che descrivono l'ordine in cui i contenuti dei nodi dovranno essere visualizzati durante la presentazione.</br>
+Al caricamento della pagina l'utente troverà il grafo che rappresenta la mappa mentale.</br>
+I nodi del grafo possono contenere vari elementi, sia testuali che grafici, che verranno utilizzati per la creazione dei <cite>frame</cite> di presentazione.</br>
+Questi nodi sono collegati fra loro da relazioni gerarchiche (associazioni di tipo padre-figlio) e associazioni logiche, associazioni create dall'utente che mettono in evidenza il collegamento concettuale presente tra due nodi. </br>
+L'utente troverà nella pagina tutti gli strumenti necessari per poter creare la propria mappa mentale, definire associazioni logiche fra nodi e definire <cite>percorsi di presentazione</cite> relativi alla mappa creata.</br>
+La pagina è formato da due viste, che sono <cite>Modifica mappa</cite> e <cite>Modifica percorsi</cite>.
+Queste due viste permettono di usufruire rispettivamente degli strumenti per la modifica della <cite>mappa mentale</cite> e degli strumenti per modifica dei <cite>percorsi</cite>.</br>
+L'utente può passare da una vista all'altra tramite i pulsanti <strong><cite>Mappa</cite></strong> e <strong><cite>Percorsi</cite></strong> presenti al centro della barra di intestazione dell'applicazione.</br>
+La barra di intestazione contiene anche altri pulsanti che permettono di modificare la visualizzazione della <cite>mappa mentale</cite> e di modificare le impostazioni del <cite>progetto</cite>.
+				</p>
+				<img class="imgLunga" src="img/strumentiHeader.png" alt="strumentiHeader" width="856" height="192">
+				<p>
+					Se il <cite>progetto</cite> aperto è appena stato creato, l’utente troverà un nodo già esistente. Questo è il nodo <cite>radice</cite> e rappresenta il nodo base della mappa mentale. L’utente potrà iniziare la creazione della mappa partendo da questo nodo.
+				</p>
+				<h2>Modifica della mappa mentale</h2>
+				<img class="imgLarga" src="img/modificaMappa.png" alt="modificaMappa" width="1598" height="1076">
+				<p>
+					Verranno descritti in seguito gli strumenti che l'utente potrà utilizzare per manipolare la mappa mentale che desidera creare.
+				</p>
+				<img class="imgLunga" src="img/menuNodoMappa.png" alt="menu nodo in editing mappa" width="847" height="431">
+				<h3>Creazione nuovo nodo</h3>
+				<p>
+					Per creare un nuovo nodo, l'utente deve selezionare il nodo a cui desidera aggiungere il nuovo nodo figlio.</br>
+Verrà visualizzata una nuova finestra contenente un'anteprima dei contenuti del nodo e un elenco delle azioni disponibili. L'utente dovrà selezionare dal menù la voce <strong><cite>Aggiungi nodo figlio</cite></strong>. Una volta premuto il pulsante, il sistema creerà in automatico un nuovo nodo vuoto come figlio del nodo selezionato. 
+				</p>
+				<h3>Eliminazione di un nodo</h3>
+				<p>
+					Per poter eliminare un nuovo nodo, l'utente deve cliccare sul nodo che desidera eliminare.</br>
+Verrà visualizzata una nuova finestra contenente un'anteprima dei contenuti del nodo e un elenco delle azioni disponibili. L'utente dovrà selezionare dal menù la voce <strong><cite>Cancella nodo</cite></strong>.</br>
+Se il nodo che si vuole cancellare ha dei figli o delle associazioni con altri nodi, verranno anchesse cancellate.
+				</p>
+				<h3>Spostamento dei nodi</h3>
+				<p>
+					Per poter spostare un nodo, l'utente deve effettuare il <cite>drag and drop</cite> del nodo nella posizione desiderata. Questa modifica è temporanea dato che la disposizione dei nodi viene calcolata in modo automatico dall'applicazione.
+				</p>
+				<h3>Creazione di associazioni logiche</h3>
+				<p>
+					Per poter creare un'<cite>associazione logica</cite> tra due nodi, l'utente deve:
+					<ol>
+						<li>Selezionare il nodo origine dell'associazione;</li>
+						<li>Selezionare dal menù la voce <strong>Aggiungi associazione</strong>;</li>
+						<li>Dalla finestra che comparirà, selezionare la voce <strong>seleziona nodo</strong>, per visualizzare la lista dei nodi associabili;</li>
+						<li>Selezionare dalla lista il nodo con cui creare l'associazione;</li>
+						<li>Premere il pulsante di conferma.</li>
+					</ol>
+				</p>
+				<p>L'associazione logica verrà rappresentata tramite una freccia tratteggiata di colore arancio.</p>
+				<img class="imgCenter imgPiccola" src="img/associazioneMenu.png" alt="associazioneMenu" width="525" height="316">
+				<h3>Eliminazione associazioni logiche</h3>
+				<p>
+					Per poter eliminare un'<strong>associazione logica</strong>, l'utente deve:
+					<ol>
+						<li>selezionare l'associazione logica che desidera eliminare;</li>
+						<li>selezionare la voce <strong>cancella associazione</strong> dal menù che comparirà.</li>
+					</ol>
+				</p>
+				<h3>Inserimento contenuti</h3>
+				<p>
+					Per poter inserire dei contenuti all'interno di un nodo, l'utente deve selezionare il nodo nel quale desidera inserire dei contenuti.</br>
+Verrà visualizzata una nuova finestra contenente un'anteprima dei contenuti del nodo e un elenco di azioni possibili. L'utente dovrà selezionare dal menù la voce <strong><cite>Modifica nodo</cite></strong>.</br>
+Verrà visualizzata una nuova finestra nella quale sarà possibile gestire i contenuti del nodo, le varie funzionalità offerte verranno descritte nella sezione <cite><a href="#editNodo">Modifica del contenuto di un nodo</a></cite>.
+				</p>
+				
+				<h2 id="editNodo">Modifica del contenuto di un nodo</h2>
+				<p>
+					In questa sezione verrà spiegato come utilizzare le funzionalità offerte dall'applicazione per gestire i contenuti di un nodo della mappa mentale.</br>
+La finestra mostra nella parte sinistra due pulsanti, che sono rispettivamente <strong><cite>Aggiungi testo</cite></strong> e <strong><cite>Aggiungi immagine</cite></strong> e, nella parte destra una rappresentazione del <cite>frame</cite> con i suoi contenuti.</br>
+L'utente può selezionare i contenuti <cite>cliccandoci</cite> sopra e vedrà apparire, sotto i pulsanti per l'inserimento di nuovi contenuti, una vista che permette di effettuare le modifiche sull'elemento selezionato. 
+				</p>
+				<img class="imgLunga" src="img/modificaNodo.png" alt="modificaNodo" width="1274" height="567">
+				<h3>Aggiungere del testo</h3>
+				<p>
+					Per poter inserire del testo all'interno del nodo, l'utente deve premere il pulsante <strong><cite>Aggiungi testo</cite></strong>, in questo modo verrà inserito all'interno del <cite>frame</cite> un nuovo <cite>elemento testuale</cite> contenente del testo di <cite>default</cite>.</br>
+Per modificare il testo l'utente dovrà selezionare il nuovo elemento, in modo da rendere visibile lo strumento di modifica nella parte sinistra della finestra.
+				</p>
+				<h3>Aggiungere un immagine</h3>
+				<p>
+					Per poter inserire un'immagine all'interno del nodo, l'utente deve premere il pulsante <strong><cite>Aggiungi immagine</cite></strong>, in questo modo verrà inserita all'interno del <cite>frame</cite> un'immagine di default.
+Per modificare l'immagine, l'utente dovrà selezionare il nuovo elemento e modificare l'URL in esso contenuto tramite lo strumento di modifica che diventerà visibile nella parte sinistra della finestra, inserendo l'URL della nuova immagine.</br>
+L'URL dell'immagine deve riferirsi ad un'immagine presente sul <strong><cite>web</cite></strong>.
+				</p>
+				<h3>Posizionamento contenuti</h3>
+				<p>
+					Per poter posizionare un contenuto all'interno del frame, l'utente dovrà trascinarlo, tramite <cite>Drag and Drop</cite>, nella posizione desiderata.
+				</p>
+				<h3>Ridimensionamento contenuto</h3>
+				<p>
+					Per poter ridimensionare un contenuto, l'utente dovrà selezionare il contenuto che desidera ridimensionare e posizionandosi sui bordi del contenuto selezionato ridimensionarlo.
+				</p>
+				<h2>Modifica dei percorsi di presentazione</h2>
+				<img class="imgLarga" src="img/modificaPercorsi.png" alt="modificaPercorsi" width="1596" height="1280">
+				<p>
+					Verranno descritte in seguito gli strumenti che l'utente potrà utilizzare per la creazione e la gestione dei percorsi personalizzati di presentazione. 
+				</p>
+				<h3>Creazione nuovo percorso</h3>
+				<p>
+					Per poter creare un nuovo percorso di presentazione, l'utente deve trovarsi nella vista <cite>percorsi</cite> e deve premere il pulsante <strong>più</strong> <img src="img/piuButton.png" alt="percorsi" width="44" height="42"> presente nella parte sinistra della vista.</br>Verrà visualizzata una finestra, nella quale l'utente dovrà inserire il nome del nuovo percorso e premere il pulsante <strong>Aggiungi</strong>.
+				</p>
+				<h3 id="editPath">Modifica di un percorso</h3>
+				<p>
+					Per poter modificare il nome di un percorso ed il suo contenuto, l'utente deve premere il pulsante con l'icona rappresentante una <cite>matita</cite> presente nella lista percorsi e relativa al percorso che si desidera modificare.
+				</p>
+				<img class="imgCenter imgPiccola" src="img/modificaPercorso.png" alt="modificaPercorso" width="300" height="390">
+				<h3>Eliminazione percorso</h3>
+				<p>
+					Per poter eliminare un percorso, l'utente deve premere il pulsante con l'icona rappresentante un cestino presente nella lista percorsi e relativa al percorso che si desidera eliminare.</br>
+					Per il <cite>percorso</cite> di default non è disponibile questa opzione.
+				</p>
+				<img class="imgLarga" src="img/menuPercorsi.png" alt="menu percorsi" width="716" height="294">
+				<h3>Aggiunta di un nodo ad un percorso di presentazione</h3>
+				<p>
+					Per poter aggiungere un nodo ad un <cite>percorso di presentazione</cite> l'utente deve:
+					<ol>
+						<li>Trovarsi nella vista <strong><cite>Percorsi</cite></strong>;</li>
+						<li>Selezionare il nodo dalla mappa mentale;</li>
+						<li>Selezionare dalla finestra che comparirà, il <cite>percorso</cite> al quale aggiungere il nodo selezionato.</li>
+					</ol>
+				</p>
+				<img class="imgCenter imgPiccola" src="img/aggiuntaNodoAPercorso2.png" alt="aggiuntaNodoAPercorso2" width="276" height="361">
+				<h2>Modifica delle impostazioni del progetto</h2>
+				<p>
+					Tramite questo strumento l'utente può effettuare delle modifiche al <cite>progetto</cite> sul quale sta lavorando.</br> In particolare potrà modificare:
+					<ul>
+						<li>Il nome del <cite>progetto</cite>;</li>
+						<li>Il colore di sfondo dei <cite>frame</cite> del <cite>progetto</cite>;</li>
+						<li>Il colore del testo dei <cite>frame</cite> del <cite>progetto</cite>;</li>
+						<li>Il font utilizzato nei <cite>frame</cite> del <cite>progetto</cite>.</li>
+					</ul>
+				</p>
+				<p>La finestra <strong><cite>Impostazioni del </cite><cite>progetto</cite></strong> può essere raggiunta premendo l'icona rappresentante un ingranaggio <img src="img/impostazioniButton.png" alt="impostazioniButton" width="34" height="34">, presente all'interno della barra di intestazione dell'applicazione.
+				</p>
+				<img class="imgLarga" src="img/impostazioneProgetto.png" alt="impostazioneProgetto" width="852" height="482">
+				</br>
+				</br>
+			</div>
+			<!-- fine sezione -->
+			
+			<!-- inizio sezione -->
+			<div class="section" id="pres">
+				<h1>Presentazione</h1>
+				<img  class="imgLarga" src="img/presentazione.png" alt="presentazione" width="1278" height="640">
+				<p>
+					Questa pagina è dedicata all'esecuzione di presentazioni, cioè la visualizzazione ordinata di una sequenza di <cite>frame</cite>.</br>
+L'utente può accedere a questa pagina dopo aver selezionato un <cite>progetto</cite>, scelto un <cite>percorso di presentazione</cite> personalizzato e aver selezionato l'avvio della presentazione. </br>
+La presentazione viene generata utilizzando i <cite>frame</cite> presenti all'interno dei nodi della mappa mentale, i quali verranno visualizzati secondo l'ordine stabilito dal <cite>percorso</cite> di presentazione.
+				</p>
+				<h2>Pannello di navigazione</h2>
+				<p>
+					Gli strumenti principali che permette all'utente di spostarsi all'interno della presentazione sono <strong>freccia a destra</strong> <img src="img/frecciaDestra.png" alt="frecciaDestra" width="44" height="38"> e <strong>freccia a sinistra</strong> <img src="img/frecciaSinistra.png" alt="frecciaSinistra" width="44" height="38"> che si trova in alto a destra nella vista di presentazione e i due menù laterali.
+				</p>
+				<img class="imgLunga" src="img/imgFrecciePres.png" alt="imgFrecciePres" width="1082" height="144">
+				<h2>Menu laterali</h2>
+				<p>
+					I due menu permettono all'utente di effettuare dei <cite>salti</cite> dal <cite>frame</cite> corrente ad un <cite>frame</cite> ad esso correlato tramite relazione gerarchica o associazione logica.</br>
+Quando l'utente sta visualizzando un <cite>frame</cite> può passare alla visualizzazione di un altro <cite>frame</cite>, anche non appartenente al <cite>percorso</cite> di presentazione, purché il nodo che lo contiene abbia un qualche tipo di relazione con quello corrente.
+Una volta effettuato questo salto la presentazione passa in modalità "<cite>non lineare</cite>", impedendo all'utente di cambiare <cite>frame</cite> utilizzando le frecce.</br>
+Per riprendere la presentazione lineare e ritornare all'ultimo <cite>frame</cite> del <cite>percorso</cite> visualizzato è necessario premere l'apposito pulsante <img src="img/frecciaRicurva.png" alt="frecciaRicurva" width="31" height="28"> presente nel <strong><cite>Pannello di navigazione</cite></strong>.
+				</p>
+				<h3>Menu delle associazioni logiche</h3>
+				<img class="imgCenter imgPiccola" src="img/menuLogico.png" alt="menuLogico" width="291" height="238">
+				<p>
+					Questo menu contiene una lista dei nodi della mappa mentale, collegati al nodo contenente il <cite>frame</cite> corrente, tramite un'associazione logica.</br>
+L'utente può accedere a questo menù premendo l'etichetta a sinistra rappresentante una lampadina <img src="img/lampadina.png" alt="lampadina" width="33" height="56">.</br>
+Selezionando uno dei nodi presenti all'interno di questo menu si andrà a visualizzare il <cite>frame</cite> che contenuto in quel nodo, anche se il nodo non fa parte del <cite>percorso</cite> di presentazione.
+				</p>
+				<h3>Menu delle relazioni gerarchiche</h3>
+				<img class="imgCenter imgPiccola" src="img/menuGerarchico.png" alt="menuGerarchico" width="290" height="300">
+				<p>
+					Questo menu contiene una lista dei nodi della mappa mentale, collegati al nodo contenente il <cite>frame</cite> corrente tramite una relazione gerarchica.</br>
+L'utente può accedere a questo menù premendo l'etichetta a destra rappresentante un grafo <img src="img/grafo.png" alt="grafo" width="33" height="55"> .</br>
+Selezionando uno dei nodi presenti all'interno di questo menu si andrà a visualizzare il <cite>frame</cite> che rappresenta quel nodo, anche se il nodo non fa parte del <cite>percorso</cite> di presentazione.
+				</p>
+			</div>
+			<!-- fine sezione -->
+			
+			<!-- inizio sezione -->
+			<div class="section" id="stampa">
+				<h1>Stampa di un progetto</h1>
+				<p>
+					L'applicazione <strong><cite>Premi</cite></strong> offre la possibilità di effettuare la stampa in formato <cite>PDF</cite>, su stampante e su iCloud (funzionalità disponibile solo per i dispositivi Apple), sia della <cite>mappa mentale</cite> che della presentazione.</br>
+In seguito verranno descritti i procedimenti che consentono di eseguire le varie stampe.
+				</p>
+				<h2>Stampa mappa mentale</h2>
+				<p>
+					Per poter effettuare la stampa della mappa mentale, l'utente deve trovarsi nella pagina di modifica della <cite>mappa mentale</cite> o in quella per la modifica dei <cite>percorsi</cite> di presentazione.</br>
+Dovrà poi aprire il <cite>menù</cite> tramite il pulsante <img src="img/buttonMenu.png" alt="buttonMenu" width="30" height="26"> e selezionare la voce <strong>Stampa</strong>.</br>
+In seguito verrà visualizzata la finestra di stampa del <cite>browser</cite> dalla quale sarà possibile selezionare le impostazioni di stampa, specificando se stampare come <cite>PDF</cite> oppure stampare con una stampante.
+Dal momento che viene stampata solamente la parte della <cite>mappa mentale</cite> visualizzata a schermo, è consigliato regolare in modo opportuno lo <cite>zoom</cite> della mappa, in modo da stamparla nella sua interezza.
+				</p>
+				<h2 id="stampaPresentazione">Stampa di una presentazione</h2>
+				<p>
+					Per poter effettuare la stampa della presentazione, l'utente deve trovarsi nella pagina di <cite>presentazione</cite>.</br>
+Dovrà poi aprire il <cite>menù</cite> tramite il pulsante <img src="img/buttonMenu.png" alt="buttonMenu" width="30" height="26"> e selezionare la voce <strong>Stampa</strong>.</br>
+In seguito verrà visualizzata la finestra di stampa del <cite>browser</cite> dalla quale sarà possibile selezionare le impostazioni di stampa, specificando se stampare come <cite>PDF</cite> oppure stampare con una stampante.
+				</p>
+			</div>
+			<!-- fine sezione -->
+			
+			<!-- inizio sezione -->
+			<div class="section" id="err">
+				<h1>Messaggi d'errore</h1>
+				<p>
+Durante l'utilizzo dell'applicazione <strong><cite>Premi</cite></strong> c'è la possibilità che si verifichino degli errori.</br>
+Questi vengono gestiti dall'applicazione fornendo all'utente un messaggio che lo informi sulla causa del malfunzionamento e se possibile delle indicazioni su come comportarsi.</br>
+In seguito verranno elencati gli errori che possono essere sollevati dall'applicazione.
+				</p>
+				<h2>Lista degli errori</h2>
+				<p>
+					La lista che segue contiene il tipo di errore e la sua descrizione per gli errori specifici dell'applicazione <strong><cite>Premi</cite></strong>.
+				</p>
+					<ul>
+						<li> <strong>Utente non trovato</strong>: l'identificativo utente fornito non è un identificativo valido;</li>
+						<li> <strong>Credenziali non valide</strong>: è necessario fornire un indirizzo email ed una password valide;</li>
+						<li> <strong>Progetto non trovato</strong>: l'identificativo del progetto fornito non è un identificativo valido;</li>
+						<li> <strong>Nodo non trovato</strong>: l'identificativo del nodo fornito non è un identificativo valido;</li>
+						<li> <strong>Associazione non trovata</strong>: l'identificativo dell'associazione fornita non è un identificativo valido;</li>
+						<li> <strong>Percorso non trovato</strong>: l'identificativo del percorso fornito non è un identificativo valido;</li>
+						<li> <strong>Progetto corrotto</strong>: errore nella ricerca dei campi dati relativi al progetto indicato;</li>
+						<li> <strong>Dati non validi</strong>: i dati relativi al progetto sono vuoti o errati;</li>
+						<li> <strong>Progetto corrotto</strong>: errore durante l'eliminazione del progetto;</li>
+						<li> <strong>Dati non validi</strong>: i dati relativi al contenuto del nodo non sono validi o sono formattati in modo errato;</li>
+						<li> <strong>Nodi non validi</strong>: gli identificativi dei nodi forniti non sono validi oppure non esistono oppure il nodo entrante coincide con il nodo uscente;</li>
+						<li> <strong>Dati non validi</strong>: i dati per la modifica del percorso non sono definiti;</li>
+						<li> <strong>Nodo del progetto non trovato</strong>: il nodo riferito nella relazione o nel percorso non è stato trovato all'interno del progetto indicato;</li>
+						<li> <strong>Nodo padre non esistente</strong>: il nodo padre indicato non esiste o non corrisponde ad un nodo valido;</li>
+						<li> <strong>Nodo non valido</strong>: impossibile eliminare il nodo radice della mappa mentale;</li>
+						<li> <strong>Nodo del percorso non trovato</strong>: il nodo riferito non è stato trovato all'interno del percorso indicato.</li>
+					</ul>
+					<p>
+					Gli errori vengono segnalati all'utente tramite la visualizzazione di un <cite>popup</cite>, in cui è presente la descrizione dell'errore.
+<img class="imgLarga" src="img/errore.png" alt="errore" width="512" height="165">
+Nel caso in cui l'utente desideri segnalare la presenza di errori non segnalati o ricevere informazioni specifiche riguardo agli errori dell'applicazione, può contattare il team seguendo le indicazioni presenti nella sezione <a href="#errors">Segnalazione degli errori</a>.
+				</p>
+			</div>
+			<!-- fine sezione -->
+			
+			<!-- inizio sezione -->
+			<div class="section" id="errors">
+				<h1>Segnalazione degli errori</h1>
+				<h2>Come segnalare dei bug o richiedere nuove funzionalità</h2>
+				<p>
+					Se l'utente riscontrasse, durante l'utilizzo dell'applicazione <strong><cite>Premi</cite></strong>, eventuali <cite>bugs</cite> o errori di altro genere o desiderasse richiedere l'aggiunta di nuove funzionalità che ritiene utili, può mandare una e-mail al team <cite>Pragma</cite> inserendo come oggetto il tipo di richiesta (es.:Segnalazione bug, Nuova funzionalità), e nel corpo una descrizione di essa.</br>L'indirizzo a cui sarà possibile inviare le segnalazioni è: <a href="mailto:pragma.swe@gmail.com">pragma.swe@gmail.com</a> 
+				</p>
+			</div>
+			<!-- fine sezione -->
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div id="footer" class="md-whiteframe-z1">
+		<p>
+			Copyright 2014-2015
+		</p>
+		<p id="alert"></p>
+	</div>
+	</body>
+</html>

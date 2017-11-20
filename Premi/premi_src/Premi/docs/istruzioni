@@ -1,0 +1,29 @@
+#COMPLESSITA CICLOMATICA:
+
+dare il comando seguente dalla root (Premi/):
+
+grunt complexity
+
+#METRICHE PER LINEE DI CODICE:
+
+dare il comando seguente dalla root (Premi/):
+
+grunt sloc
+
+#TEST DI UNITA:
+
+dare il comando seguente dalla root (Premi/):
+
+grunt test
+
+allo stato attuale è stata configurata solo l'esecuzione dei test per il back-end, per i test del front-end basta mettere
+le mani sul file di configurazione grunt.js, a quel punto bisognerà configurare successivamente karma.conf.js;
+infine per runnare i test il comando è lo stesso indicato sopra.
+
+#DOCUMENTAZIONE(JSDoc):
+
+dare il comando seguente dalla root (Premi/):
+
+sh nipples.sh
+
+è una procedura guidata per la generazione del JSDoc, per incrementi/suggerimenti o bugs contattare Stefano.

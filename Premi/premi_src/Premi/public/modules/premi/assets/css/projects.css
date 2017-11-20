@@ -1,0 +1,65 @@
+/* Stili globali che possono essere impostati su un oggetto Project */
+/* Font family*/
+.serif{
+    font-family: serif;
+}
+.sans-serif{
+    font-family: sans-serif;
+}
+.monospace{
+    font-family: monospace;
+}
+/* Colori per il nodo e per il testo*/
+.redText{
+    color: rgba(244,67,51,1);
+}
+.redBkg{
+    background-color: rgba(244,67,51,1);
+}
+
+.violetText{
+    color: rgba(156,39,176,1);
+}
+.violetBkg{
+    background-color: rgba(156,39,176,1);
+}
+
+.blueText{
+    color: rgba(33,150,243,1);
+}
+.blueBkg{
+    background-color: rgba(33,150,243,1);
+}
+
+.greenText{
+    color: rgba(76,175,80,1);
+}
+.greenBkg{
+    background-color: rgba(76,175,80,1);
+}
+
+.yellowText{
+    color: rgba(255,235,59,1);
+}
+.yellowBkg{
+    background-color: rgba(255,235,59,1);
+}
+
+.orangeText{
+    color: rgba(255,152,0,1);
+}
+.orangeBkg{
+    background-color: rgba(255,152,0,1);
+}
+.whiteText{
+    color: rgba(255,255,255,1);
+}
+.whiteBkg{
+    background-color: rgba(255,255,255,1);
+}
+.blackText{
+    color: rgba(33,33,33,1);
+}
+.blackBkg{
+    background-color: rgba(33,33,33,1);
+}

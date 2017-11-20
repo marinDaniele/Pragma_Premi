@@ -1,0 +1,46 @@
+.premi-context-menu{
+    position: fixed;
+    background-color: #f6f6f6;
+}
+
+.premi-context-menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.premi-context-menu li{
+    width: 100%;
+}
+.premi-context-menu button{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+}
+.premi-context-menu img{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+#contextMenu .premi-node {
+    width: 200px;
+    height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    #contextMenu .premi-node {
+        width: 280px;
+        height: 210px;
+    }
+}
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+    #contextMenu .premi-node {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+

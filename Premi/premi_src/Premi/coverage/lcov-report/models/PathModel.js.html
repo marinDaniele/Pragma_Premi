@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for models/PathModel.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">models/PathModel.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(18 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(4 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(18 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">models/</a> &#187; PathModel.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+/**
+ * @class PathModel
+ * @classdesc Questa classe rappresenta i percorsi di presentazione eseguibili su una mappa mentale.
+ * @author: Andrea Ongaro (andrea.ongaro.kuro@gmail.com)
+ * @description Data: 02/05/2015 - Requisiti: RFO4, RFD4.3, RFD4.3.1, RFD4.3.2, RFD4.4, RFD4.4.1, RFD4.4.3, RFD4.4.5,
+RFD4.5, RFD22
+ * @memberof Back-End::App::Models
+ */
+&nbsp;
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId,
+    PremiError = require('../controllers/errors/PremiError');
+&nbsp;
+/**
+ * Questo campo dati rappresenta lo schema Mongoose per i percorsi di presentazione.
+ * @type {mongoose.Schema}
+ * @memberof Back-End::App::Models.PathModel
+ */
+var pathSchema = new Schema(
+    {
+        name: String,
+        default: Boolean,
+        nodes: [ObjectId]
+    }
+);
+&nbsp;
+/**
+ * @description Metodo statico che costruisce un nuovo percorso inizialmente privo di nodi.
+ * Restituisce un oggetto JSON che descrive l’elemento.
+ * @function createPath
+ * @param {String} name - Rappresenta il nome del percorso che si vuole creare.
+ * @param {Boolean} isDefault - Parametro che indica se il percorso da creare è un percorso di default.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @memberof Back-End::App::Models.PathModel
+ */
+pathSchema.statics.createPath =
+    function(name, isDefault, callback)
+    {
+        var path = new this();
+        path.name = name;
+        path.default = isDefault;
+        callback(path);
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di modificare il nome del percorso di presentazione.
+ * @function setName
+ * @instance
+ * @param {String} name - Il nuovo nome del percorso.
+ * @memberof Back-End::App::Models.PathModel
+ */
+pathSchema.methods.setName = function(name){
+    this.name = name;
+};
+&nbsp;
+/**
+ * Metodo che aggiunge un nodo ad un percorso di presentazione.
+ * @function addNode
+ * @instance
+ * @param {ObjectId} nodeId - Identificativo del nodo da aggiungere al percorso.
+ * @memberof Back-End::App::Models.PathModel
+ */
+pathSchema.methods.addNode =
+    function(nodeId)
+    {
+        this.nodes.push(nodeId);
+    };
+&nbsp;
+/**
+ * Metodo che rimuove un nodo da un percorso di presentazione. Restituisce un oggetto JSON che descrive l'elemento dopo
+ * la modifica oppure un messaggio di errore se il nodo non è presente nel percorso.
+ * @function removeNode
+ * @instance
+ * @param nodeId
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ * @memberof Back-End::App::Models.PathModel
+ */
+pathSchema.methods.removeNode =
+    function(nodeId, callback, errback)
+    {
+        var index = this.nodes.indexOf(nodeId);
+        if (index &gt; -1)
+        {
+            this.nodes.splice(index, 1);
+            callback(this);
+        }else errback(new PremiError(12000));
+    };
+&nbsp;
+module.exports = mongoose.model('Path', pathSchema);
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Jun 13 2015 21:23:16 GMT+0200 (CEST)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

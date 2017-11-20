@@ -1,0 +1,19 @@
+<div layout="column"
+     layout-align="space-between center"
+     layout-padding
+     class="md-whiteframe-z3">
+
+    <div id="error-message">
+        <h2>{{errorInfo.getTitle()}}</h2>
+        <p>{{ errorInfo.getMessage() }}</p>
+    </div>
+    <div>
+        <md-button class=""
+                   ng-click="hide()"
+                   aria-label="nascondi messaggio">
+            <!--<md-icon md-svg-src="assets/img/close.svg"></md-icon>-->
+            Chiudi
+        </md-button>
+    </div>
+</div>
+

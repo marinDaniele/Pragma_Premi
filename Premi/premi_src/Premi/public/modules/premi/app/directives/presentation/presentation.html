@@ -1,0 +1,14 @@
+<div id="presentation"
+     layout="column"
+     layout-align="center center"
+     class="impress"
+     ng-swipe-left="nextStep()"
+     ng-swipe-right="previousStep()">
+    <div ng-repeat="node in nodes track by $index"
+         id="{{node.getId()}}"
+         class="slide step"
+         layout-fill>
+        <premi-node node="node"
+                    layout-fill></premi-node>
+    </div>
+</div>

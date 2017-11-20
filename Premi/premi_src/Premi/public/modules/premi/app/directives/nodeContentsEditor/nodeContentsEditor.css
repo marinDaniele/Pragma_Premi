@@ -1,0 +1,42 @@
+#nodeContentsEditor {
+    background-color: white;
+    position: relative;
+}
+
+.almostMaterialTextArea{
+    resize:none;
+    margin: 1em 8px 1em 0;
+    border: none;
+    border-bottom: 2px solid rgba(33,150,243,1);
+}
+
+
+#nodeContentsEditor .md-accent .arrowBackButton {
+    color: black;
+}
+
+#nodeContentsEditor .bottomRow{
+    position: absolute;
+    top:auto;
+    bottom:0;
+}
+
+#nodeContentsEditor .addTextButton,
+#nodeContentsEditor .addImageContentButton {
+    text-align: left;
+    width: 100%;
+}
+
+#nodeContentsEditor .dxColumn {
+    position: relative;
+}
+
+#dragContainer {
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

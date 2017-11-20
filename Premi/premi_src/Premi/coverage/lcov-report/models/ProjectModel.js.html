@@ -1,0 +1,2268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for models/ProjectModel.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">models/ProjectModel.js</span></h1>
+    <h2>
+        Statements: <span class="metric">18.28% <small>(34 / 186)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 55)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">5.26% <small>(3 / 57)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">19.88% <small>(34 / 171)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">models/</a> &#187; ProjectModel.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+/**
+ * @namespace Back-End::App::Models
+ */
+/**
+ * @class ProjectModel
+ * @classdesc Questa classe rappresenta una mappa mentale, che contiene nodi,
+ * relazioni tra i nodi e percorsi di presentazione.
+ * @author: Andrea Ongaro (andrea.ongaro.kuro@gmail.com)
+ * @description Data: 04/05/2015 - Requisiti: RFO1, RFO1.1, RFO1.2.1, RFO1.2.1.1, RFO4, RFD4.1, RFO4.2, RFO4.2.2, RFO4.2.3,
+ RFO4.2.3.4, RFO4.2.3.5, RFO4.2.3.7, RFD4.2.3.8, RFD4.2.3.8.1, RFD4.2.3.8.2, RFO4.2.3.12, RFO4.2.3.13, RFD4.2.3.15,
+RFD4.2.3.16, RFO4.2.5,RFO4.2.6, RFO4.2.7, RFD4.3, RFD4.3.1, RFD4.3.2, RFD4.4, RFD4.4.1, RFD4.4.3, RFD4.4.5, RFD4.5,
+RFF4.6, RFF4.6.1,RFF4.6.1.1, RFF4.6.1.2, RFF4.6.2, RFO7, RFD7.1, RFO10, RFO11, RFO11.2, RFO11.3, RFD22, RFD33
+ * @memberof Back-End::App::Models
+ */
+&nbsp;
+var
+    mongoose = require('mongoose'),
+    Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId,
+    User = require('./UserModel'),
+    NodeContent = require('./NodeContentModel'),
+    NodeModel = require('./NodeModel'),
+    Path = require('./PathModel'),
+    Relation = require('./RelationModel'),
+    PremiError = require('../controllers/errors/PremiError');
+&nbsp;
+/**
+ * Questo campo dati rappresenta lo schema Mongoose per i progetti.
+ * @memberof Back-End::App::Models.ProjectModel
+ * @type {mongoose.Schema}
+ */
+var projectSchema = new Schema(
+    {
+        nodes: [NodeModel.schema],
+        root: ObjectId,
+        relations: [Relation.schema],
+        paths: [Path.schema],
+        name: String,
+        userId: ObjectId,
+        bkgColor: {type:String, default: 'default'},
+        fontColor: {type:String, default: 'default'},
+        fontFamily: {type:String, default: 'sans-serif'}
+&nbsp;
+    }
+);
+&nbsp;
+/**
+ * @description Metodo statico che costruisce un nuovo progetto che conterrà il primo nodo vuoto della mappa mentale. Verrà inoltre
+ * istanziato il percorso di default. Restituisce un oggetto JSON che descrive l’elemento oppure un messaggio di errore.
+ * @function createProject
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {String} name - Il nome del nuovo progetto.
+ * @param {ObjectId} userId - L'identificativo dell'utente di Premi che ha creato il progetto.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.statics.createProject =
+    function(name, userId, callback, errback)
+    {
+        var project;
+        //creazione del nuovo percorso vuoto
+        project = new this();
+        //assegna il nome
+        project.name = name;
+        //assegna l'utente a cui appartiene il progetto
+        project.userId = userId;
+        //crea il nodo radice
+        NodeModel.createNode(
+                    function(node)
+                    {
+                        project.nodes.push(node);
+                        project.root = node.id;
+                        //crea il percorso di default e aggiunge nodo radice
+                        Path.createPath('Default', true,
+                            function(path)
+                            {
+                                path.addNode(node.id);
+                                project.paths.push(path);
+&nbsp;
+                                //salvataggio nel database: ritorna il progetto salvato o errore
+                                project.save(
+<span class="fstat-no" title="function not covered" >                                    function (err)</span>
+                                    {
+<span class="cstat-no" title="statement not covered" >                                        if(err)</span>
+<span class="cstat-no" title="statement not covered" >                                            errback(err);</span>
+                                        else
+<span class="cstat-no" title="statement not covered" >                                            callback(project);</span>
+                                    }
+                                );
+                            }
+                        );
+                    }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di modificare il nome del progetto.
+ * @function setName
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {String} name - Il nuovo nome per il progetto.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.setName =
+<span class="fstat-no" title="function not covered" >    function(name, callback, errback)</span>
+    {
+        //cambio il nome
+<span class="cstat-no" title="statement not covered" >        this.name = name;</span>
+        //salvataggio nel database: ritorna il progetto salvato o errore
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback();</span>
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di modificare il colore per lo sfondo dei frame del progetto.
+ * @function setBkgColor
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {String} color - Il nuovo colore scelto.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.setBkgColor =
+<span class="fstat-no" title="function not covered" >    function(color, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        this.bkgColor = color;</span>
+        //salvataggio nel database: ritorna il progetto salvato o errore
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback();</span>
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di modificare il colore per i testi dei frame del progetto.
+ * @function setFontColor
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {String} color - Il nuovo colore scelto.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.setFontColor =
+<span class="fstat-no" title="function not covered" >    function(color, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        this.fontColor = color;</span>
+        //salvataggio nel database: ritorna il progetto salvato o errore
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback();</span>
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di modificare la famiglia di font dei frame del progetto.
+ * @function setFontFamily
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {String} family - La nuova famiglia di font scelta.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.setFontFamily =
+<span class="fstat-no" title="function not covered" >    function(family, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        this.fontFamily = family;</span>
+        //salvataggio nel database: ritorna il progetto salvato o errore
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback();</span>
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di cercare un nodo nel progetto. Se il nodo è presente, esso viene restituito mediante il
+ * parametro callback. Altrimenti se non è presente restituisce un errore.
+ * @function getNode
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} nodeId - Identificativo del nodo da cercare.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.getNode =
+<span class="fstat-no" title="function not covered" >    function(nodeId, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        var node;</span>
+<span class="cstat-no" title="statement not covered" >        node = this.nodes.id(nodeId);</span>
+<span class="cstat-no" title="statement not covered" >        if(!node)</span>
+<span class="cstat-no" title="statement not covered" >            errback(new PremiError(11001));</span>
+        else
+<span class="cstat-no" title="statement not covered" >            callback(node);</span>
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di aggiungere nodi vuoti al progetto e quindi alla mappa mentale.
+ * Crea inoltre la relazione gerarchica tra il nuovo nodo e quello specificato come sorgente e lo aggiunge al percorso
+ * di default. Restituisce un oggetto JSON che descrive l'elemento aggiunto oppure un messaggio di errore.
+ * @function addNode
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} parentId - Identificativo del nodo padre.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.addNode =
+<span class="fstat-no" title="function not covered" >    function(parentId, callback, errback)</span>
+    {
+    //crea nuovo nodo vuoto
+<span class="cstat-no" title="statement not covered" >        var outerThis;</span>
+<span class="cstat-no" title="statement not covered" >        outerThis= this;</span>
+<span class="cstat-no" title="statement not covered" >        NodeModel.createNode(</span>
+<span class="fstat-no" title="function not covered" >                    function(node)</span>
+                    {
+                        //verifico se è nodo radice
+<span class="cstat-no" title="statement not covered" >                        if(parentId)</span>
+                        {
+                            //cerca il nodo padre, se non è presente restiuisce errore con errback
+<span class="cstat-no" title="statement not covered" >                            outerThis.getNode(parentId,</span>
+<span class="fstat-no" title="function not covered" >                                function(parent)</span>
+                                {
+                                    //se non è nodo radice ed il padre non esiste, errore
+<span class="cstat-no" title="statement not covered" >                                    if(!parent)</span>
+<span class="cstat-no" title="statement not covered" >                                        errback(new PremiError(11002));</span>
+                                    else{
+                                        //altrimenti aggiungo il nodo e la relazione gerarchica
+<span class="cstat-no" title="statement not covered" >                                        outerThis.nodes.push(node);</span>
+<span class="cstat-no" title="statement not covered" >                                        outerThis.paths.forEach(</span>
+<span class="fstat-no" title="function not covered" >                                            function(path)</span>
+                                            {
+<span class="cstat-no" title="statement not covered" >                                                if(path.default)</span>
+<span class="cstat-no" title="statement not covered" >                                                    path.addNode(node.id);</span>
+                                            }
+                                        );
+<span class="cstat-no" title="statement not covered" >                                        Relation.createRelation(</span>
+                                            parentId,
+                                            node.id,
+                                            'hierarchical',
+<span class="fstat-no" title="function not covered" >                                            function(rel)</span>
+                                            {
+<span class="cstat-no" title="statement not covered" >                                                outerThis.relations.push(rel);</span>
+<span class="cstat-no" title="statement not covered" >                                                outerThis.save(</span>
+<span class="fstat-no" title="function not covered" >                                                    function(err)</span>
+                                                    {
+<span class="cstat-no" title="statement not covered" >                                                        if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                                                        else <span class="cstat-no" title="statement not covered" >callback(node);</span>
+                                                    }
+                                                );
+                                            }
+                                        );
+                                    }
+                                },
+<span class="fstat-no" title="function not covered" >                                function(err)</span>
+                                {
+<span class="cstat-no" title="statement not covered" >                                    errback(err);</span>
+                                }
+                            );
+                        }
+                        else
+                        {
+                            //aggiungo nodo radice e quindi nessuna relazione
+<span class="cstat-no" title="statement not covered" >                            outerThis.nodes.push(node);</span>
+<span class="cstat-no" title="statement not covered" >                            outerThis.save(</span>
+<span class="fstat-no" title="function not covered" >                                function(err)</span>
+                                {
+<span class="cstat-no" title="statement not covered" >                                    if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                                    else <span class="cstat-no" title="statement not covered" >callback(node);</span>
+                                }
+                            );
+                        }
+                    }
+        );
+    };
+&nbsp;
+/**
+ * Metodo 'privato' utilizzato da removeNode() per eliminare il nodo dai percorsi.
+ * @ignore
+ */
+<span class="fstat-no" title="function not covered" >function deleteFromPaths(proj, nodeId)</span>
+{
+<span class="cstat-no" title="statement not covered" >    proj.paths.forEach(</span>
+<span class="fstat-no" title="function not covered" >        function (element)</span>
+        {
+<span class="cstat-no" title="statement not covered" >            var index = element.nodes.indexOf(nodeId);</span>
+<span class="cstat-no" title="statement not covered" >            if (index &gt; -1)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                element.nodes.splice(index, 1);</span>
+            }
+        }
+    );
+}
+&nbsp;
+/**
+ * Metodo 'privato' utilizzato da removeNode() per eliminare nodi e relazioni.
+ * @ignore
+ */
+<span class="fstat-no" title="function not covered" >function recursiveDelete(proj,nodeId)</span>
+{
+<span class="cstat-no" title="statement not covered" >    var node, source, dest, element;</span>
+    //array di relazioni in cui nodeId è source
+<span class="cstat-no" title="statement not covered" >    var childRel = [];</span>
+    //per ogni relazione verifico se nodeId è dest o src
+<span class="cstat-no" title="statement not covered" >    for(var i = 0; i&lt;proj.relations.length;i++)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        element = proj.relations[i];</span>
+<span class="cstat-no" title="statement not covered" >        node = nodeId.toString();</span>
+<span class="cstat-no" title="statement not covered" >        source = element.source.toString();</span>
+<span class="cstat-no" title="statement not covered" >        dest = element.destination.toString();</span>
+        //se la relazione è gererchica
+<span class="cstat-no" title="statement not covered" >        if (element.class === 'hierarchical')</span>
+        {
+            //se il nodo è padre della relazione, aggiungo all'array di relazione quelle con i figli
+<span class="cstat-no" title="statement not covered" >            if(source === node)</span>
+<span class="cstat-no" title="statement not covered" >                childRel.push(element);</span>
+            //se il nodo è destinazione, elimino la relazione
+            else <span class="cstat-no" title="statement not covered" >if (dest === node)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                proj.relations.pull(element.id);</span>
+<span class="cstat-no" title="statement not covered" >                i--;</span>
+            }
+        }else <span class="cstat-no" title="statement not covered" >if (element.class === 'association' &amp;&amp; (source === node || dest === node))</span>
+        {
+            //se la relazione è associazione
+            //elimino l'associazione
+<span class="cstat-no" title="statement not covered" >            proj.relations.pull(element.id);</span>
+<span class="cstat-no" title="statement not covered" >            i--;</span>
+        }
+    }
+    //elimino nodeId dai percorsi
+<span class="cstat-no" title="statement not covered" >    deleteFromPaths(proj, nodeId);</span>
+<span class="cstat-no" title="statement not covered" >    childRel.forEach(<span class="fstat-no" title="function not covered" >function (element)</span></span>
+    {
+<span class="cstat-no" title="statement not covered" >        recursiveDelete(proj, element.destination);</span>
+    });
+    //elimino il nodo
+<span class="cstat-no" title="statement not covered" >    proj.nodes.pull(nodeId);</span>
+}
+&nbsp;
+/**
+ * @description Metodo che consente di rimuovere nodi dal progetto e quindi dalla mappa mentale. Se un nodo da rimuovere è radice
+ * di un sottoalbero, devono essere rimossi anche tutti i figli e le relazioni che coinvolgono il nodo.
+ * Deve aggiornare anche tutti i percorsi di presentazione che contenevano quel nodo.
+ * Restituisce un oggetto JSON che descrive la mappa mentale priva del sottoalbero rimosso oppure un messaggio di errore.
+ * @function removeNode
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} nodeId - Identificativo del nodo da rimuovere.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ * @returns Restuisce un oggetto JSON che rappresenta il progetto modificato.
+ */
+projectSchema.methods.removeNode =
+<span class="fstat-no" title="function not covered" >    function (nodeId, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        if(this.root.toString() === nodeId.toString())</span>
+<span class="cstat-no" title="statement not covered" >            errback(new PremiError(11003));</span>
+        else
+        {
+<span class="cstat-no" title="statement not covered" >            recursiveDelete(this, nodeId);</span>
+<span class="cstat-no" title="statement not covered" >            var outerThis = this;</span>
+<span class="cstat-no" title="statement not covered" >            this.save(</span>
+<span class="fstat-no" title="function not covered" >                function(err)</span>
+                {
+<span class="cstat-no" title="statement not covered" >                    if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                    else <span class="cstat-no" title="statement not covered" >callback(outerThis);</span>
+                }
+            );
+        }
+    };
+&nbsp;
+&nbsp;
+/**
+ * @description Metodo che consente di modificare il contenuto di un nodo nella mappa mentale.
+ * @function updateNode
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} nodeId - Identificativo del nodo da aggiornare.
+ * @param {JSON} contents - Array di oggetti JSON che rappresentano i contenuti.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.updateNode =
+<span class="fstat-no" title="function not covered" >    function (nodeId, contents, callback, errback)</span>
+    {
+        //#BUG: non aggiorna anche il progetto associato all'utente
+<span class="cstat-no" title="statement not covered" >        var outerThis= this;</span>
+<span class="cstat-no" title="statement not covered" >        this.nodes.id(nodeId).updateNode(</span>
+            contents,
+<span class="fstat-no" title="function not covered" >            function()</span>
+            {
+                //salva la modifica nel database e restituisce l'oggetto salvato
+<span class="cstat-no" title="statement not covered" >                outerThis.save(</span>
+<span class="fstat-no" title="function not covered" >                    function(err)</span>
+                    {
+<span class="cstat-no" title="statement not covered" >                        if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                        else <span class="cstat-no" title="statement not covered" >callback();</span>
+                    }
+                );
+            }
+        );
+    };
+/**
+ * @description Metodo che costruisce una nuova relazione di tipo associazione.
+ * Restituisce un oggetto JSON che descrive l’elemento oppure un messaggio di errore.
+ * @function addAssociation
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} sourceId - Identificativo del nodo sorgente.
+ * @param {ObjectId} destinationId - Identificativo del nodo destinazione.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.addAssociation = <span class="fstat-no" title="function not covered" >function (sourceId, destinationId, callback, errback){</span>
+<span class="cstat-no" title="statement not covered" >    var outerThis;</span>
+<span class="cstat-no" title="statement not covered" >    outerThis= this;</span>
+<span class="cstat-no" title="statement not covered" >        Relation.createRelation(sourceId, destinationId, 'association',</span>
+<span class="fstat-no" title="function not covered" >            function(relation)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                outerThis.relations.push(relation);</span>
+                //salvo nel database
+<span class="cstat-no" title="statement not covered" >                outerThis.save(<span class="fstat-no" title="function not covered" >function(err)</span></span>
+                {
+<span class="cstat-no" title="statement not covered" >                    if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                    else <span class="cstat-no" title="statement not covered" >callback(relation._id);</span>
+                });
+            },
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                errback(err);</span>
+            }
+        );
+};
+&nbsp;
+&nbsp;
+/**
+ * @description Metodo che consente di rimuovere una associazione tra due nodi.
+ * @function removeAssociation
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} associationId - Identificativo dell'associazione da rimuovere.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.removeAssociation =
+<span class="fstat-no" title="function not covered" >    function(associationId, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        this.relations.id(associationId).remove();</span>
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback();</span>
+            }
+        );
+    };
+&nbsp;
+&nbsp;
+/**
+ * @description Metodo che consente di aggiungere un nuovo percorso di presentazione con un nome specificato nei parametri.
+ * Restituisce un oggetto JSON che descrive l’elemento oppure un messaggio di errore.
+ * @function addPath
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {String} name - Il nome del percorso.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.addPath =
+<span class="fstat-no" title="function not covered" >    function(name, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        var outerThis= this;</span>
+<span class="cstat-no" title="statement not covered" >        Path.createPath(</span>
+            name,
+            false,
+<span class="fstat-no" title="function not covered" >            function(path)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                outerThis.paths.push(path);</span>
+<span class="cstat-no" title="statement not covered" >                outerThis.save(</span>
+<span class="fstat-no" title="function not covered" >                    function(err)</span>
+                    {
+<span class="cstat-no" title="statement not covered" >                        if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                        else <span class="cstat-no" title="statement not covered" >callback(path);</span>
+                    }
+                );
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di rimuovere un percorso di presentazione.
+ * Restituisce un oggetto JSON che descrive l’elemento oppure un messaggio di errore.
+ * @function removePath
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} pathId - Identificativo del percorso da eliminare.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.removePath =
+<span class="fstat-no" title="function not covered" >    function(pathId, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        this.paths.pull(pathId);</span>
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback();</span>
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di modificare il nome di un percorso di presentazione.
+ * Restituisce un oggetto JSON che descrive l’elemento oppure un messaggio di errore.
+ * @function setPathName
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} pathId - Identificativo del percorso da modificare.
+ * @param {String} name - Il nuovo nome per il percorso.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.setPathName =
+<span class="fstat-no" title="function not covered" >    function(pathId, name, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        var path;</span>
+<span class="cstat-no" title="statement not covered" >        path = this.paths.id(pathId);</span>
+<span class="cstat-no" title="statement not covered" >        path.setName(name);</span>
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback(path);</span>
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di ottenere l’elenco dei nodi presenti in un percorso di presentazione
+ * del progetto attraverso la funzione di callback.
+ * @function getPathNodes
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} pathId - Identificativo del percorso da modificare.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.getPathNodes =
+<span class="fstat-no" title="function not covered" >    function(pathId, callback, errback)</span>
+        {
+<span class="cstat-no" title="statement not covered" >            var percorso =</span>
+            {
+                'name': this.paths.id(pathId).name,
+                'nodes': []
+            };
+<span class="cstat-no" title="statement not covered" >            var outerThis = this;</span>
+<span class="cstat-no" title="statement not covered" >            this.paths.id(pathId).nodes.forEach(</span>
+<span class="fstat-no" title="function not covered" >                function(element)</span>
+                {
+<span class="cstat-no" title="statement not covered" >                    outerThis.getNode(</span>
+                        element,
+<span class="fstat-no" title="function not covered" >                        function(node)</span>
+                        {
+<span class="cstat-no" title="statement not covered" >                            percorso.nodes.push(node);</span>
+                        },
+<span class="fstat-no" title="function not covered" >                        function(err)</span>
+                        {
+<span class="cstat-no" title="statement not covered" >                            errback(err);</span>
+                        }
+                    );
+                }
+            );
+<span class="cstat-no" title="statement not covered" >            callback(percorso);</span>
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di aggiungere nodi ad un percorso di presentazione.
+ * Restituisce un oggetto JSON che descrive l’elemento oppure un messaggio di errore.
+ * @function addNodeToPath
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} nodeId - Identificativo del nodo da aggiungere.
+ * @param {ObjectId} pathId - Identificativo del percorso di presentazione.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.addNodeToPath =
+<span class="fstat-no" title="function not covered" >    function(nodeId, pathId, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >        var path, pathNodes;</span>
+<span class="cstat-no" title="statement not covered" >        path =  this.paths.id(pathId);</span>
+<span class="cstat-no" title="statement not covered" >        path.addNode(nodeId);</span>
+<span class="cstat-no" title="statement not covered" >        this.getPathNodes(</span>
+            pathId,
+<span class="fstat-no" title="function not covered" >            function(json)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                pathNodes = json;</span>
+            }
+        );
+<span class="cstat-no" title="statement not covered" >        this.save(</span>
+<span class="fstat-no" title="function not covered" >            function(err)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                else <span class="cstat-no" title="statement not covered" >callback(pathNodes);</span>
+            }
+        );
+    };
+&nbsp;
+/**
+ * @description Metodo che consente di rimuovere nodi da un percorso di presentazione del progetto.
+ * Restituisce un oggetto JSON che descrive l’elemento oppure un messaggio di errore.
+ * @function removeNodeFromPath
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {ObjectId} nodeId - Identificativo del nodo da rimuobere.
+ * @param {ObjectId} pathId - Identificativo del percorso di presentazione.
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ * @param {function} errback - Rappresenta la callback che il metodo deve chiamare qualora si
+ * verificassero errori durante l’esecuzione del metodo.
+ */
+projectSchema.methods.removeNodeFromPath =
+<span class="fstat-no" title="function not covered" >    function(nodeId, pathId, callback, errback)</span>
+    {
+<span class="cstat-no" title="statement not covered" >    var path, outerThis;</span>
+<span class="cstat-no" title="statement not covered" >    outerThis = this;</span>
+<span class="cstat-no" title="statement not covered" >    path =  this.paths.id(pathId);</span>
+    //se il nodo non è nel path errore
+<span class="cstat-no" title="statement not covered" >    path.removeNode(</span>
+        nodeId,
+<span class="fstat-no" title="function not covered" >        function(json)</span>
+        {
+            //se il nodo è nel path aggiorno
+<span class="cstat-no" title="statement not covered" >            outerThis.save(</span>
+<span class="fstat-no" title="function not covered" >                function(err)</span>
+                {
+<span class="cstat-no" title="statement not covered" >                    if (err) <span class="cstat-no" title="statement not covered" >errback(err);</span></span>
+                    else
+                    {
+<span class="cstat-no" title="statement not covered" >                        outerThis.getPathNodes(</span>
+                            pathId,
+<span class="fstat-no" title="function not covered" >                            function(json)</span>
+                            {
+<span class="cstat-no" title="statement not covered" >                                callback(json);</span>
+                            }
+                        );
+                    }
+                }
+            );
+        },
+<span class="fstat-no" title="function not covered" >        function(err)//errore da instardare al controller: nodo non presente.</span>
+        {
+<span class="cstat-no" title="statement not covered" >            return errback(err);</span>
+        }
+    );
+&nbsp;
+};
+&nbsp;
+&nbsp;
+/**
+ * @description Metodo che consente di ottenere l’elenco dei percorsi di presentazione del progetto,
+ * ovvero un oggetto JSON contenente coppie di identificativi e nomi dei percorsi, attraverso la funzione di callback.
+ * @function getPathList
+ * @instance
+ * @memberof Back-End::App::Models.ProjectModel
+ * @param {function} callback - Rappresenta la callback che il metodo deve chiamare al termine dell’elaborazione
+ * nel caso in cui non si siano verificati errori.
+ */
+projectSchema.methods.getPathList =
+<span class="fstat-no" title="function not covered" >    function(callback)</span>
+        {
+<span class="cstat-no" title="statement not covered" >            var percorsi =</span>
+            {
+                'paths':[]
+            };
+<span class="cstat-no" title="statement not covered" >            this.paths.forEach(</span>
+<span class="fstat-no" title="function not covered" >                function(element)</span>
+                {
+<span class="cstat-no" title="statement not covered" >                    percorsi.paths.push(</span>
+                        {
+                            'id': element.id,
+                            'name': element.name,
+                            'default': element.default
+                        }
+                    );
+                }
+            );
+<span class="cstat-no" title="statement not covered" >        callback(percorsi);</span>
+    };
+&nbsp;
+&nbsp;
+mongoose.model('Project', projectSchema);
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Jun 13 2015 21:23:16 GMT+0200 (CEST)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

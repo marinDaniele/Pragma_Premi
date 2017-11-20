@@ -1,0 +1,25 @@
+<md-dialog aria-label="Paths list" style="overflow: auto;">
+    <md-dialog-content class="sticky-container">
+        <md-subheader class="md-sticky-no-effect">
+            Seleziona un percorso di presentazione:
+        </md-subheader>
+        <md-list class="basicList pathsCollection">
+            <div layout="column"
+                 layout-align="center center">
+                <md-list-item class="md-1-line"
+                              ng-repeat="path in paths">
+                    <div class="md-list-item-text">
+                        <md-button ng-click="selectedPath(path._id)">
+                            {{path.name}}
+                        </md-button>
+                    </div>
+                </md-list-item>
+            </div>
+        </md-list>
+        <div class="md-actions" layout="row">
+            <md-button ng-click="cancel()" class="md-primary">
+                Annulla
+            </md-button>
+        </div>
+    </md-dialog-content>
+</md-dialog>

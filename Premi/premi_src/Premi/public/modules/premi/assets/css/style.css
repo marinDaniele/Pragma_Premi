@@ -1,0 +1,103 @@
+ul.genericList{
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+ul.genericList li{
+    border-bottom:1px solid rgba(73, 73, 73, 0.45);
+    width: 100%;
+    margin: 0;
+}
+
+/* Apri e chidui sidenav*/
+.sidenavOpened{
+    width: 320px !important;
+    -webkit-transition: width 300ms; /* Safari 3.1 to 6.0 */
+    transition: width 300ms;
+}
+
+.sidenavClosed{
+    width: 0 !important;
+    -webkit-transition: width 300ms; /* Safari 3.1 to 6.0 */
+    transition: width 300ms;
+}
+
+
+/* Lista di bottoni per sidenav*/
+.sidenavButtonList{
+    list-style: none;
+    height: auto;
+    padding: .5em 0 0 0;
+    margin: 0;
+}
+.sidenavButtonList li{
+    width: 100%;
+    margin: 0;
+}
+
+.sidenavButtonListButton{
+    width: 100%;
+    text-align: left;
+    padding: .75em;
+}
+
+.sidenavButtonListButton span{
+    margin-left: 1em;
+}
+/*fine lista per sidenav*/
+
+.overIcon:hover{
+    color: #000000;
+}
+
+md-whiteframe {
+    background: #fff;
+}
+
+.defaultBkg {
+    background-color: #FAFAFA;
+}
+
+.iconButton{
+    margin: 0.75em;
+}
+
+#appContainer{
+    position:relative;
+    height: calc(100% - 64px);
+    overflow: hidden;
+}
+
+premi-header.ng-hide {
+    animation: my_fade_animation 0.5s linear;
+    -webkit-animation: my_fade_animation 0.5s linear;
+}
+
+
+@keyframes my_fade_animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+@-webkit-keyframes my_fade_animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+@media only screen and (max-width: 768px) {
+    .hideMobile {display: none;}
+
+    .noMarginMobile { margin: 0; }
+
+    .mobileInput { padding: 2px; }
+}
+
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+    .hideMobile {display: none;}
+
+    .noMarginMobile { margin: 0; }
+
+    .mobileInput { padding: 2px; }
+}

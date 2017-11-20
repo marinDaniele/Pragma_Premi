@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: public/modules/premi/app/directives/editableNodeContent/editable-node-content.directive.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: public/modules/premi/app/directives/editableNodeContent/editable-node-content.directive.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @class premiEditableNodeContent
+ * @classdesc Rappresenta un elemento contenuto nel frame di un nodo. Questo
+ * elemento è spostabile e ridimensionabile.
+ * Le modifiche effettuate su questo elemento vengono riportate direttamente sull’oggetto nodeContent.
+ * Questo componente deve essere in grado di rappresentare le varie tipologie di contenuto che possono essere presenti
+ * all’interno di un nodo. La discriminazione del tipo del contenuto deve essere fatta in base ai campi dati
+ * dell’oggetto nodeContent.
+ * @author: Giacomo Manzoli (giacomo.manzoli@gmail.com)
+ * @description Data: 2015-05-11 Requisiti: RFD4.2.3.9, RFD4.2.3.10,
+ * RFF4.2.3.11, RFD4.2.3.18, RFD4.2.3.19, RFD4.2.3.20
+ * @example &lt;div premi-mindmap-editable-node-content
+ node-content="nodeContent"
+ container="object">
+ &lt;/div>
+ * @memberOf Front-End::Directives
+ */
+(function (){
+    'use strict';
+    angular
+        .module('premi.directives')
+        .directive('premiEditableNodeContent',editableNodeContentDirective);
+
+
+    editableNodeContentDirective.$inject = ['$document', '$compile', '$window'];
+
+    function editableNodeContentDirective($document,$compile,$window){
+        return{
+            restrict:'EA',
+            scope: {
+                nodeContent:'=',
+                container: '='
+            },
+            controller: 'EditableNodeContentController',
+            link: link
+        };
+
+        /**
+         * @function link
+         * @instance
+         * @desc Funzione che viene invocata da Angular durante la fase di
+         * compilazione della pagina. Permette manipolare il DOM, aggiungendo
+         * nuovi elementi o definendo un comportamento per l’elemento. Viene
+         * utilizzata per registrare i vari gestori degli eventi del mouse in
+         * modo da poter effettuare il \textit{drag'n'drop} e vengono aggiunti
+         * ulteriori elementi al DOM per poter effettuare il ridimensionamento
+         * dell'elemento.
+         * @param {Scope} scope - Parametro che contiene un riferimento
+         * all'oggetto &lt;tt>scope&lt;/tt> della directive.
+         * @param {DOMElement} elem - Parametro contenente un oggetto della
+         * libreria jQuery che rappresenta l'oggetto del DOM sul quale è
+         * definita la directive.
+         * @memberOf Front-End::Directives.premiEditableNodeContent
+         */
+        function link(scope, elem){
+            //console.log(scope.container);
+            //Riferimento al nodeContent, utilizzato per semplicità.
+            var nodeContent = scope.nodeContent;
+
+            /* Gestione del resize delle pagina, viene utilizzata una funzione
+             * per regolare lo scaling del font.
+             */
+            function resizeFont() {
+                var width =  elem.parent().width();
+                elem[0].style.fontSize = width * 0.2 +'%';
+            }
+            resizeFont();
+            angular.element($window).on('resize', resizeFont);
+
+            //Creazione dell'elemento che conterrà i dati
+            var htmlElement = '&lt;div class="content draggable-content ' +
+                '{{ nodeContent.getType() }}" ' +
+                'ng-click="selected($event)"> ' +
+                '{{ nodeContent.content }}' +
+                '&lt;/div>';
+            if (nodeContent.getType() === 'imgUrl'){
+                htmlElement = '&lt;img class="content draggable-content ' +
+                    '{{ nodeContent.getType() }}" ' +
+                'src="{{nodeContent.content}}" ng-click="selected($event)"/>';
+            }
+            var element = angular.element(htmlElement);
+            var compiledElement = $compile(element);
+            elem.append(element);
+            compiledElement(scope);
+
+
+            /*-- PARTE DEDICATA ALLA GESTIONE DEL DRAG'N'DROP DELL'ELEMENTO --*/
+
+            //Coodrinate finali (nella posizione dello schermo)
+            var startX, startY;
+
+            /* Funzione che si occupa di gestire l'evento 'mousedown',
+             * viene impostato tutto il necessario per
+             * una corretta gestione del drag'n'drop */
+            element.on('mousedown', function (mouseEvent) {
+                mouseEvent.preventDefault();
+                startX = mouseEvent.clientX - elem.position().left;
+                startY = mouseEvent.clientY - elem.position().top;
+                $document.on('mousemove', dndMousemove);
+                $document.on('mouseup', dndMouseup);
+            });
+            /* Funzione che si occupa di gestire il drag
+             * (mousedown + mousemove).
+             * Viene calcolata la nuova posizione dell'elemento, vengono
+             * aggioranti i campi dati di nodeContent e viene effettuato il
+              * riposizionamento grafico.
+             * mouseEvent - Oggetto contenente le informazioni relative alla
+             * posizione del mouse.
+             * */
+            function dndMousemove(mouseEvent) {
+                /* startX e startY rappresentano il punto dove è iniziato il dnd
+                 * Vengono valorizzate quando si verifica l'evento 'mousedown */
+                var x = mouseEvent.clientX - startX;
+                var y = mouseEvent.clientY - startY;
+                //Dimensioni dell'elemento che si sposta
+                var width  = elem.width(),
+                    height = elem.height();
+                if (scope.container) {
+                    if (x &lt; 0) {
+                        x = 0;
+                    } else if (x > scope.container.width - width) {
+                        x = scope.container.width- width;
+                    }
+                    if (y &lt; 0) {
+                        y = 0;
+                    } else if (y > scope.container.height - height) {
+                        y = scope.container.height - height;
+                    }
+                }
+                /* (x,y) è dove deve essere possizionato l'angolo in alto a
+                 * sinistra dell'elemento. Viene fatta una proporzione per
+                  * ottenere la posizione espressa in percentuale %*/
+                var xPerc = 100*x/scope.container.width;
+                var yPerc = 100*y/scope.container.height;
+                nodeContent.setY(yPerc);
+                nodeContent.setX(xPerc);
+
+                //Aggiorno la posizione grafica
+                elem.css(nodeContent.getStyle());
+            }
+
+            /* Funzione che gestisce la conclusione del drag'n'drop, si
+             * occupa di rimuovere i listner precedentemente
+             * definiti.*/
+            function dndMouseup() {
+                $document.off('mousemove', dndMousemove);
+                $document.off('mouseup', dndMouseup);
+            }
+
+            /*-- PARTE DEDICATA ALLA GESTIONE DEL RESIZE DELL'ELEMENTO --*/
+            // $event è di tipo MouseEvent, movementX e movementY è lo
+            // spostamento fatto dal mouse
+
+            /* Funzione che si occupa di gestire l'evento di resize verso
+             l'alto.
+             * Si occupa di modificare l'altezza e la posizione dell'elemento.
+             * $event - Oggetto contenente le informazioni relative al movimento
+              * del mouse*/
+            var resizeUp = function (movement) {
+                /* È necessario fare questo controllo perché, se l'elemento non
+                 * è mai stato ridimentsionato ha dimensione 0
+                 * e non è possibile calcolare la dimensione a mano.
+                 * Viene quindi usata l'altezza calcolata dal browser,
+                 * opportunamente convertita in percentuale.
+                 * */
+                if (nodeContent.getHeight() === 0){
+                    nodeContent.setHeight(
+                        elem.height()*100/scope.container.height);
+                }
+                /* Trasformo lo spostamento da 'px' a '%'*/
+
+                var ratioY = 100*(movement.y)/scope.container.height;
+                nodeContent.setHeight(nodeContent.getHeight() - ratioY);
+                nodeContent.setY(nodeContent.getY() + ratioY);
+
+                if (nodeContent.getY() &lt; 0) {
+                    nodeContent.setY(0);
+                    nodeContent.setHeight(nodeContent.getHeight()+ratioY);
+                }
+                if (nodeContent.getHeight()&lt;1){
+                    nodeContent.setHeight(1);
+                    /* Dato che il ridimensionamento viene annulalto evito di
+                     * spostare l'elemento*/
+                    nodeContent.setY(nodeContent.getY() - ratioY);
+                }
+                /* Controllo se l'elemento, dopo essere stato ridimensionato, è
+                * ancora all'interno del contenitore.
+                * Nel caso esca dal contenitore, viene opportunamente modificato
+                * per fare in modo che rimanga all'interno dei margini
+                * previsti */
+                scope.container.adjustToBound(nodeContent);
+                /* Aggiorno i CSS dell'elemento*/
+                elem.css(nodeContent.getStyle());
+            };
+
+            /* Funzione che si occupa di gestire l'evento di resize verso il
+            * basso.Si occupa di modificare l'altezza dell'elemento.*/
+            var resizeDown = function (movement) {
+                //var movement = calculateMouseMovement($event);
+
+                /* È necessario fare questo controllo perché, se l'elemento non
+                 * è mai stato ridimentsionato ha dimensione 0
+                 * e non è possibile calcolare la dimensione a mano.
+                 * Viene quindi usata l'altezza calcolata dal browser,
+                 * opportunamente convertita in percentuale.
+                 * */
+                if (nodeContent.getHeight() === 0){
+                    nodeContent.setHeight(elem.height()*100/scope.container.height);
+                }
+                /* Trasformo lo spostamento da 'px' a '%'*/
+                var ratioY = 100*movement.y/scope.container.height;
+
+                nodeContent.setHeight(nodeContent.getHeight() + ratioY);
+
+                if (nodeContent.getHeight()&lt;1) {
+                    nodeContent.setHeight(1);
+                }
+                /* Controllo se l'elemento, dopo essere stato ridimensionato, è
+                 * ancora all'interno del contenitore.
+                 * Nel caso esca dal contenitore, viene opportunamente
+                 * modificato per fare in modo che rimanga
+                 * all'interno dei margini previsti */
+                scope.container.adjustToBound(nodeContent);
+                /* Aggiorno i CSS dell'elemento*/
+                elem.css(nodeContent.getStyle());
+            };
+
+            /* Funzione che si occupa di gestire l'evento di resize verso
+             * sinistra.
+             * Si occupa di modificare la larghezza e la posizione
+             * dell'elemento.*/
+            function resizeLeft (movement) {
+                /* È necessario fare questo controllo perché, se l'elemento non
+                 * è mai stato ridimentsionato ha dimensione 0
+                 * e non è possibile calcolare la dimensione a mano.
+                 * Viene quindi usata l'altezza calcolata dal browser,
+                 * opportunamente convertita in percentuale.
+                 * */
+                if (nodeContent.getWidth() === 0){
+                    nodeContent.setWidth(
+                        elem.width()*100/scope.container.width);
+                }
+                /* Trasformo lo spostamento da 'px' a '%'*/
+                var ratioX = 100*movement.x/scope.container.width;
+                nodeContent.setWidth(nodeContent.getWidth() - ratioX);
+                nodeContent.setX(nodeContent.getX() + ratioX);
+
+                if (nodeContent.getX() &lt; 0) {
+                    nodeContent.setX(0);
+                    nodeContent.setWidth(nodeContent.getWidth()+ratioX);
+                }
+                if (nodeContent.getWidth()&lt;1) {
+                    nodeContent.setWidth(1);
+                    /*Dato che il ridimensionamento viene annulalto evito di
+                    spostare l'elemento*/
+                    nodeContent.setX(nodeContent.getX() - ratioX);
+                }
+                /* Controllo se l'elemento, dopo essere stato ridimensionato, è
+                 * ancora all'interno del contenitore.
+                 * Nel caso esca dal contenitore, viene opportunamente
+                 * modificato per fare in modo che rimanga
+                 * all'interno dei margini previsti */
+                scope.container.adjustToBound(nodeContent);
+                /* Aggiorno i CSS dell'elemento*/
+                elem.css(nodeContent.getStyle());
+            }
+            /* Funzione che si occupa di gestire l'evento di resize verso
+             * destra.
+             * Si occupa di modificare l'altezza dell'elemento.
+             * $event - Oggetto contenente le informazioni relative al movimento
+             * del mouse*/
+            var resizeRight = function (movement) {
+                /* È necessario fare questo controllo perché, se l'elemento non
+                 * è mai stato ridimentsionato ha dimensione 0
+                 * e non è possibile calcolare la dimensione a mano.
+                 * Viene quindi usata l'altezza calcolata dal browser,
+                 * opportunamente convertita in percentuale.
+                 * */
+                if (nodeContent.getWidth() === 0){
+                    nodeContent.setWidth(
+                        elem.width()*100/scope.container.width);
+                }
+                /* Trasformo lo spostamento da 'px' a '%'*/
+                var ratioX = 100*movement.x/scope.container.width;
+                nodeContent.setWidth(nodeContent.getWidth() + ratioX);
+
+                if (nodeContent.getWidth()&lt;1) {
+                    nodeContent.setWidth(1);
+                }
+                /* Controllo se l'elemento, dopo essere stato ridimensionato, è
+                 * ancora all'interno del contenitore.
+                 * Nel caso esca dal contenitore, viene opportunamente
+                 * modificato per fare in modo che rimanga
+                 * all'interno dei margini previsti */
+                scope.container.adjustToBound(nodeContent);
+                /* Aggiorno i CSS dell'elemento*/
+                elem.css(nodeContent.getStyle());
+            };
+
+
+            function calculateMouseMovement($event){
+                var movement = {};
+
+                movement.y = $event.originalEvent.clientY -
+                    previousMouseEvent.originalEvent.clientY;
+                movement.x = $event.originalEvent.clientX -
+                    previousMouseEvent.originalEvent.clientX;
+                previousMouseEvent = $event;
+
+                return movement;
+            }
+
+            /* Funzione che si occupa di creare un div che permette di
+             * effettuare il resize dell'elemento
+             * className - Nome della classe CSS da dare all'elemento
+             * handlers - Array di funzioni che si occupano di gestire
+             * l'evento di resize*/
+
+            var previousMouseEvent = null;
+
+            var createResizer = function ( className , handlers ){
+                //Viene creato l'elemento da inserire nel DOM
+                var resizePointHtml = '&lt;div class="' + className +
+                    ' resize-color" ng-show="isSelected">&lt;/div>';
+                var resizePointElement = angular.element(resizePointHtml);
+                elem.append(resizePointElement);
+                var resizePointCompiled = $compile(resizePointElement);
+                resizePointCompiled(scope);
+
+                /* Event handler per 'mousedown'. Inizia il resize dell'elemento
+                 * principale.
+                 * $event - Oggetto di Angular contenente le informazioni
+                 * riguardanti l'evento */
+                resizePointElement.on('mousedown', function ($event) {
+                    $event.preventDefault();
+                    previousMouseEvent = $event;
+
+                    $document.on('mousemove', resizeMousemove);
+                    $document.on('mouseup', resizeMouseup);
+
+                    /* Funzione che si occupa di invocare gli opportuni handler
+                     * quando l'utente effettua un drag (mousedown + mousemove)
+                     * $event - Oggetto di Angular contenente le informazioni
+                     * riguardanti l'evento*/
+                    function resizeMousemove($event) {
+                        $event.preventDefault();
+                        var movement = calculateMouseMovement($event);
+                        //Chiama i vari handler per il resize
+                        for( var i = 0 ; i &lt; handlers.length ; i++){
+                            handlers[i](movement );
+                        }
+                    }
+                    /* Funzione che si occupa di rimuovere i vari listener
+                     * quando l'utente termina il drag'n'drop */
+                    function resizeMouseup() {
+                        $document.off('mousemove', resizeMousemove);
+                        $document.off('mouseup', resizeMouseup);
+                    }
+                });
+            };
+
+            //Creazione dei vari resizer
+            createResizer( 'sw-resize' , [ resizeDown , resizeLeft ] );
+            createResizer( 'ne-resize' , [ resizeUp   , resizeRight ] );
+            createResizer( 'nw-resize' , [ resizeUp   , resizeLeft ] );
+            createResizer( 'se-resize' , [ resizeDown ,  resizeRight ] );
+            createResizer( 'w-resize' , [ resizeLeft ] );
+            createResizer( 'e-resize' , [ resizeRight ] );
+            createResizer( 'n-resize' , [ resizeUp ] );
+            createResizer( 's-resize' , [ resizeDown ] );
+        }//fine link
+    }
+})();
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Back-End__App__Controllers.ErrorHandler.html">ErrorHandler</a></li><li><a href="Back-End__App__Controllers.NotFoundHandler.html">NotFoundHandler</a></li><li><a href="Back-End__App__Controllers.ProjectController.html">ProjectController</a></li><li><a href="Back-End__App__Controllers.StaticController.html">StaticController</a></li><li><a href="Back-End__App__Controllers.UserController.html">UserController</a></li><li><a href="Back-End__App__Controllers__Errors.PremiError.html">PremiError</a></li><li><a href="Back-End__App__Controllers__Projects.NodeController.html">NodeController</a></li><li><a href="Back-End__App__Controllers__Projects.PathController.html">PathController</a></li><li><a href="Back-End__App__Controllers__Projects.ProjectManagementController.html">ProjectManagementController</a></li><li><a href="Back-End__App__Controllers__Users.AuthenticationController.html">AuthenticationController</a></li><li><a href="Back-End__App__Controllers__Users.AuthorizationController.html">AuthorizationController</a></li><li><a href="Back-End__App__Models.NodeContentModel.html">NodeContentModel</a></li><li><a href="Back-End__App__Models.NodeModel.html">NodeModel</a></li><li><a href="Back-End__App__Models.PathModel.html">PathModel</a></li><li><a href="Back-End__App__Models.ProjectModel.html">ProjectModel</a></li><li><a href="Back-End__App__Models.RelationModel.html">RelationModel</a></li><li><a href="Back-End__App__Models.UserModel.html">UserModel</a></li><li><a href="Back-End__App__Routers.ProjectRouter.html">ProjectRouter</a></li><li><a href="Back-End__App__Routers.StaticRouter.html">StaticRouter</a></li><li><a href="Back-End__App__Routers.UserRouter.html">UserRouter</a></li><li><a href="Fron-End__Controllers.NodeContentsEditorController.html">NodeContentsEditorController</a></li><li><a href="Front-End.AppConfig.html">AppConfig</a></li><li><a href="Front-End.AppRouter.html">AppRouter</a></li><li><a href="Front-End.AppRun.html">AppRun</a></li><li><a href="Front-End__Controllers.AddToPathController.html">AddToPathController</a></li><li><a href="Front-End__Controllers.ContextMenuController.html">ContextMenuController</a></li><li><a href="Front-End__Controllers.DashboardController.html">DashboardController</a></li><li><a href="Front-End__Controllers.EditableNodeContentController.html">EditableNodeContentController</a></li><li><a href="Front-End__Controllers.ErrorMessageController.html">ErrorMessageController</a></li><li><a href="Front-End__Controllers.HeaderController.html">HeaderController</a></li><li><a href="Front-End__Controllers.HierarchicalMenuController.html">HierarchicalMenuController</a></li><li><a href="Front-End__Controllers.LoginController.html">LoginController</a></li><li><a href="Front-End__Controllers.MindmapEditorController.html">MindmapEditorController</a></li><li><a href="Front-End__Controllers.NodeController.html">NodeController</a></li><li><a href="Front-End__Controllers.PathController.html">PathController</a></li><li><a href="Front-End__Controllers.PathsEditorController.html">PathsEditorController</a></li><li><a href="Front-End__Controllers.PathsListController.html">PathsListController</a></li><li><a href="Front-End__Controllers.PresentationController.html">PresentationController</a></li><li><a href="Front-End__Controllers.PresentationViewerController.html">PresentationViewerController</a></li><li><a href="Front-End__Controllers.ProjectSettingsEditorController.html">ProjectSettingsEditorController</a></li><li><a href="Front-End__Controllers.ProjectsListController.html">ProjectsListController</a></li><li><a href="Front-End__Controllers.RegistrationController.html">RegistrationController</a></li><li><a href="Front-End__Directives.premiAddToPath.html">premiAddToPath</a></li><li><a href="Front-End__Directives.premiAssociationAdder.html">premiAssociationAdder</a></li><li><a href="Front-End__Directives.premiContextMenu.html">premiContextMenu</a></li><li><a href="Front-End__Directives.premiEditableNodeContent.html">premiEditableNodeContent</a></li><li><a href="Front-End__Directives.premiErrorMessage.html">premiErrorMessage</a></li><li><a href="Front-End__Directives.premiHeader.html">premiHeader</a></li><li><a href="Front-End__Directives.premiHierarchicalMenu.html">premiHierarchicalMenu</a></li><li><a href="Front-End__Directives.premiMindmap.html">premiMindmap</a></li><li><a href="Front-End__Directives.premiNode.html">premiNode</a></li><li><a href="Front-End__Directives.premiNodeContent.html">premiNodeContent</a></li><li><a href="Front-End__Directives.premiNodeContentsEditor.html">premiNodeContentsEditor</a></li><li><a href="Front-End__Directives.premiPath.html">premiPath</a></li><li><a href="Front-End__Directives.premiPathsList.html">premiPathsList</a></li><li><a href="Front-End__Directives.premiPresentation.html">premiPresentation</a></li><li><a href="Front-End__Directives.premiProjectList.html">premiProjectList</a></li><li><a href="Front-End__Directives.premiProjectSettingsEditor.html">premiProjectSettingsEditor</a></li><li><a href="Front-End__Directives.premiSmartMenu.html">premiSmartMenu</a></li><li><a href="Front-End__Model.ErrorInfo.html">ErrorInfo</a></li><li><a href="Front-End__Model.Node.html">Node</a></li><li><a href="Front-End__Model.NodeContent.html">NodeContent</a></li><li><a href="Front-End__Model.NodeReference.html">NodeReference</a></li><li><a href="Front-End__Model.Path.html">Path</a></li><li><a href="Front-End__Model.PresentationNode.html">PresentationNode</a></li><li><a href="Front-End__Model.Project.html">Project</a></li><li><a href="Front-End__Services.AuthenticationService.html">AuthenticationService</a></li><li><a href="Front-End__Services.MindmapAdapterService.html">MindmapAdapterService</a></li><li><a href="Front-End__Services.MindmapService.html">MindmapService</a></li><li><a href="Front-End__Services.PathService.html">PathService</a></li><li><a href="Front-End__Services.PresentationService.html">PresentationService</a></li><li><a href="Front-End__Services.ProjectService.html">ProjectService</a></li><li><a href="Premi.Front-End.Controllers.AssociationAdderController.html">AssociationAdderController</a></li><li><a href="Premi.Front-End.Controllers.SmartMenuController.html">SmartMenuController</a></li></ul><h3>Namespaces</h3><ul><li><a href="Back-End__App__Controllers.html">Back-End::App::Controllers</a></li><li><a href="Back-End__App__Controllers__Errors.html">Back-End::App::Controllers::Errors</a></li><li><a href="Back-End__App__Controllers__Projects.html">Back-End::App::Controllers::Projects</a></li><li><a href="Back-End__App__Controllers__Users.html">Back-End::App::Controllers::Users</a></li><li><a href="Back-End__App__Models.html">Back-End::App::Models</a></li><li><a href="Front-End__Controllers.html">Front-End::Controllers</a></li><li><a href="Front-End__Directives.html">Front-End::Directives</a></li><li><a href="Front-End__Model.html">Front-End::Model</a></li><li><a href="Front-End__Services.html">Front-End::Services</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Wed Jun 17 2015 12:57:05 GMT+0200 (CEST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<div id="nodeContentsEditor"
+     layout="column"
+     layout-fill>
+    <md-toolbar class="md-accent"
+                layout="row"
+                layout-align="center">
+        <h2 class="md-toolbar-tools"
+            layout="column"
+            flex>Modifica contenuti nodo</h2>
+    </md-toolbar>
+    <div layout="row"
+         layout-aling="space-between center"
+         layout-padding
+         flex
+         style="width: 100%;">
+        <!-- Colonna di sinistra-->
+        <div class="sxColumn"
+             layout="column"
+             layout-align="space-between center"
+             layout-padding>
+            <!-- parte alta della colonna-->
+            <div layout="column"
+                 layout-aling="space-around start">
+
+                <!-- Parte sempre visibile-->
+                <div layout-margin>
+                    <md-button class="addTextButton md-raised"
+                               ng-click="addTextContent()">
+                            <md-icon md-svg-src="assets/img/add_text.svg">
+                            </md-icon>
+                            Aggiungi testo
+                    </md-button>
+                </div>
+                <div layout-margin>
+                    <md-button class="addImageContentButton md-raised"
+                               ng-click="addImageContent()">
+                        <md-icon md-svg-src="assets/img/add_image.svg">
+                        </md-icon>
+                        Aggiungi immagine
+                    </md-button>
+                </div>
+<!-- Parte della modifica, visibile solo quando l'utente ha selezionato un
+elemento della slide-->
+                <div layout="column"
+                     class="itemDetail"
+                     layout-align="space-around left"
+                     ng-show="selectedNodeContent"
+                     flex>
+                    <md-subheader>Modifica contenuto</md-subheader>
+                    <textarea ng-model="selectedNodeContent.content"
+                              class="almostMaterialTextArea"
+                              rows="4"></textarea>
+
+    <!-- Pulsante di cancellazione, nascosto se l'utente seleziona il titolo-->
+                    <div layout="row"
+                         ng-show="canDeleteNodeContent">
+                        <md-button ng-click="deleteNodeContent()"
+                                   class="md-raised md-warn">
+                            Cancella elemento
+                        </md-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div flex class="dxColumn"
+             layout="column"
+             layout-align="center center">
+            <div id="dragContainer"
+                 class="frame-edit md-whiteframe-z1"
+                 ng-click="slideClicked($event)"
+                 ng-class="classString">
+                <div premi-editable-node-content
+                     ng-repeat="nodeContent in node.getContents()"
+                     node-content="nodeContent"
+                     container="elementsContainer"
+                     ng-style="nodeContent.getStyle()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div layout="row"
+         layout-align="end end"
+         layout-margin class="bottomRow">
+        <div class="dialogButtons"
+             layout="row"
+             layout-align="end end">
+            <div layout-margin>
+                <md-button ng-click="cancelClicked()"
+                           class="md-raised">Annulla</md-button>
+            </div>
+            <div layout-margin>
+                <md-button ng-click="saveClicked()"
+                           class="md-raised md-primary">Conferma</md-button>
+            </div>
+        </div>
+    </div>
+</div>

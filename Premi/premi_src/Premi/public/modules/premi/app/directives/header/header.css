@@ -1,0 +1,56 @@
+#header .projectName input[type="text"] {
+    color: #fff;
+}
+
+#headerSidenav{
+    z-index: 110;
+    position: fixed;
+    top:64px;
+    left:0;
+    height: 100%;
+    width: 320px;
+    background-color: white;
+}
+
+#header .navigationTabContainer{
+    height: 100%;
+}
+
+#header .navigationTab {
+    display: block;
+    width: 5em;
+    position: relative;
+}
+
+#header .navigationTab span{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#header .tabActive {
+    border-bottom: 2px solid #FFFFFF;
+}
+#header .tabActive span {
+    bottom:18px;
+}
+
+
+button.exit {
+    display: block;
+}
+
+button.exit > * {
+    display: inline-block;
+}
+
+@media print {
+    #header {
+        display: none;
+    }
+    #headerSidenav{
+        display: none;
+    }
+}

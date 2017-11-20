@@ -1,0 +1,38 @@
+<ul class="genericList"
+         layout="column"
+         layout-align="center"
+         layout-padding style="width:100%;">
+    <li ng-repeat="project in projects"
+        layout="row"
+        layout-align="space-between center"
+        layout-margin>
+        <span layout-margin>{{project.name}}</span>
+
+
+        <div layout-margin
+             layout="row"
+             layout-align="space-between center">
+            <span class="md-mini btn-edit"
+                       aria-label="EditMode"
+                       ng-click="onEdit({projectId:project._id})">
+                <md-icon md-svg-icon="assets/img/edit_mode.svg"
+                         class="overIcon iconButton"></md-icon>
+            </span>
+            <span class="md-mini btn-play"
+                       aria-label="avvia presentazione"
+                       ng-click="showPaths(project._id, project.paths)">
+                <md-icon md-svg-icon="assets/img/play_arrow.svg"
+                         class="overIcon iconButton"></md-icon>
+            </span>
+            <span class="md-min hideMobile"
+                       aria-label="cancella progetto"
+                       ng-click="deleteWithConfirm($event,project._id)">
+                <md-icon md-svg-icon="assets/img/delete.svg"
+                         class="overIcon iconButton"></md-icon>
+            </span>
+        </div>
+    </li>
+    <li ng-if="projects.length === 0" style="text-align: center; border: none;">
+        <span>Non è ancora stato creato un progetto</span>
+    </li>
+</ul>

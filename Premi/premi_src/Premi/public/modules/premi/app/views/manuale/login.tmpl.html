@@ -1,0 +1,76 @@
+<md-dialog aria-label="Autenticazione">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2></h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="hide()">
+                <md-icon
+                        md-svg-src="assets/img/close.svg" 
+                        aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content style="overflow: auto; padding: 1em;">
+        <div>
+            <!-- sezione manuale utente accesso -->
+            <div class="section" id="acces">
+                <h2>Autenticazione</h2>
+                <p>
+                     L'autenticazione permette all'utente di accedere 
+                    all'applicazione <strong><cite>Premi</cite></strong> e di 
+                    usufruire delle sue funzionalità.<br/> Per poter eseguire 
+                    la procedura di autenticazione l'utente deve aver già 
+                    effettuato la registrazione al sistema.<br/>
+                Per autenticarsi l'utente deve:
+                    <ol>
+                        <li>Inserire l'indirizzo e-mail utilizzato in fase di 
+                            registrazione;</li>
+                        <li>Inserire la password utilizzata in fase di 
+                            registrazione;</li>
+                        <li>Premere il pulsante <strong><cite>Accedi</cite>
+                        </strong> per confermare i dati ed accedere al 
+                            sistema.</li>
+                    </ol>
+                </p>
+                <img class="imgLarga" 
+                     src="app/views/manuale/img/imgAccesso.png" 
+                     alt="imgAccesso" width="486" height="375"/>
+                <p>
+                    Se i dati inseriti non sono corretti o se i campi 
+                    obbligatori non sono stati compilati verrà visualizzato 
+                    un messaggio d'errore.
+                </p>
+                <h2>Uscita</h2>
+                <p>
+                    L'utente può deautenticarsi dal sistema in ogni momento 
+                    eseguendo la procedura di <cite>Logout</cite>.<br/>Per 
+                    effettuare questa procedura l'utente deve trovarsi nella
+                    <cite>Dashboard</cite> e premere il pulsante <strong>
+                    <cite>Esci</cite></strong> presente nella barra di
+                    intestazione dell'applicazione .<br/>
+                    Una volta effettuata la deautenticazione l'utente verrà
+                    reindirizzato alla pagina d'accesso dell'applicazione.
+                </p>
+                <img class="imgLarga" src="app/views/manuale/img/imgEsci.png"
+                     alt="imgEsci" width="1276" height="122">
+                <p>
+                    L'utente può accedere alla <cite>Dashboard</cite> sia dalle
+                    pagine dedicate alla modifica del <cite>progetto</cite>,
+                    sia dalla pagina di presentazione tramite il pulsante
+                    <strong><cite>Chiudi progetto</cite></strong> presente
+                    all'interno del menu della pagina.
+                </p>
+            </div>
+            <!-- fine sezione -->
+        </div>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button href="/statics/userManual" target="_blank">
+            Manuale completo
+        </md-button>
+        <span flex></span>
+        <md-button ng-click="hide()" class="md-primary">
+            Chiudi
+        </md-button>
+    </div>
+</md-dialog>

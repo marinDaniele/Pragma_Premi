@@ -1,0 +1,64 @@
+<div id="projectSettingsEditor" aria-label="Project settings" layout="column">
+    <md-toolbar class="md-accent">
+        <div class="md-toolbar-tools">
+            <h2 class="md-flex">Impostazioni del progetto</h2>
+        </div>
+    </md-toolbar>
+    <div layout-padding style="height: calc(100% - 64px); overflow: auto;">
+        <div layout="row">
+            <md-input-container class="projectName">
+                <label>Nome progetto</label>
+                <input type="text" ng-model="project.name">
+            </md-input-container>
+        </div>
+        <div layout="row" layout-aling="center center">
+            <p flex>Colore del testo</p>
+            <md-select flex placeholder="Colore testo"
+                       ng-model="project.textColor"
+                       ng-change="selectChanged()">
+                <md-option ng-repeat="color in colors"
+                           value="{{color}}">{{color}}</md-option>
+            </md-select>
+        </div>
+        <div layout="row">
+            <p flex>Coloro di sfondo</p>
+            <md-select flex
+                       placeholder="Colore sfondo"
+                       ng-model="project.backgroundColor"
+                       ng-change="selectChanged()">
+                <md-option ng-repeat="color in colors"
+                           value="{{color}}">{{color}}</md-option>
+            </md-select>
+        </div>
+        <div layout="row">
+            <p flex>Font family</p>
+            <md-select flex
+                       placeholder="Tipo testo"
+                       ng-model="project.fontFamily"
+                       ng-change="selectChanged()">
+                <md-option ng-repeat="font in fontFamilies"
+                           value="{{font}}">{{font}}</md-option>
+            </md-select>
+        </div>
+        <div layout="row" layout-aling="center center"
+             style="margin-top:2em;">
+            <div flex></div>
+            <md-whiteframe ng-class="stylePreview"
+                           class="md-whiteframe-z1"
+                           flex="33"
+                           style="text-align: center;">
+                <p>Anteprima</p>
+            </md-whiteframe>
+            <div flex></div>
+        </div>
+        <div class="md-actions" layout="row">
+            <span flex></span>
+            <md-button ng-click="cancel()" class="md-primary">
+                Annulla
+            </md-button>
+            <md-button ng-click="confirm()" class="md-primary">
+                Conferma
+            </md-button>
+        </div>
+    </div>
+</div>

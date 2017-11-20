@@ -1,0 +1,36 @@
+<aside id="smartMenu" layout="row" class="md-whiteframe-z2">
+
+    <div class="menuContent" ng-class="{isOpen: isOpen, isClosed:!isOpen}">
+        <md-toolbar class="md-accent">
+            <h1 class="md-toolbar-tools" ng-show="isOpen">Menù intelligente</h1>
+        </md-toolbar>
+        <md-content>
+            <md-list layout="column"
+                     layout-align="center center">
+            <md-subheader class="md-no-sticky">Nodi associati</md-subheader>
+            <md-list-item class="md-1-line"
+                          ng-show="relations.length > 0"
+                          ng-repeat="relation in relations">
+                <div class="md-list-item-text">
+                    <md-button ng-click="onClick({nodeId:relation.getId()})"
+                               style="width:100%; text-align: left;">
+                        {{relation.getTitle()}}
+                    </md-button>
+                </div>
+            </md-list-item>
+                </md-list>
+            <p ng-hide="relations.length > 0"
+               style="text-align: center">Nessun nodo associato</p>
+        </md-content>
+    </div>
+
+    <div class="tongue">
+        <md-button class="md-fab smartMenuButton"
+                   aria-label="smart menu tongue"
+                   ng-click="toggle()">
+            <span layout-padding></span>
+            <md-icon md-svg-icon="assets/img/idea.svg" class="whiteIcon">
+            </md-icon>
+        </md-button>
+    </div>
+</aside>

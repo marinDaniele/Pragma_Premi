@@ -1,0 +1,145 @@
+<md-dialog aria-label="Presentazione">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Presentazione</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="hide()">
+                <md-icon
+                        md-svg-src="assets/img/close.svg" 
+                        aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content style="overflow: auto; padding: 1em;">
+        <div>
+            <div class="section" id="pres">
+                <h1>Presentazione</h1>
+                <img  class="imgLarga" 
+                      src="app/views/manuale/img/presentazione.png" 
+                      alt="presentazione" width="1278" height="640">
+                <p>
+                    Questa pagina è dedicata all'esecuzione di presentazioni, 
+                    cioè la visualizzazione ordinata di una sequenza di 
+                    <cite>frame</cite>.<br/>
+                    L'utente può accedere a questa pagina dopo aver selezionato 
+                    un <cite>progetto</cite>, scelto un <cite>percorso di 
+                    presentazione</cite> personalizzato e aver selezionato 
+                    l'avvio della presentazione. <br/>
+                    La presentazione viene generata utilizzando i 
+                    <cite>frame</cite> presenti all'interno dei nodi della 
+                    mappa mentale, i quali verranno visualizzati secondo 
+                    l'ordine stabilito dal <cite>percorso</cite> di 
+                    presentazione.
+                </p>
+                <h2>Pannello di navigazione</h2>
+                <p>
+                    Gli strumenti principali che permette all'utente di 
+                    spostarsi all'interno della presentazione sono 
+                    <strong>freccia a destra</strong> 
+                    <img src="app/views/manuale/img/frecciaDestra.png" 
+                         alt="frecciaDestra" width="44" height="38"> e 
+                    <strong>freccia a sinistra</strong> 
+                    <img src="app/views/manuale/img/frecciaSinistra.png" 
+                         alt="frecciaSinistra" width="44" height="38"> 
+                    che si trova in alto a destra nella vista di presentazione 
+                    e i due menù laterali.
+                </p>
+                <img class="imgLunga" 
+                     src="app/views/manuale/img/imgFrecciePres.png" 
+                     alt="imgFrecciePres" width="1082" height="144">
+                <h2>Menu laterali</h2>
+                <p>
+                    I due menu permettono all'utente di effettuare dei 
+                    <cite>salti</cite> dal <cite>frame</cite> corrente ad un
+                    <cite>frame</cite> ad esso correlato tramite relazione 
+                    gerarchica o associazione logica.<br/>
+                    Quando l'utente sta visualizzando un <cite>frame</cite> 
+                    può passare alla visualizzazione di un altro 
+                    <cite>frame</cite>, anche non appartenente al 
+                    <cite>percorso</cite> di presentazione, purché il nodo che 
+                    lo contiene abbia un qualche tipo di relazione con quello 
+                    corrente.
+                    Una volta effettuato questo salto la presentazione passa in 
+                    modalità "<cite>non lineare</cite>", impedendo all'utente 
+                    di cambiare <cite>frame</cite> utilizzando le frecce.<br/>
+                    Per riprendere la presentazione lineare e ritornare 
+                    all'ultimo <cite>frame</cite> del <cite>percorso</cite>
+                    visualizzato è necessario premere l'apposito pulsante
+                    <img src="app/views/manuale/img/frecciaRicurva.png"
+                         alt="frecciaRicurva" width="31" height="28"> presente
+                    nel <strong><cite>Pannello di navigazione</cite></strong>.
+                </p>
+                <h3>Menu delle associazioni logiche</h3>
+                <img class="imgCenter imgPiccola"
+                     src="app/views/manuale/img/menuLogico.png"
+                     alt="menuLogico" width="291" height="238">
+                <p>
+                    Questo menu contiene una lista dei nodi della
+                    mappa mentale, collegati al nodo contenente il
+                    <cite>frame</cite> corrente, tramite un'associazione
+                    logica.<br/>
+                    L'utente può accedere a questo menù premendo l'etichetta
+                    a sinistra rappresentante una lampadina
+                    <img src="app/views/manuale/img/lampadina.png"
+                         alt="lampadina" width="33" height="56">.<br/>
+                    Selezionando uno dei nodi presenti all'interno di questo
+                    menu si andrà a visualizzare il <cite>frame</cite> che
+                    contenuto in quel nodo, anche se il nodo non fa parte del
+                    <cite>percorso</cite> di presentazione.
+                </p>
+                <h3>Menu delle relazioni gerarchiche</h3>
+                <img class="imgCenter imgPiccola"
+                     src="app/views/manuale/img/menuGerarchico.png"
+                     alt="menuGerarchico" width="290" height="300">
+                <p>
+                    Questo menu contiene una lista dei nodi della mappa mentale,
+                    collegati al nodo contenente il <cite>frame</cite> corrente
+                    tramite una relazione gerarchica.<br/>
+                    L'utente può accedere a questo menù premendo l'etichetta a
+                    destra rappresentante un grafo
+                    <img src="app/views/manuale/img/grafo.png"
+                         alt="grafo" width="33" height="55"> .<br/>
+                    Selezionando uno dei nodi presenti all'interno di questo
+                    menu si andrà a visualizzare il <cite>frame</cite> che
+                    rappresenta quel nodo, anche se il nodo non fa parte del
+                    <cite>percorso</cite> di presentazione.
+                </p>
+            </div>
+            <div class="section" id="stampa">
+                <h1>Stampa di un progetto</h1>
+                <p>
+                    L'applicazione <strong><cite>Premi</cite></strong> offre
+                    la possibilità di effettuare la stampa in formato
+                    <cite>PDF</cite>, su stampante e su iCloud (funzionalità
+                    disponibile solo per i dispositivi Apple), sia della
+                    <cite>mappa mentale</cite> che della presentazione.<br/>
+                    In seguito verranno descritti i procedimenti che consentono
+                    di eseguire le varie stampe.
+                </p>
+                <h2 id="stampaPresentazione">Stampa di una presentazione</h2>
+                <p>
+                    Per poter effettuare la stampa della presentazione,
+                    l'utente deve trovarsi nella pagina di
+                    <cite>presentazione</cite>.<br/>
+                    Dovrà poi aprire il <cite>menù</cite> tramite il pulsante
+                    <img src="app/views/manuale/img/buttonMenu.png"
+                         alt="buttonMenu" width="30" height="26"> e
+                    selezionare la voce <strong>Stampa</strong>.<br/>
+                    In seguito verrà visualizzata la finestra di stampa del
+                    <cite>browser</cite> dalla quale sarà possibile selezionare
+                    le impostazioni di stampa, specificando se stampare come
+                    <cite>PDF</cite> oppure stampare con una stampante.
+                </p>
+            </div>
+        </div>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button href="/statics/userManual" target="_blank">
+            Manuale completo
+        </md-button>
+        <span flex></span>
+        <md-button ng-click="hide()" class="md-primary">
+            Chiudi
+        </md-button>
+    </div>
+</md-dialog>

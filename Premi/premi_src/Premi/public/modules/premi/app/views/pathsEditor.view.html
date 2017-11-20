@@ -1,0 +1,30 @@
+<div id="editor"
+     layout="row"
+     layout-align="start start"
+     layout-fill
+     style="height: 100%; overflow: hidden;"
+     class="defaultBkg">
+    <aside id="pathsEditor"
+           class="md-whiteframe-z2"
+           layout="row">
+            <!-- ng-if al posto di ng-show/hide per evitare problemi di
+            sincronizzazione tra la lista dei path
+            e la modifica del nome di un determinato path-->
+            <premi-paths-list ng-if="!pathSelected"
+                              paths="pathNames"
+                              select-path="selectPath(path)"
+                              style="height:100%; width: 100%">
+            </premi-paths-list>
+
+            <premi-path ng-if="pathSelected"
+                        selected-path="currentPath"
+                        deselect-path="deselectPath()"
+                        style="height:100%; width: 100%">
+            </premi-path>
+    </aside>
+
+    <!-- cytoscape hook -->
+    <div class="cytoscapeContainer">
+        <premi-mindmap></premi-mindmap>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div id="pathEdit" class="md-whiteframe-z2">
+    <md-toolbar class="md-accent"
+                layout="row"
+                layout-align="center"
+                style="display: block; position: relative;">
+        <md-button class="md-icon-button"
+                   aria-label="torna indietro"
+                   ng-click="deselectPath()" layout="column">
+            <md-icon md-svg-icon="assets/img/arrow_back.svg"></md-icon>
+        </md-button>
+        <md-input-container style="display: block;">
+            <label style="display: none;">Name</label>
+            <input name="pathName"
+                   ng-model="pathName"
+                   md-maxlength="30" />
+        </md-input-container>
+        <div>
+            <md-button ng-click="saveChanges()"
+                       layout="row"
+                       layout-align="center center"
+                       style="margin-left: auto;
+                              margin-right: 0;
+                              font-size: initial;
+                              color: #000000;">
+                <md-icon layout="column"
+                         md-svg-src="assets/img/save.svg"
+                         style="color: #000000;"></md-icon>
+                Salva
+            </md-button>
+        </div>
+    </md-toolbar>
+    <div layout="column"
+         layout-align="center"
+         style="height: calc(100% - 96px);
+                width: 100%;
+                overflow: auto;
+                display: block;
+                padding-top: 1em;">
+        <span ng-if="selectedPath.getSteps().length === 0"
+              style="padding: 1em;
+                     text-align: justify;
+                     top: 1em;
+                     display: block;
+                     border: none;">
+            Nessun nodo presente nel percorso di presentazione
+        </span>
+        <ul class="genericList">
+            <li ng-repeat="pathStep in selectedPath.getSteps()"
+                layout="row"
+                layout-align="space-between center"
+                style="padding: 4px;">
+                    {{ pathStep.getTitle() }}
+                 <span ng-hide="path.default"
+                       class="md-mini md-warn"
+                       aria-label="elimina percorso"
+                       ng-click="removeNode(pathStep.getId())">
+                     <md-icon md-svg-src="assets/img/delete.svg"
+                              class="overIcon"></md-icon>
+                 </span>
+            </li>
+
+        </ul>
+    </div>
+</div>

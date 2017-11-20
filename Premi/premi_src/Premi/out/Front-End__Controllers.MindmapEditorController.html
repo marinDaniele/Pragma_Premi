@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: MindmapEditorController</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: MindmapEditorController</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="Front-End__Controllers.html">Front-End::Controllers</a>.</span>
+        
+        MindmapEditorController
+        </h2>
+        
+            <div class="class-description">Classe che gestisce le operazioni e la logica applicativa
+riguardante la modifica di una mappa.</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+
+
+<h4 class="name" id="MindmapEditorController"><span class="type-signature"></span>MindmapEditorController<span class="signature">()</span><span class="type-signature"></span></h4>
+
+<div class="description">
+    Data: 2015-05-16 Requisiti: RFO4.2, RFO4.2.1, RFO5, RFD22
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+
+
+<h4 class="name" id="addAssociationClicked"><span class="type-signature"></span>addAssociationClicked<span class="signature">(destId)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di creazione di un'associazione
+tra due nodi. Per creare l'associazione è necessario utilizzare
+<tt>AssociationService</tt>, l'informazione riguardante l'origine è
+disponibile nell'oggetto <tt>$scope.currentNode</tt>.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>destId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente l'id del nodo
+destinazione dell'associazione.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="addNodeClicked"><span class="type-signature"></span>addNodeClicked<span class="signature">(parentId)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di aggiunta di un nuovo nodo alla
+mappa mentale. Utilizza <tt>MindmapService</tt> per aggiungere un
+nodo vuoto alla mappa mentale, come figlio del nodo passato per
+parametro.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>parentId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente l'id del nodo al
+quale bisogna aggiungere un nuovo figlio.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line162">line 162</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="confirmNodeEditClicked"><span class="type-signature"></span>confirmNodeEditClicked<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di conferma della modifica di un
+nodo. Rende permanenti le modifiche subite dall'oggetto nodo
+presente
+nello <tt>$scope</tt>. Utilizza <tt>MindmpaService</tt>.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line233">line 233</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="deleteNodeClicked"><span class="type-signature"></span>deleteNodeClicked<span class="signature">(nodeId)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di cancellazione di un nodo.
+Utilizza <tt>MindmapService</tt> per cancellare il nodo dalla mappa
+mentale.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nodeId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente l'id del nodo da
+cancellare.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line181">line 181</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="deleteRelationClicked"><span class="type-signature"></span>deleteRelationClicked<span class="signature">(associationId)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di cancellazione di
+un'associazione. Utilizza <tt>MindmapService</tt> per cancellare
+l'associazione dato l'id.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>associationId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente l'id
+dell'associazione da cancellare.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line102">line 102</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="destructor"><span class="type-signature"></span>destructor<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento <tt>destroy</tt> del controller,
+viene utilizzato per interrompere l'ascolto degli eventi di
+<tt>MindmapService</tt>.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line266">line 266</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="editNodeClicked"><span class="type-signature"></span>editNodeClicked<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento <tt>click</tt> sul pulsante che
+permette di modificare il contenuto del nodo presente nel campo dati
+<tt>currentNode</tt>.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line201">line 201</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="nodeDeselected"><span class="type-signature"></span>nodeDeselected<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che deseleziona il nodo corrente.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line152">line 152</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="nodeSelected"><span class="type-signature"></span>nodeSelected<span class="signature">(nodeId, e)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di selezione di un nodo, viene
+invocato come gestore dell'evento sollevato da
+<tt>MindmapService</tt>. Si occupa di aggiornare lo <tt>$scope</tt>
+con i dati del nodo selezionato dall'utente e di visualizzare il menù
+contestuale in modo da permettere all'utente di modificare il nodo.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nodeId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente l'id del nodo
+selezionato dall'utente.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MouseEvent</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente i dati dell'evento
+click sollevato dal browser.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line121">line 121</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="relationSelected"><span class="type-signature"></span>relationSelected<span class="signature">(edgeId, e)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di selezione di una relazione,
+viene invocato come gestore dell'evento sollevato da
+<tt>MindmapService</tt>. Si occupa di aggiornare i dati del menù di
+modifica di una relazione e di visualizzare il menù contestuale per
+la modifica di un'associazione.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>edgeId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente l'<tt>id</tt>
+dell'associazione selezionata dall'utente.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MouseEvent</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente i dati dell'evento click
+sollevato dal browser.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line33">line 33</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="resetNodeEdit"><span class="type-signature"></span>resetNodeEdit<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che gestisce l'evento di reset dei campi di modifica di
+un nodo. Ripristina il <tt>currentNode</tt> presente nello
+<tt>$scope</tt> utilizzando i dati recuperati da
+<tt>MindMapService</tt>.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line249">line 249</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="showContextMenu"><span class="type-signature"></span>showContextMenu<span class="signature">(id, functions)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che visualizza il menù contestuale.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro che rappresenta l'<tt>id</tt>
+dell'oggetto sul quale viene visualizzato il menù.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>functions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro che contiene un <tt>Array</tt>
+di oggetti rappresentanti le voci del menù. Ogni oggetto ha due campi
+dati: <tt>name</tt> e <tt>callback</tt>, il primo campo dati
+specifica il testo associato alla voce del menù e il secondo
+rappresenta la funzione da chiamare quando l'utente seleziona la
+voce.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line281">line 281</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+
+
+<h4 class="name" id="startAddAssociation"><span class="type-signature"></span>startAddAssociation<span class="signature">(sourceId)</span><span class="type-signature"> &rarr; {void}</span></h4>
+
+<div class="description">
+    Metodo che viene invocato quando l'utente seleziona la voce del
+menù che permette di aggiungere un'associazione uscente dal nodo
+selezionato.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>sourceId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Parametro contenente l'id del nodo
+sorgente della descrizione.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html">public/modules/premi/app/controllers/mindmapEditor.controller.js</a>, <a href="public_modules_premi_app_controllers_mindmapEditor.controller.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Back-End__App__Controllers.ErrorHandler.html">ErrorHandler</a></li><li><a href="Back-End__App__Controllers.NotFoundHandler.html">NotFoundHandler</a></li><li><a href="Back-End__App__Controllers.ProjectController.html">ProjectController</a></li><li><a href="Back-End__App__Controllers.StaticController.html">StaticController</a></li><li><a href="Back-End__App__Controllers.UserController.html">UserController</a></li><li><a href="Back-End__App__Controllers__Errors.PremiError.html">PremiError</a></li><li><a href="Back-End__App__Controllers__Projects.NodeController.html">NodeController</a></li><li><a href="Back-End__App__Controllers__Projects.PathController.html">PathController</a></li><li><a href="Back-End__App__Controllers__Projects.ProjectManagementController.html">ProjectManagementController</a></li><li><a href="Back-End__App__Controllers__Users.AuthenticationController.html">AuthenticationController</a></li><li><a href="Back-End__App__Controllers__Users.AuthorizationController.html">AuthorizationController</a></li><li><a href="Back-End__App__Models.NodeContentModel.html">NodeContentModel</a></li><li><a href="Back-End__App__Models.NodeModel.html">NodeModel</a></li><li><a href="Back-End__App__Models.PathModel.html">PathModel</a></li><li><a href="Back-End__App__Models.ProjectModel.html">ProjectModel</a></li><li><a href="Back-End__App__Models.RelationModel.html">RelationModel</a></li><li><a href="Back-End__App__Models.UserModel.html">UserModel</a></li><li><a href="Back-End__App__Routers.ProjectRouter.html">ProjectRouter</a></li><li><a href="Back-End__App__Routers.StaticRouter.html">StaticRouter</a></li><li><a href="Back-End__App__Routers.UserRouter.html">UserRouter</a></li><li><a href="Fron-End__Controllers.NodeContentsEditorController.html">NodeContentsEditorController</a></li><li><a href="Front-End__Controllers.AddToPathController.html">AddToPathController</a></li><li><a href="Front-End__Controllers.ContextMenuController.html">ContextMenuController</a></li><li><a href="Front-End__Controllers.DashboardController.html">DashboardController</a></li><li><a href="Front-End__Controllers.EditableNodeContentController.html">EditableNodeContentController</a></li><li><a href="Front-End__Controllers.ErrorMessageController.html">ErrorMessageController</a></li><li><a href="Front-End__Controllers.HeaderController.html">HeaderController</a></li><li><a href="Front-End__Controllers.HierarchicalMenuController.html">HierarchicalMenuController</a></li><li><a href="Front-End__Controllers.LoginController.html">LoginController</a></li><li><a href="Front-End__Controllers.MindmapEditorController.html">MindmapEditorController</a></li><li><a href="Front-End__Controllers.NodeController.html">NodeController</a></li><li><a href="Front-End__Controllers.PathController.html">PathController</a></li><li><a href="Front-End__Controllers.PathsEditorController.html">PathsEditorController</a></li><li><a href="Front-End__Controllers.PathsListController.html">PathsListController</a></li><li><a href="Front-End__Controllers.PresentationController.html">PresentationController</a></li><li><a href="Front-End__Controllers.PresentationViewController.html">PresentationViewController</a></li><li><a href="Front-End__Controllers.ProjectSettingsController.html">ProjectSettingsController</a></li><li><a href="Front-End__Controllers.ProjectsListController.html">ProjectsListController</a></li><li><a href="Front-End__Controllers.RegistrationController.html">RegistrationController</a></li><li><a href="Front-End__Directives.premiAddToPath.html">premiAddToPath</a></li><li><a href="Front-End__Directives.premiAssociationAdder.html">premiAssociationAdder</a></li><li><a href="Front-End__Directives.premiContextMenu.html">premiContextMenu</a></li><li><a href="Front-End__Directives.premiEditableNodeContent.html">premiEditableNodeContent</a></li><li><a href="Front-End__Directives.premiErrorMessage.html">premiErrorMessage</a></li><li><a href="Front-End__Directives.premiHeader.html">premiHeader</a></li><li><a href="Front-End__Directives.premiHierarchicalMenu.html">premiHierarchicalMenu</a></li><li><a href="Front-End__Directives.premiMindmap.html">premiMindmap</a></li><li><a href="Front-End__Directives.premiNode.html">premiNode</a></li><li><a href="Front-End__Directives.premiNodeContent.html">premiNodeContent</a></li><li><a href="Front-End__Directives.premiNodeContentsEditor.html">premiNodeContentsEditor</a></li><li><a href="Front-End__Directives.premiPath.html">premiPath</a></li><li><a href="Front-End__Directives.premiPathsList.html">premiPathsList</a></li><li><a href="Front-End__Directives.premiPresentation.html">premiPresentation</a></li><li><a href="Front-End__Directives.premiProjectList.html">premiProjectList</a></li><li><a href="Front-End__Directives.premiProjectSettingsEditor.html">premiProjectSettingsEditor</a></li><li><a href="Front-End__Directives.premiSmartMenu.html">premiSmartMenu</a></li><li><a href="Front-End__Model.ErrorInfo.html">ErrorInfo</a></li><li><a href="Front-End__Model.Node.html">Node</a></li><li><a href="Front-End__Model.NodeContent.html">NodeContent</a></li><li><a href="Front-End__Model.NodeReference.html">NodeReference</a></li><li><a href="Front-End__Model.Path.html">Path</a></li><li><a href="Front-End__Model.PresentationNode.html">PresentationNode</a></li><li><a href="Front-End__Model.Project.html">Project</a></li><li><a href="Front-End__Services.AuthenticationService.html">AuthenticationService</a></li><li><a href="Front-End__Services.MindmapAdapterService.html">MindmapAdapterService</a></li><li><a href="Front-End__Services.MindmapService.html">MindmapService</a></li><li><a href="Front-End__Services.PathService.html">PathService</a></li><li><a href="Front-End__Services.PresentationService.html">PresentationService</a></li><li><a href="Front-End__Services.ProjectService.html">ProjectService</a></li><li><a href="Premi.Front-End.Controllers.AssociationAdderController.html">AssociationAdderController</a></li><li><a href="Premi.Front-End.Controllers.SmartMenuController.html">SmartMenuController</a></li></ul><h3>Namespaces</h3><ul><li><a href="Back-End__App__Controllers.html">Back-End::App::Controllers</a></li><li><a href="Back-End__App__Controllers__Errors.html">Back-End::App::Controllers::Errors</a></li><li><a href="Back-End__App__Controllers__Projects.html">Back-End::App::Controllers::Projects</a></li><li><a href="Back-End__App__Controllers__Users.html">Back-End::App::Controllers::Users</a></li><li><a href="Back-End__App__Models.html">Back-End::App::Models</a></li><li><a href="Front-End__Controllers.html">Front-End::Controllers</a></li><li><a href="Front-End__Directives.html">Front-End::Directives</a></li><li><a href="Front-End__Model.html">Front-End::Model</a></li><li><a href="Front-End__Services.html">Front-End::Services</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0</a> on Thu Jun 11 2015 21:49:17 GMT+0200 (CEST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

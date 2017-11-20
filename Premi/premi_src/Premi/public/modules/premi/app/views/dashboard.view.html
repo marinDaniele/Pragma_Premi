@@ -1,0 +1,38 @@
+<div id="dashboard"
+     layout="column"
+     layout-align="center center"
+     layout-fill
+     class="defaultBkg">
+    <div class="md-whiteframe-z1 projectsContainer"
+         layout="column" >
+        <md-toolbar class="md-accent"
+                    style="display: block; position: relative;">
+            <h1 class="md-toolbar-tools">I miei progetti</h1>
+            <div style="position: absolute; bottom:-1em; left:1em;">
+                <md-button class="md-raised md-fab hideMobile"
+                           ng-click="newProjectClicked()"
+                           layout="row"
+                           layout-align="center center"
+                           style="width: 2em;
+                                  height: 2em;
+                                  background-color: #FF5722;"
+                           id="btn-nuovo-progetto"
+                           aria-label="crea nuovo progetto">
+                    <md-icon layout="column"
+                             md-svg-src="assets/img/add.svg"
+                             style="color: #FFFFFF;"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <div style="overflow: auto; height: -webkit-calc(100% - 64px);
+                    height:calc(100% - 64px);
+                    padding-top:1em;">
+            <premi-projects-list projects="projects"
+                                on-edit="editProjectClicked(projectId)"
+                                on-delete="deleteProjectClicked(projectId)"
+                                on-play="
+                                startPresentationClicked(pathId,projectId)">
+            </premi-projects-list>
+        </div>
+    </div>
+</div>

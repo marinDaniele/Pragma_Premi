@@ -1,0 +1,120 @@
+<div id="presentationViewer"
+     layout="column"
+     layout-fill class="defaultBkg">
+    <!-- header -->
+    <md-toolbar style="z-index: 50;"
+                layout="row"
+                ng-hide="fullscreen">
+        <div class="presentation md-toolbar-tools"
+             layout="row"
+             flex>
+
+            <md-button aria-label="Mostra il menu" ng-click="toggleSidenav()">
+                <md-icon md-svg-icon="assets/img/burger.svg"></md-icon>
+            </md-button>
+            <h2 style="margin-left: .5em;">
+                <span>{{currentPath.getName()}}</span></h2>
+            <span flex></span>
+
+            <!-- Ripristina presentazione lineare-->
+            <md-button aria-label="riprendi la presentazione"
+                       ng-click="resumePresentation()"
+                       ng-hide="linearPresentation">
+                <md-icon md-svg-icon="assets/img/replay.svg"></md-icon>
+            </md-button>
+
+            <!-- Controlli per la presentazione-->
+            <span ng-show="linearPresentation">
+                <!-- freccia indietro -->
+                <md-button aria-label="torna indietro di una slide"
+                           ng-click="previousStep()"
+                           ng-disabled="currentIndex === 0">
+                    <md-icon md-svg-icon="assets/img/arrow_back.svg"></md-icon>
+                </md-button>
+                <span>
+                    {{(currentIndex+1) + ' / ' + presentationLength}}
+                </span>
+                <!-- freccia avanti -->
+                <md-button aria-label="avanza di una slide"
+                           ng-click="nextStep()"
+                           ng-disabled="currentIndex === presentationLength -1">
+                    <md-icon md-svg-icon="assets/img/arrow_forward.svg">
+                    </md-icon>
+            </md-button>
+            </span>
+        </div>
+    </md-toolbar>
+    <div id="presentationSidenav"
+         ng-class="{'sidenavOpened':sidenavOpen, 'sidenavClosed': !sidenavOpen}"
+         class="md-whiteframe-z2"
+         ng-mouseleave="sidenavOpen = false;">
+        <ul ng-show="sidenavOpen" class="sidenavButtonList">
+            <li>
+                <md-button class="sidenavButtonListButton"
+                           aria-label="attiva disattiva schermo intero"
+                           ng-click="setFullscreen(true)">
+                    <md-icon md-svg-icon="assets/img/fullscreen_on.svg">
+                    </md-icon>
+                    Fullscreen
+                </md-button>
+            </li>
+            <li>
+                <md-button class="sidenavButtonListButton"
+                           ng-click="printPresentation()"
+                           aria-label="stampa">
+                    <md-icon md-svg-icon="assets/img/print.svg"></md-icon>
+                    Stampa
+                </md-button>
+            </li>
+            <li>
+                <md-button class="sidenavButtonListButton"
+                           ng-click="showManual($event)"
+                           aria-label="manuale utente">
+                    <md-icon md-svg-icon="assets/img/help.svg"></md-icon>
+                    Manuale utente
+                </md-button>
+            </li>
+            <li class="hideMobile">
+                <md-button class="sidenavButtonListButton"
+                           aria-label="chiudi presentazione"
+                           ng-click="quitPresentation()">
+                    <md-icon md-svg-icon="assets/img/return.svg"></md-icon>
+                    Termina presentazione
+                </md-button>
+            </li>
+            <li>
+                <md-button class="sidenavButtonListButton"
+                           aria-label="torna alla dashboard"
+                           ng-click="quitToDashboard()">
+                    <md-icon md-svg-icon="assets/img/close.svg"></md-icon>
+                    Chiudi progetto
+                </md-button>
+            </li>
+        </ul>
+    </div>
+    <!-- Blocco con la presentazione -->
+    <div class="presentationContainer" ng-class="{fullscreen: fullscreen}">
+        <premi-presentation nodes="nodes"
+                            nodes-index="nodesIndex"
+                            path="currentPath"></premi-presentation>
+    </div>
+    <!-- blocco con i menù-->
+
+    <premi-smart-menu class="leftMenu"
+                      relations="currentNode.getAssociatedNodes()"
+                      on-click="jumpToNode(nodeId)"></premi-smart-menu>
+
+    <premi-hierarchical-menu class="rightMenu"
+                             parent="currentNode.getParentNode()"
+                             relations="currentNode.getChildNodes()"
+                             on-click="jumpToNode(nodeId)">
+    </premi-hierarchical-menu>
+
+    <div class="exitFullscreenContainer" ng-show="fullscreen">
+        <md-button class="md-fab"
+                   ng-click="setFullscreen(false)"
+                   aria-label="esci dalla modalità a schermo intero">
+            <md-icon md-svg-icon="assets/img/fullscreen_off.svg"></md-icon>
+        </md-button>
+    </div>
+</div>

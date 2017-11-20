@@ -1,0 +1,33 @@
+#hierarchicalMenu .tongue{
+    position: relative;
+}
+
+#hierarchicalMenu .hierarchicalMenuButton{
+    z-index: 0 !important;
+    background-color: #4caf50 !important;
+    position: absolute;
+    top: 2em;
+    right: -1.5em;
+}
+
+#hierarchicalMenu  .menuContent{
+    z-index: 10;
+    width: 250px;
+
+}
+#hierarchicalMenu .isOpen{
+    width: 250px;
+    -webkit-transition: width 300ms; /* Safari 3.1 to 6.0 */
+    transition: width 300ms;
+}
+#hierarchicalMenu .isClosed{
+    width: 0;
+    -webkit-transition: width 300ms; /* Safari 3.1 to 6.0 */
+    transition: width 300ms;
+}
+
+@media print{
+    #hierarchicalMenu {
+        display: none;
+    }
+}

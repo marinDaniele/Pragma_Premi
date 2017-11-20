@@ -1,0 +1,73 @@
+@media screen {
+    .impress{
+    }
+
+    .step {
+        width:64em;
+        height: 48em;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .slide {
+        opacity: 0;
+        /*opacity: 1 /* StarWars*/
+        -webkit-transition: opacity 0s ease;
+    }
+
+    .step.prevStep {
+        opacity: 1;
+        -webkit-transition: opacity 0.3s ease;
+    }
+    .step.nextStep {
+        opacity: 1;
+        -webkit-transition: opacity 0.3s ease;
+    }
+
+    .step.active{
+        opacity: 1;
+    }
+    /*
+    #presentation {
+        position: absolute;
+        overflow: hidden;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #presentation > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: all .6s ease-in-out;
+        -moz-transition: all .6s ease-in-out;
+        -webkit-transition: all .6s ease-in-out;
+    }
+
+    #presentation > div.current {
+        margin-left: 0;
+    }
+
+    #presentation > div.past {
+        margin-left: -100%;
+    }
+
+    #presentation > div.future {
+        margin-left: 100%;
+    }
+
+    #presentation .premi-node {
+        position: absolute;
+        height: 100%;
+    }*/
+}

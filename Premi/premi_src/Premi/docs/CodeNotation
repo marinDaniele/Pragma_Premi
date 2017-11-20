@@ -1,0 +1,29 @@
+Notazione riscontrabile nei commenti del codice:
+
+#DEBUG : indica tutto ciò che è stato definito e utilizzato per fare debugging.
+
+#STUB : indica dei pezzi di codice che fanno da stub e che saranno rimpiazzati dal codice adatto una volta pronto.
+
+#NOTE : indica una annotazione, una cosa da fare che temporaneamente non è stato possibile/non si era in grado di fare
+
+#DEPRECATED : indica codice attualmente deprecato di cui verrà decisa la sorte definitiva entro la giornata stessa o
+ al massimo il giorno successivo.
+
+ORDINE DI DEFINIZIONE DEI METODI NEI MODULI:
+
+per ogni modulo:
+1)metodi del modulo diversi da middleware e #DEBUG
+2)metodi middleware
+3)metodi #DEBUG dove esistono
+
+ORDINE DI DEFINIZIONE DI HTTP VERBS ON ROUTERS:
+
+1)POST
+2)GET
+3)PUT
+4)DELETE
+
+
+DIRETTAMENTE DA NdP:
+• Se si utilizzano funzioni anonime si deve inserire uno spazio tra la keyword function e le parentesi () della lista dei suoi parametri;
+• Il simbolo “{” deve essere allineato verticalmente rispetto al simbolo “}” relativo;

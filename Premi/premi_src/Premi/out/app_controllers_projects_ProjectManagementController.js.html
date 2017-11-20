@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: app/controllers/projects/ProjectManagementController.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: app/controllers/projects/ProjectManagementController.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+/**
+ * @class ProjectManagementController
+ * @author Stefano Munari (stefanomunari.sm@gmail.com)
+ * @description Data: 10/05/2015 - Requisiti: RFO1, RFO1.1, RFO4, RFD4.1, RFO4.2, RFD4.2.3.8, RFD4.2.3.8.1, RFD4.2.3.8.2,
+RFF4.6, RFF4.6.1, RFF4.6.1.1, RFF4.6.1.2, RFF4.6.2, RFO11, RFO11.2, RFD22, RFO10, RFD33, RFO11.3, RFD35
+ * @classdesc Classe che gestisce la logica applicativa riguardante la visualizzazione e la modifica dei progetti.
+ * @memberof Back-End::App::Controllers::Projects
+ */
+/*---PRIVATE---*/
+var _ = require('lodash'),
+    mongoose = require('mongoose'),
+    PremiError = require('../errors/PremiError'),
+    Project = mongoose.model('Project');
+
+function nodeTitle(node)
+{
+    var title = '';
+    node.contents.forEach(
+        function(content)
+        {
+            if(content.class === 'title')
+            {
+                title = content.content;
+                return;
+            }
+        }
+    );
+    return title;
+}
+
+function buildFrame(project, node, frame)
+{
+    var child, parent, title, foundChild;
+    foundChild = false;
+    project.relations.forEach(
+        function(rel)
+        {
+            var nodeId = node.id.toString();
+            var source = rel.source.toString();
+            var dest = rel.destination.toString();
+
+            //se è gerarchica e  nodo è source
+            if(rel.class === 'hierarchical')
+            {
+                if(source === nodeId)
+                {
+                    //estraggo il figlio
+                    child = project.nodes.id(rel.destination);
+                    //prendo il titolo
+                    title = nodeTitle(child);
+                    //inserisco in children
+                    frame.family.children.push(
+                        {
+                            id : child.id,
+                            title : title
+                        }
+                    );
+                }else if(dest === nodeId)
+                {
+                    //estraggo il figlio
+                    parent = project.nodes.id(rel.source);
+                    //prendo il titolo
+                    title = nodeTitle(parent);
+                    //inserisco in children
+                    frame.family.parent =
+                    {
+                        id : parent.id,
+                        title : title
+                    };
+                }
+
+            }else if(rel.class === 'association')
+            {
+                //se nodo e source
+                if(source === nodeId)
+                {
+                    child = project.nodes.id(rel.destination);
+                    foundChild = true;
+                }else if(dest === nodeId) //se nodo è destination if(rel.destination === node.id)
+                {
+                    child = project.nodes.id(rel.source);
+                    foundChild = true;
+                }
+
+                if(foundChild)
+                {
+                    //estraggo il titolo del figlio
+                    title = nodeTitle(child);
+                    //inserisco in associations
+                    frame.associations.push(
+                        {
+                            id : child.id,
+                            title : title
+                        }
+                    );
+                    foundChild = false;
+                }
+
+            }
+        }
+    );
+}
+/*---PUBLIC---*/
+/**
+ * @function addProject
+ * @instance
+ * @description Crea un nuovo progetto associato all’utente autenticato.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste. */
+exports.addProject =
+    function (req, res, next){
+        if(req.body.name)
+            Project.createProject(req.body.name, req.user._id,
+                function(project)
+                {
+                    res.json(project);
+                },
+                function (err)
+                {
+                    next(err);
+                }
+            );
+        else
+        {
+            next(new PremiError(8001));
+        }
+    };
+/**
+ * @function getAllProjects
+ * @instance
+ * @description Restituisce una lista contenente tutti i progetti relativi all’utente autenticato, a cui vengono associati
+i percorsi di presentazione creati.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della
+ normale catena di gestione delle richieste.
+ */
+exports.getAllProjects =
+    function (req, res, next)
+    {
+        Project.aggregate(
+            {
+                $match : {userId : req.user._id}
+            },
+            {
+                $project : { name : 1, 'paths._id' : 1, 'paths.name' : 1}
+            },
+            function (err, result)
+            {
+                if (err)
+                {
+                    next(new PremiError(8000));
+                }
+                else
+                    res.json(result || null);
+            }
+        );
+    };
+/**
+ * @function getProject
+ * @instance
+ * @description Restituisce la mappa mentale comprendente nodi e relazioni.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ */
+exports.getProject =
+    function (req, res, next)
+    {
+        Project.aggregate(
+            {
+                $match : { _id : req.project._id}
+            },
+            {
+                $project : { _id : 0, name : 1, fontFamily : 1, fontColor : 1, bkgColor : 1, relations : 1, nodes : 1,
+                root: 1}
+            },
+            function (err, result)
+            {
+                if(err)
+                {
+                    next(new PremiError(8000));
+                }
+                else
+                    res.json(result[0] || null);
+             }
+        );
+    };
+/**
+ * @function updateProject
+ * @instance
+ * @description Modifica le impostazioni del progetto associato all'utente autenticato.
+ * Modifica il nome del progetto, il colore dello sfondo, il colore del testo e la famiglia di font.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ */
+exports.updateProject =
+    function (req, res, next)
+    {
+        if(req.body.name &amp;&amp; req.body.bkgColor &amp;&amp; req.body.fontColor &amp;&amp; req.body.fontFamily)
+        {
+            req.project.setName(req.body.name,
+                function ()
+                {
+                    req.project.setBkgColor(req.body.bkgColor,
+                        function ()
+                        {
+                            req.project.setFontColor(req.body.fontColor,
+                                function ()
+                                {
+                                    req.project.setFontFamily(req.body.fontFamily,
+                                        function ()
+                                        {
+                                            res.json({status: 'ok'});
+                                        },
+                                        function (err)
+                                        {
+                                            next(err);
+                                        });
+                                },
+                                function (err)
+                                {
+                                    next(err);
+                                });
+                        },
+                        function (err)
+                        {
+                            next(err);
+                        });
+                },
+                function (err)
+                {
+                    next(err);
+                }
+            );
+        }
+        else
+        {
+            next(new PremiError(8001));
+        }
+    };
+/**
+ * @function deleteProject
+ * @instance
+ * @description Richiede al model la rimozione dal database di un progetto associato all’utente autenticato.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della
+ normale catena di gestione delle richieste.
+ */
+exports.deleteProject =
+    function (req,res,next)
+    {
+        req.project.remove(
+            function (err) {
+                if(err)
+                {
+                    next(new PremiError(8002));
+                }
+                else
+                    res.json({ status : 'ok' })
+                }
+            );
+    };
+/**
+ * @function getPresentation
+ * @instance
+ * @description Questo metodo è utilizzato per fornire un oggetto JSON contenente i nodi della mappa mentale e
+ le relazioni per il progetto specificato. Indica inoltre quali nodi sono compresi nel percorso
+ di presentazione indicato.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ */
+//#NOTE MANCA LA GESTIONE DEGLI ERRORI IN CASO QUALCOSA NON ANDASSE A BUON FINE
+exports.getPresentation =
+    function (req,res)
+    {//#NOTE gestire errore
+        var project, presentation, frame;
+        project = req.project;
+        presentation =
+        {
+           frames : []
+        };
+        //per ogni nodo
+        project.nodes.forEach(
+            function (node)
+            {
+                //definisco struttura frame
+                frame =
+                    {
+                        node : node,
+                        family : {children:[], parent:''},
+                        associations : []
+                    };
+                //costruisco il frame
+                buildFrame(project, node, frame);
+                //inserisco il frame nella presentazione
+                presentation.frames.push(frame);
+            }
+        );
+        res.json(presentation);
+    };
+/**
+ * @function getAllPaths
+ * @instance
+ * @description Restituisce i percorsi di presentazione del progetto relativo all’utente della sessione. Altrimenti
+restituisce un messaggio di errore.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della
+ normale catena di gestione delle richieste.
+ */
+exports.getAllPaths =
+    function (req,res,next)
+    {
+        Project.aggregate(
+            {
+                $match : { _id : req.project._id}
+            },
+            {
+                $project : { _id : 0, paths : 1}
+            },
+            function (err, result)
+            {
+                if(err)
+                    next(new PremiError(8000));
+                else
+                    res.json(result[0] || null);
+            }
+        );
+    };
+
+/**
+ * MIDDLEWARES
+ */
+/**
+ * @function projectById
+ * @instance
+ * @description Middleware sui parametri delle richieste REST relative all'id del progetto.
+ * Controlla che l'id del progetto esista nel database: se ciò è verificato inserisce
+ * l'id in req e passa il controllo al successivo ConcreteHandler, altrimenti passa il
+ * controllo alla catena di gestione degli errori.
+ * @memberof Back-End::App::Controllers::Projects.ProjectManagementController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ * @param {String} id - Rappresenta l'identificativo del progetto.
+ */
+exports.projectById =
+    function (req, res, next, id)
+    {
+        if (!mongoose.Types.ObjectId.isValid(id))
+            next(new PremiError(2000));
+        else
+        {
+            Project.findOne(
+                {
+                    userId: req.user._id,
+                    _id: id
+                },
+                function (err, project) {
+                    if (err)
+                        next(err);
+                    req.project = project;
+                    next();
+                }
+            );
+        }
+    };
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Back-End__App__Controllers.ErrorHandler.html">ErrorHandler</a></li><li><a href="Back-End__App__Controllers.NotFoundHandler.html">NotFoundHandler</a></li><li><a href="Back-End__App__Controllers.ProjectController.html">ProjectController</a></li><li><a href="Back-End__App__Controllers.StaticController.html">StaticController</a></li><li><a href="Back-End__App__Controllers.UserController.html">UserController</a></li><li><a href="Back-End__App__Controllers__Errors.PremiError.html">PremiError</a></li><li><a href="Back-End__App__Controllers__Projects.NodeController.html">NodeController</a></li><li><a href="Back-End__App__Controllers__Projects.PathController.html">PathController</a></li><li><a href="Back-End__App__Controllers__Projects.ProjectManagementController.html">ProjectManagementController</a></li><li><a href="Back-End__App__Controllers__Users.AuthenticationController.html">AuthenticationController</a></li><li><a href="Back-End__App__Controllers__Users.AuthorizationController.html">AuthorizationController</a></li><li><a href="Back-End__App__Models.NodeContentModel.html">NodeContentModel</a></li><li><a href="Back-End__App__Models.NodeModel.html">NodeModel</a></li><li><a href="Back-End__App__Models.PathModel.html">PathModel</a></li><li><a href="Back-End__App__Models.ProjectModel.html">ProjectModel</a></li><li><a href="Back-End__App__Models.RelationModel.html">RelationModel</a></li><li><a href="Back-End__App__Models.UserModel.html">UserModel</a></li><li><a href="Back-End__App__Routers.ProjectRouter.html">ProjectRouter</a></li><li><a href="Back-End__App__Routers.StaticRouter.html">StaticRouter</a></li><li><a href="Back-End__App__Routers.UserRouter.html">UserRouter</a></li><li><a href="Fron-End__Controllers.NodeContentsEditorController.html">NodeContentsEditorController</a></li><li><a href="Front-End.AppConfig.html">AppConfig</a></li><li><a href="Front-End.AppRouter.html">AppRouter</a></li><li><a href="Front-End.AppRun.html">AppRun</a></li><li><a href="Front-End__Controllers.AddToPathController.html">AddToPathController</a></li><li><a href="Front-End__Controllers.ContextMenuController.html">ContextMenuController</a></li><li><a href="Front-End__Controllers.DashboardController.html">DashboardController</a></li><li><a href="Front-End__Controllers.EditableNodeContentController.html">EditableNodeContentController</a></li><li><a href="Front-End__Controllers.ErrorMessageController.html">ErrorMessageController</a></li><li><a href="Front-End__Controllers.HeaderController.html">HeaderController</a></li><li><a href="Front-End__Controllers.HierarchicalMenuController.html">HierarchicalMenuController</a></li><li><a href="Front-End__Controllers.LoginController.html">LoginController</a></li><li><a href="Front-End__Controllers.MindmapEditorController.html">MindmapEditorController</a></li><li><a href="Front-End__Controllers.NodeController.html">NodeController</a></li><li><a href="Front-End__Controllers.PathController.html">PathController</a></li><li><a href="Front-End__Controllers.PathsEditorController.html">PathsEditorController</a></li><li><a href="Front-End__Controllers.PathsListController.html">PathsListController</a></li><li><a href="Front-End__Controllers.PresentationController.html">PresentationController</a></li><li><a href="Front-End__Controllers.PresentationViewerController.html">PresentationViewerController</a></li><li><a href="Front-End__Controllers.ProjectSettingsEditorController.html">ProjectSettingsEditorController</a></li><li><a href="Front-End__Controllers.ProjectsListController.html">ProjectsListController</a></li><li><a href="Front-End__Controllers.RegistrationController.html">RegistrationController</a></li><li><a href="Front-End__Directives.premiAddToPath.html">premiAddToPath</a></li><li><a href="Front-End__Directives.premiAssociationAdder.html">premiAssociationAdder</a></li><li><a href="Front-End__Directives.premiContextMenu.html">premiContextMenu</a></li><li><a href="Front-End__Directives.premiEditableNodeContent.html">premiEditableNodeContent</a></li><li><a href="Front-End__Directives.premiErrorMessage.html">premiErrorMessage</a></li><li><a href="Front-End__Directives.premiHeader.html">premiHeader</a></li><li><a href="Front-End__Directives.premiHierarchicalMenu.html">premiHierarchicalMenu</a></li><li><a href="Front-End__Directives.premiMindmap.html">premiMindmap</a></li><li><a href="Front-End__Directives.premiNode.html">premiNode</a></li><li><a href="Front-End__Directives.premiNodeContent.html">premiNodeContent</a></li><li><a href="Front-End__Directives.premiNodeContentsEditor.html">premiNodeContentsEditor</a></li><li><a href="Front-End__Directives.premiPath.html">premiPath</a></li><li><a href="Front-End__Directives.premiPathsList.html">premiPathsList</a></li><li><a href="Front-End__Directives.premiPresentation.html">premiPresentation</a></li><li><a href="Front-End__Directives.premiProjectList.html">premiProjectList</a></li><li><a href="Front-End__Directives.premiProjectSettingsEditor.html">premiProjectSettingsEditor</a></li><li><a href="Front-End__Directives.premiSmartMenu.html">premiSmartMenu</a></li><li><a href="Front-End__Model.ErrorInfo.html">ErrorInfo</a></li><li><a href="Front-End__Model.Node.html">Node</a></li><li><a href="Front-End__Model.NodeContent.html">NodeContent</a></li><li><a href="Front-End__Model.NodeReference.html">NodeReference</a></li><li><a href="Front-End__Model.Path.html">Path</a></li><li><a href="Front-End__Model.PresentationNode.html">PresentationNode</a></li><li><a href="Front-End__Model.Project.html">Project</a></li><li><a href="Front-End__Services.AuthenticationService.html">AuthenticationService</a></li><li><a href="Front-End__Services.MindmapAdapterService.html">MindmapAdapterService</a></li><li><a href="Front-End__Services.MindmapService.html">MindmapService</a></li><li><a href="Front-End__Services.PathService.html">PathService</a></li><li><a href="Front-End__Services.PresentationService.html">PresentationService</a></li><li><a href="Front-End__Services.ProjectService.html">ProjectService</a></li><li><a href="Premi.Front-End.Controllers.AssociationAdderController.html">AssociationAdderController</a></li><li><a href="Premi.Front-End.Controllers.SmartMenuController.html">SmartMenuController</a></li></ul><h3>Namespaces</h3><ul><li><a href="Back-End__App__Controllers.html">Back-End::App::Controllers</a></li><li><a href="Back-End__App__Controllers__Errors.html">Back-End::App::Controllers::Errors</a></li><li><a href="Back-End__App__Controllers__Projects.html">Back-End::App::Controllers::Projects</a></li><li><a href="Back-End__App__Controllers__Users.html">Back-End::App::Controllers::Users</a></li><li><a href="Back-End__App__Models.html">Back-End::App::Models</a></li><li><a href="Front-End__Controllers.html">Front-End::Controllers</a></li><li><a href="Front-End__Directives.html">Front-End::Directives</a></li><li><a href="Front-End__Model.html">Front-End::Model</a></li><li><a href="Front-End__Services.html">Front-End::Services</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Wed Jun 17 2015 12:57:05 GMT+0200 (CEST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

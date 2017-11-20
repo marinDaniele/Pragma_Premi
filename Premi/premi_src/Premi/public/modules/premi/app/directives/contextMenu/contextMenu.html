@@ -1,0 +1,44 @@
+<h2 class="md-display-1 hideMobile" layout="row">{{node.getTitle()}}</h2>
+<div layout="row"
+     layout-align="center start">
+    <div ng-if="node !== null"
+         class="nodePreview"
+         layout="column"
+         layout-align="center center"
+         layout-margin>
+        <md-subheader class="md-sticky-no-effect hideMobile"
+                      layout="row">Anteprima contenuto:</md-subheader>
+        <premi-node node="node" class="md-whiteframe-z1">
+        </premi-node>
+    </div>
+    <div layout="column"
+         layout-align="center center"
+         layout-margin
+         class="hideMobile">
+        <md-subheader class="md-sticky-no-effect"
+                      layout="row">Operazioni disponibili:</md-subheader>
+        <md-list layout="row">
+            <div layout="column" layout-align="center center">
+                <md-list-item class="md-1-line" ng-repeat="fun in operations">
+                    <div class="md-list-item-text">
+                        <md-button ng-click="call(fun)">{{fun.name}}</md-button>
+                    </div>
+                </md-list-item>
+            </div>
+        </md-list>
+    </div>
+</div>
+<div
+     layout="row"
+     layout-align="end start">
+
+    <md-button class="close"
+               layout="row"
+               layout-align="center center"
+               layout="column"
+               ng-click="cancel()">
+        <md-icon layout="column" md-svg-src="assets/img/close.svg"></md-icon>
+        <span layout="column">Chiudi</span>
+    </md-button>
+</div>
+

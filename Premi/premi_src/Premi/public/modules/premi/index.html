@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Premi</title>
+        <link rel="stylesheet"
+              href="assets/css/angular-material.min.css"/>
+        <link rel="stylesheet"
+              href="assets/css/style.css"/>
+        <link rel="stylesheet"
+              href="assets/css/projects.css">
+        <link rel="stylesheet"
+              href="assets/css/cytoscape.css"/>
+        <link rel="stylesheet"
+              href="assets/css/dashboard.css"/>
+        <link rel="stylesheet"
+              href="app/directives/contextMenu/contextMenu.css"/>
+        <link rel="stylesheet"
+              href="app/directives/nodeContentsEditor/nodeContentsEditor.css"/>
+        <link rel="stylesheet"
+              href="app/directives/node/node.css">
+        <link rel="stylesheet"
+              href="app/directives/projectSettingsEditor/projectSettingsEditor.css"/>
+        <link rel="stylesheet"
+              href="assets/css/pathsEditor.css"/>
+        <link rel="stylesheet"
+              href="app/directives/addToPath/addToPath.css"/>
+        <link rel="stylesheet"
+              href="app/directives/editableNodeContent/editableNodeContent.css"/>
+        <link rel="stylesheet"
+              href="assets/css/logIn.css"/>
+        <link rel="stylesheet"
+              href="assets/css/signUp.css"/>
+        <link rel="stylesheet"
+              href="assets/css/presentationViewer.css"/>
+        <link rel="stylesheet"
+              href="app/directives/presentation/presentation.css"/>
+        <link rel="stylesheet"
+              href="app/directives/smartMenu/smartMenu.css"/>
+        <link rel="stylesheet"
+              href="app/directives/hierarchicalMenu/hierarchicalMenu.css"/>
+        <link rel="stylesheet"
+              href="app/directives/header/header.css"/>
+        <!-- ref css manuale -->
+        <link href="assets/css/userManual.css" rel="stylesheet" />
+        <!--
+        <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 736px)" href="assets/css/userManualMedia.css" type="text/css"/>
+        -->
+    </head>
+    <body ng-app="premi" layout="column"
+          style="height: 100%; overflow: hidden;">
+        <premi-header ng-hide="fullscreen"></premi-header>
+        <section id="appContainer" ng-view flex></section>
+
+
+        <script src="assets/lib/jquery/jquery.js"></script>
+        <script src="assets/lib/angular/angular.js"></script>
+        <script src="assets/lib/angular-animate/angular-animate.js"></script>
+        <script src="assets/lib/angular-aria/angular-aria.js"></script>
+        <script src="assets/lib/angular-material/angular-material.js"></script>
+        <script src="assets/lib/angular-route/angular-route.js"></script>
+        <script src="assets/lib/angular-touch/angular-touch.js"></script>
+        <script src="assets/lib/cytoscape/dist/cytoscape.js"></script>
+
+        <!--model-->
+        <script src="app/model/project.model.js"></script>
+        <script src="app/model/nodeContent.model.js"></script>
+        <script src="app/model/node.model.js"></script>
+        <script src="app/model/nodeReference.model.js"></script>
+        <script src="app/model/path.model.js"></script>
+        <script src="app/model/presentationNode.model.js"></script>
+        <script src="app/model/errorInfo.model.js"></script>
+
+        <script src="app/directives/directives.module.js"></script>
+        <script src="app/controllers/controllers.module.js"></script>
+        <script src="app/services/services.module.js"></script>
+
+        <!-- main module -->
+        <script src="app/app.module.js"></script>
+        <script src="app/app.config.js"></script>
+        <script src="app/app.routes.js"></script>
+        <script src="app/app.run.js"></script>
+        <script src="app/services/serverUrl.service.js"></script>
+        <script src="app/directives/header/header.controller.js"></script>
+        <script src="app/directives/header/header.directive.js"></script>
+        <script src="app/directives/projectSettingsEditor/projectSettingsEditor.controller.js"></script>
+        <script src="app/directives/projectSettingsEditor/project-settings-editor.directive.js"></script>
+
+
+        <script src="app/directives/contextMenu/context-menu.directive.js"></script>
+        <script src="app/directives/contextMenu/contextMenu.controller.js"></script>
+
+        <!-- shared module -->
+        <script src="app/directives/node/node.directive.js"></script>
+        <script src="app/directives/node/node.controller.js"></script>
+        <script src="app/directives/nodeContent/node-content.directive.js"></script>
+        <script src="app/directives/errorMessage/error-message.directive.js"></script>
+        <script src="app/directives/errorMessage/errorMessage.controller.js"></script>
+        <script src="app/services/project.service.js"></script>
+
+        <!-- authentication module-->
+        <script src="app/services/authentication.service.js"></script>
+        <script src="app/controllers/logIn.controller.js"></script>
+        <script src="app/controllers/registration.controller.js"></script>
+
+
+        <!-- dashboard module -->
+        <script src="app/controllers/dashboard.controller.js"></script>
+        <script src="app/directives/projectsList/projects-list.directive.js"></script>
+        <script src="app/directives/projectsList/projectsList.controller.js"></script>
+
+
+        <!-- editor.mindmap -->
+        <script src="app/services/mindmap.service.js"></script>
+        <script src="app/services/mindmapAdapter.service.js"></script>
+        <script src="app/directives/mindmap/mindmap.directive.js"></script>
+        <script src="app/controllers/mindmapEditor.controller.js"></script>
+
+
+        <!-- editor.mindmap.node -->
+        <script src="app/directives/associationAdder/association-adder.directive.js"></script>
+        <script src="app/directives/associationAdder/associationAdder.controller.js"></script>
+        <script src="app/directives/editableNodeContent/editableNodeContent.controller.js"></script>
+        <script src="app/directives/editableNodeContent/editable-node-content.directive.js"></script>
+        <script src="app/directives/nodeContentsEditor/nodeContentsEditor.controller.js"></script>
+        <script src="app/directives/nodeContentsEditor/node-contents-editor.directive.js"></script>
+
+
+        <!-- presentation module-->
+        <script src="app/services/presentation.service.js"></script>
+        <script src="app/directives/presentation/presentation.controller.js"></script>
+        <script src="app/directives/smartMenu/smartMenu.controller.js"></script>
+        <script src="app/directives/hierarchicalMenu/hierarchicalMenu.controller.js"></script>
+        <script src="app/controllers/presentationViewer.controller.js"></script>
+        <script src="app/directives/presentation/presentation.directive.js"></script>
+        <script src="app/directives/smartMenu/smart-menu.directive.js"></script>
+        <script src="app/directives/hierarchicalMenu/hierarchical-menu.directive.js"></script>
+
+
+        <!-- editPath module -->
+        <script src="app/services/path.service.js"></script>
+        <script src="app/directives/path/path.controller.js"></script>
+        <script src="app/directives/path/path.directive.js"></script>
+        <script src="app/directives/pathsList/pathsList.controller.js"></script>
+        <script src="app/directives/pathsList/paths-list.directive.js"></script>
+        <script src="app/controllers/pathsEditor.controller.js"></script>
+        <script src="app/directives/addToPath/addToPath.controller.js"></script>
+        <script src="app/directives/addToPath/add-to-path.directive.js"></script>
+
+    </body>
+</html>

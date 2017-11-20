@@ -1,0 +1,79 @@
+<md-dialog aria-label=" .... ">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Registrazione</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="hide()">
+                <md-icon
+                        md-svg-src="assets/img/close.svg"
+                        aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content style="overflow: auto; padding: 1em;">
+        <div>
+            <div class="section" id="acces">
+                <h2>Registrazione</h2>
+                <p>
+                    Il primo passo per un nuovo utente che decide di utilizzare 
+                    l'applicazione <strong><cite>Premi</cite></strong> 
+                    consiste nell'effettuare la registrazione.<br/>Per poter 
+                    effettuare la registrazione l'utente deve eseguire le
+                    seguenti azioni:
+                </p>
+                <ol>
+                    <li>Premere il pulsante <strong><cite>Registrati</cite>
+                    </strong> presente nella parte bassa della casella di
+                        autenticazione, in questo modo verrà visualizzata la
+                        pagina di registrazione;</li>
+                    <li>Inserire un indirizzo e-mail, che verrà utilizzato per
+                        identificare l'utente nel sistema;</li>
+                    <li>Inserire una password, per proteggere il
+                        proprio account;</li>
+                    <li>Reinserire la password utilizzata al punto precedente
+                        per confermarla;</li>
+                    <li>Premere il pulsante <strong><cite>Crea account</cite>
+                    </strong> per confermare i dati inseriti ed accedere al
+                        sistema.</li>
+                </ol>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/imgRegistrazione.png"
+                     alt="imgRegistrazione" width="490" height="440">
+                <p>
+                    Se i dati inseriti non sono corretti o se i campi
+                    obbligatori non sono stati compilati verrà visualizzato
+                    un messaggio d'errore.
+                </p>
+                <h2>Uscita</h2>
+                <p>
+                    L'utente può deautenticarsi dal sistema in ogni momento
+                    eseguendo la procedura di <cite>Logout</cite>.<br/>Per
+                    effettuare questa procedura l'utente deve trovarsi nella
+                    <cite>Dashboard</cite> e premere il pulsante <strong>
+                    <cite>Esci</cite></strong> presente nella barra di
+                    intestazione dell'applicazione .<br/>
+                    Una volta effettuata la deautenticazione l'utente verrà
+                    reindirizzato alla pagina d'accesso dell'applicazione.
+                </p>
+                <img class="imgLarga" src="app/views/manuale/img/imgEsci.png"
+                     alt="imgEsci" width="1276" height="122">
+                <p>
+                    L'utente può accedere alla <cite>Dashboard</cite> sia
+                    dalle pagine dedicate alla modifica del
+                    <cite>progetto</cite>, sia dalla pagina di presentazione
+                    tramite il pulsante <strong><cite>Chiudi progetto</cite>
+                </strong> presente all'interno del menu della pagina.
+                </p>
+            </div>
+        </div>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button href="/statics/userManual" target="_blank">
+            Manuale completo
+        </md-button>
+        <span flex></span>
+        <md-button ng-click="hide()" class="md-primary">
+            Chiudi
+        </md-button>
+    </div>
+</md-dialog>

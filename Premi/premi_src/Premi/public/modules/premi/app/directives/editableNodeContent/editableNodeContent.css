@@ -1,0 +1,92 @@
+
+.draggable-content{
+    cursor: move;
+}
+
+.resize-color{
+    background-color: #2196F3;
+}
+
+.n-resize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    cursor: ns-resize;
+}
+
+.e-resize {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 1px);
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+}
+
+.s-resize {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    cursor: ns-resize;
+}
+
+.w-resize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+}
+
+.nw-resize {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: nwse-resize;
+}
+
+.ne-resize {
+    position: absolute;
+    top: -3px;
+    left: calc(100% - 3px);
+    width: 6px;
+    height: 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: nesw-resize;
+}
+
+.se-resize {
+    position: absolute;
+    top: calc(100% - 3px);
+    left: calc(100% - 3px);
+    width: 6px;
+    height: 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: nwse-resize;
+}
+
+.sw-resize {
+    position: absolute;
+    top: calc(100% - 3px);
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: nesw-resize;
+}

@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for controllers/projects/NodeController.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">controllers/projects/NodeController.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(50 / 50)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">97.37% <small>(37 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(19 / 19)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(50 / 50)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">controllers/projects/</a> &#187; NodeController.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+/**
+ * @namespace Back-End::App::Controllers::Projects
+ */
+/**
+ * @class NodeController
+ * @author Stefano Munari (stefanomunari.sm@gmail.com)
+ * @description Data: 09/05/2015 - Requisiti: RFO4, RFO4.2, RFO4.2.3, RFO4.2.3.4, RFO4.2.3.5, RFO4.2.3.12,
+ * RFO4.2.3.13, RFO4.2.5, RFO4.2.6, RFO4.2.7, RFD22, RFD4.2.3.15, RFD4.2.3.16, RFD35
+ * @classdesc Classe che gestisce la logica applicativa riguardante la visualizzazione e la modifica dei nodi presenti in
+un progetto.
+ * @memberof Back-End::App::Controllers::Projects
+ */
+/*---PRIVATE---*/
+var _ = require('lodash'),
+    mongoose = require('mongoose'),
+    PremiError = require('../errors/PremiError'),
+    Project = mongoose.model('Project');
+&nbsp;
+function validateNode(project, id)
+{
+    if (!mongoose.Types.ObjectId.isValid(id) || !project.nodes.id(id))
+        return false;
+    else
+        return project.nodes.id(id);
+}
+&nbsp;
+function validateContents(contents)
+{
+        var valid= true;
+        /*contents.forEach(function (element)
+        {
+            if(valid &amp;&amp; (!element.class || !element.x || !element.y || !element.height || !element.width ||element.x &gt; 100 ||
+element.x &lt; 0 || element.y &gt; 100 || element.y &lt; 0 || element.height &gt; 100 || element.height &lt; 0 || element.width &gt; 100
+|| element.width &lt; 0))*/
+        for(var i in contents)
+        {
+            if(valid &amp;&amp; (!contents[i].class || !contents[i].x || !contents[i].y || !contents[i].height || !contents[i].width ||contents[i].x &gt; 100 ||
+contents[i].x &lt; 0 || contents[i].y &gt; 100 || contents[i].y &lt; 0 || contents[i].height &gt; 100 || contents[i].height &lt; 0 || contents[i].width &gt; 100
+|| contents[i].width &lt; 0))
+                valid= false;
+        }/*);*/
+    return valid;
+}
+/*---PUBLIC---*/
+/**
+ * @function addNode
+ * @instance
+ * @description Aggiunge un nuovo nodo vuoto alla mappa mentale del progetto correntemente in uso, specificandone il
+ collegamento con il nodo padre.
+ * @memberof Back-End::App::Controllers::Projects.NodeController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ */
+exports.addNode =
+        function (req, res, next)
+        {
+            req.project.addNode(req.node._id,
+                    function (node)
+                    {
+                        res.json(node);
+                    },
+                    function (err)
+                    {
+                        next(err);
+                    }
+            );
+        };
+/**
+ * @function updateNode
+ * @instance
+ * @description Modifica il contenuto di un nodo della mappa mentale del progetto correntemente in uso dall’utente autenticato.
+ * @memberof Back-End::App::Controllers::Projects.NodeController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ */
+exports.updateNode =
+        function (req,res, next)
+        {
+            if(validateContents(req.body.contents))
+            {
+                req.project.updateNode(req.node._id, req.body.contents,
+                    function ()
+                    {
+                        res.json({status: 'ok'});
+                    },
+                    function (err)
+                    {
+                        next(err);
+                    }
+                );
+            }
+            else
+            {
+                next(new PremiError(9000));
+            }
+        };
+/**
+ * @function deleteNode
+ * @instance
+ * @description Rimuove un nodo dalla mappa mentale del progetto correntemente in uso dall’utente che ha effettuato il
+login. Restituisce la mappa mentale, comprendente nodi e relazioni in un oggetto JSON, priva del nodo rimosso e
+dell’eventuale sottoalbero di cui era padre.
+ * @memberof Back-End::App::Controllers::Projects.NodeController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ */
+exports.deleteNode =
+        function (req, res, next)
+        {
+            req.project.removeNode(req.node._id,
+                    function (result)
+                    {
+                        res.json(result || <span class="branch-1 cbranch-no" title="branch not covered" >null)</span>;
+                    },
+                    function (err)
+                    {
+                        next(err);
+                    }
+            );
+        };
+&nbsp;
+/**
+ * ASSOCIATIONS
+ */
+/**
+ * @function addAssociation
+ * @instance
+ * @description Aggiunge una relazione di tipo associazione tra due nodi presenti nella mappa mentale del progetto
+correntemente in uso.
+ * @memberof Back-End::App::Controllers::Projects.NodeController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ */
+exports.addAssociation =
+        function (req,res,next)
+        {
+            var verifiedSource, verifiedDestination;
+            verifiedSource= validateNode(req.project, req.body.sourceId);
+            verifiedDestination= validateNode(req.project, req.body.destinationId);
+            if(verifiedSource === false || verifiedDestination === false || verifiedSource._id === verifiedDestination._id)
+            {
+                next(new PremiError(9001));
+            }
+            else
+                req.project.addAssociation(verifiedSource._id, verifiedDestination._id,
+                    function (associationId)
+                    {
+                        res.json({_id : associationId});
+                    },
+                    function (err)
+                    {
+                        return next(err);
+                    }
+                );
+        };
+/**
+ * @function deleteAssociation
+ * @instance
+ * @description Rimuove una relazione di tipo association tra due nodi presenti nella mappa mentale del progetto
+correntemente in uso dall’utente che ha effettuato il login.
+ * @memberof Back-End::App::Controllers::Projects.NodeController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della
+ normale catena di gestione delle richieste.
+ */
+exports.deleteAssociation =
+    function (req,res,next)
+    {
+        req.project.removeAssociation(req.association._id,
+            function ()
+            {
+                res.json({ status : 'ok' });
+            },
+            function (err)
+            {
+                next(err);
+            }
+        );
+&nbsp;
+    };
+/**
+ * MIDDLEWARES
+ */
+/**
+ * @function nodeById
+ * @instance
+ * @description Middleware sui parametri delle richieste REST relative all'id del nodo. Controlla che l'id del nodo esista
+nel database: se ciò è verificato passa il controllo al successivo ConcreteHandler, altrimenti passa il controllo alla
+catena di gestione degli errori.
+ * @memberof Back-End::App::Controllers::Projects.NodeController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ * @param {String} id - Rappresenta l'identificativo del nodo.
+ */
+exports.nodeById =
+    function (req, res, next, id)
+    {
+        if (!mongoose.Types.ObjectId.isValid(id) || !req.project.nodes.id(id))
+            next(new PremiError(3000));
+        else
+        {
+            req.node = req.project.nodes.id(id);
+            next();
+        }
+    };
+/**
+ * @function associationById
+ * @instance
+ * @description Middleware sui parametri delle richieste REST relative all'id dell'associazione logica(non gerarchica).
+Controlla che l'id dell'associazione esista nel database: se ciò è verificato passa il controllo al successivo
+ConcreteHandler, altrimenti passa il controllo alla catena di gestione degli errori.
+ * @memberof Back-End::App::Controllers::Projects.NodeController
+ * @param {Request} req - Rappresenta la richiesta inviata al server.
+ * @param {Response} res - Rappresenta la risposta che il server fornirà al termine dell’esecuzione del metodo.
+ * @param {function(PremiError)} next - Callback che attiva la catena di gestione dell’errore in sostituzione della normale
+catena di gestione delle richieste.
+ * @param {String} id - Rappresenta l'identificativo dell'associazione.
+ */
+exports.associationById =
+    function (req, res, next, id) {
+         var association;
+         association= req.project.relations.id(id);
+        if (!mongoose.Types.ObjectId.isValid(id) || !association || association.class !== 'association')
+            next(new PremiError(6000));
+        else
+        {
+            req.association = association;
+            next();
+        }
+    };
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Jun 13 2015 21:23:16 GMT+0200 (CEST)</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

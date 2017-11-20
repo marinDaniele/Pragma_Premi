@@ -1,0 +1,96 @@
+<md-dialog aria-label="">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Dashboard</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="hide()">
+                <md-icon
+                        md-svg-src="assets/img/close.svg"
+                        aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content style="overflow: auto; padding: 1em;">
+        <div>
+            <div class="section" id="dash">
+                <h1>Dashboard</h1>
+                <img class="imgLarga" src="app/views/manuale/img/dashboard.png"
+                     alt="dashboard" width="1596" height="1277">
+                <p>
+                    In seguito all'autenticazione o alla registrazione l'utente
+                    verrà reindirizzato alla <cite>Dashboard</cite>.<br/>
+                    La <cite>Dashboard</cite> presenta una finestra che contiene
+                    al suo interno la lista dei <cite>progetti</cite> personali
+                    dell'utente. Per ogni <cite>progetto</cite>, all'interno
+                    della lista, sono presenti dei pulsanti che permettono di
+                    eseguite varie azioni sul rispettivo <cite>progetto</cite>.
+                    Mediante i pulsanti presenti nella lista dei
+                    <cite>progetti</cite> l'utente può crearne di nuovi,
+                    eliminare dei <cite>progetti</cite> già esistenti oppure
+                    può modificare o effettuare una presentazione di un
+                    determinato <cite>progetto</cite>.
+                </p>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/dashboardVuota.png"
+                     alt="dashboardVuota" width="374" height="414">
+                <h2>Creazione nuovo progetto</h2>
+                <p>
+                    L'utente può creare un nuovo <cite>progetto</cite>
+                    premendo il pulsante <strong><cite>più</cite></strong>
+                    che si trova nella parte alta della finestra contenente
+                    la lista <cite>progetti</cite>.</br>Effettuando questa
+                    azione verrà aggiunto il nuovo <cite>progetto</cite> alla
+                    lista <cite>progetti</cite>.
+                </p>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/imgCreaProg.png"
+                     alt="imgCreaProg" width="744" height="146">
+                <h2>Eliminazione di un progetto</h2>
+                <p>
+                    Per poter eliminare un <cite>progetto</cite> l'utente dovrà
+                    premere il pulsante contenente l'icona rappresentante un
+                    cestino, che si trova nella riga relativa al
+                    <cite>progetto</cite> che desidera eliminare e confermare
+                    l'operazione.
+                </p>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/imgEliminaProg.png"
+                     alt="imgEliminaProg" width="712" height="82">
+                <h2>Modifica di un progetto</h2>
+                <p>
+                    Per poter accedere alla modalità di editing del progetto
+                    l'utente dovrà premere il pulsante contenente l'icona
+                    rappresentante una matita, che si trova nella riga relativa
+                    al progetto che si desidera modificare.
+                </p>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/imgModificaProg.png"
+                     alt="imgModificaProg" width="712" height="82">
+                <h2>Avviare la presentazione di un progetto</h2>
+                <p>
+                    Per poter avviare la presentazione di un
+                    <cite>progetto</cite>, l'utente deve premere il pulsante
+                    contenente l'icona rappresentante il simbolo
+                    <cite>play</cite>, che si trova nella riga relativa al
+                    <cite>progetto</cite> che si desidera presentare.<br />
+                    Successivamente, verrà visualizzata una nuova finestra
+                    nella quale l'utente dovrà selezionare il
+                    <cite>percorso</cite> di presentazione e, una volta
+                    selezionato, verrà avviata la presentazione.
+                </p>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/imgPresentProg.png"
+                     alt="imgPresentProg" width="712" height="82">
+            </div>
+        </div>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button href="/statics/userManual" target="_blank">
+            Manuale completo
+        </md-button>
+        <span flex></span>
+        <md-button ng-click="hide()" class="md-primary">
+            Chiudi
+        </md-button>
+    </div>
+</md-dialog>

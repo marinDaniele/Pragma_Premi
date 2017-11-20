@@ -1,0 +1,37 @@
+<div id="logIn"
+     layout="column"
+     layout-align="center center"
+     layout-fill
+     class="defaultBkg">
+    <md-whiteframe class="md-whiteframe-z1">
+        <h2 class="md-display-1 noMarginMobile">Accesso</h2>
+        <div layout="column"
+             layout-align="center center" layout-margin>
+            <form name="userForm">
+                <md-input-container class="mobileInput">
+                    <label>Email</label>
+                    <input ng-model="user.email"
+                           type="email"
+                           ng-required="true">
+                </md-input-container>
+                <md-input-container class="mobileInput">
+                    <label>Password</label>
+                    <input ng-model="user.password"
+                           type="password"
+                           ng-required="true">
+                </md-input-container>
+            </form>
+            <div layout="row" layout-align="center center">
+                <div layout-margin>
+                    <md-button ng-click="logIn()"
+                               class="md-raised md-primary"
+                               id="btn-login">Accedi
+                    </md-button>
+                </div>
+                <div layout-margin>
+                    <md-button ng-click="signUp()">Registrati</md-button>
+                </div>
+            </div>
+        </div>
+    </md-whiteframe>
+</div>

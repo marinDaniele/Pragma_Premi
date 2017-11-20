@@ -1,0 +1,6 @@
+.DS_Store
+.idea/
+*.idea
+public/modules/premi/app/services/serverUrl.service.js
+node_modules/
+report

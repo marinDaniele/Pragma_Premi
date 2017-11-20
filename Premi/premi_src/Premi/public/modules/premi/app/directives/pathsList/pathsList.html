@@ -1,0 +1,56 @@
+<!-- Lista dei percorsi disponibili-->
+<div id="pathsList" class="md-whiteframe-z2">
+    <md-toolbar class="md-accent"
+                style="display: block; position: relative;">
+        <h1 class="md-toolbar-tools">I miei percorsi</h1>
+        <div style="position: absolute; bottom:-1em; left:1em;">
+            <md-button class="md-raised md-fab"
+                       ng-click="createNewPath()"
+                       layout="row"
+                       layout-align="center center"
+                       style="width: 2em;
+                              height: 2em;
+                              background-color: #FF5722;"
+                       aria-label="crea nuovo percorso">
+                <md-icon layout="column"
+                         md-svg-src="assets/img/add.svg"
+                         style="color: #FFFFFF;"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <div style="height: calc(100% - 64px); width: 100%; overflow: auto;">
+        <ul class="genericList">
+            <li ng-repeat="path in paths"
+                          layout="column"
+                          layout-align="space-between center"
+                          layout-margin >
+                <span flex>{{path.name}}</span>
+                <div layout-margin
+                     layout="row"
+                     layout-align="space-around center"
+                     style="width: 100%;">
+                    <span ng-hide="path.default"
+                          class="md-mini"
+                          aria-label="modifica percorso"
+                          ng-click="pathSelected(path._id)">
+                        <md-icon md-svg-src="assets/img/edit_mode.svg"
+                                 class="overIcon"></md-icon>
+                    </span>
+                    <span class="md-mini"
+                               aria-label="presenta usando il percorso"
+                               ng-click="present(path._id)">
+                        <md-icon md-svg-src="assets/img/play_arrow.svg"
+                                 class="overIcon"></md-icon>
+                    </span>
+                    <span ng-hide="path.default"
+                               class="md-mini md-warn"
+                               aria-label="elimina percorso"
+                               ng-click="deletePath($event,path._id)">
+                        <md-icon md-svg-src="assets/img/delete.svg"
+                                 class="overIcon"></md-icon>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

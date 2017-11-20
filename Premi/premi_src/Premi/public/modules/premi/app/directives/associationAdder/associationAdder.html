@@ -1,0 +1,25 @@
+<div>
+    <md-toolbar class="md-accent">
+        <div class="md-toolbar-tools">
+            <h2 class="md-flex">Aggiungi associazione</h2>
+        </div>
+    </md-toolbar>
+    <md-whiteframe class="md-whiteframe-z1"
+                   layout="column"
+                   layout-aling="space-between center"
+                   layout-padding>
+        <p>Seleziona un nodo dalla lista</p>
+        <md-select flex placeholder="Seleziona nodo" ng-model="selectedNodeId">
+            <md-option ng-repeat="(id, title) in nodes"
+                       value="{{id}}">{{title}}</md-option>
+        </md-select>
+
+        <div layout="row" layout-align="space-around center" layout-padding>
+            <md-button class="md-raised"
+                       ng-click="cancelClicked()">Annulla</md-button>
+            <md-button class="md-raised md-primary"
+                       ng-disabled="confirmDisabled()"
+                       ng-click="confirmClicked()">Conferma</md-button>
+        </div>
+    </md-whiteframe>
+</div>

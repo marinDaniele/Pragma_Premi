@@ -1,0 +1,282 @@
+<md-dialog aria-label="Modifica progetto">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Mappa</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="hide()">
+                <md-icon
+                        md-svg-src="assets/img/close.svg" 
+                        aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content style="overflow: auto; padding: 1em;">
+        <div>
+            <div class="section" id="editPro">
+                <h1>Modifica progetto</h1>
+                <p>
+                    La pagina per la modifica di un <cite>progetto</cite> 
+                    permette all'utente di creare e modificare la <cite>mappa 
+                    mentale</cite> che sta alla base della presentazione e di 
+                    definire vari <cite>percorsi di presentazione</cite> ad essa 
+                    associati che descrivono l'ordine in cui i contenuti dei 
+                    nodi dovranno essere visualizzati durante la presentazione.
+                    <br/>  Al caricamento della pagina l'utente troverà il
+                    grafo che rappresenta la mappa mentale.<br/>
+                    I nodi del grafo possono contenere vari elementi, sia
+                    testuali che grafici, che verranno utilizzati per la
+                    creazione dei <cite>frame</cite> di presentazione.<br/>
+                    Questi nodi sono collegati fra loro da relazioni gerarchiche
+                    (associazioni di tipo padre-figlio) e associazioni logiche,
+                    associazioni create dall'utente che mettono in evidenza il
+                    collegamento concettuale presente tra due nodi. <br/>
+                    L'utente troverà nella pagina tutti gli strumenti necessari
+                    per poter creare la propria mappa mentale, definire
+                    associazioni logiche fra nodi e definire <cite>percorsi di
+                    presentazione</cite> relativi alla mappa creata.<br/>
+                    La pagina è formato da due viste, che sono <cite>Modifica
+                    mappa</cite> e <cite>Modifica percorsi</cite>.
+                    Queste due viste permettono di usufruire rispettivamente
+                    degli strumenti per la modifica della <cite>mappa mentale
+                </cite> e degli strumenti per modifica dei <cite>percorsi</cite>
+                    .<br/>
+                    L'utente può passare da una vista all'altra tramite i
+                    pulsanti <strong><cite>Mappa</cite></strong> e <strong>
+                    <cite>Percorsi</cite></strong> presenti al centro della
+                    barra di intestazione dell'applicazione.<br/>
+                    La barra di intestazione contiene anche altri pulsanti che
+                    permettono di modificare la visualizzazione della <cite>
+                    mappa mentale</cite> e di modificare le impostazioni del
+                    <cite>progetto</cite>.
+                </p>
+                <img class="imgLunga"
+                     src="app/views/manuale/img/strumentiHeader.png"
+                     alt="strumentiHeader" width="856" height="192">
+                <p>
+                    Se il <cite>progetto</cite> aperto è appena stato creato,
+                    l’utente troverà un nodo già esistente. Questo è il nodo
+                    <cite>radice</cite> e rappresenta il nodo base della mappa
+                    mentale. L’utente potrà iniziare la creazione della mappa
+                    partendo da questo nodo.
+                </p>
+                <h2>Modifica della mappa mentale</h2>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/modificaMappa.png"
+                     alt="modificaMappa" width="1598" height="1076">
+                <p>
+                    Verranno descritti in seguito gli strumenti che l'utente
+                    potrà utilizzare per manipolare la mappa mentale che
+                    desidera creare.
+                </p>
+                <h3>Creazione nuovo nodo</h3>
+                <p>
+                    Per creare un nuovo nodo, l'utente deve selezionare il nodo
+                    a cui desidera aggiungere il nuovo nodo figlio.<br/>
+                    Verrà visualizzata una nuova finestra contenente
+                    un'anteprima dei contenuti del nodo e un elenco delle
+                    azioni disponibili. L'utente dovrà selezionare dal menù
+                    la voce <strong><cite>Aggiungi nodo figlio</cite></strong>.
+                    Una volta premuto il pulsante, il sistema creerà in
+                    automatico un nuovo nodo vuoto come figlio del nodo
+                    selezionato.
+                </p>
+                <h3>Eliminazione di un nodo</h3>
+                <p>
+                    Per poter eliminare un nuovo nodo, l'utente deve cliccare
+                    sul nodo che desidera eliminare.<br/>
+                    Verrà visualizzata una nuova finestra contenente
+                    un'anteprima dei contenuti del nodo e un elenco delle
+                    azioni disponibili. L'utente dovrà selezionare dal menù la
+                    voce <strong><cite>Cancella nodo</cite></strong>.<br/>
+                    Se il nodo che si vuole cancellare ha dei figli o delle
+                    associazioni con altri nodi, verranno anchesse cancellate.
+                </p>
+                <h3>Spostamento dei nodi</h3>
+                <p>
+                    Per poter spostare un nodo, l'utente deve effettuare il
+                    <cite>drag and drop</cite> del nodo nella posizione
+                    desiderata. Questa modifica è temporanea dato che la
+                    disposizione dei nodi viene calcolata in modo automatico
+                    dall'applicazione.
+                </p>
+                <h3>Creazione di associazioni logiche</h3>
+                <p>
+                    Per poter creare un'<cite>associazione logica</cite> tra
+                    due nodi, l'utente deve:
+                <ol>
+                    <li>Selezionare il nodo origine dell'associazione;</li>
+                    <li>Selezionare dal menù la voce <strong>Aggiungi
+                        associazione</strong>;</li>
+                    <li>Dalla finestra che comparirà, selezionare la voce
+                        <strong>seleziona nodo</strong>, per visualizzare la
+                        lista dei nodi associabili;</li>
+                    <li>Selezionare dalla lista il nodo con cui creare
+                        l'associazione;</li>
+                    <li>Premere il pulsante di conferma.</li>
+                </ol>
+                </p>
+                <p>L'associazione logica verrà rappresentata tramite una
+                    freccia tratteggiata di colore arancio.</p>
+                <img class="imgCenter imgPiccola"
+                     src="app/views/manuale/img/associazioneMenu.png"
+                     alt="associazioneMenu" width="525" height="316">
+                <h3>Eliminazione associazioni logiche</h3>
+                <p>
+                    Per poter eliminare un'<strong>associazione logica</strong>,
+                    l'utente deve:
+                <ol>
+                    <li>selezionare l'associazione logica che
+                        desidera eliminare;</li>
+                    <li>selezionare la voce <strong>cancella associazione
+                    </strong> dal menù che comparirà.</li>
+                </ol>
+                </p>
+                <h3>Inserimento contenuti</h3>
+                <p>
+                    Per poter inserire dei contenuti all'interno di un nodo,
+                    l'utente deve selezionare il nodo nel quale desidera
+                    inserire dei contenuti.<br/>
+                    Verrà visualizzata una nuova finestra contenente
+                    un'anteprima dei contenuti del nodo e un elenco di azioni
+                    possibili. L'utente dovrà selezionare dal menù la voce
+                    <strong><cite>Modifica nodo</cite></strong>.<br/>
+                    Verrà visualizzata una nuova finestra nella quale sarà
+                    possibile gestire i contenuti del nodo, le varie
+                    funzionalità offerte verranno descritte nella sezione
+                    <cite><a href="#editNodo">Modifica del contenuto di un nodo
+                    </a></cite>.
+                </p>
+                <img class="imgLunga"
+                     src="app/views/manuale/img/menuNodoMappa.png"
+                     alt="menu nodo in editing mappa" width="847" height="431">
+                <h2 id="editNodo">Modifica del contenuto di un nodo</h2>
+                <p>
+                    In questa sezione verrà spiegato come utilizzare le
+                    funzionalità offerte dall'applicazione per gestire i
+                    contenuti di un nodo della mappa mentale.<br/>
+                    La finestra mostra nella parte sinistra due pulsanti, che
+                    sono rispettivamente <strong><cite>Aggiungi testo</cite>
+                </strong> e <strong><cite>Aggiungi immagine</cite></strong> e,
+                    nella parte destra una rappresentazione del <cite>frame
+                </cite> con i suoi contenuti.<br/>
+                    L'utente può selezionare i contenuti <cite>cliccandoci
+                </cite> sopra e vedrà apparire, sotto i pulsanti per
+                    l'inserimento di nuovi contenuti, una vista che permette di
+                    effettuare le modifiche sull'elemento selezionato.
+                </p>
+                <img class="imgLunga"
+                     src="app/views/manuale/img/modificaNodo.png"
+                     alt="modificaNodo" width="1274" height="567">
+                <h3>Aggiungere del testo</h3>
+                <p>
+                    Per poter inserire del testo all'interno del nodo, l'utente
+                    deve premere il pulsante <strong><cite>Aggiungi testo
+                </cite></strong>, in questo modo verrà inserito all'interno del
+                    <cite>frame</cite> un nuovo <cite>elemento testuale</cite>
+                    contenente del testo di <cite>default</cite>.<br/>
+                    Per modificare il testo l'utente dovrà selezionare il nuovo
+                    elemento, in modo da rendere visibile lo strumento di
+                    modifica nella parte sinistra della finestra.
+                </p>
+                <h3>Aggiungere un immagine</h3>
+                <p>
+                    Per poter inserire un'immagine all'interno del nodo,
+                    l'utente deve premere il pulsante <strong><cite>Aggiungi
+                    immagine</cite></strong>, in questo modo verrà inserita
+                    all'interno del <cite>frame</cite> un'immagine di default.
+                    Per modificare l'immagine, l'utente dovrà selezionare il
+                    nuovo elemento e modificare l'URL in esso contenuto tramite
+                    lo strumento di modifica che diventerà visibile nella parte
+                    sinistra della finestra, inserendo l'URL della nuova
+                    immagine.<br/>
+                    L'URL dell'immagine deve riferirsi ad un'immagine presente
+                    sul <strong><cite>web</cite></strong>.
+                </p>
+                <h3>Posizionamento contenuti</h3>
+                <p>
+                    Per poter posizionare un contenuto all'interno del frame,
+                    l'utente dovrà trascinarlo, tramite <cite>Drag and Drop
+                </cite>, nella posizione desiderata.
+                </p>
+                <h3>Ridimensionamento contenuto</h3>
+                <p>
+                    Per poter ridimensionare un contenuto, l'utente dovrà
+                    selezionare il contenuto che desidera ridimensionare e
+                    posizionandosi sui bordi del contenuto selezionato
+                    ridimensionarlo.
+                </p>
+                <img class="imgCenter imgPiccola"
+                     src="app/views/manuale/img/aggiuntaNodoAPercorso2.png"
+                     alt="aggiuntaNodoAPercorso2" width="276" height="361">
+                <h2>Modifica delle impostazioni del progetto</h2>
+                <p>
+                    Tramite questo strumento l'utente può effettuare delle
+                    modifiche al <cite>progetto</cite> sul quale sta lavorando.
+                    <br/> In particolare potrà modificare:
+                <ul>
+                    <li>Il nome del <cite>progetto</cite>;</li>
+                    <li>Il colore di sfondo dei <cite>frame</cite> del
+                        <cite>progetto</cite>;</li>
+                    <li>Il colore del testo dei <cite>frame</cite> del
+                        <cite>progetto</cite>;</li>
+                    <li>Il font utilizzato nei <cite>frame</cite> del
+                        <cite>progetto</cite>.</li>
+                </ul>
+                </p>
+                <p>La finestra <strong><cite>Impostazioni del progetto</cite>
+                </strong> può essere raggiunta premendo l'icona rappresentante
+                    un ingranaggio <img
+                            src="app/views/manuale/img/impostazioniButton.png"
+                            alt="impostazioniButton" width="34" height="34">,
+                    presente all'interno della barra di intestazione
+                    dell'applicazione.
+                </p>
+                <img class="imgLarga"
+                     src="app/views/manuale/img/impostazioneProgetto.png"
+                     alt="impostazioneProgetto" width="852" height="482">
+                <br/>
+                <br/>
+            </div>
+            <div class="section" id="stampa">
+                <h1>Stampa di un progetto</h1>
+                <p>
+                    L'applicazione <strong><cite>Premi</cite></strong> offre la
+                    possibilità di effettuare la stampa in formato
+                    <cite>PDF</cite>, su stampante e su iCloud (funzionalità
+                    disponibile solo per i dispositivi Apple), sia della
+                    <cite>mappa mentale</cite> che della presentazione.<br/>
+                    In seguito verranno descritti i procedimenti che consentono
+                    di eseguire le varie stampe.
+                </p>
+                <h2>Stampa mappa mentale</h2>
+                <p>
+                    Per poter effettuare la stampa della mappa mentale,
+                    l'utente deve trovarsi nella pagina di modifica della
+                    <cite>mappa mentale</cite> o in quella per la modifica dei
+                    <cite>percorsi</cite> di presentazione.<br/>
+                    Dovrà poi aprire il <cite>menù</cite> tramite il pulsante
+                    <img src="app/views/manuale/img/buttonMenu.png"
+                         alt="buttonMenu" width="30" height="26"> e selezionare
+                    la voce <strong>Stampa</strong>.<br/>
+                    In seguito verrà visualizzata la finestra di stampa del
+                    <cite>browser</cite> dalla quale sarà possibile selezionare
+                    le impostazioni di stampa, specificando se stampare come
+                    <cite>PDF</cite> oppure stampare con una stampante.
+                    Dal momento che viene stampata solamente la parte della
+                    <cite>mappa mentale</cite> visualizzata a schermo, è
+                    consigliato regolare in modo opportuno lo <cite>zoom</cite>
+                    della mappa, in modo da stamparla nella sua interezza.
+                </p>
+            </div>
+        </div>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button href="/statics/userManual" target="_blank">
+            Manuale completo
+        </md-button>
+        <span flex></span>
+        <md-button ng-click="hide()" class="md-primary">
+            Chiudi
+        </md-button>
+    </div>
+</md-dialog>

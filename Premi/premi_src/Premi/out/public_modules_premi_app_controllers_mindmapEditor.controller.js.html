@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: public/modules/premi/app/controllers/mindmapEditor.controller.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: public/modules/premi/app/controllers/mindmapEditor.controller.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @class MindmapEditorController
+ * @classdesc Classe che gestisce le operazioni e la logica applicativa
+ * riguardante la modifica di una mappa.
+ * @author: Massimiliano Baruffato (max.baruffato@gmail.com)
+ * @description Data: 2015-05-16 Requisiti: RFO4.2, RFO4.2.1, RFO5, RFD22
+ * @memberOf Front-End::Controllers
+ */
+(function (){
+    'use strict';
+
+    angular
+        .module('premi.controllers')
+        .controller('MindmapEditorController', mindmapEditorController);
+
+    mindmapEditorController.$inject = ['$scope', '$mdDialog', 'mindmapService',
+        'projectService'];
+
+    function mindmapEditorController($scope, $mdDialog, mindmapService,
+                                     projectService){
+
+        $scope.associableNodeList = null;
+        $scope.currentNode = null;
+
+        // --- Listeners
+        $scope.$on('$destroy',destructor);
+        mindmapService.listen('node-select',nodeSelected);
+        mindmapService.listen('node-deselect', nodeDeselected);
+        mindmapService.listen('association-select',relationSelected);
+        //Potrebbe non servire
+
+        // --- Metodi relativi alle associazioni
+        /**
+         * @function relationSelected
+         * @instance
+         * @desc Metodo che gestisce l'evento di selezione di una relazione,
+         * viene invocato come gestore dell'evento sollevato da
+         * &lt;tt>MindmapService&lt;/tt>. Si occupa di aggiornare i dati del menù di
+         * modifica di una relazione e di visualizzare il menù contestuale per
+         * la modifica di un'associazione.
+         * @param {MouseEvent} e - Parametro contenente i dati dell'evento click
+         * sollevato dal browser.
+         * @param {String} edgeId - Parametro contenente l'&lt;tt>id&lt;/tt>
+         * dell'associazione selezionata dall'utente.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        function relationSelected(e,edgeId){
+            console.log('edge menu handler chiamato '+edgeId);
+            $scope.currentNode = null;
+            var functions = [deleteAssociationFun];
+            showContextMenu(edgeId,functions);
+        }
+        /**
+         * @function startAddAssociation
+         * @instance
+         * @desc Metodo che viene invocato quando l'utente seleziona la voce del
+         * menù che permette di aggiungere un'associazione uscente dal nodo
+         * selezionato.
+         * @param {String} sourceId - Parametro contenente l'id del nodo
+         * sorgente della descrizione.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.startAddAssociation = function (sourceId){
+            console.log('startAddAssociation - withSourceId: '+sourceId);
+            //Creo lo scope isolato da passare al dialog
+            var dialogScope = $scope.$new(true);
+            //Passo i riferimenti che servono al nuovo scope
+            dialogScope.associableNodeList = $scope.associableNodeList;
+            dialogScope.addAssociationClicked = $scope.addAssociationClicked;
+            $mdDialog.show({
+                scope: dialogScope,
+                template:
+                '&lt;md-dialog aria-label="aggiungi associazione">' +
+                '  &lt;md-dialog-content>'+
+                ' &lt;premi-association-adder nodes="associableNodeList"'+
+                'on-node-selected="addAssociationClicked(nodeId)">'+
+                '&lt;/premi-association-adder>'+
+                '  &lt;/md-dialog-content>' +
+                '&lt;/md-dialog>'
+            });
+        };
+        /**
+         * @function addAssociationClicked
+         * @instance
+         * @desc Metodo che gestisce l'evento di creazione di un'associazione
+         * tra due nodi. Per creare l'associazione è necessario utilizzare
+         * &lt;tt>AssociationService&lt;/tt>, l'informazione riguardante l'origine è
+         * disponibile nell'oggetto &lt;tt>$scope.currentNode&lt;/tt>.
+         * @param {String} destId - Parametro contenente l'id del nodo
+         * destinazione dell'associazione.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.addAssociationClicked = function (destId){
+            mindmapService.addAssociation($scope.currentNode.getId(), destId)
+                .catch(function (error){
+                    $scope.$emit('premi-error',error);
+                });
+        };
+        /**
+         * @function deleteRelationClicked
+         * @instance
+         * @desc Metodo che gestisce l'evento di cancellazione di
+         * un'associazione. Utilizza &lt;tt>MindmapService&lt;/tt> per cancellare
+         * l'associazione dato l'id.
+         * @param {String} associationId - Parametro contenente l'id
+         * dell'associazione da cancellare.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.deleteRelationClicked = function (associationId){
+            console.log('delete relation clicked '+associationId);
+            mindmapService.deleteAssociation(associationId)
+                .catch(function (error){
+                    $scope.$emit('premi-error',error);
+                });
+        };
+        // --- Metodi relativi ai nodi
+        /**
+         * @function nodeSelected
+         * @instance
+         * @desc Metodo che gestisce l'evento di selezione di un nodo, viene
+         * invocato come gestore dell'evento sollevato da
+         * &lt;tt>MindmapService&lt;/tt>. Si occupa di aggiornare lo &lt;tt>$scope&lt;/tt>
+         * con i dati del nodo selezionato dall'utente e di visualizzare il menù
+         * contestuale in modo da permettere all'utente di modificare il nodo.
+         * @param {MouseEvent} e - Parametro contenente i dati dell'evento
+         * @param {String} nodeId - Parametro contenente l'id del nodo
+         * selezionato dall'utente.
+         * click sollevato dal browser.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        function nodeSelected(e,nodeId){
+            $scope.currentNode = mindmapService.getNode(nodeId);
+            $scope.associableNodeList = mindmapService
+                                            .getAssociableNodeList(nodeId);
+
+            var functions;
+            if (nodeId === projectService.getCurrentProject().getRootId()){
+                functions = [editNodeFun, addChildFun, addAssociationFun];
+            }else{
+                functions = [editNodeFun, addChildFun, deleteNodeFun,
+                    addAssociationFun];
+            }
+
+            showContextMenu(nodeId,functions);
+
+        }
+        /**
+         * @function nodeDeselected
+         * @instance
+         * @desc Metodo che deseleziona il nodo corrente.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        function nodeDeselected() {
+            $scope.currentNode = null;
+        }
+        /**
+         * @function addNodeClicked
+         * @instance
+         * @desc Metodo che gestisce l'evento di aggiunta di un nuovo nodo alla
+         * mappa mentale. Utilizza &lt;tt>MindmapService&lt;/tt> per aggiungere un
+         * nodo vuoto alla mappa mentale, come figlio del nodo passato per
+         * parametro.
+         * @param {String} parentId - Parametro contenente l'id del nodo al
+         * quale bisogna aggiungere un nuovo figlio.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.addNodeClicked = function (parentId){
+            console.log('add node to:' +parentId);
+            mindmapService.addNode(parentId)
+                .catch(function (error){
+                    $scope.$emit('premi-error',error);
+                });
+        };
+        /**
+         * @function deleteNodeClicked
+         * @instance
+         * @desc Metodo che gestisce l'evento di cancellazione di un nodo.
+         * Utilizza &lt;tt>MindmapService&lt;/tt> per cancellare il nodo dalla mappa
+         * mentale.
+         * @param {String} nodeId - Parametro contenente l'id del nodo da
+         * cancellare.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.deleteNodeClicked = function (nodeId){
+            console.log('Delete node clicked '+nodeId);
+            mindmapService.deleteNode(nodeId)
+                .then(function (){
+                    mindmapService.drawMap();
+                }, function (error){
+                    $scope.$emit('premi-error',error);
+                });
+        };
+        /**
+         * @function editNodeClicked
+         * @instance
+         * @desc Metodo che gestisce l'evento &lt;tt>click&lt;/tt> sul pulsante che
+         * permette di modificare il contenuto del nodo presente nel campo dati
+         * &lt;tt>currentNode&lt;/tt>.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.editNodeClicked = function (){
+            var dialogScope = $scope.$new(true);
+            //Passo i riferimenti che servono al nuovo scope
+            dialogScope.resetEdit = $scope.resetNodeEdit;
+            dialogScope.confirmEdit = $scope.confirmNodeEditClicked;
+            dialogScope.node = $scope.currentNode;
+            console.log(dialogScope);
+            $mdDialog.show({
+                scope: dialogScope,
+                template:
+                '&lt;md-dialog style="width: 90%; height:90%;" ' +
+                'aria-label="Modifica nodo">' +
+                '  &lt;md-dialog-content style="width: 100%; height:100%;">'+
+                '&lt;premi-node-contents-editor node="node"'+
+                'on-reset="resetEdit()"'+
+                'on-confirm="confirmEdit()">'+
+                '&lt;/premi-node-contents-editor>'+
+                '  &lt;/md-dialog-content>' +
+                '&lt;/md-dialog>'
+
+            });
+        };
+
+        /**
+         * @function confirmNodeEditClicked
+         * @instance
+         * @desc Metodo che gestisce l'evento di conferma della modifica di un
+         * nodo. Rende permanenti le modifiche subite dall'oggetto nodo
+         * presente
+         * nello &lt;tt>$scope&lt;/tt>. Utilizza &lt;tt>MindmpaService&lt;/tt>.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.confirmNodeEditClicked = function (){
+            //console.log('aggiorno nodo');
+            //console.log($scope.currentNode);
+            mindmapService.updateNode($scope.currentNode);
+
+        };
+        /**
+         * @function resetNodeEdit
+         * @instance
+         * @desc Metodo che gestisce l'evento di reset dei campi di modifica di
+         * un nodo. Ripristina il &lt;tt>currentNode&lt;/tt> presente nello
+         * &lt;tt>$scope&lt;/tt> utilizzando i dati recuperati da
+         * &lt;tt>MindMapService&lt;/tt>.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        $scope.resetNodeEdit = function (){
+            console.log('reset node edit');
+            //ricarico il nodo.
+            $scope.currentNode = mindmapService.getNode(
+                                    $scope.currentNode.getId());
+        };
+        // --- Metodi generici ---
+        /**
+         * @function destructor
+         * @instance
+         * @desc Metodo che gestisce l'evento &lt;tt>destroy&lt;/tt> del controller,
+         * viene utilizzato per interrompere l'ascolto degli eventi di
+         * &lt;tt>MindmapService&lt;/tt>.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        function destructor(){
+            console.log('distruttore chiamato');
+            mindmapService.stopListen('node-select',nodeSelected);
+            mindmapService.stopListen('node-deselect', nodeDeselected);
+            mindmapService.stopListen('association-select',relationSelected);
+        }
+        /**
+         * @function showContextMenu
+         * @instance
+         * @desc Metodo che visualizza il menù contestuale.
+         * @param {String} id - Parametro che rappresenta l'&lt;tt>id&lt;/tt>
+         * dell'oggetto sul quale viene visualizzato il menù.
+         * @param {Array} functions - Parametro che contiene un &lt;tt>Array&lt;/tt>
+         * di oggetti rappresentanti le voci del menù. Ogni oggetto ha due campi
+         * dati: &lt;tt>name&lt;/tt> e &lt;tt>callback&lt;/tt>, il primo campo dati
+         * specifica il testo associato alla voce del menù e il secondo
+         * rappresenta la funzione da chiamare quando l'utente seleziona la
+         * voce.
+         * @returns {void}
+         * @memberOf Front-End::Controllers.MindmapEditorController
+         */
+        function showContextMenu(id, functions) {
+            console.log('showContextMenu');
+            //Creo lo scope isolato da passare al dialog
+            var dialogScope = $scope.$new(true);
+            //Passo i riferimenti che servono al nuovo scope
+            dialogScope.id = id;
+            dialogScope.functions = functions;
+            dialogScope.node = $scope.currentNode;
+            console.log(dialogScope);
+
+            var template = '&lt;md-dialog id="contextMenu" ' +
+                'aria-label="Mindmap context menu" layout-padding>' +
+                '  &lt;md-dialog-content class="sticky-container" ' +
+                'layout="column" layout-align="center center">'+
+                ' &lt;premi-context-menu object-id="{{id}}"'+
+                'operations="functions" node="node">'+
+                '&lt;/premi-context-menu>'+
+                '  &lt;/md-dialog-content>' +
+                '&lt;/md-dialog>';
+            console.log(template);
+            $mdDialog.show({
+                scope: dialogScope,
+                template:template
+            });
+        }
+        /* Dati per i menù*/
+        var editNodeFun = {};
+        editNodeFun.name='Modifica nodo';
+        editNodeFun.callback = $scope.editNodeClicked;
+        editNodeFun.image='assets/img/edit_node.svg';
+
+        var addChildFun = {};
+        addChildFun.name = 'Aggiungi nodo figlio';
+        addChildFun.callback = $scope.addNodeClicked;
+        addChildFun.image = 'assets/img/add_node.svg';
+        
+        var deleteNodeFun = {};
+        deleteNodeFun.name = 'Cancella nodo';
+        deleteNodeFun.callback = $scope.deleteNodeClicked;
+        deleteNodeFun.image = 'assets/img/delete_node.svg';
+        
+        var addAssociationFun = {};
+        addAssociationFun.name = 'Aggiungi associazione';
+        addAssociationFun.callback = $scope.startAddAssociation;
+        addAssociationFun.image = 'assets/img/add_association.svg';
+        var deleteAssociationFun = {};
+        deleteAssociationFun.name = 'Cancella associazione';
+        deleteAssociationFun.callback = $scope.deleteRelationClicked;
+        deleteAssociationFun.image = 'assets/img/delete_node.svg';
+    }
+})();
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Back-End__App__Controllers.ErrorHandler.html">ErrorHandler</a></li><li><a href="Back-End__App__Controllers.NotFoundHandler.html">NotFoundHandler</a></li><li><a href="Back-End__App__Controllers.ProjectController.html">ProjectController</a></li><li><a href="Back-End__App__Controllers.StaticController.html">StaticController</a></li><li><a href="Back-End__App__Controllers.UserController.html">UserController</a></li><li><a href="Back-End__App__Controllers__Errors.PremiError.html">PremiError</a></li><li><a href="Back-End__App__Controllers__Projects.NodeController.html">NodeController</a></li><li><a href="Back-End__App__Controllers__Projects.PathController.html">PathController</a></li><li><a href="Back-End__App__Controllers__Projects.ProjectManagementController.html">ProjectManagementController</a></li><li><a href="Back-End__App__Controllers__Users.AuthenticationController.html">AuthenticationController</a></li><li><a href="Back-End__App__Controllers__Users.AuthorizationController.html">AuthorizationController</a></li><li><a href="Back-End__App__Models.NodeContentModel.html">NodeContentModel</a></li><li><a href="Back-End__App__Models.NodeModel.html">NodeModel</a></li><li><a href="Back-End__App__Models.PathModel.html">PathModel</a></li><li><a href="Back-End__App__Models.ProjectModel.html">ProjectModel</a></li><li><a href="Back-End__App__Models.RelationModel.html">RelationModel</a></li><li><a href="Back-End__App__Models.UserModel.html">UserModel</a></li><li><a href="Back-End__App__Routers.ProjectRouter.html">ProjectRouter</a></li><li><a href="Back-End__App__Routers.StaticRouter.html">StaticRouter</a></li><li><a href="Back-End__App__Routers.UserRouter.html">UserRouter</a></li><li><a href="Fron-End__Controllers.NodeContentsEditorController.html">NodeContentsEditorController</a></li><li><a href="Front-End.AppConfig.html">AppConfig</a></li><li><a href="Front-End.AppRouter.html">AppRouter</a></li><li><a href="Front-End.AppRun.html">AppRun</a></li><li><a href="Front-End__Controllers.AddToPathController.html">AddToPathController</a></li><li><a href="Front-End__Controllers.ContextMenuController.html">ContextMenuController</a></li><li><a href="Front-End__Controllers.DashboardController.html">DashboardController</a></li><li><a href="Front-End__Controllers.EditableNodeContentController.html">EditableNodeContentController</a></li><li><a href="Front-End__Controllers.ErrorMessageController.html">ErrorMessageController</a></li><li><a href="Front-End__Controllers.HeaderController.html">HeaderController</a></li><li><a href="Front-End__Controllers.HierarchicalMenuController.html">HierarchicalMenuController</a></li><li><a href="Front-End__Controllers.LoginController.html">LoginController</a></li><li><a href="Front-End__Controllers.MindmapEditorController.html">MindmapEditorController</a></li><li><a href="Front-End__Controllers.NodeController.html">NodeController</a></li><li><a href="Front-End__Controllers.PathController.html">PathController</a></li><li><a href="Front-End__Controllers.PathsEditorController.html">PathsEditorController</a></li><li><a href="Front-End__Controllers.PathsListController.html">PathsListController</a></li><li><a href="Front-End__Controllers.PresentationController.html">PresentationController</a></li><li><a href="Front-End__Controllers.PresentationViewerController.html">PresentationViewerController</a></li><li><a href="Front-End__Controllers.ProjectSettingsEditorController.html">ProjectSettingsEditorController</a></li><li><a href="Front-End__Controllers.ProjectsListController.html">ProjectsListController</a></li><li><a href="Front-End__Controllers.RegistrationController.html">RegistrationController</a></li><li><a href="Front-End__Directives.premiAddToPath.html">premiAddToPath</a></li><li><a href="Front-End__Directives.premiAssociationAdder.html">premiAssociationAdder</a></li><li><a href="Front-End__Directives.premiContextMenu.html">premiContextMenu</a></li><li><a href="Front-End__Directives.premiEditableNodeContent.html">premiEditableNodeContent</a></li><li><a href="Front-End__Directives.premiErrorMessage.html">premiErrorMessage</a></li><li><a href="Front-End__Directives.premiHeader.html">premiHeader</a></li><li><a href="Front-End__Directives.premiHierarchicalMenu.html">premiHierarchicalMenu</a></li><li><a href="Front-End__Directives.premiMindmap.html">premiMindmap</a></li><li><a href="Front-End__Directives.premiNode.html">premiNode</a></li><li><a href="Front-End__Directives.premiNodeContent.html">premiNodeContent</a></li><li><a href="Front-End__Directives.premiNodeContentsEditor.html">premiNodeContentsEditor</a></li><li><a href="Front-End__Directives.premiPath.html">premiPath</a></li><li><a href="Front-End__Directives.premiPathsList.html">premiPathsList</a></li><li><a href="Front-End__Directives.premiPresentation.html">premiPresentation</a></li><li><a href="Front-End__Directives.premiProjectList.html">premiProjectList</a></li><li><a href="Front-End__Directives.premiProjectSettingsEditor.html">premiProjectSettingsEditor</a></li><li><a href="Front-End__Directives.premiSmartMenu.html">premiSmartMenu</a></li><li><a href="Front-End__Model.ErrorInfo.html">ErrorInfo</a></li><li><a href="Front-End__Model.Node.html">Node</a></li><li><a href="Front-End__Model.NodeContent.html">NodeContent</a></li><li><a href="Front-End__Model.NodeReference.html">NodeReference</a></li><li><a href="Front-End__Model.Path.html">Path</a></li><li><a href="Front-End__Model.PresentationNode.html">PresentationNode</a></li><li><a href="Front-End__Model.Project.html">Project</a></li><li><a href="Front-End__Services.AuthenticationService.html">AuthenticationService</a></li><li><a href="Front-End__Services.MindmapAdapterService.html">MindmapAdapterService</a></li><li><a href="Front-End__Services.MindmapService.html">MindmapService</a></li><li><a href="Front-End__Services.PathService.html">PathService</a></li><li><a href="Front-End__Services.PresentationService.html">PresentationService</a></li><li><a href="Front-End__Services.ProjectService.html">ProjectService</a></li><li><a href="Premi.Front-End.Controllers.AssociationAdderController.html">AssociationAdderController</a></li><li><a href="Premi.Front-End.Controllers.SmartMenuController.html">SmartMenuController</a></li></ul><h3>Namespaces</h3><ul><li><a href="Back-End__App__Controllers.html">Back-End::App::Controllers</a></li><li><a href="Back-End__App__Controllers__Errors.html">Back-End::App::Controllers::Errors</a></li><li><a href="Back-End__App__Controllers__Projects.html">Back-End::App::Controllers::Projects</a></li><li><a href="Back-End__App__Controllers__Users.html">Back-End::App::Controllers::Users</a></li><li><a href="Back-End__App__Models.html">Back-End::App::Models</a></li><li><a href="Front-End__Controllers.html">Front-End::Controllers</a></li><li><a href="Front-End__Directives.html">Front-End::Directives</a></li><li><a href="Front-End__Model.html">Front-End::Model</a></li><li><a href="Front-End__Services.html">Front-End::Services</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Wed Jun 17 2015 12:57:05 GMT+0200 (CEST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
