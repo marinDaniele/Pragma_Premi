@@ -1,4 +1,4 @@
-# pragma_premi
+# Premi
 Program that allow you to create a slide presentation on mental-map base.
 This is a University project developped for the Software engeenering course.
 The project allow the users to create a mental-map and build on this a own presentation.
