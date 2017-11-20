@@ -1,0 +1,4 @@
+#!/bin/bash
+pdflatex manualeUtente.tex
+makeglossaries manualeUtente
+pdflatex manualeUtente.tex

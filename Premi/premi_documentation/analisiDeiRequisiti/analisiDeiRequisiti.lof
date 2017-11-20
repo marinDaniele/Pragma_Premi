@@ -1,0 +1,35 @@
+\select@language {italian}
+\contentsline {figure}{\numberline {1}{\ignorespaces UC1: Caso d'uso privato\relax }}{11}{figure.caption.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces UC1.1: Creazione di un nuovo progetto\relax }}{12}{figure.caption.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces UC1.2: Modifica di un progetto\relax }}{14}{figure.caption.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces UC1.2.2: Modifica della struttura della mappa\relax }}{15}{figure.caption.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces UC1.2.2.3: Modifica di un nodo\relax }}{17}{figure.caption.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces UC1.2.2.3.5: Aggiunta di un immagine\relax }}{19}{figure.caption.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces UC1.2.2.3.6: Aggiunta di un video\relax }}{20}{figure.caption.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces UC1.2.2.3.8: Scelta del formato di un elemento testuale\relax }}{21}{figure.caption.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces UC1.2.3: Creazione di un percorso personalizzato\relax }}{24}{figure.caption.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces UC1.2.4: Modifica di un percorso di presentazione personalizzato\relax }}{26}{figure.caption.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces UC1.2.5: Eliminazione di un percorso personalizzato\relax }}{27}{figure.caption.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces UC1.2.6: Scelta delle impostazioni generali del progetto\relax }}{28}{figure.caption.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces UC1.2.6.1: Scelta del formato di default per il testo\relax }}{29}{figure.caption.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces UC1.3: Esecuzione di una presentazione\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces UC1.3.4: Spostamento ad un frame a scelta\relax }}{32}{figure.caption.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces UC1.3.6: Spostamento ad un frame direttamente correlato\relax }}{33}{figure.caption.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces UC1.5: Apertura di un progetto\relax }}{34}{figure.caption.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces UC1.6: Esportazione di un progetto\relax }}{36}{figure.caption.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces UC1.6.1: Esportazione della pagina web contenente una presentazione eseguibile\relax }}{36}{figure.caption.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces UC1.6.2: Esportazione della mappa mentale in PDF\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces UC1.6.3: Esportazione di una presentazione in PDF\relax }}{39}{figure.caption.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces UC1.7: Stampa di un progetto\relax }}{41}{figure.caption.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces UC1.7.1: Stampa della mappa mentale\relax }}{41}{figure.caption.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces UC1.7.2: Stampa di una presentazione\relax }}{43}{figure.caption.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces UC1.8: Chiusura del progetto corrente\relax }}{44}{figure.caption.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces UC1.10: Gestione profilo utente\relax }}{45}{figure.caption.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces UC1.10.1: Modifica password account\relax }}{46}{figure.caption.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces UC1.10.2: Cancellazione account\relax }}{47}{figure.caption.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces UC2: Caso d'uso pubblico\relax }}{48}{figure.caption.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces UC2.1: Registrazione account\relax }}{48}{figure.caption.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces UC2.2: Login\relax }}{50}{figure.caption.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces UC3: Progetto esportato\relax }}{52}{figure.caption.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces UC3.4: Spostamento ad un frame a scelta\relax }}{53}{figure.caption.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces UC3.5: Spostamento ad un frame direttamente correlato\relax }}{54}{figure.caption.34}

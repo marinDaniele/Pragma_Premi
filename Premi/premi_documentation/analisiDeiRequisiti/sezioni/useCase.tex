@@ -1,0 +1,1706 @@
+\subsection{UC1: Caso d'uso privato}
+\label{UC1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1}.pdf}
+\caption{UC1: Caso d'uso privato}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può effettuare varie operazioni: creare un nuovo \gloxy{progetto}, modificare un \gloxy{progetto} caricato dal sistema, eseguire una presentazione esistente, salvare un \gloxy{progetto} caricato dal sistema, aprire un \gloxy{progetto} salvato in un formato compatibile con l'applicazione, esportare un \gloxy{progetto} esistente in uno dei formati disponibili, stampare un \gloxy{progetto} esistente, chiudere un \gloxy{progetto} aperto, consultare il manuale utente, gestire i propri dati e effettuare il logout;
+\item \textbf{Precondizione}: l'applicazione è stata avviata tramite un \gloxy{browser} compatibile ed è pronta per essere utilizzata;
+\item \textbf{Postcondizione}: il sistema ha ottenuto le informazioni sulle operazioni che l'utente intende eseguire;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può creare un nuovo \gloxy{progetto} \hyperref[UC1.1]{(UC1.1)};
+\item L'utente può modificare un \gloxy{progetto} esistente \hyperref[UC1.2]{(UC1.2)};
+\item L'utente può eseguire una presentazione esistente \hyperref[UC1.3]{(UC1.3)};
+\item L’utente può eliminare un \gloxy{progetto} precedentemente salvato \hyperref[UC1.4]{(UC1.4)};
+\item L'utente può aprire un \gloxy{progetto} precedentemente salvato \hyperref[UC1.5]{(UC1.5)};
+\item L'utente può esportare un \gloxy{progetto} esistente \hyperref[UC1.6]{(UC1.6)};
+\item L'utente può stampare un \gloxy{progetto} esistente \hyperref[UC1.7]{(UC1.7)};
+\item L'utente può chiudere il \gloxy{progetto} corrente aperto \hyperref[UC1.8]{(UC1.8)};
+\item L'utente può consultare il manuale utente \hyperref[UC1.9]{(UC1.9)};
+\item L'utente può gestire il proprio profilo \hyperref[UC1.10]{(UC1.10)};
+\item L'utente può effettuare il logout \hyperref[UC1.11]{(UC1.11)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.1: Creazione di un nuovo progetto}
+\label{UC1.1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.1}.pdf}
+\caption{UC1.1: Creazione di un nuovo progetto}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può creare un nuovo \gloxy{progetto} indicandone un nome e confermandone la creazione;
+\item \textbf{Precondizione}: il sistema è stato avviato ed è pronto ad ospitare un nuovo \gloxy{progetto};
+\item \textbf{Postcondizione}: il sistema ha creato e caricato il nuovo \gloxy{progetto};
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere un nome per il nuovo \gloxy{progetto} \hyperref[UC1.1.1]{(UC1.1.1)};
+\item L'utente può confermare la creazione del nuovo \gloxy{progetto} \hyperref[UC1.1.2]{(UC1.1.2)}.
+\end{enumerate}
+\item \textbf{Estensioni}:
+\begin{enumerate}
+\item Nome \gloxy{progetto} non valido \hyperref[UC1.1.3]{(UC1.1.3)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.1.1: Scelta del nome}
+\label{UC1.1.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può indicare un nome per il nuovo \gloxy{progetto};
+\item \textbf{Precondizione}: il sistema è pronto a ricevere un nome, formato da almeno un carattere, da associare al nuovo \gloxy{progetto};
+\item \textbf{Postcondizione}: l'utente ha scelto un nome per il nuovo \gloxy{progetto};
+\item \textbf{Scenario principale}:
+l'utente indica un nome per il nuovo \gloxy{progetto}.
+\end{itemize}
+\subsection{UC1.1.2: Conferma creazione}
+\label{UC1.1.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare la creazione di un nuovo \gloxy{progetto}. Ad ogni conferma di creazione di \gloxy{progetto} corrisponde la creazione di una \gloxy{mappa mentale} contenete il nodo radice e il \gloxy{percorso di presentazione} di default;
+\item \textbf{Precondizione}: l'utente ha scelto un nome per il nuovo \gloxy{progetto};
+\item \textbf{Postcondizione}: l'utente ha confermato i dati selezionati e il sistema ha creato un nuovo \gloxy{progetto};
+\item \textbf{Scenario principale}:
+l'utente conferma la creazione di un nuovo \gloxy{progetto}.
+\end{itemize}
+\subsection{UC1.1.3: Nome progetto non valido}
+\label{UC1.1.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: viene notificato all’utente che è già presente un \gloxy{progetto} con lo stesso nome;
+\item \textbf{Precondizione}: l’utente ha scelto come nome del \gloxy{progetto} il nome di un \gloxy{progetto} già esistente;
+\item \textbf{Postcondizione}: il sistema ha comunicato all’utente l’errore e ha visualizzato un campo per inserire un nuovo nome;
+\item \textbf{Scenario principale}:
+l’utente visualizza il messaggio d’errore.
+\end{itemize}
+\subsection{UC1.2: Modifica di un progetto}
+\label{UC1.2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2}.pdf}
+\caption{UC1.2: Modifica di un progetto}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può modificare il nome del \gloxy{progetto}, la struttura della mappa mentale, creare un \gloxy{percorso di presentazione} personalizzato, modificare un \gloxy{percorso di presentazione} esistente, scegliere le impostazioni generali del \gloxy{progetto};
+\item \textbf{Precondizione}: il sistema contiene un \gloxy{progetto} pronto per essere modificato;
+\item \textbf{Postcondizione}: il sistema ha applicato le modifiche indicate dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può modificare il nome del \gloxy{progetto} \hyperref[UC1.2.1]{(UC1.2.1)};
+\item L'utente può modificare la struttura della \gloxy{mappa mentale} \hyperref[UC1.2.2]{(UC1.2.2)};
+\item L'utente può creare un \gloxy{percorso di presentazione} personalizzato \hyperref[UC1.2.3]{(UC1.2.3)};
+\item L'utente può selezionare un \gloxy{percorso di presentazione} personalizzato \hyperref[UC1.2.7]{(UC1.2.7)};
+\item L'utente può modificare un \gloxy{percorso di presentazione} personalizzato esistente \hyperref[UC1.2.4]{(UC1.2.4)};
+\item L'utente può eliminare un \gloxy{percorso di presentazione} personalizzato esistente \hyperref[UC1.2.5]{(UC1.2.5)};
+\item L'utente può scegliere delle impostazioni generali per il \gloxy{progetto} \hyperref[UC1.2.6]{(UC1.2.6)}.
+\end{enumerate}
+\item \textbf{Estensioni}:
+\begin{enumerate} \item Nome progetto non valido \hyperref[UC1.1.3]{(UC1.1.3)}. \end{enumerate}
+\end{itemize}
+\subsection{UC1.2.1: Modifica del nome}
+\label{UC1.2.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può modificare il nome del \gloxy{progetto} corrente;
+\item \textbf{Precondizione}: il sistema è pronto a ricevere un nome, formato da almeno un carattere, da associare al \gloxy{progetto} corrente;
+\item \textbf{Postcondizione}: il sistema modifica il nome del \gloxy{progetto} corrente;
+\item \textbf{Scenario principale}:
+l'utente modifica il nome del \gloxy{progetto} corrente.
+\end{itemize}
+\subsection{UC1.2.2: Modifica della struttura della mappa}
+\label{UC1.2.2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.2}.pdf}
+\caption{UC1.2.2: Modifica della struttura della mappa}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può effettuare varie operazioni di modifica della struttura della mappa mentale: aggiungere, modificare, spostare, eliminare un nodo e aggiungere, eliminare un'associazione tra nodi;
+\item \textbf{Precondizione}: il sistema è pronto alla modifica della \gloxy{mappa mentale} presente all'interno del \gloxy{progetto};
+\item \textbf{Postcondizione}: il sistema ha eseguito correttamente le operazioni di modifica della mappa indicate dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può selezionare un nodo della \gloxy{mappa mentale} da modificare \hyperref[UC1.2.2.1]{(UC1.2.2.1)};
+\item L'utente può aggiungere un nodo alla \gloxy{mappa mentale} \hyperref[UC1.2.2.2]{(UC1.2.2.2)};
+\item L'utente può modificare un nodo esistente della \gloxy{mappa mentale} \hyperref[UC1.2.2.3]{(UC1.2.2.3)};
+\item L'utente può spostare un nodo nella gerarchia della \gloxy{mappa mentale} \hyperref[UC1.2.2.4]{(UC1.2.2.4)};
+\item L'utente può eliminare un nodo esistente \hyperref[UC1.2.2.5]{(UC1.2.2.5)};
+\item L'utente può aggiungere un'associazione tra nodi \hyperref[UC1.2.2.6]{(UC1.2.2.6)};
+\item L'utente può eliminare un'associazione tra nodi \hyperref[UC1.2.2.7]{(UC1.2.2.7)};
+\item L'utente può selezionare un'associazione tra nodi \hyperref[UC1.2.2.8]{(UC1.2.2.8)};
+\item L'utente può spostare un nodo in un altro punto della \gloxy{mappa mentale} \hyperref[UC1.2.2.9]{(UC1.2.2.9)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.2.1: Selezione di un nodo}
+\label{UC1.2.2.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un nodo;
+\item \textbf{Precondizione}: esiste almeno un nodo;
+\item \textbf{Postcondizione}: l'utente ha selezionato un nodo;
+\item \textbf{Scenario principale}:
+l'utente seleziona un nodo.
+\end{itemize}
+\subsection{UC1.2.2.2: Aggiunta di un nodo}
+\label{UC1.2.2.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può aggiungere un nodo alla \gloxy{mappa mentale} come figlio del nodo selezionato;
+\item \textbf{Precondizione}: l'utente deve aver selezionato un nodo;
+\item \textbf{Postcondizione}: il sistema aggiunge il nodo come figlio del nodo selezionato;
+\item \textbf{Scenario principale}:
+l'utente aggiunge un nodo alla \gloxy{mappa mentale} come figlio del nodo selezionato.
+\end{itemize}
+\subsection{UC1.2.2.3: Modifica di un nodo}
+\label{UC1.2.2.3}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.2.3}.pdf}
+\caption{UC1.2.2.3: Modifica di un nodo}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può effettuare varie operazioni: aggiungere, rimuovere, spostare all'interno di un nodo elementi testuali, immagini e video, e modificare un qualsiasi elemento testuale presente all'interno del nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato un nodo;
+\item \textbf{Postcondizione}: il sistema ha applicato le modifiche indicate dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può selezionare un elemento testuale \hyperref[UC1.2.2.3.1]{(UC1.2.2.3.1)};
+\item L'utente può selezionare un immagine \hyperref[UC1.2.2.3.2]{(UC1.2.2.3.2)};
+\item L'utente può selezionare un video \hyperref[UC1.2.2.3.3]{(UC1.2.2.3.3)};
+\item L'utente può aggiungere un elemento testuale \hyperref[UC1.2.2.3.4]{(UC1.2.2.3.4)};
+\item L'utente può aggiungere un immagine \hyperref[UC1.2.2.3.5]{(UC1.2.2.3.5)};
+\item L'utente può aggiungere un video \hyperref[UC1.2.2.3.6]{(UC1.2.2.3.6)};
+\item L'utente può modificare un elemento testuale\hyperref[UC1.2.2.3.7]{(UC1.2.2.3.7)};
+\item L'utente può scegliere il formato di un elemento testuale \hyperref[UC1.2.2.3.8]{(UC1.2.2.3.8)};
+\item L'utente può spostare un elemento testuale \hyperref[UC1.2.2.3.9]{(UC1.2.2.3.9)};
+\item L'utente può spostare un'immagine \hyperref[UC1.2.2.3.10]{(UC1.2.2.3.10)};
+\item L'utente può spostare un video \hyperref[UC1.2.2.3.11]{(UC1.2.2.3.11)};
+\item L'utente può eliminare un elemento testuale \hyperref[UC1.2.2.3.12]{(UC1.2.2.3.12)};
+\item L'utente può eliminare un'immagine \hyperref[UC1.2.2.3.13]{(UC1.2.2.3.13)};
+\item L'utente può eliminare un video \hyperref[UC1.2.2.3.14]{(UC1.2.2.3.14)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.2.3.1: Selezione di un elemento testuale}
+\label{UC1.2.2.3.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un elemento testuale;
+\item \textbf{Precondizione}: esiste almeno un elemento testuale all'interno del nodo selezionato dall'utente;
+\item \textbf{Postcondizione}: l'utente ha selezionato un elemento testuale;
+\item \textbf{Scenario principale}:
+l'utente seleziona un elemento testuale.
+\end{itemize}
+\subsection{UC1.2.2.3.2: Selezione di un immagine}
+\label{UC1.2.2.3.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un'immagine;
+\item \textbf{Precondizione}: esiste almeno un'immagine all'interno del nodo selezionato dall'utente;
+\item \textbf{Postcondizione}: l'utente ha selezionato un'immagine;
+\item \textbf{Scenario principale}:
+l'utente seleziona un'immagine.
+\end{itemize}
+\subsection{UC1.2.2.3.3: Selezione di un video}
+\label{UC1.2.2.3.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un video;
+\item \textbf{Precondizione}: esiste almeno un video all'interno del nodo selezionato dall'utente;
+\item \textbf{Postcondizione}: l'utente ha selezionato un video;
+\item \textbf{Scenario principale}:
+l'utente seleziona un video.
+\end{itemize}
+\subsection{UC1.2.2.3.4: Aggiunta di un elemento testuale}
+\label{UC1.2.2.3.4}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può inserire un nuovo elemento testuale all'interno di un nodo;
+\item \textbf{Precondizione}: il sistema è pronto ad aggiungere un nuovo elemento testuale;
+\item \textbf{Postcondizione}: il sistema ha aggiunto il nuovo elemento testuale all'interno del nodo;
+\item \textbf{Scenario principale}:
+l'utente inserisce il nuovo elemento testuale all'interno del nodo.
+\end{itemize}
+\subsection{UC1.2.2.3.5: Aggiunta di un immagine}
+\label{UC1.2.2.3.5}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.2.3.5}.pdf}
+\caption{UC1.2.2.3.5: Aggiunta di un immagine}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può inserire un'immagine, in un formato compatibile con l'applicazione, all'interno di un nodo;
+\item \textbf{Precondizione}: il sistema è pronto ad aggiungere una nuova immagine all'interno del nodo;
+\item \textbf{Postcondizione}: il sistema ha aggiunto l'immagine all'interno del nodo;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere l'immagine da inserire \hyperref[UC1.2.2.3.5.1]{(UC1.2.2.3.5.1)};
+\item L'utente può confermare l'inserimento dell'immagine \hyperref[UC1.2.2.3.5.2]{(UC1.2.2.3.5.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.2.3.5.1: Scelta dell'immagine}
+\label{UC1.2.2.3.5.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può inserire un URL relativo ad un immagine presente su Internet;
+\item \textbf{Precondizione}: il sistema permette di inserire un URL;
+\item \textbf{Postcondizione}: l'utente ha inserito un URL relativo ad un file di tipo immagine;
+\item \textbf{Scenario principale}:
+l'utente inserisce un URL relativo ad un immagine presente su Internet.
+\end{itemize}
+\subsection{UC1.2.2.3.5.2: Conferma inserimento}
+\label{UC1.2.2.3.5.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'inserimento di una immagine all'iterno di un nodo;
+\item \textbf{Precondizione}: l'utente ha inserito l'URL relativo ad un'immagine presente su internet;
+\item \textbf{Postcondizione}: l'utente ha confermato i dati selezionati e il sistema ha inserito l'immagine all'interno del nodo;
+\item \textbf{Scenario principale}:
+l'utente conferma l'inserimento di una immagine.
+\end{itemize}
+\subsection{UC1.2.2.3.6: Aggiunta di un video}
+\label{UC1.2.2.3.6}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.2.3.6}.pdf}
+\caption{UC1.2.2.3.6: Aggiunta di un video}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può inserire un video, in un formato compatibile con l'applicazione, all'interno di un nodo;
+\item \textbf{Precondizione}: il sistema è pronto ad aggiungere un nuovo video all'interno del nodo;
+\item \textbf{Postcondizione}: il sistema ha aggiunto il video all'interno del nodo;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere il video da inserire \hyperref[UC1.2.2.3.6.1]{(UC1.2.2.3.6.1)};
+\item L'utente può confermare l'inserimento del video \hyperref[UC1.2.2.3.6.2]{(UC1.2.2.3.6.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.2.3.6.1: Scelta del video}
+\label{UC1.2.2.3.6.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{percorso} che corrisponde ad un file di tipo video presente nel filesystem;
+\item \textbf{Precondizione}: il sistema permette di selezionare un file in uno dei formati per video disponibili;
+\item \textbf{Postcondizione}: l'utente ha selezionato il \gloxy{percorso} relativo ad un file di tipo video;
+\item \textbf{Scenario principale}:
+l'utente seleziona un file di tipo video presente nel filesystem.
+\end{itemize}
+\subsection{UC1.2.2.3.6.2: Conferma inserimento}
+\label{UC1.2.2.3.6.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'inserimento di un video all'interno di un nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato il \gloxy{percorso} relativo ad un file di tipo video;
+\item \textbf{Postcondizione}: l'utente ha confermato i dati selezionati e il sistema ha inserito l'immagine all'interno del nodo;
+\item \textbf{Scenario principale}:
+l'utente conferma l'inserimento di un video.
+\end{itemize}
+\subsection{UC1.2.2.3.7: Modifica di un elemento testuale}
+\label{UC1.2.2.3.7}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può modificare un elemento testuale;
+\item \textbf{Precondizione}: l'utente ha selezionato un elemento testuale;
+\item \textbf{Postcondizione}: il sistema ha applicato le modifiche indicate dall'utente;
+\item \textbf{Scenario principale}:
+l'utente modifica un elemento testuale.
+\end{itemize}
+\subsection{UC1.2.2.3.8: Scelta del formato di un elemento testuale}
+\label{UC1.2.2.3.8}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.2.3.8}.pdf}
+\caption{UC1.2.2.3.8: Scelta del formato di un elemento testuale}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un formato da applicare all'elemento testuale;
+\item \textbf{Precondizione}: l'utente ha selezionato un elemento testuale;
+\item \textbf{Postcondizione}: il sistema ha applicato il formato scelto dall'utente all'elemento testuale selezionato;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere un font per l'elemento testuale \hyperref[UC1.2.2.3.8.1]{(UC1.2.2.3.8.1)};
+\item L'utente può scegliere un colore per l'elemento testuale \hyperref[UC1.2.2.3.8.2]{(UC1.2.2.3.8.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.2.3.8.1: Scelta del font}
+\label{UC1.2.2.3.8.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un font tra quelli resi disponibili dal sistema;
+\item \textbf{Precondizione}: il sistema è pronto alla scelta di un font per l'elemento testuale;
+\item \textbf{Postcondizione}: il sistema ha applicato il font scelto dall'utente all'elemento testuale selezionato;
+\item \textbf{Scenario principale}:
+l'utente sceglie un font tra quelli resi disponibili dal sistema.
+\end{itemize}
+\subsection{UC1.2.2.3.8.2: Scelta del colore}
+\label{UC1.2.2.3.8.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un colore tra quelli resi disponibili dal sistema;
+\item \textbf{Precondizione}: il sistema è pronto alla scelta di un colore per l'elemento testuale;
+\item \textbf{Postcondizione}: il sistema ha applicato il colore scelto dall'utente all'elemento testuale selezionato;
+\item \textbf{Scenario principale}:
+l'utente sceglie un colore tra quelli resi disponibili dal sistema.
+\end{itemize}
+\subsection{UC1.2.2.3.9: Spostamento di un elemento testuale}
+\label{UC1.2.2.3.9}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può spostare un elemento testuale selezionato all'interno del nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato un elemento testuale;
+\item \textbf{Postcondizione}: il sistema ha spostato l'elemento testuale nel punto del nodo indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente sposta l'elemento testuale all'interno al nodo.
+\end{itemize}
+\subsection{UC1.2.2.3.10: Spostamento di un'immagine}
+\label{UC1.2.2.3.10}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può spostare l'immagine selezionata all'interno del nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato un'immagine presente nel nodo;
+\item \textbf{Postcondizione}: il sistema ha spostato l'immagine nel punto del nodo indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente sposta l'immagine in un qualsiasi punto interno al nodo.
+\end{itemize}
+\subsection{UC1.2.2.3.11: Spostamento di un video}
+\label{UC1.2.2.3.11}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può spostare il video selezionato all'interno del nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato un video presente nel nodo;
+\item \textbf{Postcondizione}: il sistema ha spostato il video nel punto del nodo indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente sposta il video in un qualsiasi punto interno al nodo.
+\end{itemize}
+\subsection{UC1.2.2.3.12: Eliminazione di un elemento testuale}
+\label{UC1.2.2.3.12}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può eliminare un elemento testuale presente nel nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato l'elemento testuale da eliminare;
+\item \textbf{Postcondizione}: il sistema ha eliminato l'elemento testuale indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente elimina l'elemento testuale selezionato.
+\end{itemize}
+\subsection{UC1.2.2.3.13: Eliminazione di un immagine}
+\label{UC1.2.2.3.13}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può eliminare un'immagine presente nel nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato l'immagine da eliminare;
+\item \textbf{Postcondizione}: il sistema ha eliminato l'immagine indicata dall'utente;
+\item \textbf{Scenario principale}:
+l'utente elimina l'immagine selezionata.
+\end{itemize}
+\subsection{UC1.2.2.3.14: Eliminazione di un video}
+\label{UC1.2.2.3.14}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può eliminare un video presente nel nodo;
+\item \textbf{Precondizione}: l'utente ha selezionato il video da eliminare;
+\item \textbf{Postcondizione}: il sistema ha eliminato il video indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente elimina il video selezionato.
+\end{itemize}
+\subsection{UC1.2.2.4: Spostamento gerarchico di un nodo}
+\label{UC1.2.2.4}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può spostare un nodo all'interno della gerarchia della mappa, scegliendo come nuovo padre un nodo non appartenente al sottoalbero del nodo selezionato. Lo spostamento di un nodo comporta lo spostamento dell'interno sottoalbero radicato in esso;
+\item \textbf{Precondizione}: l'utente ha selezionato un nodo diverso dal nodo radice;
+\item \textbf{Postcondizione}: il sistema ha spostato il nodo selezionato, insieme a tutti i nodi presenti nel sottoalbero radicato in esso;
+\item \textbf{Scenario principale}:
+l'utente sposta un nodo all'interno della gerarchia della mappa, definendone un nuovo padre.
+\end{itemize}
+\subsection{UC1.2.2.5: Eliminazione di un nodo}
+\label{UC1.2.2.5}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può eliminare il nodo selezionato, e ciò comporta l'eliminazione di tutti i nodi presenti nel sottoalbero radicato in esso e delle loro eventuali associazioni con altri nodi;
+\item \textbf{Precondizione}: l'utente ha selezionato un nodo, diverso dalla radice;
+\item \textbf{Postcondizione}: il sistema ha eliminato tutti i nodi presenti nel sottoalbero radicato nel nodo selezionato e le loro eventuali associazioni con altri nodi;
+\item \textbf{Scenario principale}:
+l'utente elimina il nodo selezionato.
+\end{itemize}
+\subsection{UC1.2.2.6: Aggiunta di una associazione tra nodi}
+\label{UC1.2.2.6}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può aggiungere un'associazione tra due nodi della mappa mentale;
+\item \textbf{Precondizione}: esistono almeno due nodi nella \gloxy{mappa mentale} e l'utente ne ha selezionato uno;
+\item \textbf{Postcondizione}: il sistema ha aggiunto l'associazione tra i due nodi indicati dall'utente;
+\item \textbf{Scenario principale}:
+l'utente aggiunge un'associazione tra due nodi della mappa mentale.
+\end{itemize}
+\subsection{UC1.2.2.7: Eliminazione di una associazione tra nodi}
+\label{UC1.2.2.7}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può eliminare un'associazione tra due nodi della mappa mentale;
+\item \textbf{Precondizione}: l'utente ha selezionato un'associazione tra due nodi;
+\item \textbf{Postcondizione}: il sistema ha eliminato l'associazione tra i nodi indicata dall'utente;
+\item \textbf{Scenario principale}:
+l'utente elimina l'associazione selezionata della mappa mentale.
+\end{itemize}
+\subsection{UC1.2.2.8: Selezione di una associazione tra nodi}
+\label{UC1.2.2.8}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un'associazione tra due nodi della mappa mentale;
+\item \textbf{Precondizione}: esiste almeno un'associazione tra due nodi della mappa mentale;
+\item \textbf{Postcondizione}: l'utente ha selezionato un'associazione tra due nodi;
+\item \textbf{Scenario principale}:
+l'utente seleziona un'associazione tra quelle esistenti nella mappa mentale.
+\end{itemize}
+\subsection{UC1.2.2.9: Spostamento grafico di un nodo}
+\label{UC1.2.2.9}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può spostare graficamente il nodo della \gloxy{mappa mentale} selezionato.
+Uno spostamento grafico ha effetto solamente sul nodo selezionato e non su eventuali altri nodi appartenenti al sottoalbero radicato in esso;
+\item \textbf{Precondizione}: l'utente ha selezionato un nodo della mappa mentale;
+\item \textbf{Postcondizione}: il sistema ha cambiato la posizione grafica del nodo selezionato, secondo quanto indicato dall'utente e mantenendone le associazioni esistenti;
+\item \textbf{Scenario principale}:
+l'utente sposta un nodo all'interno della mappa.
+\end{itemize}
+\subsection{UC1.2.3: Creazione di un percorso personalizzato}
+\label{UC1.2.3}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.3}.pdf}
+\caption{UC1.2.3: Creazione di un percorso personalizzato}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può creare un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: esiste almeno un nodo;
+\item \textbf{Postcondizione}: il sistema ha creato il \gloxy{percorso di presentazione} personalizzato definito dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere il nome del \gloxy{percorso} \hyperref[UC1.2.3.1]{(UC1.2.3.1)};
+\item L'utente può selezionare il nodo di partenza del \gloxy{percorso} \hyperref[UC1.2.3.2]{(UC1.2.3.2)};
+\item L'utente può confermare la creazione del \gloxy{percorso} \hyperref[UC1.2.3.3]{(UC1.2.3.3)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.3.1: Scelta del nome}
+\label{UC1.2.3.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può inserire un nome non vuoto, che identifichi il \gloxy{percorso di presentazione} personalizzato da creare;
+\item \textbf{Precondizione}: l'utente deve aver selezionato un nodo di partenza per il \gloxy{percorso} personalizzato da creare;
+\item \textbf{Postcondizione}: il sistema ha ricevuto le informazioni riguardo il nome scelto dall'utente;
+\item \textbf{Scenario principale}:
+l'utente inserisce un nome per il \gloxy{percorso di presentazione} personalizzato da creare.
+\end{itemize}
+\subsection{UC1.2.3.2: Selezione del nodo di partenza}
+\label{UC1.2.3.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un nodo da assegnare come nodo di partenza del \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: il sistema è pronto alla selezione del nodo di partenza del \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Postcondizione}: il sistema ha selezionato un nodo di partenza per il \gloxy{percorso} personalizzato indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona il nodo di partenza per il \gloxy{percorso di presentazione} personalizzato da creare.
+\end{itemize}
+\subsection{UC1.2.3.3: Conferma creazione}
+\label{UC1.2.3.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare la creazione di un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: l'utente ha selezionato un nodo di partenza ed un nome per il \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Postcondizione}: l'utente ha confermato i dati selezionati. Il sistema crea un nuovo \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Scenario principale}:
+l'utente conferma i dati precedentemente selezionati per la creazione di un \gloxy{percorso di presentazione} personalizzato.
+\end{itemize}
+\subsection{UC1.2.4: Modifica di un percorso di presentazione personalizzato}
+\label{UC1.2.4}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.4}.pdf}
+\caption{UC1.2.4: Modifica di un percorso di presentazione personalizzato}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può modificare il \gloxy{percorso di presentazione} personalizzato di visita dei nodi della mappa;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso di presentazione} personalizzato esistente;
+\item \textbf{Postcondizione}: il sistema ha modificato il \gloxy{percorso} personalizzato correttamente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può aggiungere un \gloxy{frame} al \gloxy{percorso} personalizzato \hyperref[UC1.2.4.1]{(UC1.2.4.1)};
+\item L'utente può spostare un \gloxy{frame} nel \gloxy{percorso} \hyperref[UC1.2.4.2]{(UC1.2.4.2)};
+\item L'utente può eliminare un \gloxy{frame} dal \gloxy{percorso} \hyperref[UC1.2.4.3]{(UC1.2.4.3)};
+\item L'utente può scegliere il \gloxy{percorso} come \gloxy{percorso} principale \hyperref[UC1.2.4.4]{(UC1.2.4.4)}.
+\end{enumerate}
+\item \textbf{Inclusioni}:
+\begin{enumerate}
+\item Viene aggiunto un effetto grafico di transizione \hyperref[UC1.2.4.5]{(UC1.2.4.5)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.4.1: Aggiunta di un frame al percorso}
+\label{UC1.2.4.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può aggiungere un \gloxy{frame} al \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: esiste almeno un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Postcondizione}: il sistema ha aggiunto un \gloxy{frame} al \gloxy{percorso di presentazione} personalizzato scelto dall'utente;
+\item \textbf{Scenario principale}:
+l'utente aggiunge un \gloxy{frame} ad un \gloxy{percorso di presentazione} personalizzato.
+\end{itemize}
+\subsection{UC1.2.4.2: Spostamento di un frame nel percorso}
+\label{UC1.2.4.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può spostare un \gloxy{frame} all'interno di un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{frame} contenuto in un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Postcondizione}: il sistema ha spostato il \gloxy{frame}, scelto dall'utente, all'interno del \gloxy{percorso di presentazione} scelto dall'utente;
+\item \textbf{Scenario principale}:
+l'utente sposta un \gloxy{frame} all'interno di un \gloxy{percorso} di presentazione.
+\end{itemize}
+\subsection{UC1.2.4.3: Eliminazione di un frame dal percorso}
+\label{UC1.2.4.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può eliminare un \gloxy{frame} da un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{frame} contenuta in un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Postcondizione}: il sistema ha eliminato il \gloxy{frame} scelto dall'utente;
+\item \textbf{Scenario principale}:
+l'utente elimina un \gloxy{frame} da un \gloxy{percorso di presentazione} personalizzato.
+\end{itemize}
+\subsection{UC1.2.4.4: Scelta del percorso come principale}
+\label{UC1.2.4.4}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: un utente può marcare un \gloxy{percorso} di presentazione, come il \gloxy{percorso di presentazione} principale di un \gloxy{progetto}, per semplificarne la ricerca nella modalità di presentazione;
+\item \textbf{Precondizione}: esiste almeno un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Postcondizione}: il sistema ha memorizzato il \gloxy{percorso} di presentazione, scelto dall'utente, come il \gloxy{percorso di presentazione} principale del \gloxy{progetto};
+\item \textbf{Scenario principale}:
+l'utente marca un \gloxy{percorso} di presentazione, come il \gloxy{percorso di presentazione} principale del \gloxy{progetto}.
+\end{itemize}
+\subsection{UC1.2.4.5: Aggiunta di un effetto grafico di transizione}
+\label{UC1.2.4.5}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può aggiungere un effetto grafico di transizione al nodo;
+\item \textbf{Precondizione}: l'utente deve aver selezionato un nodo;
+\item \textbf{Postcondizione}: il sistema applica l'effetto scelto dall'utente al nodo;
+\item \textbf{Scenario principale}:
+l'utente aggiunge un effetto grafico di transizione al nodo.
+\end{itemize}
+\subsection{UC1.2.5: Eliminazione di un percorso personalizzato}
+\label{UC1.2.5}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.5}.pdf}
+\caption{UC1.2.5: Eliminazione di un percorso personalizzato}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può eliminare un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso di presentazione} personalizzato esistente;
+\item \textbf{Postcondizione}: il sistema ha eliminato il \gloxy{percorso di presentazione} personalizzato deciso dall'utente;
+\item \textbf{Scenario principale}:
+L'utente può confermare l'eliminazione del \gloxy{percorso di presentazione} personalizzato selezionato \hyperref[UC1.2.5.1]{(UC1.2.5.1)}.
+\end{itemize}
+\subsection{UC1.2.5.1: Conferma eliminazione del percorso personalizzato}
+\label{UC1.2.5.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'eliminazione del \gloxy{percorso di presentazione} personalizzato selezionato;
+\item \textbf{Precondizione}: il sistema ha ricevuto le informazioni su quale \gloxy{percorso di presentazione} personalizzato eliminare;
+\item \textbf{Postcondizione}: il sistema ha eliminato il \gloxy{percorso di presentazione} personalizzato selezionato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente conferma l'eliminazione del \gloxy{percorso di presentazione} personalizzato selezionato.
+\end{itemize}
+\subsection{UC1.2.6: Scelta delle impostazioni generali del progetto}
+\label{UC1.2.6}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.6}.pdf}
+\caption{UC1.2.6: Scelta delle impostazioni generali del progetto}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere le impostazioni generali del \gloxy{progetto};
+\item \textbf{Precondizione}: l'applicazione è stata avviata ed è pronta per essere utilizzata;
+\item \textbf{Postcondizione}: il sistema ha aggiornato le impostazioni generali del \gloxy{progetto} secondo le indicazioni dell'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere un formato di default per il testo \hyperref[UC1.2.6.1]{(UC1.2.6.1)};
+\item L'utente può scegliere uno sfondo per il \gloxy{frame} dei nodi \hyperref[UC1.2.6.2]{(UC1.2.6.2)};
+\item L'utente può confermare le impostazioni \hyperref[UC1.2.6.3]{(UC1.2.6.3)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.6.1: Scelta del formato di default per il testo}
+\label{UC1.2.6.1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.2.6.1}.pdf}
+\caption{UC1.2.6.1: Scelta del formato di default per il testo}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un formato di default per il testo;
+\item \textbf{Precondizione}: il sistema è stato avviato ed è pronto per essere utilizzato;
+\item \textbf{Postcondizione}: il sistema ha selezionato il formato scelto dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere un font di default per il testo \hyperref[UC1.2.6.1.1]{(UC1.2.6.1.1)};
+\item L'utente può scegliere il colore di default per il testo \hyperref[UC1.2.6.1.2]{(UC1.2.6.1.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.2.6.1.1: Scelta del font di default per il testo}
+\label{UC1.2.6.1.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un font di default per il testo;
+\item \textbf{Precondizione}: l'applicazione è stata avviata ed è pronta per essere utilizzata;
+\item \textbf{Postcondizione}: il sistema ha selezionato il font di default indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona un font di default per il testo.
+\end{itemize}
+\subsection{UC1.2.6.1.2: Scelta del colore di default per il testo}
+\label{UC1.2.6.1.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare il colore di default per il testo;
+\item \textbf{Precondizione}: l'applicazione è stata avviata ed è pronta per essere usata;
+\item \textbf{Postcondizione}: il sistema ha selezionato il colore di default per il testo indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona il colore di default per il testo.
+\end{itemize}
+\subsection{UC1.2.6.2: Scelta di uno sfondo per il frame dei nodi}
+\label{UC1.2.6.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un colore di sfondo per il \gloxy{frame} dei nodi;
+\item \textbf{Precondizione}: l'applicazione è stata avviata ed è pronta per essere utilizzata;
+\item \textbf{Postcondizione}: il sistema seleziona il colore di sfondo indicato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona un colore di sfondo per i \gloxy{frame} dei nodi del \gloxy{progetto}.
+\end{itemize}
+\subsection{UC1.2.6.3: Conferma delle impostazioni}
+\label{UC1.2.6.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare le modifiche alle impostazioni generali del \gloxy{progetto};
+\item \textbf{Precondizione}: l'utente deve aver scelto uno sfondo di default per il \gloxy{canvas} e/o un formato di default per il testo;
+\item \textbf{Postcondizione}: l'utente ha confermato le impostazioni generali del \gloxy{progetto}. Il sistema applica le modifiche indicate dall'utente;
+\item \textbf{Scenario principale}:
+l'utente conferma le modifiche alle impostazioni generali del \gloxy{progetto}. Il sistema applica le modifiche confermate.
+\end{itemize}
+\subsection{UC1.2.7: Selezione di un percorso personalizzato}
+\label{UC1.2.7}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Precondizione}: esiste almeno un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Postcondizione}: l'utente ha selezionato un \gloxy{percorso di presentazione} personalizzato;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{percorso di presentazione} personalizzato.
+\end{itemize}
+\subsection{UC1.3: Esecuzione di una presentazione}
+\label{UC1.3}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.3}.pdf}
+\caption{UC1.3: Esecuzione di una presentazione}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può scegliere il \gloxy{percorso di visualizzazione} che preferisce; all'interno del \gloxy{percorso} l'utente può spostarsi al \gloxy{frame} successivo, precedente, oppure ad un qualsiasi altro \gloxy{frame} direttamente correlato o meno al \gloxy{frame} corrente; l'utente può chiudere la presentazione;
+\item \textbf{Precondizione}: il sistema contiene un \gloxy{progetto} ed una presentazione pronta per essere eseguita;
+\item \textbf{Postcondizione}: il sistema ha eseguito la presentazione secondo le azioni dichiarate dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere il \gloxy{percorso di visualizzazione} della presentazione \hyperref[UC1.3.1]{(UC1.3.1)};
+\item L'utente può spostarsi al \gloxy{frame} successivo \hyperref[UC1.3.2]{(UC1.3.2)};
+\item L'utente può spostarsi al \gloxy{frame} successivo \hyperref[UC1.3.3]{(UC1.3.3)};
+\item L'utente può spostarsi ad un \gloxy{frame} a sua scelta \hyperref[UC1.3.4]{(UC1.3.4)};
+\item L'utente può chiudere la presentazione \hyperref[UC1.3.5]{(UC1.3.5)};
+\item L'utente può spostarsi ad un \gloxy{frame} direttamente correlato a quello correntemente visualizzato \hyperref[UC1.3.6]{(UC1.3.6)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.3.1: Scelta del percorso di visualizzazione}
+\label{UC1.3.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{percorso} di presentazione, che stabilisce una sequenza di visualizzazione dei \gloxy{frame};
+\item \textbf{Precondizione}: esiste almeno un \gloxy{percorso di presentazione} per il \gloxy{progetto} corrente;
+\item \textbf{Postcondizione}: l'utente ha selezionato un \gloxy{percorso di presentazione} per l'esecuzione;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{percorso di presentazione} per l'esecuzione.
+\end{itemize}
+\subsection{UC1.3.2: Spostamento al frame successivo}
+\label{UC1.3.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può passare al \gloxy{frame} successivo;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso} di visualizzazione;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} successivo, secondo l'ordine stabilito dal \gloxy{percorso di visualizzazione} corrente;
+\item \textbf{Scenario principale}:
+l'utente seleziona il comando per passare al \gloxy{frame} successivo;
+\item \textbf{Scenari alternativi}:
+\begin{itemize}
+\item Se il \gloxy{frame} corrente è l'ultimo del \gloxy{percorso} selezionato, allora viene visualizzata l'intera mappa mentale;
+\item Se è stato effettuato uno spostamento ad un \gloxy{frame} a scelta, allora viene ripresa la presentazione dall'ultimo \gloxy{frame} visualizzato appartenente al \gloxy{percorso} scelto.
+\end{itemize}
+\end{itemize}
+\subsection{UC1.3.3: Spostamento al frame precedente}
+\label{UC1.3.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può passare al \gloxy{frame} precedente;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso} di visualizzazione;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} precedente, secondo l'ordine stabilito dal \gloxy{percorso di visualizzazione} corrente;
+\item \textbf{Scenario principale}:
+l'utente seleziona il comando per passare il \gloxy{frame} precedente;
+\item \textbf{Scenari alternativi}:
+\begin{itemize} \item Se il frame corrente è il primo del percorso selezionato, allora viene visualizzata l'intera mappa mentale; \item Se è stato effettuato uno spostamento ad un frame a scelta, allora viene ripresa la presentazione dall'ultimo frame visualizzato appartenente al percorso scelto. \end{itemize}
+\end{itemize}
+\subsection{UC1.3.4: Spostamento ad un frame a scelta}
+\label{UC1.3.4}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.3.4}.pdf}
+\caption{UC1.3.4: Spostamento ad un frame a scelta}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può passare ad un \gloxy{frame} a scelta;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso} di visualizzazione;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} scelto dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate} \item L'utente può visualizzare tutti i frame presenti nella mappa mentale \hyperref[UC1.3.4.1]{(UC1.3.4.1)}; \item L'utente può selezionare un frame tra quelli presenti nella mappa mentale \hyperref[UC1.3.4.2]{(UC1.3.4.2)}. \end{enumerate}
+\end{itemize}
+\subsection{UC1.3.4.1: Visualizzazione frame disponibili}
+\label{UC1.3.4.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può visualizzare tutti i \gloxy{frame} presenti nella mappa mentale;
+\item \textbf{Precondizione}: la \gloxy{mappa mentale} contiene almeno un \gloxy{frame};
+\item \textbf{Postcondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} presenti nella mappa mentale;
+\item \textbf{Scenario principale}:
+il sistema mostra all'utente tutti i \gloxy{frame} presenti nella mappa mentale.
+\end{itemize}
+\subsection{UC1.3.4.2: Selezione del frame}
+\label{UC1.3.4.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{frame} tra quelli mostrati dal sistema e presenti nella mappa mentale;
+\item \textbf{Precondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} presenti nella mappa mentale;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} selezionato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{frame} tra quelli mostrati dal sistema.
+\end{itemize}
+\subsection{UC1.3.5: Chiusura della presentazione}
+\label{UC1.3.5}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere di terminare la presentazione;
+\item \textbf{Precondizione}: il sistema sta visualizzando un \gloxy{frame};
+\item \textbf{Postcondizione}: il sistema ha terminato l'esecuzione della presentazione;
+\item \textbf{Scenario principale}:
+l'utente seleziona il comando per terminare la presentazione.
+\end{itemize}
+\subsection{UC1.3.6: Spostamento ad un frame direttamente correlato}
+\label{UC1.3.6}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.3.6}.pdf}
+\caption{UC1.3.6: Spostamento ad un frame direttamente correlato}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può passare ad un \gloxy{frame} direttamente correlato a quello che sta visualizzando. Due \gloxy{frame} sono direttamente correlati quando tra i relativi nodi presenti nella \gloxy{mappa mentale} esiste una relazione di parentela padre-figlio diretto oppure un’associazione creata appositamente dall'utente;
+\item \textbf{Precondizione}: il sistema sta visualizzando un \gloxy{frame} che è direttamente correlato ad altri nodi;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} scelto dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può visualizzare tutti i \gloxy{frame} direttamente correlati a quello corrente \hyperref[UC1.3.6.1]{(UC1.3.6.1)};
+\item L'utente può selezionare un \gloxy{frame} tra quelli mostrati dal sistema \hyperref[UC1.3.6.2]{(UC1.3.6.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.3.6.1: Visualizzazione frame direttamente correlati}
+\label{UC1.3.6.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può visualizzare tutti i \gloxy{frame} direttamente correlati a quello che sta visualizzando;
+\item \textbf{Precondizione}: l’utente ha selezionato la modalità di selezione dei \gloxy{frame} direttamente correlati mentre il sistema sta visualizzando quello corrente;
+\item \textbf{Postcondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} direttamente correlati a quello corrente;
+\item \textbf{Scenario principale}:
+il sistema mostra all'utente tutti i \gloxy{frame} direttamente correlati a quello corrente.
+\end{itemize}
+\subsection{UC1.3.6.2: Scelta del frame da visualizzare}
+\label{UC1.3.6.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{frame} tra quelli mostrati dal sistema;
+\item \textbf{Precondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} direttamente correlati a quello corrente;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} selezionato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{frame} tra quelli mostrati dal sistema.
+\end{itemize}
+\subsection{UC1.4: Eliminazione di un progetto}
+\label{UC1.4}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può eliminare un \gloxy{progetto} precedentemente salvato;
+\item \textbf{Precondizione}: nello spazio dell’account dell’utente esiste almeno un \gloxy{progetto} salvato;
+\item \textbf{Postcondizione}: il sistema ha eliminato il \gloxy{progetto} selezionato dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L’utente può selezionare il \gloxy{progetto} da eliminare \hyperref[UC1.4.1]{(UC1.4.1)};
+\item L’utente può confermare l’eliminazione del \gloxy{progetto} selezionato \hyperref[UC1.4.2]{(UC1.4.2)}.
+\end{enumerate}
+\item \textbf{Scenari alternativi}:
+l’utente non conferma l’eliminazione del \gloxy{progetto}, in questo caso viene ricondotto alla schermata iniziale del caso d’uso privato.
+\end{itemize}
+\subsection{UC1.4.1: Scelta del progetto}
+\label{UC1.4.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può selezionare un \gloxy{progetto} salvato da eliminare;
+\item \textbf{Precondizione}: nello spazio dell’account dell’utente esiste almeno un \gloxy{progetto} salvato selezionabile;
+\item \textbf{Postcondizione}: il sistema ha selezionato il \gloxy{progetto} indicato dall’utente;
+\item \textbf{Scenario principale}:
+l’utente seleziona un \gloxy{progetto} da eliminare.
+\end{itemize}
+\subsection{UC1.4.2: Conferma eliminazione di un progetto}
+\label{UC1.4.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente conferma l’eliminazione del \gloxy{progetto} selezionato;
+\item \textbf{Precondizione}: l’utente ha selezionato un \gloxy{progetto} salvato da eliminare;
+\item \textbf{Postcondizione}: il sistema elimina correttamente il \gloxy{progetto} selezionato dall’utente;
+\item \textbf{Scenario principale}:
+l’utente conferma l’eliminazione del \gloxy{progetto} selezionato.
+\end{itemize}
+\subsection{UC1.5: Apertura di un progetto}
+\label{UC1.5}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.5}.pdf}
+\caption{UC1.5: Apertura di un progetto}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può aprire un \gloxy{progetto} esistente specificando il \gloxy{percorso} e il nome del file del \gloxy{progetto};
+\item \textbf{Precondizione}: il sistema è pronto a caricare un \gloxy{progetto} esistente;
+\item \textbf{Postcondizione}: il sistema ha caricato il \gloxy{progetto} selezionato dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può visualizzare la lista dei \gloxy{progetti} che ha creato \hyperref[UC1.5.1]{(UC1.5.1)};
+\item L'utente può scegliere il nome del \gloxy{progetto} da aprire \hyperref[UC1.5.2]{(UC1.5.2)};
+\item L'utente può confermare l'apertura del \gloxy{progetto} \hyperref[UC1.5.3]{(UC1.5.3)}.
+\end{enumerate}
+\item \textbf{Inclusioni}:
+\begin{enumerate}
+\item Viene chiuso il \gloxy{progetto} corrente \hyperref[UC1.8]{(UC1.8)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.5.1: Visualizzazione dei progetti disponibili}
+\label{UC1.5.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può visualizzare tutti i \gloxy{progetti} che ha creato;
+\item \textbf{Precondizione}: l’utente ha creato almeno un \gloxy{progetto};
+\item \textbf{Postcondizione}: il sistema ha mostrato all'utente tutti i \gloxy{progetti} disponibili;
+\item \textbf{Scenario principale}:
+l’utente richede la visualizzazione di tutti i \gloxy{progetti} che ha creato.
+\end{itemize}
+\subsection{UC1.5.2: Scelta del progetto}
+\label{UC1.5.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un \gloxy{progetto} da aprire tra quelli disponibili;
+\item \textbf{Precondizione}: l'utente ha creato uno o più \gloxy{progetti};
+\item \textbf{Postcondizione}: il sistema ha ricevuto il nome del \gloxy{progetto} che l'utente vuole aprire;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{progetto} tra quelli disponibili.
+\end{itemize}
+\subsection{UC1.5.3: Conferma dell'apertura}
+\label{UC1.5.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'apertura del \gloxy{progetto} selezionato;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{progetto} da aprire;
+\item \textbf{Postcondizione}: il sistema ha aperto il \gloxy{progetto} selezionato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente conferma l'apertura del \gloxy{progetto} selezionato.
+\end{itemize}
+\subsection{UC1.6: Esportazione di un progetto}
+\label{UC1.6}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.6}.pdf}
+\caption{UC1.6: Esportazione di un progetto}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può esportare il \gloxy{progetto} corrente sotto forma di una pagina \gloxy{web} contenente tutti i \gloxy{percorsi} di presentazione, \gloxy{PDF} della mappa mentale, \gloxy{PDF} di una presentazione;
+\item \textbf{Precondizione}: l'utente ha aperto un \gloxy{progetto} e il sistema è pronto per la sua esportazione;
+\item \textbf{Postcondizione}: il sistema ha esportato il \gloxy{progetto};
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può esportare il \gloxy{progetto} sotto forma di pagina \gloxy{html} contenente un \gloxy{percorso di presentazione} \hyperref[UC1.6.1]{(UC1.6.1)};
+\item L'utente può esportare il \gloxy{progetto} sotto forma di \gloxy{mappa mentale} in formato \gloxy{PDF} \hyperref[UC1.6.2]{(UC1.6.2)};
+\item L'utente può esportare il \gloxy{progetto} sotto forma di slide di una presentazione in formato \gloxy{PDF} \hyperref[UC1.6.3]{(UC1.6.3)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.6.1: Esportazione della pagina web contenente una presentazione eseguibile}
+\label{UC1.6.1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.6.1}.pdf}
+\caption{UC1.6.1: Esportazione della pagina web contenente una presentazione eseguibile}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può esportare il \gloxy{progetto} corrente sotto forma di pagina \gloxy{web} contenente una presentazione eseguibile;
+\item \textbf{Precondizione}: il sistema è pronto per l'esportazione del \gloxy{progetto} sotto forma di pagina \gloxy{web};
+\item \textbf{Postcondizione}: il sistema ha esportato la presentazione secondo le indicazioni dell'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere dove esportare la presentazione \hyperref[UC1.6.1.1]{(UC1.6.1.1)};
+\item L'utente può scegliere un nome per il file nel quale esportare la presentazione \hyperref[UC1.6.1.2]{(UC1.6.1.2)};
+\item L'utente può confermare le operazioni di esportazione \hyperref[UC1.6.1.3]{(UC1.6.1.3)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.6.1.1: Scelta del percorso di esportazione}
+\label{UC1.6.1.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un \gloxy{percorso} in cui esportare la presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Precondizione}: il sistema è pronto a ricevere un \gloxy{percorso} per l'esportazione della presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Postcondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare la presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Scenario principale}:
+l'utente sceglie un \gloxy{percorso} in cui esportare la presentazione sotto forma di pagina \gloxy{web}.
+\end{itemize}
+\subsection{UC1.6.1.2: Scelta del nome del file}
+\label{UC1.6.1.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un nome per il file in cui esportare la presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Precondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare la presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Postcondizione}: l'utente ha scelto un nome per il file in cui esportare la presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Scenario principale}:
+l'utente sceglie un nome per il file in cui esportare la presentazione sotto forma di pagina \gloxy{web}.
+\end{itemize}
+\subsection{UC1.6.1.3: Conferma esportazione}
+\label{UC1.6.1.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'esportazione della presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Precondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare la presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Postcondizione}: il sistema esporta la presentazione sotto forma di pagina \gloxy{web};
+\item \textbf{Scenario principale}:
+l'utente conferma l'esportazione della presentazione sotto forma di pagina \gloxy{web}.
+\end{itemize}
+\subsection{UC1.6.2: Esportazione della mappa mentale in PDF}
+\label{UC1.6.2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.6.2}.pdf}
+\caption{UC1.6.2: Esportazione della mappa mentale in PDF}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può esportare la \gloxy{mappa mentale} del \gloxy{progetto} corrente sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: il sistema è pronto per l'esportazione della \gloxy{mappa mentale} del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: il sistema ha esportato la \gloxy{mappa mentale} del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere dove esportare il \gloxy{progetto} \hyperref[UC1.6.2.1]{(UC1.6.2.1)};
+\item L'utente può scegliere un nome per il file nel quale esportare il \gloxy{progetto} \hyperref[UC1.6.2.2]{(UC1.6.2.2)};
+\item L'utente può confermare le operazioni di esportazione \hyperref[UC1.6.2.3]{(UC1.6.2.3)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.6.2.1: Scelta del percorso di esportazione}
+\label{UC1.6.2.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un \gloxy{percorso} in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: il sistema è pronto a ricevere un \gloxy{percorso} per l'esportazione della \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+l'utente scegliere un \gloxy{percorso} in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF}.
+\end{itemize}
+\subsection{UC1.6.2.2: Scelta del nome del file}
+\label{UC1.6.2.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un nome per il file in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: l'utente ha scelto un nome per il file in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+l'utente sceglie un nome per il file in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF}.
+\end{itemize}
+\subsection{UC1.6.2.3: Conferma esportazione}
+\label{UC1.6.2.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'esportazione della \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: il sistema esporta la \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+l'utente conferma l'esportazione della \gloxy{mappa mentale} relativa al \gloxy{progetto} sotto forma di documento \gloxy{PDF}.
+\end{itemize}
+\subsection{UC1.6.3: Esportazione di una presentazione in PDF}
+\label{UC1.6.3}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.6.3}.pdf}
+\caption{UC1.6.3: Esportazione di una presentazione in PDF}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può esportare una presentazione del \gloxy{progetto} corrente sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: il sistema è pronto per l'esportazione di una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: il sistema ha esportato una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere il \gloxy{percorso di visualizzazione} da esportare \hyperref[UC1.6.3.1]{(UC1.6.3.1)};
+\item L'utente può scegliere dove esportare il \gloxy{progetto}  \hyperref[UC1.6.3.2]{(UC1.6.3.2)};
+\item L'utente può scegliere un nome per il file nel quale esportare il \gloxy{progetto} \hyperref[UC1.6.3.3]{(UC1.6.3.3)};
+\item L'utente può confermare le operazioni di esportazione \hyperref[UC1.6.3.4]{(UC1.6.3.4)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.6.3.1: Scelta del percorso di visualizzazione}
+\label{UC1.6.3.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{percorso} di presentazione, che stabilisce l'ordine di esportazione dei \gloxy{frame};
+\item \textbf{Precondizione}: esiste almeno un \gloxy{percorso di presentazione} per il \gloxy{progetto} corrente;
+\item \textbf{Postcondizione}: l'utente ha selezionato un \gloxy{percorso di presentazione} per l'esportazione;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{percorso di presentazione} per l'esportazione.
+\end{itemize}
+\subsection{UC1.6.3.2: Scelta del percorso di esportazione}
+\label{UC1.6.3.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un \gloxy{percorso} in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: il sistema è pronto a ricevere un \gloxy{percorso} per l'esportazione di una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+l'utente scegliere un \gloxy{percorso} in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF}.
+\end{itemize}
+\subsection{UC1.6.3.3: Scelta del nome del file}
+\label{UC1.6.3.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere un nome per il file in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: l'utente ha scelto un nome per il file in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+l'utente sceglie un nome per il file in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF}.
+\end{itemize}
+\subsection{UC1.6.3.4: Conferma esportazione}
+\label{UC1.6.3.4}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'esportazione di una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Precondizione}: l'utente ha scelto un \gloxy{percorso} in cui esportare una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Postcondizione}: il sistema esporta una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF};
+\item \textbf{Scenario principale}:
+l'utente conferma l'esportazione di una presentazione del \gloxy{progetto} sotto forma di documento \gloxy{PDF}.
+\end{itemize}
+\subsection{UC1.7: Stampa di un progetto}
+\label{UC1.7}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.7}.pdf}
+\caption{UC1.7: Stampa di un progetto}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può stampare un \gloxy{progetto} sotto forma di \gloxy{mappa mentale} o sotto forma di presentazione;
+\item \textbf{Precondizione}: l'utente ha aperto un \gloxy{progetto} e il sistema è pronto per la sua stampa;
+\item \textbf{Postcondizione}: il sistema ha stampato il \gloxy{progetto};
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere di stampare il \gloxy{progetto} sotto forma di \gloxy{mappa mentale} \hyperref[UC1.7.1]{(UC1.7.1)};
+\item L'utente può scegliere di stampare il \gloxy{progetto} sotto forma di presentazione \hyperref[UC1.7.2]{(UC1.7.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.7.1: Stampa della mappa mentale}
+\label{UC1.7.1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.7.1}.pdf}
+\caption{UC1.7.1: Stampa della mappa mentale}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può stampare il contenuto del \gloxy{progetto} sotto forma di mappa mentale;
+\item \textbf{Precondizione}: il sistema è pronto per la stampa del \gloxy{progetto} sotto forma di mappa mentale;
+\item \textbf{Postcondizione}: il sistema ha stampato il contenuto del \gloxy{progetto} sotto forma di mappa mentale;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può visualizzare l'anteprima di stampa \hyperref[UC1.7.1.1]{(UC1.7.1.1)};
+\item L'utente può selezionare le impostazioni della pagina \hyperref[UC1.7.1.2]{(UC1.7.1.2)};
+\item L'utente può confermare l'avvio della stampa \hyperref[UC1.7.1.3]{(UC1.7.1.3)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.7.1.1: Anteprima di stampa}
+\label{UC1.7.1.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può visualizzare un anteprima di come sarà stampata la \gloxy{mappa mentale} relativa al \gloxy{progetto};
+\item \textbf{Precondizione}: il sistema è pronto a mostrare l'anteprima di stampa della mappa mentale;
+\item \textbf{Postcondizione}: il sistema ha mostrato all'utente un'anteprima di come sarà stampata la mappa mentale;
+\item \textbf{Scenario principale}:
+il sistema mostra all'utente un'anteprima di come sarà stampata la mappa mentale.
+\end{itemize}
+\subsection{UC1.7.1.2: Scelta delle impostazioni di pagina}
+\label{UC1.7.1.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere le impostazioni della pagina sulla quale sarà stampata la mappa mentale;
+\item \textbf{Precondizione}: il sistema contiene un \gloxy{progetto} pronto per essere stampato sotto forma di mappa mentale;
+\item \textbf{Postcondizione}: il sistema ha impostato il processo di stampa della \gloxy{mappa mentale} secondo le impostazioni specificate dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona le impostazioni secondo le quali verrà stampata la mappa mentale.
+\end{itemize}
+\subsection{UC1.7.1.3: Conferma stampa}
+\label{UC1.7.1.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'avvio delle operazioni di stampa di una mappa mentale;
+\item \textbf{Precondizione}: il sistema contiene un \gloxy{progetto} pronto per essere stampato sotto forma di \gloxy{mappa mentale} e l'utente ha definito le impostazioni secondo le quali verrà stampata la mappa mentale;
+\item \textbf{Postcondizione}: il sistema ha avviato la stampa della mappa mentale, secondo quanto specificato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente conferma l'avvio delle operazioni di stampa.
+\end{itemize}
+\subsection{UC1.7.2: Stampa di una presentazione}
+\label{UC1.7.2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.7.2}.pdf}
+\caption{UC1.7.2: Stampa di una presentazione}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può stampare il contenuto del \gloxy{progetto} sotto forma di presentazione;
+\item \textbf{Precondizione}: il sistema è pronto per la stampa del \gloxy{progetto} sotto forma di presentazione;
+\item \textbf{Postcondizione}: il sistema ha stampato il contenuto del \gloxy{progetto} sotto forma di presentazione;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può scegliere il \gloxy{percorso di visualizzazione} secondo il quale stampare i \gloxy{frame} \hyperref[UC1.7.1.1]{(UC1.7.2.1)};
+\item L'utente può visualizzare l'anteprima di stampa \hyperref[UC1.7.1.1]{(UC1.7.2.2)};
+\item L'utente può selezionare le impostazioni della pagina \hyperref[UC1.7.1.2]{(UC1.7.2.3)};
+\item L'utente può confermare l'avvio della stampa \hyperref[UC1.7.1.3]{(UC1.7.2.4)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.7.2.1: Scelta del percorso di visualizzazione}
+\label{UC1.7.2.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{percorso di presentazione} che stabilisce l'ordine di stampa dei \gloxy{frame};
+\item \textbf{Precondizione}: esiste almeno un \gloxy{percorso di presentazione} per il \gloxy{progetto} corrente;
+\item \textbf{Postcondizione}: l'utente ha selezionato il \gloxy{percorso di presentazione} per la stampa;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{percorso di presentazione} per la stampa.
+\end{itemize}
+\subsection{UC1.7.2.2: Anteprima di stampa}
+\label{UC1.7.2.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può visualizzare un'anteprima di come saranno stampati i \gloxy{frame};
+\item \textbf{Precondizione}: il sistema è pronto a mostrare l'anteprima di stampa di una presentazione relativa al \gloxy{progetto};
+\item \textbf{Postcondizione}: il sistema ha mostrato all'utente un'anteprima di come saranno stampati i \gloxy{frame};
+\item \textbf{Scenario principale}:
+il sistema mostra all'utente un'anteprima di come saranno stampati i \gloxy{frame}.
+\end{itemize}
+\subsection{UC1.7.2.3: Scelte delle impostazioni di pagina}
+\label{UC1.7.2.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può scegliere le impostazioni della pagina sulla quale saranno stampati i \gloxy{frame};
+\item \textbf{Precondizione}: l'utente ha selezionato uno dei \gloxy{percorsi di visualizzazione} presenti all'intero del \gloxy{progetto} corrente;
+\item \textbf{Postcondizione}: il sistema ha impostato il processo di stampa secondo le impostazioni specificate dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona le impostazioni secondo le quali verrano stampati i \gloxy{frame}.
+\end{itemize}
+\subsection{UC1.7.2.4: Conferma stampa}
+\label{UC1.7.2.4}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare l'avvio delle operazioni di stampa;
+\item \textbf{Precondizione}: l'utente ha selezionato uno dei \gloxy{percorsi di visualizzazione} presenti all'intero del \gloxy{progetto} corrente e ha definito le impostazioni di stampa;
+\item \textbf{Postcondizione}: il sistema ha avviato la stampa dei \gloxy{frame}, secondo quanto specificato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente conferma l'avvio delle operazioni di stampa.
+\end{itemize}
+\subsection{UC1.8: Chiusura del progetto corrente}
+\label{UC1.8}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.8}.pdf}
+\caption{UC1.8: Chiusura del progetto corrente}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può chiudere il \gloxy{progetto} corrente;
+\item \textbf{Precondizione}: l'utente ha aperto un \gloxy{progetto};
+\item \textbf{Postcondizione}: l'utente ha chiuso il \gloxy{progetto} corrente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può confermare la chiusura del \gloxy{progetto} corrente \hyperref[UC1.8.1]{(UC1.8.1)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.8.1: Conferma chiusura del progetto corrente}
+\label{UC1.8.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può confermare la chiusura del \gloxy{progetto} corrente;
+\item \textbf{Precondizione}: l'utente ha richiesto la chiusura del \gloxy{progetto} corrente;
+\item \textbf{Postcondizione}: il sistema chiude il \gloxy{progetto} corrente;
+\item \textbf{Scenario principale}:
+l'utente conferma la chiusura del \gloxy{progetto} corrente.
+\end{itemize}
+\subsection{UC1.9: Consultazione del manuale utente}
+\label{UC1.9}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può consultare il manuale direttamente dall'applicazione;
+\item \textbf{Precondizione}: il sistema è stato avviato ed è in attesa di istruzioni;
+\item \textbf{Postcondizione}: il sistema visualizza il manuale utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona il comando che mostra il manuale.
+\end{itemize}
+\subsection{UC1.10: Gestione profilo utente}
+\label{UC1.10}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.10}.pdf}
+\caption{UC1.10: Gestione profilo utente}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può gestire i suoi dati personali;
+\item \textbf{Precondizione}: il sistema è pronto per consentire all'utente di gestire i propri dati;
+\item \textbf{Postcondizione}: il sistema ha attuato le modifiche relative all’account dell’utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L’utente può modificare la propria password \hyperref[UC1.10.1]{(UC1.10.1)};
+\item L’utente può eliminare il proprio account \hyperref[UC1.10.2]{(UC1.10.2)}.
+\end{enumerate}
+\item \textbf{Scenari alternativi}:
+se l’utente non porta a termine le modifiche, queste non vengono rese persistenti e il sistema visualizza le funzionalità di gestione del profilo \hyperref[UC1.10]{(UC1.10)}.
+\end{itemize}
+\subsection{UC1.10.1: Modifica password account}
+\label{UC1.10.1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.10.1}.pdf}
+\caption{UC1.10.1: Modifica password account}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può modificare la propria password inserendone una nuova;
+\item \textbf{Precondizione}: il sistema visualizza una schermata in cui è possibile modificare la propria password;
+\item \textbf{Postcondizione}: il sistema ha correttamente aggiornato la password con quella nuova inserita dall’utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L’utente può inserire la propria vecchia password \hyperref[UC1.10.1.1]{(UC1.10.1.1)};
+\item L’utente può inserire la nuova password \hyperref[UC1.10.1.2]{(UC1.10.1.2)};
+\item L’utente può confermare la modifica della password \hyperref[UC1.10.1.3]{(UC1.10.1.3)}.
+\end{enumerate}
+\item \textbf{Scenari alternativi}:
+l’utente annulla l’operazione e la password non viene modificata. Il sistema riporta l’utente alla schermata di gestione del profilo utente \hyperref[UC1.10]{(UC1.10)}.
+\end{itemize}
+\subsection{UC1.10.1.1: Inserimento vecchia password}
+\label{UC1.10.1.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può inserire la vecchia password;
+\item \textbf{Precondizione}: il sistema richiede all’utente di inserire la vecchia password;
+\item \textbf{Postcondizione}: l'utente ha inserito la vecchia password;
+\item \textbf{Scenario principale}:
+l’utente inserisce la vecchia password.
+\end{itemize}
+\subsection{UC1.10.1.2: Inserimento nuova password}
+\label{UC1.10.1.2}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può inserire la nuova password per il proprio account;
+\item \textbf{Precondizione}: il sistema richiede all’utente di inserire la nuova password per il proprio account;
+\item \textbf{Postcondizione}: l'utente ha inserito la nuova password;
+\item \textbf{Scenario principale}:
+l’utente inserisce la propria password.
+\end{itemize}
+\subsection{UC1.10.1.3: Conferma modifica password}
+\label{UC1.10.1.3}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può confermare la modifica della propria password;
+\item \textbf{Precondizione}: l'utente ha inserito i dati necessari alla modifica della propria password;
+\item \textbf{Postcondizione}: il sistema ha modificato la password dell’utente sostituendo la vecchia password con la nuova password inserita;
+\item \textbf{Scenario principale}:
+l’utente conferma la modifica della propria password.
+\end{itemize}
+\subsection{UC1.10.2: Cancellazione account}
+\label{UC1.10.2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc1.10.2}.pdf}
+\caption{UC1.10.2: Cancellazione account}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può cancellare il proprio account dal sistema; la cancellazione dell’account comporta l’eliminazione di tutti i dati e tutti  i \gloxy{progetti} associati all’account;
+\item \textbf{Precondizione}: il sistema visualizza un’opzione che permette di cancellare il proprio account;
+\item \textbf{Postcondizione}: il sistema ha eliminato in maniera corretta l’account dell’utente e tutti i dati ad esso relativi;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L’utente può confermare l’eliminazione definitiva del suo account e dei dati ad esso associati \hyperref[UC1.10.2.1]{(UC10.2.1)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC1.10.2.1: Conferma cancellazione account}
+\label{UC1.10.2.1}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l’utente può confermare, in via definitiva, la cancellazione del proprio account;
+\item \textbf{Precondizione}: l’utente ha richiesto al sistema di cancellare il proprio account;
+\item \textbf{Postcondizione}: il sistema ha cancellato definitivamente l’account dell’utente;
+\item \textbf{Scenario principale}:
+l’utente conferma la cancellazione del proprio account.
+\end{itemize}
+\subsection{UC1.11: Logout}
+\label{UC1.11}
+\begin{itemize}
+\item \textbf{Attori}: utente autenticato;
+\item \textbf{Descrizione}: l'utente può effettuare il logout;
+\item \textbf{Precondizione}: il sistema mostra una schermata in cui l'utente può eseguire il logout;
+\item \textbf{Postcondizione}: l’utente è stato scollegato correttamente dal sistema;
+\item \textbf{Scenario principale}:
+l’utente sceglie di effettuare il logout.
+\end{itemize}
+\subsection{UC2: Caso d'uso pubblico}
+\label{UC2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc2}.pdf}
+\caption{UC2: Caso d'uso pubblico}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: il sistema mostra una schermata dove l’utente può scegliere tra registrazione e login;
+\item \textbf{Precondizione}: l'utente accede al sito \gloxy{web} tramite un \gloxy{browser} supportato dal sistema;
+\item \textbf{Postcondizione}: il sistema ha eseguito le funzionalità scelte dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può registrare un account personale \hyperref[UC2.1]{(UC2.1)};
+\item L'utente può autenticarsi tramite un account esistente \hyperref[UC2.2]{(UC2.2)}.
+\end{enumerate}
+\item \textbf{Estensioni}:
+\begin{enumerate}
+\item Errore sui dati di registrazione \hyperref[UC2.3]{(UC2.3)};
+\item Autenticazione fallita \hyperref[UC2.4]{(UC2.4)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC2.1: Registrazione account}
+\label{UC2.1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc2.1}.pdf}
+\caption{UC2.1: Registrazione account}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può creare un account personale associato ad un proprio indirizzo mail in modo da poter usufruire delle funzionalità offerte dal sistema;
+\item \textbf{Precondizione}: l'utente ha selezionato la modalità ``Registrazione Utente'' tra le possibilità visualizzate in UC2;
+\item \textbf{Postcondizione}: il sistema ha memorizzato i dati relativi all'utente e quindi reindirizza l'utente alla dashboard;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può inserire la propria mail \hyperref[UC2.1.1]{(UC2.1.1)};
+\item L'utente può inserire la propria password \hyperref[UC2.1.2]{(UC2.1.2)};
+\item L'utente può confermare i dati inseriti al fine di eseguire la registrazione del proprio account \hyperref[UC2.1.3]{(UC2.1.3)}.
+\end{enumerate}
+\item \textbf{Scenari alternativi}:
+l'utente non conferma la registrazione dell’account personale e quindi non procede alla registrazione di quest'ultimo, in questo caso viene ricondotto alla schermata iniziale del caso d'uso pubblico.
+\end{itemize}
+\subsection{UC2.1.1: Inserimento mail}
+\label{UC2.1.1}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può inserire la propria mail nel sistema;
+\item \textbf{Precondizione}: il sistema rende disponibile una schermata in cui è possibile inserire una mail per il nuovo account;
+\item \textbf{Postcondizione}: l'utente ha inserito un indirizzo mail da associare al nuovo account;
+\item \textbf{Scenario principale}:
+l'utente inserisce l'indirizzo mail nel sistema associandolo al nuovo account.
+\end{itemize}
+\subsection{UC2.1.2: Inserimento password}
+\label{UC2.1.2}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può inserire la propria password nel sistema in modo da proteggere il proprio account da intrusioni da parte di terzi;
+\item \textbf{Precondizione}: il sistema rende disponibile una schermata in cui è possibile inserire una password per il nuovo account;
+\item \textbf{Postcondizione}: l'utente ha inserito la password;
+\item \textbf{Scenario principale}:
+l'utente inserisce la password che verrà associata al nuovo account.
+\end{itemize}
+\subsection{UC2.1.3: Conferma registrazione}
+\label{UC2.1.3}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente conferma i dati inseriti per creare un nuovo account;
+\item \textbf{Precondizione}: se tutti i dati sono stati inseriti allora il sistema permette di confermare l'inserimento di questi per la creazione di un nuovo account;
+\item \textbf{Postcondizione}: l'utente ha confermato i dati precedentemente inseriti per la creazione di un nuovo account;
+\item \textbf{Scenario principale}:
+l'utente conferma i dati inseriti per la registrazione di un nuovo account.
+\end{itemize}
+\subsection{UC2.2: Login}
+\label{UC2.2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc2.2}.pdf}
+\caption{UC2.2: Login}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può inserire i dati personali per poter accedere alle funzionalità offerte dal sistema;
+\item \textbf{Precondizione}: il sistema contiene un account associato all’utente;
+\item \textbf{Postcondizione}: l'utente ha eseguito correttamente la login all'account associato che risiede nel sistema;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può inserire la propria mail \hyperref[UC2.2.1]{(UC2.2.1)};
+\item L'utente può inserire la propria password \hyperref[UC2.2.2]{(UC2.2.2)};
+\item L'utente può confermare i dati inseriti per eseguire la login al proprio account \hyperref[UC2.2.3]{(UC2.2.3)}.
+\end{enumerate}
+\item \textbf{Scenari alternativi}:
+l'utente non conferma la procedura di login al proprio account, in questo caso viene ricondotto alla schermata del Caso d'uso pubblico \hyperref[UC2]{(UC2)}.
+\end{itemize}
+\subsection{UC2.2.1: Inserimento mail}
+\label{UC2.2.1}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l’utente può inserire la mail relativa al proprio account;
+\item \textbf{Precondizione}: il sistema rende disponibile una schermata in cui è possibile inserire una mail del proprio account;
+\item \textbf{Postcondizione}: l’utente ha inserito l’indirizzo mail;
+\item \textbf{Scenario principale}:
+l’utente inserisce l’indirizzo mail associato al proprio account.
+\end{itemize}
+\subsection{UC2.2.2: Inserimento password}
+\label{UC2.2.2}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può inserire la password relativa al proprio account;
+\item \textbf{Precondizione}: il sistema rende disponibile una schermata in cui è possibile inserire una password;
+\item \textbf{Postcondizione}: l'utente ha inserito la password;
+\item \textbf{Scenario principale}:
+l'utente inserisce la password relativa al proprio account.
+\end{itemize}
+\subsection{UC2.2.3: Conferma login}
+\label{UC2.2.3}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente conferma i dati inseriti per effettuare la login;
+\item \textbf{Precondizione}: se tutti i dati sono stati inseriti allora il sistema permette di confermare l'inserimento di questi per effettuare la login;
+\item \textbf{Postcondizione}: l'utente ha confermato i dati precedentemente inseriti per potersi loggare al sistema;
+\item \textbf{Scenario principale}:
+l'utente conferma i dati inseriti per effettuare la login con il proprio account.
+\end{itemize}
+\subsection{UC2.3: Errore sui dati di registrazione}
+\label{UC2.3}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente ha commesso uno di questi possibili errori durante l'operazione di registrazione di un nuovo account:
+\begin{enumerate}
+\item L'utente ha inserito un indirizzo mail già esistente nel sistema e quindi non valido;
+\item L'utente ha inserito una password non valida perché non rispetta i requisiti richiesti.
+\end{enumerate}
+\item \textbf{Precondizione}: l'utente ha confermato la registrazione di un nuovo account;
+\item \textbf{Postcondizione}: il sistema ha notificato l'utente dell'errore senza aver creato l'account richiesto;
+\item \textbf{Scenario principale}:
+l'utente visualizza l'errore relativo al tentativo di inserimento di dati non corretti durante l'operazione di registrazione dell’account.
+\end{itemize}
+\subsection{UC2.4: Autenticazione fallita}
+\label{UC2.4}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente ha inserito dei dati non validi per l'autenticazione nel sistema, si possono verificare due tipi di errori:
+\begin{enumerate}
+\item L'utente ha inserito un indirizzo mail che non esiste all’interno del sistema;
+\item L'utente ha inserito una password che non corrisponde a quella memorizzata dal sistema.
+\end{enumerate}
+\item \textbf{Precondizione}: l'utente conferma la login;
+\item \textbf{Postcondizione}: il sistema ha notificato l'utente dell'errore verificatosi in fase di login indicando di che tipo di errore si tratta;
+\item \textbf{Scenario principale}:
+l'utente visualizza l'errore relativo ai dati errati che erano stati precedentemente inseriti.
+\end{itemize}
+\subsection{UC3: Progetto esportato}
+\label{UC3}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc3}.pdf}
+\caption{UC3: Progetto esportato}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: a partire da un \gloxy{progetto} esportato, l’utente può scegliere il \gloxy{percorso di visualizzazione} che preferisce; all'interno del \gloxy{percorso} l'utente può spostarsi al \gloxy{frame} successivo, precedente, oppure ad un qualsiasi altro \gloxy{frame} direttamente correlato o meno al \gloxy{frame} corrente; l'utente può chiudere la presentazione;
+\item \textbf{Precondizione}: l’utente ha aperto un \gloxy{progetto} creato ed esportato con l’applicazione principale;
+\item \textbf{Postcondizione}: il sistema ha eseguito le operazioni selezionate dall’utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può chiudere la presentazione \hyperref[UC3.1]{(UC3.1)};
+\item L'utente può spostarsi al \gloxy{frame} successivo \hyperref[UC3.2]{(UC3.2)};
+\item L'utente può spostarsi al \gloxy{frame} successivo \hyperref[UC3.3]{(UC3.3)};
+\item L'utente può spostarsi su un \gloxy{frame} a sua scelta \hyperref[UC3.4]{(UC3.4)};
+\item L'utente può spostarsi su un \gloxy{frame} direttamente correlato al \gloxy{frame} che sta visualizzando \hyperref[UC3.5]{(UC3.5)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC3.1: Chiusura della presentazione}
+\label{UC3.1}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può scegliere di terminare la presentazione;
+\item \textbf{Precondizione}: il sistema sta visualizzando un \gloxy{frame};
+\item \textbf{Postcondizione}: il sistema ha terminato l'esecuzione della presentazione;
+\item \textbf{Scenario principale}:
+l'utente seleziona il comando per terminare la presentazione.
+\end{itemize}
+\subsection{UC3.2: Spostamento al frame successivo}
+\label{UC3.2}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può passare al \gloxy{frame} successivo;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso} di visualizzazione;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} successivo, secondo l'ordine stabilito dal \gloxy{percorso di visualizzazione} corrente;
+\item \textbf{Scenario principale}:
+l'utente richiede il passaggio al \gloxy{frame} successivo;
+\item \textbf{Scenari alternativi}:
+\begin{itemize} \item Se il frame corrente è l'ultimo del percorso selezionato, allora viene visualizzata l'intera mappa mentale; \item Se è stato effettuato uno spostamento ad un frame a scelta, allora viene ripresa la presentazione dall'ultimo frame visualizzato appartenente al percorso scelto. \end{itemize}
+\end{itemize}
+\subsection{UC3.3: Spostamento al frame precedente}
+\label{UC3.3}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può passare al \gloxy{frame} precedente;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso} di visualizzazione;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} precedente, secondo l'ordine stabilito dal \gloxy{percorso di visualizzazione} corrente;
+\item \textbf{Scenario principale}:
+l'utente richiede il passaggio al \gloxy{frame} precedente;
+\item \textbf{Scenari alternativi}:
+\begin{itemize} \item Se il frame corrente è il primo del percorso selezionato, allora viene visualizzata l'intera mappa mentale; \item Se è stato effettuato uno spostamento ad un frame a scelta, allora viene ripresa la presentazione dall'ultimo frame visualizzato appartenente al percorso scelto. \end{itemize}
+\end{itemize}
+\subsection{UC3.4: Spostamento ad un frame a scelta}
+\label{UC3.4}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc3.4}.pdf}
+\caption{UC3.4: Spostamento ad un frame a scelta}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può passare ad un \gloxy{frame} a scelta;
+\item \textbf{Precondizione}: l'utente ha selezionato un \gloxy{percorso} di visualizzazione;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} scelto dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può visualizzare tutti i \gloxy{frame} presenti nella \gloxy{mappa mentale} \hyperref[UC3.4.1]{(UC3.4.1)};
+\item L'utente può selezionare un \gloxy{frame} tra quelli presenti nella \gloxy{mappa mentale} \hyperref[UC3.4.2]{(UC3.4.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC3.4.1: Visualizzazione frame disponibili}
+\label{UC3.4.1}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può visualizzare tutti i \gloxy{frame} presenti nella mappa mentale;
+\item \textbf{Precondizione}: la \gloxy{mappa mentale} contiene almeno un \gloxy{frame};
+\item \textbf{Postcondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} presenti nella mappa mentale;
+\item \textbf{Scenario principale}:
+il sistema mostra all'utente tutti i \gloxy{frame} presenti nella mappa mentale.
+\end{itemize}
+\subsection{UC3.4.2: Selezione del frame}
+\label{UC3.4.2}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{frame} tra quelli mostrati dal sistema e presenti nella mappa mentale;
+\item \textbf{Precondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} presenti nella mappa mentale;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} selezionato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{frame} tra quelli mostrati dal sistema.
+\end{itemize}
+\subsection{UC3.5: Spostamento ad un frame direttamente correlato}
+\label{UC3.5}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7,keepaspectratio]{useCase/{uc3.5}.pdf}
+\caption{UC3.5: Spostamento ad un frame direttamente correlato}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può passare ad un \gloxy{frame} direttamente correlato a quello che sta visualizzando. Due \gloxy{frame} sono direttamente correlati quando tra i relativi nodi presenti nella \gloxy{mappa mentale} esiste una relazione di parentela padre-figlio diretto oppure un’associazione creata appositamente dall'utente;
+\item \textbf{Precondizione}: il sistema sta visualizzando un \gloxy{frame} che è direttamente correlato ad altri nodi;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} scelto dall'utente;
+\item \textbf{Scenario principale}:
+\begin{enumerate}
+\item L'utente può visualizzare tutti i \gloxy{frame} direttamente correlati a quello corrente \hyperref[UC3.5.1]{(UC3.5.1)};
+\item L'utente può selezionare un \gloxy{frame} tra quelli mostrati dal sistema \hyperref[UC3.5.2]{(UC3.5.2)}.
+\end{enumerate}
+\end{itemize}
+\subsection{UC3.5.1: Visualizzazione frame direttamente correlati}
+\label{UC3.5.1}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può visualizzare tutti i \gloxy{frame} direttamente correlati a quello che sta visualizzando;
+\item \textbf{Precondizione}: l’utente ha selezionato la modalità di selezione dei \gloxy{frame} direttamente correlati mentre il sistema sta visualizzando quello corrente;
+\item \textbf{Postcondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} direttamente correlati a quello corrente;
+\item \textbf{Scenario principale}:
+il sistema mostra all'utente tutti i \gloxy{frame} direttamente correlati a quello corrente.
+\end{itemize}
+\subsection{UC3.5.2: Scelta del frame da visualizzare}
+\label{UC3.5.2}
+\begin{itemize}
+\item \textbf{Attori}: utente;
+\item \textbf{Descrizione}: l'utente può selezionare un \gloxy{frame} tra quelli mostrati dal sistema;
+\item \textbf{Precondizione}: il sistema ha mostrato all'utente tutti i \gloxy{frame} direttamente correlati a quello corrente;
+\item \textbf{Postcondizione}: il sistema visualizza il \gloxy{frame} selezionato dall'utente;
+\item \textbf{Scenario principale}:
+l'utente seleziona un \gloxy{frame} tra quelli mostrati dal sistema.
+\end{itemize}

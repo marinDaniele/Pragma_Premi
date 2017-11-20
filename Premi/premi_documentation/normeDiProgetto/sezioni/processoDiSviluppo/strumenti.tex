@@ -1,0 +1,79 @@
+\subsubsection{Strumenti}
+\subsubsubsection{\pragmadb}\label{PragmaDB}
+\pragmadb è un'applicazione \gloxy{web} sviluppata dal \gloxy{team} per la gestione di casi d'uso, attori, fonti, requisiti e termini del \G. Il suo scopo è velocizzare e automatizzare la gestione dei dati, e semplificare i tracciamenti. Ogni membro del \gloxy{team} può accedere all'applicazione via \gloxy{browser} previa autenticazione, inoltre, più persone possono lavorare simultaneamente sugli stessi dati poiché è stata gestita la concorrenza. L'applicazione si occupa di mantenere ordinata la gerarchia dei requisiti e degli UC in modo automatico durante tutto il suo ciclo di vita (creazione, modifica, eliminazione).\\
+Vengono eseguiti diversi controlli su ciascun campo dati, e tale approccio garantisce \gloxy{fault-tolerance} del sistema nei confronti di qualsiasi input possibile. I membri del gruppo possono visualizzare, inserire, modificare ed eliminare elementi in modo semplice. \pragmadb consente di esportare l'elenco degli attori, delle fonti, del \G, dei casi d'uso, dei requisiti e delle loro relazioni come codice \LaTeX, quindi facilmente inseribile all'interno dei documenti durante la stesura. Infine consente di visualizzare, attraverso un menù laterale, l'insieme dei link utili relativi al gruppo (link al \gloxy{repository}, link al foglio dei comandi \LaTeX, link a Redmine, link alla \gloxy{mailing list} Yahoo).
+\subsubsubsubsection{Attori}
+La sezione degli attori è pensata per mantenere traccia di tutti gli attori del sistema.
+Un attore è caratterizzato da un nome identificativo e da una descrizione. \`{E} possibile inserire, modificare o eliminare attori, ed esportare in \LaTeX\ una tabella contenente tutte le informazioni su di essi.
+Cliccando sul nome di un attore è possibile vederne il dettaglio dello stesso, che mostra in particolare, una lista dei casi d'uso correlati, per facilitarne il processo di verifica.
+\`E consentita l'eliminazione di un attore solamente se non esiste alcun caso d'uso ad essa riferito.
+\subsubsubsubsection{Fonti}
+La sezione delle fonti è pensata per mantenere traccia di tutte le fonti (capitolati, verbali, ecc\dots) che hanno determinato l'individuazione di un requisito.
+Una fonte è caratterizzata da un identificativo, un nome e una descrizione. \`{E} possibile inserire, modificare o eliminare fonti, ed esportare in \LaTeX\ una tabella contenente tutte le informazioni su di esse.
+Cliccando sull'identificativo di una fonte è possibile vederne il dettaglio dello stesso, che mostra in particolare, una lista dei requisiti correlati, per facilitarne il processo di verifica.
+\`E consentita l'eliminazione di una fonte solamente se non esiste alcun requisito derivato da essa.
+\subsubsubsubsection{Requisiti}
+La sezione dei requisiti è pensata per mantenere traccia di tutti i requisiti individuati.
+Un requisito è caratterizzato da un identificativo, un tipo (funzionale, di vincolo, di qualità, prestazionale), un livello di importanza (obbligatorio, desiderabile, facoltativo),
+un requisito padre (se non è radice), uno stato (accettato/non accettato + soddisfatto/non soddisfatto + implementato/non implementato), una o più fonti di riferimento e una descrizione. \`{E} possibile inserire, modificare o eliminare requisiti, ed esportare in \LaTeX\ una tabella contenente tutte le informazioni su di essi.
+Cliccando sull'identificativo di un requisito è possibile vederne il dettaglio dello stesso, che mostra in particolare, una lista dei requisiti figli e dei casi d'uso correlati, per facilitarne il processo di verifica.
+\`E inoltre presente una funzionalità che permette di vedere quali requisiti non sono correlati ad alcun caso d'uso.
+\subsubsubsubsection{Casi d'uso}
+La sezione dei casi d'uso è pensata per mantenere traccia di tutti i casi d'uso individuati dagli \rAs.
+Un caso d'uso è caratterizzato da un identificativo, un nome, un diagramma, una o più precondizioni, una o più postcondizioni, un caso d'uso padre (se non è radice), uno scenario principale, una o più inclusioni (facoltativo), una o più estensioni (facoltativo), uno o più scenari alternativi (facoltativo) e una descrizione. \`{E} possibile inserire, modificare o eliminare casi d'uso, ed esportare in \LaTeX\ una tabella contenente tutte le informazioni su di essi.
+Cliccando sull'identificativo di un caso d'uso è possibile vederne il dettaglio dello stesso, che mostra in particolare, una lista dei casi d'uso figli e dei requisiti correlati, per facilitarne il processo di verifica.
+\`E inoltre presente una funzionalità che permette di vedere quali casi d'uso non sono correlati ad alcun requisito.
+\subsubsubsubsection{\G}
+Nell'area dedicata alla gestione del \G è possibile inserire, modificare o eliminare termini, ed esportare in \LaTeX\ l’intero \G sotto forma di lista di \texttt{newglossaryentry}, macro fornita dal package \texttt{glossaries} di \LaTeX.
+Una voce di \G è caratterizzata da un \emph{identificativo}, un \emph{nome} singolare che verrà mostrato nel \G, una descrizione, un \emph{plurale} (facoltativo) per indicare la sua forma plurale, una forma \emph{estesa} (facoltativo) per indicare la forma singolare (più rara) che il termine può assumere alla sua prima occorrenza all'interno dei documenti, una forma \emph{estesa plurale} (facoltativo) per indicare la forma plurale (più rara) che il termine può assumere alla sua prima occorrenza nei documenti e un \emph{sinonimo} (facoltativo).
+\subsubsubsubsection{Package e Classi}\label{pdbPackageClassi}
+Per ciascun componente (package o classe) è possibile specificare:
+\begin{itemize}
+\item Un diagramma \gloxy{UML};
+\item Una descrizione testuale del componente;
+\item Una descrizione del contesto d'utilizzo;
+\item Le relazioni con gli altri componenti;
+\item I requisiti che il componente va a soddisfare.
+\end{itemize}
+Per le classi è inoltre possibile specificare gli attributi e i metodi che le caratterizzano e l'eventuale gerarchia di classi a cui appartengono. Alcuni screenshot esemplificativi di queste funzionalità sono stati inseriti nell'\customRef{screenPDB}{appendice}.
+\subsubsubsubsection{Test}\label{pdbTest}
+In questa sezione è possibile inserire i test definiti dai \rPs{}. Ogni test è caratterizzato da un tipo e una descrizione.
+I tipi di test sono: validazione, sistema, integrazione oppure unità; e in base a tale tipo, un test può essere associato a un requisito, a un componente oppure a un metodo di una classe.
+%L'associazione tra il test e l'elemento è \emph{1 a 1}: ad un test può essere associato un solo elemento e viceversa.\\
+Ogni test è caratterizzato da un id univoco, calcolato automaticamente da \pragmadb e da una serie di parametri che specificano se il test è stato implementato, eseguito e superato.
+\subsubsubsubsection{Tracciamento} \label{pragmadbTracciamento}
+\pragmadb consente di esportare direttamente in \LaTeX\ molte parti dei documenti
+del \gloxy{progetto}, automatizzandone il processo di stesura. Grazie ad uno script
+appositamente creato è possibile in ogni momento scaricare tutti i file \LaTeX, inserendoli
+nelle cartelle dei rispettivi documenti.
+\pragmadb consente il tracciamento delle seguenti coppie di elementi:
+\begin{itemize}
+\item Requisiti - Fonti;
+\item Fonti - Requisiti;
+\item Componenti - Requisiti;
+\item Requisiti - Componenti;
+\item Classi - Requisiti;
+\item Requisiti - Classi;
+\item Elemento - Test;
+\item Test - Elemento.
+\end{itemize}
+\subsubsubsubsection{Funzionalità di supporto}\label{pdbSupport}
+Per semplificare la verifica del tracciamento tra gli elementi memorizzati in \pragmadb, sono state aggiunte funzionalità che permettono di ottenere una lista degli elementi non relazionati con nessun altro elemento. \\
+In particolare \pragmadb fornisce la lista di:
+\begin{itemize}
+\item Requisiti non sono derivati da casi d'uso;
+\item Casi d'uso che non generano requisiti;
+\item Package che non soddisfano requisiti;
+\item Classi che non soddisfano requisiti;
+\item Test che non verificano classi o requisiti.
+\end{itemize}
+\subsubsubsection{WebStorm}
+L'ambiente di sviluppo integrato (IDE) utilizzato è \textbf{\gloxy{WebStorm}}. Sono stati testati anche altri \gloxy{IDE}, ma nessuno si è dimostrato all'altezza di \textbf{\gloxy{WebStorm}}. Esso presenta le seguenti funzionalità:
+\begin{itemize}
+\item Autocompletamento del codice \gloxy{JavaScript}, \gloxy{HTML} 5 e CSS3;
+\item Autocompletamento per metodi, funzioni e \gloxy{framework} esterni, utili per il \gloxy{progetto};
+\item Debugger \gloxy{JavaScript};
+\item Consente di effettuare unit test per \gloxy{JavaScript} mediante il \gloxy{framework} \textbf{\gloxy{Karma}};
+\item Compila automaticamente i file \gloxy{Sass} in \gloxy{CSS};
+\item Tiene traccia dei cambiamenti effettuati sui file, consentendo di visualizzare lo storico delle modifiche locali e ritornare a versioni precedenti in caso di modifiche o perdite accidentali.
+\end{itemize}

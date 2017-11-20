@@ -1,0 +1,37 @@
+\subsubsection{Attività}\label{attivitaVerifica}
+\subsubsubsection{Analisi}
+\subsubsubsubsection{Analisi statica}
+L'analisi statica è una tecnica di verifica applicabile ai documenti e al codice che verrà impiegata durante tutto lo sviluppo del sistema e che sarà automatizzata il più possibile, mediante gli strumenti descritti in seguito. L'analisi statica applicata al software non necessita che i programmi vengano eseguiti, bensì mira a trovare anomalie ed errori di sintassi, e a fare predizioni sulla qualità e la manutenibilità del codice prodotto. In seguito vengono riportate le metodologie di applicazione dell'analisi statica.
+\subsubsubsubsubsection{\nogloxy{Walkthrough}}
+Questa tecnica di analisi statica consiste in una lettura del documento o del codice, ricercando anomalie ed errori a largo spettro, ovvero senza una conoscenza precisa dei tipi di errori riscontrabili. Il \gloxy{walkthrough} verrà applicato nelle prime fasi dello sviluppo, poiché in tale fase non si possiede ancora una concezione degli errori possibili e più frequenti.
+Utilizzando questa tecnica, i \rVs avranno il compito di stilare una lista di controllo contenente gli errori rilevati più spesso. Quando tale lista sarà sufficientemente completa, dovrà essere allegata in appendice a questo documento e da quel momento sarà possibile passare all'utilizzo della tecnica di \gloxy{inspection}.
+\subsubsubsubsubsection{\nogloxy{Inspection}}
+Questa tecnica di analisi statica consiste nella lettura mirata dei documenti o del codice, mediante l'utilizzo di una lista di controllo contenente gli errori più frequenti\footnote{La lista degli errori più frequenti si trova in in appendice al documento.}. Poiché tale lista verrà ampliata con l'acquisizione di esperienza nella verifica, tale tecnica diverrà sempre più efficace.
+\subsubsubsubsection{Analisi dinamica}
+L'analisi dinamica viene applicata solamente al software prodotto e alle sue componenti, e viene svolta mediante test che verificano il funzionamento di tali componenti e che ne identificano eventuali errori. Per ogni test è necessario definire:
+\begin{itemize}
+\item \textbf{Ambiente}: sistema \gloxy{hardware} e software sul quale è pianificata l'esecuzione del test. Inoltre, è necessario specificare uno stato iniziale di partenza per il test;
+\item \textbf{Specifica}: insieme degli input e dei corrispondenti output attesi;
+\item \textbf{Procedure}: specifica di istruzioni su come eseguire il test e come i risultati debbano essere interpretati e analizzati.
+\end{itemize}
+Affinché si possano ottenere risultati attendibili, è necessario che i test siano ripetibili, ovvero dato un certo input la loro esecuzione nello stesso ambiente dovrà produrre in output sempre gli stessi risultati.
+\subsubsubsection{Test}\label{test}
+\subsubsubsubsection{Test di unità}
+Per unità di prodotto software si intende la più piccola quantità di software che risulta conveniente verificare singolarmente, tipicamente quella prodotta da un singolo \rp. Ad esempio solitamente un modulo è parte dell'unità ed il componente invece integra più unità.
+I test di unità verificano che ogni unità funzioni correttamente, evidenziando errori di implementazione. Questi test verranno effettuati sui moduli base che compongono il software.
+I test di unità possono essere identificati grazie alla seguente sintassi:
+\begin{center}
+TU[Codice Test]
+\end{center}
+\subsubsubsubsection{Test di integrazione}
+Questo tipo di test verifica che due o più unità, tipicamente moduli, precedentemente verificati, una volta assemblati funzionino correttamente. I test di integrazione possono aiutare a rilevare errori residui sui moduli e verificano anche che l'eventuale cooperazione di essi con componenti esterni, quali \gloxy{framework} e \gloxy{librerie}, non produca anomalie.
+I test di integrazione possono essere identificati grazie alla seguente sintassi:
+\begin{center}
+TI[Codice Test]
+\end{center}
+\subsubsubsubsection{Test di regressione}
+Questo test consiste nella riesecuzione di tutti i test su un componente che ha subito una modifica. In questo modo si vuole verificare che il resto dei moduli continui a funzionare correttamente. Inoltre, eseguire dei test di regressione, consente di capire quali test sono a rischio di inesattezza in caso di modifiche al codice dei prodotti.
+I test di regressione possono essere identificati grazie alla seguente sintassi:
+\begin{center}
+TR[Codice Test]
+\end{center}

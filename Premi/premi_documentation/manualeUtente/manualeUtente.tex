@@ -1,0 +1,43 @@
+\newcommand{\documenttitle}{Manuale utente}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt \\ & \proponente}
+\newcommand{\editorialstaff}{\fv}
+\newcommand{\teststaff}{\mb}
+\newcommand{\approvalstaff}{\dm}
+\newcommand{\use}{Esterno}
+\input{../template/layout.tex}
+\input{../template/comandi.tex}
+%istruzioni per il glossario
+\usepackage[acronym,xindy,toc]{glossaries}
+%stile glossario
+\newglossarystyle{newStyle}{%
+\setglossarystyle{treegroup}%
+\renewcommand*{\glsgroupheading}[1]{{\huge ##1}\\ \hrule \vspace{1em}}
+%\renewcommand*{\glsgroupskip}{\newpage}%
+\renewcommand*{\glossentry}[2]{%
+\glsentryitem{##1}\textbf{\glstarget{##1}{\glossentryname{##1}}}%
+:\space \glossentrydesc{##1}\par\vspace{1cm}
+}%
+}
+\setglossarystyle{newStyle}
+\loadglsentries{terminiGlossario}
+\makeglossaries
+%fine istruzioni per il glossario
+\begin{document}
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\tableofcontents %indice
+\listoffigures
+\pagebreak
+\input{sezioni/introduzione.tex}
+\input{sezioni/accesso.tex}
+\input{sezioni/dashboard.tex}
+\input{sezioni/editor.tex}
+\input{sezioni/presentazione.tex}
+\input{sezioni/stampa.tex}
+\input{sezioni/errori.tex}
+\input{sezioni/segnalazioneErrori.tex}
+%glossario
+\glsaddall
+\ref{glossario}
+\printglossary[title=Glossario]
+\end{document}

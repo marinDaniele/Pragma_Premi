@@ -1,0 +1,141 @@
+\section{Capitolati scartati}
+
+\subsection{C1 - BDSMApp}
+
+\subsubsection{Descrizione}
+L'obiettivo del progetto è la realizzazione di una infrastruttura web\ped{G} che permetta, all'utente con le autorizzazioni necessarie, di interrogare big data\ped{G} dai social Facebook,Twitter e Instagram.
+Tale infrastruttura dev'essere scalabile e deve sfruttare al meglio le potenzialità del cloud\ped{G}.
+L'applicazione dev'essere formata da una parte che offra la consultazione e l'interrogazione tramite interfaccia web\ped{G} per gli utenti, e un'altra i servizi REST\ped{G} interrogabili. 
+Viene proposto l'utilizzo dello stack\ped{G} tecnologico di Google Cloud Platform, il quale, come linguaggi di programmazione, prevede Java, PHP\ped{G} e Python. 
+Viene lasciata piena libertà per l'implementazione dell'interfaccia, anche se viene consigliato l'uso di HTML5\ped{G}, CSS3, jQuery o un framework\ped{G} responsive come Twitter Bootstrap, e dei servizi Web\ped{G}, anche se viene consigliato l'uso di Google Endpoints.
+\subsubsection{Dominio tecnologico}
+\begin{itemize}
+\item \textbf{Java e/o PHP\ped{G} e/o Python:} linguaggi di programmazione consigliati perché disponibili in Google Cloud Platform;
+\item \textbf{HTML5\ped{G}, CSS3, jQuery o Twitter Bootstrap:} consigliati per l'implementazione dell'interfaccia;
+\item \textbf{Google App Engine:} una Platform as a Service ideale per applicazioni web\ped{G} scalabili, riesce a scalare automaticamente al crescere 
+ delle risorse richieste e gestisce automaticamente il carico sui server;
+\item \textbf{Google Compute Engine:} una Infrastructure as a Service che abilita l'utente al lancio di macchine virtuali (VMS) on demand;
+\item \textbf{Google Cloud Storage:} un servizio scalabile per lo storage\ped{G} di file online;
+\item \textbf{Google Cloud Datastore:} database NoSQL ad alte prestazioni;
+\item \textbf{Google Cloud SQL:} database MySQL\ped{G};
+\item \textbf{Google BigQuery:} tool per l'analisi dei dati che utilizza query SQL-like per processare big data\ped{G} in pochi secondi;
+\item \textbf{Google Endpoints:} strumento consigliato per creare web\ped{G} services in App Engine che possono essere utilizzati con iOS\ped{G}, Android\ped{G} e client Javascript\ped{G}.
+\end{itemize}
+
+\subsubsection{Criticità}
+\begin{itemize}
+\item Il gruppo ha la piena libertà nella selezione dei dati da recuperare dai social network e nella scelta di come sviluppare l'architettura;
+\item Viene vincolato l'utilizzo dei servizi offerti da Google.
+\end{itemize}
+
+\subsubsection{Valutazione}
+Malgrado l'interesse verso un settore altamente tecnologico come quello proposto da Zing S.r.l., il gruppo \gruppo ritiene di non avere le 
+conoscenze necessarie per poter affrontare in modo adeguato le numerose scelte lasciate a sua discrezione.
+
+ 
+\subsection{C2 - GUS}
+
+\subsubsection{Descrizione}
+Tale capitolato riguarda il settore del controllo della qualità nella produzione industriale del vetro.
+Il progetto richiede la costruzione di un sistema software, dedicato al settore del vetro, con le caratteristiche seguenti:
+
+\begin{itemize}
+\item \textbf{Efficacia:} deve poter gestire il 100\% delle casistiche, prevedendo qualsiasi tipo di non conformità;
+\item \textbf{Facilità di utilizzo:} l'utilizzatore finale dev'essere in grado di gestire e configurare in modo facile e veloce l'intera interfaccia;
+\item \textbf{Gestione varie tipologie di "recipes" (ricette) per il controllo di non conformità:} dev'essere in grado di analizzare l'intera immagine e classificarne i difetti per "difettosità" rispetto a dimensione, forma e intensità;
+\item \textbf{Segnalazione:} di errori/difetti e di produzione di report;
+\item \textbf{Raccolta di dati e analisi statistica:} intervenire sui processi produttivi al fine di identificare le cause della non conformità e prendere le 
+iniziative di correzione degli stessi;
+\item \textbf{Fruibilità via web\ped{G}:} per controllare la produzione da remoto e vederne lo stato in tempo reale, ovunque ci si trovi.
+\end{itemize}
+
+\subsubsection{Dominio tecnologico}
+
+\begin{itemize}
+\item \textbf{C++ e IDE\ped{G} di sviluppo QtEditor:} per lo sviluppo della versione stand-alone, devono essere usate librerie\ped{G} standard, ma vengono accettate anche eventuali nuove librerie\ped{G} sviluppate ad-hoc;
+\item \textbf{MySQL\ped{G} o PostgreSQL:} database relazionale;
+\item \textbf{PHP\ped{G} e Javascript\ped{G}:} per sviluppare l'interfaccia web\ped{G};
+\item \textbf{AngularJS e Bootstrap:} framework\ped{G} consigliati per la realizzazione di una interfaccia grafica, con design responsivo\ped{G} per adattarsi
+automaticamente a tutti i dispositivi mobili (smartphone e tablet).
+\end{itemize}
+
+\subsubsection{Criticità}
+
+\begin{itemize}
+\item Scansione e elaborazione di immagini molto grandi, circa 500 MB, in pochi secondi;
+\item Costruzione di un algoritmo complesso per il riconoscimento del contorno e delle imperfezioni.
+\end{itemize}
+
+\subsubsection{Valutazione}
+Nonostante il dominio tecnologico sia quasi totalmente noto ai membri componenti del gruppo, si è scelto di scartare questo capitolato con le seguenti motivazioni:
+\begin{itemize}
+ \item Scarso interesse da parte dei componenti del gruppo verso le tecnologie richieste;
+ \item Difficile previsione del tempo necessario per la realizzazione di un algoritmo in grado di soddisfare i vincoli imposti dalle elevate dimensioni delle immagini da scansionare e dalla scarsità del tempo a disposizione per farlo.
+\end{itemize}
+
+\subsection{C3 - Nor(r)is}
+\subsubsection{Descrizione}
+Lo scopo del progetto è di produrre un framework\ped{G} per lo stack\ped{G} tecnologico formato da Node.js\ped{G}, Express.js e Socket.io in grado di generare grafici 
+i cui dati sono letti da sorgenti arbitrarie. Il fruitore finale dei grafici è l'esperto di dominio.\\
+Lo scopo del progetto è quello di realizzare un framework\ped{G} che permetta di raccogliere dati provenienti da sorgenti arbitrarie e visualizzare 
+tali dati sotto forma di grafici, in modo semplice e veloce. La veste grafica e i dati di ciascun grafico devono essere configurabili 
+programmaticamente usando le API\ped{G} fornite da Norris.
+Il framework\ped{G} deve mettere a disposizione funzioni di aggiornamento dei grafici lato server tramite tecnologia websocket\ped{G}.
+
+\subsubsection{Dominio tecnologico}
+
+\begin{itemize}
+\item \textbf{Node.js\ped{G}:} Sistema run time cross platform per applicazioni lato server e applicazioni di rete. Le applicazioni scritte per Node.js\ped{G} sono progettate per massimizzare l'efficienza di esecuzione, usando un sistema di I/O non bloccante e eventi asincroni. Node.js\ped{G} è ampiamente usato per applicazioni real-time\ped{G} grazie alla sua natura asincrona. Node.js\ped{G} contiene un modulo nativo asincrono per fare I/O su file, sockets e HTTP, grazie a questo modulo, Node.js\ped{G} può essere utilizzato come web\ped{G} server senza ricorrere a software quali Apache HTTP Server o Microsoft IIS;
+\item \textbf{Express:} framework\ped{G} per applicazioni web\ped{G} Node.js\ped{G}, che fornisce un insieme di funzionalità per applicazioni web\ped{G} e mobile;
+\item \textbf{Socket.io:} libreria\ped{G} Javascript\ped{G} per applicazioni web\ped{G} real-time\ped{G}, che permette di creare comunicazioni bidirezionali tra il web\ped{G} client e il server. \`E costituita da due parti: una libreria\ped{G} lato client che esegue nel browser\ped{G} e una lato server per Node.js\ped{G}. Entrambe le componenti hanno API\ped{G} quasi identiche, similmente a Node.js\ped{G}, la libreria\ped{G} è event-driven\ped{G}. Esistono implementazioni sia per Android\ped{G} che per iOS\ped{G}. Socket.io usa principalmente il protocollo WebSocket\ped{G}, ma se necessario, può usare altri metodi di comunicazione bidirezionali quali: Adobe Flash sockets, JSON polling, ecc. Sebbene Socket.io può essere utilizzato come un semplice wrapper per websocket\ped{G}, essa fornisce molte altre features tra le quali: broadcasting su socket multipli, salvare dati associati a ciascun client e I/O asincrono. La libreria\ped{G} può essere installata utilizzando NPM, il package manager di Node.js\ped{G};
+\item \textbf{AngularJs:} framework\ped{G} Javascript\ped{G} per applicazioni web\ped{G}, che supporta il design pattern\ped{G} MVC\ped{G}.
+
+\end{itemize}
+
+\subsubsection{Criticità}
+\begin{itemize}
+\item \textbf{Costruzione di un framework\ped{G}:} viene richiesto al gruppo di creare un framework\ped{G} per la traduzione di dati provenienti da varie sorgenti in un formato adatto ad essere disegnato su una pagina web.
+\end{itemize}
+
+\subsubsection{Valutazione} \label{valutazioneC3}
+Nonostante l'interesse per questo capitolato fosse alla pari di quello verso il capitolato C4, alla fine questo capitolato è stato scartato perché:
+\begin{itemize}
+\item Nessun componente del gruppo aveva esperienza riguardo la creazione di un framework\ped{G};
+\item Il gruppo preferiva sviluppare un'applicazione rivolta a diverse categorie d'utenza, che non si limitino ai soli sviluppatori.
+\end{itemize}
+
+\subsection{C5 - sHike}
+
+\subsubsection{Descrizione}
+
+Lo scopo del capitolato consiste nella realizzazione di una piattaforma\ped{G} di supporto agli escursionisti, in grado di monitorare il loro stato fisico e la loro posizione e che renda la loro esperienza più divertente e sicura.
+Il progetto si propone di sviluppare un'applicazione basata su piattaforma cloud\ped{G} con i seguenti obiettivi:
+
+\begin{itemize}
+ \item Fornire agli utenti informazioni sul percorso in montagna, lunghezza e tempo di viaggio, informazioni storiche e/o naturali, di meteo, sull'apertura di rifugi e su come accedere a servizi esistenti;
+ \item Collezionare dati aggregati sul comportamento dell'escursionista per lo studio dell'attività fisica nelle montagne come un modo per promuovere la salute.
+\end{itemize}
+
+Il progetto ha lo scopo sia di fornire all'utente informazioni aggiornate relative alle attività in montagna sia di collezionare dati per lo studio del comportamento degli escursionisti.
+Un obiettivo del progetto è incrementare il numero delle persone che possono camminare in montagna in sicurezza, come normale attività di fitness, con la massima riduzione dei rischi di sicurezza per assenza di informazioni locali.
+
+\subsubsection{Dominio tecnologico}
+\begin{itemize}
+\item \textbf{Wearable technology:} il prodotto finale sarà un'applicazione per uno smartwatch;
+\item \textbf{Android 4.4.2 e SDK:} è il più popolare sistema operativo\ped{G} per dispositivi mobili, è basato sul kernel\ped{G} Linux\ped{G} ed correntemente sviluppato da Google. Android\ped{G} è progettato principalmente per dispositivi mobili touchscreen, ma anche per televisioni, auto e orologi da polso. WearIT usa Android\ped{G} 4.4.2 una release della famiglia di "KitKat" Android\ped{G} 4.4. WearIT Android 4.4.2 viene rilasciato con un insieme di estensioni sviluppate appositamente per smartwatch WearIT – tali estensioni sono disponibili con un insieme documentato di API\ped{G} (WearIT API). Lo sviluppo di App per lo smartwatch WearIT è molto semplice grazie a l'SDK\ped{G} di Android\ped{G};
+\item \textbf{Extension WearIT API:} insieme documentato di API\ped{G} appositamente sviluppate per lo smartwatch WearIT;
+\item \textbf{JSON Schema:} formato dati intuitivo, chiaro e leggibile da umani e macchine, per aiutare la realizzazione di strutture dati complesse e validare dati JSON scambiati tra colleghi nella rete. 
+JSON, o Javascript\ped{G} Object Notation, è un formato standard aperto\ped{G} che usa testo leggibile dagli umani per trasmettere oggetti di dati consistenti di coppie attributo-valore. Viene usato principalmente per trasmettere dati tra un server e un'applicazione web\ped{G}, come alternativa ad XML\ped{G}. 
+Nonostante sia originalmente derivato da linguaggi di scripting Javascript\ped{G}, JSON è un linguaggio indipendente dal formato dati. Codice per parsing e generando dati JSON è disponibile alla lettura in un'ampia varietà di linguaggi di programmazione. WearIT usa JSON per lo scambio di dati tra dispositivi WearIT e il server WearIT Cloud;
+\item \textbf{The Spring Framework\ped{G}:} framework\ped{G} per applicazioni open source contenente inversione di controllo per la piattaforma\ped{G} Java. La caratteristica centrale di questo framework\ped{G} è che può essere usata da ogni applicazione Java, ma ci sono estensioni per la creazione di applicazioni web\ped{G} nella vetta della piattaforma\ped{G} Java EE. WearIT Cloud Server usa Java e Spring come framework\ped{G} per la maggior parte dello sviluppo e per la distribuzione;
+\item \textbf{WearIT Cloud API:} insieme di specifiche e moduli sw che hanno a che fare con moduli cloud\ped{G} specifici di WearIT che funzionano su WearIT Cloud Servers. L'API\ped{G} permette agli sviluppatori di interagire cone le funzioni WearIT Cloud, abilitando la creazione di applicazioni web\ped{G} WearIT.
+\end{itemize}
+ 
+\subsubsection{Criticità}
+\begin{itemize}
+\item \textbf{Realizzazione GUI\ped{G}:} uno degli aspetti principali del capitolato è la realizzazione di una GUI\ped{G} di semplice utilizzo e ricca di informazione. La progettazione di tale GUI\ped{G} è un attività complessa che richiede un'esperienza non ancora acquisita dal gruppo;
+\item \textbf{API\ped{G} proprietarie:} per la realizzazione del progetto è necessario l'uso di API\ped{G} proprietarie realizzate dal produttore del dispositivo e difficilmente la conoscenza di queste API\ped{G} tornerà utile in futuro.
+\end{itemize}
+ 
+\subsubsection{Valutazione}
+Buon interesse da parte del gruppo rispetto all'area di studio e al settore applicativo, ma l'obbligo d'uso di API\ped{G} proprietarie del proponente\ped{G} è stato ritenuto penalizzante dal punto di vista formativo.

@@ -1,0 +1,57 @@
+\section{Requisiti}
+\label{tabellona}
+Di seguito vengono riportati tutti i requisiti individuati dal \gloxy{team} durante l'analisi del capitolato, dei casi d'uso, dall'incontro con il \gloxy{Proponente} oppure da necessità interne.
+Per facilitare la consultazione, i requisiti saranno separati su più tabelle in base alla loro categoria.
+I requisiti saranno classificati per tipo e importanza e utilizzeranno la seguente sintassi:
+\begin{center}
+R[Importanza][Tipo][Codice]
+\end{center}
+\begin{itemize}
+\item \textbf{Importanza}: può assumere sono uno fra i seguenti valori:
+\begin{itemize}
+\item \textit{O}: requisito obbligatorio;
+\item \textit{D}: requisito desiderabile;
+\item \textit{F}: requisito facoltativo.
+\end{itemize}
+\item \textbf{Tipo}: può assumere solo uno fra i seguenti valori:
+\begin{itemize}
+\item \textit{F}: funzionale;
+\item \textit{P}: prestazionale;
+\item \textit{Q}: qualità;
+\item \textit{V}: vincolo.
+\end{itemize}
+\item \textbf{Codice}: è il codice gerarchico univoco di ogni requisito, espresso in numeri.
+\end{itemize}
+\noindent Per ogni requisito sarà anche specificato:
+\begin{itemize}
+\item \textbf{Descrizione}: una breve ma completa descrizione del requisito, che deve essere il meno ambigua possibile;
+\item \textbf{Fonte}: che può essere una o più delle seguenti:
+\begin{itemize}
+\item \hypertarget{Capitolato}{\textit{Capitolato}}: si tratta di un requisito derivato direttamente dal capitolato;
+\item \hypertarget{Verbale 2014-12-19}{\textit{Verbale 2014-12-19}}: si tratta di un requisito derivato direttamente dal verbale \iI;
+\item \hypertarget{Interno}{\textit{Interno}}: si tratta di un requisito identificato dagli \rAs;
+\item \hypertarget{Verbale 2015-03-13}{\textit{Verbale 2015-03-13}}: si tratta di un requisito derivato direttamente dal verbale \iII;
+\item \textit{Codice di un caso d'uso}: si tratta di un requisito emerso da un caso d'uso, in questo caso viene riportato l'identificativo del caso d'uso associato.
+\end{itemize}
+\end{itemize}
+\begingroup
+\let\clearpage\relax
+\input{sezioni/tabellaRequisiti.tex}
+\input{sezioni/tracciamentoRequisitiFonti.tex}
+\input{sezioni/tracciamentoFontiRequisiti.tex}
+\endgroup
+\clearpage
+\begingroup
+\let\clearpage\relax
+\input{sezioni/riepilogoRequisiti.tex}
+\endgroup
+\subsection{Requisiti accettati}
+Tutti i requisiti obbligatori saranno implementati. A causa di tempo e risorse limitati alcuni dei requisiti desiderabili o facoltativi non potranno essere soddisfatti, saranno quindi soddisfatti solamente alcuni dei requisiti desiderabili o facoltativi, ci riserviamo però la possibilità di soddisfare un maggior numero di requisiti di quelli previsti nel caso tempo e risorse lo permettano.\\
+\\
+\label{reqAccettati}A seguito di un incontro con il \gloxy{proponente} e a successive osservazioni effettuate dai \rPs sono stati individuati nuovi requisiti. Dal momento che questi requisiti individuati sono stati ritenuti prioritari rispetto ad altri requisiti si è scelto di implementare i nuovi requisiti e di non andare a soddisfare alcuni di quelli precedentemente individuati.\\
+I requisiti che ora non saranno più soddisfatti o che hanno subito dei cambiamenti di priorità sono requisiti identificati dal gruppo e non dal \gloxy{Proponente}, il prodotto quindi continuerà a soddisfare i requisiti minimi e il costo totale rimarrà invariato.
+La lista aggiornata dei requisiti desiderabili o facoltativi che andremmo a soddisfare diventa quindi:
+\input{sezioni/requisitiAccettati.tex}
+\subsection{Requisiti soddisfatti}
+\label{soddisfatti}
+Al termine dell'attività di \nogloxy{progetto}, come risulta dal tracciamento incluso nella tabella, risulta soddisfatta la \textbf{totalità dei requisiti obbligatori} e dei \textbf{requisiti desiderabili/facoltativi accettati}; è stato inoltre possibile implementare qualche requisito desiderabile/facoltativo non accettato anche se non vi era alcun vincolo al riguardo.

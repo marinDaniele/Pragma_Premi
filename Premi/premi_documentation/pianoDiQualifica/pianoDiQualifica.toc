@@ -1,0 +1,158 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{12}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{12}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{12}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{12}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{12}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{12}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{12}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Qualit\IeC {\`a} di processo}{13}{section.2}
+\contentsline {subsection}{\numberline {2.1}Infrastructure Management Process (6.2.2)}{13}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Obiettivi di qualit\IeC {\`a}}{13}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Metriche}{14}{subsubsection.2.1.2}
+\contentsline {subsubsubsection}{\numberline {2.1.2.1}Disponibilit\IeC {\`a} \emph {PragmaDB}\xspace }{14}{subsubsubsection.2.1.2.1}
+\contentsline {subsubsubsection}{\numberline {2.1.2.2}Tempo di correzione incoerenze in \emph {PragmaDB}\xspace }{14}{subsubsubsection.2.1.2.2}
+\contentsline {subsubsubsection}{\numberline {2.1.2.3}Errori di individuazione termini di glossario}{14}{subsubsubsection.2.1.2.3}
+\contentsline {subsubsection}{\numberline {2.1.3}Strategie}{14}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Project Planning, Assessment \& Control Process (6.3.1 - 6.3.2)}{15}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Obiettivi di qualit\IeC {\`a}}{15}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Metriche}{15}{subsubsection.2.2.2}
+\contentsline {subsubsubsection}{\numberline {2.2.2.1}Schedule Variance}{15}{subsubsubsection.2.2.2.1}
+\contentsline {subsubsubsection}{\numberline {2.2.2.2}Budget Variance}{15}{subsubsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Strategie}{15}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Risk Management Process (6.3.4)}{16}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Obiettivi di qualit\IeC {\`a}}{16}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Metriche}{16}{subsubsection.2.3.2}
+\contentsline {subsubsubsection}{\numberline {2.3.2.1}Rischi non preventivati}{16}{subsubsubsection.2.3.2.1}
+\contentsline {subsubsubsection}{\numberline {2.3.2.2}Efficienza di gestione dei rischi}{16}{subsubsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Strategie}{16}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}System/Software Requirements Analysis Process (6.4.2 - 7.1.2)}{16}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Obiettivi di qualit\IeC {\`a}}{17}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Metriche}{17}{subsubsection.2.4.2}
+\contentsline {subsubsubsection}{\numberline {2.4.2.1}Requisiti obbligatori soddisfatti}{17}{subsubsubsection.2.4.2.1}
+\contentsline {subsubsubsection}{\numberline {2.4.2.2}Requisiti desiderabili/facoltativi accettati soddisfatti}{17}{subsubsubsection.2.4.2.2}
+\contentsline {subsubsubsection}{\numberline {2.4.2.3}Requisiti desiderabili/facoltativi non accettati soddisfatti}{17}{subsubsubsection.2.4.2.3}
+\contentsline {subsubsection}{\numberline {2.4.3}Strategie}{17}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}System/Software Architectural Design Process (6.4.3 - 7.1.3)}{18}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Obiettivi di qualit\IeC {\`a}}{18}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Metriche}{18}{subsubsection.2.5.2}
+\contentsline {subsubsubsection}{\numberline {2.5.2.1}Structural Fan-In}{18}{subsubsubsection.2.5.2.1}
+\contentsline {subsubsubsection}{\numberline {2.5.2.2}SFIN - Ottimalit\IeC {\`a}}{18}{subsubsubsection.2.5.2.2}
+\contentsline {subsubsubsection}{\numberline {2.5.2.3}Structural Fan-Out}{18}{subsubsubsection.2.5.2.3}
+\contentsline {subsubsubsection}{\numberline {2.5.2.4}SFOUT - Non Accettabilit\IeC {\`a}}{19}{subsubsubsection.2.5.2.4}
+\contentsline {subsubsection}{\numberline {2.5.3}Strategie}{19}{subsubsection.2.5.3}
+\contentsline {subsection}{\numberline {2.6}Software Detailed Design Process (7.1.4)}{19}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Obiettivi di qualit\IeC {\`a}}{19}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Metriche}{19}{subsubsection.2.6.2}
+\contentsline {subsubsubsection}{\numberline {2.6.2.1}Numero di metodi per classe}{19}{subsubsubsection.2.6.2.1}
+\contentsline {subsubsubsection}{\numberline {2.6.2.2}Metodi per classe - Non Accettabilit\IeC {\`a}}{20}{subsubsubsection.2.6.2.2}
+\contentsline {subsubsubsection}{\numberline {2.6.2.3}Numero di parametri per metodo}{20}{subsubsubsection.2.6.2.3}
+\contentsline {subsubsubsection}{\numberline {2.6.2.4}Parametri per metodo - Non Accettabilit\IeC {\`a}}{20}{subsubsubsection.2.6.2.4}
+\contentsline {subsubsection}{\numberline {2.6.3}Strategie}{20}{subsubsection.2.6.3}
+\contentsline {subsection}{\numberline {2.7}Software Construction Process (7.1.5)}{20}{subsection.2.7}
+\contentsline {subsubsection}{\numberline {2.7.1}Obiettivi di qualit\IeC {\`a}}{20}{subsubsection.2.7.1}
+\contentsline {subsubsection}{\numberline {2.7.2}Metriche}{21}{subsubsection.2.7.2}
+\contentsline {subsubsubsection}{\numberline {2.7.2.1}Produttivit\IeC {\`a} di codifica}{21}{subsubsubsection.2.7.2.1}
+\contentsline {subsubsubsection}{\numberline {2.7.2.2}Complessit\IeC {\`a} Ciclomatica}{21}{subsubsubsection.2.7.2.2}
+\contentsline {subsubsubsection}{\numberline {2.7.2.3}Complessit\IeC {\`a} Ciclomatica - Non Accettabilit\IeC {\`a}}{21}{subsubsubsection.2.7.2.3}
+\contentsline {subsubsubsection}{\numberline {2.7.2.4}Linee di commento su linee di codice}{21}{subsubsubsection.2.7.2.4}
+\contentsline {subsubsubsection}{\numberline {2.7.2.5}Chiamate annidate}{22}{subsubsubsection.2.7.2.5}
+\contentsline {subsubsubsection}{\numberline {2.7.2.6}Variabili inutilizzate}{22}{subsubsubsection.2.7.2.6}
+\contentsline {subsubsubsection}{\numberline {2.7.2.7}Dipendenze}{22}{subsubsubsection.2.7.2.7}
+\contentsline {subsubsubsection}{\numberline {2.7.2.8}Halstead Difficulty per-function}{22}{subsubsubsection.2.7.2.8}
+\contentsline {subsubsubsection}{\numberline {2.7.2.9}Halstead Difficulty per-function - Non Accettabilit\IeC {\`a}}{22}{subsubsubsection.2.7.2.9}
+\contentsline {subsubsubsection}{\numberline {2.7.2.10}Halstead Volume per-function}{23}{subsubsubsection.2.7.2.10}
+\contentsline {subsubsubsection}{\numberline {2.7.2.11}Halstead Effort per-function}{23}{subsubsubsection.2.7.2.11}
+\contentsline {subsubsubsection}{\numberline {2.7.2.12}Indice di manutenibilit\IeC {\`a}}{23}{subsubsubsection.2.7.2.12}
+\contentsline {subsubsubsection}{\numberline {2.7.2.13}Indice di manutenibilit\IeC {\`a} - Non Accettabilit\IeC {\`a}}{23}{subsubsubsection.2.7.2.13}
+\contentsline {subsubsection}{\numberline {2.7.3}Strategie}{23}{subsubsection.2.7.3}
+\contentsline {subsection}{\numberline {2.8}System/Software Integration Process (6.4.5 - 7.1.6)}{23}{subsection.2.8}
+\contentsline {subsubsection}{\numberline {2.8.1}Obiettivi di qualit\IeC {\`a}}{24}{subsubsection.2.8.1}
+\contentsline {subsubsection}{\numberline {2.8.2}Metriche}{24}{subsubsection.2.8.2}
+\contentsline {subsubsubsection}{\numberline {2.8.2.1}Componenti integrate}{24}{subsubsubsection.2.8.2.1}
+\contentsline {subsubsection}{\numberline {2.8.3}Strategie}{24}{subsubsection.2.8.3}
+\contentsline {subsection}{\numberline {2.9}System/Software Qualification Testing Process (6.4.6 - 7.1.7)}{24}{subsection.2.9}
+\contentsline {subsubsection}{\numberline {2.9.1}Obiettivi di qualit\IeC {\`a}}{24}{subsubsection.2.9.1}
+\contentsline {subsubsection}{\numberline {2.9.2}Metriche}{24}{subsubsection.2.9.2}
+\contentsline {subsubsubsection}{\numberline {2.9.2.1}Test di sistema superati}{24}{subsubsubsection.2.9.2.1}
+\contentsline {subsubsection}{\numberline {2.9.3}Strategie}{25}{subsubsection.2.9.3}
+\contentsline {subsection}{\numberline {2.10}Software Documentation Management Process (7.2.1)}{25}{subsection.2.10}
+\contentsline {subsubsection}{\numberline {2.10.1}Obiettivi di qualit\IeC {\`a}}{25}{subsubsection.2.10.1}
+\contentsline {subsubsection}{\numberline {2.10.2}Metriche}{25}{subsubsection.2.10.2}
+\contentsline {subsubsubsection}{\numberline {2.10.2.1}Indice Gulpease}{25}{subsubsubsection.2.10.2.1}
+\contentsline {subsubsection}{\numberline {2.10.3}Strategie}{25}{subsubsection.2.10.3}
+\contentsline {subsection}{\numberline {2.11}Software Verification Process (7.2.4)}{25}{subsection.2.11}
+\contentsline {subsubsection}{\numberline {2.11.1}Obiettivi di qualit\IeC {\`a}}{25}{subsubsection.2.11.1}
+\contentsline {subsubsection}{\numberline {2.11.2}Metriche}{26}{subsubsection.2.11.2}
+\contentsline {subsubsubsection}{\numberline {2.11.2.1}Copertura dei test}{26}{subsubsubsection.2.11.2.1}
+\contentsline {subsubsection}{\numberline {2.11.3}Strategie}{26}{subsubsection.2.11.3}
+\contentsline {section}{\numberline {3}Qualit\IeC {\`a} di prodotto}{27}{section.3}
+\contentsline {subsection}{\numberline {3.1}Funzionalit\IeC {\`a} (6.1)}{27}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Obiettivi di qualit\IeC {\`a}}{27}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Metriche}{27}{subsubsection.3.1.2}
+\contentsline {subsubsubsection}{\numberline {3.1.2.1}Completezza dell'implementazione funzionale}{27}{subsubsubsection.3.1.2.1}
+\contentsline {subsubsubsection}{\numberline {3.1.2.2}Accuratezza rispetto alle attese}{27}{subsubsubsection.3.1.2.2}
+\contentsline {subsubsubsection}{\numberline {3.1.2.3}Controllo degli accessi}{27}{subsubsubsection.3.1.2.3}
+\contentsline {subsection}{\numberline {3.2}Affidabilit\IeC {\`a} (6.2)}{28}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Obiettivi di qualit\IeC {\`a}}{28}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Metriche}{28}{subsubsection.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.2.2.1}Densit\IeC {\`a} di failure}{28}{subsubsubsection.3.2.2.1}
+\contentsline {subsubsubsection}{\numberline {3.2.2.2}Blocco di operazioni non corrette}{28}{subsubsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.3}Usabilit\IeC {\`a} (6.3)}{28}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Obiettivi di qualit\IeC {\`a}}{28}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Metriche}{29}{subsubsection.3.3.2}
+\contentsline {subsubsubsection}{\numberline {3.3.2.1}Comprensibilit\IeC {\`a} delle funzioni offerte}{29}{subsubsubsection.3.3.2.1}
+\contentsline {subsubsubsection}{\numberline {3.3.2.2}Facilit\IeC {\`a} di apprendimento delle funzionalit\IeC {\`a}}{29}{subsubsubsection.3.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.3.2.3}Consistenza operazionale in uso}{29}{subsubsubsection.3.3.2.3}
+\contentsline {subsubsubsection}{\numberline {3.3.2.4}Elementi personalizzabili}{29}{subsubsubsection.3.3.2.4}
+\contentsline {subsection}{\numberline {3.4}Efficienza (6.4)}{29}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Obiettivi di qualit\IeC {\`a}}{30}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Metriche}{30}{subsubsection.3.4.2}
+\contentsline {subsubsubsection}{\numberline {3.4.2.1}Tempo di risposta}{30}{subsubsubsection.3.4.2.1}
+\contentsline {subsection}{\numberline {3.5}Manutenibilit\IeC {\`a} (6.5)}{30}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Obiettivi di qualit\IeC {\`a}}{30}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Metriche}{30}{subsubsection.3.5.2}
+\contentsline {subsubsubsection}{\numberline {3.5.2.1}Capacit\IeC {\`a} di analisi di failure}{30}{subsubsubsection.3.5.2.1}
+\contentsline {subsubsubsection}{\numberline {3.5.2.2}Impatto delle modifiche}{31}{subsubsubsection.3.5.2.2}
+\contentsline {subsection}{\numberline {3.6}Portabilit\IeC {\`a} (6.6)}{31}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Obiettivi di qualit\IeC {\`a}}{31}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Metriche}{31}{subsubsection.3.6.2}
+\contentsline {subsubsubsection}{\numberline {3.6.2.1}Versioni dei browser supportate}{31}{subsubsubsection.3.6.2.1}
+\contentsline {subsubsubsection}{\numberline {3.6.2.2}Inclusione di funzionalit\IeC {\`a} da altri prodotti}{31}{subsubsubsection.3.6.2.2}
+\contentsline {section}{\numberline {4}Specifica dei test}{32}{section.4}
+\contentsline {subsection}{\numberline {4.1}Tipi di test}{32}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Test di Validazione}{32}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Test di Sistema}{48}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Test di Integrazione}{50}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Test di Unit\IeC {\`a}}{53}{subsection.4.5}
+\contentsline {section}{\numberline {5}Tracciamenti dei test}{66}{section.5}
+\contentsline {subsection}{\numberline {5.1}Tracciamento Test di Validazione-Requisiti}{66}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Tracciamento Requisiti-Test di Validazione}{67}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Tracciamento Test di Sistema-Requisiti}{68}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Tracciamento Requisiti-Test di Sistema}{69}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Tracciamento Test di Integrazione-Componenti}{70}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Tracciamento Componenti-Test di Integrazione}{71}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Tracciamento Test di Unit\IeC {\`a}-Metodi}{72}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}Tracciamento Metodi-Test di Unit\IeC {\`a}}{84}{subsection.5.8}
+\contentsline {section}{Appendice \numberline {A}Resoconto attivit\IeC {\`a} di verifica}{96}{Appendice.1.A}
+\contentsline {subsection}{\numberline {A.1}Fase di \unhbox \voidb@x \hbox {Ammissione} al \unhbox \voidb@x \hbox {progetto}\xspace }{96}{subsection.1.A.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Analisi statica dei documenti}{96}{subsubsection.1.A.1.1}
+\contentsline {subsubsubsection}{\numberline {A.1.1.1}Esiti verifiche automatizzate}{96}{subsubsubsection.1.A.1.1.1}
+\contentsline {subsubsection}{\numberline {A.1.2}Considerazioni finali}{97}{subsubsection.1.A.1.2}
+\contentsline {subsection}{\numberline {A.2}Fase di \unhbox \voidb@x \hbox {Consolidamento} dei \unhbox \voidb@x \hbox {requisiti}\xspace }{97}{subsection.1.A.2}
+\contentsline {subsubsection}{\numberline {A.2.1}Analisi statica dei documenti}{97}{subsubsection.1.A.2.1}
+\contentsline {subsubsubsection}{\numberline {A.2.1.1}Esiti verifiche automatizzate}{97}{subsubsubsection.1.A.2.1.1}
+\contentsline {subsubsection}{\numberline {A.2.2}Considerazioni finali}{97}{subsubsection.1.A.2.2}
+\contentsline {subsection}{\numberline {A.3}Fase di \unhbox \voidb@x \hbox {Progettazione} \unhbox \voidb@x \hbox {dell'architettura}\xspace }{98}{subsection.1.A.3}
+\contentsline {subsubsection}{\numberline {A.3.1}Analisi statica dei documenti}{98}{subsubsection.1.A.3.1}
+\contentsline {subsubsubsection}{\numberline {A.3.1.1}Esiti verifiche automatizzate}{98}{subsubsubsection.1.A.3.1.1}
+\contentsline {subsubsection}{\numberline {A.3.2}Considerazioni finali}{99}{subsubsection.1.A.3.2}
+\contentsline {subsection}{\numberline {A.4}Fase di \unhbox \voidb@x \hbox {Consolidamento} dell'\unhbox \voidb@x \hbox {architettura}\xspace }{99}{subsection.1.A.4}
+\contentsline {subsubsection}{\numberline {A.4.1}Analisi statica dei documenti}{99}{subsubsection.1.A.4.1}
+\contentsline {subsubsubsection}{\numberline {A.4.1.1}Esiti verifiche automatizzate}{100}{subsubsubsection.1.A.4.1.1}
+\contentsline {subsubsection}{\numberline {A.4.2}Considerazioni finali}{100}{subsubsection.1.A.4.2}
+\contentsline {subsection}{\numberline {A.5}Fase di \unhbox \voidb@x \hbox {Realizzazione} del \unhbox \voidb@x \hbox {prodotto}\xspace }{100}{subsection.1.A.5}
+\contentsline {subsubsection}{\numberline {A.5.1}Analisi statica dei documenti}{101}{subsubsection.1.A.5.1}
+\contentsline {subsubsubsection}{\numberline {A.5.1.1}Esiti verifiche automatizzate}{101}{subsubsubsection.1.A.5.1.1}
+\contentsline {subsubsection}{\numberline {A.5.2}Soddisfacimento metriche}{102}{subsubsection.1.A.5.2}
+\contentsline {subsubsection}{\numberline {A.5.3}Considerazioni finali}{103}{subsubsection.1.A.5.3}

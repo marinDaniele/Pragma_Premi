@@ -1,0 +1,156 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Scopo del documento}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Scopo del prodotto}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Glossario}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Riferimenti}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Normativi}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Informativi}{subsection.1.4}% 7
+\BOOKMARK [1][-]{section.2}{Processi primari}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Processo di sviluppo}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Attivit\340}{subsection.2.1}% 10
+\BOOKMARK [4][-]{subsubsubsection.2.1.1.1}{Analisi dei requisiti}{subsubsection.2.1.1}% 11
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.1.1.1}{Task - Studio di fattibilit\340}{}% 12
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.1.1.2}{Task - Analisi dei requisiti}{}% 13
+\BOOKMARK [1][-]{subsubsubsection.2.1.1.2}{Progettazione}{subsubsubsubsection.2.1.1.1.2}% 14
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.1.2.1}{Task - Specifica tecnica}{}% 15
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.1.2.2}{Task - Definizione di prodotto}{}% 16
+\BOOKMARK [1][-]{subsubsection.2.1.2}{Norme}{subsubsubsubsection.2.1.1.2.2}% 17
+\BOOKMARK [2][-]{subsubsubsection.2.1.2.1}{Classificazione dei requisiti}{subsubsection.2.1.2}% 18
+\BOOKMARK [3][-]{subsubsubsection.2.1.2.2}{Classificazione dei casi d'uso}{subsubsubsection.2.1.2.1}% 19
+\BOOKMARK [4][-]{subsubsubsection.2.1.2.3}{Norme progettuali}{subsubsubsection.2.1.2.2}% 20
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.2.3.1}{Denominazione di entit\340 e relazioni}{}% 21
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.2.3.2}{Notazioni per la progettazione architetturale}{}% 22
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.2.3.3}{Notazioni per la progettazione di dettaglio}{}% 23
+\BOOKMARK [0][-]{subsubsubsubsubsection.2.1.2.3.3.1}{Notazioni per il Front-EndG}{}% 24
+\BOOKMARK [0][-]{subsubsubsubsubsubsection.2.1.2.3.3.1.1}{Notazioni derivate da AngularJS}{}% 25
+\BOOKMARK [0][-]{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.1}{Directive}{}% 26
+\BOOKMARK [0][-]{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.2}{Controller}{}% 27
+\BOOKMARK [0][-]{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.3}{Promise e \044q}{}% 28
+\BOOKMARK [0][-]{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.4}{Tipi di dato}{}% 29
+\BOOKMARK [0][-]{subsubsubsubsubsection.2.1.2.3.3.2}{Notazioni per il Back-EndG}{}% 30
+\BOOKMARK [0][-]{subsubsubsubsubsubsection.2.1.2.3.3.2.1}{Notazioni derivate da frameworkG}{}% 31
+\BOOKMARK [0][-]{subsubsubsubsubsubsection.2.1.2.3.3.2.2}{Express}{}% 32
+\BOOKMARK [0][-]{subsubsubsubsubsubsection.2.1.2.3.3.2.3}{MongoDBG e MongooseG}{}% 33
+\BOOKMARK [1][-]{subsubsubsection.2.1.2.4}{Codifica e convenzioni nei file}{subsubsubsubsubsubsection.2.1.2.3.3.2.3}% 34
+\BOOKMARK [2][-]{subsubsubsection.2.1.2.5}{Nomi e norme stilistiche nel codice}{subsubsubsection.2.1.2.4}% 35
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.2.5.1}{AngularJS}{}% 36
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.2.5.2}{MongoDBG e MongooseG}{}% 37
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.2.5.3}{Commenti}{}% 38
+\BOOKMARK [1][-]{subsubsubsection.2.1.2.6}{Ricorsione}{subsubsubsubsection.2.1.2.5.3}% 39
+\BOOKMARK [2][-]{subsubsection.2.1.3}{Strumenti}{subsubsubsection.2.1.2.6}% 40
+\BOOKMARK [3][-]{subsubsubsection.2.1.3.1}{PragmaDB}{subsubsection.2.1.3}% 41
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.1}{Attori}{}% 42
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.2}{Fonti}{}% 43
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.3}{Requisiti}{}% 44
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.4}{Casi d'uso}{}% 45
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.5}{Glossario}{}% 46
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.6}{Package e Classi}{}% 47
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.7}{Test}{}% 48
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.8}{Tracciamento}{}% 49
+\BOOKMARK [0][-]{subsubsubsubsection.2.1.3.1.9}{Funzionalit\340 di supporto}{}% 50
+\BOOKMARK [1][-]{subsubsubsection.2.1.3.2}{WebStorm}{subsubsubsubsection.2.1.3.1.9}% 51
+\BOOKMARK [1][-]{section.3}{Processi di supporto}{subsubsubsubsection.2.1.3.1.9}% 52
+\BOOKMARK [2][-]{subsection.3.1}{Processo di documentazione}{section.3}% 53
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Procedure}{subsection.3.1}% 54
+\BOOKMARK [4][-]{subsubsubsection.3.1.1.1}{Formalizzazione dei documenti}{subsubsection.3.1.1}% 55
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Norme}{subsection.3.1}% 56
+\BOOKMARK [4][-]{subsubsubsection.3.1.2.1}{Template}{subsubsection.3.1.2}% 57
+\BOOKMARK [4][-]{subsubsubsection.3.1.2.2}{Norme tipografiche}{subsubsection.3.1.2}% 58
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.2.1}{Norme riguardo nomi}{}% 59
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.2.2}{Stile del testo}{}% 60
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.2.3}{Punteggiatura}{}% 61
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.2.4}{Composizione del testo}{}% 62
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.2.5}{Formati ricorrenti}{}% 63
+\BOOKMARK [1][-]{subsubsubsection.3.1.2.3}{Componenti grafiche}{subsubsubsubsection.3.1.2.2.5}% 64
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.3.1}{Tabelle}{}% 65
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.3.2}{Immagini}{}% 66
+\BOOKMARK [1][-]{subsubsubsection.3.1.2.4}{Struttura dei documenti}{subsubsubsubsection.3.1.2.3.2}% 67
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.4.1}{Frontespizio}{}% 68
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.4.2}{Diario delle modifiche}{}% 69
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.4.3}{Indici}{}% 70
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.4.4}{Struttura generale di una pagina}{}% 71
+\BOOKMARK [1][-]{subsubsubsection.3.1.2.5}{Tipi di documenti}{subsubsubsubsection.3.1.2.4.4}% 72
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.5.1}{Documenti interni}{}% 73
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.1.2.5.1.1}{Verbali interni informali}{}% 74
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.1.2.5.1.2}{Bozze di documenti ufficiali}{}% 75
+\BOOKMARK [0][-]{subsubsubsubsection.3.1.2.5.2}{Documenti ufficiali}{}% 76
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.1.2.5.2.1}{Verbali ufficiali}{}% 77
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.1.2.5.2.2}{Documenti informali}{}% 78
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.1.2.5.2.3}{Documenti formali}{}% 79
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.1.2.5.2.4}{Glossario}{}% 80
+\BOOKMARK [1][-]{subsubsubsection.3.1.2.6}{Versionamento}{subsubsubsubsubsection.3.1.2.5.2.4}% 81
+\BOOKMARK [2][-]{subsubsection.3.1.3}{Strumenti}{subsubsubsection.3.1.2.6}% 82
+\BOOKMARK [3][-]{subsubsubsection.3.1.3.1}{LaTeX e Texmaker}{subsubsection.3.1.3}% 83
+\BOOKMARK [4][-]{subsubsubsection.3.1.3.2}{Editor UML}{subsubsubsection.3.1.3.1}% 84
+\BOOKMARK [4][-]{subsubsubsection.3.1.3.3}{Script}{subsubsubsection.3.1.3.1}% 85
+\BOOKMARK [4][-]{subsubsubsection.3.1.3.4}{JSDoc 3}{subsubsubsection.3.1.3.1}% 86
+\BOOKMARK [2][-]{subsection.3.2}{Processo di verifica}{subsubsubsection.3.1.2.6}% 87
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Attivit\340}{subsection.3.2}% 88
+\BOOKMARK [4][-]{subsubsubsection.3.2.1.1}{Analisi}{subsubsection.3.2.1}% 89
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.1.1.1}{Analisi statica}{}% 90
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.1.1.1.1}{Walkthrough}{}% 91
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.1.1.1.2}{Inspection}{}% 92
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.1.1.2}{Analisi dinamica}{}% 93
+\BOOKMARK [1][-]{subsubsubsection.3.2.1.2}{Test}{subsubsubsubsection.3.2.1.1.2}% 94
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.1.2.1}{Test di unit\340}{}% 95
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.1.2.2}{Test di integrazione}{}% 96
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.1.2.3}{Test di sistema}{}% 97
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.1.2.4}{Test di regressione}{}% 98
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.1.2.5}{Test di validazione}{}% 99
+\BOOKMARK [1][-]{subsubsection.3.2.2}{Procedure}{subsubsubsubsection.3.2.1.2.5}% 100
+\BOOKMARK [2][-]{subsubsubsection.3.2.2.1}{Approvazione di un ticket}{subsubsection.3.2.2}% 101
+\BOOKMARK [3][-]{subsubsubsection.3.2.2.2}{Rigetto di un ticket}{subsubsubsection.3.2.2.1}% 102
+\BOOKMARK [4][-]{subsubsubsection.3.2.2.3}{Gestione delle anomalie}{subsubsubsection.3.2.2.2}% 103
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Strumenti}{subsubsubsection.3.2.2.1}% 104
+\BOOKMARK [4][-]{subsubsubsection.3.2.3.1}{Documentazione}{subsubsection.3.2.3}% 105
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.3.1.1}{Texmaker}{}% 106
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.3.1.2}{Aspell}{}% 107
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.3.1.3}{Script}{}% 108
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.3.1.4}{PragmaDB}{}% 109
+\BOOKMARK [1][-]{subsubsubsection.3.2.3.2}{Codice}{subsubsubsubsection.3.2.3.1.4}% 110
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.3.2.1}{Strumenti di analisi statica}{}% 111
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.3.2.1.1}{JSHintG}{}% 112
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.3.2.1.2}{CSSLintG}{}% 113
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.3.2.1.3}{W3CG Markup Validator Service}{}% 114
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.3.2.1.4}{complexity-report}{}% 115
+\BOOKMARK [0][-]{subsubsubsubsection.3.2.3.2.2}{Strumenti di analisi dinamica}{}% 116
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.3.2.2.1}{Google ChromeG DevTools}{}% 117
+\BOOKMARK [0][-]{subsubsubsubsubsection.3.2.3.2.2.2}{KarmaG}{}% 118
+\BOOKMARK [1][-]{section.4}{Processi organizzativi}{subsubsubsubsubsection.3.2.3.2.2.2}% 119
+\BOOKMARK [2][-]{subsection.4.1}{Processo di gestione}{section.4}% 120
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Attivit\340}{subsection.4.1}% 121
+\BOOKMARK [4][-]{subsubsubsection.4.1.1.1}{Comunicazioni}{subsubsection.4.1.1}% 122
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.1.1.1}{Comunicazioni interne}{}% 123
+\BOOKMARK [0][-]{subsubsubsubsubsection.4.1.1.1.1.1}{Comunicazioni via mailing list}{}% 124
+\BOOKMARK [0][-]{subsubsubsubsubsection.4.1.1.1.1.2}{Comunicazioni via chatG}{}% 125
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.1.1.2}{Comunicazioni esterne}{}% 126
+\BOOKMARK [1][-]{subsubsubsection.4.1.1.2}{Riunioni}{subsubsubsubsection.4.1.1.1.2}% 127
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.1.2.1}{Riunioni interne}{}% 128
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.1.2.2}{Riunioni esterne}{}% 129
+\BOOKMARK [1][-]{subsubsubsection.4.1.1.3}{Ticketing}{subsubsubsubsection.4.1.1.2.2}% 130
+\BOOKMARK [2][-]{subsubsection.4.1.2}{Procedure}{subsubsubsection.4.1.1.3}% 131
+\BOOKMARK [3][-]{subsubsubsection.4.1.2.1}{Apertura di un ticket}{subsubsection.4.1.2}% 132
+\BOOKMARK [4][-]{subsubsubsection.4.1.2.2}{Rigetto di un ticket}{subsubsubsection.4.1.2.1}% 133
+\BOOKMARK [4][-]{subsubsubsection.4.1.2.3}{Chiusura di ticket}{subsubsubsection.4.1.2.1}% 134
+\BOOKMARK [4][-]{subsubsubsection.4.1.2.4}{Rilevazione dei rischi}{subsubsubsection.4.1.2.1}% 135
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Norme}{subsubsection.4.1.2}% 136
+\BOOKMARK [4][-]{subsubsubsection.4.1.3.1}{Regole generali di ticketing}{subsubsection.4.1.3}% 137
+\BOOKMARK [4][-]{subsubsubsection.4.1.3.2}{Protocollo di utilizzo dei ticket}{subsubsection.4.1.3}% 138
+\BOOKMARK [4][-]{subsubsubsection.4.1.3.3}{Ruoli di progetto}{subsubsection.4.1.3}% 139
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.3.3.1}{Responsabile di Progetto}{}% 140
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.3.3.2}{Amministratore }{}% 141
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.3.3.3}{Analista }{}% 142
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.3.3.4}{Progettista }{}% 143
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.3.3.5}{Programmatore }{}% 144
+\BOOKMARK [0][-]{subsubsubsubsection.4.1.3.3.6}{Verificatore }{}% 145
+\BOOKMARK [1][-]{subsubsection.4.1.4}{Strumenti}{subsubsubsubsection.4.1.3.3.6}% 146
+\BOOKMARK [2][-]{subsubsubsection.4.1.4.1}{Google Drive}{subsubsection.4.1.4}% 147
+\BOOKMARK [3][-]{subsubsubsection.4.1.4.2}{Google Calendar}{subsubsubsection.4.1.4.1}% 148
+\BOOKMARK [4][-]{subsubsubsection.4.1.4.3}{Git}{subsubsubsection.4.1.4.2}% 149
+\BOOKMARK [4][-]{subsubsubsection.4.1.4.4}{Bitbucket}{subsubsubsection.4.1.4.2}% 150
+\BOOKMARK [4][-]{subsubsubsection.4.1.4.5}{Redmine}{subsubsubsection.4.1.4.2}% 151
+\BOOKMARK [4][-]{subsubsubsection.4.1.4.6}{Microsoft Project}{subsubsubsection.4.1.4.2}% 152
+\BOOKMARK [4][-]{subsubsubsection.4.1.4.7}{Jenkins}{subsubsubsection.4.1.4.2}% 153
+\BOOKMARK [1][-]{Appendice.1.A}{Appendice Lista degli errori frequenti}{subsubsubsubsection.4.1.3.3.6}% 154
+\BOOKMARK [1][-]{Appendice.1.B}{Appendice Screenshot Redmine}{subsubsubsubsection.4.1.3.3.6}% 155
+\BOOKMARK [1][-]{Appendice.1.C}{Appendice Screenshot PragmaDB}{subsubsubsubsection.4.1.3.3.6}% 156

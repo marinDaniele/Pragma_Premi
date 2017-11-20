@@ -1,0 +1,19 @@
+\section{Installazione delle dipendenze}\label{dipendenze}
+\subsection{MongoDB}
+Il software richiede \gloxy{MongoDB} versione 3.0.3. L'istruzione per l'installazione di tale software sono disponibili alla pagina \url{http://docs.mongodb.org/manual/installation}. \`{E} possibile scaricare MongoDB per il proprio sistema operativo all'indirizzo \url{https://www.mongodb.org/downloads}.
+\subsection{Node.js}
+\Premi è un'applicazione sviluppata per essere eseguita mediante Node.js nel lato \gloxy{server}. Pertanto è necessario installare Node.js alla versione 0.12.2 o superiore. \`{E} possibile scaricare questo software per il proprio \gloxy{sistema operativo} all'indirizzo \url{https://nodejs.org/download/}. Installando Node.js, verrà installato anche \texttt{npm}, suo package manager ufficiale. \texttt{npm} è indispensabile per installare le altre dipendenze dell'applicativo.
+\subsection{grunt-cli}
+\textit{Grunt} è uno strumento che si basa su Node.js e che permette di automatizzare attività ripetitive come test di unità e analisi statica dei file. In particolare è necessario per avviare il \gloxy{server} dell'applicativo. \texttt{grunt-cli} è un modulo per Node.js che fornisce un'interfaccia a riga di comando per \textit{Grunt}. \`{E} necessario installare \texttt{grunt-cli} alla versione 0.1.13 o superiore, mediante  il comando da terminale:
+\begin{center}
+\texttt{\$ sudo npm install -g grunt-cli}
+\end{center}
+Questo comando installerà \texttt{grunt-cli} globalmente ed è quindi necessario eseguirlo come \texttt{sudo}.
+\subsection{Bower}
+\textit{Bower} è un modulo per Node.js che facilita il download e l'installazione delle dipendenze necessarie al funzionamento della parte \gloxy{front-end}. \`{E} necessario installare \textit{Bower} alla versione 1.4.1 o superiore, mediante  il comando da terminale:
+\begin{center}
+\texttt{\$ sudo npm install -g bower}
+\end{center}
+Questo comando installerà \textit{Bower} globalmente ed è quindi necessario eseguirlo come \texttt{sudo}.
+%\subsection{Protractor}
+%\subsection{Karma}

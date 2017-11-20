@@ -1,0 +1,25 @@
+\subsubsection{Strumenti}
+\subsubsubsection{Documentazione}
+\subsubsubsubsection{\pragmadb}
+\gloxy{Piattaforma} per la gestione di dati quali requisiti, casi d'uso, termini di \G, fonti, attori, package, classi, test, ecc., permette di ottenere rapidamente tracciamento fra i requisiti soddisfatti e le componenti che li soddisfano; allo stesso modo permette di verificare che i test relativi ad un dato componente siano stati superati, per poter verificare che esso soddisfi completamente i requisiti per cui è stato implementato.
+Ulteriori dettagli sono disponibili nella \customRef{PragmaDB}{sezione}.
+\subsubsubsection{Codice}
+\subsubsubsubsection{Strumenti di analisi statica}
+\subsubsubsubsubsection{\gloxy{JSHint}}
+Strumento per la rilevazione di errori e problemi nei test \gloxy{JavaScript} prodotti, attenendosi a regole di codifica definite.
+Nel caso specifico di questo \gloxy{progetto}, \textbf{\gloxy{JSHint}} verrà utilizzato da riga di comando e installato come modulo per Node.js;
+\subsubsubsubsubsection{complexity-report}
+Applicazione, disponibile come modulo per Node.js, che misura metriche riguardanti codice \gloxy{JavaScript}, in particolare:
+\begin{itemize}
+\item \textit{Complessità ciclomatica}: misura la complessità di funzioni, metodi o classi di un programma;
+\item \textit{Rapporto linee di commento su linee di codice}: misura il rapporto tra linee di codice e linee di commento;
+\item \textit{Dipendenze}: il numero di dipendenze interne o esterne con altre classi o moduli;
+\item \textit{Chiamate annidate di metodi e funzioni}: il numero di chiamate innestate di funzioni e metodi all'interno di altre funzioni;
+\item \textit{Indice di manutenibilità}: valore che indica quanto il codice prodotto è mantenibile.
+\end{itemize}
+\subsubsubsubsection{Strumenti di analisi dinamica}
+\subsubsubsubsubsection{\gloxy{Karma}}
+Si tratta di uno strumento per eseguire test che verrà configurato per eseguire test specifici riguardanti gli script \gloxy{JavaScript}. Poiché si tratta di un modulo per Node.js, è eseguibile da riga di comando ed è integrabile direttamente in \textbf{\gloxy{WebStorm}}.
+\subsubsubsubsubsection{Protractor}
+\gloxy{Framework} \gloxy{JavaScript} che permette di scrivere test \textit{end-to-end}, simulando l'interazione dell'utente con il \gloxy{browser}. Questo \gloxy{framework} si basa su \textit{WebDriverJS}, il quale sfrutta dei driver specifici per ogni \gloxy{browser} in modo da simulare al meglio un caso d’uso reale.
+Tra gli altri vantaggi, \textit{Protractor} fornisce funzionalità specifiche per le applicazione sviluppate con \textit{\gloxy{AngularJS}} e , mediante l’utilizzo di appositi \gloxy{plug-in}, risulta facilmente integrabile con \textit{\gloxy{WebStorm}}.

@@ -1,0 +1,32 @@
+\newcommand{\documenttitle}{Specifica Tecnica}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt \\ & \proponente}
+\newcommand{\editorialstaff}{\dm}
+\newcommand{\teststaff}{}
+\newcommand{\approvalstaff}{}
+\newcommand{\use}{Esterno}
+\input{../template/layout.tex}
+\input{../template/comandi.tex}
+\begin{document}
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\tableofcontents %indice
+\listoffigures
+\listoftables
+\pagebreak
+\input{sezioni/introduzione.tex}
+\input{sezioni/tecnologieUtilizzate.tex}
+\input{sezioni/descrizioneArchitettura.tex}
+\input{sezioni/backEnd.tex}
+\input{sezioni/frontEnd.tex}
+\input{sezioni/diagrammiDelleAttivita.tex}
+\input{sezioni/stimeDiFattibilita.tex}
+\input{sezioni/tracciamento.tex}
+\input{sezioni/designPattern.tex}
+
+\appendix
+\begin{appendices}
+%\input{sezioni/}
+\clearpage
+%\input{sezioni/}
+\end{appendices}
+\end{document}

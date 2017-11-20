@@ -1,0 +1,5 @@
+#!/bin/bash
+pdflatex analisiDeiRequisiti.tex
+pdflatex analisiDeiRequisiti.tex
+pdflatex analisiDeiRequisiti.tex
+pdflatex analisiDeiRequisiti.tex

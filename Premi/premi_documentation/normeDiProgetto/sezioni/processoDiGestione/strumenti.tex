@@ -1,0 +1,58 @@
+\subsubsection{Strumenti}
+\subsubsubsection{Google Drive}
+\textbf{\gloxy{Google Drive}} è il servizio di \gloxy{webstorage} usato dal gruppo per condividere documenti con le seguenti caratteristiche:
+\begin{itemize}
+\item Non necessitano di controllo di versione;
+\item Contengono informazioni utili allo sviluppo del \gloxy{progetto}, ma non fanno parte dei documenti di \gloxy{progetto};
+\item Possono essere acceduti mediante il semplice utilizzo del \gloxy{web} \gloxy{browser}.
+\end{itemize}
+\gloxy{Google Drive} va inteso come strumento di supporto allo sviluppo del \gloxy{progetto}, sia per la documentazione che per il software. Consente, inoltre, ai membri del gruppo di lavorare in modo collaborativo sui documenti.
+\subsubsubsection{Google Calendar}
+\textbf{\gloxy{Google Calendar}} viene utilizzato come calendario condiviso dal gruppo, al fine di gestire le risorse umane. \`E fondamentale per la segnalazione dei giorni di reperibilità dei membri del \gloxy{team}, per semplificare la scelta delle date delle riunioni, e per memorizzare e notificare le date degli appuntamenti del gruppo.
+\subsubsubsection{Git}
+Il software di \gloxy{versionamento} scelto è \textbf{\gloxy{Git}}. Il gruppo ha preso in considerazione come altra alternativa \textbf{SVN}, ma ha ritenuto la scelta di \textbf{\gloxy{Git}} più efficace per i seguenti motivi:
+\begin{itemize}
+\item \textbf{Flessibilità}: essendo un \gloxy{repository} distribuito, \textbf{\gloxy{Git}} consente di lavorare in locale ed avere \textit{commit} e \textit{revert} locali;
+\item \textbf{Velocità delle operazioni}: quasi tutte le operazioni sono effettuate sulla copia locale, eliminando problemi legati alla \gloxy{latenza} della rete;
+\item \textbf{Esperienza del gruppo}: tutti i componenti del gruppo hanno utilizzato in passato \textbf{\gloxy{Git}}.
+\end{itemize}
+\subsubsubsection{Bitbucket}
+Per lo svolgimento del \gloxy{progetto} sono stati creati due \gloxy{repository} \textit{privati} nello spazio di \gloxy{hosting} offerto da \textbf{\gloxy{Bitbucket}}. Affinché ogni membro del gruppo possa sincronizzarsi con i \gloxy{repository} privati è necessario che ognuno abbia un account \textbf{\gloxy{Bitbucket}}. L'\rAP si occupa di attribuire permessi di lettura e scrittura ad ogni componente del gruppo.
+I due \gloxy{repository} creati sono i seguenti:
+\begin{itemize}
+\item \textbf{pragmadocs.git}: contiene tutti gli elementi necessari alla stesura della documentazione, quindi i sorgenti \LaTeX  ~e gli script utilizzati per la loro corretta compilazione. Il \gloxy{repository} è disponibile agli indirizzi:
+\begin{center}
+\url{https://nome_utente@bitbucket.org/gmidena/pragmadocs.git} \par
+\url{ssh://git@bitbucket.org:gmidena/pragmadocs.git}
+\end{center}
+\item \textbf{pragmasrc.git}: conterrà i file dell'applicazione. Il \gloxy{repository} è disponibile agli indirizzi:
+\begin{center}
+\url{https://nome_utente@bitbucket.org/gmidena/pragmasrc.git} \par
+\url{ssh://git@bitbucket.org:gmidena/pragmasrc.git}
+\end{center}
+\end{itemize}
+Al termine della stesura di un documento, i \rVs lavoreranno e apporteranno modifiche in parallelo al resto dei componenti del gruppo, utilizzando un opportuno branch creato per la verifica. Al termine della verifica, verrà effettuato il merge delle modifiche.
+\\Ad ogni revisione, la versione dei documenti verrà identificata mediante la creazione di un tag.
+\\Le suddivisioni del \gloxy{repository} dedicato all'applicazione, \textbf{pragmasrc.git}, verranno trattate durante la fase di \fPA.
+\subsubsubsection{Redmine}\label{sistemaTicketing}
+Il software di gestione del \gloxy{progetto} scelto dal gruppo è \textbf{Redmine}, che fornisce i seguenti servizi:
+\begin{itemize}
+\item Traccia il \gloxy{diagramma di Gantt} delle attività;
+\item Calendario per l'organizzazione di attività e compiti;
+\item Possibilità di associare i \gloxy{repository} e quindi visualizzarne la struttura ed i contenuti direttamente dall'interfaccia \gloxy{web};
+\item Interfaccia \gloxy{web} semplice e curata;
+\item Gestione dei ticket personalizzabile e molto flessibile;
+\item Possibilità di osservare la differenza tra il tempo stimato e quello effettivo per il completamento di una attività.
+\end{itemize}
+Le piattaforme alternative prese in visione sono:
+\begin{itemize}
+\item \textbf{YouTrack};
+\item \textbf{Gitorious}.
+\end{itemize}
+Entrambe però si sono mostrate meno complete, personalizzabili e curate di \textbf{Redmine}.
+\subsubsubsection{Microsoft Project}
+Come software di supporto alla pianificazione del \gloxy{progetto} si è scelto di utilizzare Microsoft Project 2010, questo perché in grado di fornire tutte le funzionalità necessarie in modo intuitivo e completo. Per l'utilizzo di Microsoft Project è possibile utilizzare la licenza gratuita offerta agli studenti tramite l'Università degli Studi di Padova\footnote{\url{http://msdnaa.studenti.math.unipd.it/2011/}.}.\\
+Alternativamente a Microsoft Project è possibile utilizzare ProjectLibre, software che offre funzionalità analoghe ma \gloxy{multipiattaforma}. La scelta del software da utilizzare è a discrezione del \rRP, dal momento che è possibile convertire un \gloxy{progetto} di Microsoft Project ad un \gloxy{progetto} di ProjectLibre e viceversa mediante l'utilizzo di file \gloxy{XML}.
+\subsubsubsection{Jenkins}
+Il software utilizzato per l'integrazione continua è \textbf{Jenkins CI}.
+Configurato per allacciarsi ai \gloxy{repository} del \gloxy{progetto}, consente di visualizzare lo stato del codice prodotto, pianificare compilazioni ed eseguire script per i test. Nel caso specifico di questo \gloxy{progetto}, è stato configurato per eseguire la compilazione dei documenti \LaTeX  ~e nelle fasi successive verrà aggiunta la possibilità di effettuare test specifici sul codice prodotto.

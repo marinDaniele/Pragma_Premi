@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{article} % Specify the font size (10pt, 11pt and 12pt) and paper size (letterpaper, a4paper, etc)
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc} % permette l'inserimento di caratteri accentati da tastiera nel documento sorgente.
+\usepackage[T1]{fontenc} % specifica la codifica dei font da usare nel documento stampato.
+\usepackage{lscape}
+\usepackage{times} % per caricare un font scalabile
+\usepackage{indentfirst} % rientra il primo capoverso di ogni unità di sezionamento.
+\usepackage{xspace}
+\usepackage{xstring}
+\usepackage{graphicx} % permette l'inserimento di immagini
+\usepackage{multirow}
+\usepackage{microtype} % migliora il riempimento delle righe
+\usepackage{hyperref} % per gestione url
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+\usepackage{url} % per le url in monospace
+\usepackage{eurosym} % simbolo euro
+\usepackage{lastpage} % permette di sapere l'ultima pagina
+\usepackage{fancyhdr} % gestione personalizzata header e footer
+\usepackage[a4paper,portrait,top=3.5cm,bottom=3.5cm,left=3cm,right=3cm,bindingoffset=5mm]{geometry} % imposta i margini di pagina nelle classi standard.
+\usepackage{hyperref} % abilita i riferimenti ipertestuali.
+\usepackage{caption} %per le immagini
+\usepackage{subcaption} %per le immagini
+\usepackage{placeins} %per i floatbarrier
+\usepackage{float} %per il posizionamento delle figure
+\usepackage{verbatim} %per i commenti multiriga
+\usepackage[table]{xcolor}
+\usepackage{longtable} % per le tabelle multipagina
+\usepackage{diagbox}
+\usepackage{hhline}
+\usepackage{array} % per il testo nelle tabelle
+\usepackage{multirow}
+\usepackage{dirtree}
+\usepackage{placeins} % \FloatBarrier per fare il flush delle immagini
+\usepackage{tabularx} 
+
+\usepackage[titletoc,title]{appendix}
+%membri
+
+%\usepackage{gfsdidot} % Use the GFS Didot font: http://www.tug.dk/FontCatalogue/gfsdidot/
+%\usepackage[T1]{fontenc} % Required for accented characters
+
+% Create a new command for the horizontal rule in the document which allows thickness specification
+\makeatletter
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT MARGINS
+%----------------------------------------------------------------------------------------
+
+\textwidth 6.75in
+\textheight 9.25in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\topmargin 0in
+\parindent 0.4in
+\input{../template/comandi.tex}
+\begin{document}
+
+\begin{center}
+\includegraphics[scale=0.6]{../template/icone/logo.pdf}
+\end{center}
+\hspace{\fill}\parbox[t]{8cm}{
+\noindent
+Alla cortese attenzione dei Committenti:\\
+\committente \\
+\committenteAlt \\
+Università degli Studi di Padova \\
+Dipartimento di Matematica \\
+Via Trieste 63 35121, Padova \\
+27 Maggio 2015
+}
+\\
+Responsabile di Progetto\\
+\gruppo \\
+\groupmail \\
+\\
+\\
+Oggetto: \textbf{Consegna documenti Realizzazione di Prodotto} \\
+%\vspace{3em}
+\\
+\\
+\\
+\noindent Egregio Prof. Vardanega Tullio,\\
+\\
+con la presente, il gruppo \gruppo intende comunicarLe ufficialmente la partecipazione alla \RQ per il progetto:\\
+\begin{center}
+\textbf{Premi: Software di presentazione \textit{better than Prezi}}
+\end{center}
+proposto dall'azienda \proponente \\
+La proposta è corredata dai seguenti documenti, allegati alla presente lettera:
+\begin{itemize}
+\item \normeDiProgetto \texttt{(Interni/normeDiProgetto\_v3.0.0.pdf)} ;
+\item \analisiDeiRequisiti \texttt{(Esterni/analisiDeiRequisiti\_v2.0.0.pdf)};
+\item \definizioneDiProdotto \texttt{(Esterni/definizioneDiProdotto\_v2.0.0.pdf)};
+\item \manualeUtente \texttt{(Esterni/manualeUtente\_v1.0.0.pdf)};
+\item \pianoDiProgetto \texttt{(Esterni/pianoDiProgetto\_v3.0.0.pdf)};
+\item \revisioneDiBilancio \texttt{(Esterni/revisioneDiBilancio\_v1.0.0.pdf)};
+\item \pianoDiQualifica \texttt{(Esterni/pianoDiQualifica\_v3.0.0.pdf)};
+\item \glossario \texttt{(Esterni/glossario\_v2.0.0.pdf)};
+\item \eV \texttt{(Verbali/Esterni/E5\_v1.0.0.pdf)};
+\item \eVI \texttt{(Verbali/Esterni/E6\_v1.0.0.pdf)}.
+\end{itemize}
+\noindent I documenti \textit{Glossario} e \textit{Analisi Dei Requisiti} non hanno subito modifiche rispetto la revisione precendente.
+\\
+Viene inoltre consegnato il codice sviluppato, la documentazione relativa (completa solo per la parte Back-End) e i test che sono stati finora implementati:
+\begin{itemize}
+\item Premi/Codice;
+\item Premi/Documentazione;
+\item Premi/Test.
+\end{itemize}
+Il gruppo \gruppo ha stimato di consegnare il prodotto richiesto entro la fine del secondo semestre dell'anno accademico 2014-2015, con un preventivo di costo pari a \textbf{\euro13.135}. \newline
+\\
+Nella fase di \fC, durante l'attività di incremento dei contenuti del \PP è emersa la presenza di alcuni errori di contabilità, che hanno portato ad un'incongruenza con la somma proposta al Committente per la realizzazione del progetto.
+
+Nello specifico è stata riscontrata una differenza di \textbf{\euro590} rispetto a quanto pianificato.
+Dei quali, \textbf{\euro501} derivano dal ricalcolo dei consuntivi delle fasi di \fPA e \fPD, utilizzando i costi corretti; mentre i restanti \textbf{\euro89} risultano un eccedenza dai preventivi delle fasi di \fC e \fVV, sempre ricalcolati utilizzando i costi corretti. I \textbf{\euro501}, riferendosi a fasi già trascorse, risultano già spesi, mentre gli \textbf{\euro89} sono calcolati su preventivi di fasi non ancora trascorse. Dunque, nel \PP, sono stati riformulati i preventivi delle fasi a venire per rientrare nei \textbf{\euro13.135}.
+
+Per maggiori dettagli relativi all'errore riscontrato e alle operazioni attuate per la revisione di bilancio si rimanda al documento allegato \RB, nel quale sono descritte dettagliatamente le correzioni che hanno permesso la stesura della nuova pianificazione.
+\\
+\\
+\noindent I dettagli qualitativi, di pianificazione e di progettazione del prodotto sono trattati in maniera approfondita nei restanti documenti allegati.
+\\
+\\
+\noindent Rimango a Sua disposizione per ogni ulteriore chiarimento. \\
+La ringrazio per la Sua attenzione. \\
+\\
+\\
+\\
+\\
+Cordiali Saluti, \\
+Il \rRPt \\
+\gmi
+
+\end{document}

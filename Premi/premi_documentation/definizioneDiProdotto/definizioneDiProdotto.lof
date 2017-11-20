@@ -1,0 +1,126 @@
+\select@language {italian}
+\contentsline {figure}{\numberline {1}{\ignorespaces Premi::Front-End\relax }}{16}{figure.caption.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Premi::Front-End::AppConfig\relax }}{17}{figure.caption.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Premi::Front-End::AppRouter\relax }}{17}{figure.caption.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Premi::Front-End::AppRun\relax }}{18}{figure.caption.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Premi::Front-End::Controllers\relax }}{20}{figure.caption.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Premi::Front-End::Controllers::AddToPathController\relax }}{21}{figure.caption.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Premi::Front-End::Controllers::AssociationAdderController\relax }}{22}{figure.caption.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Premi::Front-End::Controllers::ContextMenuController\relax }}{23}{figure.caption.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Premi::Front-End::Controllers::DashboardController\relax }}{24}{figure.caption.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Premi::Front-End::Controllers::EditableNodeContentController\relax }}{26}{figure.caption.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Premi::Front-End::Controllers::ErrorMessageController\relax }}{27}{figure.caption.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Premi::Front-End::Controllers::HeaderController\relax }}{28}{figure.caption.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Premi::Front-End::Controllers::HierarchicalMenuController\relax }}{31}{figure.caption.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Premi::Front-End::Controllers::LoginController\relax }}{32}{figure.caption.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Premi::Front-End::Controllers::MindmapEditorController\relax }}{33}{figure.caption.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Premi::Front-End::Controllers::NodeContentsEditorController\relax }}{37}{figure.caption.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Premi::Front-End::Controllers::NodeController\relax }}{39}{figure.caption.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Premi::Front-End::Controllers::PathController\relax }}{40}{figure.caption.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Premi::Front-End::Controllers::PathsEditorController\relax }}{41}{figure.caption.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Premi::Front-End::Controllers::PathsListController\relax }}{44}{figure.caption.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Premi::Front-End::Controllers::PresentationController\relax }}{46}{figure.caption.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Premi::Front-End::Controllers::PresentationViewerController\relax }}{47}{figure.caption.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Premi::Front-End::Controllers::ProjectSettingsEditorController\relax }}{51}{figure.caption.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Premi::Front-End::Controllers::ProjectsListController\relax }}{52}{figure.caption.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Premi::Front-End::Controllers::RegistrationController\relax }}{53}{figure.caption.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Premi::Front-End::Controllers::SmartMenuController\relax }}{55}{figure.caption.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Premi::Front-End::Directives\relax }}{56}{figure.caption.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Premi::Front-End::Directives::premiAddToPath\relax }}{56}{figure.caption.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Premi::Front-End::Directives::premiAssociationAdder\relax }}{58}{figure.caption.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Premi::Front-End::Directives::premiContextMenu\relax }}{59}{figure.caption.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Premi::Front-End::Directives::premiEditableNodeContent\relax }}{60}{figure.caption.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Premi::Front-End::Directives::premiErrorMessage\relax }}{61}{figure.caption.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Premi::Front-End::Directives::premiHeader\relax }}{62}{figure.caption.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Premi::Front-End::Directives::premiHierarchicalMenu\relax }}{63}{figure.caption.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Premi::Front-End::Directives::premiMindmap\relax }}{64}{figure.caption.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Premi::Front-End::Directives::premiNode\relax }}{65}{figure.caption.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Premi::Front-End::Directives::premiNodeContent\relax }}{66}{figure.caption.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Premi::Front-End::Directives::premiNodeContentsEditor\relax }}{68}{figure.caption.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Premi::Front-End::Directives::premiPath\relax }}{69}{figure.caption.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces Premi::Front-End::Directives::premiPathsList\relax }}{70}{figure.caption.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Premi::Front-End::Directives::premiPresentation\relax }}{71}{figure.caption.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces Premi::Front-End::Directives::premiProjectSettingsEditor\relax }}{73}{figure.caption.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Premi::Front-End::Directives::premiProjectsList\relax }}{74}{figure.caption.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Premi::Front-End::Directives::premiSmartMenu\relax }}{75}{figure.caption.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces Premi::Front-End::Model\relax }}{76}{figure.caption.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces Premi::Front-End::Model::ErrorInfo\relax }}{77}{figure.caption.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces Premi::Front-End::Model::Node\relax }}{78}{figure.caption.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces Premi::Front-End::Model::NodeContent\relax }}{81}{figure.caption.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces Premi::Front-End::Model::NodeReference\relax }}{83}{figure.caption.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces Premi::Front-End::Model::Path\relax }}{85}{figure.caption.50}
+\contentsline {figure}{\numberline {51}{\ignorespaces Premi::Front-End::Model::PresentationNode\relax }}{87}{figure.caption.51}
+\contentsline {figure}{\numberline {52}{\ignorespaces Premi::Front-End::Model::Project\relax }}{89}{figure.caption.52}
+\contentsline {figure}{\numberline {53}{\ignorespaces Premi::Front-End::Services\relax }}{92}{figure.caption.53}
+\contentsline {figure}{\numberline {54}{\ignorespaces Premi::Front-End::Services::AuthenticationService\relax }}{92}{figure.caption.54}
+\contentsline {figure}{\numberline {55}{\ignorespaces Premi::Front-End::Services::MindmapAdapterService\relax }}{95}{figure.caption.55}
+\contentsline {figure}{\numberline {56}{\ignorespaces Premi::Front-End::Services::MindmapService\relax }}{98}{figure.caption.56}
+\contentsline {figure}{\numberline {57}{\ignorespaces Premi::Front-End::Services::PathService\relax }}{102}{figure.caption.57}
+\contentsline {figure}{\numberline {58}{\ignorespaces Premi::Front-End::Services::PresentationService\relax }}{106}{figure.caption.58}
+\contentsline {figure}{\numberline {59}{\ignorespaces Premi::Front-End::Services::ProjectService\relax }}{108}{figure.caption.59}
+\contentsline {figure}{\numberline {60}{\ignorespaces Premi::Front-End::Services::ServerURL\relax }}{111}{figure.caption.60}
+\contentsline {figure}{\numberline {61}{\ignorespaces Premi::Front-End::Views\relax }}{112}{figure.caption.61}
+\contentsline {figure}{\numberline {62}{\ignorespaces Premi::Front-End::Views::DashboardView\relax }}{112}{figure.caption.62}
+\contentsline {figure}{\numberline {63}{\ignorespaces Premi::Front-End::Views::LoginView\relax }}{113}{figure.caption.63}
+\contentsline {figure}{\numberline {64}{\ignorespaces Premi::Front-End::Views::MindmapEditorView\relax }}{114}{figure.caption.64}
+\contentsline {figure}{\numberline {65}{\ignorespaces Premi::Front-End::Views::PathsEditorView\relax }}{115}{figure.caption.65}
+\contentsline {figure}{\numberline {66}{\ignorespaces Premi::Front-End::Views::PresentationView\relax }}{116}{figure.caption.66}
+\contentsline {figure}{\numberline {67}{\ignorespaces Premi::Front-End::Views::RegistrationView\relax }}{118}{figure.caption.67}
+\contentsline {figure}{\numberline {68}{\ignorespaces Premi::Back-End\relax }}{119}{figure.caption.68}
+\contentsline {figure}{\numberline {69}{\ignorespaces Premi::Back-End::Server\relax }}{119}{figure.caption.69}
+\contentsline {figure}{\numberline {70}{\ignorespaces Premi::Back-End::App\relax }}{121}{figure.caption.70}
+\contentsline {figure}{\numberline {71}{\ignorespaces Premi::Back-End::App::Controllers\relax }}{122}{figure.caption.71}
+\contentsline {figure}{\numberline {72}{\ignorespaces Premi::Back-End::App::Controllers::ErrorHandler\relax }}{122}{figure.caption.72}
+\contentsline {figure}{\numberline {73}{\ignorespaces Premi::Back-End::App::Controllers::NotFoundHandler\relax }}{124}{figure.caption.73}
+\contentsline {figure}{\numberline {74}{\ignorespaces Premi::Back-End::App::Controllers::ProjectController\relax }}{124}{figure.caption.74}
+\contentsline {figure}{\numberline {75}{\ignorespaces Premi::Back-End::App::Controllers::StaticController\relax }}{125}{figure.caption.75}
+\contentsline {figure}{\numberline {76}{\ignorespaces Premi::Back-End::App::Controllers::UserController\relax }}{126}{figure.caption.76}
+\contentsline {figure}{\numberline {77}{\ignorespaces Premi::Back-End::App::Controllers::Errors\relax }}{126}{figure.caption.77}
+\contentsline {figure}{\numberline {78}{\ignorespaces Premi::Back-End::App::Controllers::Errors::PremiError\relax }}{127}{figure.caption.78}
+\contentsline {figure}{\numberline {79}{\ignorespaces Premi::Back-End::App::Controllers::Projects\relax }}{128}{figure.caption.79}
+\contentsline {figure}{\numberline {80}{\ignorespaces Premi::Back-End::App::Controllers::Projects::NodeController\relax }}{128}{figure.caption.80}
+\contentsline {figure}{\numberline {81}{\ignorespaces Premi::Back-End::App::Controllers::Projects::PathController\relax }}{131}{figure.caption.81}
+\contentsline {figure}{\numberline {82}{\ignorespaces Premi::Back-End::App::Controllers::Projects::ProjectManagementController\relax }}{134}{figure.caption.82}
+\contentsline {figure}{\numberline {83}{\ignorespaces Premi::Back-End::App::Controllers::Users\relax }}{137}{figure.caption.83}
+\contentsline {figure}{\numberline {84}{\ignorespaces Premi::Back-End::App::Controllers::Users::AuthenticationController\relax }}{137}{figure.caption.84}
+\contentsline {figure}{\numberline {85}{\ignorespaces Premi::Back-End::App::Controllers::Users::AuthorizationController\relax }}{139}{figure.caption.85}
+\contentsline {figure}{\numberline {86}{\ignorespaces Premi::Back-End::App::Models\relax }}{140}{figure.caption.86}
+\contentsline {figure}{\numberline {87}{\ignorespaces Premi::Back-End::App::Models::NodeContentModel\relax }}{140}{figure.caption.87}
+\contentsline {figure}{\numberline {88}{\ignorespaces Premi::Back-End::App::Models::NodeModel\relax }}{141}{figure.caption.88}
+\contentsline {figure}{\numberline {89}{\ignorespaces Premi::Back-End::App::Models::PathModel\relax }}{142}{figure.caption.89}
+\contentsline {figure}{\numberline {90}{\ignorespaces Premi::Back-End::App::Models::ProjectModel\relax }}{144}{figure.caption.90}
+\contentsline {figure}{\numberline {91}{\ignorespaces Premi::Back-End::App::Models::RelationModel\relax }}{150}{figure.caption.91}
+\contentsline {figure}{\numberline {92}{\ignorespaces Premi::Back-End::App::Models::Session\relax }}{152}{figure.caption.92}
+\contentsline {figure}{\numberline {93}{\ignorespaces Premi::Back-End::App::Models::UserModel\relax }}{152}{figure.caption.93}
+\contentsline {figure}{\numberline {94}{\ignorespaces Premi::Back-End::App::Routers\relax }}{153}{figure.caption.94}
+\contentsline {figure}{\numberline {95}{\ignorespaces Premi::Back-End::App::Routers::ProjectRouter\relax }}{154}{figure.caption.95}
+\contentsline {figure}{\numberline {96}{\ignorespaces Premi::Back-End::App::Routers::StaticRouter\relax }}{155}{figure.caption.96}
+\contentsline {figure}{\numberline {97}{\ignorespaces Premi::Back-End::App::Routers::UserRouter\relax }}{156}{figure.caption.97}
+\contentsline {figure}{\numberline {98}{\ignorespaces Premi::Back-End::App::Views\relax }}{157}{figure.caption.98}
+\contentsline {figure}{\numberline {99}{\ignorespaces Premi::Back-End::App::Views::UserManualView\relax }}{157}{figure.caption.99}
+\contentsline {figure}{\numberline {100}{\ignorespaces Premi::Back-End::Config\relax }}{157}{figure.caption.100}
+\contentsline {figure}{\numberline {101}{\ignorespaces Premi::Back-End::Config::Config\relax }}{158}{figure.caption.101}
+\contentsline {figure}{\numberline {102}{\ignorespaces Diagramma di Sequenza - Registrazione di un nuovo utente\relax }}{159}{figure.caption.102}
+\contentsline {figure}{\numberline {103}{\ignorespaces Diagramma di Sequenza - Apertura di un progetto\relax }}{160}{figure.caption.103}
+\contentsline {figure}{\numberline {104}{\ignorespaces Diagramma di Sequenza - Costruzione del controller\relax }}{161}{figure.caption.104}
+\contentsline {figure}{\numberline {105}{\ignorespaces Diagramma di Sequenza - Selezione di un nodo\relax }}{162}{figure.caption.105}
+\contentsline {figure}{\numberline {106}{\ignorespaces Diagramma di Sequenza - Creazione di una presentazione\relax }}{163}{figure.caption.106}
+\contentsline {figure}{\numberline {107}{\ignorespaces Gestione di una richiesta del client\relax }}{165}{figure.caption.107}
+\contentsline {figure}{\numberline {108}{\ignorespaces Fallimento della procedura di registrazione\relax }}{166}{figure.caption.108}
+\contentsline {figure}{\numberline {109}{\ignorespaces Fallimento del vincolo "utente autenticato"\relax }}{166}{figure.caption.109}
+\contentsline {figure}{\numberline {110}{\ignorespaces Fallimento della richiesta di un progetto\relax }}{167}{figure.caption.110}
+\contentsline {figure}{\numberline {111}{\ignorespaces DELETE /profile\relax }}{168}{figure.caption.111}
+\contentsline {figure}{\numberline {112}{\ignorespaces DELETE /projects/:projectId\relax }}{168}{figure.caption.112}
+\contentsline {figure}{\numberline {113}{\ignorespaces PUT /projects/:projectId\relax }}{169}{figure.caption.113}
+\contentsline {figure}{\numberline {114}{\ignorespaces GET /projects/:projectId\relax }}{169}{figure.caption.114}
+\contentsline {figure}{\numberline {115}{\ignorespaces PUT /projects/:projectId/nodes/:nodeId\relax }}{170}{figure.caption.115}
+\contentsline {figure}{\numberline {116}{\ignorespaces POST /projects/:projectId/associations\relax }}{171}{figure.caption.116}
+\contentsline {figure}{\numberline {117}{\ignorespaces DELETE /projects/:projectId/associations/:associationId\relax }}{171}{figure.caption.117}
+\contentsline {figure}{\numberline {118}{\ignorespaces PUT /projects/:projectId/path/:pathId\relax }}{172}{figure.caption.118}
+\contentsline {figure}{\numberline {119}{\ignorespaces POST /projects/:projectId/path/:pathId\relax }}{172}{figure.caption.119}
+\contentsline {figure}{\numberline {120}{\ignorespaces GET /projects/:projectId/premiPresentation\relax }}{173}{figure.caption.120}
+\contentsline {figure}{\numberline {121}{\ignorespaces GET /static/userManual\relax }}{173}{figure.caption.121}
+\contentsline {figure}{\numberline {122}{\ignorespaces Chain Of Responsibility contestualizzato\relax }}{264}{figure.caption.127}
+\contentsline {figure}{\numberline {123}{\ignorespaces Struttura logica del Dependency Injection\relax }}{265}{figure.caption.134}
+\contentsline {figure}{\numberline {124}{\ignorespaces Facade contestualizzato\relax }}{267}{figure.caption.140}
+\contentsline {figure}{\numberline {125}{\ignorespaces Observer contestualizzato\relax }}{268}{figure.caption.145}

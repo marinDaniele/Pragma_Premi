@@ -1,0 +1,208 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Scopo del documento}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Scopo del prodotto}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Glossario}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Riferimenti}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Normativi}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Informativi}{subsection.1.4}% 7
+\BOOKMARK [1][-]{section.2}{Specifica del Front-End}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Premi::Front-End}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Informazioni generali}{subsection.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Classi}{subsection.2.1}% 11
+\BOOKMARK [4][-]{subsubsubsection.2.1.2.1}{Premi::Front-End::AppConfig}{subsubsection.2.1.2}% 12
+\BOOKMARK [4][-]{subsubsubsection.2.1.2.2}{Premi::Front-End::AppRouter}{subsubsection.2.1.2}% 13
+\BOOKMARK [4][-]{subsubsubsection.2.1.2.3}{Premi::Front-End::AppRun}{subsubsection.2.1.2}% 14
+\BOOKMARK [2][-]{subsection.2.2}{Premi::Front-End::Controllers}{section.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Informazioni generali}{subsection.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Classi}{subsection.2.2}% 17
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.1}{Premi::Front-End::Controllers::AddToPathController}{subsubsection.2.2.2}% 18
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.2}{Premi::Front-End::Controllers::AssociationAdderController}{subsubsection.2.2.2}% 19
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.3}{Premi::Front-End::Controllers::ContextMenuController}{subsubsection.2.2.2}% 20
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.4}{Premi::Front-End::Controllers::DashboardController}{subsubsection.2.2.2}% 21
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.5}{Premi::Front-End::Controllers::EditableNodeContentController}{subsubsection.2.2.2}% 22
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.6}{Premi::Front-End::Controllers::ErrorMessageController}{subsubsection.2.2.2}% 23
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.7}{Premi::Front-End::Controllers::HeaderController}{subsubsection.2.2.2}% 24
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.8}{Premi::Front-End::Controllers::HierarchicalMenuController}{subsubsection.2.2.2}% 25
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.9}{Premi::Front-End::Controllers::LoginController}{subsubsection.2.2.2}% 26
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.10}{Premi::Front-End::Controllers::MindmapEditorController}{subsubsection.2.2.2}% 27
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.11}{Premi::Front-End::Controllers::NodeContentsEditorController}{subsubsection.2.2.2}% 28
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.12}{Premi::Front-End::Controllers::NodeController}{subsubsection.2.2.2}% 29
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.13}{Premi::Front-End::Controllers::PathController}{subsubsection.2.2.2}% 30
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.14}{Premi::Front-End::Controllers::PathsEditorController}{subsubsection.2.2.2}% 31
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.15}{Premi::Front-End::Controllers::PathsListController}{subsubsection.2.2.2}% 32
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.16}{Premi::Front-End::Controllers::PresentationController}{subsubsection.2.2.2}% 33
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.17}{Premi::Front-End::Controllers::PresentationViewerController}{subsubsection.2.2.2}% 34
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.18}{Premi::Front-End::Controllers::ProjectSettingsEditorController}{subsubsection.2.2.2}% 35
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.19}{Premi::Front-End::Controllers::ProjectsListController}{subsubsection.2.2.2}% 36
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.20}{Premi::Front-End::Controllers::RegistrationController}{subsubsection.2.2.2}% 37
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.21}{Premi::Front-End::Controllers::SmartMenuController}{subsubsection.2.2.2}% 38
+\BOOKMARK [2][-]{subsection.2.3}{Premi::Front-End::Directives}{section.2}% 39
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Informazioni generali}{subsection.2.3}% 40
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Classi}{subsection.2.3}% 41
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.1}{Premi::Front-End::Directives::premiAddToPath}{subsubsection.2.3.2}% 42
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.2}{Premi::Front-End::Directives::premiAssociationAdder}{subsubsection.2.3.2}% 43
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.3}{Premi::Front-End::Directives::premiContextMenu}{subsubsection.2.3.2}% 44
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.4}{Premi::Front-End::Directives::premiEditableNodeContent}{subsubsection.2.3.2}% 45
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.5}{Premi::Front-End::Directives::premiErrorMessage}{subsubsection.2.3.2}% 46
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.6}{Premi::Front-End::Directives::premiHeader}{subsubsection.2.3.2}% 47
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.7}{Premi::Front-End::Directives::premiHierarchicalMenu}{subsubsection.2.3.2}% 48
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.8}{Premi::Front-End::Directives::premiMindmap}{subsubsection.2.3.2}% 49
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.9}{Premi::Front-End::Directives::premiNode}{subsubsection.2.3.2}% 50
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.10}{Premi::Front-End::Directives::premiNodeContent}{subsubsection.2.3.2}% 51
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.11}{Premi::Front-End::Directives::premiNodeContentsEditor}{subsubsection.2.3.2}% 52
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.12}{Premi::Front-End::Directives::premiPath}{subsubsection.2.3.2}% 53
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.13}{Premi::Front-End::Directives::premiPathsList}{subsubsection.2.3.2}% 54
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.14}{Premi::Front-End::Directives::premiPresentation}{subsubsection.2.3.2}% 55
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.15}{Premi::Front-End::Directives::premiProjectSettingsEditor}{subsubsection.2.3.2}% 56
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.16}{Premi::Front-End::Directives::premiProjectsList}{subsubsection.2.3.2}% 57
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.17}{Premi::Front-End::Directives::premiSmartMenu}{subsubsection.2.3.2}% 58
+\BOOKMARK [2][-]{subsection.2.4}{Premi::Front-End::Model}{section.2}% 59
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Informazioni generali}{subsection.2.4}% 60
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Classi}{subsection.2.4}% 61
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.1}{Premi::Front-End::Model::ErrorInfo}{subsubsection.2.4.2}% 62
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.2}{Premi::Front-End::Model::Node}{subsubsection.2.4.2}% 63
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.3}{Premi::Front-End::Model::NodeContent}{subsubsection.2.4.2}% 64
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.4}{Premi::Front-End::Model::NodeReference}{subsubsection.2.4.2}% 65
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.5}{Premi::Front-End::Model::Path}{subsubsection.2.4.2}% 66
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.6}{Premi::Front-End::Model::PresentationNode}{subsubsection.2.4.2}% 67
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.7}{Premi::Front-End::Model::Project}{subsubsection.2.4.2}% 68
+\BOOKMARK [2][-]{subsection.2.5}{Premi::Front-End::Services}{section.2}% 69
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Informazioni generali}{subsection.2.5}% 70
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Classi}{subsection.2.5}% 71
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.1}{Premi::Front-End::Services::AuthenticationService}{subsubsection.2.5.2}% 72
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.2}{Premi::Front-End::Services::MindmapAdapterService}{subsubsection.2.5.2}% 73
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.3}{Premi::Front-End::Services::MindmapService}{subsubsection.2.5.2}% 74
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.4}{Premi::Front-End::Services::PathService}{subsubsection.2.5.2}% 75
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.5}{Premi::Front-End::Services::PresentationService}{subsubsection.2.5.2}% 76
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.6}{Premi::Front-End::Services::ProjectService}{subsubsection.2.5.2}% 77
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.7}{Premi::Front-End::Services::ServerURL}{subsubsection.2.5.2}% 78
+\BOOKMARK [2][-]{subsection.2.6}{Premi::Front-End::Views}{section.2}% 79
+\BOOKMARK [3][-]{subsubsection.2.6.1}{Informazioni generali}{subsection.2.6}% 80
+\BOOKMARK [3][-]{subsubsection.2.6.2}{Classi}{subsection.2.6}% 81
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.1}{Premi::Front-End::Views::DashboardView}{subsubsection.2.6.2}% 82
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.2}{Premi::Front-End::Views::LoginView}{subsubsection.2.6.2}% 83
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.3}{Premi::Front-End::Views::MindmapEditorView}{subsubsection.2.6.2}% 84
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.4}{Premi::Front-End::Views::PathsEditorView}{subsubsection.2.6.2}% 85
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.5}{Premi::Front-End::Views::PresentationView}{subsubsection.2.6.2}% 86
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.6}{Premi::Front-End::Views::RegistrationView}{subsubsection.2.6.2}% 87
+\BOOKMARK [1][-]{section.3}{Specifica del Back-End}{}% 88
+\BOOKMARK [2][-]{subsection.3.1}{Premi::Back-End}{section.3}% 89
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Informazioni generali}{subsection.3.1}% 90
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Classi}{subsection.3.1}% 91
+\BOOKMARK [4][-]{subsubsubsection.3.1.2.1}{Premi::Back-End::Server}{subsubsection.3.1.2}% 92
+\BOOKMARK [2][-]{subsection.3.2}{Premi::Back-End::App}{section.3}% 93
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Informazioni generali}{subsection.3.2}% 94
+\BOOKMARK [2][-]{subsection.3.3}{Premi::Back-End::App::Controllers}{section.3}% 95
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Informazioni generali}{subsection.3.3}% 96
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Classi}{subsection.3.3}% 97
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.1}{Premi::Back-End::App::Controllers::ErrorHandler}{subsubsection.3.3.2}% 98
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.2}{Premi::Back-End::App::Controllers::NotFoundHandler}{subsubsection.3.3.2}% 99
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.3}{Premi::Back-End::App::Controllers::ProjectController}{subsubsection.3.3.2}% 100
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.4}{Premi::Back-End::App::Controllers::StaticController}{subsubsection.3.3.2}% 101
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.5}{Premi::Back-End::App::Controllers::UserController}{subsubsection.3.3.2}% 102
+\BOOKMARK [2][-]{subsection.3.4}{Premi::Back-End::App::Controllers::Errors}{section.3}% 103
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Informazioni generali}{subsection.3.4}% 104
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Classi}{subsection.3.4}% 105
+\BOOKMARK [4][-]{subsubsubsection.3.4.2.1}{Premi::Back-End::App::Controllers::Errors::PremiError}{subsubsection.3.4.2}% 106
+\BOOKMARK [2][-]{subsection.3.5}{Premi::Back-End::App::Controllers::Projects}{section.3}% 107
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Informazioni generali}{subsection.3.5}% 108
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Classi}{subsection.3.5}% 109
+\BOOKMARK [4][-]{subsubsubsection.3.5.2.1}{Premi::Back-End::App::Controllers::Projects::NodeController}{subsubsection.3.5.2}% 110
+\BOOKMARK [4][-]{subsubsubsection.3.5.2.2}{Premi::Back-End::App::Controllers::Projects::PathController}{subsubsection.3.5.2}% 111
+\BOOKMARK [4][-]{subsubsubsection.3.5.2.3}{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}{subsubsection.3.5.2}% 112
+\BOOKMARK [2][-]{subsection.3.6}{Premi::Back-End::App::Controllers::Users}{section.3}% 113
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Informazioni generali}{subsection.3.6}% 114
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Classi}{subsection.3.6}% 115
+\BOOKMARK [4][-]{subsubsubsection.3.6.2.1}{Premi::Back-End::App::Controllers::Users::AuthenticationController}{subsubsection.3.6.2}% 116
+\BOOKMARK [4][-]{subsubsubsection.3.6.2.2}{Premi::Back-End::App::Controllers::Users::AuthorizationController}{subsubsection.3.6.2}% 117
+\BOOKMARK [2][-]{subsection.3.7}{Premi::Back-End::App::Models}{section.3}% 118
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Informazioni generali}{subsection.3.7}% 119
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Classi}{subsection.3.7}% 120
+\BOOKMARK [4][-]{subsubsubsection.3.7.2.1}{Premi::Back-End::App::Models::NodeContentModel}{subsubsection.3.7.2}% 121
+\BOOKMARK [4][-]{subsubsubsection.3.7.2.2}{Premi::Back-End::App::Models::NodeModel}{subsubsection.3.7.2}% 122
+\BOOKMARK [4][-]{subsubsubsection.3.7.2.3}{Premi::Back-End::App::Models::PathModel}{subsubsection.3.7.2}% 123
+\BOOKMARK [4][-]{subsubsubsection.3.7.2.4}{Premi::Back-End::App::Models::ProjectModel}{subsubsection.3.7.2}% 124
+\BOOKMARK [4][-]{subsubsubsection.3.7.2.5}{Premi::Back-End::App::Models::RelationModel}{subsubsection.3.7.2}% 125
+\BOOKMARK [4][-]{subsubsubsection.3.7.2.6}{Premi::Back-End::App::Models::Session}{subsubsection.3.7.2}% 126
+\BOOKMARK [4][-]{subsubsubsection.3.7.2.7}{Premi::Back-End::App::Models::UserModel}{subsubsection.3.7.2}% 127
+\BOOKMARK [2][-]{subsection.3.8}{Premi::Back-End::App::Routers}{section.3}% 128
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Informazioni generali}{subsection.3.8}% 129
+\BOOKMARK [3][-]{subsubsection.3.8.2}{Classi}{subsection.3.8}% 130
+\BOOKMARK [4][-]{subsubsubsection.3.8.2.1}{Premi::Back-End::App::Routers::ProjectRouter}{subsubsection.3.8.2}% 131
+\BOOKMARK [4][-]{subsubsubsection.3.8.2.2}{Premi::Back-End::App::Routers::StaticRouter}{subsubsection.3.8.2}% 132
+\BOOKMARK [4][-]{subsubsubsection.3.8.2.3}{Premi::Back-End::App::Routers::UserRouter}{subsubsection.3.8.2}% 133
+\BOOKMARK [2][-]{subsection.3.9}{Premi::Back-End::App::Views}{section.3}% 134
+\BOOKMARK [3][-]{subsubsection.3.9.1}{Informazioni generali}{subsection.3.9}% 135
+\BOOKMARK [3][-]{subsubsection.3.9.2}{Classi}{subsection.3.9}% 136
+\BOOKMARK [4][-]{subsubsubsection.3.9.2.1}{Premi::Back-End::App::Views::UserManualView}{subsubsection.3.9.2}% 137
+\BOOKMARK [2][-]{subsection.3.10}{Premi::Back-End::Config}{section.3}% 138
+\BOOKMARK [3][-]{subsubsection.3.10.1}{Informazioni generali}{subsection.3.10}% 139
+\BOOKMARK [3][-]{subsubsection.3.10.2}{Classi}{subsection.3.10}% 140
+\BOOKMARK [4][-]{subsubsubsection.3.10.2.1}{Premi::Back-End::Config::Config}{subsubsection.3.10.2}% 141
+\BOOKMARK [1][-]{section.4}{Diagrammi di sequenza}{}% 142
+\BOOKMARK [2][-]{subsection.4.1}{Front-End}{section.4}% 143
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Controllers}{subsection.4.1}% 144
+\BOOKMARK [4][-]{subsubsubsection.4.1.1.1}{RegistrationController - Registrazione di un nuovo utente}{subsubsection.4.1.1}% 145
+\BOOKMARK [4][-]{subsubsubsection.4.1.1.2}{DashboardController - Apertura di un progetto}{subsubsection.4.1.1}% 146
+\BOOKMARK [4][-]{subsubsubsection.4.1.1.3}{MindmapEditorController - Costruzione del controller}{subsubsection.4.1.1}% 147
+\BOOKMARK [4][-]{subsubsubsection.4.1.1.4}{MindmapEditorController - Selezione di un nodo}{subsubsection.4.1.1}% 148
+\BOOKMARK [4][-]{subsubsubsection.4.1.1.5}{PresentationController - Creazione di una presentazione}{subsubsection.4.1.1}% 149
+\BOOKMARK [2][-]{subsection.4.2}{Back-End}{section.4}% 150
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Gestione generale delle richieste}{subsection.4.2}% 151
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Gestione dei fallimenti}{subsection.4.2}% 152
+\BOOKMARK [4][-]{subsubsubsection.4.2.2.1}{Fallimento della procedura di registrazione}{subsubsection.4.2.2}% 153
+\BOOKMARK [4][-]{subsubsubsection.4.2.2.2}{Fallimento del vincolo utente autenticato}{subsubsection.4.2.2}% 154
+\BOOKMARK [4][-]{subsubsubsection.4.2.2.3}{Fallimento della richiesta di una lista di progetti}{subsubsection.4.2.2}% 155
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Richieste REST}{subsection.4.2}% 156
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.1}{DELETE /profile}{subsubsection.4.2.3}% 157
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.2}{DELETE /projects/:projectId}{subsubsection.4.2.3}% 158
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.3}{PUT /projects/:projectId}{subsubsection.4.2.3}% 159
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.4}{GET /projects/:projectId}{subsubsection.4.2.3}% 160
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.5}{PUT /projects/:projectId/nodes/:nodeId}{subsubsection.4.2.3}% 161
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.6}{POST /projects/:projectId/associations}{subsubsection.4.2.3}% 162
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.7}{DELETE /projects/:projectId/associations/:associationId}{subsubsection.4.2.3}% 163
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.8}{PUT /projects/:projectId/path/:pathId}{subsubsection.4.2.3}% 164
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.9}{POST /projects/:projectId/path/:pathId}{subsubsection.4.2.3}% 165
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.10}{GET /projects/:projectId/premiPresentation}{subsubsection.4.2.3}% 166
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.11}{GET /static/userManual}{subsubsection.4.2.3}% 167
+\BOOKMARK [1][-]{section.5}{Tracciamento}{}% 168
+\BOOKMARK [2][-]{subsection.5.1}{Tracciamento Classi-Requisiti}{section.5}% 169
+\BOOKMARK [2][-]{subsection.5.2}{Tracciamento Requisiti-Classi}{section.5}% 170
+\BOOKMARK [2][-]{subsection.5.3}{Tracciamento Componenti-Requisiti}{section.5}% 171
+\BOOKMARK [2][-]{subsection.5.4}{Tracciamento Requisiti-Componenti}{section.5}% 172
+\BOOKMARK [1][-]{Appendice.1.A}{Appendice Interfaccia REST}{}% 173
+\BOOKMARK [2][-]{subsection.1.A.1}{Errori}{Appendice.1.A}% 174
+\BOOKMARK [3][-]{subsubsection.1.A.1.1}{Errori generici}{subsection.1.A.1}% 175
+\BOOKMARK [4][-]{subsubsubsection.1.A.1.1.1}{Errori lato server}{subsubsection.1.A.1.1}% 176
+\BOOKMARK [4][-]{subsubsubsection.1.A.1.1.2}{Errori nelle richieste da parte dei client}{subsubsection.1.A.1.1}% 177
+\BOOKMARK [3][-]{subsubsection.1.A.1.2}{Errori specifici di Premi}{subsection.1.A.1}% 178
+\BOOKMARK [2][-]{subsection.1.A.2}{Risorse REST}{Appendice.1.A}% 179
+\BOOKMARK [1][-]{Appendice.1.B}{Appendice Design patterns}{}% 180
+\BOOKMARK [2][-]{subsection.1.B.1}{Chain of Responsibility}{Appendice.1.B}% 181
+\BOOKMARK [3][-]{paragraph*.122}{Scopo}{subsection.1.B.1}% 182
+\BOOKMARK [4][-]{paragraph*.123}{Motivazione}{paragraph*.122}% 183
+\BOOKMARK [4][-]{paragraph*.124}{Applicabilit\340}{paragraph*.122}% 184
+\BOOKMARK [4][-]{paragraph*.125}{Utilizzo}{paragraph*.122}% 185
+\BOOKMARK [4][-]{paragraph*.126}{Struttura}{paragraph*.122}% 186
+\BOOKMARK [4][-]{paragraph*.128}{Collaborazioni}{paragraph*.122}% 187
+\BOOKMARK [4][-]{paragraph*.129}{Svantaggi}{paragraph*.122}% 188
+\BOOKMARK [2][-]{subsection.1.B.2}{Dependecy Injection}{Appendice.1.B}% 189
+\BOOKMARK [3][-]{paragraph*.130}{Scopo}{subsection.1.B.2}% 190
+\BOOKMARK [4][-]{paragraph*.131}{Motivazione}{paragraph*.130}% 191
+\BOOKMARK [4][-]{paragraph*.132}{Applicabilit\340}{paragraph*.130}% 192
+\BOOKMARK [4][-]{paragraph*.133}{Struttura}{paragraph*.130}% 193
+\BOOKMARK [4][-]{paragraph*.135}{Svantaggi}{paragraph*.130}% 194
+\BOOKMARK [2][-]{subsection.1.B.3}{Facade}{Appendice.1.B}% 195
+\BOOKMARK [3][-]{paragraph*.136}{Scopo}{subsection.1.B.3}% 196
+\BOOKMARK [4][-]{paragraph*.137}{Motivazione}{paragraph*.136}% 197
+\BOOKMARK [4][-]{paragraph*.138}{Applicabilit\340}{paragraph*.136}% 198
+\BOOKMARK [4][-]{paragraph*.139}{Utilizzo}{paragraph*.136}% 199
+\BOOKMARK [2][-]{subsection.1.B.4}{Observer}{Appendice.1.B}% 200
+\BOOKMARK [3][-]{paragraph*.141}{Scopo}{subsection.1.B.4}% 201
+\BOOKMARK [4][-]{paragraph*.142}{Motivazione}{paragraph*.141}% 202
+\BOOKMARK [4][-]{paragraph*.143}{Applicabilit\340}{paragraph*.141}% 203
+\BOOKMARK [4][-]{paragraph*.144}{Utilizzo}{paragraph*.141}% 204
+\BOOKMARK [1][-]{Appendice.1.C}{Appendice Cytoscape}{}% 205
+\BOOKMARK [2][-]{subsection.1.C.1}{Organizzazione dei dati}{Appendice.1.C}% 206
+\BOOKMARK [2][-]{subsection.1.C.2}{Inizializzazione della mappa}{Appendice.1.C}% 207
+\BOOKMARK [2][-]{subsection.1.C.3}{Eventi}{Appendice.1.C}% 208

@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex studioDiFattibilita.tex
+pdflatex studioDiFattibilita.tex

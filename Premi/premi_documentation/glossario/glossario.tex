@@ -1,0 +1,32 @@
+\newcommand{\documenttitle}{Glossario}
+\newcommand{\creationdate}{2014-12-04}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt \\ & \proponente}
+\newcommand{\editorialstaff}{\dm}
+\newcommand{\teststaff}{\mb}
+\newcommand{\approvalstaff}{\dm}
+\newcommand{\use}{Esterno}
+
+\input{../template/comandi.tex}
+\input{../template/layout.tex}
+\usepackage[acronym,xindy,toc]{glossaries}
+
+%stile glossario
+\newglossarystyle{newStyle}{%
+ \setglossarystyle{treegroup}%
+ \renewcommand*{\glsgroupheading}[1]{{\huge ##1}\\ \hrule \vspace{1em}}
+ \renewcommand*{\glsgroupskip}{\newpage}%
+ \renewcommand*{\glossentry}[2]{%
+   \glsentryitem{##1}\textbf{\glstarget{##1}{\glossentryname{##1}}}%
+   :\space \glossentrydesc{##1}\par\vspace{1cm}
+ }%
+}
+
+\setglossarystyle{newStyle}
+\loadglsentries{terminiGlossario}
+\makeglossaries
+\begin{document}
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\glsaddall
+\printglossary[title=Lista dei termini]
+\end{document}

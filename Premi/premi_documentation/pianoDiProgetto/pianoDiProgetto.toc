@@ -1,0 +1,139 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{11}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{11}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{11}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{11}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{11}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{11}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{11}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Vincoli}{13}{section.2}
+\contentsline {subsection}{\numberline {2.1}Scadenze}{13}{subsection.2.1}
+\contentsline {section}{\numberline {3}Analisi dei rischi}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Rischi individuati}{14}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Livello tecnologico}{14}{subsubsection.3.1.1}
+\contentsline {subsubsubsection}{\numberline {3.1.1.1}Problemi legati alle tecnologie}{14}{subsubsubsection.3.1.1.1}
+\contentsline {subsubsubsection}{\numberline {3.1.1.2}Problemi legati al framework adottato}{15}{subsubsubsection.3.1.1.2}
+\contentsline {subsubsubsection}{\numberline {3.1.1.3}Problemi legati alle risorse hardware}{15}{subsubsubsection.3.1.1.3}
+\contentsline {subsubsubsection}{\numberline {3.1.1.4}Problemi legati alle applicazioni web}{15}{subsubsubsection.3.1.1.4}
+\contentsline {subsubsection}{\numberline {3.1.2}Livello personale}{16}{subsubsection.3.1.2}
+\contentsline {subsubsubsection}{\numberline {3.1.2.1}Problemi dei componenti del gruppo}{16}{subsubsubsection.3.1.2.1}
+\contentsline {subsubsubsection}{\numberline {3.1.2.2}Problemi tra componenti del gruppo}{16}{subsubsubsection.3.1.2.2}
+\contentsline {subsubsubsection}{\numberline {3.1.2.3}Problemi legati all'inesperienza del gruppo}{17}{subsubsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.3}Livello organizzativo}{17}{subsubsection.3.1.3}
+\contentsline {subsubsubsection}{\numberline {3.1.3.1}Problemi legati alla stima delle ore}{17}{subsubsubsection.3.1.3.1}
+\contentsline {subsubsubsection}{\numberline {3.1.3.2}Problemi legati alla ripianificazione del bilancio}{18}{subsubsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.4}Livello dei requisiti}{18}{subsubsection.3.1.4}
+\contentsline {subsubsubsection}{\numberline {3.1.4.1}Problemi legati all'identificazione dei requisiti}{18}{subsubsubsection.3.1.4.1}
+\contentsline {subsubsection}{\numberline {3.1.5}Riepilogo}{19}{subsubsection.3.1.5}
+\contentsline {subsection}{\numberline {3.2}Previsione rischi}{19}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Fase di \unhbox \voidb@x \hbox {Ammissione} al \unhbox \voidb@x \hbox {progetto}\xspace }{19}{subsubsection.3.2.1}
+\contentsline {subsubsubsection}{\numberline {3.2.1.1}Resoconto fase precedente}{19}{subsubsubsection.3.2.1.1}
+\contentsline {subsubsubsection}{\numberline {3.2.1.2}Nuovi rischi individuati}{19}{subsubsubsection.3.2.1.2}
+\contentsline {subsubsubsection}{\numberline {3.2.1.3}Previsioni incidenza}{20}{subsubsubsection.3.2.1.3}
+\contentsline {subsubsubsection}{\numberline {3.2.1.4}Mitigazione rischi}{20}{subsubsubsection.3.2.1.4}
+\contentsline {subsubsection}{\numberline {3.2.2}Fase di \unhbox \voidb@x \hbox {Consolidamento} dei \unhbox \voidb@x \hbox {requisiti}\xspace }{20}{subsubsection.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.2.2.1}Resoconto fase precedente}{20}{subsubsubsection.3.2.2.1}
+\contentsline {subsubsubsection}{\numberline {3.2.2.2}Nuovi rischi individuati}{20}{subsubsubsection.3.2.2.2}
+\contentsline {subsubsubsection}{\numberline {3.2.2.3}Previsioni incidenza}{20}{subsubsubsection.3.2.2.3}
+\contentsline {subsubsubsection}{\numberline {3.2.2.4}Mitigazione rischi}{21}{subsubsubsection.3.2.2.4}
+\contentsline {subsubsection}{\numberline {3.2.3}Fase di \unhbox \voidb@x \hbox {Progettazione} \unhbox \voidb@x \hbox {dell'architettura}\xspace }{21}{subsubsection.3.2.3}
+\contentsline {subsubsubsection}{\numberline {3.2.3.1}Resoconto fase precedente}{21}{subsubsubsection.3.2.3.1}
+\contentsline {subsubsubsection}{\numberline {3.2.3.2}Nuovi rischi individuati}{21}{subsubsubsection.3.2.3.2}
+\contentsline {subsubsubsection}{\numberline {3.2.3.3}Previsioni incidenza}{21}{subsubsubsection.3.2.3.3}
+\contentsline {subsubsubsection}{\numberline {3.2.3.4}Mitigazione rischi}{22}{subsubsubsection.3.2.3.4}
+\contentsline {subsubsection}{\numberline {3.2.4}Fase di \unhbox \voidb@x \hbox {Consolidamento} dell'\unhbox \voidb@x \hbox {architettura}\xspace }{22}{subsubsection.3.2.4}
+\contentsline {subsubsubsection}{\numberline {3.2.4.1}Resoconto fase precedente}{22}{subsubsubsection.3.2.4.1}
+\contentsline {subsubsubsection}{\numberline {3.2.4.2}Nuovi rischi individuati}{22}{subsubsubsection.3.2.4.2}
+\contentsline {subsubsubsection}{\numberline {3.2.4.3}Previsioni incidenza}{23}{subsubsubsection.3.2.4.3}
+\contentsline {subsubsubsection}{\numberline {3.2.4.4}Mitigazione rischi}{23}{subsubsubsection.3.2.4.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Fase di \unhbox \voidb@x \hbox {Realizzazione} del \unhbox \voidb@x \hbox {prodotto}\xspace }{24}{subsubsection.3.2.5}
+\contentsline {subsubsubsection}{\numberline {3.2.5.1}Resoconto fase precedente}{24}{subsubsubsection.3.2.5.1}
+\contentsline {subsubsubsection}{\numberline {3.2.5.2}Nuovi rischi individuati}{24}{subsubsubsection.3.2.5.2}
+\contentsline {subsubsubsection}{\numberline {3.2.5.3}Previsioni incidenza}{24}{subsubsubsection.3.2.5.3}
+\contentsline {subsubsubsection}{\numberline {3.2.5.4}Mitigazione rischi}{25}{subsubsubsection.3.2.5.4}
+\contentsline {subsubsection}{\numberline {3.2.6}Fase di \unhbox \voidb@x \hbox {Collaudo} \unhbox \voidb@x \hbox {finale}\xspace }{25}{subsubsection.3.2.6}
+\contentsline {subsubsubsection}{\numberline {3.2.6.1}Resoconto fase precedente}{25}{subsubsubsection.3.2.6.1}
+\contentsline {subsubsubsection}{\numberline {3.2.6.2}Nuovi rischi individuati}{26}{subsubsubsection.3.2.6.2}
+\contentsline {subsubsubsection}{\numberline {3.2.6.3}Previsioni incidenza}{26}{subsubsubsection.3.2.6.3}
+\contentsline {subsubsubsection}{\numberline {3.2.6.4}Mitigazione rischi}{27}{subsubsubsection.3.2.6.4}
+\contentsline {section}{\numberline {4}Strategie}{28}{section.4}
+\contentsline {subsection}{\numberline {4.1}Ciclo di vita}{28}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Fasi}{28}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Stati di progresso SEMAT}{29}{subsection.4.3}
+\contentsline {section}{\numberline {5}Pianificazione}{30}{section.5}
+\contentsline {subsection}{\numberline {5.1}\unhbox \voidb@x \hbox {Ammissione} al \unhbox \voidb@x \hbox {progetto}\xspace }{30}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Diagramma di Gantt delle attivit\IeC {\`a}}{30}{subsubsection.5.1.1}
+\contentsline {subsection}{\numberline {5.2}\unhbox \voidb@x \hbox {Consolidamento} dei \unhbox \voidb@x \hbox {requisiti}\xspace }{32}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Diagramma di Gantt delle attivit\IeC {\`a}}{32}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.3}\unhbox \voidb@x \hbox {Progettazione} \unhbox \voidb@x \hbox {dell'architettura}\xspace }{32}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Diagramma di Gantt delle attivit\IeC {\`a}}{33}{subsubsection.5.3.1}
+\contentsline {subsection}{\numberline {5.4}\unhbox \voidb@x \hbox {Consolidamento} dell'\unhbox \voidb@x \hbox {architettura}\xspace }{33}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Diagramma di Gantt delle attivit\IeC {\`a}}{34}{subsubsection.5.4.1}
+\contentsline {subsection}{\numberline {5.5}\unhbox \voidb@x \hbox {Realizzazione} del \unhbox \voidb@x \hbox {prodotto}\xspace }{34}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Diagramma di Gantt delle attivit\IeC {\`a}}{35}{subsubsection.5.5.1}
+\contentsline {subsection}{\numberline {5.6}\unhbox \voidb@x \hbox {Collaudo} \unhbox \voidb@x \hbox {finale}\xspace }{35}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Diagramma di Gantt delle attivit\IeC {\`a}}{36}{subsubsection.5.6.1}
+\contentsline {section}{\numberline {6}Preventivo}{37}{section.6}
+\contentsline {subsection}{\numberline {6.1}Dettaglio fasi rendicontate}{37}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Fase di \unhbox \voidb@x \hbox {Progettazione} \unhbox \voidb@x \hbox {dell'architettura}\xspace }{37}{subsubsection.6.1.1}
+\contentsline {subsubsubsection}{\numberline {6.1.1.1}Suddivisione del lavoro}{37}{subsubsubsection.6.1.1.1}
+\contentsline {subsubsubsection}{\numberline {6.1.1.2}Prospetto economico}{38}{subsubsubsection.6.1.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2}Fase di \unhbox \voidb@x \hbox {Consolidamento} dell'\unhbox \voidb@x \hbox {architettura}\xspace }{39}{subsubsection.6.1.2}
+\contentsline {subsubsubsection}{\numberline {6.1.2.1}Suddivisione del lavoro}{39}{subsubsubsection.6.1.2.1}
+\contentsline {subsubsubsection}{\numberline {6.1.2.2}Prospetto economico}{40}{subsubsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Fase di \unhbox \voidb@x \hbox {Realizzazione} del \unhbox \voidb@x \hbox {prodotto}\xspace }{42}{subsubsection.6.1.3}
+\contentsline {subsubsubsection}{\numberline {6.1.3.1}Suddivisione del lavoro}{42}{subsubsubsection.6.1.3.1}
+\contentsline {subsubsubsection}{\numberline {6.1.3.2}Prospetto economico}{42}{subsubsubsection.6.1.3.2}
+\contentsline {subsubsection}{\numberline {6.1.4}Fase di \unhbox \voidb@x \hbox {Collaudo} \unhbox \voidb@x \hbox {finale}\xspace }{44}{subsubsection.6.1.4}
+\contentsline {subsubsubsection}{\numberline {6.1.4.1}Suddivisione del lavoro}{44}{subsubsubsection.6.1.4.1}
+\contentsline {subsubsubsection}{\numberline {6.1.4.2}Prospetto economico}{45}{subsubsubsection.6.1.4.2}
+\contentsline {subsection}{\numberline {6.2}Totali}{47}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Ore rendicontate}{47}{subsubsection.6.2.1}
+\contentsline {subsubsubsection}{\numberline {6.2.1.1}Suddivisione del lavoro}{47}{subsubsubsection.6.2.1.1}
+\contentsline {subsubsubsection}{\numberline {6.2.1.2}Prospetto economico}{47}{subsubsubsection.6.2.1.2}
+\contentsline {subsubsection}{\numberline {6.2.2}Conclusioni}{49}{subsubsection.6.2.2}
+\contentsline {section}{\numberline {7}Consuntivo}{50}{section.7}
+\contentsline {subsection}{\numberline {7.1}Consuntivo di periodo -\unhbox \voidb@x \hbox {Progettazione} \unhbox \voidb@x \hbox {dell'architettura}\xspace }{50}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Conclusioni}{50}{subsubsection.7.1.1}
+\contentsline {subsection}{\numberline {7.2}Consuntivo di periodo - \unhbox \voidb@x \hbox {Consolidamento} dell'\unhbox \voidb@x \hbox {architettura}\xspace }{50}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Conclusioni}{51}{subsubsection.7.2.1}
+\contentsline {subsection}{\numberline {7.3}Consuntivo di periodo - \unhbox \voidb@x \hbox {Realizzazione} del \unhbox \voidb@x \hbox {prodotto}\xspace }{51}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Conclusioni}{51}{subsubsection.7.3.1}
+\contentsline {subsection}{\numberline {7.4}Consuntivo di periodo - \textbf {\unhbox \voidb@x \hbox {Collaudo} \unhbox \voidb@x \hbox {finale}\xspace }\xspace }{52}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Conclusioni}{52}{subsubsection.7.4.1}
+\contentsline {subsection}{\numberline {7.5}Consuntivo Finale}{53}{subsection.7.5}
+\contentsline {subsubsection}{\numberline {7.5.1}Conclusioni}{53}{subsubsection.7.5.1}
+\contentsline {section}{\numberline {8}Preventivo a finire}{55}{section.8}
+\contentsline {subsection}{\numberline {8.1}Fase di \unhbox \voidb@x \hbox {Progettazione} \unhbox \voidb@x \hbox {dell'architettura}\xspace }{55}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Fase di \unhbox \voidb@x \hbox {Consolidamento} dell'\unhbox \voidb@x \hbox {architettura}\xspace }{55}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Fase di \unhbox \voidb@x \hbox {Realizzazione} del \unhbox \voidb@x \hbox {prodotto}\xspace }{55}{subsection.8.3}
+\contentsline {section}{Appendice \numberline {A}Resoconto SEMAT}{56}{Appendice.1.A}
+\contentsline {subsection}{\numberline {A.1}\unhbox \voidb@x \hbox {Progettazione} \unhbox \voidb@x \hbox {dell'architettura}\xspace }{56}{subsection.1.A.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Obbiettivi preventivati}{56}{subsubsection.1.A.1.1}
+\contentsline {subsubsection}{\numberline {A.1.2}Obbiettivi raggiunti}{56}{subsubsection.1.A.1.2}
+\contentsline {subsection}{\numberline {A.2}\unhbox \voidb@x \hbox {Consolidamento} dell'\unhbox \voidb@x \hbox {architettura}\xspace }{57}{subsection.1.A.2}
+\contentsline {subsubsection}{\numberline {A.2.1}Obbiettivi preventivati}{57}{subsubsection.1.A.2.1}
+\contentsline {subsubsection}{\numberline {A.2.2}Obbiettivi raggiunti}{57}{subsubsection.1.A.2.2}
+\contentsline {subsection}{\numberline {A.3}\unhbox \voidb@x \hbox {Realizzazione} del \unhbox \voidb@x \hbox {prodotto}\xspace }{57}{subsection.1.A.3}
+\contentsline {subsubsection}{\numberline {A.3.1}Obbiettivi preventivati}{57}{subsubsection.1.A.3.1}
+\contentsline {subsubsection}{\numberline {A.3.2}Obbiettivi raggiunti}{58}{subsubsection.1.A.3.2}
+\contentsline {subsection}{\numberline {A.4}\unhbox \voidb@x \hbox {Collaudo} \unhbox \voidb@x \hbox {finale}\xspace }{58}{subsection.1.A.4}
+\contentsline {subsubsection}{\numberline {A.4.1}Obbiettivi preventivati}{58}{subsubsection.1.A.4.1}
+\contentsline {subsubsection}{\numberline {A.4.2}Obbiettivi raggiunti}{59}{subsubsection.1.A.4.2}
+\contentsline {section}{Appendice \numberline {B}Ore di investimento}{60}{Appendice.1.B}
+\contentsline {subsection}{\numberline {B.1}Dettaglio fasi non rendicontate}{60}{subsection.1.B.1}
+\contentsline {subsubsection}{\numberline {B.1.1}Fase di \unhbox \voidb@x \hbox {Ammissione} al \unhbox \voidb@x \hbox {progetto}\xspace }{60}{subsubsection.1.B.1.1}
+\contentsline {subsubsubsection}{\numberline {B.1.1.1}Suddivisione del lavoro}{60}{subsubsubsection.1.B.1.1.1}
+\contentsline {subsubsubsection}{\numberline {B.1.1.2}Prospetto economico}{60}{subsubsubsection.1.B.1.1.2}
+\contentsline {subsubsection}{\numberline {B.1.2}Fase di \unhbox \voidb@x \hbox {Consolidamento} dei \unhbox \voidb@x \hbox {requisiti}\xspace }{62}{subsubsection.1.B.1.2}
+\contentsline {subsubsubsection}{\numberline {B.1.2.1}Suddivisione del lavoro}{62}{subsubsubsection.1.B.1.2.1}
+\contentsline {subsubsubsection}{\numberline {B.1.2.2}Prospetto economico}{63}{subsubsubsection.1.B.1.2.2}
+\contentsline {subsection}{\numberline {B.2}Totali considerando l'investimento}{64}{subsection.1.B.2}
+\contentsline {subsubsection}{\numberline {B.2.1}Suddivisione del lavoro}{64}{subsubsection.1.B.2.1}
+\contentsline {subsubsection}{\numberline {B.2.2}Prospetto economico}{65}{subsubsection.1.B.2.2}
+\contentsline {section}{Appendice \numberline {C}Organigramma}{68}{Appendice.1.C}
+\contentsline {subsection}{\numberline {C.1}Redazione}{68}{subsection.1.C.1}
+\contentsline {subsection}{\numberline {C.2}Approvazione}{68}{subsection.1.C.2}
+\contentsline {subsection}{\numberline {C.3}Accettazione dei componenti}{68}{subsection.1.C.3}
+\contentsline {subsection}{\numberline {C.4}Componenti}{69}{subsection.1.C.4}
+\contentsline {subsection}{\numberline {C.5}Ruoli}{69}{subsection.1.C.5}

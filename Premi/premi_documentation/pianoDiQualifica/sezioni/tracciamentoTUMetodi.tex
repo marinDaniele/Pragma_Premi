@@ -1,0 +1,173 @@
+\subsection{Tracciamento Test di Unità-Metodi}
+\normalsize
+\begin{longtable}{|>{\centering}m{1cm}|m{12cm}<{\centering}|}
+\hline 
+\textbf{Test} & \textbf{Metodi}\\
+\hline
+\endhead
+\hyperlink{TU1}{TU1} & \nogloxy{\texttt{Premi::Back-End::Server::start()}}\\ \hline
+
+\hyperlink{TU2}{TU2} & \nogloxy{\texttt{Premi::Back-End::App::Routers::ProjectRouter::-\linebreak ProjectRouter()}}\\ \hline
+
+\hyperlink{TU3}{TU3} & \nogloxy{\texttt{Premi::Back-End::App::Routers::StaticRouter::-\linebreak StaticRouter()}}\\ \hline
+
+\hyperlink{TU4}{TU4} & \nogloxy{\texttt{Premi::Back-End::App::Routers::UserRouter::-\linebreak UserRouter()}}\\ \hline
+
+\hyperlink{TU5}{TU5} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ErrorHandler::handle()}}\\ \hline
+
+\hyperlink{TU6}{TU6} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak NotFoundHandler::handle()}}\\ \hline
+
+\hyperlink{TU7}{TU7} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak StaticController::getUserManual()}}\\ \hline
+
+\hyperlink{TU8}{TU8} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Errors::-\linebreak PremiError::PremiError()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Errors::-\linebreak PremiError::toJSON()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Errors::-\linebreak PremiError::toString()}}\\ \hline
+
+\hyperlink{TU9}{TU9} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak NodeController::associationById()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak NodeController::nodeById()}}\\ \hline
+
+\hyperlink{TU10}{TU10} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak NodeController::addAssociation()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak NodeController::deleteAssociation()}}\\ \hline
+
+\hyperlink{TU11}{TU11} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak NodeController::addNode()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak NodeController::deleteNode()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak NodeController::updateNode()}}\\ \hline
+
+\hyperlink{TU12}{TU12} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak PathController::pathById()}}\\ \hline
+
+\hyperlink{TU13}{TU13} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak PathController::addNodeToPath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak PathController::addPath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak PathController::deleteNodeFromPath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak PathController::deletePath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak PathController::getPath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak PathController::updatePath()}}\\ \hline
+
+\hyperlink{TU14}{TU14} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::projectById()}}\\ \hline
+
+\hyperlink{TU15}{TU15} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::deleteProject()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::getAllPaths()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::getPresentation()}}\\ \hline
+
+\hyperlink{TU16}{TU16} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::addProject()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::getAllProjects()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::getProject()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Projects::-\linebreak ProjectManagementController::updateProject()}}\\ \hline
+
+\hyperlink{TU17}{TU17} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController::signin()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController::signout()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController::signup()}}\\ \hline
+
+\hyperlink{TU18}{TU18} & \nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthorizationController::requiresLogin()}}\\ \hline
+
+\hyperlink{TU19}{TU19} & \nogloxy{\texttt{Premi::Back-End::App::Models::NodeContentModel::-\linebreak \uline{createNodeContent}()}}\\ \hline
+
+\hyperlink{TU20}{TU20} & \nogloxy{\texttt{Premi::Back-End::App::Models::NodeModel::-\linebreak getContents()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::NodeModel::-\linebreak updateNode()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::NodeModel::-\linebreak \uline{createNode}()}}\\ \hline
+
+\hyperlink{TU21}{TU21} & \nogloxy{\texttt{Premi::Back-End::App::Models::PathModel::-\linebreak \uline{createPath}()}}\\ \hline
+
+\hyperlink{TU22}{TU22} & \nogloxy{\texttt{Premi::Back-End::App::Models::PathModel::-\linebreak \uline{createPath}()}}\\ \hline
+
+\hyperlink{TU23}{TU23} & \nogloxy{\texttt{Premi::Back-End::App::Models::PathModel::-\linebreak addNode()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::PathModel::-\linebreak removeNode()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::PathModel::-\linebreak setName()}}\\ \hline
+
+\hyperlink{TU24}{TU24} & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak \uline{createProject}()}}\\ \hline
+
+\hyperlink{TU25}{TU25} & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak setBkgColor()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak setFontColor()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak setFontFamily()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak setName()}}\\ \hline
+
+\hyperlink{TU26}{TU26} & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak addNode()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak updateNode()}}\\ \hline
+
+\hyperlink{TU27}{TU27} & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak removeNode()}}\\ \hline
+
+\hyperlink{TU28}{TU28} & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak addAssociation()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak removeAssociation()}}\\ \hline
+
+\hyperlink{TU29}{TU29} & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak addNodeToPath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak addPath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak removeNodeFromPath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak removePath()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak setPathName()}}\\ \hline
+
+\hyperlink{TU30}{TU30} & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak getPathList()}}\\ & \nogloxy{\texttt{Premi::Back-End::App::Models::ProjectModel::-\linebreak getPathNodes()}}\\ \hline
+
+\hyperlink{TU31}{TU31} & \nogloxy{\texttt{Premi::Back-End::App::Models::RelationModel::-\linebreak \uline{createRelation}()}}\\ \hline
+
+\hyperlink{TU32}{TU32} & \nogloxy{\texttt{Premi::Back-End::App::Models::UserModel::-\linebreak \uline{createUser}()}}\\ \hline
+
+\hyperlink{TU33}{TU33} & \nogloxy{\texttt{Premi::Front-End::AppRouter::-\linebreak AppRouter()}}\\ \hline
+
+\hyperlink{TU34}{TU34} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AddToPathController::addButtonDisabled()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AddToPathController::addClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AddToPathController::AddToPathController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AddToPathController::cancelClicked()}}\\ \hline
+
+\hyperlink{TU35}{TU35} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AssociationAdderController::AssociationAdderController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AssociationAdderController::cancelClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AssociationAdderController::confirmClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AssociationAdderController::confirmDisabled()}}\\ \hline
+
+\hyperlink{TU36}{TU36} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ContextMenuController::call()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ContextMenuController::cancel()}}\\ \hline
+
+\hyperlink{TU37}{TU37} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController::DashboardController()}}\\ \hline
+
+\hyperlink{TU38}{TU38} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController::deleteProjectClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController::editProjectClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController::newProjectClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController::startPresentationClicked()}}\\ \hline
+
+\hyperlink{TU39}{TU39} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController::EditableNodeContentController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController::selected()}}\\ \hline
+
+\hyperlink{TU40}{TU40} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ErrorMessageController::hide()}}\\ \hline
+
+\hyperlink{TU41}{TU41} & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak HeaderController()}}\\ \hline
+
+\hyperlink{TU42}{TU42} & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak currentLocationContains()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak fitMindmap()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak getTitle()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak showManual()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak toggleSidenav()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak zoomMindmap()}}\\ \hline
+
+\hyperlink{TU43}{TU43} & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak logout()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak mapClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak pathClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak printPage()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak setCurrentLocation()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::HeaderController::-\linebreak showProjectSettingsEditor()}}\\ \hline
+
+\hyperlink{TU44}{TU44} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HierarchicalMenuController::HierarchicalMenuController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HierarchicalMenuController::toggle()}}\\ \hline
+
+\hyperlink{TU45}{TU45} & \nogloxy{\texttt{Premi::Front-End::Controllers::LoginController::-\linebreak logIn()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::LoginController::-\linebreak LoginController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::LoginController::-\linebreak signUp()}}\\ \hline
+
+\hyperlink{TU46}{TU46} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::MindmapEditorController()}}\\ \hline
+
+\hyperlink{TU47}{TU47} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::addAssociationClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::addNodeClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::confirmNodeEditClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::deleteNodeClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::deleteRelationClicked()}}\\ \hline
+
+\hyperlink{TU48}{TU48} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::editNodeClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::resetNodeEdit()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController::startAddAssociation()}}\\ \hline
+
+\hyperlink{TU49}{TU49} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController::addImageContent()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController::addTextContent()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController::cancelClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController::deleteNodeContent()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController::NodeContentsEditorController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController::saveClicked()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController::slideClicked()}}\\ \hline
+
+\hyperlink{TU50}{TU50} & \nogloxy{\texttt{Premi::Front-End::Controllers::NodeController::-\linebreak NodeController()}}\\ \hline
+
+\hyperlink{TU51}{TU51} & \nogloxy{\texttt{Premi::Front-End::Controllers::PathController::-\linebreak PathController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::PathController::-\linebreak removeNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::PathController::-\linebreak saveChanges()}}\\ \hline
+
+\hyperlink{TU52}{TU52} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsEditorController::PathsEditorController()}}\\ \hline
+
+\hyperlink{TU53}{TU53} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsEditorController::deselectPath()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsEditorController::selectPath()}}\\ \hline
+
+\hyperlink{TU54}{TU54} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController::createNewPath()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController::deletePath()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController::pathSelected()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController::present()}}\\ \hline
+
+\hyperlink{TU55}{TU55} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationController::nextStep()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationController::PresentationController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationController::previousStep()}}\\ \hline
+
+\hyperlink{TU56}{TU56} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::PresentationViewerController()}}\\ \hline
+
+\hyperlink{TU57}{TU57} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::jumpToNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::nextStep()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::nodeChanged()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::previousStep()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::printPresentation()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::resumePresentation()}}\\ \hline
+
+\hyperlink{TU58}{TU58} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::quitPresentation()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::quitToDashboard()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::setFullscreen()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::showManual()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController::toggleSidenav()}}\\ \hline
+
+\hyperlink{TU59}{TU59} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController::cancel()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController::confirm()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController::ProjectSettingsEditorController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController::selectChanged()}}\\ \hline
+
+\hyperlink{TU60}{TU60} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController::deleteWithConfirm()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController::showPaths()}}\\ \hline
+
+\hyperlink{TU61}{TU61} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController::createAccount()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController::logIn()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController::RegistrationController()}}\\ \hline
+
+\hyperlink{TU62}{TU62} & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak SmartMenuController::SmartMenuController()}}\\ & \nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak SmartMenuController::toggleSidenav()}}\\ \hline
+
+\hyperlink{TU63}{TU63} & \nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo::-\linebreak ErrorInfo()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo::-\linebreak getCode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo::-\linebreak getMessage()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo::-\linebreak getTitle()}}\\ \hline
+
+\hyperlink{TU64}{TU64} & \nogloxy{\texttt{Premi::Front-End::Model::Node::-\linebreak getContents()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Node::-\linebreak getTitle()}}\\ \hline
+
+\hyperlink{TU65}{TU65} & \nogloxy{\texttt{Premi::Front-End::Model::Node::-\linebreak addImage()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Node::-\linebreak addText()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Node::-\linebreak getContent()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Node::-\linebreak removeContent()}}\\ \hline
+
+\hyperlink{TU66}{TU66} & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getContent()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getHeight()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getId()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getType()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getWidth()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getX()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getY()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak NodeContent()}}\\ \hline
+
+\hyperlink{TU67}{TU67} & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak getStyle()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak setHeight()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak setWidth()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak setX()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeContent::-\linebreak setY()}}\\ \hline
+
+\hyperlink{TU68}{TU68} & \nogloxy{\texttt{Premi::Front-End::Model::NodeReference::-\linebreak getId()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::NodeReference::-\linebreak getTitle()}}\\ \hline
+
+\hyperlink{TU69}{TU69} & \nogloxy{\texttt{Premi::Front-End::Model::Path::-\linebreak addStep()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Path::-\linebreak deleteStep()}}\\ \hline
+
+\hyperlink{TU70}{TU70} & \nogloxy{\texttt{Premi::Front-End::Model::Path::getId()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Path::-\linebreak getName()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Path::-\linebreak getSteps()}}\\ \hline
+
+\hyperlink{TU71}{TU71} & \nogloxy{\texttt{Premi::Front-End::Model::Path::-\linebreak isDefault()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Path::-\linebreak setName()}}\\ \hline
+
+\hyperlink{TU72}{TU72} & \nogloxy{\texttt{Premi::Front-End::Model::PresentationNode::-\linebreak getAssociatedNodes()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::PresentationNode::-\linebreak getChildNodes()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::PresentationNode::-\linebreak getParentNode()}}\\ \hline
+
+\hyperlink{TU73}{TU73} & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak getBackgroundColor()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak getFontFamily()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak getId()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak getName()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak getRootId()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak getTextColor()}}\\ \hline
+
+\hyperlink{TU74}{TU74} & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak setBackgroundColor()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak setFontFamily()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak setName()}}\\ & \nogloxy{\texttt{Premi::Front-End::Model::Project::-\linebreak setTextColor()}}\\ \hline
+
+\hyperlink{TU75}{TU75} & \nogloxy{\texttt{Premi::Front-End::Services::AuthenticationService::-\linebreak logIn()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::AuthenticationService::-\linebreak logOut()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::AuthenticationService::-\linebreak signUp()}}\\ \hline
+
+\hyperlink{TU76}{TU76} & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak addAssociation()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak addNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak deleteAssociation()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak drawMap()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak getNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak listen()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak loadMap()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak setNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapAdapterService::-\linebreak stopListen()}}\\ \hline
+
+\hyperlink{TU77}{TU77} & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak addAssociation()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak addNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak deleteAssociation()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak deleteNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak updateNode()}}\\ \hline
+
+\hyperlink{TU78}{TU78} & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak drawMap()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak getAssociableNodeList()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak getNode()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak listen()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::MindmapService::-\linebreak stopListen()}}\\ \hline
+
+\hyperlink{TU79}{TU79} & \nogloxy{\texttt{Premi::Front-End::Services::PathService::-\linebreak addNodeToPath()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::PathService::-\linebreak addPath()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::PathService::-\linebreak deletePath()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::PathService::-\linebreak finalizePathUpdates()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::PathService::-\linebreak getPath()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::PathService::-\linebreak getPathNames()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::PathService::-\linebreak removeNodeFromPath()}}\\ \hline
+
+\hyperlink{TU80}{TU80} & \nogloxy{\texttt{Premi::Front-End::Services::PresentationService::-\linebreak getNodes()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::PresentationService::-\linebreak getPath()}}\\ \hline
+
+\hyperlink{TU81}{TU81} & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak createProject()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak deleteProject()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak finalizeProjectUpdates()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak getCurrentProject()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak getId()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak getProjects()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak getStyle()}}\\ & \nogloxy{\texttt{Premi::Front-End::Services::ProjectService::-\linebreak loadProject()}}\\ \hline
+
+\caption[Tracciamento Test di Unità-Metodi]{Tracciamento Test di Unità-Metodi}
+\label{tabella:tu-met}
+\end{longtable}
+\clearpage

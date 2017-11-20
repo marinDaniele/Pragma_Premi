@@ -1,0 +1,209 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{14}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{14}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{14}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{14}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{14}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{14}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{14}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Specifica del Front-End}{16}{section.2}
+\contentsline {subsection}{\numberline {2.1}Premi::Front-End}{16}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Informazioni generali}{16}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Classi}{17}{subsubsection.2.1.2}
+\contentsline {subsubsubsection}{\numberline {2.1.2.1}Premi::Front-End::AppConfig}{17}{subsubsubsection.2.1.2.1}
+\contentsline {subsubsubsection}{\numberline {2.1.2.2}Premi::Front-End::AppRouter}{17}{subsubsubsection.2.1.2.2}
+\contentsline {subsubsubsection}{\numberline {2.1.2.3}Premi::Front-End::AppRun}{18}{subsubsubsection.2.1.2.3}
+\contentsline {subsection}{\numberline {2.2}Premi::Front-End::Controllers}{19}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Informazioni generali}{19}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Classi}{20}{subsubsection.2.2.2}
+\contentsline {subsubsubsection}{\numberline {2.2.2.1}Premi::Front-End::Controllers::AddToPathController}{20}{subsubsubsection.2.2.2.1}
+\contentsline {subsubsubsection}{\numberline {2.2.2.2}Premi::Front-End::Controllers::AssociationAdderController}{22}{subsubsubsection.2.2.2.2}
+\contentsline {subsubsubsection}{\numberline {2.2.2.3}Premi::Front-End::Controllers::ContextMenuController}{23}{subsubsubsection.2.2.2.3}
+\contentsline {subsubsubsection}{\numberline {2.2.2.4}Premi::Front-End::Controllers::DashboardController}{24}{subsubsubsection.2.2.2.4}
+\contentsline {subsubsubsection}{\numberline {2.2.2.5}Premi::Front-End::Controllers::EditableNodeContentController}{26}{subsubsubsection.2.2.2.5}
+\contentsline {subsubsubsection}{\numberline {2.2.2.6}Premi::Front-End::Controllers::ErrorMessageController}{27}{subsubsubsection.2.2.2.6}
+\contentsline {subsubsubsection}{\numberline {2.2.2.7}Premi::Front-End::Controllers::HeaderController}{28}{subsubsubsection.2.2.2.7}
+\contentsline {subsubsubsection}{\numberline {2.2.2.8}Premi::Front-End::Controllers::HierarchicalMenuController}{30}{subsubsubsection.2.2.2.8}
+\contentsline {subsubsubsection}{\numberline {2.2.2.9}Premi::Front-End::Controllers::LoginController}{31}{subsubsubsection.2.2.2.9}
+\contentsline {subsubsubsection}{\numberline {2.2.2.10}Premi::Front-End::Controllers::MindmapEditorController}{33}{subsubsubsection.2.2.2.10}
+\contentsline {subsubsubsection}{\numberline {2.2.2.11}Premi::Front-End::Controllers::NodeContentsEditorController}{36}{subsubsubsection.2.2.2.11}
+\contentsline {subsubsubsection}{\numberline {2.2.2.12}Premi::Front-End::Controllers::NodeController}{38}{subsubsubsection.2.2.2.12}
+\contentsline {subsubsubsection}{\numberline {2.2.2.13}Premi::Front-End::Controllers::PathController}{40}{subsubsubsection.2.2.2.13}
+\contentsline {subsubsubsection}{\numberline {2.2.2.14}Premi::Front-End::Controllers::PathsEditorController}{41}{subsubsubsection.2.2.2.14}
+\contentsline {subsubsubsection}{\numberline {2.2.2.15}Premi::Front-End::Controllers::PathsListController}{43}{subsubsubsection.2.2.2.15}
+\contentsline {subsubsubsection}{\numberline {2.2.2.16}Premi::Front-End::Controllers::PresentationController}{45}{subsubsubsection.2.2.2.16}
+\contentsline {subsubsubsection}{\numberline {2.2.2.17}Premi::Front-End::Controllers::PresentationViewerController}{47}{subsubsubsection.2.2.2.17}
+\contentsline {subsubsubsection}{\numberline {2.2.2.18}Premi::Front-End::Controllers::ProjectSettingsEditorController}{50}{subsubsubsection.2.2.2.18}
+\contentsline {subsubsubsection}{\numberline {2.2.2.19}Premi::Front-End::Controllers::ProjectsListController}{52}{subsubsubsection.2.2.2.19}
+\contentsline {subsubsubsection}{\numberline {2.2.2.20}Premi::Front-End::Controllers::RegistrationController}{53}{subsubsubsection.2.2.2.20}
+\contentsline {subsubsubsection}{\numberline {2.2.2.21}Premi::Front-End::Controllers::SmartMenuController}{55}{subsubsubsection.2.2.2.21}
+\contentsline {subsection}{\numberline {2.3}Premi::Front-End::Directives}{56}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Informazioni generali}{56}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Classi}{56}{subsubsection.2.3.2}
+\contentsline {subsubsubsection}{\numberline {2.3.2.1}Premi::Front-End::Directives::premiAddToPath}{56}{subsubsubsection.2.3.2.1}
+\contentsline {subsubsubsection}{\numberline {2.3.2.2}Premi::Front-End::Directives::premiAssociationAdder}{57}{subsubsubsection.2.3.2.2}
+\contentsline {subsubsubsection}{\numberline {2.3.2.3}Premi::Front-End::Directives::premiContextMenu}{58}{subsubsubsection.2.3.2.3}
+\contentsline {subsubsubsection}{\numberline {2.3.2.4}Premi::Front-End::Directives::premiEditableNodeContent}{60}{subsubsubsection.2.3.2.4}
+\contentsline {subsubsubsection}{\numberline {2.3.2.5}Premi::Front-End::Directives::premiErrorMessage}{61}{subsubsubsection.2.3.2.5}
+\contentsline {subsubsubsection}{\numberline {2.3.2.6}Premi::Front-End::Directives::premiHeader}{62}{subsubsubsection.2.3.2.6}
+\contentsline {subsubsubsection}{\numberline {2.3.2.7}Premi::Front-End::Directives::premiHierarchicalMenu}{63}{subsubsubsection.2.3.2.7}
+\contentsline {subsubsubsection}{\numberline {2.3.2.8}Premi::Front-End::Directives::premiMindmap}{64}{subsubsubsection.2.3.2.8}
+\contentsline {subsubsubsection}{\numberline {2.3.2.9}Premi::Front-End::Directives::premiNode}{65}{subsubsubsection.2.3.2.9}
+\contentsline {subsubsubsection}{\numberline {2.3.2.10}Premi::Front-End::Directives::premiNodeContent}{66}{subsubsubsection.2.3.2.10}
+\contentsline {subsubsubsection}{\numberline {2.3.2.11}Premi::Front-End::Directives::premiNodeContentsEditor}{67}{subsubsubsection.2.3.2.11}
+\contentsline {subsubsubsection}{\numberline {2.3.2.12}Premi::Front-End::Directives::premiPath}{69}{subsubsubsection.2.3.2.12}
+\contentsline {subsubsubsection}{\numberline {2.3.2.13}Premi::Front-End::Directives::premiPathsList}{70}{subsubsubsection.2.3.2.13}
+\contentsline {subsubsubsection}{\numberline {2.3.2.14}Premi::Front-End::Directives::premiPresentation}{71}{subsubsubsection.2.3.2.14}
+\contentsline {subsubsubsection}{\numberline {2.3.2.15}Premi::Front-End::Directives::premiProjectSettingsEditor}{72}{subsubsubsection.2.3.2.15}
+\contentsline {subsubsubsection}{\numberline {2.3.2.16}Premi::Front-End::Directives::premiProjectsList}{73}{subsubsubsection.2.3.2.16}
+\contentsline {subsubsubsection}{\numberline {2.3.2.17}Premi::Front-End::Directives::premiSmartMenu}{75}{subsubsubsection.2.3.2.17}
+\contentsline {subsection}{\numberline {2.4}Premi::Front-End::Model}{76}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Informazioni generali}{76}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Classi}{76}{subsubsection.2.4.2}
+\contentsline {subsubsubsection}{\numberline {2.4.2.1}Premi::Front-End::Model::ErrorInfo}{76}{subsubsubsection.2.4.2.1}
+\contentsline {subsubsubsection}{\numberline {2.4.2.2}Premi::Front-End::Model::Node}{78}{subsubsubsection.2.4.2.2}
+\contentsline {subsubsubsection}{\numberline {2.4.2.3}Premi::Front-End::Model::NodeContent}{80}{subsubsubsection.2.4.2.3}
+\contentsline {subsubsubsection}{\numberline {2.4.2.4}Premi::Front-End::Model::NodeReference}{83}{subsubsubsection.2.4.2.4}
+\contentsline {subsubsubsection}{\numberline {2.4.2.5}Premi::Front-End::Model::Path}{84}{subsubsubsection.2.4.2.5}
+\contentsline {subsubsubsection}{\numberline {2.4.2.6}Premi::Front-End::Model::PresentationNode}{87}{subsubsubsection.2.4.2.6}
+\contentsline {subsubsubsection}{\numberline {2.4.2.7}Premi::Front-End::Model::Project}{88}{subsubsubsection.2.4.2.7}
+\contentsline {subsection}{\numberline {2.5}Premi::Front-End::Services}{91}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Informazioni generali}{91}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Classi}{92}{subsubsection.2.5.2}
+\contentsline {subsubsubsection}{\numberline {2.5.2.1}Premi::Front-End::Services::AuthenticationService}{92}{subsubsubsection.2.5.2.1}
+\contentsline {subsubsubsection}{\numberline {2.5.2.2}Premi::Front-End::Services::MindmapAdapterService}{94}{subsubsubsection.2.5.2.2}
+\contentsline {subsubsubsection}{\numberline {2.5.2.3}Premi::Front-End::Services::MindmapService}{98}{subsubsubsection.2.5.2.3}
+\contentsline {subsubsubsection}{\numberline {2.5.2.4}Premi::Front-End::Services::PathService}{102}{subsubsubsection.2.5.2.4}
+\contentsline {subsubsubsection}{\numberline {2.5.2.5}Premi::Front-End::Services::PresentationService}{105}{subsubsubsection.2.5.2.5}
+\contentsline {subsubsubsection}{\numberline {2.5.2.6}Premi::Front-End::Services::ProjectService}{108}{subsubsubsection.2.5.2.6}
+\contentsline {subsubsubsection}{\numberline {2.5.2.7}Premi::Front-End::Services::ServerURL}{111}{subsubsubsection.2.5.2.7}
+\contentsline {subsection}{\numberline {2.6}Premi::Front-End::Views}{112}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Informazioni generali}{112}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Classi}{112}{subsubsection.2.6.2}
+\contentsline {subsubsubsection}{\numberline {2.6.2.1}Premi::Front-End::Views::DashboardView}{112}{subsubsubsection.2.6.2.1}
+\contentsline {subsubsubsection}{\numberline {2.6.2.2}Premi::Front-End::Views::LoginView}{113}{subsubsubsection.2.6.2.2}
+\contentsline {subsubsubsection}{\numberline {2.6.2.3}Premi::Front-End::Views::MindmapEditorView}{113}{subsubsubsection.2.6.2.3}
+\contentsline {subsubsubsection}{\numberline {2.6.2.4}Premi::Front-End::Views::PathsEditorView}{115}{subsubsubsection.2.6.2.4}
+\contentsline {subsubsubsection}{\numberline {2.6.2.5}Premi::Front-End::Views::PresentationView}{116}{subsubsubsection.2.6.2.5}
+\contentsline {subsubsubsection}{\numberline {2.6.2.6}Premi::Front-End::Views::RegistrationView}{117}{subsubsubsection.2.6.2.6}
+\contentsline {section}{\numberline {3}Specifica del Back-End}{119}{section.3}
+\contentsline {subsection}{\numberline {3.1}Premi::Back-End}{119}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Informazioni generali}{119}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Classi}{119}{subsubsection.3.1.2}
+\contentsline {subsubsubsection}{\numberline {3.1.2.1}Premi::Back-End::Server}{119}{subsubsubsection.3.1.2.1}
+\contentsline {subsection}{\numberline {3.2}Premi::Back-End::App}{120}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Informazioni generali}{120}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Premi::Back-End::App::Controllers}{121}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Informazioni generali}{121}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Classi}{122}{subsubsection.3.3.2}
+\contentsline {subsubsubsection}{\numberline {3.3.2.1}Premi::Back-End::App::Controllers::ErrorHandler}{122}{subsubsubsection.3.3.2.1}
+\contentsline {subsubsubsection}{\numberline {3.3.2.2}Premi::Back-End::App::Controllers::NotFoundHandler}{123}{subsubsubsection.3.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.3.2.3}Premi::Back-End::App::Controllers::ProjectController}{124}{subsubsubsection.3.3.2.3}
+\contentsline {subsubsubsection}{\numberline {3.3.2.4}Premi::Back-End::App::Controllers::StaticController}{125}{subsubsubsection.3.3.2.4}
+\contentsline {subsubsubsection}{\numberline {3.3.2.5}Premi::Back-End::App::Controllers::UserController}{126}{subsubsubsection.3.3.2.5}
+\contentsline {subsection}{\numberline {3.4}Premi::Back-End::App::Controllers::Errors}{126}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Informazioni generali}{126}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Classi}{126}{subsubsection.3.4.2}
+\contentsline {subsubsubsection}{\numberline {3.4.2.1}Premi::Back-End::App::Controllers::Errors::PremiError}{126}{subsubsubsection.3.4.2.1}
+\contentsline {subsection}{\numberline {3.5}Premi::Back-End::App::Controllers::Projects}{127}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Informazioni generali}{127}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Classi}{128}{subsubsection.3.5.2}
+\contentsline {subsubsubsection}{\numberline {3.5.2.1}Premi::Back-End::App::Controllers::Projects::NodeController}{128}{subsubsubsection.3.5.2.1}
+\contentsline {subsubsubsection}{\numberline {3.5.2.2}Premi::Back-End::App::Controllers::Projects::PathController}{131}{subsubsubsection.3.5.2.2}
+\contentsline {subsubsubsection}{\numberline {3.5.2.3}Premi::Back-End::App::Controllers::Projects::ProjectManagementController}{134}{subsubsubsection.3.5.2.3}
+\contentsline {subsection}{\numberline {3.6}Premi::Back-End::App::Controllers::Users}{137}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Informazioni generali}{137}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Classi}{137}{subsubsection.3.6.2}
+\contentsline {subsubsubsection}{\numberline {3.6.2.1}Premi::Back-End::App::Controllers::Users::AuthenticationController}{137}{subsubsubsection.3.6.2.1}
+\contentsline {subsubsubsection}{\numberline {3.6.2.2}Premi::Back-End::App::Controllers::Users::AuthorizationController}{139}{subsubsubsection.3.6.2.2}
+\contentsline {subsection}{\numberline {3.7}Premi::Back-End::App::Models}{139}{subsection.3.7}
+\contentsline {subsubsection}{\numberline {3.7.1}Informazioni generali}{139}{subsubsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.2}Classi}{140}{subsubsection.3.7.2}
+\contentsline {subsubsubsection}{\numberline {3.7.2.1}Premi::Back-End::App::Models::NodeContentModel}{140}{subsubsubsection.3.7.2.1}
+\contentsline {subsubsubsection}{\numberline {3.7.2.2}Premi::Back-End::App::Models::NodeModel}{141}{subsubsubsection.3.7.2.2}
+\contentsline {subsubsubsection}{\numberline {3.7.2.3}Premi::Back-End::App::Models::PathModel}{142}{subsubsubsection.3.7.2.3}
+\contentsline {subsubsubsection}{\numberline {3.7.2.4}Premi::Back-End::App::Models::ProjectModel}{144}{subsubsubsection.3.7.2.4}
+\contentsline {subsubsubsection}{\numberline {3.7.2.5}Premi::Back-End::App::Models::RelationModel}{150}{subsubsubsection.3.7.2.5}
+\contentsline {subsubsubsection}{\numberline {3.7.2.6}Premi::Back-End::App::Models::Session}{151}{subsubsubsection.3.7.2.6}
+\contentsline {subsubsubsection}{\numberline {3.7.2.7}Premi::Back-End::App::Models::UserModel}{152}{subsubsubsection.3.7.2.7}
+\contentsline {subsection}{\numberline {3.8}Premi::Back-End::App::Routers}{153}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Informazioni generali}{153}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Classi}{154}{subsubsection.3.8.2}
+\contentsline {subsubsubsection}{\numberline {3.8.2.1}Premi::Back-End::App::Routers::ProjectRouter}{154}{subsubsubsection.3.8.2.1}
+\contentsline {subsubsubsection}{\numberline {3.8.2.2}Premi::Back-End::App::Routers::StaticRouter}{155}{subsubsubsection.3.8.2.2}
+\contentsline {subsubsubsection}{\numberline {3.8.2.3}Premi::Back-End::App::Routers::UserRouter}{155}{subsubsubsection.3.8.2.3}
+\contentsline {subsection}{\numberline {3.9}Premi::Back-End::App::Views}{156}{subsection.3.9}
+\contentsline {subsubsection}{\numberline {3.9.1}Informazioni generali}{156}{subsubsection.3.9.1}
+\contentsline {subsubsection}{\numberline {3.9.2}Classi}{157}{subsubsection.3.9.2}
+\contentsline {subsubsubsection}{\numberline {3.9.2.1}Premi::Back-End::App::Views::UserManualView}{157}{subsubsubsection.3.9.2.1}
+\contentsline {subsection}{\numberline {3.10}Premi::Back-End::Config}{157}{subsection.3.10}
+\contentsline {subsubsection}{\numberline {3.10.1}Informazioni generali}{157}{subsubsection.3.10.1}
+\contentsline {subsubsection}{\numberline {3.10.2}Classi}{158}{subsubsection.3.10.2}
+\contentsline {subsubsubsection}{\numberline {3.10.2.1}Premi::Back-End::Config::Config}{158}{subsubsubsection.3.10.2.1}
+\contentsline {section}{\numberline {4}Diagrammi di sequenza}{159}{section.4}
+\contentsline {subsection}{\numberline {4.1}Front-End}{159}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Controllers}{159}{subsubsection.4.1.1}
+\contentsline {subsubsubsection}{\numberline {4.1.1.1}RegistrationController - Registrazione di un nuovo utente}{159}{subsubsubsection.4.1.1.1}
+\contentsline {subsubsubsection}{\numberline {4.1.1.2}DashboardController - Apertura di un progetto}{160}{subsubsubsection.4.1.1.2}
+\contentsline {subsubsubsection}{\numberline {4.1.1.3}MindmapEditorController - Costruzione del controller}{160}{subsubsubsection.4.1.1.3}
+\contentsline {subsubsubsection}{\numberline {4.1.1.4}MindmapEditorController - Selezione di un nodo}{161}{subsubsubsection.4.1.1.4}
+\contentsline {subsubsubsection}{\numberline {4.1.1.5}PresentationController - Creazione di una presentazione}{162}{subsubsubsection.4.1.1.5}
+\contentsline {subsection}{\numberline {4.2}Back-End}{164}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Gestione generale delle richieste}{164}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Gestione dei fallimenti}{165}{subsubsection.4.2.2}
+\contentsline {subsubsubsection}{\numberline {4.2.2.1}Fallimento della procedura di registrazione}{165}{subsubsubsection.4.2.2.1}
+\contentsline {subsubsubsection}{\numberline {4.2.2.2}Fallimento del vincolo "utente autenticato"}{166}{subsubsubsection.4.2.2.2}
+\contentsline {subsubsubsection}{\numberline {4.2.2.3}Fallimento della richiesta di una lista di progetti}{166}{subsubsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3}Richieste REST}{167}{subsubsection.4.2.3}
+\contentsline {subsubsubsection}{\numberline {4.2.3.1}DELETE /profile}{167}{subsubsubsection.4.2.3.1}
+\contentsline {subsubsubsection}{\numberline {4.2.3.2}DELETE /projects/:projectId}{168}{subsubsubsection.4.2.3.2}
+\contentsline {subsubsubsection}{\numberline {4.2.3.3}PUT /projects/:projectId}{168}{subsubsubsection.4.2.3.3}
+\contentsline {subsubsubsection}{\numberline {4.2.3.4}GET /projects/:projectId}{169}{subsubsubsection.4.2.3.4}
+\contentsline {subsubsubsection}{\numberline {4.2.3.5}PUT /projects/:projectId/nodes/:nodeId}{169}{subsubsubsection.4.2.3.5}
+\contentsline {subsubsubsection}{\numberline {4.2.3.6}POST /projects/:projectId/associations}{170}{subsubsubsection.4.2.3.6}
+\contentsline {subsubsubsection}{\numberline {4.2.3.7}DELETE /projects/:projectId/associations/:associationId}{171}{subsubsubsection.4.2.3.7}
+\contentsline {subsubsubsection}{\numberline {4.2.3.8}PUT /projects/:projectId/path/:pathId}{171}{subsubsubsection.4.2.3.8}
+\contentsline {subsubsubsection}{\numberline {4.2.3.9}POST /projects/:projectId/path/:pathId}{172}{subsubsubsection.4.2.3.9}
+\contentsline {subsubsubsection}{\numberline {4.2.3.10}GET /projects/:projectId/premiPresentation}{172}{subsubsubsection.4.2.3.10}
+\contentsline {subsubsubsection}{\numberline {4.2.3.11}GET /static/userManual}{173}{subsubsubsection.4.2.3.11}
+\contentsline {section}{\numberline {5}Tracciamento}{174}{section.5}
+\contentsline {subsection}{\numberline {5.1}Tracciamento Classi-Requisiti}{174}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Tracciamento Requisiti-Classi}{191}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Tracciamento Componenti-Requisiti}{219}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Tracciamento Requisiti-Componenti}{235}{subsection.5.4}
+\contentsline {section}{Appendice \numberline {A}Interfaccia REST}{252}{Appendice.1.A}
+\contentsline {subsection}{\numberline {A.1}Errori}{252}{subsection.1.A.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Errori generici}{252}{subsubsection.1.A.1.1}
+\contentsline {subsubsubsection}{\numberline {A.1.1.1}Errori lato server}{252}{subsubsubsection.1.A.1.1.1}
+\contentsline {subsubsubsection}{\numberline {A.1.1.2}Errori nelle richieste da parte dei client}{252}{subsubsubsection.1.A.1.1.2}
+\contentsline {subsubsection}{\numberline {A.1.2}Errori specifici di Premi}{253}{subsubsection.1.A.1.2}
+\contentsline {subsection}{\numberline {A.2}Risorse REST}{254}{subsection.1.A.2}
+\contentsline {section}{Appendice \numberline {B}Design patterns}{263}{Appendice.1.B}
+\contentsline {subsection}{\numberline {B.1}Chain of Responsibility}{263}{subsection.1.B.1}
+\contentsline {paragraph}{Scopo}{263}{paragraph*.122}
+\contentsline {paragraph}{Motivazione}{263}{paragraph*.123}
+\contentsline {paragraph}{Applicabilit\IeC {\`a}}{263}{paragraph*.124}
+\contentsline {paragraph}{Utilizzo}{263}{paragraph*.125}
+\contentsline {paragraph}{Struttura}{264}{paragraph*.126}
+\contentsline {paragraph}{Collaborazioni}{264}{paragraph*.128}
+\contentsline {paragraph}{Svantaggi}{264}{paragraph*.129}
+\contentsline {subsection}{\numberline {B.2}Dependecy Injection}{264}{subsection.1.B.2}
+\contentsline {paragraph}{Scopo}{264}{paragraph*.130}
+\contentsline {paragraph}{Motivazione}{264}{paragraph*.131}
+\contentsline {paragraph}{Applicabilit\IeC {\`a}}{265}{paragraph*.132}
+\contentsline {paragraph}{Struttura}{265}{paragraph*.133}
+\contentsline {paragraph}{Svantaggi}{266}{paragraph*.135}
+\contentsline {subsection}{\numberline {B.3}Facade}{266}{subsection.1.B.3}
+\contentsline {paragraph}{Scopo}{266}{paragraph*.136}
+\contentsline {paragraph}{Motivazione}{266}{paragraph*.137}
+\contentsline {paragraph}{Applicabilit\IeC {\`a}}{266}{paragraph*.138}
+\contentsline {paragraph}{Utilizzo}{266}{paragraph*.139}
+\contentsline {subsection}{\numberline {B.4}Observer}{267}{subsection.1.B.4}
+\contentsline {paragraph}{Scopo}{267}{paragraph*.141}
+\contentsline {paragraph}{Motivazione}{267}{paragraph*.142}
+\contentsline {paragraph}{Applicabilit\IeC {\`a}}{267}{paragraph*.143}
+\contentsline {paragraph}{Utilizzo}{267}{paragraph*.144}
+\contentsline {section}{Appendice \numberline {C}Cytoscape}{269}{Appendice.1.C}
+\contentsline {subsection}{\numberline {C.1}Organizzazione dei dati}{269}{subsection.1.C.1}
+\contentsline {subsection}{\numberline {C.2}Inizializzazione della mappa}{269}{subsection.1.C.2}
+\contentsline {subsection}{\numberline {C.3}Eventi}{269}{subsection.1.C.3}

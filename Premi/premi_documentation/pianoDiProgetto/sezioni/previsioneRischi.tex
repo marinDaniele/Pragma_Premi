@@ -1,0 +1,256 @@
+%struttura report:
+%\subsubsection{Report fase X}
+%\subsubsubsection{Resoconto fase precedente}
+%\subsubsubsection{Nuovi rischi individuati}
+%Devono essere aggiunti in nella sezione §5.1 e qui deve essere inserito un riferimento e le motivazioni che hanno portato all'individuazione del rischio
+%\subsubsubsection{Previsioni incidenza}
+%tabella + commenti cambiamenti
+\subsubsection{Fase di \fAt}
+\subsubsubsection{Resoconto fase precedente}
+Essendo la fase iniziale del \gloxy{progetto} non è possibile effettuare un resoconto sull'incidenza o meno dei vari rischi identificati.
+\subsubsubsection{Nuovi rischi individuati}
+Sono state individuate varie tipologie di rischi, principalmente legati all'inesperienza dei componenti del gruppo.\\
+In particolare ne sono state individuate 4 tipologie:
+\begin{itemize}
+\item \textbf{\ref{lt} Livello tecnologico}: rischi legati ad un'errata scelta delle tecnologie adottate per realizzare il \gloxy{progetto};
+\item \textbf{\ref{lp} Livello personale}: rischi legati ai componenti del gruppo e ai rapporti interni;
+\item \textbf{\ref{lo} Livello organizzativo}: rischi legati ad una pianificazione errata delle attività;
+\item \textbf{\ref{lr} Livello dei requisiti}: rischi legati ad un'analisi dei requisiti errata o non sufficientemente approfondita.
+\end{itemize}
+\subsubsubsection{Previsioni incidenza}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline Rischio & Probabilità \\
+\hline
+\ref{r_framework} Problemi legati ai \gloxy{framework} & Alta \\
+\ref{r_inesp} Problemi legati all'inesperienza & Alta \\
+\ref{r_req} Problemi legati ai requisiti & Alta \\
+\ref{r_tec} Problemi legati alle tecnologie & Media \\
+\ref{r_stima} Problemi legati alla stima delle ore & Media \\
+\ref{r_comp} Problemi legati ai componenti del gruppo & Media \\
+\ref{r_appweb} Problemi legati ai servizi \gloxy{web} & Media \\
+\ref{r_liti} Problemi tra i componenti del gruppo & Bassa \\
+\ref{r_hw} Problemi legati alle risorse \gloxy{HW} & Bassa \\
+\hline
+\end{tabular}
+\caption{Probabilità d'incidenza dei rischi, fase di \fAt}
+\end{center}
+\end{table}
+\FloatBarrier
+\subsubsubsection{Mitigazione rischi}\label{mRisk1}
+Di seguito viene spiegato come verranno mitigati i rischi più critici previsti e saranno elencate le strategie atte a limitarne i possibili danni.
+\begin{itemize}
+\item{Problemi legati ai requisiti:} vista la fase in cui ci si trova è auspicabile che il problema non sia ancora pienamente compreso. Al fine di limitare questa possibilità è necessario che vengano effettuati incontri con il \gloxy{Proponente} in modo che siano ben delineate le funzionalità dell'applicativo e non si verifichino rischi di questa tipologia.
+\item{Problemi legati ai Framework:} può rivelarsi utile la creazione di piccoli prototipi, che permettano di comprendere il funzionamento di alcuni aspetti del \gloxy{framework}. Il tempo speso complessivamente nella creazione di tali prototipi risulta essere decisamente minore rispetto a quello richiesto per un cambo di \gloxy{framework}.
+\end{itemize}
+\subsubsection{Fase di \fADt}
+\subsubsubsection{Resoconto fase precedente}
+Durante la fase precedente si sono verificate delle discussioni tra i vari \rAs del gruppo, risolte mediante votazioni che hanno permesso di giungere a delle conclusioni in modo efficace. \\
+\subsubsubsection{Nuovi rischi individuati}
+Non sono stati individuati altri rischi poiché le attività svolte in questa fase sono simili a quelle svolte nella fase precedente.
+\subsubsubsection{Previsioni incidenza}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline Rischio & Probabilità \\
+\hline
+\ref{r_framework} Problemi legati ai \gloxy{framework} & Alta \\
+\ref{r_inesp} Problemi legati all'inesperienza & Alta \\
+\ref{r_liti} Problemi tra i componenti del gruppo & \textcolor{YellowOrange}{Media} \\
+\ref{r_tec} Problemi legati alle tecnologie & Media \\
+\ref{r_stima} Problemi legati alla stima delle ore & Media \\
+\ref{r_comp} Problemi legati ai componenti del gruppo & Media \\
+\ref{r_appweb} Problemi legati ai servizi \gloxy{web} & Media \\
+\ref{r_req} Problemi legati ai requisiti & \textcolor{OliveGreen}{Bassa} \\
+\ref{r_hw} Problemi legati alle risorse \gloxy{HW} & Bassa \\
+\hline
+\end{tabular}
+\caption{Probabilità d'incidenza dei rischi, fase di \fADt}
+\end{center}
+\end{table}
+\FloatBarrier
+\begin{itemize}
+\item Essendosi verificate delle discussioni nella fase precedente, la probabilità che si verifichino ulteriori discussioni e divergenze tra i vari componenti del gruppo aumenta;
+\item Gli esiti della \RR, riguardanti il documento \AR, sono stati positivi. Di conseguenza la probabilità che le future attività di analisi siano svolte in modo errato o non sufficientemente approfondito diminuisce.
+\end{itemize}
+\subsubsubsection{Mitigazione rischi}\label{mRisk2}
+Di seguito viene spiegato come verranno mitigati i rischi più critici previsti verranno elencate le strategie atte a limitarne i possibili danni.
+\begin{itemize}
+\item{Problemi legati ai Framework:} può rivelarsi utile la creazione di piccoli prototipi, che permettano di comprendere il funzionamento di alcuni aspetti del \gloxy{framework}. Il tempo speso complessivamente nella creazione di tali prototipi risulta essere decisamente minore rispetto a quello richiesto per un cambo di \gloxy{framework}.
+\item{Problemi legati all'inesperienza:} è necessario investire più tempo personale in ore di studio mirato a colmare le lacune che i vari membri del gruppo presentano in alcuni campi.
+\item{Problemi tra i componenti del gruppo:} i rischi relativi alle problematiche del gruppo sono stati risolti con discreti risultati, cercando un punto d'incontro tra le parti coinvolte.
+\end{itemize}
+\subsubsection{Fase di \fPAt}\label{ppa}
+\subsubsubsection{Resoconto fase precedente}
+Durante la fase precedente si sono verificati degli errori nella stima delle ore per il completamento delle attività pianificate. Ciò ha provocato l'esaurimento del tempo di \gloxy{slack} a disposizione per quella fase, oltre che una compressione dei tempi previsti per la fase successiva. Al fine di rispettare le ore preventivate, i ritardi causati dalla fase di \fAD hanno comportato un maggiore carico di lavoro giornaliero nella fase di \fPA. Si sono verificati dei rischi legati all'inesperienza dei componenti in alcune attività legate ai processi di supporto, e la gestione di tali rischi è stata agevolata grazie al supporto del \gloxy{committente}.
+\subsubsubsection{Nuovi rischi individuati}
+In questa fase non sono stati individuati nuovi rischi.
+\subsubsubsection{Previsioni incidenza}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline Rischio & Probabilità \\
+\hline
+\ref{r_framework} Problemi legati ai \gloxy{framework} & Alta \\
+\ref{r_inesp} Problemi legati all'inesperienza & \textcolor{red} {Alta} \\
+\ref{r_stima} Problemi legati alla stima delle ore & \textcolor{red}{Alta} \\
+\ref{r_liti} Problemi tra i componenti del gruppo & Media \\
+\ref{r_tec} Problemi legati alle tecnologie & Media \\
+\ref{r_comp} Problemi legati ai componenti del gruppo & Media \\
+\ref{r_appweb} Problemi legati ai servizi \gloxy{web} & Media \\
+\ref{r_req} Problemi legati ai requisiti & Bassa \\
+\ref{r_hw} Problemi legati alle risorse \gloxy{HW} & Bassa \\
+\hline
+\end{tabular}
+\caption{Probabilità d'incidenza dei rischi, fase di \fPAt}
+\end{center}
+\end{table}
+\FloatBarrier
+\begin{itemize}
+\item Rischi legati all'inesperienza potrebbero verificarsi anche in futuro, seppur con una minor incidenza sulle attività legate ai processi di supporto poiché i dubbi più incidenti sono stati chiariti;
+\item Rischi legati alla stima delle ore di pianificazione per una determinata attività potrebbero verificarsi in futuro. Questi rischi vengono quindi valutati come altamente pericolosi in quanto potrebbero avere effetti critici, influendo negativamente sul \gloxy{progetto}.
+\end{itemize}
+\subsubsubsection{Mitigazione rischi}\label{mRisk3}
+Di seguito viene spiegato come verranno mitigati i rischi più critici previsti e saranno elencate le strategie atte a limitarne i possibili danni.
+\begin{itemize}
+\item{Problemi relativi ai framework:} da mitigare con l'investimento di più ore di studio personali. Si presuppone che il \gloxy{team} abbia acquisito un discreto livello di conoscenza del \gloxy{framework}, poiché sono stati creati svariati prototipi per comprenderne meglio il funzionamento.
+\item{Problemi relativi alla stima delle ore:} da mitigare intensificando l'uso del sistema di \gloxy{ticketing}. Ciò garantisce al \rRP un maggiore controllo dell'avanzamento del lavoro, che permette una migliore gestione dello stesso, e comporta una diminuzione della probabilità di ritardi non preventivati.
+\end{itemize}
+\subsubsection{Fase di \fPDt}\label{ppd}
+\subsubsubsection{Resoconto fase precedente}
+Durante la fase precedente si sono verificati diversi rischi, tra cui litigi interni che sono stati opportunamente gestiti dal \rRP.
+In seguito all'assenza di un componente per due riunioni interne si è scelto di fissare un limite superiore di al massimo due assenze, giustificabili solo se si tratta di casi eccezionali. Il tempo impiegato nello studio dei \gloxy{framework} ha comportato uno slittamento in avanti nella pianificazione di alcune attività. In questo caso si è utilizzato lo \gloxy{slack} disponibile evitando quindi ritardi. Sono stati riscontrati alcuni problemi legati alla variazione dei requisiti in seguito ad un incontro con il \gloxy{proponente}: in questo caso, il rischio è stato mitigato in modo efficace riuscendo a modificare tempestivamente il documento di \AR, senza procurare ritardi ad altre attività.
+\subsubsubsection{Nuovi rischi individuati}
+In questa fase non sono stati individuati nuovi rischi.
+\subsubsubsection{Previsioni incidenza}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline Rischio & Pericolosità \\
+\hline
+\ref{r_liti} Problemi tra i componenti del gruppo & \textcolor{red} {Alta} \\
+\ref{r_comp} Problemi legati ai componenti del gruppo & \textcolor{red} {Alta} \\
+\ref{r_framework} Problemi legati ai \gloxy{framework} & \textcolor{red} {Alta} \\
+\ref{r_stima} Problemi legati alla stima delle ore & Alta \\
+\ref{r_inesp} Problemi legati all'inesperienza & Alta \\
+\ref{r_tec} Problemi legati alle tecnologie & Alta \\
+\ref{r_req} Problemi legati ai requisiti & \textcolor{YellowOrange} {Media} \\
+\ref{r_appweb} Problemi legati ai servizi \gloxy{web} & \textcolor{OliveGreen}{Bassa} \\
+\ref{r_hw} Problemi legati alle risorse \gloxy{HW} & Bassa \\
+\hline
+\end{tabular}
+\caption{Probabilità di incidenza dei rischi, fase di \fPDt}
+\end{center}
+\end{table}
+\FloatBarrier
+\begin{itemize}
+\item Rischi legati ai litigi interni potrebbero verificarsi in futuro ed avere effetti disastrosi. Infatti, se si perdesse l'affiatamento creato, non si riuscirebbe ad avanzare come previsto nei livelli di miglioramento descritti da SEMAT. Di conseguenza non si riuscirebbe a migliorare, in particolare nelle dimensioni ``\gloxy{team}'' e ``way of working''. L'aspetto di relazioni di fiducia e di rispetto che si instaurano all'interno di un gruppo è stato valutato con un grado di importanza alto dal \rRP. Esso permette ai componenti di lavorare  in modo unito e quindi di focalizzare le proprie energie su un obbiettivo comune, aumentando di molto le probabilità di successo nel lungo periodo;
+\item La pericolosità di problemi relativi a singoli componenti del gruppo è stata aggiornata ad alta. Se si riverificasse nuovamente un rischio simile in una situazione più critica (ad esempio a ridosso di una \gloxy{milestone} o di una consegna), in cui le tempistiche non permettessero margini di azione da parte del \rRP, verrebbe inevitabilmente compromesso il \gloxy{progetto}, portando a conseguenze catastrofiche per l'intero \gloxy{team};
+\item Rischi legati ai \gloxy{framework} possono presentarsi in questa fase nel caso fossero stati commessi errori di valutazione nella fase precedente;
+\item Rischi legati alla variazione dei requisiti non dovrebbero di norma riverificarsi. Nel caso si avverassero, verrebbero trattati come nella fase precedente, cercando di aggiornare subito il documento e modellando una soluzione semplice per il problema.
+\item I servizi \gloxy{web} scelti hanno risposto bene alle esigenze del gruppo senza provocare alcun tipo di problema. Per questo motivo la pericolosità del rischio è stata aggiornata a bassa.
+\end{itemize}
+\subsubsubsection{Mitigazione rischi}\label{mRisk4}
+Di seguito viene spiegato come verranno mitigati i rischi più critici previsti e saranno elencate le strategie atte a limitarne i possibili danni.
+\begin{itemize}
+\item{Problemi tra i componenti del gruppo:} considerando le esperienze precedenti, il rischio che si verifichino discussioni tra i componenti del gruppo è molto alto. A tale proposito, si cercherà di trovare dei punti d'incontro tra le parti coinvolte, in modo da appianare le divergenze. Nel caso di situazioni gravi, il \rRP potrà decidere di allontanare i membri problematici dalle rispettive aree di lavoro, in modo da diminuirne l'interazione.
+\item{Problemi legati ai componenti del gruppo:} visto quanto accaduto nella fase precedente, per tale rischio è stato alzato il livello di occorrenza. La strategia adottata fino a questo momento è stata molto buona. Dunque, in caso di nuova incidenza, si procederà ad una redistribuzione del carico di lavoro tra i membri del \gloxy{team}, cercando di mantenere equità nelle ore di lavoro.
+\end{itemize}
+\subsubsection{Fase di \fCt}\label{ppd}
+\subsubsubsection{Resoconto fase precedente}
+Durante la fase precedente si sono verificati rischi legati principalmente allo studio dei \gloxy{framework} e all'inesperienza dei componenti del \gloxy{team}. La conseguente creazione di prototipi ha portato a consumare lo \gloxy{slack} ricavato dalla fase precedente, oltre a quello pianificato per questa fase. Si è scelto infatti di consegnare in ingresso a \RP una progettazione contenente le varie componenti descritte nel dettaglio. Per fare ciò è stato necessario uno studio impegnativo dei \gloxy{framework} scelti. Questo rischio era stato preventivato durante la pianificazione di \fA e discusso adeguatamente tra i membri del gruppo. Si è scelto comunque di consegnare RPmax in quanto si è cercato diminuire il carico di lavoro della fase successiva, anche in vista della correzione dei documenti(sottostimata in fase di \fAD).
+Si è rivelata cruciale la scelta attuata nella precedente fase riguardo i rischi interni al \gloxy{team}: in questa fase sono stati risolti i problemi precedenti ed i vari componenti del \gloxy{team} sono riusciti a lavorare assieme, evitando litigi inutili.
+\subsubsubsection{Nuovi rischi individuati}
+In questa fase non sono stati individuati nuovi rischi.
+\subsubsubsection{Previsioni incidenza}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline Rischio & Pericolosità \\
+\hline
+\ref{r_inesp} Problemi legati all'inesperienza & \textcolor{red} {Alta} \\
+\ref{r_framework} Problemi legati ai \gloxy{framework} & \textcolor{red} {Alta} \\
+\ref{r_liti} Problemi tra i componenti del gruppo & Alta \\
+\ref{r_stima} Problemi legati alla stima delle ore & Alta \\
+\ref{r_tec} Problemi legati alle tecnologie & Alta \\
+\ref{r_comp} Problemi legati ai componenti del gruppo & \textcolor{YellowOrange} {Media} \\
+\ref{r_req} Problemi legati ai requisiti & \textcolor{OliveGreen}{Bassa} \\
+\ref{r_appweb} Problemi legati ai servizi \gloxy{web} & Bassa \\
+\ref{r_hw} Problemi legati alle risorse \gloxy{HW} & Bassa \\
+\hline
+\end{tabular}
+\caption{Probabilità di incidenza dei rischi, fase di \fCt}
+\end{center}
+\end{table}
+\FloatBarrier
+\begin{itemize}
+\item Rischi legati ai litigi interni potrebbero comunque verificarsi in futuro, nonostante siano stati mitigati;
+\item La pericolosità dei problemi relativi a singoli componenti del gruppo è stata aggiornata a ``media''. In questa fase è stata riscontrata un'ottima risposta da parte di tutti i componenti: ognuno ha dimostrato la piena disponibilità ed un notevole impegno nel portare a termine le attività assegnategli;
+\item Rischi legati ai \gloxy{framework} si sono concretizzati durante la fase precedente e sono stati mitigati grazie alla collaborazione tra i \rPs, che sono riusciti a trovare una soluzione per ogni nuovo problema o dubbio emerso;
+\item Non si sono verificati rischi legati alla variazione dei requisiti, in quanto la comunicazione con \proponente ha chiarito qualsiasi possibile incomprensione o dubbio riscontrato. La pericolosità dei problemi legati ai requisiti è stata aggiornata a ``bassa''.
+\end{itemize}
+\subsubsubsection{Mitigazione rischi}\label{mRisk5}
+Di seguito viene spiegato come verranno mitigati i rischi più critici previsti e saranno elencate le strategie atte a limitarne i possibili danni.
+\begin{itemize}
+\item{Problemi tra i componenti del gruppo:} considerando le esperienze precedenti, il rischio che si verifichino discussioni tra i componenti del gruppo è molto alto. A tale proposito, si cercherà di trovare dei punti d'incontro tra le parti coinvolte, in modo da appianare le divergenze. Nel caso di situazioni gravi, il \rRP potrà decidere di allontanare i membri problematici dalle rispettive aree di lavoro, in modo da diminuirne l'interazione.
+\item{Problemi legati ai componenti del gruppo:} La strategia adottata fino a questo momento è stata molto buona. Dunque, in caso di nuova incidenza, si procederà ad una redistribuzione del carico di lavoro tra i membri del \gloxy{team}, cercando di mantenere equità nelle ore di lavoro.
+\end{itemize}
+\subsubsection{Fase di \fVVt}\label{pvv}
+\subsubsubsection{Resoconto fase precedente}
+Durante la fase precedente si sono verificati alcuni dei rischi che erano stati preventivati in \fCt.
+In particolare andando in ordine di gravità sono state rilevate diverse problematiche, ognuna delle quali è stata gestita secondo quanto descritto nella sezione di Analisi dei Rischi.
+\begin{itemize}
+\item \textbf{Problematiche relative alla ripianificazione di bilancio (vedi: \ref{r_bilancio})}: a seguito della ripianificazione di bilancio per rientrare nei costi concordati col \gloxy{Committente} è stata individuata questa nuova tipologia di rischio.
+In particolare per la fase di \fC non si è verificata nessuna problematica grazie ad alcuni accorgimenti.
+I tagli effettuati alle ore preventivate hanno riguardato principalmente l'Amministratore, l'Analista e il \rRP.
+Sebbene i tagli siano stati sostanziali, i nuovi tempi stabiliti per il lavoro sono stati sufficienti a coprire il carico di attività dettato, sottostimando leggermente le ore da \rRP.
+Dato il fatto che la maggior parte delle ore lavorative riguardava la codifica e progettazione, è stato scelto di non diminuire le ore da Programmatore e Progettista, stimando in maniera corretta il quantitativo di lavoro.
+\item \textbf{Problematiche tra membri del \gloxy{team}:} hanno costituito sicuramente il rischio con gli effetti più gravi tra quelli preventivati. Lo scontrarsi tra i membri del gruppo in alcune situazione ha generato un clima poco affine al lavoro di gruppo e tensioni interne tra i componenti. In alcuni casi le situazioni si sono risolte tramite il semplice intervento di una parte mediatrice ma nei casi più gravi si è dovuto ricorrere alla separazione tra i componenti assegnando loro aree di lavoro diverse in modo da diminuire l'interazione possibile. Questo ha a volte generato ritardi sul flusso di lavoro che è comunque stato gestito in maniera ottimale grazie all'esperienza acquisita nelle revisioni precedenti e grazie alla pianificazione generale che il gruppo sta adottando per avere un tracciamento dei lavori in corso.
+Questo tipo di problematica è la causa principale che ha portato ad uno stallo per quanto riguarda la progressione del SEMAT in ``Way of Working''.
+\item \textbf{Problematiche Servizi \gloxy{Web}}: alcune problematiche che sono occorse con l'utilizzo di \pragmadb. Nello specifico cause esterne hanno reso impossibile l'accesso per diverse ore impedendo il lavoro di alcuni componenti del gruppo durante l'attività di tracciamento. Le misure adottate in questo caso per risolvere il problema si sono concretizzate in una semplice segnalazione all'ente specifico, esterno al gruppo.
+\item \textbf{Problematiche dei singoli componenti}: rispetto alle previsioni fatte son occorse meno del previsto.
+Tuttavia si sono verificati in alcuni casi delle situazioni in cui i problemi personali di un singolo componente hanno costretto una ridistribuzione del carico dei lavoro tra i membri in modo da venire incontro alle esigenze personali di ognuno. In ogni caso si è proceduto con una distribuzione omogenea delle attività lavorative ed il \rRP si è assicurato che non ci fosse alcun tipo di squilibrio sotto ogni aspetto della pianificazione.
+\end{itemize}
+\subsubsubsection{Nuovi rischi individuati}
+È stato individuato un nuovo possibile rischio:
+\begin{itemize}
+\item Rischio legato alla ripianificazione di bilancio (vedi: \ref{r_bilancio}).
+\end{itemize}
+\subsubsubsection{Previsioni incidenza}\label{prevRisk}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline Rischio & Probabilità \\
+\hline
+\ref{r_bilancio} Problemi legati alla ripianificazione del bilancio & \textcolor{red}{Alta}\\
+\ref{r_liti} Problemi tra i componenti del gruppo & \textcolor{red} {Alta} \\
+\ref{r_inesp} Problemi legati all'inesperienza & {Alta} \\
+\ref{r_stima} Problemi legati alla stima delle ore & {Alta} \\
+\ref{r_framework} Problemi legati ai \gloxy{framework} & \textcolor{YellowOrange} {Media} \\
+\ref{r_appweb} Problemi legati ai servizi \gloxy{web} & \textcolor{YellowOrange} {Media} \\
+\ref{r_comp} Problemi legati ai componenti del gruppo & Media \\
+\ref{r_tec} Problemi legati alle tecnologie & Media \\
+\ref{r_req} Problemi legati ai requisiti & Bassa \\
+\ref{r_hw} Problemi legati alle risorse \gloxy{HW} & Bassa \\
+\hline
+\end{tabular}
+\caption{Probabilità d'incidenza dei rischi, fase di \fVVt}
+\end{center}
+\end{table}
+\FloatBarrier
+\begin{itemize}
+\item La ripianificazione delle ore di lavoro con il loro conseguente taglio al fine di rientrare nel budget prestabilito porta il rischio che nella fase successiva non ci sia abbastanza tempo per svolgere tutte le attività richieste a seguito di eventuali ritardi sui lavori.
+La probabilità di occorrenza viene quindi impostata su ``alta'' in quanto non prevedere il verificarsi di alcun rischio è altamente improbabile.
+Sarà quindi cruciale la gestione delle attività e come verranno mitigate la situazione anomale che verranno a verificarsi.
+\item I rischi legati all'interazione tra i membri del gruppo continuano a rimanere su pericolosità ``alta''.
+In previsione del prossimo periodo di lavoro si stima che i litigi interni continueranno a risultare una problematica da affrontare. Per quanto si sia cercato di mitigare questo tipo di situazioni e siano sensibilmente migliorate il rischio che si verifichino è molto alto.
+\item Le problematiche relative ai servizi \gloxy{web} ed in particolare al funzionamento di \pragmadb sono state aggiornate a ``media''. Durante il periodo di lavoro precendente l'impossibilità di accedere a \pragmadb ha portato a ritarti, seppur leggeri, sui lavori. In vista della prossima revisione l'utilizzo del database interno sarà intenso, pertanto la possibilità del verificarsi di problematiche potrebbe aumentare.
+\item Le problematiche riguardanti  i \gloxy{framework} utilizzati è scesa a ``media''. Superato lo scoglio iniziale dove si è entrati in contatto per la prima volta con le tecnologie utilizzate, i componenti stanno cominciando ad acquisire una buona manualità e confidenza con quanto utilizzato. Di conseguenza si prevede una leggera diminuzione delle problematiche relative a questo aspetto, tenendo comunque in considerazione il fatto che anche se si sone verificate precedentemente sono sempre state mitigate riducendo l'impatto sui lavori.
+\end{itemize}
+\subsubsubsection{Mitigazione rischi}\label{mRisk6}
+Di seguito viene spiegato come verranno mitigati i rischi più critici previsti e saranno elencate le strategie atte a limitarne i possibili danni.
+\begin{itemize}
+\item {Problematiche derivate dalla revisione di bilancio:} i rischi introdotti dalla revisione di bilancio sono molto concreti e auspicabili nella prossima fase. Nel caso si dovessero verificare si sono pensati ad alcuni accorgimenti per mitigare gli effetti. Una possibile taglio alle ore non necessarie nella prossima fase può essere attuato nella necessità che qualche ruolo abbia bisogno di più ore lavorative per poter compiere quanto assegnato. Il margine comunque rimane molto lieve in quanto sono già stati fatti onerosi tagli. La buona gestione attuata durante la \fC e i risparmi in termini di \euro che sono stati ottenuti costituiscono un fondo dal quale attingere nel caso fosse necessario aggiungere qualche ora per completare i lavori. Si stima che questo sia possibile per quanto riguarda in particolare la Codifica.
+\item Per quanto riguarda gli altri rischi non si suono individuate nuove strategie di mitigazione differenti da quelle utilizzate e raffinate fino a questo momento. SI considera buona la gestione dei rischi nel caso occorrano e i loro danni vengono limitati quanto più possibile, ove possibile.
+\end{itemize}

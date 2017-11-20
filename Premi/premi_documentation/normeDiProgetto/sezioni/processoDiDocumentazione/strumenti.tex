@@ -1,0 +1,19 @@
+\subsubsection{Strumenti}
+\subsubsubsection{\LaTeX\ e Texmaker}
+\LaTeX\ è il sistema scelto dal gruppo per la stesura della documentazione poiché consente di separare facilmente contenuto e formattazione, e permette di creare le varie sezioni in file separati, facilitando la stesura di documenti in parallelo. \LaTeX\ è estendibile attraverso comandi e funzioni definibili dall'utente, e dispone inoltre di svariati pacchetti che ne estendono ulteriormente le funzionalità.\par
+L'editor scelto dal gruppo per la redazione di tali documenti è \textbf{Texmaker}, poiché è stato scelto per la cura dell'interfaccia utente e per la completezza delle funzioni che mette a disposizione. Ad esempio è possibile abilitare il controllo ortografico durante la scrittura.
+\subsubsubsection{Editor UML}\label{editoruml}
+Per la modellazione dei diagrammi \gloxy{UML} è stato scelto l'editor \gloxy{multipiattaforma} \textbf{Visual Paradigm} 2.0, che fornisce supporto completo e presenta un'interfaccia semplice ed esaustiva.
+Inoltre consente l'importazione e l'esportazione di diagrammi in formato \gloxy{XML}, che è versionabile.\\
+Per la realizzazione dei diagrammi dei package e delle classi è stato scelto \textbf{Astah}, poiché alcuni formalismi grafici di Visual Paradigm non rispettano la notazione \gloxy{UML} 2.0. Anche \textbf{Astah} è \gloxy{multipiattaforma} ma è inoltre disponibile gratuitamente per studenti\footnote{Gli studenti possono richiedere gratuitamente la licenza Professional.}.
+\subsubsubsection{Script}\label{scriptlatex}
+Per semplificare la stesura dei documenti sono stati creati alcuni script, presenti nelle cartelle del \gloxy{repository} contenente la documentazione, che consentono di generare i documenti nel formato \gloxy{pdf}:
+% e sono presenti nelle cartelle di ogni documento:
+\begin{itemize}
+\item \textbf{\pragmaDocs}: si trova nella cartella principale ed è utilizzabile mediante il comando \texttt{./\pragmaDocs}. Esso consente di generare tutti i documenti presenti nel \gloxy{repository}, ne calcola l'indice Gulpease e marca tutti i termini presenti nel \G . L'indice Gulpease è calcolato con la seguente formula:\par
+\[89+\frac{300(numero~delle~frasi)-10(numero~delle~lettere)}{numero~delle~parole}\]
+\item \textbf{Script per la compilazione dei documenti singolarmente}: all'interno della cartella principale di ogni documento è presente uno script, utilizzabile mediante il comando \texttt{./nomeDellaCartella}, che genera il file \gloxy{pdf} del documento corrispondente. Ad esempio nella cartella \texttt{PianoDiProgetto} si dovrà utilizzare il comando \texttt{./pianoDiProgetto};
+\item \textbf{\G}: nella cartella del \G è disponibile lo script \texttt{./\G} che prende i termini memorizzati nel database \pragmadb e genera il corrispettivo documento.
+\end{itemize}
+\subsubsubsection{JSDoc 3}
+Per la documentazione di \emph{namespace}, \emph{classi}, \emph{metodi} e \emph{funzioni}, che costituiscono le \gloxy{API} dell'applicazione \gloxy{JavaScript}, è stato scelto di usare \textbf{JSDoc 3} poiché consente di \emph{uniformare},  \emph{semplificare} e \emph{velocizzare} notevolmente la stesura della documentazione, grazie alla creazione della stessa in formato \gloxy{HTML}, attraverso l'inserimento di commenti direttamente all'interno del codice.

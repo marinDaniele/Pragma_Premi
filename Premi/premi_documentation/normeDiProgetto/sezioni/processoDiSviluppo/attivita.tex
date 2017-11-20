@@ -1,0 +1,47 @@
+\subsubsection{Attività}
+\subsubsubsection{Analisi dei requisiti} %Si parla di Attività e Task, non ha senso usare il comando per i documenti.
+\subsubsubsubsection{Task - Studio di fattibilità}
+Alla pubblicazione dei capitolati d'appalto il \rRP avrà il compito di organizzare un adeguato numero di riunioni, affinché i membri del gruppo possano discutere e confrontarsi. A seguito di quanto emerso durante tali riunioni, gli \rAs dovranno procedere con la stesura del documento ``\SF'', che dovrà essere stilato basandosi sui seguenti punti:
+\begin{itemize}
+\item \textbf{Dominio Tecnologico e Applicativo}: riflessione su tecnologie e tecniche richieste per lo sviluppo del capitolato, dominio tecnologico e conoscenze che il \gloxy{team} già possiede;
+\item \textbf{Rapporto Costi/Benefici}: analisi della quantità di requisiti obbligatori e del loro costo in termini di realizzazione in funzione del risultato atteso;
+\item \textbf{Individuazione dei Rischi}: comprensione dei punti critici nella realizzazione e individuazione di eventuali rischi.
+\end{itemize}
+\subsubsubsubsection{Task - Analisi dei requisiti}
+Dopo aver concluso lo \SF, gli \rAs dovranno procedere con la stesura del documento ``\AR''.
+Lo scopo principale di questa attività è quella di produrre dei requisiti semplici e di facile comprensione, a partire da tutte le informazioni recuperabili. Per automatizzare e velocizzare il più possibile questa attività, è stato creato dal \gloxy{team} il software \pragmadb, in cui andranno inseriti tutti i requisiti.
+\subsubsubsection{Progettazione}\label{normeprog}
+\subsubsubsubsection{Task - Specifica tecnica}
+I \rPs devono definire la struttura ad alto livello dell'architettura del sistema e dei singoli componenti, raccogliendo il tutto nella \ST. Devono, inoltre, essere definiti i test di integrazione tra le varie componenti, che verranno inseriti in appendice al \PQ. \\
+I prodotti di questo task saranno:
+\begin{itemize}
+\item \textbf{Diagrammi \gloxy{UML}:}
+\begin{itemize}
+\item Diagrammi dei package;
+\item Diagrammi delle classi;
+\item Diagrammi di sequenza;
+\item Diagrammi di attività.
+\end{itemize}
+\item \textbf{Design pattern:} i \rPs devono fornire una descrizione dei \gloxy{design pattern} adottati nella definizione dell'architettura. Questa descrizione dovrà essere accompagnata da un diagramma \gloxy{UML}, che ne esemplifichi il funzionamento, e dalle motivazioni che hanno portato all'adozione di tale pattern;
+\item \textbf{Tracciamento delle componenti:} ogni componente dovrà essere tracciato ed associato ad almeno un requisito. In tal modo sarà possibile avere la certezza che tutti i requisiti accettati siano soddisfatti e che ogni componente presente nell'architettura soddisfi almeno un requisito. Tale tracciamento dovrà essere effettuato tramite \pragmadb, che si occupa di generare in modo automatico le relative tabelle. Maggiori informazioni sono disponibili nella sezione \ref{pragmadbTracciamento};
+\item \textbf{Test d'integrazione:} i \rPs devono definire delle strategie di verifica per poter dimostrare la corretta integrazione tra le varie componenti definite.
+\end{itemize}
+\subsubsubsubsection{Task - Definizione di prodotto}
+I Progettisti, a partire dalla \ST, devono produrre la \DP dove viene descritta la progettazione di dettaglio del sistema.
+Lo scopo di questo documento è quello di definire dettagliatamente ogni singola unità
+di cui è composto il sistema in modo da semplificare l’attività di codifica e allo stesso
+tempo di non fornire alcun grado di libertà al Programmatore.
+Parallelamente alla progettazione di dettaglio dei componenti software dovranno essere
+progettati i relativi test di unità che verranno descritti nel Piano di Qualifica.
+I prodotti di questo task saranno:
+\begin{itemize}
+\item \textbf{Diagrammi \gloxy{UML}:}
+\begin{itemize}
+\item Diagrammi dei package;
+\item Diagrammi delle classi;
+\item Diagrammi di sequenza.
+\end{itemize}
+\item \textbf{Definizione delle classi:} ogni classe precedentemente progettata viene descritta più nel dettaglio, fornendo una descrizione più approfondita dello scopo, delle sue funzionalità e del suo funzionamento. Per ogni classe dovranno essere anche definiti i vari metodi e attributi che la caratterizzano;
+\item \textbf{Tracciamento delle classi:} ogni classe deve essere tracciata ed associata ad almeno un requisito, in questo modo è possibile avere la certezza che tutti i requisiti accettati siano soddisfatti e che ogni classe presente nell'architettura soddisfi almeno un requisito. Questo tracciamento dev'essere effettuato tramite \pragmadb, che si occupa di generare in modo automatico le tabelle di tracciamento. Maggiori informazioni sono disponibili nella sezione \ref{pragmadbTracciamento};
+\item \textbf{Test di unità:} i \rPs devono definire le strategie di verifica delle varie classi in modo che durante l'attività di codifica sia possibile verificare che la classe si comporti in modo corretto.
+\end{itemize}

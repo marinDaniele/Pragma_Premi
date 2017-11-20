@@ -1,0 +1,70 @@
+% ----- Comandi legati alla DP
+\newcommand{\dpWhiteSpace}{\ }
+\newcommand{\dpCyDiv}{\texttt{<div class=``cy''></div>}}
+\newcommand{\dpHandleSuccess}{Metodo di utilità che si occupa di gestire il successo di una chiamata HTTP verso il server e che non ritorna dati.}
+\newcommand{\dpHandleError}{Metodo di utilità che si occupa di gestire il fallimento di una chiamata HTTP verso il server.}
+\newcommand{\dpResponseParam}{Parametro che rappresenta l'oggetto ricevuto in risposta ad una chiamata HTTP effettuata con \texttt{\$http}.}
+\newcommand{\dpReturnPromise}[1]{Il metodo ritorna un oggetto \texttt{Promise} che può venire risolto o rifiutato.
+Nel caso la promessa venga risolta, verrà fornito come risultato un #1.
+Se invece la promessa viene rifiutata, sarà fornita come ragione un oggetto \texttt{ErrorInfo} contenente tutte le informazioni relative all’errore che si è verificato.}
+\newcommand{\dpReturnPromiseNoValue}{Il metodo ritorna un oggetto \texttt{Promise} che può venire risolto o rifiutato.
+Nel caso la promessa venga rifiutata, verrà fornita come ragione un oggetto \texttt{ErrorInfo} contenente tutte le informazioni relative all’errore che si è verificato.}
+% descrizione della funzione next passata per parametro per il \gloxy{callback} dei \gloxy{controller} del \gloxy{backend}
+\newcommand{\dpNext}{Rappresenta la \gloxy{callback} che il metodo deve chiamare al termine dell'elaborazione per passare il controllo ai successivi middleware. La presenza del parametro facoltativo \texttt{PremiError} attiva la catena di gestione dell'errore in sostituzione della normale catena di gestione delle richieste.}
+%descrizione della funzione \gloxy{callback} passata per parametro al model
+\newcommand{\dpCallback}{Rappresenta la \gloxy{callback} che il metodo deve chiamare al termine dell'elaborazione nel caso in cui non si siano verificati errori.}
+%descrizione della funzione errback passata per parametro al model
+\newcommand{\dpErrBack}{Rappresenta la \gloxy{callback} che il metodo deve chiamare qualora si verificassero errori durante l'esecuzione del metodo.}
+\newcommand{\dpErrBackConstructor}{Rappresenta la \gloxy{callback} che il metodo deve chiamare qualora si verificassero errori nella costruzione di un oggetto.}
+% ----- Directive
+\newcommand{\dpIsolatedScope}{Oggetto scope della directive. Questo scope è locale alla directive ed è situato al di fuori della gerarchia principale della pagina.\xspace}
+\newcommand{\dpRestrict}{Stringa che specifica le modalità che permettono di inserire una directive all’interno della pagina.\xspace}
+\newcommand{\dpTemplate}{Stringa che definisce il \gloxy{template} \gloxy{HTML} della directive.\xspace}
+\newcommand{\dpTemplateUrl}{Stringa contenente il \gloxy{percorso} dove è situato il file \gloxy{HTML} che contiene il \gloxy{template} della directive.\xspace}
+\newcommand{\dpReplace}{Valore booleano che specifica se il template della directive andrà a sostituire o meno l'elemento del DOM nel quale la directive è dichiarata.\xspace}
+\newcommand{\dpLinkFn}{Funzione che viene invocata da \gloxy{Angular} durante la fase di compilazione della pagina. Permette manipolare il DOM, aggiungendo nuovi elementi o definendo un comportamento per l’elemento.\xspace}
+\newcommand{\dpDirectiveController}{Stringa contenente il nome del controller della directive.}
+% ----- \gloxy{Controller}
+\newcommand{\dpConstructor}{Metodo costruttore della classe.\xspace}
+% Duplicati intenzionalmente nel caso si voglia andare a differenziare la descrizione di un parametro da quella del campo dati
+\newcommand{\dpScopeField}{Campo dati contenente un riferimento all'oggetto \texttt{\$scope} creato da \gloxy{Angular}, viene utilizzato come mezzo di comunicazione tra il \gloxy{controller} e la \gloxy{view}. Contiene gli oggetti che definiscono il model dell'applicazione.\xspace} %Angular Docs: scope is an object that refers to the application model.
+\newcommand{\dpScopeParam}{Parametro contenente un riferimento all'oggetto \texttt{\$scope} creato da \gloxy{Angular}, viene utilizzato come mezzo di comunicazione tra il \gloxy{controller} e la \gloxy{view} e contiene gli oggetti che definiscono il model dell'applicazione.\xspace} %Angular Docs: scope is an object that refers to the application model.
+\newcommand{\dpRootScopeField}{Campo dati contenente un riferimento all'oggetto \texttt{\$rootScope} creato da Angular è lo \texttt{\$scope} principale dell'applicazione, tutti gli altri \texttt{\$scope} discendono da questo oggetto.\xspace}
+\newcommand{\dpRootScopeParam}{Parametro contenente un riferimento all'oggetto \texttt{\$rootScope} creato da \gloxy{Angular}, è lo \texttt{\$scope} principale dell'applicazione, tutti gli altri \texttt{\$scope} discendono da questo oggetto.\xspace}
+\newcommand{\dpLocationField}{Campo dati contenente un riferimento al servizio creato da \gloxy{Angular} che permette di accedere alla barra degli indirizzi del \gloxy{browser}, i cambiamenti all’URL nella barra degli indirizzi si riflettono in questo oggetto e viceversa.\xspace}
+\newcommand{\dpLocationParam}{Parametro contenente un riferimento al servizio creato da \gloxy{Angular} che permette di accedere alla barra degli indirizzi del \gloxy{browser}, i cambiamenti all’URL nella barra degli indirizzi si riflettono in questo oggetto e viceversa.\xspace}
+\newcommand{\dpRouteParamsField}{Campo dati contenente un riferimento al servizio creato da \gloxy{Angular} che permette di recuperare i parametri presenti nell'URL di una \gloxy{view}.\xspace}
+\newcommand{\dpRouteParamsParam}{Parametro contenente un riferimento al servizio creato da \gloxy{Angular} che permette di recuperare i parametri presenti nell'URL di una \gloxy{view}.\xspace}
+\newcommand{\dpWindowServiceField}{Campo dati contenente un riferimento al servizio creato da \gloxy{Angular} che permette di accedere alle proprietà della finestra del browser.}
+\newcommand{\dpWindowServiceParam}{Parametro contenente un riferimento al servizio creato da \gloxy{Angular} che permette di accedere alle proprietà della finestra del browser.}
+\newcommand{\dpMDUtilServiceField}{Campo dati contenente un riferimento al servizio della libreria \nogloxy{\textit{Material for Angular}} che permette offre funzioni d'utilità per la gestione delle barre di navigazione.}
+\newcommand{\dpMDUtilServiceParam}{Parametro contenente un riferimento al servizio della libreria \nogloxy{\textit{Material for Angular}} che permette offre funzioni d'utilità per la gestione delle barre di navigazione}
+\newcommand{\dpMDDialogServiceField}{Campo dati contenente un riferimento al servizio della libreria \nogloxy{\textit{Material for Angular}} che permette di creare delle componenti a popup.}
+\newcommand{\dpMDDialogServiceParam}{Parametro contenente un riferimento al servizio della libreria \nogloxy{\textit{Material for Angular}} che permette di creare delle componenti a popup.}
+\newcommand{\dpMDSidenavServiceField}{Campo dati contenente un riferimento al servizio della libreria \nogloxy{\textit{Material for Angular}} che permette di gestire le barre di navigazione.}
+\newcommand{\dpMDSidenavServiceParam}{Parametro contenente un riferimento al servizio della libreria \nogloxy{\textit{Material for Angular}} che permette di gestire le barre di navigazione.}
+% descrizione dei servizi usati nei \gloxy{controller}
+%\newcommand{\dpServerErrorServiceField}{Campo dati contenente un riferimento al servizio che fornisce la descrizione degli %errori di comunicazione con il \gloxy{server}.\xspace}
+%\newcommand{\dpServerErrorServiceParam}{Parametro contenente un riferimento al servizio che fornisce la descrizione degli errori di comuncazione con il \gloxy{server}.\xspace}
+\newcommand{\dpAuthenticationServiceField}{Campo dati contenente un riferimento al servizio che si occupa della gestione delle informazioni legate all'autenticazione.\xspace}
+\newcommand{\dpAuthenticationServiceParam}{Parametro contenente un riferimento al servizio che si occupa della gestione delle informazioni legate all'autenticazione.\xspace}
+\newcommand{\dpProjectServiceField}{Campo dati contenente un riferimento al servizio che si occupa della gestione dei \gloxy{progetti}.\xspace}
+\newcommand{\dpProjectServiceParam}{Parametro contenente un riferimento al servizio che si occupa della gestione dei \gloxy{progetti}.\xspace}
+\newcommand{\dpNodeServiceField}{Campo dati contenente un riferimento al servizio che si occupa della gestione della mappa mentale.\xspace}
+\newcommand{\dpNodeServiceParam}{Parametro contenente un riferimento al servizio che si occupa della gestione della mappa mentale.\xspace}
+\newcommand{\dpPathServiceField}{Campo dati contenente un riferimento al servizio che si occupa della gestione dei \gloxy{percorsi} di presentazione.\xspace}
+\newcommand{\dpPathServiceParam}{Parametro contenente un riferimento al servizio che si occupa della gestione dei \gloxy{percorsi} di presentazione.\xspace}
+\newcommand{\dpNavServiceField}{Campo dati contenente un riferimento al servizio che si occupa della gestione delle schede del menù di navigazione.\xspace}
+\newcommand{\dpNavServiceParam}{Parametro contenente un riferimento al servizio che si occupa della gestione delle schede del menù di navigazione.\xspace}
+\newcommand{\dpPresentationServiceField}{Campo dati contenente un riferimento al servizio che si occupa della gestione dei dati relativi alla presentazione.\xspace}
+\newcommand{\dpPresentationServiceParam}{Parametro contenente un riferimento al servizio che si occupa della gestione dei dati relativi alla presentazione.\xspace}
+\newcommand{\dpHttpField}{Campo dati contenente un riferimento al servizio \texttt{\$http} creato da \gloxy{Angular} per facilitare la comunicazione metiante protocollo HTTP.\xspace}
+\newcommand{\dpHttpParam}{Parametro contenente un riferimento al servizio \texttt{\$http} creato da \gloxy{Angular} per facilitare la comunicazione metiante protocollo HTTP.\xspace}
+\newcommand{\dpMindMapServiceParam}{Paramentro contenente un riferimento al servizio \texttt{MindmapAdapterService}}
+\newcommand{\dpMindMapServiceField}{Campo dati contenente un riferimento al servizio \texttt{MindmapAdapterService}}
+\newcommand{\dpConstantServiceField}{Paramentro contenente un riferimento al servizio \texttt{SERVER$\_$URL}.}
+\newcommand{\dpConstantServiceParam}{Campo dati contenente un riferimento al servizio \texttt{SERVER$\_$URL}.}
+\newcommand{\dpQField}{Campo dati contenente un riferimento al servizio \texttt{\$q} creato da \gloxy{Angular} per facilitare la gestione di funzione asincrone mediante l'utilizzo delle promesse.\xspace}
+\newcommand{\dpQParam}{Parametro contenente un riferimento al servizio \texttt{\$q} creato da \gloxy{Angular} per facilitare la gestione di funzione asincrone mediante l'utilizzo delle promesse.\xspace}
+%\newcommand{\dpCustomSrviceField}{}
+%\newcommand{\dpCustomServiceParam}{}

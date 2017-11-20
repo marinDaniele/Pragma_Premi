@@ -1,0 +1,46 @@
+\subsubsection{Strumenti}
+\label{strumentiVerifica}
+\subsubsubsection{Documentazione}
+\subsubsubsubsection{Texmaker}
+Configurando il controllo ortografico di \textbf{Texmaker} vengono mostrati eventuali errori durante la stesura del documento.
+\subsubsubsubsection{Aspell}
+\textbf{Aspell} è stato adottato per ottenere ulteriore supporto alla correzione ortografica.
+Può essere avviato da riga di comando, ma per renderne più semplice l'utilizzo, è stato reso accessibile mediante un \textit{Makefile}.
+\subsubsubsubsection{Script}
+Gli script citati nella \customRef{scriptlatex}{sezione} sono stati sviluppati per automatizzare il controllo dei documenti,
+ad esempio calcolando l'indice Gulpease e marcando opportunamente i termini presenti nel \G.
+\subsubsubsubsection{\pragmadb}
+Sistema di gestione dei requisiti, dei casi d'uso, dei termini del \G, delle fonti e degli attori creato
+da alcuni membri gruppo. I requisiti riportati nei documenti verranno direttamente estrapolati dal database \pragmadb.
+Ulteriori dettagli sono disponibili nella \customRef{PragmaDB}{sezione}.
+\subsubsubsection{Codice}
+\subsubsubsubsection{Strumenti di analisi statica}
+\subsubsubsubsubsection{\gloxy{JSHint}}
+Strumento per la rilevazione di errori e problemi nel codice \gloxy{JavaScript}, attenendosi a regole di codifica definite.
+Nel caso specifico di questo \gloxy{progetto}, \textbf{\gloxy{JSHint}} verrà utilizzato da riga di comando e installato come modulo per Node.js;
+\subsubsubsubsubsection{\gloxy{CSSLint}}
+Strumento simile a \textbf{\gloxy{JSHint}}, verrà impiegato però per l'analisi di codice \gloxy{CSS}.
+Anch'esso verrà installato come modulo per Node.js ed eseguito da riga di comando;
+\subsubsubsubsubsection{\gloxy{W3C} Markup Validator Service}
+Validatore \gloxy{W3C} che segnala eventuali errori di sintassi nel codice \gloxy{HTML}.
+L'indirizzo \gloxy{web} di riferimento è il seguente: \url{validator.w3.org};
+\subsubsubsubsubsection{complexity-report}
+Applicazione, disponibile come modulo per Node.js, che misura metriche riguardanti codice \gloxy{JavaScript}, in particolare:
+\begin{itemize}
+\item \textit{Complessità ciclomatica}: misura la complessità di funzioni, metodi o classi di un programma;
+\item \textit{Rapporto linee di commento su linee di codice}: misura il rapporto tra linee di codice e linee di commento;
+\item \textit{Dipendenze}: il numero di dipendenze interne o esterne con altre classi o moduli;
+\item \textit{Chiamate annidate di metodi e funzioni}: il numero di chiamate innestate di funzioni e metodi all'interno di altre funzioni;
+\item \textit{Indice di manutenibilità}: valore che indica quanto il codice prodotto è mantenibile.
+\end{itemize}
+\subsubsubsubsection{Strumenti di analisi dinamica}
+\subsubsubsubsubsection{\gloxy{Google Chrome} DevTools}
+Gli strumenti per gli sviluppatori forniti da \gloxy{Google Chrome} consentono di effettuare il profiling del software, e monitorare quindi l'utilizzo della CPU e della memoria da parte di oggetti e funzioni \gloxy{JavaScript} utilizzati dall'applicazione \gloxy{web}.
+\subsubsubsubsubsection{\gloxy{Karma}}
+Si tratta di uno strumento per eseguire test d'unità, che verrà configurato per eseguire test specifici riguardanti gli script \gloxy{JavaScript}. Poiché si tratta di un modulo per Node.js, è eseguibile da riga di comando ed è integrabile direttamente in \textbf{\gloxy{WebStorm}}.
+\subsubsubsubsubsection{Jasmine}
+\gloxy{Framework} che permette di testare codice \gloxy{JavaScript} in modo behaviour-driven. \`{E} caratterizzato da una sintassi espressiva che permette di scrivere test facilmente comprensibili e, inoltre, non dipende da nessun altro \gloxy{framework} e non ha bisogno del DOM per fornire le sue funzionalità. Per eseguire i test di Jasmine viene usato \gloxy{Karma}.
+\subsubsubsubsubsection{Mocha}
+Si tratta di un \gloxy{framework} che permette di eseguire dei test su codice \gloxy{JavaScript}; focalizzato sul testing \textit{asincrono}, permette di utilizzare \textit{promises}, e fornisce utili strumenti quali report specifici e metriche sui test, ad esempio \textit{test coverage}.
+\subsubsubsubsubsection{Istanbul}
+Si tratta di uno strumento che permette di calcolare metriche di \textit{code coverage} per \gloxy{JavaScript}; disponibile come modulo per Node.js, permette di ottenere dei report \gloxy{HTML} che consentono di analizzare in dettaglio i livelli di coverage raggiunti.

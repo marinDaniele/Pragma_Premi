@@ -1,0 +1,211 @@
+\section{Analisi dei rischi}\label{adr}
+%le probabilità di occorrenza sono state commentate nell'attuazione delle modifiche in seguito a E1-6
+Per garantire il corretto avanzamento del \gloxy{progetto} è stata effettuata un'attenta analisi dei rischi applicando la  procedura di rilevazione indicata in \normeDiProgetto. \\
+La procedura descritta ha portato all'identificazione di vari rischi e alla predisposizione di contromisure per ridurne l'impatto sul \gloxy{progetto}. \\
+I rischi saranno quindi costantemente monitorati e, nel caso si verificassero, saranno mitigati dalle contromisure decise proattivamente durante la procedura di rilevazione.\\
+Infine il loro riscontro effettivo nel corso del \gloxy{progetto} sarà descritto nel presente documento ed evidenziato in §\ref{rplg}.\\ Quest'ultimo sarà lo strumento principale utilizzato dal \rRP per avere una visione chiara e semplice dello stato attuale in cui si trova il \gloxy{team} rispetto ai rischi individuati. \\
+Ogni rischio individuato è descritto con:
+\begin{itemize}
+%\item \textbf{Probabilità di occorrenza:} valutazione della probabilità di occorrenza del rischio, espressa in: Alta, Media o Bassa;
+\item \textbf{Pericolosità:} valutazione della pericolosità del rischio e dell'impatto che ha sulla pianificazione del \gloxy{progetto}, espressa in: Alta, Media e Bassa;
+\item \textbf{Descrizione:} breve descrizione del rischio;
+\item \textbf{Strategie di rilevazione:} descrizione di come viene individuata la situazione rischiosa e definizione delle responsabilità di rilevamento;
+\item \textbf{Contromisure:} descrizione delle contromisure che saranno adottate per ridurre l'impatto del rischio nel caso che si verifichi.
+\item \textbf{Riscontro:} descrizione di come e se il rischio è stato effettivamente riscontrato.
+\end{itemize}
+\uline{I parametri appena indicati saranno costantemente aggiornati} per avere una visione sempre attualizzata della situazione del \gloxy{team} e permetteranno al \rRP di agire tempestivamente, applicando le contromisure adeguate.
+\subsection{Rischi individuati}\label{ri}
+% intro
+%per ogni rischio:
+%Occorrenza, Pericolosità, Descrizione, Rilevazione, Contromisure
+\subsubsection{Livello tecnologico} \label{lt}
+%Mancanza di conoscenza riguardo le tecnologie
+\subsubsubsection{Problemi legati alle tecnologie}\label{r_tec}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Media;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} Le tecnologie imposte dal capitolato sono note a buona parte del gruppo. Tuttavia non è da escludere la possibilità che i membri del gruppo incontrino problemi nell'utilizzo di queste;
+\item \textbf{Strategie di rilevazione:} Sarà compito del \rRP verificare le conoscenze dei componenti monitorando costantemente la loro preparazione riguardo le tecnologie adottate;
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Il materiale necessario per documentarsi sulle tecnologie sarà fornito dall'\rAP;
+\item La pianificazione verrà attualizzata tenendo conto del rischio e calcolando nel dettaglio, per ogni componente, il tempo necessario affinché egli possa documentarsi adeguatamente riguardo le tecnologie adottate.
+\end{itemize}
+\item \textbf{Riscontro:} Non è stato finora riscontrato nessun rischio.
+\end{itemize}
+%Framework inadeguato
+\subsubsubsection{Problemi legati al framework adottato}\label{r_framework}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Alta;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} La scelta del \gloxy{framework} per la realizzazione del \gloxy{progetto} è a discrezione del gruppo. Data la grande quantità di framework attualmente disponibili, esiste la possibilità che il gruppo scelga un \gloxy{framework} non adatto allo sviluppo del \gloxy{progetto};
+\item \textbf{Strategie di rilevazione:} I \rPs dovranno porre molta attenzione nella scelta del \gloxy{framework}, documentandosi adeguatamente riguardo gli ambiti di possibile utilizzo dello stesso. Dovranno inoltre effettuare dei test preliminari per verificare che il \gloxy{framework} soddisfi le aspettative attese;
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Se questo tipo di problema viene rilevato prima dell'inizio dello sviluppo, i \rPs, in collaborazione con l'\rAP, dovranno cercare un nuovo \gloxy{framework} oppure trovare una soluzione alternativa.
+\end{itemize}
+\item \textbf{Riscontro:} In seguito ad un incremento dei requisiti si sono dovuti studiare e valutare una serie di \gloxy{framework} necessari per realizzare un sistema che ben si adattasse a risolvere il nuovo tipo di problema. \`E stato inoltre necessario creare dei prototipi per progettare correttamente le componenti di dettaglio dell'architettura.
+\end{itemize}
+%Rotture \gloxy{HW}
+\subsubsubsection{Problemi legati alle risorse hardware}\label{r_hw}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Bassa;
+\item \textbf{Pericolosità:} Bassa;
+\item \textbf{Descrizione:} I computer usati dai vari componenti potrebbero rompersi o avere malfunzionamenti;
+\item \textbf{Strategie di rilevazione:} Qualora il computer di un componente del gruppo diventi inutilizzabile, sarà compito del proprietario avvisare il \rRP, il quale provvederà a trovare una soluzione;
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Alcuni membri del gruppo hanno messo a disposizione un secondo computer da prestare per diminuire la perdita di tempo;
+\item Sarà possibile utilizzare i computer presenti nei laboratori dell'università. \\
+\item La facilità di installazione e la portabilità dei programmi scelti per lo sviluppo del \gloxy{progetto} renderanno possibile ritornare al lavoro in breve tempo;
+\end{itemize}
+\item \textbf{Riscontro:} Non è stato finora riscontrato nessun rischio.
+\end{itemize}
+%Problemi dovuti all'utilizzo di servizi \gloxy{Cloud}
+\subsubsubsection{Problemi legati alle applicazioni web}\label{r_appweb}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Alta;
+\item \textbf{Pericolosità:} Bassa;
+\item \textbf{Descrizione:} Il \gloxy{repository}, il sistema di \gloxy{ticketing} e i programmi per la gestione dei requisiti e del glossario sono eseguiti su \gloxy{server} terzi esterni al gruppo;
+\item \textbf{Strategie di rilevazione:} Non è possibile rilevare anticipatamente questo tipo di problematiche;
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Sono stati scelti fornitori ritenuti affidabili e che forniscono questo tipo di servizi da molto tempo;
+\item L'\rAP effettuerà periodicamente dei back-up dei \gloxy{server} sul suo computer locale;
+\item grazie all'uso di \gloxy{Git} tutto il contenuto del \gloxy{repository} è salvato anche in locale, sarà compito dei componenti del gruppo avere salvata in locale la versione più aggiornata.
+\end{itemize}
+\item \textbf{Riscontro:} Si è verificata questa problematica durante la \fPD in quanto \pragmadb è stato indisponibile per svariate ore impedendo il lavoro di tracciamento da parte dei membri del gruppo.
+\end{itemize}
+\subsubsection{Livello personale}\label{lp}
+%Mancanza dei componenti del gruppo per malattia o problemi personali
+\subsubsubsection{Problemi dei componenti del gruppo}\label{r_comp}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Media;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} Può capitare che durante la realizzazione del \gloxy{progetto} alcuni componenti del gruppo si ammalino o si ritrovino ad avere altri impegni universitari o extra universitari e che per un determinato periodo di tempo non possano lavorare al \gloxy{progetto};
+\item \textbf{Strategie di rilevazione:} I componenti del gruppo che non possono lavorare in un determinato periodo devono segnalarlo sul calendario condiviso e comunicarlo tempestivamente al \rRP, in modo che quest'ultimo possa avere una visione complessiva delle indisponibilità;
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Il \rRP dovrà effettuare una nuova pianificazione delle attività per il periodo di tempo interessato, tenendo conto delle assenze in modo da evitare o limitare i ritardi e non compromettere il limite imposto dalle \gloxy{milestone} fissate;
+\item L'interessato dovrà preoccuparsi di riallinearsi il prima possibile con il resto del \gloxy{team}.
+\end{itemize}
+\item \textbf{Riscontro:}
+Si sono verificati due casi di assenza imprevista di un componente per motivi lavorativi, entrambe le assenze si sono verificate in corrispondenza di riunioni interne al \gloxy{team}. \\ In questo caso il componente si è allineato la sera stessa con le decisioni prese  dal resto del \gloxy{team} consultando il verbale redatto dai presenti e verificandone la correttezza attraverso la registrazione audio della riunione svolta.
+%Liti tra componenti del gruppo
+\end{itemize}
+\subsubsubsection{Problemi tra componenti del gruppo}\label{r_liti}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Bassa;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} Essendo il \gloxy{team} composto da persone che prima del \gloxy{progetto} non avevano mai lavorato in un gruppo così numeroso, è probabile che nascano divergenze o incomprensioni;
+\item \textbf{Strategie di rilevazione:}
+\begin{itemize}
+\item Il \rRP dovrà controllare l'evoluzione dei rapporti tra i componenti;
+\item \`E compito di ogni componente segnalare al \rRP la nascita di eventuali problemi, qualora si verifichino.
+\end{itemize}
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Sarà compito del \rRP fare da mediatore tra le parti;
+\item Nei casi più gravi dovrà pianificare nuovamente le attività, evitando che i componenti che hanno avuto divergenze si trovino a lavorare assieme.
+\end{itemize}
+\item \textbf{Riscontro:} Si è verificato un caso di lite tra componenti del gruppo impegnati nell'attività di Progettazione.
+Il \rRP, non essendo presente al momento dell'accaduto, è stato notificato da tutti e cinque i componenti presenti.
+Il litigio è stato ritenuto grave dal \rRP in quanto ha portato a cinque ore di lavoro inconcludenti in una fase cruciale per il \gloxy{progetto} per il modello di ciclo di vita adottato. Il \rRP dopo aver attentamente ascoltato la versione riferita da ogni componente presente ed aver effettivamente riscontrato l'impossibilità di lavorare assieme per i due componenti coinvolti,  ha valutato l'accaduto e adottato le seguenti misure correttive:
+\begin{itemize}
+\item Le ore da \rP per uno dei due componenti coinvolti sono state convertite in ore da \rV, in questo modo non potrà interagire direttamente con il resto dei \rPs ma potrà comunque verificare che il lavoro svolto sia corretto ed avanzare eventuali dubbi in merito, giustificandoli opportunamente;
+\item Sono state ripianificate le attività delle fasi successive, dove necessario, in modo che i due componenti coinvolti non si trovino a lavorare assieme.
+\end{itemize}
+\end{itemize}
+%Inesperienza del gruppo
+\subsubsubsection{Problemi legati all'inesperienza del gruppo}\label{r_inesp}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Alta;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} Questo metodo di lavoro risulta nuovo e richiede capacità di pianificazione e analisi che si sviluppano con l'esperienza, cosa che la maggior parte dei componenti del gruppo non possiede. Inoltre viene richiesto l'uso di software che nessun membro ha mai utilizzato;
+\item \textbf{Strategie di rilevazione:} Nel caso un componente del gruppo non riesca a trovare il materiale su cui studiare o non riesca a risolvere un determinato problema, dovrà chiedere aiuto usando la \gloxy{mailing list} o la \gloxy{chat};
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Ogni componente del gruppo si impegna a studiare il materiale necessario per poter affrontare il \gloxy{progetto} in modo ottimale;
+\item In caso di eventuali dubbi emersi durante lo studio il componente dovrà notificare il \rRP in modo da predisporre delle domande volte al chiarimento dei dubbi da presentare al più presto al docente.
+\end{itemize}
+\item \textbf{Riscontro:}
+Sono stati riscontrati alcuni dubbi riguardo gli argomenti studiati durante il corso. \\
+Questi sono stati prontamente chiariti dai docenti attraverso mail oppure di persona. Sono stati riscontrati dubbi riguardo lo studio dei \gloxy{framework} e delle tecnologie scelte. Questi sono stati risolti internamente al \gloxy{team} grazie ad una collaborazione continua tra i vari \rPs, che ha permesso di chiarire ogni dubbio rilevato.
+\end{itemize}
+\subsubsection{Livello organizzativo}\label{lo}
+%Errata stima delle ore necessarie
+\subsubsubsection{Problemi legati alla stima delle ore}\label{r_stima}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Media;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} I tempi stimati per l'esecuzione di un'attività possono essere sottostimati, provocando un aumento dei costi e ritardi nella consegna;
+\item \textbf{Strategie di rilevazione:} Il sistema di \gloxy{ticketing} adottato permette al \rRP di avere sotto controllo lo stato di avanzamento del \gloxy{progetto} e in particolar modo evidenzia le attività che sono in ritardo;
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Per ogni fase e per tutta la durata del \gloxy{progetto} sono state programmate delle attività volte all'incremento dei documenti in modo che, se si dovessero verificare dei cambiamenti imprevisti, siano già pianificate le tempistiche entro cui attuarli;
+\item Quando possibile sono stati inseriti giorni di \gloxy{slack} tra le varie attività, in modo da evitare che un eventuale ritardo influenzi la durata del \gloxy{progetto};
+\item Le attività riguardanti le consegne per una revisione sono state pianificate in modo che terminino circa 8 giorni prima della data effettiva di revisione e qualche giorno prima rispetto alla data di consegna effettiva. In questo modo se la data effettiva di consegna viene anticipata rispetto alla data stabilita, non sarà necessaria una nuova pianificazione. Mentre se la stima della data di consegna si rivelerà pessimistica ci saranno più giorni di \gloxy{slack} a disposizione.
+\end{itemize}
+\item \textbf{Riscontro:}
+Si è verificato un errore di pianificazione riguardo la fase di \fAD, in quanto è stata sottostimata. Questo ha portato ad utilizzare tutto lo \gloxy{slack} disponibile ed ha comportato inoltre una compressione della fase successiva per potersi riallineare con la pianificazione e le \gloxy{milestone} fissate dal \rRP.
+\end{itemize}
+%Errori legati ripianificazione bilancio
+\subsubsubsection{Problemi legati alla ripianificazione del bilancio}\label{r_bilancio}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Media;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} a seguito del taglio delle ore previsto dopo la revisione di bilancio effettuata in \fC, sono state ridotte le ore totali di lavoro. Di conseguenza le nuove ore stimate potrebbero essere non sufficienti per il quantitativo di lavoro necessario in particolare per la progettazione e la codifica;
+\item \textbf{Strategie di rilevazione:} al \rRP viene notificato un quantitativo maggiore di ore richieste all'adempimento delle attività assegnate da parte dei membri del \gloxy{team}.
+Questo può avvenire tramite \gloxy{ticketing} o comunicazione diretta:
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Viene intensificato il sistema di \textit{\gloxy{ticketing}} con lo scopo di avere una visione dettagliata delle attività e dello stato dei lavoro dei singolo membri del gruppo. In questo modo il lavoro del \rRP viene ulteriormente semplificato e la sua visione delle tempistiche risulterà essere più chiara e precisa.
+\item I membri del gruppo si impegnano ulteriormente e assiduamente a lavorare in maniera disciplinata, sistematica e quantificabile al fine di rendere il flusso dei lavori il più fluido possibile e privo di imprevisti;
+\item L'occorrenza di questo rischio è direttamente correlata con l'occorrenza degli altri preventivati. La prevenzione di questi ultimi porta come conseguenza diretta la diminuzione della probabilità che si verifichi.
+\end{itemize}
+\item \textbf{Riscontro:}
+Questo rischio e stato riscontrato a seguito della ripianificazione del bilancio e delle ore preventivate per i ruoli durante la \fC.
+\end{itemize}
+\subsubsection{Livello dei requisiti}\label{lr}
+%Analisi dei requisiti fatta male
+\subsubsubsection{Problemi legati all'identificazione dei requisiti}\label{r_req}
+\begin{itemize}
+%\item \textbf{Possibilità di occorrenza:} Alta;
+\item \textbf{Pericolosità:} Alta;
+\item \textbf{Descrizione:} Durante l'analisi del capitolato è possibile che qualche aspetto del problema non venga colto oppure venga mal interpretato da parte degli \rAs, provocando divergenze tra le aspettative del \gloxy{Proponente} e l'idea del gruppo sul prodotto;
+\item \textbf{Strategie di rilevazione:} Durante la fase di \fA e di \fAD si terranno delle riunioni con il \gloxy{Proponente}. Inoltre tutti i documenti prodotti verranno consegnati e valutati dal \gloxy{Committente} ad ogni revisione;
+\item \textbf{Contromisure:}
+\begin{itemize}
+\item Si cercherà di scrivere un documento di \AR che si presti ad essere incrementato, anche sostanzialmente, nelle fasi successive ad \fA. \\ In questo modo si riuscirà ad adattarsi alla tipologia di capitolato scelto;
+\item Pianificazione delle riunioni con il \gloxy{Proponente};
+\item Pianificazione della fase di \fAD con lo scopo di incrementare i documenti prodotti, in particolare l'\AR, sfruttando le indicazioni del \gloxy{Committente}.
+\end{itemize}
+\item \textbf{Riscontro:}
+Si è verificato una variazione dei requisiti durante la fase di \fPA, in seguito ad una riunione con il \gloxy{Proponente}. \\
+Il gruppo è riuscito ad integrare tempestivamente le aggiunte al documento \AR, in quanto esso era stato precedentemente scritto in modo da potersi adattare ad eventi simili, evidentemente insiti del capitolato scelto.
+\end{itemize}
+\subsubsection{Riepilogo}\label{rplg}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline Rischio & Pericolosità \\
+\hline
+\ref{r_bilancio} Problemi legati alla ripianificazione del bilancio & \textcolor{red}{Alta}\\
+\ref{r_framework} Problemi legati ai \gloxy{framework} & {Alta} \\
+\ref{r_inesp} Problemi legati all'inesperienza &  {Alta} \\
+\ref{r_liti} Problemi tra i componenti del gruppo & Alta \\
+\ref{r_stima} Problemi legati alla stima delle ore & Alta \\
+\ref{r_tec} Problemi legati alle tecnologie & Alta \\
+\ref{r_comp} Problemi legati ai componenti del gruppo & {Media} \\
+\ref{r_req} Problemi legati ai requisiti & {Bassa} \\
+\ref{r_appweb} Problemi legati ai servizi \gloxy{web} & Bassa \\
+\ref{r_hw} Problemi legati alle risorse \gloxy{HW} & Bassa \\
+\hline
+\end{tabular}
+\caption{Riepilogo dei rischi, ordinati per pericolosità}
+\end{center}
+\end{table}
+\FloatBarrier
+Evidenziati i rischi verificatisi recentemente o che hanno subito una variazione di ``Pericolosita''.
+\subsection{Previsione rischi}
+\input{sezioni/previsioneRischi.tex}

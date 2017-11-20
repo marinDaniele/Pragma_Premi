@@ -1,0 +1,157 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{8}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{8}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{8}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{8}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{8}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{8}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{8}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Processi primari}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}Processo di sviluppo}{10}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Attivit\IeC {\`a}}{10}{subsubsection.2.1.1}
+\contentsline {subsubsubsection}{\numberline {2.1.1.1}Analisi dei requisiti}{10}{subsubsubsection.2.1.1.1}
+\contentsline {subsubsubsubsection}{\numberline {2.1.1.1.1}Task - Studio di fattibilit\IeC {\`a}}{10}{subsubsubsubsection.2.1.1.1.1}
+\contentsline {subsubsubsubsection}{\numberline {2.1.1.1.2}Task - Analisi dei requisiti}{10}{subsubsubsubsection.2.1.1.1.2}
+\contentsline {subsubsubsection}{\numberline {2.1.1.2}Progettazione}{10}{subsubsubsection.2.1.1.2}
+\contentsline {subsubsubsubsection}{\numberline {2.1.1.2.1}Task - Specifica tecnica}{10}{subsubsubsubsection.2.1.1.2.1}
+\contentsline {subsubsubsubsection}{\numberline {2.1.1.2.2}Task - Definizione di prodotto}{11}{subsubsubsubsection.2.1.1.2.2}
+\contentsline {subsubsection}{\numberline {2.1.2}Norme}{11}{subsubsection.2.1.2}
+\contentsline {subsubsubsection}{\numberline {2.1.2.1}Classificazione dei requisiti}{11}{subsubsubsection.2.1.2.1}
+\contentsline {subsubsubsection}{\numberline {2.1.2.2}Classificazione dei casi d'uso}{12}{subsubsubsection.2.1.2.2}
+\contentsline {subsubsubsection}{\numberline {2.1.2.3}Norme progettuali}{12}{subsubsubsection.2.1.2.3}
+\contentsline {subsubsubsubsection}{\numberline {2.1.2.3.1}Denominazione di entit\IeC {\`a} e relazioni}{12}{subsubsubsubsection.2.1.2.3.1}
+\contentsline {subsubsubsubsection}{\numberline {2.1.2.3.2}Notazioni per la progettazione architetturale}{13}{subsubsubsubsection.2.1.2.3.2}
+\contentsline {subsubsubsubsection}{\numberline {2.1.2.3.3}Notazioni per la progettazione di dettaglio}{13}{subsubsubsubsection.2.1.2.3.3}
+\contentsline {subsubsubsubsubsection}{\numberline {2.1.2.3.3.1}Notazioni per il \emph {Front-End}$_G$}{13}{subsubsubsubsubsection.2.1.2.3.3.1}
+\contentsline {subsubsubsubsubsubsection}{\numberline {2.1.2.3.3.1.1}Notazioni derivate da AngularJS}{13}{subsubsubsubsubsubsection.2.1.2.3.3.1.1}
+\contentsline {subsubsubsubsubsubsubsection}{\numberline {2.1.2.3.3.1.1.1}Directive}{13}{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.1}
+\contentsline {subsubsubsubsubsubsubsection}{\numberline {2.1.2.3.3.1.1.2}Controller}{13}{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.2}
+\contentsline {subsubsubsubsubsubsubsection}{\numberline {2.1.2.3.3.1.1.3}Promise e \$q}{13}{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.3}
+\contentsline {subsubsubsubsubsubsubsection}{\numberline {2.1.2.3.3.1.1.4}Tipi di dato}{14}{subsubsubsubsubsubsubsection.2.1.2.3.3.1.1.4}
+\contentsline {subsubsubsubsubsection}{\numberline {2.1.2.3.3.2}Notazioni per il \emph {Back-End}$_G$}{14}{subsubsubsubsubsection.2.1.2.3.3.2}
+\contentsline {subsubsubsubsubsubsection}{\numberline {2.1.2.3.3.2.1}Notazioni derivate da \emph {framework}$_G$}{14}{subsubsubsubsubsubsection.2.1.2.3.3.2.1}
+\contentsline {subsubsubsubsubsubsection}{\numberline {2.1.2.3.3.2.2}Express}{14}{subsubsubsubsubsubsection.2.1.2.3.3.2.2}
+\contentsline {subsubsubsubsubsubsection}{\numberline {2.1.2.3.3.2.3}\emph {MongoDB}$_G$ e \emph {Mongoose}$_G$}{14}{subsubsubsubsubsubsection.2.1.2.3.3.2.3}
+\contentsline {subsubsubsection}{\numberline {2.1.2.4}Codifica e convenzioni nei file}{14}{subsubsubsection.2.1.2.4}
+\contentsline {subsubsubsection}{\numberline {2.1.2.5}Nomi e norme stilistiche nel codice}{14}{subsubsubsection.2.1.2.5}
+\contentsline {subsubsubsubsection}{\numberline {2.1.2.5.1}AngularJS}{16}{subsubsubsubsection.2.1.2.5.1}
+\contentsline {subsubsubsubsection}{\numberline {2.1.2.5.2}\emph {MongoDB}$_G$ e \emph {Mongoose}$_G$}{16}{subsubsubsubsection.2.1.2.5.2}
+\contentsline {subsubsubsubsection}{\numberline {2.1.2.5.3}Commenti}{16}{subsubsubsubsection.2.1.2.5.3}
+\contentsline {subsubsubsection}{\numberline {2.1.2.6}Ricorsione}{16}{subsubsubsection.2.1.2.6}
+\contentsline {subsubsection}{\numberline {2.1.3}Strumenti}{17}{subsubsection.2.1.3}
+\contentsline {subsubsubsection}{\numberline {2.1.3.1}\emph {PragmaDB}\xspace }{17}{subsubsubsection.2.1.3.1}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.1}Attori}{17}{subsubsubsubsection.2.1.3.1.1}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.2}Fonti}{17}{subsubsubsubsection.2.1.3.1.2}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.3}Requisiti}{17}{subsubsubsubsection.2.1.3.1.3}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.4}Casi d'uso}{17}{subsubsubsubsection.2.1.3.1.4}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.5}\emph {Glossario}\xspace }{18}{subsubsubsubsection.2.1.3.1.5}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.6}Package e Classi}{18}{subsubsubsubsection.2.1.3.1.6}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.7}Test}{18}{subsubsubsubsection.2.1.3.1.7}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.8}Tracciamento}{18}{subsubsubsubsection.2.1.3.1.8}
+\contentsline {subsubsubsubsection}{\numberline {2.1.3.1.9}Funzionalit\IeC {\`a} di supporto}{19}{subsubsubsubsection.2.1.3.1.9}
+\contentsline {subsubsubsection}{\numberline {2.1.3.2}WebStorm}{19}{subsubsubsection.2.1.3.2}
+\contentsline {section}{\numberline {3}Processi di supporto}{20}{section.3}
+\contentsline {subsection}{\numberline {3.1}Processo di documentazione}{20}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Procedure}{20}{subsubsection.3.1.1}
+\contentsline {subsubsubsection}{\numberline {3.1.1.1}Formalizzazione dei documenti}{20}{subsubsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Norme}{21}{subsubsection.3.1.2}
+\contentsline {subsubsubsection}{\numberline {3.1.2.1}Template}{21}{subsubsubsection.3.1.2.1}
+\contentsline {subsubsubsection}{\numberline {3.1.2.2}Norme tipografiche}{21}{subsubsubsection.3.1.2.2}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.2.1}Norme riguardo nomi}{22}{subsubsubsubsection.3.1.2.2.1}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.2.2}Stile del testo}{22}{subsubsubsubsection.3.1.2.2.2}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.2.3}Punteggiatura}{22}{subsubsubsubsection.3.1.2.2.3}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.2.4}Composizione del testo}{22}{subsubsubsubsection.3.1.2.2.4}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.2.5}Formati ricorrenti}{23}{subsubsubsubsection.3.1.2.2.5}
+\contentsline {subsubsubsection}{\numberline {3.1.2.3}Componenti grafiche}{24}{subsubsubsection.3.1.2.3}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.3.1}Tabelle}{24}{subsubsubsubsection.3.1.2.3.1}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.3.2}Immagini}{24}{subsubsubsubsection.3.1.2.3.2}
+\contentsline {subsubsubsection}{\numberline {3.1.2.4}Struttura dei documenti}{24}{subsubsubsection.3.1.2.4}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.4.1}Frontespizio}{24}{subsubsubsubsection.3.1.2.4.1}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.4.2}Diario delle modifiche}{25}{subsubsubsubsection.3.1.2.4.2}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.4.3}Indici}{25}{subsubsubsubsection.3.1.2.4.3}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.4.4}Struttura generale di una pagina}{25}{subsubsubsubsection.3.1.2.4.4}
+\contentsline {subsubsubsection}{\numberline {3.1.2.5}Tipi di documenti}{25}{subsubsubsection.3.1.2.5}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.5.1}Documenti interni}{25}{subsubsubsubsection.3.1.2.5.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.1.2.5.1.1}Verbali interni informali}{26}{subsubsubsubsubsection.3.1.2.5.1.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.1.2.5.1.2}Bozze di documenti ufficiali}{26}{subsubsubsubsubsection.3.1.2.5.1.2}
+\contentsline {subsubsubsubsection}{\numberline {3.1.2.5.2}Documenti ufficiali}{26}{subsubsubsubsection.3.1.2.5.2}
+\contentsline {subsubsubsubsubsection}{\numberline {3.1.2.5.2.1}Verbali ufficiali}{26}{subsubsubsubsubsection.3.1.2.5.2.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.1.2.5.2.2}Documenti informali}{26}{subsubsubsubsubsection.3.1.2.5.2.2}
+\contentsline {subsubsubsubsubsection}{\numberline {3.1.2.5.2.3}Documenti formali}{26}{subsubsubsubsubsection.3.1.2.5.2.3}
+\contentsline {subsubsubsubsubsection}{\numberline {3.1.2.5.2.4}\emph {Glossario}\xspace }{27}{subsubsubsubsubsection.3.1.2.5.2.4}
+\contentsline {subsubsubsection}{\numberline {3.1.2.6}Versionamento}{27}{subsubsubsection.3.1.2.6}
+\contentsline {subsubsection}{\numberline {3.1.3}Strumenti}{27}{subsubsection.3.1.3}
+\contentsline {subsubsubsection}{\numberline {3.1.3.1}\textlatin {\LaTeX }\ e Texmaker}{27}{subsubsubsection.3.1.3.1}
+\contentsline {subsubsubsection}{\numberline {3.1.3.2}Editor UML}{27}{subsubsubsection.3.1.3.2}
+\contentsline {subsubsubsection}{\numberline {3.1.3.3}Script}{28}{subsubsubsection.3.1.3.3}
+\contentsline {subsubsubsection}{\numberline {3.1.3.4}JSDoc 3}{28}{subsubsubsection.3.1.3.4}
+\contentsline {subsection}{\numberline {3.2}Processo di verifica}{28}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Attivit\IeC {\`a}}{28}{subsubsection.3.2.1}
+\contentsline {subsubsubsection}{\numberline {3.2.1.1}Analisi}{28}{subsubsubsection.3.2.1.1}
+\contentsline {subsubsubsubsection}{\numberline {3.2.1.1.1}Analisi statica}{28}{subsubsubsubsection.3.2.1.1.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.1.1.1.1}Walkthrough}{28}{subsubsubsubsubsection.3.2.1.1.1.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.1.1.1.2}Inspection}{28}{subsubsubsubsubsection.3.2.1.1.1.2}
+\contentsline {subsubsubsubsection}{\numberline {3.2.1.1.2}Analisi dinamica}{29}{subsubsubsubsection.3.2.1.1.2}
+\contentsline {subsubsubsection}{\numberline {3.2.1.2}Test}{29}{subsubsubsection.3.2.1.2}
+\contentsline {subsubsubsubsection}{\numberline {3.2.1.2.1}Test di unit\IeC {\`a}}{29}{subsubsubsubsection.3.2.1.2.1}
+\contentsline {subsubsubsubsection}{\numberline {3.2.1.2.2}Test di integrazione}{29}{subsubsubsubsection.3.2.1.2.2}
+\contentsline {subsubsubsubsection}{\numberline {3.2.1.2.3}Test di sistema}{29}{subsubsubsubsection.3.2.1.2.3}
+\contentsline {subsubsubsubsection}{\numberline {3.2.1.2.4}Test di regressione}{29}{subsubsubsubsection.3.2.1.2.4}
+\contentsline {subsubsubsubsection}{\numberline {3.2.1.2.5}Test di validazione}{30}{subsubsubsubsection.3.2.1.2.5}
+\contentsline {subsubsection}{\numberline {3.2.2}Procedure}{30}{subsubsection.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.2.2.1}Approvazione di un ticket}{30}{subsubsubsection.3.2.2.1}
+\contentsline {subsubsubsection}{\numberline {3.2.2.2}Rigetto di un ticket}{30}{subsubsubsection.3.2.2.2}
+\contentsline {subsubsubsection}{\numberline {3.2.2.3}Gestione delle anomalie}{30}{subsubsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3}Strumenti}{31}{subsubsection.3.2.3}
+\contentsline {subsubsubsection}{\numberline {3.2.3.1}Documentazione}{31}{subsubsubsection.3.2.3.1}
+\contentsline {subsubsubsubsection}{\numberline {3.2.3.1.1}Texmaker}{31}{subsubsubsubsection.3.2.3.1.1}
+\contentsline {subsubsubsubsection}{\numberline {3.2.3.1.2}Aspell}{31}{subsubsubsubsection.3.2.3.1.2}
+\contentsline {subsubsubsubsection}{\numberline {3.2.3.1.3}Script}{31}{subsubsubsubsection.3.2.3.1.3}
+\contentsline {subsubsubsubsection}{\numberline {3.2.3.1.4}\emph {PragmaDB}\xspace }{32}{subsubsubsubsection.3.2.3.1.4}
+\contentsline {subsubsubsection}{\numberline {3.2.3.2}Codice}{32}{subsubsubsection.3.2.3.2}
+\contentsline {subsubsubsubsection}{\numberline {3.2.3.2.1}Strumenti di analisi statica}{32}{subsubsubsubsection.3.2.3.2.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.3.2.1.1}\emph {JSHint}$_G$}{32}{subsubsubsubsubsection.3.2.3.2.1.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.3.2.1.2}\emph {CSSLint}$_G$}{32}{subsubsubsubsubsection.3.2.3.2.1.2}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.3.2.1.3}\emph {W3C}$_G$ Markup Validator Service}{32}{subsubsubsubsubsection.3.2.3.2.1.3}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.3.2.1.4}complexity-report}{32}{subsubsubsubsubsection.3.2.3.2.1.4}
+\contentsline {subsubsubsubsection}{\numberline {3.2.3.2.2}Strumenti di analisi dinamica}{32}{subsubsubsubsection.3.2.3.2.2}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.3.2.2.1}\emph {Google Chrome}$_G$ DevTools}{32}{subsubsubsubsubsection.3.2.3.2.2.1}
+\contentsline {subsubsubsubsubsection}{\numberline {3.2.3.2.2.2}\emph {Karma}$_G$}{32}{subsubsubsubsubsection.3.2.3.2.2.2}
+\contentsline {section}{\numberline {4}Processi organizzativi}{33}{section.4}
+\contentsline {subsection}{\numberline {4.1}Processo di gestione}{33}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Attivit\IeC {\`a}}{33}{subsubsection.4.1.1}
+\contentsline {subsubsubsection}{\numberline {4.1.1.1}Comunicazioni}{33}{subsubsubsection.4.1.1.1}
+\contentsline {subsubsubsubsection}{\numberline {4.1.1.1.1}Comunicazioni interne}{33}{subsubsubsubsection.4.1.1.1.1}
+\contentsline {subsubsubsubsubsection}{\numberline {4.1.1.1.1.1}Comunicazioni via mailing list}{33}{subsubsubsubsubsection.4.1.1.1.1.1}
+\contentsline {subsubsubsubsubsection}{\numberline {4.1.1.1.1.2}Comunicazioni via \emph {chat}$_G$}{33}{subsubsubsubsubsection.4.1.1.1.1.2}
+\contentsline {subsubsubsubsection}{\numberline {4.1.1.1.2}Comunicazioni esterne}{33}{subsubsubsubsection.4.1.1.1.2}
+\contentsline {subsubsubsection}{\numberline {4.1.1.2}Riunioni}{33}{subsubsubsection.4.1.1.2}
+\contentsline {subsubsubsubsection}{\numberline {4.1.1.2.1}Riunioni interne}{33}{subsubsubsubsection.4.1.1.2.1}
+\contentsline {subsubsubsubsection}{\numberline {4.1.1.2.2}Riunioni esterne}{34}{subsubsubsubsection.4.1.1.2.2}
+\contentsline {subsubsubsection}{\numberline {4.1.1.3}Ticketing}{34}{subsubsubsection.4.1.1.3}
+\contentsline {subsubsection}{\numberline {4.1.2}Procedure}{34}{subsubsection.4.1.2}
+\contentsline {subsubsubsection}{\numberline {4.1.2.1}Apertura di un ticket}{34}{subsubsubsection.4.1.2.1}
+\contentsline {subsubsubsection}{\numberline {4.1.2.2}Rigetto di un ticket}{37}{subsubsubsection.4.1.2.2}
+\contentsline {subsubsubsection}{\numberline {4.1.2.3}Chiusura di ticket}{37}{subsubsubsection.4.1.2.3}
+\contentsline {subsubsubsection}{\numberline {4.1.2.4}Rilevazione dei rischi}{38}{subsubsubsection.4.1.2.4}
+\contentsline {subsubsection}{\numberline {4.1.3}Norme}{39}{subsubsection.4.1.3}
+\contentsline {subsubsubsection}{\numberline {4.1.3.1}Regole generali di ticketing}{39}{subsubsubsection.4.1.3.1}
+\contentsline {subsubsubsection}{\numberline {4.1.3.2}Protocollo di utilizzo dei ticket}{40}{subsubsubsection.4.1.3.2}
+\contentsline {subsubsubsection}{\numberline {4.1.3.3}Ruoli di progetto}{41}{subsubsubsection.4.1.3.3}
+\contentsline {subsubsubsubsection}{\numberline {4.1.3.3.1}\emph {Responsabile di Progetto}\xspace }{41}{subsubsubsubsection.4.1.3.3.1}
+\contentsline {subsubsubsubsection}{\numberline {4.1.3.3.2}\emph {Amministratore\xspace }\xspace }{42}{subsubsubsubsection.4.1.3.3.2}
+\contentsline {subsubsubsubsection}{\numberline {4.1.3.3.3}\emph {Analista\xspace }\xspace }{42}{subsubsubsubsection.4.1.3.3.3}
+\contentsline {subsubsubsubsection}{\numberline {4.1.3.3.4}\emph {Progettista\xspace }\xspace }{42}{subsubsubsubsection.4.1.3.3.4}
+\contentsline {subsubsubsubsection}{\numberline {4.1.3.3.5}\emph {Programmatore\xspace }\xspace }{42}{subsubsubsubsection.4.1.3.3.5}
+\contentsline {subsubsubsubsection}{\numberline {4.1.3.3.6}\emph {Verificatore\xspace }\xspace }{43}{subsubsubsubsection.4.1.3.3.6}
+\contentsline {subsubsection}{\numberline {4.1.4}Strumenti}{43}{subsubsection.4.1.4}
+\contentsline {subsubsubsection}{\numberline {4.1.4.1}Google Drive}{43}{subsubsubsection.4.1.4.1}
+\contentsline {subsubsubsection}{\numberline {4.1.4.2}Google Calendar}{43}{subsubsubsection.4.1.4.2}
+\contentsline {subsubsubsection}{\numberline {4.1.4.3}Git}{43}{subsubsubsection.4.1.4.3}
+\contentsline {subsubsubsection}{\numberline {4.1.4.4}Bitbucket}{43}{subsubsubsection.4.1.4.4}
+\contentsline {subsubsubsection}{\numberline {4.1.4.5}Redmine}{44}{subsubsubsection.4.1.4.5}
+\contentsline {subsubsubsection}{\numberline {4.1.4.6}Microsoft Project}{44}{subsubsubsection.4.1.4.6}
+\contentsline {subsubsubsection}{\numberline {4.1.4.7}Jenkins}{44}{subsubsubsection.4.1.4.7}
+\contentsline {section}{Appendice \numberline {A}Lista degli errori frequenti}{45}{Appendice.1.A}
+\contentsline {section}{Appendice \numberline {B}Screenshot Redmine}{46}{Appendice.1.B}
+\contentsline {section}{Appendice \numberline {C}Screenshot \emph {PragmaDB}\xspace }{47}{Appendice.1.C}

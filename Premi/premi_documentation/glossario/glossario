@@ -1,0 +1,4 @@
+#!/bin/bash
+pdflatex glossario.tex
+makeglossaries glossario
+pdflatex glossario.tex

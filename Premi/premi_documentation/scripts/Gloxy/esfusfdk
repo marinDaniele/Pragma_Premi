@@ -1,0 +1,24 @@
+La chat di gruppo è da utilizzare solamente per discutere di argomenti inerenti al progetto e dato che ricercare informazioni nella chat non è efficace, alla fine di ogni discussione un volontario scriverà un verbale interno che sarà salvato nella cartella \texttt{Verbali} su Google Drive\ped{G}.
+
+
+			int i = matcher.start();
+            int j = line.indexOf(lastMarkChar,i);
+            int j = matcher.end(); //pronto per il substring
+            if (Math.abs(i-j) < 30) {
+                /*BRUTTA PEZZA
+                * Colpa di Java che ogni tanto si inventa dai match assurdi a metà frase. La Regex è giusta è stata anche
+                * verificata con http://www.regexr.com/ */
+                j = j-GLOSSARY_MARK_REPLACE.length(); //tolgo la lunghezza del
+                try {
+                    String word = line.substring(i,j);
+                    //String patternToReplace = Pattern.quote(word+GLOSSARY_MARK);
+                    String wordToReplace =word+GLOSSARY_MARK_REPLACE;
+                    line = line.replace(wordToReplace, word);
+                }catch (Exception e){
+                    System.out.println("Errore");
+                }
+            }else {
+                System.err.println("Possibile errore, verificare a mano");
+                System.err.println("Matchano" + i + " " + j);
+                System.err.println("Linea:"+ line);
+            }

@@ -1,0 +1,672 @@
+\subsection{Tracciamento Requisiti-Classi}
+\normalsize
+\begin{longtable}{|>{\centering}m{3cm}|m{10cm}<{\centering}|}
+\hline
+\textbf{Requisito} & \textbf{Classi}\\
+\hline
+\endhead
+RFO1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::DashboardController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::DashboardView}]{\nogloxy{\texttt{Premi::Front-End::Views::DashboardView}}}\\ \hline
+RFO1.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::DashboardController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::DashboardView}]{\nogloxy{\texttt{Premi::Front-End::Views::DashboardView}}}\\ \hline
+RFO1.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::DashboardController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::DashboardView}]{\nogloxy{\texttt{Premi::Front-End::Views::DashboardView}}}\\ \hline
+RFO1.2.1 & \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\ \hline
+RFO1.2.1.1 & \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\ \hline
+RFO2 & \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFD3 & \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO4 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeContentModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeContentModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::RelationModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak RelationModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeReference}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeReference}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFD4.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectSettingsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectSettingsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectSettingsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO4.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::RelationModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak RelationModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::AssociationAdderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AssociationAdderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ContextMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ContextMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::MindmapEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiAssociationAdder}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiAssociationAdder}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiContextMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiContextMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::MindmapEditorView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak MindmapEditorView}}}\\ \hline
+RFO4.2.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::MindmapEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::MindmapEditorView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak MindmapEditorView}}}\\ \hline
+RFO4.2.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeContentModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeContentModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ContextMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ContextMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiContextMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiContextMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.3 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.3.1 & \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\ \hline
+RFO4.2.3.2 & \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\ \hline
+RFO4.2.3.4 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.3.5 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.3.5.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\ \hline
+RFO4.2.3.5.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.3.7 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFD4.2.3.8 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\ \hline
+RFD4.2.3.8.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\ \hline
+RFD4.2.3.8.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\ \hline
+RFD4.2.3.9 & \hyperref[\nogloxy{Premi::Front-End::Controllers::EditableNodeContentController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiEditableNodeContent}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiEditableNodeContent}}}\\ \hline
+RFD4.2.3.10 & \hyperref[\nogloxy{Premi::Front-End::Controllers::EditableNodeContentController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiEditableNodeContent}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiEditableNodeContent}}}\\ \hline
+RFF4.2.3.11 & \hyperref[\nogloxy{Premi::Front-End::Controllers::EditableNodeContentController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiEditableNodeContent}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiEditableNodeContent}}}\\ \hline
+RFO4.2.3.12 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\ \hline
+RFO4.2.3.13 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\ \hline
+RFD4.2.3.15 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFD4.2.3.16 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeContentsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeContentsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContentsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContentsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFD4.2.3.17 & \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\ \hline
+RFD4.2.3.18 & \hyperref[\nogloxy{Premi::Front-End::Controllers::EditableNodeContentController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiEditableNodeContent}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiEditableNodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFD4.2.3.19 & \hyperref[\nogloxy{Premi::Front-End::Controllers::EditableNodeContentController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiEditableNodeContent}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiEditableNodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFD4.2.3.20 & \hyperref[\nogloxy{Premi::Front-End::Controllers::EditableNodeContentController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak EditableNodeContentController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiEditableNodeContent}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiEditableNodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.5 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::RelationModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak RelationModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ContextMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ContextMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiContextMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiContextMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.6 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::RelationModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak RelationModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::AssociationAdderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AssociationAdderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ContextMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ContextMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiAssociationAdder}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiAssociationAdder}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiContextMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiContextMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.7 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::RelationModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak RelationModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ContextMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ContextMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiContextMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiContextMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFO4.2.8 & \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\ \hline
+RFD4.3 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPathsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPathsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFD4.3.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPath}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPath}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFD4.3.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::AddToPathController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AddToPathController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiAddToPath}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiAddToPath}}}\\ \hline
+RFD4.3.3 & \hyperref[\nogloxy{Premi::Front-End::Directives::premiPathsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPathsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFD4.4 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPath}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPath}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeReference}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeReference}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PathsEditorView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PathsEditorView}}}\\ \hline
+RFD4.4.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::AddToPathController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak AddToPathController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiAddToPath}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiAddToPath}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeReference}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeReference}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFD4.4.3 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPath}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPath}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeReference}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeReference}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFD4.4.5 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPath}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPath}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFD4.5 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPathsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPathsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFD4.5.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PathsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPathsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPathsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFF4.6 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectSettingsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHeader}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHeader}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectSettingsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectSettingsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFF4.6.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectSettingsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectSettingsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectSettingsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\ \hline
+RFF4.6.1.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectSettingsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectSettingsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectSettingsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\ \hline
+RFF4.6.1.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectSettingsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectSettingsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectSettingsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\ \hline
+RFF4.6.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectSettingsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectSettingsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectSettingsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\ \hline
+RFF4.6.3 & \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectSettingsEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectSettingsEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectSettingsEditor}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectSettingsEditor}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFD4.7 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PathsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPathsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPathsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\ \hline
+RFO5 & \hyperref[\nogloxy{Premi::Front-End::Controllers::MindmapEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeReference}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeReference}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::MindmapEditorView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak MindmapEditorView}}}\\ \hline
+RFD6 & \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeReference}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeReference}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Path}]{\nogloxy{\texttt{Premi::Front-End::Model::Path}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Project}]{\nogloxy{\texttt{Premi::Front-End::Model::Project}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO7 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationFooterController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationFooterController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentation}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentation}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentationFooter}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentationFooter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::PresentationNode}]{\nogloxy{\texttt{Premi::Front-End::Model::-\linebreak PresentationNode}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD7.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PathsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PathsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPathsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPathsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFO7.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationFooterController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationFooterController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentation}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentation}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentationFooter}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentationFooter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::PresentationNode}]{\nogloxy{\texttt{Premi::Front-End::Model::-\linebreak PresentationNode}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFO7.3 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationFooterController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationFooterController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentation}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentation}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentationFooter}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentationFooter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::PresentationNode}]{\nogloxy{\texttt{Premi::Front-End::Model::-\linebreak PresentationNode}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD7.4.1 & \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\ \hline
+RFD7.4.2 & \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\ \hline
+RFD7.5 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD7.6 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HierarchicalMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HierarchicalMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::SmartMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak SmartMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHierarchicalMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHierarchicalMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentation}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentation}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiSmartMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiSmartMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD7.6.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HierarchicalMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HierarchicalMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::SmartMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak SmartMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHierarchicalMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHierarchicalMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentation}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentation}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiSmartMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiSmartMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD7.6.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HierarchicalMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HierarchicalMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::SmartMenuController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak SmartMenuController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHierarchicalMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHierarchicalMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentation}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentation}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiSmartMenu}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiSmartMenu}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFO7.7 & \hyperref[\nogloxy{Premi::Front-End::Controllers::NodeController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNode}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNode}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiNodeContent}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiNodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::PresentationNode}]{\nogloxy{\texttt{Premi::Front-End::Model::-\linebreak PresentationNode}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\ \hline
+RFO8 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFO9 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFO10 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO10.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO10.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO11 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO11.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO11.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFO11.3 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ProjectsListController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ProjectsListController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiProjectsList}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiProjectsList}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFD14 & \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD14.1 & \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD14.2 & \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD14.3 & \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD15 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHeader}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHeader}}}\\ \hline
+RFF15.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHeader}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHeader}}}\\ \hline
+RFF15.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHeader}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHeader}}}\\ \hline
+RFD15.3 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHeader}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHeader}}}\\ \hline
+RFO16 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationFooterController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationFooterController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentationFooter}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentationFooter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFO16.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationFooterController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationFooterController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentationFooter}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentationFooter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFF16.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationFooterController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationFooterController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentationFooter}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentationFooter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFF16.3 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationFooterController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationFooterController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiPresentationFooter}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiPresentationFooter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD16.4 & \hyperref[\nogloxy{Premi::Front-End::Services::PresentationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PresentationService}}}\\ \hline
+RFD17 & \hyperref[\nogloxy{Premi::Front-End::Controllers::PresentationViewerController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak PresentationViewerController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFO18 & \hyperref[\nogloxy{Premi::Front-End::Views::PresentationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak PresentationView}}}\\ \hline
+RFD22 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::NodeModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak NodeModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::PathModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak PathModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::RelationModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak RelationModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::MindmapEditorController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak MindmapEditorController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiMindmap}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiMindmap}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::Node}]{\nogloxy{\texttt{Premi::Front-End::Model::Node}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::NodeContent}]{\nogloxy{\texttt{Premi::Front-End::Model::NodeContent}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapAdapterService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapAdapterService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::MindmapEditorView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak MindmapEditorView}}}\\ \hline
+RFD23 & \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\ \hline
+RFF25 & \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHeader}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHeader}}}\\ \hline
+RFF25.1 & \hyperref[\nogloxy{Premi::Front-End::Services::MindmapService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak MindmapService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::PathService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak PathService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::ProjectService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak ProjectService}}}\\ \hline
+RFD26 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::StaticController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak StaticController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::StaticRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak StaticRouter}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Views::UserManualView}]{\nogloxy{\texttt{Premi::Back-End::App::Views::-\linebreak UserManualView}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::DashboardController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::DashboardView}]{\nogloxy{\texttt{Premi::Front-End::Views::DashboardView}}}\\ \hline
+RFO27 & \hyperref[\nogloxy{Premi::Front-End::AppConfig}]{\nogloxy{\texttt{Premi::Front-End::AppConfig}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::AppRouter}]{\nogloxy{\texttt{Premi::Front-End::AppRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::AppRun}]{\nogloxy{\texttt{Premi::Front-End::AppRun}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::DashboardController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiHeader}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiHeader}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::DashboardView}]{\nogloxy{\texttt{Premi::Front-End::Views::DashboardView}}}\\ \hline
+RFO30 & \hyperref[\nogloxy{Premi::Front-End::Controllers::LoginController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak LoginController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::RegistrationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::LoginView}]{\nogloxy{\texttt{Premi::Front-End::Views::LoginView}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::RegistrationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak RegistrationView}}}\\ \hline
+RFO30.1 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::UserController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak UserController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthenticationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::UserModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak UserModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::UserRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak UserRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::RegistrationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::RegistrationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak RegistrationView}}}\\ \hline
+RFO30.1.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::RegistrationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::RegistrationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak RegistrationView}}}\\ \hline
+RFO30.1.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::RegistrationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::RegistrationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak RegistrationView}}}\\ \hline
+RFO30.1.3 & \hyperref[\nogloxy{Premi::Front-End::Controllers::RegistrationController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak RegistrationController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::RegistrationView}]{\nogloxy{\texttt{Premi::Front-End::Views::-\linebreak RegistrationView}}}\\ \hline
+RFO30.2 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::UserController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak UserController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthenticationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthorizationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthorizationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::Session}]{\nogloxy{\texttt{Premi::Back-End::App::Models::Session}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::UserModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak UserModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::UserRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak UserRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::LoginController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak LoginController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::LoginView}]{\nogloxy{\texttt{Premi::Front-End::Views::LoginView}}}\\ \hline
+RFO30.2.1 & \hyperref[\nogloxy{Premi::Front-End::Controllers::LoginController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak LoginController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::LoginView}]{\nogloxy{\texttt{Premi::Front-End::Views::LoginView}}}\\ \hline
+RFO30.2.2 & \hyperref[\nogloxy{Premi::Front-End::Controllers::LoginController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak LoginController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::LoginView}]{\nogloxy{\texttt{Premi::Front-End::Views::LoginView}}}\\ \hline
+RFO30.2.3 & \hyperref[\nogloxy{Premi::Front-End::Controllers::LoginController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak LoginController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::LoginView}]{\nogloxy{\texttt{Premi::Front-End::Views::LoginView}}}\\ \hline
+RFO30.3 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ErrorHandler}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ErrorHandler}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Errors::PremiError}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Errors::-\linebreak PremiError}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::UserController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak UserController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthenticationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthorizationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthorizationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::Session}]{\nogloxy{\texttt{Premi::Back-End::App::Models::Session}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::UserRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak UserRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ErrorMessageController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ErrorMessageController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiErrorMessage}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiErrorMessage}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::ErrorInfo}]{\nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo}}}\\ \hline
+RFO30.4 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ErrorHandler}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ErrorHandler}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Errors::PremiError}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Errors::-\linebreak PremiError}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::UserController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak UserController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthenticationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthorizationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthorizationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::Session}]{\nogloxy{\texttt{Premi::Back-End::App::Models::Session}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::UserRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak UserRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ErrorMessageController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ErrorMessageController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiErrorMessage}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiErrorMessage}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::ErrorInfo}]{\nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo}}}\\ \hline
+RFO32 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::UserController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak UserController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthenticationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthorizationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthorizationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::Session}]{\nogloxy{\texttt{Premi::Back-End::App::Models::Session}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::UserModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak UserModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::UserRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak UserRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::DashboardController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak DashboardController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::HeaderController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak HeaderController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Services::AuthenticationService}]{\nogloxy{\texttt{Premi::Front-End::Services::-\linebreak AuthenticationService}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Views::DashboardView}]{\nogloxy{\texttt{Premi::Front-End::Views::DashboardView}}}\\ \hline
+RFD33 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ErrorHandler}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ErrorHandler}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Errors::PremiError}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Errors::-\linebreak PremiError}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Models::ProjectModel}]{\nogloxy{\texttt{Premi::Back-End::App::Models::-\linebreak ProjectModel}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Controllers::ErrorMessageController}]{\nogloxy{\texttt{Premi::Front-End::Controllers::-\linebreak ErrorMessageController}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Directives::premiErrorMessage}]{\nogloxy{\texttt{Premi::Front-End::Directives::-\linebreak premiErrorMessage}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::ErrorInfo}]{\nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo}}}\\ \hline
+RFD35 & \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ErrorHandler}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ErrorHandler}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Errors::PremiError}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Errors::-\linebreak PremiError}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::NotFoundHandler}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak NotFoundHandler}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::ProjectController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak ProjectController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::NodeController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::NodeController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::PathController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::PathController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Projects::ProjectManagementController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak Projects::ProjectManagementController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::StaticController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak StaticController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::UserController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::-\linebreak UserController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthenticationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthenticationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Controllers::Users::AuthorizationController}]{\nogloxy{\texttt{Premi::Back-End::App::Controllers::Users::-\linebreak AuthorizationController}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::ProjectRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak ProjectRouter}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::StaticRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak StaticRouter}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::App::Routers::UserRouter}]{\nogloxy{\texttt{Premi::Back-End::App::Routers::-\linebreak UserRouter}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::AppRun}]{\nogloxy{\texttt{Premi::Front-End::AppRun}}}\\
+& \hyperref[\nogloxy{Premi::Front-End::Model::ErrorInfo}]{\nogloxy{\texttt{Premi::Front-End::Model::ErrorInfo}}}\\ \hline
+RFO36 & \hyperref[\nogloxy{Premi::Back-End::Config::Config}]{\nogloxy{\texttt{Premi::Back-End::Config::Config}}}\\
+& \hyperref[\nogloxy{Premi::Back-End::Server}]{\nogloxy{\texttt{Premi::Back-End::Server}}}\\ \hline
+\caption[Tracciamento Requisiti-Classi]{Tracciamento Requisiti-Classi}
+\label{tabella:requi-class}
+\end{longtable}
+\clearpage

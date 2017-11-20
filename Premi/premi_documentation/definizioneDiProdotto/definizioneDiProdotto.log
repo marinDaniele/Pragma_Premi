@@ -1,0 +1,4256 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.14)  16 JUN 2015 11:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**definizioneDiProdotto.tex
+(./definizioneDiProdotto.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(../template/layout.tex
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-italian/italian.ldf
+Language: italian 2008/03/14 v1.2t Italian support from the babel system
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 94.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+File: lgrenc.dfu 2013/05/24 0.4 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+)))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen104
+\ttl@minus=\dimen105
+\ttl@toksa=\toks16
+\titlewidth=\dimen106
+\titlewidthlast=\dimen107
+\titlewidthfirst=\dimen108
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen109
+\extrarowheight=\dimen110
+\NC@list=\toks17
+\extratabsurround=\skip45
+\backup@length=\skip46
+)
+\rotheadsize=\dimen111
+\c@nlinenum=\count89
+\TeXr@lab=\toks18
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count90
+\decimalpart=\count91
+)
+Package: xstring 2013/2/28  v1.7a  String manipulations (C Tellechea)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count92
+\rotFPtop=\skip47
+\rotFPbot=\skip48
+\rot@float@box=\box27
+\rot@mess@toks=\toks20
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen114
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks21
+\MT@count=\count93
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen115
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count94
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip49
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen116
+\Hy@linkcounter=\count95
+\Hy@pagecounter=\count96
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count97
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count98
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen117
+\Fld@menulength=\count99
+\Field@Width=\dimen118
+\Fld@charsize=\dimen119
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count100
+\c@Item=\count101
+\c@Hfootnote=\count102
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count103
+\c@bookmark@seq@number=\count104
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip50
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box28
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
+\Gm@bindingoffset=\dimen120
+\Gm@wd@mp=\dimen121
+\Gm@odd@mp=\dimen122
+\Gm@even@mp=\dimen123
+\Gm@layoutwidth=\dimen124
+\Gm@layoutheight=\dimen125
+\Gm@layouthoffset=\dimen126
+\Gm@layoutvoffset=\dimen127
+\Gm@dimlist=\toks22
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen128
+\captionmargin@=\dimen129
+\captionwidth=\dimen130
+\caption@tempdima=\dimen131
+\caption@indent=\dimen132
+\caption@parindent=\dimen133
+\caption@hangindent=\dimen134
+)
+\c@ContinuedFloat=\count108
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count109
+\c@subtable=\count110
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks23
+\float@box=\box29
+\@float@everytoks=\toks24
+\@floatcapt=\box30
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks25
+\verbatim@line=\toks26
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks27
+\minrowclearance=\skip60
+)
+\rownum=\count112
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count113
+\LTcapwidth=\dimen135
+\LT@head=\box31
+\LT@firsthead=\box32
+\LT@foot=\box33
+\LT@lastfoot=\box34
+\LT@cols=\count114
+\LT@rows=\count115
+\c@LT@tables=\count116
+\c@LT@chunks=\count117
+\LT@p@ftn=\toks28
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2011/11/23 v2.0 Making table heads with diagonal lines
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2011/04/05 v0.2y Improved picture commands (HjG,RN,JT)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2011/04/05 v0.1t pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2011/04/05 v0.1t Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks29
+\@arclen=\dimen136
+\@arcrad=\dimen137
+\@tempdimd=\dimen138
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count118
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count119
+\FP@xia=\count120
+\FP@xib=\count121
+\FP@xfa=\count122
+\FP@xfb=\count123
+\FP@rega=\count124
+\FP@regb=\count125
+\FP@regs=\count126
+\FP@times=\count127
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count128
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+))
+\diagbox@boxa=\box35
+\diagbox@boxb=\box36
+\diagbox@boxm=\box37
+\diagbox@wd=\dimen139
+\diagbox@ht=\dimen140
+\diagbox@sepl=\dimen141
+\diagbox@sepr=\dimen142
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 1994/05/23 v2.03 Table rule package (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/dirtree/dirtree.sty
+Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/dirtree/dirtree.tex
+`dirtree' v0.32, 2012/12/11 (jcc)
+\DT@offset=\dimen143
+\DT@width=\dimen144
+\DT@sep=\dimen145
+\DT@all=\dimen146
+\DT@rulewidth=\dimen147
+\DT@dotwidth=\dimen148
+\DTbaselineskip=\dimen149
+\DT@counti=\count129
+\DT@countii=\count130
+\DT@countiii=\count131
+\DT@countiv=\count132
+\DT@indent=\dimen150
+\DT@parskip=\dimen151
+\DT@baselineskip=\dimen152
+)
+File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+\TX@col@width=\dimen153
+\TX@old@table=\dimen154
+\TX@old@col=\dimen155
+\TX@target=\dimen156
+\TX@delta=\dimen157
+\TX@cols=\count133
+\TX@ftn=\toks30
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip65
+\enit@outerparindent=\dimen158
+\enit@toks=\toks31
+\enit@inbox=\box38
+\enitdp@description=\count134
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box39
+\UL@hyphenbox=\box40
+\UL@skip=\skip66
+\UL@hook=\toks32
+\UL@height=\dimen159
+\UL@pe=\count135
+\UL@pixel=\dimen160
+\ULC@box=\box41
+Package: ulem 2012/05/18
+\ULdepth=\dimen161
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count136
+\c@@ppsavesec=\count137
+\c@@ppsaveapp=\count138
+)
+\c@subsubsubsection=\count139
+\c@subsubsubsubsection=\count140
+\c@subsubsubsubsubsection=\count141
+\c@subsubsubsubsubsubsection=\count142
+\c@subsubsubsubsubsubsubsection=\count143
+\c@subsubsubsubsubsubsubsubsection=\count144
+)
+(../template/comandi.tex) (./definizioniRicorrenti.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count145
+\lst@gtempboxa=\box42
+\lst@token=\toks33
+\lst@length=\count146
+\lst@currlwidth=\dimen162
+\lst@column=\count147
+\lst@pos=\count148
+\lst@lostspace=\dimen163
+\lst@width=\dimen164
+\lst@newlines=\count149
+\lst@lineno=\count150
+\lst@maxwidth=\dimen165
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count151
+\lst@skipnumbers=\count152
+\lst@framebox=\box43
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(./definizioneDiProdotto.aux)
+\openout1 = `definizioneDiProdotto.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 12.
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-greek/lgrcmr.fd
+File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
+)
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 12.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count153
+\scratchdimen=\dimen166
+\scratchbox=\box44
+\nofMPsegments=\count154
+\nofMParguments=\count155
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen167
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
+\everyMPtoPDFconversion=\toks35
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Info: Redefining \microtypecontext on input line 12.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+\AtBeginShipoutBox=\box45
+Package hyperref Info: Link coloring ON on input line 12.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count159
+)
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
+
+(./definizioneDiProdotto.out) (./definizioneDiProdotto.out)
+\@outlinefile=\write4
+\openout4 = `definizioneDiProdotto.out'.
+
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 12.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 14.22636pt
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 412.56499pt, 85.35826pt)
+* v-part:(T,H,B)=(99.58464pt, 645.87756pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=412.56499pt
+* \textheight=645.87756pt
+* \oddsidemargin=27.31464pt
+* \evensidemargin=13.08827pt
+* \topmargin=-9.68535pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count160
+
+(../template/titlePage.tex
+<../template/icone/logo.pdf, id=840, 301.125pt x 200.75pt>
+File: ../template/icone/logo.pdf Graphic file (type pdf)
+
+<use ../template/icone/logo.pdf>
+Package pdftex.def Info: ../template/icone/logo.pdf used on input line 7.
+(pdftex.def)             Requested size: 312.9803pt x 208.67397pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
+ (../template/documentInfo.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 5.
+
+(./versione.tex))
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 17.
+ (./sommario.tex)
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 20.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 21.
+ [1
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../temp
+late/icone/logo.pdf>]) (../template/diario.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+ (./sezioni/diario.tex (./versione.tex)
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+[]|\T1/ptm/m/it/10 (+20) Modificata \T1/pcr/m/sl/10 Premi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+\T1/pcr/m/sl/10 ::Front-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+\T1/pcr/m/sl/10 ::Directives
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]|\T1/ptm/m/it/10 (+20) Rimossa \T1/pcr/m/sl/10 Premi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\T1/pcr/m/sl/10 ::Front-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\T1/pcr/m/sl/10 ::Directives
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\T1/pcr/m/sl/10 Footer \T1/ptm/m/it/10 (+20) e re-la-ti-vo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+[]|\T1/ptm/m/it/10 (+20) Adeguata de-fin-zio-ne del-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+\T1/ptm/m/it/10 (+20) le clas-si del pac-ka-ge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+\T1/pcr/m/sl/10 Premi::Front-End
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 5--5
+\T1/ptm/m/it/10 (+20) al-le nuo-ve nor-me de-fi-ni-te
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 5--5
+\T1/ptm/m/it/10 (+20) nel do-cu-men-to \T1/ptm/m/n/10 (+20) Nor-me di
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 7--7
+\T1/ptm/m/it/10 (+20) ci-fi-ci in ap-pen-di-ce [][]A[][] in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]|\T1/ptm/m/it/10 (+20) Specificate de-scri-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\T1/ptm/m/it/10 (+20) zio-ni e uti-liz-zo di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\T1/pcr/m/sl/10 ProjectController\T1/ptm/m/it/10 (+20) ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\T1/pcr/m/sl/10 UserController\T1/ptm/m/it/10 (+20) s,
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 9--9
+[]|\T1/ptm/m/it/10 (+20) Corretto \T1/pcr/m/sl/10 presentation
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 9--9
+\T1/ptm/m/it/10 (+20) pen-di-ce [][]A[][] in se-gui-to agli
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]|\T1/ptm/m/it/10 (+20) Aggiunte clas-si
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 13--13
+\T1/pcr/m/sl/10 Front-End::AppRun \T1/ptm/m/it/10 (+20) e
+ []
+
+
+Overfull \hbox (6.75893pt too wide) in paragraph at lines 13--13
+\T1/pcr/m/sl/10 Front-End::AppConfig| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\T1/ptm/m/it/10 (+20) Aggiunta di-rec-ti-ve
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 17--17
+\T1/ptm/m/it/10 (+20) ca-de [][]B.3[][] e Ob-ser-ver [][]B.4[][]
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 20--20
+[]|\T1/ptm/m/it/10 (+20) Aggiornata [][]Strut-tu-ra[][], cor-
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 21--21
+\T1/ptm/m/it/10 (+20) ra-le del-le ri-chie-ste[][], ora
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 22--22
+\T1/ptm/m/it/10 (+20) ra-le del-le ri-chie-ste[][], ora
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\T1/ptm/m/it/10 (+20) Rimosso \T1/pcr/m/sl/10 Front-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/pcr/m/sl/10 ::Controllers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/pcr/m/sl/10 ::LogoutController
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\T1/ptm/m/it/10 (+20) Aggiunta clas-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\T1/pcr/m/sl/10 Premi::Front-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\T1/pcr/m/sl/10 ::Model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\T1/ptm/m/it/10 (+20) Riorganizzato pac-ka-ge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\T1/pcr/m/sl/10 Premi::Front-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T1/ptm/m/it/10 (+20) Rinominata clas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/ptm/m/it/10 (+20) se \T1/pcr/m/sl/10 PathStep \T1/ptm/m/it/10 (+20) in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\T1/ptm/m/it/10 (+20) Aggiornate le clas-si
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\T1/pcr/m/sl/10 Premi::Front-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\T1/pcr/m/sl/10 ::Model::Node \T1/ptm/m/it/10 (+20) e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\T1/pcr/m/sl/10 Premi::Front-End
+ []
+
+
+Overfull \hbox (6.18898pt too wide) in paragraph at lines 29--29
+\T1/pcr/m/sl/10 ::Model::NodeContent| 
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 34--34
+[]|\T1/ptm/m/it/10 (+20) Verifica del-le com-po-nen-ti
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 ...quenza per Back-End ยง\ref{putPath}}{\rPt}
+                                                   [1]
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\T1/ptm/m/it/10 (+20) se-quen-za per Back-End
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 52--52
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-ma di se-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 53--53
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-mi di se-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 54--54
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-mi di se-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 55--55
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-mi di se-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 56--56
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-mi di se-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 57--57
+[]|\T1/ptm/m/it/10 (+20) Stesura dia-gram-mi di se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-zio-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Back-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Front-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-zio-ne
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Front-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-zio-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-zio-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Back-
+ []
+
+
+Overfull \hbox (7.26765pt too wide) in paragraph at lines 65--65
+\T1/ptm/m/it/10 (-20) End::App::Controllers::Errors| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Back-
+ []
+
+
+Overfull \hbox (4.44446pt too wide) in paragraph at lines 66--66
+\T1/ptm/m/it/10 (-20) End::App::Controllers::Users| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Back-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+\T1/ptm/m/it/10 (+20) End::App::Controllers::
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Front-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Back-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Back-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\T1/ptm/m/it/10 (+20) zio-ne Premi::Back-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-zio-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|\T1/ptm/m/it/10 (+20) Stesura del-la se-zio-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/ptm/m/it/10 (+20) ne Premi::Back-End e
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 78--78
+[]|\T1/ptm/m/it/10 (+20) Inserito pat-tern [][]Chain of
+ []
+
+) [3] [4] [5]) (./definizioneDiProdotto.toc [6
+
+] [7]
+Overfull \hbox (14.54489pt too wide) in paragraph at lines 113--113
+ [][] [][][]\T1/ptm/m/n/10 (-20) Premi::Back-End::App::Controllers::Projects::P
+rojectManagementController[][] [][]  
+ []
+
+[8])
+\tf@toc=\write5
+\openout5 = `definizioneDiProdotto.toc'.
+
+ [9] (./definizioneDiProdotto.lof [10] [11])
+\tf@lof=\write6
+\openout6 = `definizioneDiProdotto.lof'.
+
+ [12]
+(./definizioneDiProdotto.lot)
+\tf@lot=\write7
+\openout7 = `definizioneDiProdotto.lot'.
+
+ [13] (./sezioni/introduzione.tex
+(../glossario/versione.tex)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 11.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+
+(../normeDiProgetto/versione.tex) (../analisiDeiRequisiti/versione.tex)
+(../20150510E5/versione.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+[][]$\T1/pcr/m/n/10 http : / / www . math . unipd . it / ~tullio / IS-[]1 / 201
+4 / Dispense / E9 . pdf$[][]\T1/ptm/m/n/10 (+20) ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+[][]$\T1/pcr/m/n/10 http : / / www . math . unipd . it / ~rcardin / pdf / Desig
+n % 20Pattern %
+ []
+
+[14]
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 33.
+
+Underfull \hbox (badness 1199) in paragraph at lines 34--36
+[]\T1/ptm/b/n/10 Slide del-l'in-se-gna-men-to - Dia-gram-mi del-le clas-si\T1/p
+tm/m/n/10 (+20) : [][]$\T1/pcr/m/n/10 http : / / www . math . unipd . it /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]\T1/ptm/m/it/10 (+20) Documentazione ser-vi-zio $http\T1/ptm/m/n/10 (+20) : [
+][]$\T1/pcr/m/n/10 https : / / docs . angularjs . org / api / ng /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+[]\T1/ptm/m/it/10 (+20) Documentazione ser-vi-zio $q\T1/ptm/m/n/10 (+20) : [][]
+$\T1/pcr/m/n/10 https : / / docs . angularjs . org / api / ng /
+ []
+
+) (./sezioni/frontEnd.tex [15] (./sezioni/packageClassiDP-FE.tex
+<diagrammi/package/frontEnd.pdf, id=1456, 831.105pt x 880.28876pt>
+File: diagrammi/package/frontEnd.pdf Graphic file (type pdf)
+
+<use diagrammi/package/frontEnd.pdf>
+Package pdftex.def Info: diagrammi/package/frontEnd.pdf used on input line 6.
+(pdftex.def)             Requested size: 332.43611pt x 352.10927pt.
+ [16 <./diagrammi/package/frontEnd.pdf>]
+<diagrammi/classi/frontEnd/AppConfig.pdf, id=1544, 536.0025pt x 118.4425pt>
+File: diagrammi/classi/frontEnd/AppConfig.pdf Graphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/AppConfig.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/AppConfig.pdf used on input 
+line 32.
+(pdftex.def)             Requested size: 214.3972pt x 47.37614pt.
+
+<diagrammi/classi/frontEnd/AppRouter.pdf, id=1545, 438.63875pt x 118.4425pt>
+File: diagrammi/classi/frontEnd/AppRouter.pdf Graphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/AppRouter.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/AppRouter.pdf used on input 
+line 62.
+(pdftex.def)             Requested size: 175.45238pt x 47.37614pt.
+ [17 <./diagrammi/classi/frontEnd/AppConfig.pdf> <./diagrammi/classi/frontEnd/A
+ppRouter.pdf>]
+<diagrammi/classi/frontEnd/AppRun.pdf, id=1563, 1359.0775pt x 193.72375pt>
+File: diagrammi/classi/frontEnd/AppRun.pdf Graphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/AppRun.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/AppRun.pdf used on input lin
+e 92.
+(pdftex.def)             Requested size: 543.62138pt x 77.48811pt.
+
+Overfull \hbox (131.0564pt too wide) in paragraph at lines 92--93
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+\T1/ptm/m/n/10 (+20) Viene uti-liz-za-ta per re-gi-stra-re i ge-sto-ri per gli 
+even-ti glo-ba-li qua-li:
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 99--102
+\T1/pcr/m/n/10 premi-fullscreen-on\T1/ptm/m/n/10 (+20) /\T1/pcr/m/n/10 premi-fu
+llscreen-off \T1/ptm/m/n/10 (+20) per la ge-stio-ne del-la mo-da-li-tเ
+ []
+
+[18 <./diagrammi/classi/frontEnd/AppRun.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
+[]\T1/pcr/m/n/10 + AppRun($rootScope: Scope, $location: $location,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
+\T1/pcr/m/n/10 $mdDialog: $mdDialog, ProjectService: ProjectService,
+ []
+
+<diagrammi/package/frontEnd-controllers.pdf, id=1580, 935.495pt x 815.045pt>
+File: diagrammi/package/frontEnd-controllers.pdf Graphic file (type pdf)
+
+<use diagrammi/package/frontEnd-controllers.pdf>
+Package pdftex.def Info: diagrammi/package/frontEnd-controllers.pdf used on inp
+ut line 150.
+(pdftex.def)             Requested size: 374.19136pt x 326.01222pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19]
+<diagrammi/classi/frontEnd/controllers/AddToPathController.pdf, id=1591, 556.07
+75pt x 213.79875pt>
+File: diagrammi/classi/frontEnd/controllers/AddToPathController.pdf Graphic fil
+e (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/AddToPathController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/AddToPathControl
+ler.pdf used on input line 175.
+(pdftex.def)             Requested size: 222.42705pt x 85.51797pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./diagrammi/package/frontEnd-controllers.pdf>] [21 <./diagrammi/classi/fro
+ntEnd/controllers/AddToPathController.pdf>]
+<diagrammi/classi/frontEnd/controllers/AssociationAdderController.pdf, id=1702,
+ 604.2575pt x 213.79875pt>
+File: diagrammi/classi/frontEnd/controllers/AssociationAdderController.pdf Grap
+hic file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/AssociationAdderController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/AssociationAdder
+Controller.pdf used on input line 223.
+(pdftex.def)             Requested size: 241.69872pt x 85.51797pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
+[]\T1/pcr/m/n/10 + AssociationAdderController($scope: Scope, $mdDialog:
+ []
+
+[22 <./diagrammi/classi/frontEnd/controllers/AssociationAdderController.pdf>]
+<diagrammi/classi/frontEnd/controllers/ContextMenuController.pdf, id=1725, 610.
+28pt x 174.6525pt>
+File: diagrammi/classi/frontEnd/controllers/ContextMenuController.pdf Graphic f
+ile (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/ContextMenuController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/ContextMenuContr
+oller.pdf used on input line 270.
+(pdftex.def)             Requested size: 244.10767pt x 69.85976pt.
+ [23 <./diagrammi/classi/frontEnd/controllers/ContextMenuController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 304--308
+[]\T1/pcr/m/n/10 + ContextMenuController($scope: Scope, $mdDialog:
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/DashboardController.pdf, id=1750, 963.6p
+t x 270.00874pt>
+File: diagrammi/classi/frontEnd/controllers/DashboardController.pdf Graphic fil
+e (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/DashboardController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/DashboardControl
+ler.pdf used on input line 320.
+(pdftex.def)             Requested size: 385.43317pt x 108.00157pt.
+ [24 <./diagrammi/classi/frontEnd/controllers/DashboardController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 357--361
+[]\T1/pcr/m/n/10 + DashboardController($scope: Scope, ProjectService:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--361
+\T1/pcr/m/n/10 ProjectService, $location: $location, $mdDialog:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--390
+[]\T1/pcr/m/n/10 + startPresentationClicked(pathId: String, projectId:
+ []
+
+[25]
+<diagrammi/classi/frontEnd/controllers/EditableNodeContentController.pdf, id=17
+80, 438.63875pt x 157.58875pt>
+File: diagrammi/classi/frontEnd/controllers/EditableNodeContentController.pdf G
+raphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/EditableNodeContentController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/EditableNodeCont
+entController.pdf used on input line 402.
+(pdftex.def)             Requested size: 175.45238pt x 63.03436pt.
+
+[26 <./diagrammi/classi/frontEnd/controllers/EditableNodeContentController.pdf>
+]
+<diagrammi/classi/frontEnd/controllers/ErrorMessageController.pdf, id=1803, 616
+.3025pt x 156.585pt>
+File: diagrammi/classi/frontEnd/controllers/ErrorMessageController.pdf Graphic 
+file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/ErrorMessageController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/ErrorMessageCont
+roller.pdf used on input line 448.
+(pdftex.def)             Requested size: 246.51663pt x 62.63287pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--475
+[]\T1/pcr/m/n/10 + ErrorMessageController($scope: Scope, $mdDialog:
+ []
+
+[27 <./diagrammi/classi/frontEnd/controllers/ErrorMessageController.pdf>]
+<diagrammi/classi/frontEnd/controllers/HeaderController.pdf, id=1826, 1852.9225
+pt x 459.7175pt>
+File: diagrammi/classi/frontEnd/controllers/HeaderController.pdf Graphic file (
+type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/HeaderController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/HeaderController
+.pdf used on input line 489.
+(pdftex.def)             Requested size: 741.15588pt x 183.88373pt.
+
+Overfull \hbox (328.5909pt too wide) in paragraph at lines 489--490
+ [][] 
+ []
+
+[28 <./diagrammi/classi/frontEnd/controllers/HeaderController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 535--539
+[]\T1/pcr/m/n/10 + HeaderController($scope: Scope, $location: $location,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--539
+\T1/pcr/m/n/10 ProjectService: ProjectService, $window: $window,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--539
+\T1/pcr/m/n/10 AuthenticationService: AuthenticationService,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--539
+\T1/pcr/m/n/10 MindmapAdapterService: MindmapAdapterService, $mdDialog:
+ []
+
+[29]
+<diagrammi/classi/frontEnd/controllers/HierarchicalMenuController.pdf, id=1854,
+ 407.5225pt x 157.58875pt>
+File: diagrammi/classi/frontEnd/controllers/HierarchicalMenuController.pdf Grap
+hic file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/HierarchicalMenuController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/HierarchicalMenu
+Controller.pdf used on input line 594.
+(pdftex.def)             Requested size: 163.0061pt x 63.03436pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30]
+<diagrammi/classi/frontEnd/controllers/LoginController.pdf, id=1863, 880.28876p
+t x 213.79875pt>
+File: diagrammi/classi/frontEnd/controllers/LoginController.pdf Graphic file (t
+ype pdf)
+
+<use diagrammi/classi/frontEnd/controllers/LoginController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/LoginController.
+pdf used on input line 633.
+(pdftex.def)             Requested size: 352.10927pt x 85.51797pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31 <./diagrammi/classi/frontEnd/controllers/HierarchicalMenuController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 666--670
+[]\T1/pcr/m/n/10 + LoginController($scope: Scope, $location: $location,
+ []
+
+[32 <./diagrammi/classi/frontEnd/controllers/LoginController.pdf>]
+<diagrammi/classi/frontEnd/controllers/MindmapEditorController.pdf, id=1908, 11
+08.14pt x 441.65pt>
+File: diagrammi/classi/frontEnd/controllers/MindmapEditorController.pdf Graphic
+ file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/MindmapEditorController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/MindmapEditorCon
+troller.pdf used on input line 686.
+(pdftex.def)             Requested size: 443.24815pt x 176.65686pt.
+
+Overfull \hbox (30.68317pt too wide) in paragraph at lines 686--687
+ [][] 
+ []
+
+[33 <./diagrammi/classi/frontEnd/controllers/MindmapEditorController.pdf>]
+[34]
+Underfull \hbox (badness 5741) in paragraph at lines 762--766
+\T1/ptm/m/n/10 (+20) Metodo che ge-sti-sce l'e-ven-to di can-cel-la-zio-ne di u
+n'as-so-cia-zio-ne. Uti-liz-za
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 773--777
+[]\T1/pcr/m/n/10 + MindmapEditorController($scope: Scope, $mdDialog:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 773--777
+\T1/pcr/m/n/10 $mdDialog, MindmapService: MindmapService, ProjectService:
+ []
+
+[35]
+Underfull \hbox (badness 1546) in paragraph at lines 806--808
+\T1/ptm/m/n/10 (+20) Metodo che ge-sti-sce l'e-ven-to di re-set dei cam-pi di m
+o-di-fi-ca di un no-do. Ri-
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/NodeContentsEditorController.pdf, id=194
+5, 865.2325pt x 346.29375pt>
+File: diagrammi/classi/frontEnd/controllers/NodeContentsEditorController.pdf Gr
+aphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/NodeContentsEditorController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/NodeContentsEdit
+orController.pdf used on input line 831.
+(pdftex.def)             Requested size: 346.08687pt x 138.51503pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36] [37 <./diagrammi/classi/frontEnd/controllers/NodeContentsEditorController.
+pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 877--879
+\T1/ptm/m/n/10 (+20) Metodo che ri-muo-ve dal-l'og-get-to \T1/pcr/m/n/10 node \
+T1/ptm/m/n/10 (+20) pre-sen-te nel-lo \T1/pcr/m/n/10 $scope \T1/ptm/m/n/10 (+20
+) l'og-get-to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 879--883
+[]\T1/pcr/m/n/10 + NodeContentsEditorController($scope: Scope,
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/NodeController.pdf, id=1978, 558.085pt x
+ 157.58875pt>
+File: diagrammi/classi/frontEnd/controllers/NodeController.pdf Graphic file (ty
+pe pdf)
+ <use diagrammi/classi/frontEnd/controllers/NodeController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/NodeController.p
+df used on input line 906.
+(pdftex.def)             Requested size: 223.23004pt x 63.03436pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 935--939
+[]\T1/pcr/m/n/10 + NodeController($scope: Scope, ProjectService:
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/PathController.pdf, id=1987, 627.34375pt
+ x 194.7275pt>
+File: diagrammi/classi/frontEnd/controllers/PathController.pdf Graphic file (ty
+pe pdf)
+ <use diagrammi/classi/frontEnd/controllers/PathController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/PathController.p
+df used on input line 951.
+(pdftex.def)             Requested size: 250.93304pt x 77.8896pt.
+
+[39 <./diagrammi/classi/frontEnd/controllers/NodeController.pdf>] [40 <./diagra
+mmi/classi/frontEnd/controllers/PathController.pdf>]
+<diagrammi/classi/frontEnd/controllers/PathsEditorController.pdf, id=2033, 1036
+.87375pt x 365.365pt>
+File: diagrammi/classi/frontEnd/controllers/PathsEditorController.pdf Graphic f
+ile (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/PathsEditorController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/PathsEditorContr
+oller.pdf used on input line 1006.
+(pdftex.def)             Requested size: 414.74216pt x 146.1434pt.
+
+Overfull \hbox (2.17717pt too wide) in paragraph at lines 1006--1007
+ [][] 
+ []
+
+[41 <./diagrammi/classi/frontEnd/controllers/PathsEditorController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1066
+[]\T1/pcr/m/n/10 - addNodeToPathClicked(pathId: String, nodeId: String):
+ []
+
+[42]
+Underfull \hbox (badness 1668) in paragraph at lines 1075--1077
+\T1/ptm/m/n/10 (+20) Metodo che de-se-le-zio-na il no-do cor-ren-te, im-po-sta-
+to l'og-get-to \T1/pcr/m/n/10 currentNode \T1/ptm/m/n/10 (+20) a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1090
+[]\T1/pcr/m/n/10 + PathsEditorController($scope: Scope, PathService:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1090
+\T1/pcr/m/n/10 PathService, MindmapService: MindmapService, $mdDialog:
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/PathsListController.pdf, id=2066, 896.34
+875pt x 250.9375pt>
+File: diagrammi/classi/frontEnd/controllers/PathsListController.pdf Graphic fil
+e (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/PathsListController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/PathsListControl
+ler.pdf used on input line 1113.
+(pdftex.def)             Requested size: 358.53316pt x 100.37321pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43] [44 <./diagrammi/classi/frontEnd/controllers/PathsListController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1166
+[]\T1/pcr/m/n/10 + PathsListController($scope: Scope, $location: $location,
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/PresentationController.pdf, id=2097, 443
+.6575pt x 270.00874pt>
+File: diagrammi/classi/frontEnd/controllers/PresentationController.pdf Graphic 
+file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/PresentationController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/PresentationCont
+roller.pdf used on input line 1189.
+(pdftex.def)             Requested size: 177.45984pt x 108.00157pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45] [46 <./diagrammi/classi/frontEnd/controllers/PresentationController.pdf>]
+<diagrammi/classi/frontEnd/controllers/PresentationViewerController.pdf, id=212
+5, 1662.21pt x 574.145pt>
+File: diagrammi/classi/frontEnd/controllers/PresentationViewerController.pdf Gr
+aphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/PresentationViewerController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/PresentationView
+erController.pdf used on input line 1258.
+(pdftex.def)             Requested size: 664.87224pt x 229.65393pt.
+
+Overfull \hbox (252.30725pt too wide) in paragraph at lines 1258--1259
+ [][] 
+ []
+
+[47 <./diagrammi/classi/frontEnd/controllers/PresentationViewerController.pdf>]
+[48]
+Underfull \hbox (badness 1107) in paragraph at lines 1323--1325
+\T1/ptm/m/n/10 (+20) Metodo che fa pas-sa-re la pre-sen-ta-zio-ne al-la sli-de 
+suc-ces-si-va, emet-ten-do l'e-ven-to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1336
+[]\T1/pcr/m/n/10 + PresentationViewerController($scope: Scope,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1336
+\T1/pcr/m/n/10 $mdSidenav: $mdSidenav, $routeParams: $routeParams,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1336
+\T1/pcr/m/n/10 PresentationService: PresentationService, ProjectService:
+ []
+
+[49]
+<diagrammi/classi/frontEnd/controllers/ProjectSettingsEditorCtrl.pdf, id=2164, 
+869.2475pt x 270.00874pt>
+File: diagrammi/classi/frontEnd/controllers/ProjectSettingsEditorCtrl.pdf Graph
+ic file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/ProjectSettingsEditorCtrl.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/ProjectSettingsE
+ditorCtrl.pdf used on input line 1380.
+(pdftex.def)             Requested size: 347.69284pt x 108.00157pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1387
+\T1/ptm/m/n/10 (+20) Classe che si oc-cu-pa di ge-sti-re la lo-gi-ca di fun-zio
+-na-men-to del-la di-rec-ti-ve
+ []
+
+[51 <./diagrammi/classi/frontEnd/controllers/ProjectSettingsEditorCtrl.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1425
+[]\T1/pcr/m/n/10 + ProjectSettingsEditorController($scope: Scope, $mdDialog:
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/ProjectsListController.pdf, id=2194, 559
+.08875pt x 176.66pt>
+File: diagrammi/classi/frontEnd/controllers/ProjectsListController.pdf Graphic 
+file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/ProjectsListController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/ProjectsListCont
+roller.pdf used on input line 1441.
+(pdftex.def)             Requested size: 223.63153pt x 70.66273pt.
+ [52 <./diagrammi/classi/frontEnd/controllers/ProjectsListController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1464--1468
+[]\T1/pcr/m/n/10 + deleteWithConfirm(event: MouseEvent, projectId: String):
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1473--1477
+[]\T1/pcr/m/n/10 + ProjectsListController($scope: Scope, $mdDialog:
+ []
+
+
+<diagrammi/classi/frontEnd/controllers/RegistrationController.pdf, id=2218, 883
+.3pt x 213.79875pt>
+File: diagrammi/classi/frontEnd/controllers/RegistrationController.pdf Graphic 
+file (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/RegistrationController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/RegistrationCont
+roller.pdf used on input line 1498.
+(pdftex.def)             Requested size: 353.31374pt x 85.51797pt.
+ [53 <./diagrammi/classi/frontEnd/controllers/RegistrationController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1533--1537
+[]\T1/pcr/m/n/10 + RegistrationController($scope: Scope, $location:
+ []
+
+[54]
+<diagrammi/classi/frontEnd/controllers/SmartMenuController.pdf, id=2248, 361.35
+pt x 157.58875pt>
+File: diagrammi/classi/frontEnd/controllers/SmartMenuController.pdf Graphic fil
+e (type pdf)
+
+<use diagrammi/classi/frontEnd/controllers/SmartMenuController.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/controllers/SmartMenuControl
+ler.pdf used on input line 1551.
+(pdftex.def)             Requested size: 144.53743pt x 63.03436pt.
+
+<diagrammi/package/frontEnd-directives.pdf, id=2250, 888.31876pt x 576.1525pt>
+File: diagrammi/package/frontEnd-directives.pdf Graphic file (type pdf)
+
+<use diagrammi/package/frontEnd-directives.pdf>
+Package pdftex.def Info: diagrammi/package/frontEnd-directives.pdf used on inpu
+t line 1591.
+(pdftex.def)             Requested size: 355.32121pt x 230.45691pt.
+ [55 <./diagrammi/classi/frontEnd/controllers/SmartMenuController.pdf>]
+<diagrammi/classi/frontEnd/directives/premiAddToPath.pdf, id=2276, 234.8775pt x
+ 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiAddToPath.pdf Graphic file (typ
+e pdf)
+ <use diagrammi/classi/frontEnd/directives/premiAddToPath.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiAddToPath.pd
+f used on input line 1614.
+(pdftex.def)             Requested size: 93.94933pt x 62.63287pt.
+
+[56 <./diagrammi/package/frontEnd-directives.pdf> <./diagrammi/classi/frontEnd/
+directives/premiAddToPath.pdf>]
+Underfull \hbox (badness 6236) in paragraph at lines 1626--1628
+\T1/ptm/m/n/10 (+20) Classe che si oc-cu-pa di ge-sti-re la lo-gi-ca di fun-zio
+-na-men-to del-la di-rec-ti-ve
+ []
+
+
+<diagrammi/classi/frontEnd/directives/premiAssociationAdder.pdf, id=2409, 273.0
+2pt x 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiAssociationAdder.pdf Graphic fi
+le (type pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiAssociationAdder.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiAssociationA
+dder.pdf used on input line 1664.
+(pdftex.def)             Requested size: 109.20605pt x 62.63287pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[57]
+<diagrammi/classi/frontEnd/directives/premiContextMenu.pdf, id=2417, 234.8775pt
+ x 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiContextMenu.pdf Graphic file (t
+ype pdf)
+ <use diagrammi/classi/frontEnd/directives/premiContextMenu.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiContextMenu.
+pdf used on input line 1709.
+(pdftex.def)             Requested size: 93.94933pt x 62.63287pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[58 <./diagrammi/classi/frontEnd/directives/premiAssociationAdder.pdf>]
+[59 <./diagrammi/classi/frontEnd/directives/premiContextMenu.pdf>]
+<diagrammi/classi/frontEnd/directives/premiEditableNodeContent.pdf, id=2464, 46
+5.74pt x 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiEditableNodeContent.pdf Graphic
+ file (type pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiEditableNodeContent.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiEditableNode
+Content.pdf used on input line 1762.
+(pdftex.def)             Requested size: 186.2927pt x 62.63287pt.
+
+[60 <./diagrammi/classi/frontEnd/directives/premiEditableNodeContent.pdf>]
+<diagrammi/classi/frontEnd/directives/premiErrorMessage.pdf, id=2490, 238.8925p
+t x 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiErrorMessage.pdf Graphic file (
+type pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiErrorMessage.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiErrorMessage
+.pdf used on input line 1815.
+(pdftex.def)             Requested size: 95.5553pt x 62.63287pt.
+ [61 <./diagrammi/classi/frontEnd/directives/premiErrorMessage.pdf>]
+<diagrammi/classi/frontEnd/directives/premiHeader.pdf, id=2515, 234.8775pt x 15
+6.585pt>
+File: diagrammi/classi/frontEnd/directives/premiHeader.pdf Graphic file (type p
+df)
+ <use diagrammi/classi/frontEnd/directives/premiHeader.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiHeader.pdf u
+sed on input line 1851.
+(pdftex.def)             Requested size: 93.94933pt x 62.63287pt.
+ [62 <./diagrammi/classi/frontEnd/directives/premiHeader.pdf>]
+<diagrammi/classi/frontEnd/directives/premiHierarchicalMenu.pdf, id=2541, 271.0
+125pt x 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiHierarchicalMenu.pdf Graphic fi
+le (type pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiHierarchicalMenu.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiHierarchical
+Menu.pdf used on input line 1902.
+(pdftex.def)             Requested size: 108.40306pt x 62.63287pt.
+ [63 <./diagrammi/classi/frontEnd/directives/premiHierarchicalMenu.pdf>]
+Underfull \hbox (badness 4940) in paragraph at lines 1932--1933
+[]\T1/pcr/m/n/10 relations (=)\T1/ptm/m/n/10 (+20) : \T1/pcr/m/n/10 Array \T1/p
+tm/m/n/10 (+20) con-te-nen-te og-get-ti di ti-po \T1/pcr/m/n/10 NodeReference\T
+1/ptm/m/n/10 (+20) ,
+ []
+
+
+<diagrammi/classi/frontEnd/directives/premiMindmap.pdf, id=2566, 234.8775pt x 1
+56.585pt>
+File: diagrammi/classi/frontEnd/directives/premiMindmap.pdf Graphic file (type 
+pdf)
+ <use diagrammi/classi/frontEnd/directives/premiMindmap.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiMindmap.pdf 
+used on input line 1944.
+(pdftex.def)             Requested size: 93.94933pt x 62.63287pt.
+ [64 <./diagrammi/classi/frontEnd/directives/premiMindmap.pdf>]
+<diagrammi/classi/frontEnd/directives/premiNode.pdf, id=2591, 220.825pt x 176.6
+6pt>
+File: diagrammi/classi/frontEnd/directives/premiNode.pdf Graphic file (type pdf
+)
+ <use diagrammi/classi/frontEnd/directives/premiNode.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiNode.pdf use
+d on input line 1988.
+(pdftex.def)             Requested size: 88.32843pt x 70.66273pt.
+ [65 <./diagrammi/classi/frontEnd/directives/premiNode.pdf>]
+<diagrammi/classi/frontEnd/directives/premiNodeContent.pdf, id=2619, 403.5075pt
+ x 157.58875pt>
+File: diagrammi/classi/frontEnd/directives/premiNodeContent.pdf Graphic file (t
+ype pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiNodeContent.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiNodeContent.
+pdf used on input line 2033.
+(pdftex.def)             Requested size: 161.40013pt x 63.03436pt.
+ [66 <./diagrammi/classi/frontEnd/directives/premiNodeContent.pdf>]
+<diagrammi/classi/frontEnd/directives/premiNodeContentsEditor.pdf, id=2644, 433
+.62pt x 174.6525pt>
+File: diagrammi/classi/frontEnd/directives/premiNodeContentsEditor.pdf Graphic 
+file (type pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiNodeContentsEditor.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiNodeContents
+Editor.pdf used on input line 2081.
+(pdftex.def)             Requested size: 173.44492pt x 69.85976pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[67] [68 <./diagrammi/classi/frontEnd/directives/premiNodeContentsEditor.pdf>]
+<diagrammi/classi/frontEnd/directives/premiPath.pdf, id=2675, 234.8775pt x 156.
+585pt>
+File: diagrammi/classi/frontEnd/directives/premiPath.pdf Graphic file (type pdf
+)
+ <use diagrammi/classi/frontEnd/directives/premiPath.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiPath.pdf use
+d on input line 2147.
+(pdftex.def)             Requested size: 93.94933pt x 62.63287pt.
+ [69 <./diagrammi/classi/frontEnd/directives/premiPath.pdf>]
+<diagrammi/classi/frontEnd/directives/premiPathsList.pdf, id=2702, 234.8775pt x
+ 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiPathsList.pdf Graphic file (typ
+e pdf)
+ <use diagrammi/classi/frontEnd/directives/premiPathsList.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiPathsList.pd
+f used on input line 2196.
+(pdftex.def)             Requested size: 93.94933pt x 62.63287pt.
+
+[70 <./diagrammi/classi/frontEnd/directives/premiPathsList.pdf>]
+<diagrammi/classi/frontEnd/directives/premiPresentation.pdf, id=2726, 379.4175p
+t x 194.7275pt>
+File: diagrammi/classi/frontEnd/directives/premiPresentation.pdf Graphic file (
+type pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiPresentation.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiPresentation
+.pdf used on input line 2241.
+(pdftex.def)             Requested size: 151.7643pt x 77.8896pt.
+ [71 <./diagrammi/classi/frontEnd/directives/premiPresentation.pdf>]
+<diagrammi/classi/frontEnd/directives/premiProjectSettingsEditor.pdf, id=2750, 
+310.15875pt x 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiProjectSettingsEditor.pdf Graph
+ic file (type pdf)
+
+<use diagrammi/classi/frontEnd/directives/premiProjectSettingsEditor.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiProjectSetti
+ngsEditor.pdf used on input line 2303.
+(pdftex.def)             Requested size: 124.0613pt x 62.63287pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[72]
+Underfull \hbox (badness 6236) in paragraph at lines 2315--2317
+\T1/ptm/m/n/10 (+20) Classe che si oc-cu-pa di ge-sti-re la lo-gi-ca di fun-zio
+-na-men-to del-la di-rec-ti-ve
+ []
+
+
+<diagrammi/classi/frontEnd/directives/premiProjectsList.pdf, id=2760, 220.825pt
+ x 176.66pt>
+File: diagrammi/classi/frontEnd/directives/premiProjectsList.pdf Graphic file (
+type pdf)
+ <use diagrammi/classi/frontEnd/directives/premiProjectsList.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiProjectsList
+.pdf used on input line 2340.
+(pdftex.def)             Requested size: 88.32843pt x 70.66273pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[73 <./diagrammi/classi/frontEnd/directives/premiProjectSettingsEditor.pdf>]
+[74 <./diagrammi/classi/frontEnd/directives/premiProjectsList.pdf>]
+<diagrammi/classi/frontEnd/directives/premiSmartMenu.pdf, id=2807, 234.8775pt x
+ 156.585pt>
+File: diagrammi/classi/frontEnd/directives/premiSmartMenu.pdf Graphic file (typ
+e pdf)
+ <use diagrammi/classi/frontEnd/directives/premiSmartMenu.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/directives/premiSmartMenu.pd
+f used on input line 2392.
+(pdftex.def)             Requested size: 93.94933pt x 62.63287pt.
+
+Underfull \hbox (badness 4940) in paragraph at lines 2422--2423
+[]\T1/pcr/m/n/10 relations (=)\T1/ptm/m/n/10 (+20) : \T1/pcr/m/n/10 Array \T1/p
+tm/m/n/10 (+20) con-te-nen-te og-get-ti di ti-po \T1/pcr/m/n/10 NodeReference\T
+1/ptm/m/n/10 (+20) ,
+ []
+
+[75 <./diagrammi/classi/frontEnd/directives/premiSmartMenu.pdf>]
+<diagrammi/package/frontEnd-model.pdf, id=2832, 533.995pt x 382.42876pt>
+File: diagrammi/package/frontEnd-model.pdf Graphic file (type pdf)
+
+<use diagrammi/package/frontEnd-model.pdf>
+Package pdftex.def Info: diagrammi/package/frontEnd-model.pdf used on input lin
+e 2434.
+(pdftex.def)             Requested size: 213.59421pt x 152.96878pt.
+
+<diagrammi/classi/frontEnd/model/ErrorInfo.pdf, id=2838, 542.025pt x 212.795pt>
+File: diagrammi/classi/frontEnd/model/ErrorInfo.pdf Graphic file (type pdf)
+<use diagrammi/classi/frontEnd/model/ErrorInfo.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/model/ErrorInfo.pdf used on 
+input line 2459.
+(pdftex.def)             Requested size: 216.80615pt x 85.11649pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[76 <./diagrammi/package/frontEnd-model.pdf>] [77 <./diagrammi/classi/frontEnd/
+model/ErrorInfo.pdf>]
+<diagrammi/classi/frontEnd/model/Node.pdf, id=2931, 411.5375pt x 309.155pt>
+File: diagrammi/classi/frontEnd/model/Node.pdf Graphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/model/Node.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/model/Node.pdf used on input
+ line 2520.
+(pdftex.def)             Requested size: 164.61208pt x 123.6598pt.
+ [78 <./diagrammi/classi/frontEnd/model/Node.pdf>] [79]
+Underfull \hbox (badness 1776) in paragraph at lines 2616--2620
+\T1/ptm/m/n/10 (+20) Metodo che ri-muo-ve dal-la col-le-zio-ne \T1/pcr/m/n/10 c
+ontent \T1/ptm/m/n/10 (+20) l'e-le-men-to aven-te \T1/pcr/m/n/10 id \T1/ptm/m/n
+/10 (+20) ugua-le a
+ []
+
+
+<diagrammi/classi/frontEnd/model/NodeContent.pdf, id=2973, 953.5625pt x 478.788
+76pt>
+File: diagrammi/classi/frontEnd/model/NodeContent.pdf Graphic file (type pdf)
+ <use diagrammi/classi/frontEnd/model/NodeContent.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/model/NodeContent.pdf used o
+n input line 2630.
+(pdftex.def)             Requested size: 381.41824pt x 191.5121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[80] [81 <./diagrammi/classi/frontEnd/model/NodeContent.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2690--2694
+[]\T1/pcr/m/n/10 + NodeContent(id: String, content: String, x: Number, y:
+ []
+
+[82]
+<diagrammi/classi/frontEnd/model/NodeReference.pdf, id=3010, 373.395pt x 176.66
+pt>
+File: diagrammi/classi/frontEnd/model/NodeReference.pdf Graphic file (type pdf)
+
+ <use diagrammi/classi/frontEnd/model/NodeReference.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/model/NodeReference.pdf used
+ on input line 2751.
+(pdftex.def)             Requested size: 149.35535pt x 70.66273pt.
+ [83 <./diagrammi/classi/frontEnd/model/NodeReference.pdf>]
+<diagrammi/classi/frontEnd/model/Path.pdf, id=3037, 598.235pt x 343.2825pt>
+File: diagrammi/classi/frontEnd/model/Path.pdf Graphic file (type pdf)
+
+<use diagrammi/classi/frontEnd/model/Path.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/model/Path.pdf used on input
+ line 2804.
+(pdftex.def)             Requested size: 239.28975pt x 137.31056pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[84] [85 <./diagrammi/classi/frontEnd/model/Path.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2879--2883
+[]\T1/pcr/m/n/10 + Path(id: String, name: String, steps: Array, isDefault:
+ []
+
+[86]
+<diagrammi/classi/frontEnd/model/PresentationNode.pdf, id=3080, 1020.81375pt x 
+212.795pt>
+File: diagrammi/classi/frontEnd/model/PresentationNode.pdf Graphic file (type p
+df)
+ <use diagrammi/classi/frontEnd/model/PresentationNode.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/model/PresentationNode.pdf u
+sed on input line 2906.
+(pdftex.def)             Requested size: 408.31827pt x 85.11649pt.
+ [87 <./diagrammi/classi/frontEnd/model/PresentationNode.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2952--2956
+[]\T1/pcr/m/n/10 + PresentationNode(id: String, contents: Array,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2952--2956
+\T1/pcr/m/n/10 parentNode: Object, childNodes: Array, associatedNodes:
+ []
+
+
+<diagrammi/classi/frontEnd/model/Project.pdf, id=3109, 925.4575pt x 383.4325pt>
+File: diagrammi/classi/frontEnd/model/Project.pdf Graphic file (type pdf)
+<use diagrammi/classi/frontEnd/model/Project.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/model/Project.pdf used on in
+put line 2974.
+(pdftex.def)             Requested size: 370.17644pt x 153.37029pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[88]
+Underfull \hbox (badness 6236) in paragraph at lines 2988--2990
+\T1/ptm/m/n/10 (+20) Classe che si oc-cu-pa di ge-sti-re la lo-gi-ca di fun-zio
+-na-men-to del-la di-rec-ti-ve
+ []
+
+[89 <./diagrammi/classi/frontEnd/model/Project.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3044--3048
+[]\T1/pcr/m/n/10 + Project(id: String, name: String, backgroundColor:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3044--3048
+\T1/pcr/m/n/10 String, fontFamily: String, textColor: String, rootId:
+ []
+
+[90]
+<diagrammi/package/frontEnd-services.pdf, id=3149, 819.06pt x 474.77374pt>
+File: diagrammi/package/frontEnd-services.pdf Graphic file (type pdf)
+
+<use diagrammi/package/frontEnd-services.pdf>
+Package pdftex.def Info: diagrammi/package/frontEnd-services.pdf used on input 
+line 3096.
+(pdftex.def)             Requested size: 327.6182pt x 189.90613pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[91]
+<diagrammi/classi/frontEnd/services/AuthenticationService.pdf, id=3158, 648.422
+5pt x 270.00874pt>
+File: diagrammi/classi/frontEnd/services/AuthenticationService.pdf Graphic file
+ (type pdf)
+
+<use diagrammi/classi/frontEnd/services/AuthenticationService.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/services/AuthenticationServi
+ce.pdf used on input line 3117.
+(pdftex.def)             Requested size: 259.3644pt x 108.00157pt.
+ [92 <./diagrammi/package/frontEnd-services.pdf> <./diagrammi/classi/frontEnd/s
+ervices/AuthenticationService.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3154--3158
+[]\T1/pcr/m/n/10 + AuthenticationService($http: $http, ServerURL: ServerURL,
+ []
+
+[93]
+Underfull \hbox (badness 4872) in paragraph at lines 3181--3183
+\T1/ptm/m/n/10 (+20) Parametro che rap-pre-sen-ta la pas-sword del-l'u-ten-te c
+he ri-chie-de l'ac-ces-so
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3186--3191
+[]\T1/pcr/m/n/10 + signUp(email: String, password: String, passwordCheck:
+ []
+
+
+<diagrammi/classi/frontEnd/services/MindmapAdapterService.pdf, id=3231, 820.063
+75pt x 459.7175pt>
+File: diagrammi/classi/frontEnd/services/MindmapAdapterService.pdf Graphic file
+ (type pdf)
+
+<use diagrammi/classi/frontEnd/services/MindmapAdapterService.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/services/MindmapAdapterServi
+ce.pdf used on input line 3205.
+(pdftex.def)             Requested size: 328.01968pt x 183.88373pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[94] [95 <./diagrammi/classi/frontEnd/services/MindmapAdapterService.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3238--3242
+[]\T1/pcr/m/n/10 + addAssociation(sourceNodeId: String, destinationNodeId:
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 3259--3263
+\T1/ptm/m/n/10 (+20) Metodo che ri-muo-ve l'as-so-cia-zio-ne aven-te co-me \T1/
+pcr/m/n/10 id \T1/ptm/m/n/10 (+20) il va-lo-re del pa-ra-me-tro
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 3267.
+[96]
+Underfull \hbox (badness 10000) in paragraph at lines 3304--3308
+[]\T1/pcr/m/n/10 + loadMap(nodes: Array, edges: Array, rootId: String):
+ []
+
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 3329--3333
+[]\T1/pcr/m/n/10 + stopListen(eventName: String, callback: Function):
+ []
+
+
+<diagrammi/classi/frontEnd/services/MindmapService.pdf, id=3275, 1202.4925pt x 
+402.50375pt>
+File: diagrammi/classi/frontEnd/services/MindmapService.pdf Graphic file (type 
+pdf)
+ <use diagrammi/classi/frontEnd/services/MindmapService.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/services/MindmapService.pdf 
+used on input line 3352.
+(pdftex.def)             Requested size: 480.98848pt x 160.99864pt.
+
+Overfull \hbox (68.4235pt too wide) in paragraph at lines 3352--3353
+ [][] 
+ []
+
+[98 <./diagrammi/classi/frontEnd/services/MindmapService.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3395--3399
+[]\T1/pcr/m/n/10 + addAssociation(sourceNodeId: String, destinationNodeId:
+ []
+
+[99]
+Underfull \hbox (badness 4569) in paragraph at lines 3413--3417
+\T1/ptm/m/n/10 (+20) Metodo che ri-muo-ve l'as-so-cia-zio-ne aven-te co-me \T1/
+pcr/m/n/10 id \T1/ptm/m/n/10 (+20) il va-lo-re del pa-ra-me-tro
+ []
+
+[100]
+Underfull \hbox (badness 10000) in paragraph at lines 3462--3466
+[]\T1/pcr/m/n/10 + MindmapService($q: $q, $http: $http,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3462--3466
+\T1/pcr/m/n/10 MindmapAdapterService: MindmapAdapterService,
+ []
+
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 3477--3481
+[]\T1/pcr/m/n/10 + stopListen(eventName: String, callback: Function):
+ []
+
+
+<diagrammi/classi/frontEnd/services/PathService.pdf, id=3322, 760.8425pt x 365.
+365pt>
+File: diagrammi/classi/frontEnd/services/PathService.pdf Graphic file (type pdf
+)
+ <use diagrammi/classi/frontEnd/services/PathService.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/services/PathService.pdf use
+d on input line 3501.
+(pdftex.def)             Requested size: 304.3316pt x 146.1434pt.
+ [102 <./diagrammi/classi/frontEnd/services/PathService.pdf>] [103] [104]
+Underfull \hbox (badness 10000) in paragraph at lines 3611--3615
+[]\T1/pcr/m/n/10 + PathService($http: $http, $q: $q, ServerURL: ServerURL,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3624--3628
+[]\T1/pcr/m/n/10 + removeNodeFromPath(nodeId: String, pathId: String):
+ []
+
+
+<diagrammi/classi/frontEnd/services/PresentationService.pdf, id=3364, 1023.825p
+t x 270.00874pt>
+File: diagrammi/classi/frontEnd/services/PresentationService.pdf Graphic file (
+type pdf)
+
+<use diagrammi/classi/frontEnd/services/PresentationService.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/services/PresentationService
+.pdf used on input line 3640.
+(pdftex.def)             Requested size: 409.52274pt x 108.00157pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[105] [106 <./diagrammi/classi/frontEnd/services/PresentationService.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3710--3714
+[]\T1/pcr/m/n/10 + PresentationService($http: $http, $q: $q, ServerURL:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3710--3714
+\T1/pcr/m/n/10 ServerURL, ProjectService: ProjectService, PathService:
+ []
+
+[107]
+<diagrammi/classi/frontEnd/services/ProjectService.pdf, id=3403, 944.52875pt x 
+383.4325pt>
+File: diagrammi/classi/frontEnd/services/ProjectService.pdf Graphic file (type 
+pdf)
+ <use diagrammi/classi/frontEnd/services/ProjectService.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/services/ProjectService.pdf 
+used on input line 3732.
+(pdftex.def)             Requested size: 377.80481pt x 153.37029pt.
+
+Underfull \hbox (badness 6236) in paragraph at lines 3753--3755
+\T1/ptm/m/n/10 (+20) Classe che si oc-cu-pa di ge-sti-re la lo-gi-ca di fun-zio
+-na-men-to del-la di-rec-ti-ve
+ []
+
+[108 <./diagrammi/classi/frontEnd/services/ProjectService.pdf>] [109] [110]
+Underfull \hbox (badness 10000) in paragraph at lines 3833--3837
+[]\T1/pcr/m/n/10 + ProjectService($http: Object, $q: Object, ServerURL:
+ []
+
+
+<diagrammi/classi/frontEnd/services/ServerURL.pdf, id=3449, 240.9pt x 100.375pt
+>
+File: diagrammi/classi/frontEnd/services/ServerURL.pdf Graphic file (type pdf)
+ <use diagrammi/classi/frontEnd/services/ServerURL.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/services/ServerURL.pdf used 
+on input line 3853.
+(pdftex.def)             Requested size: 96.35828pt x 40.14928pt.
+ [111 <./diagrammi/classi/frontEnd/services/ServerURL.pdf>]
+<diagrammi/package/frontEnd-views.pdf, id=3476, 771.88374pt x 282.05376pt>
+File: diagrammi/package/frontEnd-views.pdf Graphic file (type pdf)
+
+<use diagrammi/package/frontEnd-views.pdf>
+Package pdftex.def Info: diagrammi/package/frontEnd-views.pdf used on input lin
+e 3886.
+(pdftex.def)             Requested size: 308.74802pt x 112.81949pt.
+
+<diagrammi/classi/frontEnd/views/DashboardView.pdf, id=3481, 202.7575pt x 100.3
+75pt>
+File: diagrammi/classi/frontEnd/views/DashboardView.pdf Graphic file (type pdf)
+
+ <use diagrammi/classi/frontEnd/views/DashboardView.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/views/DashboardView.pdf used
+ on input line 3909.
+(pdftex.def)             Requested size: 81.10156pt x 40.14928pt.
+ [112 <./diagrammi/package/frontEnd-views.pdf> <./diagrammi/classi/frontEnd/vie
+ws/DashboardView.pdf>]
+<diagrammi/classi/frontEnd/views/LoginView.pdf, id=3544, 178.6675pt x 100.375pt
+>
+File: diagrammi/classi/frontEnd/views/LoginView.pdf Graphic file (type pdf)
+ <use diagrammi/classi/frontEnd/views/LoginView.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/views/LoginView.pdf used on 
+input line 3945.
+(pdftex.def)             Requested size: 71.46573pt x 40.14928pt.
+
+<diagrammi/classi/frontEnd/views/MindmapEditorView.pdf, id=3546, 391.4625pt x 1
+18.4425pt>
+File: diagrammi/classi/frontEnd/views/MindmapEditorView.pdf Graphic file (type 
+pdf)
+ <use diagrammi/classi/frontEnd/views/MindmapEditorView.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/views/MindmapEditorView.pdf 
+used on input line 3970.
+(pdftex.def)             Requested size: 156.58221pt x 47.37614pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[113 <./diagrammi/classi/frontEnd/views/LoginView.pdf>] [114 <./diagrammi/class
+i/frontEnd/views/MindmapEditorView.pdf>]
+<diagrammi/classi/frontEnd/views/PathsEditorView.pdf, id=3597, 269.005pt x 156.
+585pt>
+File: diagrammi/classi/frontEnd/views/PathsEditorView.pdf Graphic file (type pd
+f)
+ <use diagrammi/classi/frontEnd/views/PathsEditorView.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/views/PathsEditorView.pdf us
+ed on input line 4020.
+(pdftex.def)             Requested size: 107.60008pt x 62.63287pt.
+ [115 <./diagrammi/classi/frontEnd/views/PathsEditorView.pdf>]
+<diagrammi/classi/frontEnd/views/PresentationView.pdf, id=3627, 321.2pt x 213.7
+9875pt>
+File: diagrammi/classi/frontEnd/views/PresentationView.pdf Graphic file (type p
+df)
+ <use diagrammi/classi/frontEnd/views/PresentationView.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/views/PresentationView.pdf u
+sed on input line 4073.
+(pdftex.def)             Requested size: 128.47772pt x 85.51797pt.
+ [116 <./diagrammi/classi/frontEnd/views/PresentationView.pdf>]
+<diagrammi/classi/frontEnd/views/RegistrationView.pdf, id=3656, 216.81pt x 100.
+375pt>
+File: diagrammi/classi/frontEnd/views/RegistrationView.pdf Graphic file (type p
+df)
+ <use diagrammi/classi/frontEnd/views/RegistrationView.pdf>
+Package pdftex.def Info: diagrammi/classi/frontEnd/views/RegistrationView.pdf u
+sed on input line 4122.
+(pdftex.def)             Requested size: 86.72246pt x 40.14928pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[117])) (./sezioni/backEnd.tex [118 <./diagrammi/classi/frontEnd/views/Registra
+tionView.pdf>] (./sezioni/packageClassiDP-BE.tex
+<diagrammi/package/backEnd.pdf, id=3684, 646.415pt x 437.635pt>
+File: diagrammi/package/backEnd.pdf Graphic file (type pdf)
+
+<use diagrammi/package/backEnd.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd.pdf used on input line 6.
+(pdftex.def)             Requested size: 258.56142pt x 175.05089pt.
+
+<diagrammi/classi/BackEnd/server.pdf, id=3687, 226.8475pt x 118.4425pt>
+File: diagrammi/classi/BackEnd/server.pdf Graphic file (type pdf)
+
+<use diagrammi/classi/BackEnd/server.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/server.pdf used on input line
+ 26.
+(pdftex.def)             Requested size: 90.73738pt x 47.37614pt.
+ [119 <./diagrammi/package/backEnd.pdf> <./diagrammi/classi/BackEnd/server.pdf>
+]
+<diagrammi/package/backEnd-app.pdf, id=3754, 847.165pt x 491.8375pt>
+File: diagrammi/package/backEnd-app.pdf Graphic file (type pdf)
+
+<use diagrammi/package/backEnd-app.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app.pdf used on input line 6
+7.
+(pdftex.def)             Requested size: 338.85999pt x 196.7315pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[120]
+<diagrammi/package/backEnd-app-controllers.pdf, id=3767, 714.67pt x 539.01375pt
+>
+File: diagrammi/package/backEnd-app-controllers.pdf Graphic file (type pdf)
+ <use diagrammi/package/backEnd-app-controllers.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app-controllers.pdf used on 
+input line 98.
+(pdftex.def)             Requested size: 285.86293pt x 215.60167pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[121 <./diagrammi/package/backEnd-app.pdf>]
+<diagrammi/classi/BackEnd/App/Controllers/errorHandler.pdf, id=3840, 712.6625pt
+ x 100.375pt>
+File: diagrammi/classi/BackEnd/App/Controllers/errorHandler.pdf Graphic file (t
+ype pdf)
+ <use diagrammi/classi/BackEnd/App/Controllers/errorHandler.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/errorHandler.
+pdf used on input line 128.
+(pdftex.def)             Requested size: 285.05995pt x 40.14928pt.
+
+[122 <./diagrammi/package/backEnd-app-controllers.pdf> <./diagrammi/classi/Back
+End/App/Controllers/errorHandler.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+[]\T1/pcr/m/n/10 + handle(err: PremiError, req: Request, res: Response,
+ []
+
+
+<diagrammi/classi/BackEnd/App/Controllers/notFoundHandler.pdf, id=3919, 580.167
+5pt x 100.375pt>
+File: diagrammi/classi/BackEnd/App/Controllers/notFoundHandler.pdf Graphic file
+ (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/notFoundHandler.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/notFoundHandl
+er.pdf used on input line 171.
+(pdftex.def)             Requested size: 232.06288pt x 40.14928pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[123]
+<diagrammi/classi/BackEnd/App/Controllers/projectController.pdf, id=3928, 193.7
+2375pt x 81.30376pt>
+File: diagrammi/classi/BackEnd/App/Controllers/projectController.pdf Graphic fi
+le (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/projectController.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/projectContro
+ller.pdf used on input line 208.
+(pdftex.def)             Requested size: 77.48811pt x 32.52092pt.
+ [124 <./diagrammi/classi/BackEnd/App/Controllers/notFoundHandler.pdf> <./diagr
+ammi/classi/BackEnd/App/Controllers/projectController.pdf>]
+<diagrammi/classi/BackEnd/App/Controllers/staticController.pdf, id=3970, 642.4p
+t x 100.375pt>
+File: diagrammi/classi/BackEnd/App/Controllers/staticController.pdf Graphic fil
+e (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/staticController.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/staticControl
+ler.pdf used on input line 234.
+(pdftex.def)             Requested size: 256.95544pt x 40.14928pt.
+
+<diagrammi/classi/BackEnd/App/Controllers/userController.pdf, id=3973, 174.6525
+pt x 81.30376pt>
+File: diagrammi/classi/BackEnd/App/Controllers/userController.pdf Graphic file 
+(type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/userController.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/userControlle
+r.pdf used on input line 269.
+(pdftex.def)             Requested size: 69.85976pt x 32.52092pt.
+ [125 <./diagrammi/classi/BackEnd/App/Controllers/staticController.pdf>]
+<diagrammi/package/backEnd-app-controllers-errors.pdf, id=3999, 415.5525pt x 17
+4.6525pt>
+File: diagrammi/package/backEnd-app-controllers-errors.pdf Graphic file (type p
+df)
+ <use diagrammi/package/backEnd-app-controllers-errors.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app-controllers-errors.pdf u
+sed on input line 294.
+(pdftex.def)             Requested size: 166.21805pt x 69.85976pt.
+
+<diagrammi/classi/BackEnd/App/Controllers/Errors/premiError.pdf, id=4001, 222.8
+325pt x 213.79875pt>
+File: diagrammi/classi/BackEnd/App/Controllers/Errors/premiError.pdf Graphic fi
+le (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/Errors/premiError.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/Errors/premiE
+rror.pdf used on input line 308.
+(pdftex.def)             Requested size: 89.13141pt x 85.51797pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[126 <./diagrammi/classi/BackEnd/App/Controllers/userController.pdf> <./diagram
+mi/package/backEnd-app-controllers-errors.pdf>]
+<diagrammi/package/backEnd-app-controllers-projects.pdf, id=4047, 437.635pt x 2
+71.0125pt>
+File: diagrammi/package/backEnd-app-controllers-projects.pdf Graphic file (type
+ pdf)
+ <use diagrammi/package/backEnd-app-controllers-projects.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app-controllers-projects.pdf
+ used on input line 351.
+(pdftex.def)             Requested size: 175.05089pt x 108.40306pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[127 <./diagrammi/classi/BackEnd/App/Controllers/Errors/premiError.pdf>]
+<diagrammi/classi/BackEnd/App/Controllers/Projects/nodeController.pdf, id=4070,
+ 808.01875pt x 213.79875pt>
+File: diagrammi/classi/BackEnd/App/Controllers/Projects/nodeController.pdf Grap
+hic file (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/Projects/nodeController.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/Projects/node
+Controller.pdf used on input line 365.
+(pdftex.def)             Requested size: 323.20177pt x 85.51797pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--387
+[]\T1/pcr/m/n/10 + addAssociation(req: Request, res: Response, next:
+ []
+
+[128 <./diagrammi/package/backEnd-app-controllers-projects.pdf> <./diagrammi/cl
+assi/BackEnd/App/Controllers/Projects/nodeController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 394--398
+[]\T1/pcr/m/n/10 + addNode(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--409
+[]\T1/pcr/m/n/10 + associationById(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--422
+[]\T1/pcr/m/n/10 + deleteAssociation(req: Request, res: Response, next:
+ []
+
+[129]
+Underfull \hbox (badness 10000) in paragraph at lines 429--433
+[]\T1/pcr/m/n/10 + deleteNode(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--444
+[]\T1/pcr/m/n/10 + nodeById(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--457
+[]\T1/pcr/m/n/10 + updateNode(req: Request, res: Response, next:
+ []
+
+[130]
+<diagrammi/classi/BackEnd/App/Controllers/Projects/pathController.pdf, id=4133,
+ 750.805pt x 212.795pt>
+File: diagrammi/classi/BackEnd/App/Controllers/Projects/pathController.pdf Grap
+hic file (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/Projects/pathController.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/Projects/path
+Controller.pdf used on input line 471.
+(pdftex.def)             Requested size: 300.31668pt x 85.11649pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--493
+[]\T1/pcr/m/n/10 + addNodeToPath(req: Request, res: Response, next:
+ []
+
+[131 <./diagrammi/classi/BackEnd/App/Controllers/Projects/pathController.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 500--504
+[]\T1/pcr/m/n/10 + addPath(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--515
+[]\T1/pcr/m/n/10 + deleteNodeFromPath(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--526
+[]\T1/pcr/m/n/10 + deletePath(req: Request, res: Response, next:
+ []
+
+[132]
+Underfull \hbox (badness 10000) in paragraph at lines 533--537
+[]\T1/pcr/m/n/10 + getPath(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--548
+[]\T1/pcr/m/n/10 + pathById(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--561
+[]\T1/pcr/m/n/10 + updatePath(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 557--561
+\T1/ptm/m/n/10 (+20) Questo me-to-do vie-ne uti-liz-za-to per mo-di-fi-ca-re le
+ im-po-sta-zio-ni di un per-cor-so di
+ []
+
+[133]
+<diagrammi/classi/BackEnd/App/Controllers/Projects/projectManagement.pdf, id=41
+68, 770.88pt x 232.87pt>
+File: diagrammi/classi/BackEnd/App/Controllers/Projects/projectManagement.pdf G
+raphic file (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/Projects/projectManagement.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/Projects/proj
+ectManagement.pdf used on input line 575.
+(pdftex.def)             Requested size: 308.34654pt x 93.14633pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--597
+[]\T1/pcr/m/n/10 + addProject(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--608
+[]\T1/pcr/m/n/10 + deleteProject(req: Request, res: Response, next:
+ []
+
+[134 <./diagrammi/classi/BackEnd/App/Controllers/Projects/projectManagement.pdf
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 615--619
+[]\T1/pcr/m/n/10 + getAllPaths(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 626--630
+[]\T1/pcr/m/n/10 + getAllProjects(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--641
+[]\T1/pcr/m/n/10 + getPresentation(req: Request, res: Response, next:
+ []
+
+[135]
+Underfull \hbox (badness 10000) in paragraph at lines 648--652
+[]\T1/pcr/m/n/10 + getProject(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--663
+[]\T1/pcr/m/n/10 + projectById(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--676
+[]\T1/pcr/m/n/10 + updateProject(req: Request, res: Response, next:
+ []
+
+[136]
+<diagrammi/package/backEnd-app-controllers-users.pdf, id=4202, 563.10374pt x 18
+6.6975pt>
+File: diagrammi/package/backEnd-app-controllers-users.pdf Graphic file (type pd
+f)
+ <use diagrammi/package/backEnd-app-controllers-users.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app-controllers-users.pdf us
+ed on input line 690.
+(pdftex.def)             Requested size: 225.2375pt x 74.67767pt.
+
+<diagrammi/classi/BackEnd/App/Controllers/Users/authenticationCtlr.pdf, id=4204
+, 583.17876pt x 138.5175pt>
+File: diagrammi/classi/BackEnd/App/Controllers/Users/authenticationCtlr.pdf Gra
+phic file (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/Users/authenticationCtlr.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/Users/authent
+icationCtlr.pdf used on input line 704.
+(pdftex.def)             Requested size: 233.26736pt x 55.406pt.
+
+[137 <./diagrammi/package/backEnd-app-controllers-users.pdf> <./diagrammi/class
+i/BackEnd/App/Controllers/Users/authenticationCtlr.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 725--729
+[]\T1/pcr/m/n/10 + signin(req: Request, res: Response, next:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--749
+[]\T1/pcr/m/n/10 + signup(req: Request, res: Response, next:
+ []
+
+
+<diagrammi/classi/BackEnd/App/Controllers/Users/authorizationCtrl.pdf, id=4255,
+ 698.61pt x 100.375pt>
+File: diagrammi/classi/BackEnd/App/Controllers/Users/authorizationCtrl.pdf Grap
+hic file (type pdf)
+
+<use diagrammi/classi/BackEnd/App/Controllers/Users/authorizationCtrl.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Controllers/Users/authori
+zationCtrl.pdf used on input line 763.
+(pdftex.def)             Requested size: 279.43904pt x 40.14928pt.
+
+[138]
+Underfull \hbox (badness 10000) in paragraph at lines 784--788
+[]\T1/pcr/m/n/10 + requiresLogin(req: Request, res: Response, next:
+ []
+
+<diagrammi/package/backEnd-app-models.pdf, id=4265, 816.04875pt x 393.47pt>
+File: diagrammi/package/backEnd-app-models.pdf Graphic file (type pdf)
+
+<use diagrammi/package/backEnd-app-models.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app-models.pdf used on input
+ line 802.
+(pdftex.def)             Requested size: 326.41371pt x 157.38521pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[139 <./diagrammi/classi/BackEnd/App/Controllers/Users/authorizationCtrl.pdf>]
+<diagrammi/classi/BackEnd/App/Models/nodeContentModel.pdf, id=4288, 587.19376pt
+ x 118.4425pt>
+File: diagrammi/classi/BackEnd/App/Models/nodeContentModel.pdf Graphic file (ty
+pe pdf)
+ <use diagrammi/classi/BackEnd/App/Models/nodeContentModel.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Models/nodeContentModel.p
+df used on input line 816.
+(pdftex.def)             Requested size: 234.87334pt x 47.37614pt.
+
+[140 <./diagrammi/package/backEnd-app-models.pdf> <./diagrammi/classi/BackEnd/A
+pp/Models/nodeContentModel.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 851--855
+[]\T1/pcr/m/n/10 + |   [](content: JSON, callback:
+ []
+
+
+<diagrammi/classi/BackEnd/App/Models/nodeModel.pdf, id=4307, 525.965pt x 157.58
+875pt>
+File: diagrammi/classi/BackEnd/App/Models/nodeModel.pdf Graphic file (type pdf)
+
+ <use diagrammi/classi/BackEnd/App/Models/nodeModel.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Models/nodeModel.pdf used
+ on input line 867.
+(pdftex.def)             Requested size: 210.38226pt x 63.03436pt.
+ [141 <./diagrammi/classi/BackEnd/App/Models/nodeModel.pdf>]
+<diagrammi/classi/BackEnd/App/Models/pathModel.pdf, id=4323, 809.0225pt x 176.6
+6pt>
+File: diagrammi/classi/BackEnd/App/Models/pathModel.pdf Graphic file (type pdf)
+
+ <use diagrammi/classi/BackEnd/App/Models/pathModel.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Models/pathModel.pdf used
+ on input line 929.
+(pdftex.def)             Requested size: 323.60327pt x 70.66273pt.
+ [142 <./diagrammi/classi/BackEnd/App/Models/pathModel.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 964--968
+[]\T1/pcr/m/n/10 + removeNode(nodeId: ObjectId, callback: function(JSON),
+ []
+
+[143]
+Underfull \hbox (badness 10000) in paragraph at lines 982--986
+[]\T1/pcr/m/n/10 + |   [](name: String, default: Boolean, callback:
+ []
+
+
+<diagrammi/classi/BackEnd/App/Models/projectModel.pdf, id=4343, 1051.93pt x 422
+.57875pt>
+File: diagrammi/classi/BackEnd/App/Models/projectModel.pdf Graphic file (type p
+df)
+ <use diagrammi/classi/BackEnd/App/Models/projectModel.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Models/projectModel.pdf u
+sed on input line 1000.
+(pdftex.def)             Requested size: 420.76454pt x 169.0285pt.
+
+Overfull \hbox (8.19955pt too wide) in paragraph at lines 1000--1001
+ [][] 
+ []
+
+[144 <./diagrammi/classi/BackEnd/App/Models/projectModel.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1048
+[]\T1/pcr/m/n/10 + addAssociation(sourceId: ObjectId, destinationId:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1048
+\T1/pcr/m/n/10 ObjectId, callback: function(JSON), errback:
+ []
+
+[145]
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1061
+[]\T1/pcr/m/n/10 + addNode(sourceNodeId: ObjectId, callback:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1072
+[]\T1/pcr/m/n/10 + addNodeToPath(nodeId: ObjectId, pathId: ObjectId,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1072
+\T1/pcr/m/n/10 callback: function(JSON), errback: function(PremiError)):
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1085
+[]\T1/pcr/m/n/10 + addPath(pathId: ObjectId, callback: function(JSON),
+ []
+
+[146]
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1096
+[]\T1/pcr/m/n/10 + getPathList(callback: function(JSON), errback:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1105
+[]\T1/pcr/m/n/10 + getPathNodes(pathId: ObjectId, callback: function(JSON),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1116
+[]\T1/pcr/m/n/10 + removeAssociation(callback: function(JSON), errback:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1127
+[]\T1/pcr/m/n/10 + removeNode(nodeId: ObjectId, callback: function(JSON),
+ []
+
+[147]
+Underfull \hbox (badness 10000) in paragraph at lines 1134--1138
+[]\T1/pcr/m/n/10 + removeNodeFromPath(nodeId: ObjectId, pathId: ObjectId,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1147--1151
+[]\T1/pcr/m/n/10 + removePath(name: String, callback: function(JSON),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1162
+[]\T1/pcr/m/n/10 + setBkgColor(color: String, callback: function(JSON),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1173
+[]\T1/pcr/m/n/10 + setFontColor(color: String, callback: function(JSON),
+ []
+
+[148]
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1184
+[]\T1/pcr/m/n/10 + setFontFamily(family: String, callback: function(JSON),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1195
+[]\T1/pcr/m/n/10 + setName(name: String, callback: function(JSON), errback:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1206
+[]\T1/pcr/m/n/10 + setPathName(name: String, pathId: ObjectId, callback:
+ []
+
+[149]
+Underfull \hbox (badness 10000) in paragraph at lines 1215--1219
+[]\T1/pcr/m/n/10 + updateNode(nodeId: ObjectId, content: JSON, callback:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1232
+[]\T1/pcr/m/n/10 + |   [](name: String, userId: ObjectId, callback:
+ []
+
+
+<diagrammi/classi/BackEnd/App/Models/relationModel.pdf, id=4388, 897.3525pt x 1
+21.45375pt>
+File: diagrammi/classi/BackEnd/App/Models/relationModel.pdf Graphic file (type 
+pdf)
+ <use diagrammi/classi/BackEnd/App/Models/relationModel.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Models/relationModel.pdf 
+used on input line 1248.
+(pdftex.def)             Requested size: 358.93463pt x 48.58063pt.
+
+[150 <./diagrammi/classi/BackEnd/App/Models/relationModel.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1281--1285
+[]\T1/pcr/m/n/10 + |   [](sourceId: ObjectId, destinationId:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1281--1285
+\T1/pcr/m/n/10 ObjectId, type: String, callback: function(JSON), errback:
+ []
+
+
+<diagrammi/classi/BackEnd/App/Models/session.pdf, id=4403, 128.48pt x 81.30376p
+t>
+File: diagrammi/classi/BackEnd/App/Models/session.pdf Graphic file (type pdf)
+ <use diagrammi/classi/BackEnd/App/Models/session.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Models/session.pdf used o
+n input line 1303.
+(pdftex.def)             Requested size: 51.39108pt x 32.52092pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[151]
+<diagrammi/classi/BackEnd/App/Models/userModel.pdf, id=4411, 723.70375pt x 138.
+5175pt>
+File: diagrammi/classi/BackEnd/App/Models/userModel.pdf Graphic file (type pdf)
+
+ <use diagrammi/classi/BackEnd/App/Models/userModel.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Models/userModel.pdf used
+ on input line 1325.
+(pdftex.def)             Requested size: 289.47636pt x 55.406pt.
+ [152 <./diagrammi/classi/BackEnd/App/Models/session.pdf> <./diagrammi/classi/B
+ackEnd/App/Models/userModel.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1365
+[]\T1/pcr/m/n/10 + |   [](newUser: JSON, callback: function(JSON),
+ []
+
+
+<diagrammi/package/backEnd-app-routers.pdf, id=4440, 495.8525pt x 201.75375pt>
+File: diagrammi/package/backEnd-app-routers.pdf Graphic file (type pdf)
+
+<use diagrammi/package/backEnd-app-routers.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app-routers.pdf used on inpu
+t line 1379.
+(pdftex.def)             Requested size: 198.33748pt x 80.70006pt.
+ [153 <./diagrammi/package/backEnd-app-routers.pdf>]
+<diagrammi/classi/BackEnd/App/Routers/projectRouter.pdf, id=4477, 580.1675pt x 
+100.375pt>
+File: diagrammi/classi/BackEnd/App/Routers/projectRouter.pdf Graphic file (type
+ pdf)
+ <use diagrammi/classi/BackEnd/App/Routers/projectRouter.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Routers/projectRouter.pdf
+ used on input line 1398.
+(pdftex.def)             Requested size: 232.06288pt x 40.14928pt.
+
+[154 <./diagrammi/classi/BackEnd/App/Routers/projectRouter.pdf>]
+<diagrammi/classi/BackEnd/App/Routers/staticRouter.pdf, id=4503, 580.1675pt x 1
+00.375pt>
+File: diagrammi/classi/BackEnd/App/Routers/staticRouter.pdf Graphic file (type 
+pdf)
+ <use diagrammi/classi/BackEnd/App/Routers/staticRouter.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Routers/staticRouter.pdf 
+used on input line 1435.
+(pdftex.def)             Requested size: 232.06288pt x 40.14928pt.
+
+<diagrammi/classi/BackEnd/App/Routers/userRouter.pdf, id=4508, 580.1675pt x 100
+.375pt>
+File: diagrammi/classi/BackEnd/App/Routers/userRouter.pdf Graphic file (type pd
+f)
+ <use diagrammi/classi/BackEnd/App/Routers/userRouter.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Routers/userRouter.pdf us
+ed on input line 1472.
+(pdftex.def)             Requested size: 232.06288pt x 40.14928pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[155 <./diagrammi/classi/BackEnd/App/Routers/staticRouter.pdf>]
+<diagrammi/package/backEnd-app-views.pdf, id=4534, 313.17pt x 158.5925pt>
+File: diagrammi/package/backEnd-app-views.pdf Graphic file (type pdf)
+
+<use diagrammi/package/backEnd-app-views.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-app-views.pdf used on input 
+line 1510.
+(pdftex.def)             Requested size: 125.26576pt x 63.43585pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[156 <./diagrammi/classi/BackEnd/App/Routers/userRouter.pdf>]
+<diagrammi/classi/BackEnd/App/Views/userManualView.pdf, id=4559, 189.70876pt x 
+81.30376pt>
+File: diagrammi/classi/BackEnd/App/Views/userManualView.pdf Graphic file (type 
+pdf)
+ <use diagrammi/classi/BackEnd/App/Views/userManualView.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/App/Views/userManualView.pdf 
+used on input line 1529.
+(pdftex.def)             Requested size: 75.88214pt x 32.52092pt.
+
+<diagrammi/package/backEnd-config.pdf, id=4561, 279.0425pt x 160.6pt>
+File: diagrammi/package/backEnd-config.pdf Graphic file (type pdf)
+
+<use diagrammi/package/backEnd-config.pdf>
+Package pdftex.def Info: diagrammi/package/backEnd-config.pdf used on input lin
+e 1549.
+(pdftex.def)             Requested size: 111.615pt x 64.23885pt.
+ [157 <./diagrammi/package/backEnd-app-views.pdf> <./diagrammi/classi/BackEnd/A
+pp/Views/userManualView.pdf> <./diagrammi/package/backEnd-config.pdf>]
+<diagrammi/classi/BackEnd/Config/config.pdf, id=4630, 110.4125pt x 81.30376pt>
+File: diagrammi/classi/BackEnd/Config/config.pdf Graphic file (type pdf)
+
+<use diagrammi/classi/BackEnd/Config/config.pdf>
+Package pdftex.def Info: diagrammi/classi/BackEnd/Config/config.pdf used on inp
+ut line 1568.
+(pdftex.def)             Requested size: 44.1642pt x 32.52092pt.
+))
+(./sezioni/diagrammiSequenza.tex [158 <./diagrammi/classi/BackEnd/Config/config
+.pdf>] (./sezioni/sequenza/frontEnd_controllers.tex
+<diagrammi/sequenza/FrontEnd/controllers/q_reg_registrazione.pdf, id=4653, 1487
+.5575pt x 1369.115pt>
+File: diagrammi/sequenza/FrontEnd/controllers/q_reg_registrazione.pdf Graphic f
+ile (type pdf)
+
+<use diagrammi/sequenza/FrontEnd/controllers/q_reg_registrazione.pdf>
+Package pdftex.def Info: diagrammi/sequenza/FrontEnd/controllers/q_reg_registra
+zione.pdf used on input line 10.
+(pdftex.def)             Requested size: 371.88846pt x 342.27791pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--21
+[]\T1/ptm/m/n/10 (+20) Quando l'u-ten-te pre-me il pul-san-te per la re-gi-stra
+-zio-ne vie-ne in-vo-ca-to il me-to-do
+ []
+
+[159 <./diagrammi/sequenza/FrontEnd/controllers/q_reg_registrazione.pdf>]
+<diagrammi/sequenza/FrontEnd/controllers/q_dash_aperturaDiUnProgetto.pdf, id=47
+90, 1651.16875pt x 857.2025pt>
+File: diagrammi/sequenza/FrontEnd/controllers/q_dash_aperturaDiUnProgetto.pdf G
+raphic file (type pdf)
+
+<use diagrammi/sequenza/FrontEnd/controllers/q_dash_aperturaDiUnProgetto.pdf>
+Package pdftex.def Info: diagrammi/sequenza/FrontEnd/controllers/q_dash_apertur
+aDiUnProgetto.pdf used on input line 25.
+(pdftex.def)             Requested size: 412.79118pt x 214.3001pt.
+
+<diagrammi/sequenza/FrontEnd/controllers/q_edma_loading.pdf, id=4792, 1128.215p
+t x 554.07pt>
+File: diagrammi/sequenza/FrontEnd/controllers/q_edma_loading.pdf Graphic file (
+type pdf)
+ <use diagrammi/sequenza/FrontEnd/controllers/q_edma_loading.pdf>
+Package pdftex.def Info: diagrammi/sequenza/FrontEnd/controllers/q_edma_loading
+.pdf used on input line 38.
+(pdftex.def)             Requested size: 282.05305pt x 138.51715pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[160 <./diagrammi/sequenza/FrontEnd/controllers/q_dash_aperturaDiUnProgetto.pdf
+>]
+Underfull \hbox (badness 3942) in paragraph at lines 45--47
+[]\T1/ptm/m/n/10 (+20) Vengono re-gi-stra-te le va-rie fun-zio-ni di \T1/ptm/m/
+it/10 (+20) call-back$[]$ \T1/ptm/m/n/10 (+20) per i se-guen-ti even-ti of-fer-
+ti da
+ []
+
+
+<diagrammi/sequenza/FrontEnd/controllers/q_edma_nodeClicked.pdf, id=4881, 1193.
+45876pt x 895.345pt>
+File: diagrammi/sequenza/FrontEnd/controllers/q_edma_nodeClicked.pdf Graphic fi
+le (type pdf)
+
+<use diagrammi/sequenza/FrontEnd/controllers/q_edma_nodeClicked.pdf>
+Package pdftex.def Info: diagrammi/sequenza/FrontEnd/controllers/q_edma_nodeCli
+cked.pdf used on input line 59.
+(pdftex.def)             Requested size: 393.8426pt x 295.46477pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[161 <./diagrammi/sequenza/FrontEnd/controllers/q_edma_loading.pdf>]
+<diagrammi/sequenza/FrontEnd/controllers/q_pres_creazioneDiUnaPresentazione.pdf
+, id=4962, 1441.385pt x 1434.35875pt>
+File: diagrammi/sequenza/FrontEnd/controllers/q_pres_creazioneDiUnaPresentazion
+e.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/FrontEnd/controllers/q_pres_creazioneDiUnaPresentazione
+.pdf>
+Package pdftex.def Info: diagrammi/sequenza/FrontEnd/controllers/q_pres_creazio
+neDiUnaPresentazione.pdf used on input line 77.
+(pdftex.def)             Requested size: 360.34537pt x 358.5888pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[162 <./diagrammi/sequenza/FrontEnd/controllers/q_edma_nodeClicked.pdf>])
+Underfull \hbox (badness 10000) in paragraph at lines 82--8
+[]\T1/ptm/m/n/10 (+20) Quando l'u-ten-te vuo-le vi-sua-liz-za-re una pre-sen-ta
+-zio-ne vie-ne in-di-riz-za-to ver-so la
+ []
+
+(./sezioni/sequenza/backEnd_stuff.tex [163 <./diagrammi/sequenza/FrontEnd/contr
+ollers/q_pres_creazioneDiUnaPresentazione.pdf>]
+Underfull \hbox (badness 1102) in paragraph at lines 15--16
+[]\T1/pcr/m/n/10 express.urlencoded()\T1/ptm/m/n/10 (+20) : midd-leware che est
+rae dal-la ri-chie-sta i pa-ra-me-tri di ti-po
+ []
+
+[164]
+<diagrammi/sequenza/BackEnd/general.pdf, id=5190, 1385.175pt x 724.7075pt>
+File: diagrammi/sequenza/BackEnd/general.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/general.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/general.pdf used on input l
+ine 35.
+(pdftex.def)             Requested size: 484.81851pt x 253.65143pt.
+
+Overfull \hbox (72.25352pt too wide) in paragraph at lines 35--36
+ [][][][] 
+ []
+
+<diagrammi/sequenza/BackEnd/authFailed.pdf, id=5191, 851.18pt x 583.17876pt>
+File: diagrammi/sequenza/BackEnd/authFailed.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/authFailed.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/authFailed.pdf used on inpu
+t line 47.
+(pdftex.def)             Requested size: 297.91745pt x 204.11562pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[165 <./diagrammi/sequenza/BackEnd/general.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\it@next' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\it@next' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\it@next' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\it@next' on input line 52.
+
+
+<diagrammi/sequenza/BackEnd/userFailed.pdf, id=5249, 984.67876pt x 572.1375pt>
+File: diagrammi/sequenza/BackEnd/userFailed.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/userFailed.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/userFailed.pdf used on inpu
+t line 57.
+(pdftex.def)             Requested size: 344.64273pt x 200.25111pt.
+ [166 <./diagrammi/sequenza/BackEnd/authFailed.pdf> <./diagrammi/sequenza/BackE
+nd/userFailed.pdf>]
+<diagrammi/sequenza/BackEnd/projFailed.pdf, id=5312, 932.48375pt x 579.16376pt>
+File: diagrammi/sequenza/BackEnd/projFailed.pdf Graphic file (type pdf)
+<use diagrammi/sequenza/BackEnd/projFailed.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/projFailed.pdf used on inpu
+t line 67.
+(pdftex.def)             Requested size: 326.3742pt x 202.71034pt.
+
+<diagrammi/sequenza/BackEnd/delProf.pdf, id=5313, 940.51375pt x 554.07pt>
+File: diagrammi/sequenza/BackEnd/delProf.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/delProf.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/delProf.pdf used on input l
+ine 77.
+(pdftex.def)             Requested size: 329.18474pt x 193.9274pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[167 <./diagrammi/sequenza/BackEnd/projFailed.pdf>]
+<diagrammi/sequenza/BackEnd/delProj.pdf, id=5356, 1032.85875pt x 562.1pt>
+File: diagrammi/sequenza/BackEnd/delProj.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/delProj.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/delProj.pdf used on input l
+ine 86.
+(pdftex.def)             Requested size: 361.50598pt x 196.73795pt.
+
+<diagrammi/sequenza/BackEnd/putProj.pdf, id=5357, 1000.73875pt x 554.07pt>
+File: diagrammi/sequenza/BackEnd/putProj.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/putProj.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/putProj.pdf used on input l
+ine 95.
+(pdftex.def)             Requested size: 350.26381pt x 193.9274pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[168 <./diagrammi/sequenza/BackEnd/delProf.pdf> <./diagrammi/sequenza/BackEnd/d
+elProj.pdf>]
+<diagrammi/sequenza/BackEnd/getProj.pdf, id=5439, 1025.8325pt x 619.31375pt>
+File: diagrammi/sequenza/BackEnd/getProj.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/getProj.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/getProj.pdf used on input l
+ine 104.
+(pdftex.def)             Requested size: 359.04675pt x 216.76306pt.
+
+<diagrammi/sequenza/BackEnd/putNod.pdf, id=5440, 1245.65375pt x 786.94pt>
+File: diagrammi/sequenza/BackEnd/putNod.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/putNod.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/putNod.pdf used on input li
+ne 113.
+(pdftex.def)             Requested size: 435.98535pt x 275.43312pt.
+
+Overfull \hbox (23.42036pt too wide) in paragraph at lines 113--114
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[169 <./diagrammi/sequenza/BackEnd/putProj.pdf> <./diagrammi/sequenza/BackEnd/g
+etProj.pdf>]
+<diagrammi/sequenza/BackEnd/postAss.pdf, id=5530, 1229.59375pt x 600.2425pt>
+File: diagrammi/sequenza/BackEnd/postAss.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/postAss.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/postAss.pdf used on input l
+ine 122.
+(pdftex.def)             Requested size: 430.36426pt x 210.08801pt.
+
+Overfull \hbox (17.79927pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[170 <./diagrammi/sequenza/BackEnd/putNod.pdf>]
+<diagrammi/sequenza/BackEnd/delAss.pdf, id=5588, 1153.30875pt x 559.08875pt>
+File: diagrammi/sequenza/BackEnd/delAss.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/delAss.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/delAss.pdf used on input li
+ne 131.
+(pdftex.def)             Requested size: 403.66411pt x 195.68399pt.
+
+<diagrammi/sequenza/BackEnd/putPath.pdf, id=5589, 1196.47pt x 642.4pt>
+File: diagrammi/sequenza/BackEnd/putPath.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/putPath.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/putPath.pdf used on input l
+ine 140.
+(pdftex.def)             Requested size: 418.77078pt x 224.84337pt.
+
+Overfull \hbox (6.2058pt too wide) in paragraph at lines 140--141
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[171 <./diagrammi/sequenza/BackEnd/postAss.pdf> <./diagrammi/sequenza/BackEnd/d
+elAss.pdf>]
+<diagrammi/sequenza/BackEnd/postPath.pdf, id=5694, 1157.32375pt x 603.25375pt>
+File: diagrammi/sequenza/BackEnd/postPath.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/postPath.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/postPath.pdf used on input 
+line 149.
+(pdftex.def)             Requested size: 405.06938pt x 211.14197pt.
+
+<diagrammi/sequenza/BackEnd/getPremi.pdf, id=5695, 997.7275pt x 624.3325pt>
+File: diagrammi/sequenza/BackEnd/getPremi.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/getPremi.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/getPremi.pdf used on input 
+line 158.
+(pdftex.def)             Requested size: 349.20985pt x 218.51964pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[172 <./diagrammi/sequenza/BackEnd/putPath.pdf> <./diagrammi/sequenza/BackEnd/p
+ostPath.pdf>]
+<diagrammi/sequenza/BackEnd/getStat.pdf, id=5803, 961.5925pt x 554.07pt>
+File: diagrammi/sequenza/BackEnd/getStat.pdf Graphic file (type pdf)
+
+<use diagrammi/sequenza/BackEnd/getStat.pdf>
+Package pdftex.def Info: diagrammi/sequenza/BackEnd/getStat.pdf used on input l
+ine 167.
+(pdftex.def)             Requested size: 336.56241pt x 193.9274pt.
+)) (./sezioni/tracciamenti.tex
+[173 <./diagrammi/sequenza/BackEnd/getPremi.pdf> <./diagrammi/sequenza/BackEnd/
+getStat.pdf>] (./sezioni/tracciamentoClassiRequisiti.tex
+Overfull \hbox (1.26709pt too wide) in paragraph at lines 12--12
+ []|[][]\T1/pcr/m/n/10.95 Premi::Back-End::App::Controllers::Errors::- 
+ []
+
+[174] [175] [176] [177] [178] [179] [180]
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 181 undefined on input line 330.
+
+[181] [182]
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 183 undefined on input line 429.
+
+[183] [184] [185] [186] [187] [188] [189] [190])
+(./sezioni/tracciamentoRequisitiClassi.tex [191
+
+] [192] [193] [194] [195]
+[196] [197] [198] [199] [200] [201] [202] [203] [204]
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 205 undefined on input line 401.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 205 undefined on input line 404.
+
+[205]
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 206 undefined on input line 419.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 206 undefined on input line 422.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 206 undefined on input line 426.
+
+[206]
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 207 undefined on input line 429.
+
+[207] [208] [209]
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 210 undefined on input line 523.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 210 undefined on input line 524.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 210 undefined on input line 526.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 210 undefined on input line 527.
+
+[210]
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 211 undefined on input line 529.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 211 undefined on input line 530.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Controllers::PresentationFoot
+erController' on page 211 undefined on input line 532.
+
+
+LaTeX Warning: Hyper reference `Premi::Front-End::Directives::premiPresentation
+Footer' on page 211 undefined on input line 533.
+
+[211] [212] [213]
+Overfull \hbox (1.26709pt too wide) in paragraph at lines 613--614
+ []|[][]\T1/pcr/m/n/10.95 Premi::Back-End::App::Controllers::Errors::- 
+ []
+
+
+Overfull \hbox (1.26709pt too wide) in paragraph at lines 623--624
+ []|[][]\T1/pcr/m/n/10.95 Premi::Back-End::App::Controllers::Errors::- 
+ []
+
+[214]
+Overfull \hbox (1.26709pt too wide) in paragraph at lines 643--644
+ []|[][]\T1/pcr/m/n/10.95 Premi::Back-End::App::Controllers::Errors::- 
+ []
+
+[215]
+Overfull \hbox (1.26709pt too wide) in paragraph at lines 652--653
+ []|[][]\T1/pcr/m/n/10.95 Premi::Back-End::App::Controllers::Errors::- 
+ []
+
+[216] [217] [218]) (./sezioni/tracciamentoComponentiRequisiti.tex [219
+
+]
+[220] [221] [222] [223] [224] [225] [226] [227] [228] [229] [230] [231]
+[232] [233] [234]) (./sezioni/tracciamentoRequisitiComponenti.tex [235
+
+]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251])) (./sezioni/interfacciaREST.tex
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+ [252
+
+] [253] [254]
+[255] [256] [257]
+Underfull \hbox (badness 3302) in paragraph at lines 324--326
+[]\T1/ptm/b/n/10.95 Descrizione: \T1/ptm/m/n/10.95 (+20) ag-gior-na il con-te-n
+u-to del no-do \T1/pcr/m/n/10.95 :nodeId\T1/ptm/m/n/10.95 (+20) , nel \T1/ptm/m
+/it/10.95 (+20) pro-get-to$[]$
+ []
+
+[258] [259]
+Underfull \hbox (badness 3815) in paragraph at lines 382--383
+[]\T1/ptm/b/n/10.95 Descrizione: \T1/ptm/m/n/10.95 (+20) eli-mi-na una re-la-zi
+o-ne di ti-po as-so-cia-zio-ne nel \T1/ptm/m/it/10.95 (+20) pro-get-to$[]$
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 395--396
+[]\T1/ptm/b/n/10.95 Descrizione: \T1/ptm/m/n/10.95 (+20) ag-giun-ge un \T1/ptm/
+m/it/10.95 (+20) per-cor-so di pre-sen-ta-zio-ne$[]$ \T1/ptm/m/n/10.95 (+20) vu
+o-to al \T1/ptm/m/it/10.95 (+20) pro-get-to$[]$
+ []
+
+[260] [261]) (./sezioni/designPatterns.tex [262]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 3.
+
+[263]
+<diagrammi/designPatterns/ChainOfPremi.pdf, id=8674, 1084.05pt x 510.90875pt>
+File: diagrammi/designPatterns/ChainOfPremi.pdf Graphic file (type pdf)
+
+<use diagrammi/designPatterns/ChainOfPremi.pdf>
+Package pdftex.def Info: diagrammi/designPatterns/ChainOfPremi.pdf used on inpu
+t line 42.
+(pdftex.def)             Requested size: 357.73761pt x 168.6004pt.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 53.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+[264 <./diagrammi/designPatterns/ChainOfPremi.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+<diagrammi/designPatterns/dependencyInjection.pdf, id=8707, 289.76857pt x 180.1
+0948pt>
+File: diagrammi/designPatterns/dependencyInjection.pdf Graphic file (type pdf)
+ <use diagrammi/designPatterns/dependencyInjection.pdf>
+Package pdftex.def Info: diagrammi/designPatterns/dependencyInjection.pdf used 
+on input line 73.
+(pdftex.def)             Requested size: 289.76785pt x 180.10904pt.
+ [265 <./diagrammi/designPatterns/dependencyInjection.pdf>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 86.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+ []
+
+<diagrammi/designPatterns/facade.pdf, id=8732, 1101.11375pt x 620.3175pt>
+File: diagrammi/designPatterns/facade.pdf Graphic file (type pdf)
+
+<use diagrammi/designPatterns/facade.pdf>
+Package pdftex.def Info: diagrammi/designPatterns/facade.pdf used on input line
+ 104.
+(pdftex.def)             Requested size: 363.36867pt x 204.70541pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[266]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 110.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+[267 <./diagrammi/designPatterns/facade.pdf>]
+<diagrammi/designPatterns/observer.pdf, id=8810, 995.72pt x 365.365pt>
+File: diagrammi/designPatterns/observer.pdf Graphic file (type pdf)
+
+<use diagrammi/designPatterns/observer.pdf>
+Package pdftex.def Info: diagrammi/designPatterns/observer.pdf used on input li
+ne 130.
+(pdftex.def)             Requested size: 328.58861pt x 120.57082pt.
+) (./sezioni/cytoscape.tex [268 <./diagrammi/designPatterns/observer.pdf>]
+Underfull \hbox (badness 1661) in paragraph at lines 20--21
+[]\T1/pcr/m/n/10.95 MouseEvent\T1/ptm/m/n/10.95 (+20) : ri-fe-ri-men-to al-l'og
+-get-to con-te-nen-te le in-for-ma-zio-ni re-la-ti-ve
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 25--26
+[]\T1/pcr/m/n/10.95 MouseEvent\T1/ptm/m/n/10.95 (+20) : ri-fe-ri-men-to al-l'og
+-get-to con-te-nen-te le in-for-ma-zio-ni re-la-ti-ve
+ []
+
+[269]
+Underfull \hbox (badness 1661) in paragraph at lines 29--30
+[]\T1/pcr/m/n/10.95 MouseEvent\T1/ptm/m/n/10.95 (+20) : ri-fe-ri-men-to al-l'og
+-get-to con-te-nen-te le in-for-ma-zio-ni re-la-ti-ve
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 35--36
+[]\T1/pcr/m/n/10.95 MouseEvent\T1/ptm/m/n/10.95 (+20) : ri-fe-ri-men-to al-l'og
+-get-to con-te-nen-te le in-for-ma-zio-ni re-la-ti-ve
+ []
+
+) [270] 
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
+(./definizioneDiProdotto.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
+Package rerunfilecheck Info: File `definizioneDiProdotto.out' has not changed.
+(rerunfilecheck)             Checksum: 1154D51DDB3991EA4E3326CD4A9661DB;19518.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
+ ) 
+Here is how much of TeX's memory you used:
+ 16852 strings out of 493315
+ 271234 string characters out of 6137904
+ 520598 words of memory out of 5000000
+ 18544 multiletter control sequences out of 15000+600000
+ 90987 words of font info for 349 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 43i,12n,44p,1244b,2216s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on definizioneDiProdotto.pdf (271 pages, 7801475 bytes).
+PDF statistics:
+ 9069 PDF objects out of 10688 (max. 8388607)
+ 7779 compressed objects within 78 object streams
+ 797 named destinations out of 1000 (max. 500000)
+ 40695 words of extra memory for PDF output out of 42996 (max. 10000000)
+

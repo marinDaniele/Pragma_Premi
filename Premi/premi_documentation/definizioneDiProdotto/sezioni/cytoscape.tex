@@ -1,0 +1,37 @@
+%quando si parla di cytoscape come \gloxy{libreria} si usa Cytoscape o Cytoscape.js, quando si parla
+%ci cytoscape come oggetto si usa \texttt{cytoscape}
+\section{Cytoscape} \label{cytoApp}
+Per l'integrazione della \gloxy{libreria} Cytoscape.js con il \gloxy{front-end} dell'applicazione si è scelto di seguire quando suggerito dagli sviluppatori della \gloxy{libreria}, racchiudendo cioè l'oggetto \texttt{cytoscape} all'interno di un service di \gloxy{AngularJS}.
+Questa implementazione permette di condividere tra più componenti dell'applicazione i dati che definiscono la \gloxy{mappa mentale} e di integrare gli eventi sollevati dall'oggetto \texttt{cytoscape} con il resto dell'applicazione mediante un sistema di \textit{\gloxy{observer}}.
+\subsection{Organizzazione dei dati}
+A differenza dell'implementazione proposta si è scelto di organizzare la gestione dei dati in due array, uno per memorizzare i nodi e l'altro per le relazioni tra esse. In questo modo risulta più semplice ed efficiente tenere sincronizzati i dati visualizzati nella \gloxy{view} con quelli presenti all'interno del service.
+\subsection{Inizializzazione della mappa}
+Per rendere utilizzabile la mappa generata da Cytoscape su più \gloxy{view} e per poter ridisegnarla senza dover ricaricare tutti i dati si è scelto di separare il caricamento dei dati con la visualizzazione.
+Per il caricamento dei dati è presente il metodo \texttt{loadData} che si occupa di caricare i dati all'interno del service con degli oggetti definiti usando il \gloxy{JSON} ricevuto in risposta dal \gloxy{server}. Questo metodo viene invocato solamente da \texttt{ProjectService} e da \texttt{MindmapService}, così facendo viene rimosso l'onere dai \gloxy{controller} dell'inizializzazione dei dati.
+Per rendere visibile la \gloxy{mappa mentale} è stato definito il metodo \texttt{drawMap}, questo metodo si occupa di creare l'effettivo oggetto \texttt{cytoscape} in modo che la mappa diventi visibile all'interno del \texttt{<div>} con \texttt{id="cy"}.
+%valutare se inserire un diagramma di sequenza che mostra il caricamento della mappa/draw
+\subsection{Eventi}
+Per la propagazione degli eventi generati dall'oggetto \texttt{cytoscape} si è scelto di memorizzare le funzioni di \gloxy{callback} dei vari \textit{\gloxy{observer}} all'interno di una struttura dati associativa, associando al nome di ogni evento (chiave) un'array di funzioni da invocare quando si verifica quel determinato evento.\\
+In questa maniera è possibile avere un livello di separazione tra gli eventi offerti da Cytoscape e gli eventi che può osservare il \gloxy{controller} in modo da definire eventi più complessi rispetto a quelli standard di Cytoscape e, nel caso di cambiamento della \gloxy{libreria}, è meno probabile che sia necessario andare a modificare le classi \textit{\gloxy{observer}}.
+Gli eventi che sono osservabili e i relativi parametri sono:
+\begin{itemize}
+\item \texttt{node-select}:
+\begin{itemize}
+\item \texttt{MouseEvent}: riferimento all'oggetto contenente le informazioni relative all'evento del mouse che ha causato la selezione del nodo;
+\item \texttt{String}: \texttt{id} del nodo selezionato.
+\end{itemize}
+\item \texttt{node-deselect}:
+\begin{itemize}
+\item \texttt{MouseEvent}: riferimento all'oggetto contenente le informazioni relative all'evento del mouse che ha causato la selezione del nodo.
+\end{itemize}
+\item \texttt{association-select}:
+\begin{itemize}
+\item \texttt{MouseEvent}: riferimento all'oggetto contenente le informazioni relative all'evento del mouse che ha causato la selezione della relazione;
+\item \texttt{String}: \texttt{id} della relazione selezionata;
+\item \texttt{String}: \texttt{id} tipo della relazione selezionata.
+\end{itemize}
+\item \texttt{association-deselect}:
+\begin{itemize}
+\item \texttt{MouseEvent}: riferimento all'oggetto contenente le informazioni relative all'evento del mouse che ha causato la selezione del nodo.
+\end{itemize}
+\end{itemize}

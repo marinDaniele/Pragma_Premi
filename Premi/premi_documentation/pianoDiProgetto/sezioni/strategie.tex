@@ -1,0 +1,63 @@
+\section{Strategie}\label{strategie}
+\subsection{Ciclo di vita}\label{cicloVita}
+Il modello di ciclo di vita scelto per il prodotto è il \textbf{modello incrementale}, che prevede lo sviluppo del \gloxy{progetto} in varie fasi, ognuna delle quali incrementa il risultato della precedente. \\
+Questo modello comporta diversi vantaggi:
+\begin{itemize}
+\item Essendo i requisiti tracciati in base alla criticità è possibile soddisfare per primi quelli più critici;
+\item Ad ogni fase possono essere aggiunte nuove funzionalità che in precedenza non erano considerate necessarie o erano solamente opzionali;
+\item Ogni incremento consolida il prodotto della fase precedente, riducendo il rischio di fallimento;
+\item Possibilità di rilasciare dei prototipi da mostrare al \gloxy{Proponente} che permettano di individuare requisiti per i successivi incrementi.
+\end{itemize}
+\subsection{Fasi}\label{divisioneFasi}
+La realizzazione del \gloxy{progetto} è stata scomposta nelle seguenti fasi:
+\begin{itemize}
+\item \fA: gli obiettivi di questa fase sono:
+\begin{itemize}
+\item Definire le norme di lavoro del gruppo;
+\item Definire il piano di lavoro e gli obbiettivi di qualità;
+\item Analizzare i capitolati e scegliere a quale partecipare;
+\item Analizzare il capitolato scelto e definirne i requisiti.
+\end{itemize}
+\item \fAD: l'obiettivo di questa fase è consolidare i documenti prodotti nell'attività precedente sfruttando quanto emerso dalla \RR. Nel caso sia necessario verranno aggiunti nuovi requisiti che precedentemente non erano stati individuati;
+\item \fPA: l'obiettivo di questa fase è definire l'architettura di alto livello della soluzione. Poiché come revisione interna è stata scelta RPmax anziché RPmin si è deciso di fissare una \gloxy{milestone} per il termine delle attività. Quest'ultima corrisponde alla fine della fase stessa e coincide con un incontro con il \gloxy{proponente}. In questo modo sarà possibile presentare al \gloxy{proponente} la soluzione individuata ed eventualmente incrementare la \ST all'inizio della fase successiva;
+\item \fPD: in questa fase viene definito il funzionamento di tutte le componenti del sistema;
+\item \fC: in questa fase vengono incrementati i documenti finora prodotti in base agli esiti della \RP ed un eventuale incremento di \DP sarà possibile in seguito ad un incontro fissato con il il \gloxy{proponente} ad inizio fase. Successivamente viene implementata la soluzione definita in \DP e viene redatto il \MU;
+\item \fVV: in questa fase verranno effettuate le attività di verifica e validazione del software prodotto. Successivamente verrà eseguito il collaudo dello stesso. La terminazione di questa fase sancisce il termine del \gloxy{progetto}.
+\end{itemize}
+\subsection{Stati di progresso SEMAT}\label{SEMAT}
+Al fine di ottenere una metrica pragmatica di avanzamento applicabile al \gloxy{progetto} si è scelto di adottare il modello proposto da SEMAT.
+Utilizzando diverse \gloxy{scorecard} vengono identificate le dimensioni di problema che modellano un \gloxy{progetto} software.
+Ad ogni \gloxy{scorecard} vengono associate delle misure di avanzamento.
+Le \gloxy{scorecard} avranno dei livelli di avanzamento che potranno essere tra loro asimmetrici, in questo modo sarà possibile per il \rRP avere un controllo fine per ogni \gloxy{scorecard} indipendentemente dal modello di ciclo di vita scelto.
+%REQUISITI:
+%Conception: potenzialità allo stadio iniziale, c'è un idea di quello che voglio.
+%Bounded: dall'incertezza passo a sapere cosa NON voglio.
+%Coherent: i bisogni che so di avere sono definiti in un insieme ragionevole.
+%Acceptable: l'elenco dei bisogni coerenti che ho trovato è concordato e quando lo studio posso dire che va bene. Punto nel quale un \gloxy{progetto} ha finito l'analisi dei Requisiti in un modello Sequenziale.
+%Addressed: Ho un idea di soluzione che soddisfa alcuni requisiti.
+%Fullfilled: Il prodotto soddisfa pienamente i requisiti.
+%WORK: indica le cose da fare intese come le regole organizzative concrete del lavoro
+%Initiated: quando si ha un piano di lavoro
+%Prepared: il piano di lavoro è associato ad un calendario
+%Started: quando il lavoro è cominciato
+%UnderControl: quando qualcuno mi chiede a che punto sono so rispondere.
+%Concluded: punto nel quale possiamo dire agli \gloxy{stakeholder} ``abbiamo finito, che ne pensate?''.
+%Closed: quando è tutto concluso e il \gloxy{team} può dissolversi.
+Per ogni fase si avranno diverse \gloxy{scorecard} nelle quali verranno fissati degli obbiettivi che il \gloxy{team} si prefigge di raggiungere entro la fine della fase indicata. Il risultato verrà tracciato alla fine di ogni fase dal \rRP aggiornando la sezione \ref{resocontoSEMAT} in appendice del presente documento. \\
+La sezione \ref{resocontoSEMAT} conterrà quindi gli obbiettivi preventivati e il consuntivo di quanto si è riusciti a soddisfare. \\
+I livelli evidenziati in rosso nella tabella seguente non potranno essere soddisfatti in quanto non previsti dal \gloxy{progetto} stesso.
+\begin{center}
+\begin{tabular}{|>{\centering}>{\columncolor{gray!30}}m{2cm}|>{\centering}m{1.8cm}|>{\centering}m{1.8cm}|>{\centering}m{1.8cm}|>{\centering}m{1.6cm}|>{\centering}m{1.8cm}|m{1.8cm}<{\centering}|}\hline
+\textbf{\gloxy{Scorecard}} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6}\\\hline
+\textbf{Opportunity} & \makecell{Identified} & \makecell{Solution \\ Needed} & \makecell{Value \\ Established} &  \makecell{Viable} & \makecell{Addressed} & \makecell{\textcolor{red}{Benefit} \\ \textcolor{red}{Accrued}}\\\hline
+\textbf{\gloxy{Stakeholders}} & \makecell{Recognized} & Represented & Involved & In Agreement & \makecell{Satisfied for \\ Deployment} & \makecell{Satisfied \\ in Use}\\\hline
+\textbf{Requirements} & Conceived & Bounded & Coherent & Acceptable & Addressed & Fulfilled\\\hline
+\textbf{Software \\ system} & \makecell{Architecture \\ Selected} & \makecell{Demonstrable} & \makecell{Usable} & \makecell{Ready} & Operational & \makecell{\textcolor{red}{Retired}}\\\hline
+\textbf{\gloxy{Team}} & \makecell{Seeded} & \makecell{Formed} & \makecell{Collaborating} & \makecell{Performing} & \makecell{\textcolor{red}{Adjourned}} & -\\\hline
+\textbf{Work} & Initiated & Prepared & Started & \makecell{Under \\ Control } & Concluded & Closed\\\hline
+\textbf{Way of working} & \makecell{Principles \\ Established} & \makecell{Foundation \\ Established} & \makecell{In Use} & \makecell{In Place} & \makecell{Working \\ Well} & \makecell{{Retired}}\\\hline
+\end{tabular}
+\begin{table}
+\caption{Scorecards con relativi livelli di avanzamento}
+\end{table}
+\end{center}

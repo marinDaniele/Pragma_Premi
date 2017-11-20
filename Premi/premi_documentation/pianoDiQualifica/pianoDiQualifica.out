@@ -1,0 +1,157 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Scopo del documento}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Scopo del prodotto}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Glossario}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Riferimenti}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Normativi}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Informativi}{subsection.1.4}% 7
+\BOOKMARK [1][-]{section.2}{Qualit\340 di processo}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Infrastructure Management Process \(6.2.2\)}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Obiettivi di qualit\340}{subsection.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Metriche}{subsection.2.1}% 11
+\BOOKMARK [4][-]{subsubsubsection.2.1.2.1}{Disponibilit\340 PragmaDB}{subsubsection.2.1.2}% 12
+\BOOKMARK [4][-]{subsubsubsection.2.1.2.2}{Tempo di correzione incoerenze in PragmaDB}{subsubsection.2.1.2}% 13
+\BOOKMARK [4][-]{subsubsubsection.2.1.2.3}{Errori di individuazione termini di glossario}{subsubsection.2.1.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Strategie}{subsection.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.2}{Project Planning, Assessment \046 Control Process \(6.3.1 - 6.3.2\)}{section.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Obiettivi di qualit\340}{subsection.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Metriche}{subsection.2.2}% 18
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.1}{Schedule Variance}{subsubsection.2.2.2}% 19
+\BOOKMARK [4][-]{subsubsubsection.2.2.2.2}{Budget Variance}{subsubsection.2.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Strategie}{subsection.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.3}{Risk Management Process \(6.3.4\)}{section.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Obiettivi di qualit\340}{subsection.2.3}% 23
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Metriche}{subsection.2.3}% 24
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.1}{Rischi non preventivati}{subsubsection.2.3.2}% 25
+\BOOKMARK [4][-]{subsubsubsection.2.3.2.2}{Efficienza di gestione dei rischi}{subsubsection.2.3.2}% 26
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Strategie}{subsection.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.4}{System/Software Requirements Analysis Process \(6.4.2 - 7.1.2\)}{section.2}% 28
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Obiettivi di qualit\340}{subsection.2.4}% 29
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Metriche}{subsection.2.4}% 30
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.1}{Requisiti obbligatori soddisfatti}{subsubsection.2.4.2}% 31
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.2}{Requisiti desiderabili/facoltativi accettati soddisfatti}{subsubsection.2.4.2}% 32
+\BOOKMARK [4][-]{subsubsubsection.2.4.2.3}{Requisiti desiderabili/facoltativi non accettati soddisfatti}{subsubsection.2.4.2}% 33
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Strategie}{subsection.2.4}% 34
+\BOOKMARK [2][-]{subsection.2.5}{System/Software Architectural Design Process \(6.4.3 - 7.1.3\)}{section.2}% 35
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Obiettivi di qualit\340}{subsection.2.5}% 36
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Metriche}{subsection.2.5}% 37
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.1}{Structural Fan-In}{subsubsection.2.5.2}% 38
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.2}{SFIN - Ottimalit\340}{subsubsection.2.5.2}% 39
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.3}{Structural Fan-Out}{subsubsection.2.5.2}% 40
+\BOOKMARK [4][-]{subsubsubsection.2.5.2.4}{SFOUT - Non Accettabilit\340}{subsubsection.2.5.2}% 41
+\BOOKMARK [3][-]{subsubsection.2.5.3}{Strategie}{subsection.2.5}% 42
+\BOOKMARK [2][-]{subsection.2.6}{Software Detailed Design Process \(7.1.4\)}{section.2}% 43
+\BOOKMARK [3][-]{subsubsection.2.6.1}{Obiettivi di qualit\340}{subsection.2.6}% 44
+\BOOKMARK [3][-]{subsubsection.2.6.2}{Metriche}{subsection.2.6}% 45
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.1}{Numero di metodi per classe}{subsubsection.2.6.2}% 46
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.2}{Metodi per classe - Non Accettabilit\340}{subsubsection.2.6.2}% 47
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.3}{Numero di parametri per metodo}{subsubsection.2.6.2}% 48
+\BOOKMARK [4][-]{subsubsubsection.2.6.2.4}{Parametri per metodo - Non Accettabilit\340}{subsubsection.2.6.2}% 49
+\BOOKMARK [3][-]{subsubsection.2.6.3}{Strategie}{subsection.2.6}% 50
+\BOOKMARK [2][-]{subsection.2.7}{Software Construction Process \(7.1.5\)}{section.2}% 51
+\BOOKMARK [3][-]{subsubsection.2.7.1}{Obiettivi di qualit\340}{subsection.2.7}% 52
+\BOOKMARK [3][-]{subsubsection.2.7.2}{Metriche}{subsection.2.7}% 53
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.1}{Produttivit\340 di codifica}{subsubsection.2.7.2}% 54
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.2}{Complessit\340 Ciclomatica}{subsubsection.2.7.2}% 55
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.3}{Complessit\340 Ciclomatica - Non Accettabilit\340}{subsubsection.2.7.2}% 56
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.4}{Linee di commento su linee di codice}{subsubsection.2.7.2}% 57
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.5}{Chiamate annidate}{subsubsection.2.7.2}% 58
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.6}{Variabili inutilizzate}{subsubsection.2.7.2}% 59
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.7}{Dipendenze}{subsubsection.2.7.2}% 60
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.8}{Halstead Difficulty per-function}{subsubsection.2.7.2}% 61
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.9}{Halstead Difficulty per-function - Non Accettabilit\340}{subsubsection.2.7.2}% 62
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.10}{Halstead Volume per-function}{subsubsection.2.7.2}% 63
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.11}{Halstead Effort per-function}{subsubsection.2.7.2}% 64
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.12}{Indice di manutenibilit\340}{subsubsection.2.7.2}% 65
+\BOOKMARK [4][-]{subsubsubsection.2.7.2.13}{Indice di manutenibilit\340 - Non Accettabilit\340}{subsubsection.2.7.2}% 66
+\BOOKMARK [3][-]{subsubsection.2.7.3}{Strategie}{subsection.2.7}% 67
+\BOOKMARK [2][-]{subsection.2.8}{System/Software Integration Process \(6.4.5 - 7.1.6\)}{section.2}% 68
+\BOOKMARK [3][-]{subsubsection.2.8.1}{Obiettivi di qualit\340}{subsection.2.8}% 69
+\BOOKMARK [3][-]{subsubsection.2.8.2}{Metriche}{subsection.2.8}% 70
+\BOOKMARK [4][-]{subsubsubsection.2.8.2.1}{Componenti integrate}{subsubsection.2.8.2}% 71
+\BOOKMARK [3][-]{subsubsection.2.8.3}{Strategie}{subsection.2.8}% 72
+\BOOKMARK [2][-]{subsection.2.9}{System/Software Qualification Testing Process \(6.4.6 - 7.1.7\)}{section.2}% 73
+\BOOKMARK [3][-]{subsubsection.2.9.1}{Obiettivi di qualit\340}{subsection.2.9}% 74
+\BOOKMARK [3][-]{subsubsection.2.9.2}{Metriche}{subsection.2.9}% 75
+\BOOKMARK [4][-]{subsubsubsection.2.9.2.1}{Test di sistema superati}{subsubsection.2.9.2}% 76
+\BOOKMARK [3][-]{subsubsection.2.9.3}{Strategie}{subsection.2.9}% 77
+\BOOKMARK [2][-]{subsection.2.10}{Software Documentation Management Process \(7.2.1\)}{section.2}% 78
+\BOOKMARK [3][-]{subsubsection.2.10.1}{Obiettivi di qualit\340}{subsection.2.10}% 79
+\BOOKMARK [3][-]{subsubsection.2.10.2}{Metriche}{subsection.2.10}% 80
+\BOOKMARK [4][-]{subsubsubsection.2.10.2.1}{Indice Gulpease}{subsubsection.2.10.2}% 81
+\BOOKMARK [3][-]{subsubsection.2.10.3}{Strategie}{subsection.2.10}% 82
+\BOOKMARK [2][-]{subsection.2.11}{Software Verification Process \(7.2.4\)}{section.2}% 83
+\BOOKMARK [3][-]{subsubsection.2.11.1}{Obiettivi di qualit\340}{subsection.2.11}% 84
+\BOOKMARK [3][-]{subsubsection.2.11.2}{Metriche}{subsection.2.11}% 85
+\BOOKMARK [4][-]{subsubsubsection.2.11.2.1}{Copertura dei test}{subsubsection.2.11.2}% 86
+\BOOKMARK [3][-]{subsubsection.2.11.3}{Strategie}{subsection.2.11}% 87
+\BOOKMARK [1][-]{section.3}{Qualit\340 di prodotto}{}% 88
+\BOOKMARK [2][-]{subsection.3.1}{Funzionalit\340 \(6.1\)}{section.3}% 89
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Obiettivi di qualit\340}{subsection.3.1}% 90
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Metriche}{subsection.3.1}% 91
+\BOOKMARK [4][-]{subsubsubsection.3.1.2.1}{Completezza dell'implementazione funzionale}{subsubsection.3.1.2}% 92
+\BOOKMARK [4][-]{subsubsubsection.3.1.2.2}{Accuratezza rispetto alle attese}{subsubsection.3.1.2}% 93
+\BOOKMARK [4][-]{subsubsubsection.3.1.2.3}{Controllo degli accessi}{subsubsection.3.1.2}% 94
+\BOOKMARK [2][-]{subsection.3.2}{Affidabilit\340 \(6.2\)}{section.3}% 95
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Obiettivi di qualit\340}{subsection.3.2}% 96
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Metriche}{subsection.3.2}% 97
+\BOOKMARK [4][-]{subsubsubsection.3.2.2.1}{Densit\340 di failure}{subsubsection.3.2.2}% 98
+\BOOKMARK [4][-]{subsubsubsection.3.2.2.2}{Blocco di operazioni non corrette}{subsubsection.3.2.2}% 99
+\BOOKMARK [2][-]{subsection.3.3}{Usabilit\340 \(6.3\)}{section.3}% 100
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Obiettivi di qualit\340}{subsection.3.3}% 101
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Metriche}{subsection.3.3}% 102
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.1}{Comprensibilit\340 delle funzioni offerte}{subsubsection.3.3.2}% 103
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.2}{Facilit\340 di apprendimento delle funzionalit\340}{subsubsection.3.3.2}% 104
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.3}{Consistenza operazionale in uso}{subsubsection.3.3.2}% 105
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.4}{Elementi personalizzabili}{subsubsection.3.3.2}% 106
+\BOOKMARK [2][-]{subsection.3.4}{Efficienza \(6.4\)}{section.3}% 107
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Obiettivi di qualit\340}{subsection.3.4}% 108
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Metriche}{subsection.3.4}% 109
+\BOOKMARK [4][-]{subsubsubsection.3.4.2.1}{Tempo di risposta}{subsubsection.3.4.2}% 110
+\BOOKMARK [2][-]{subsection.3.5}{Manutenibilit\340 \(6.5\)}{section.3}% 111
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Obiettivi di qualit\340}{subsection.3.5}% 112
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Metriche}{subsection.3.5}% 113
+\BOOKMARK [4][-]{subsubsubsection.3.5.2.1}{Capacit\340 di analisi di failure}{subsubsection.3.5.2}% 114
+\BOOKMARK [4][-]{subsubsubsection.3.5.2.2}{Impatto delle modifiche}{subsubsection.3.5.2}% 115
+\BOOKMARK [2][-]{subsection.3.6}{Portabilit\340 \(6.6\)}{section.3}% 116
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Obiettivi di qualit\340}{subsection.3.6}% 117
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Metriche}{subsection.3.6}% 118
+\BOOKMARK [4][-]{subsubsubsection.3.6.2.1}{Versioni dei browser supportate}{subsubsection.3.6.2}% 119
+\BOOKMARK [4][-]{subsubsubsection.3.6.2.2}{Inclusione di funzionalit\340 da altri prodotti}{subsubsection.3.6.2}% 120
+\BOOKMARK [1][-]{section.4}{Specifica dei test}{}% 121
+\BOOKMARK [2][-]{subsection.4.1}{Tipi di test}{section.4}% 122
+\BOOKMARK [2][-]{subsection.4.2}{Test di Validazione}{section.4}% 123
+\BOOKMARK [2][-]{subsection.4.3}{Test di Sistema}{section.4}% 124
+\BOOKMARK [2][-]{subsection.4.4}{Test di Integrazione}{section.4}% 125
+\BOOKMARK [2][-]{subsection.4.5}{Test di Unit\340}{section.4}% 126
+\BOOKMARK [1][-]{section.5}{Tracciamenti dei test}{}% 127
+\BOOKMARK [2][-]{subsection.5.1}{Tracciamento Test di Validazione-Requisiti}{section.5}% 128
+\BOOKMARK [2][-]{subsection.5.2}{Tracciamento Requisiti-Test di Validazione}{section.5}% 129
+\BOOKMARK [2][-]{subsection.5.3}{Tracciamento Test di Sistema-Requisiti}{section.5}% 130
+\BOOKMARK [2][-]{subsection.5.4}{Tracciamento Requisiti-Test di Sistema}{section.5}% 131
+\BOOKMARK [2][-]{subsection.5.5}{Tracciamento Test di Integrazione-Componenti}{section.5}% 132
+\BOOKMARK [2][-]{subsection.5.6}{Tracciamento Componenti-Test di Integrazione}{section.5}% 133
+\BOOKMARK [2][-]{subsection.5.7}{Tracciamento Test di Unit\340-Metodi}{section.5}% 134
+\BOOKMARK [2][-]{subsection.5.8}{Tracciamento Metodi-Test di Unit\340}{section.5}% 135
+\BOOKMARK [1][-]{Appendice.1.A}{Appendice Resoconto attivit\340 di verifica}{}% 136
+\BOOKMARK [2][-]{subsection.1.A.1}{Fase di Ammissione al progetto}{Appendice.1.A}% 137
+\BOOKMARK [3][-]{subsubsection.1.A.1.1}{Analisi statica dei documenti}{subsection.1.A.1}% 138
+\BOOKMARK [4][-]{subsubsubsection.1.A.1.1.1}{Esiti verifiche automatizzate}{subsubsection.1.A.1.1}% 139
+\BOOKMARK [3][-]{subsubsection.1.A.1.2}{Considerazioni finali}{subsection.1.A.1}% 140
+\BOOKMARK [2][-]{subsection.1.A.2}{Fase di Consolidamento dei requisiti}{Appendice.1.A}% 141
+\BOOKMARK [3][-]{subsubsection.1.A.2.1}{Analisi statica dei documenti}{subsection.1.A.2}% 142
+\BOOKMARK [4][-]{subsubsubsection.1.A.2.1.1}{Esiti verifiche automatizzate}{subsubsection.1.A.2.1}% 143
+\BOOKMARK [3][-]{subsubsection.1.A.2.2}{Considerazioni finali}{subsection.1.A.2}% 144
+\BOOKMARK [2][-]{subsection.1.A.3}{Fase di Progettazione dell'architettura}{Appendice.1.A}% 145
+\BOOKMARK [3][-]{subsubsection.1.A.3.1}{Analisi statica dei documenti}{subsection.1.A.3}% 146
+\BOOKMARK [4][-]{subsubsubsection.1.A.3.1.1}{Esiti verifiche automatizzate}{subsubsection.1.A.3.1}% 147
+\BOOKMARK [3][-]{subsubsection.1.A.3.2}{Considerazioni finali}{subsection.1.A.3}% 148
+\BOOKMARK [2][-]{subsection.1.A.4}{Fase di Consolidamento dell'architettura}{Appendice.1.A}% 149
+\BOOKMARK [3][-]{subsubsection.1.A.4.1}{Analisi statica dei documenti}{subsection.1.A.4}% 150
+\BOOKMARK [4][-]{subsubsubsection.1.A.4.1.1}{Esiti verifiche automatizzate}{subsubsection.1.A.4.1}% 151
+\BOOKMARK [3][-]{subsubsection.1.A.4.2}{Considerazioni finali}{subsection.1.A.4}% 152
+\BOOKMARK [2][-]{subsection.1.A.5}{Fase di Realizzazione del prodotto}{Appendice.1.A}% 153
+\BOOKMARK [3][-]{subsubsection.1.A.5.1}{Analisi statica dei documenti}{subsection.1.A.5}% 154
+\BOOKMARK [4][-]{subsubsubsection.1.A.5.1.1}{Esiti verifiche automatizzate}{subsubsection.1.A.5.1}% 155
+\BOOKMARK [3][-]{subsubsection.1.A.5.2}{Soddisfacimento metriche}{subsection.1.A.5}% 156
+\BOOKMARK [3][-]{subsubsection.1.A.5.3}{Considerazioni finali}{subsection.1.A.5}% 157

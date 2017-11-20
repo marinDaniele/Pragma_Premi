@@ -1,0 +1,46 @@
+\newcommand{\documenttitle}{Norme di Progetto}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt}
+\newcommand{\editorialstaff}{\sm}
+\newcommand{\teststaff}{\ao}
+\newcommand{\approvalstaff}{\dm}
+\newcommand{\use}{Interno}
+\input{../template/layout.tex}
+\input{../template/comandi.tex}
+\begin{document}
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\tableofcontents %indice
+\listoffigures
+\pagebreak
+\input{sezioni/introduzione.tex}
+\section{Processi primari}
+\subsection{Processo di sviluppo}
+\input{sezioni/processoDiSviluppo/attivita.tex}
+\input{sezioni/processoDiSviluppo/norme.tex}
+\input{sezioni/processoDiSviluppo/strumenti.tex}
+\section{Processi di supporto}
+\subsection{Processo di documentazione}
+In questa sezione vengono descritte tutte le convenzioni riguardanti la stesura di documenti scelte e adottate da \gruppo.
+\input{sezioni/processoDiDocumentazione/procedure.tex}
+\input{sezioni/processoDiDocumentazione/norme.tex}
+\input{sezioni/processoDiDocumentazione/strumenti.tex}
+\subsection{Processo di verifica}
+\input{sezioni/processoDiVerifica/attivita.tex}
+\input{sezioni/processoDiVerifica/procedure.tex}
+\input{sezioni/processoDiVerifica/strumenti.tex}
+\subsection{Processo di validazione}
+\label{processoValidazione}
+\input{sezioni/processoDiValidazione/attivita.tex}
+\input{sezioni/processoDiValidazione/strumenti.tex}
+\section{Processi organizzativi}
+\subsection{Processo di gestione}
+\input{sezioni/processoDiGestione/attivita.tex}
+\input{sezioni/processoDiGestione/procedure.tex}
+\input{sezioni/processoDiGestione/norme.tex}
+\input{sezioni/processoDiGestione/strumenti.tex}
+\appendix
+\begin{appendices}
+\input{sezioni/erroriFrequenti.tex}
+\input{sezioni/screenshot.tex}
+\end{appendices}
+\end{document}

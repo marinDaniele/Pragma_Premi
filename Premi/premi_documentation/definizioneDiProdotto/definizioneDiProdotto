@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex definizioneDiProdotto.tex
+pdflatex definizioneDiProdotto.tex

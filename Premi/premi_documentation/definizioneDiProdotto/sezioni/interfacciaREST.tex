@@ -1,0 +1,509 @@
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+\lstdefinelanguage{json}{
+basicstyle=\small\ttfamily,
+numbers=left,
+numberstyle=\scriptsize,
+stepnumber=1,
+numbersep=8pt,
+showstringspaces=false,
+breaklines=true,
+frame=lines,
+backgroundcolor=\color{background},
+literate=
+*{0}{{{\color{numb}0}}}{1}
+{1}{{{\color{numb}1}}}{1}
+{2}{{{\color{numb}2}}}{1}
+{3}{{{\color{numb}3}}}{1}
+{4}{{{\color{numb}4}}}{1}
+{5}{{{\color{numb}5}}}{1}
+{6}{{{\color{numb}6}}}{1}
+{7}{{{\color{numb}7}}}{1}
+{8}{{{\color{numb}8}}}{1}
+{9}{{{\color{numb}9}}}{1}
+{:}{{{\color{punct}{:}}}}{1}
+{,}{{{\color{punct}{,}}}}{1}
+{\{}{{{\color{delim}{\{}}}}{1}
+{\}}{{{\color{delim}{\}}}}}{1}
+{[}{{{\color{delim}{[}}}}{1}
+{]}{{{\color{delim}{]}}}}{1},
+}
+\section{Interfaccia REST}\label{rest}
+L'interfaccia per il \gloxy{back-end} del \gloxy{progetto} \progetto è realizzata in stile \gloxy{REST-like}, basato sullo stile \gloxy{REST} ma che non ne segue strettamente tutti i principi.
+Questo consente di effettuare l'autenticazione dell'utente salvando un cookie e memorizzando nel \gloxy{server} una sessione associata al \gloxy{client}.
+Una volta creata sessione, l'interfaccia con cui si possono accedere e modificare i dati nel database può considerarsi effettivamente \gloxy{REST}.\\
+%Questo consente di effettuare l'autenticazione dell'utente mediante cookie, memorizzando una sessione, quindi un contesto \gloxy{client}, sul \gloxy{server}.
+%All'interno della sessione, l'interfaccia con cui si possono accedere e modificare i dati nel database può considerarsi effettivamente \gloxy{REST}.\\
+I dati scambiati mediante l'interfaccia sono rappresentati con il formato \gloxy{JSON}, che si integra facilmente con le tecnologie ed il linguaggio utilizzati per sviluppare \progetto.\\
+Se lo scambio di dati avviene correttamente il \gloxy{server} può fornire in risposta un messaggio di conferma:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"status" : "ok"
+}
+\end{lstlisting}
+\subsection{Errori}
+In caso di errori il \gloxy{server} risponde con un messaggio d'errore in formato \gloxy{JSON}, definito secondo lo schema:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"code": [codice dell'errore],
+"title": [titolo dell'errore],
+"message": [descrizione testuale dell'errore]
+}
+\end{lstlisting}
+\subsubsection{Errori generici}
+Gli errori generici sono gestiti dalla classe \texttt{ErrorHandler} ad eccezione dell'errore \texttt{404} che viene gestito da \texttt{NotFoundHandler}.
+In questo modo si ottiene una gestione degli errori più flessibile e modulare, in quanto è possibile inserire in coda allo \gloxy{stack} di chiamate di ogni route la classe \texttt{NotFountHandler}, riducendo così la complessità della classe \texttt{ErrorHandler}.
+% in quanto una scelta progettuale più flessibile e modulare prevede, per questa tipologia di errore, una classe specifica da inserire in coda allo \gloxy{stack} delle chiamate di ogni route. In questo modo si riduce la complessità del codice che si andrà a sviluppare per ErrorHandler e allo stesso tempo si ottiene una classe altamente specializzata e facilmente manutenibile(NotFoundHandler).
+\subsubsubsection{Errori lato server}
+Nel caso si verifichi un errore lato \gloxy{server}, questo risponde con un codice HTTP del tipo \texttt{5xx}, di seguito vengono specificati gli errori che possono essere sollevati:
+\begin{itemize}
+\item \texttt{500 Errore sconosciuto}: il messaggio descrive un errore generico del \gloxy{server} che avviene quando si verifica una condizione non gestibile e quindi non identificabile con un errore specifico.
+\end{itemize}
+\subsubsubsection{Errori nelle richieste da parte dei client}
+Nel caso si verifichi un errore riguardo le richieste ricevute dal \gloxy{client}, il \gloxy{server} risponde con un codice HTTP del tipo \texttt{4xx}, di seguito vengono specificati gli errori che possono essere sollevati:
+\begin{itemize}
+\item \texttt{400}: il \gloxy{server} non può gestire la richiesta in seguito ad una generica richiesta errata. Il contenuto del messaggio d'errore varia in base alla tipologia di richiesta ricevuta;
+\item \texttt{401}: Accesso non autorizzato;
+\item \texttt{404}: Pagina non trovata.
+\end{itemize}
+\subsubsection{Errori specifici di Premi}
+Questi errori rappresentano situazioni specifiche del sistema \progetto, sono quindi stati definiti dei codici personalizzati per questa tipologia di errori basandosi sull'idea dei codici d'errore HTTP standard.
+I codici dei messaggi d'errore sono stati assegnati secondo diverse categorie, in modo da poter individuare facilmente quale componente dell'applicazione ha causato l'errore.\\
+Ad ogni categoria è stato assegnato successivamente un intervallo di codici possibili, evitato di utilizzare gli intervalli \texttt{4xxx} e \texttt{5xxx} per non creare ambiguità con i codici d'errore standard descritti nella sezione precedente.\\
+Le categorie di errori definite sono le seguenti:
+\begin{itemize}
+\item \texttt{1xxx}: errori di autenticazione e del middleware \texttt{userById};
+\item \texttt{2xxx}: errori del middleware \texttt{projectById};
+\item \texttt{3xxx}: errori del middleware \texttt{nodeById};
+\item \texttt{6xxx}: errori del middleware \texttt{associationById};
+\item \texttt{7xxx}: errori del middleware \texttt{pathById};
+\item \texttt{8xxx}: errori del \gloxy{controller} \texttt{ProjectManagementController};
+\item \texttt{9xxx}: errori del \gloxy{controller} \texttt{NodeController};
+\item \texttt{10xxx}: errori del \gloxy{controller} \texttt{PathController};
+\item \texttt{11xxx}: errori degli oggetti \texttt{ProjectModel};
+\item \texttt{12xxx}: errori degli oggetti \texttt{PathModel}.
+\end{itemize}
+Gli errori specifici di \progetto vengono gestiti dalla classe \texttt{PremiError} e sono di seguito elencati sotto forma di:
+\begin{center}
+\texttt{Codice Titolo}: messaggio d'errore
+\end{center}
+\begin{itemize}
+\item \texttt{1000 Utente non trovato}: l'identificativo utente fornito non è un identificativo valido;
+\item \texttt{1002 Credenziali non valide}: è necessario fornire un indirizzo email ed una password valide;
+\item \texttt{2000 \gloxy{Progetto} non trovato}: l'identificativo del \gloxy{progetto} fornito non è un identificativo valido;
+\item \texttt{3000 Nodo non trovato}: l'identificativo del nodo fornito non è un identificativo valido;
+\item \texttt{6000 Associazione non trovata}: l'identificativo dell'associazione fornita non è un identificativo valido;
+\item \texttt{7000 \gloxy{Percorso} non trovato}: l'identificativo del \gloxy{percorso} fornito non è un identificativo valido;
+\item \texttt{8000 \gloxy{Progetto} corrotto}: errore nella ricerca dei campi dati relativi al \gloxy{progetto} indicato;
+\item \texttt{8001 Dati non validi}: i dati relativi al \gloxy{progetto} sono vuoti o errati;
+\item \texttt{8002 \gloxy{Progetto} corrotto}: errore durante l'eliminazione del \gloxy{progetto};
+\item \texttt{9000 Dati non validi}: i dati relativi al contenuto del nodo non sono validi o sono formattati in modo errato;
+\item \texttt{9001 Nodi non validi}: gli identificativi dei nodi forniti non sono validi oppure non esistono oppure il nodo entrante coincide con il nodo uscente;
+\item \texttt{10000 Dati non validi}: i dati per la modifica del \gloxy{percorso} non sono definiti;
+\item \texttt{11001 Nodo del \gloxy{progetto} non trovato}: il nodo riferito nella relazione o nel \gloxy{percorso} non è stato trovato all'interno del \gloxy{progetto} indicato;
+\item \texttt{11002 Nodo padre non esistente}: il nodo padre indicato non esiste o non corrisponde ad un nodo valido;
+\item \texttt{11003 Nodo non valido}: impossibile eliminare il nodo radice della mappa mentale.
+\item \texttt{12000 Nodo del \gloxy{percorso} non trovato}: il nodo riferito non è stato trovato all'interno del \gloxy{percorso} indicato.
+\end{itemize}
+\subsection{Risorse REST}
+In seguito vengono riportate le risorse \gloxy{REST} fornite, associate al tipo di metodo HTTP che è possibile richiedere su di esse e ai permessi necessari per effettuare la richiesta. In particolare, i permessi sono:
+\begin{itemize}
+\item \textbf{Utente}: la risorsa può essere acceduta da qualsiasi tipo di utente;
+\item \textbf{Utente autenticato}: la risorsa può essere acceduta solo dagli utenti che hanno effettuato il login.
+\end{itemize}
+Inoltre, per ogni risorsa, sono stati specificati i formati per lo scambio dei dati in \gloxy{JSON}:
+\begin{itemize}
+\item \textbf{Request:} rappresenta l'oggetto \gloxy{JSON} che dovrà essere passato alla risorsa \gloxy{REST};
+\item \textbf{Response:} rappresenta l'oggetto \gloxy{JSON} che fornirà in risposta la risorsa \gloxy{REST}.
+\end{itemize}
+\begin{itemize}
+\item \texttt{/signup}
+\begin{itemize}
+\item \textbf{Method:} POST;
+\item \textbf{Livello di Accesso:} utente;
+\item \textbf{Descrizione:} crea un nuovo account. L'indirizzo email rappresenta lo username dell'utente e lo identifica univocamente, pertanto un utente non può registrare più account con lo stesso indirizzo di posta elettronica. Restituisce un messaggio di conferma se viene effettuato correttamente, altrimenti un errore;
+\item \textbf{Request:} lo scambio dei dati dell'utente avviene attraverso una form che deve avere i seguenti campi:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"username" : [username che corrisponde all'indirizzo di posta elettronica con cui ci si vuole registrare];
+"password" : [la password per l'account con cui ci si vuole registrare].
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%
+%\item \texttt{/register}
+%	\begin{itemize}
+%	\item \textbf{Method:} DELETE;
+%	\item \textbf{Livello di Accesso:} utente autenticato;
+%	\item \textbf{Descrizione:} elimina l'account dell'utente dal database. Questa funzionalità non è attualmente implementata;
+%	\item \textbf{Request:}
+%	\item \textbf{Response:}
+%	\end{itemize}
+%%%%%%%%%%%%%%%%%%%
+\item \texttt{/login}
+\begin{itemize}
+\item \textbf{Method:} POST;
+\item \textbf{Livello di Accesso:} utente;
+\item \textbf{Descrizione:} effettua l'accesso all'account. Restituisce un messaggio di conferma se viene effettuato correttamente, altrimenti un errore;
+\item \textbf{Request:}  lo scambio dei dati dell'utente avviene attraverso una form che deve avere i seguenti campi:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"username" : [username che corrisponde all'indirizzo di posta elettronica che identifica l'utente];
+"password" : [la password dell'account dell'utente].
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/logout}
+\begin{itemize}
+\item \textbf{Method:} GET;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} effettua il logout. Restituisce un messaggio di conferma se viene effettuato correttamente, altrimenti un errore;
+%\item \textbf{Request:}
+%\item \textbf{Response:}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects}
+\begin{itemize}
+\item \textbf{Method:} POST;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} crea un nuovo \gloxy{progetto} relativo all’utente della sessione corrente e utilizzando il nome specificato nei parametri POST. restituisce un oggetto JSON contenente l'id del progetto, le indicazioni per il layout, le liste di nodi, le relazioni e le associazioni della \gloxy{mappa mentale} del \gloxy{progetto} \texttt{:projectId}, altrimenti un messaggio di errore;
+\item \textbf{Request:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name": [nome del progetto]
+}
+\end{lstlisting}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"_id" : [identificativo del progetto],
+"name" : [nome del progetto],
+"fontFamily" : [nome della famiglia],
+"fontColor" : [nome del colore],
+"bkgColor" : [nome del colore],
+"relations" : [array JSON di relazioni, con attributi specificati nei diagrammi delle classi],
+"nodes" : [array JSON di nodi, con attributi specificati nei diagrammi delle classi]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects}
+\begin{itemize}
+\item \textbf{Method:} GET;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} restituisce  un array di oggetti \gloxy{JSON} che descrive identificativo e nome dei \gloxy{progetti} nel database per l'utente della sessione. Inoltre, per ogni \gloxy{progetto}, fornisce l'elenco dei \gloxy{percorsi di presentazione} associati;
+%\item \textbf{Request:}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+[{
+"_id" : [identificativo del progetto],
+"name": [nome del progetto],
+"paths": [
+{
+"_id": [identificativo del precorso],
+"name" : [nome del percorso]
+}
+]
+}]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId}
+\begin{itemize}
+\item \textbf{Method:} GET;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} restituisce un oggetto \gloxy{JSON} contenente le indicazioni per il layout, le liste di nodi, le relazioni e le associazioni della \gloxy{mappa mentale} del \gloxy{progetto} \texttt{:projectId}, altrimenti un messaggio di errore;
+%\item \textbf{Request:}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name" : [nome del progetto],
+"fontFamily" : [nome della famiglia],
+"fontColor" : [nome del colore],
+"bkgColor" : [nome del colore],
+"relations" : [array JSON di relazioni, con attributi specificati nei diagrammi delle classi],
+"nodes" : [array JSON di nodi, con attributi specificati nei diagrammi delle classi]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId}
+\begin{itemize}
+\item \textbf{Method:} PUT;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} modifica le impostazioni del \gloxy{progetto} \texttt{:projectId}, relativo all'utente della sessione corrente. Restituisce un messaggio di conferma se viene effettuato correttamente, altrimenti un errore;
+\item \textbf{Request:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name" : [nome del progetto],
+"bkgColor" : [colore dello sfondo],
+"fontColor" : [colore per i testi],
+"fontFamily" : [famiglia del font per i testi]
+}
+\end{lstlisting}
+%\item \textbf{Response:}
+\end{itemize}
+%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId}
+\begin{itemize}
+\item \textbf{Method:} DELETE;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} rimuove il \gloxy{progetto} con identificativo \texttt{:projectId} relativo all'utente della sessione corrente dal database. Restituisce un messaggio di conferma, altrimenti uno di errore;
+%\item \textbf{Request:}
+%\item \textbf{Response:}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/presentations}
+\begin{itemize}
+\item \textbf{Method:} GET;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} restituisce tutti i nodi della mappa mentale, quindi del \gloxy{progetto} \texttt{projectId} dell'utente della sessione. Restituisce un oggetto \gloxy{JSON} creato ad hoc per eseguire una presentazione nel font-end dell'applicazione. Altrimenti restituisce un messaggio di errore;
+%\item \textbf{Request:}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"frames" : [
+{
+"node" : [contenuto e informazioni del nodo, con attributi definiti nei diagrammi delle classi],
+"family" : [{
+{
+"children":[
+{
+"id" : ["identificativo dei nodi figli"],
+"title": ["titolo del nodo"]
+}]
+"parent" : {
+"id" : ["identificativo del nodo padre"],
+"title": ["titolo del nodo"]
+}
+}],
+"associations" : [
+{
+"id" : [identificativo dei nodi con cui esiste una associazione],
+"title": ["titolo del nodo"]
+}
+]
+}
+]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/nodes/:nodeId}
+\begin{itemize}
+\item \textbf{Method:} POST;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} inserisce nel database un nuovo nodo vuoto come figlio del nodo \texttt{:nodeId}, relativo al \gloxy{progetto} \texttt{:projectId}. Restituisce i dati del nuovo nodo oppure un messaggio di errore;
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"nodeId" : [identificativo del nodo appena creato]
+"contents" : [
+{
+"content" : [testo o URL],
+"x" : [coordinata sull'asse x dell'elemento nel frame],
+"y" : [coordinata sull'asse y dell'elemento nel frame],
+"height" : [altezza dell'elemento],
+"width" : [larghezza dell'elemento],
+"class" : [title, text o imgURL]
+}
+]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/nodes/:nodeId}
+\begin{itemize}
+\item \textbf{Method:} PUT;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} aggiorna il contenuto del nodo \texttt{:nodeId}, nel \gloxy{progetto} \texttt{:projectId}, relativo all'utente della sessione. Restituisce un messaggio di conferma oppure un messaggio di errore;
+%\item \textbf{Request:}
+\item \textbf{Request:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"contents" : [
+{
+"content" : [testo o URL],
+"x" : [coordinata sull'asse x dell'elemento nel frame],
+"y" : [coordinata sull'asse y dell'elemento nel frame],
+"height" : [altezza dell'elemento],
+"width" : [larghezza dell'elemento],
+"class" : [title, text o imgURL]
+}
+]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/nodes/:nodeId}
+\begin{itemize}
+\item \textbf{Method:} DELETE;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} elimina dal database il nodo \texttt{:nodeId}, nel \gloxy{progetto} \texttt{:projectId}, relativo all'utente della sessione. Oltre ad esso viene eliminato l'eventuale sotto-albero di cui \texttt{:nodeId} è padre, le associazioni che coinvolgono i nodi del sotto-albero e vengono aggiornati i \gloxy{percorsi} in cui il nodo compariva. Restituisce la nuova mappa mentale, con nodi e relazioni aggiornati oppure un messaggio di errore;
+%\item \textbf{Request:}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"nodes" : [array JSON di nodi, con attributi specificati nei diagrammi delle classi],
+"relations" : [array JSON di relazioni, con attributi specificati nei diagrammi delle classi]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/associations}
+\begin{itemize}
+\item \textbf{Method:} POST;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} crea una relazione di tipo associazione nel \gloxy{progetto} \texttt{:projectId}, relativo all'utente della sessione. Richiede gli identificativi dei nodi che formano l'associazione. Restituisce un messaggio di conferma oppure un messaggio di errore;
+\item \textbf{Request:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"sourceId" : [identificativo del nodo sorgente della relazione],
+"destinationId" : [identificativo del nodo destinazione della relazione]
+}
+\end{lstlisting}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"associationId" : [identificativo dell'associazione creata]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/associations/:associationId}
+\begin{itemize}
+\item \textbf{Method:} DELETE;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} elimina una relazione di tipo associazione nel \gloxy{progetto} \texttt{:projectId}, relativo all'utente della sessione. Richiede gli identificativi dei nodi che formano l'associazione. Restituisce un messaggio di conferma oppure un messaggio di errore;
+\item \textbf{Request:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"associationId" : [identificativo dell'associazione creata]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/paths}
+\begin{itemize}
+\item \textbf{Method:} POST;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} aggiunge un \gloxy{percorso di presentazione} vuoto al \gloxy{progetto} \texttt{:projectId} relativo all'utente della sessione. Richiede che venga specificato un nome per il \gloxy{percorso}. Restituisce l'identificativo del nuovo \gloxy{percorso}, generato automaticamente dal database o un messaggio di errore;
+\item \textbf{Request:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name" : [nome per il percorso]
+}
+\end{lstlisting}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"pathId" : [identificativo del percorso],
+"name" : [nome del percorso]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/paths}
+\begin{itemize}
+\item \textbf{Method:} GET;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} restituisce i \gloxy{percorsi di presentazione} del \gloxy{progetto} \texttt{:projectId} relativo all'utente della sessione. Altrimenti restituisce un messaggio di errore;
+%\item \textbf{Request:}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"paths" : [{
+"id" : [identificativo del percorso],
+"name" : [nome del percorso]
+}]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/paths/:pathId/:nodeId}
+\begin{itemize}
+\item \textbf{Method:} POST;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} aggiunge il nodo \texttt{:nodeId} al \gloxy{percorso} \texttt{:pathId} relativo al \gloxy{progetto} \texttt{projectId} dell'utente della sessione. Richiede che venga specificato l'identificativo del nodo da aggiungere. Restituisce tutti i nodi del \gloxy{percorso} \texttt{:pathId} relativi al \gloxy{progetto} \texttt{projectId} dell'utente della sessione oppure un messaggio di errore;
+%\item \textbf{Request:}
+%\begin{lstlisting}[language=json,firstnumber=1]
+%{
+%"nodeId" : [identificativo del nodo da aggiungere al percorso]
+%}
+%\end{lstlisting}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name": [nome del percorso]
+"nodes" : [array JSON di nodi, con attributi specificati nei diagrammi delle classi]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/paths/:pathId}
+\begin{itemize}
+\item \textbf{Method:} GET;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} restituisce tutti i nodi del \gloxy{percorso} \texttt{:pathId} relativi al \gloxy{progetto} \texttt{projectId} dell'utente della sessione oppure un messaggio di errore;
+%\item \textbf{Request:}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name": [nome del percorso]
+"nodes" : [array \gloxy{JSON} di nodi, con attributi specificati nei diagrammi delle classi]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/paths/:pathId}
+\begin{itemize}
+\item \textbf{Method:} PUT;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} aggiorna le informazioni del \gloxy{percorso} \texttt{:pathId} nel \gloxy{progetto} \texttt{:projectId}, relativo all'utente della sessione, in particolare consente di rinominarlo. Richiede che venga specificato un nuovo nome per il \gloxy{percorso}. Restituisce un messaggio di conferma o un messaggio di errore;
+\item \textbf{Request:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name" : [nome per il percorso]
+}
+\end{lstlisting}
+%\item \textbf{Response:}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/paths/:pathId}
+\begin{itemize}
+\item \textbf{Method:} DELETE;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} rimuove il \gloxy{percorso di presentazione} \texttt{:pathId} dal \gloxy{progetto} \texttt{:projectId}, relativo all'utente della sessione. Restituisce un messaggio di conferma oppure un messaggio di errore;
+%\item \textbf{Request:}
+%\item \textbf{Response:}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/projects/:projectId/paths/:pathId/:nodeId}
+\begin{itemize}
+\item \textbf{Method:} DELETE;
+\item \textbf{Livello di Accesso:} utente autenticato;
+\item \textbf{Descrizione:} rimuove il nodo \texttt{:nodeId} dal \gloxy{percorso} \texttt{:pathId}, relativo al \gloxy{progetto} \texttt{projectId} dell'utente della sessione. Restituisce tutti i nodi del \gloxy{percorso} \texttt{:pathId} relativi al \gloxy{progetto} \texttt{projectId} dell'utente della sessione oppure un messaggio di errore;
+%\item \textbf{Request:}
+\item \textbf{Response:}
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"name": [nome del percorso]
+"nodes" : [array \gloxy{JSON} di nodi, con attributi specificati nei diagrammi delle classi]
+}
+\end{lstlisting}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \texttt{/statics/userManual}
+\begin{itemize}
+\item \textbf{Method:} GET;
+\item \textbf{Livello di Accesso:} utente;
+\item \textbf{Descrizione:} fornisce al chiamante l'URL della pagina \gloxy{web} contenente il manuale utente dell'applicativo;
+%\item \textbf{Request:}
+%\item \textbf{Response:}
+\end{itemize}
+\end{itemize}

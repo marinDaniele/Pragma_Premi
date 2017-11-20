@@ -1,0 +1,31 @@
+\section{Installazione di Premi}\label{installazione}
+Una volta accertato che tutti i requisiti sono soddisfatti, \`{e} possibile procedere con l'installazione di premi.
+\subsection{Ottenere il Prodotto}
+Il prodotto è disponibile nel CD allegato, in formato di archivio compresso \texttt{Premi.zip}.
+\subsection{Installazione e avvio di Premi}
+Per installare l'applicativo e quindi il \gloxy{server} con Node.js, è necessario innanzitutto scompattare l'archivio \texttt{Premi.zip}, in qualsiasi posizione del file system. L'applicativo si trova nella cartella \texttt{Premi}. \\
+Aprire una finestra del terminale e posizionarsi all'interno della cartella dell'applicazione, con il comando:
+\begin{center}
+\texttt{\$ cd path/to/application/Premi}
+\end{center}
+Successivamente sarà necessario installare le dipendenze di \Premi, mediante il comando:
+\begin{center}
+\texttt{\$ npm install}
+\end{center}
+che utilizza automaticamente il file di configurazione \texttt{package.json}.\\
+Al termine dell'installazione, sempre all'interno della cartella dell'applicazione, sarà possibile avviare il \gloxy{server} con il comando:
+\begin{center}
+\texttt{\$ grunt}
+\end{center}
+In caso di corretta esecuzione, verrà mostrato nel terminale il messaggio \texttt{\textasciitilde Premi\textasciitilde \ application started on port 3000}. Sarà possibile utilizzare \Premi tramite \gloxy{browser web} all'indirizzo \url{http://localhost:3000}.
+Per terminare l'applicazione è sufficiente chiudere il terminale o digitare nello stesso la sequenza di tasti \texttt{ctrl+C}.
+\subsection{Installare Premi su un server con IP pubblico}
+Se si desidera adibire un \gloxy{server} con indirizzo IP pubblico all'esecuzione di \Premi è necessario installare il prodotto come illustrato nella sezione precedente. In seguito è necessario modificare il file \texttt{serverUrl.service.js} situato nella cartella \texttt{Premi/public/modules/premi/app/services}. Dovrà essere modificata la riga di codice che configura l'indirizzo del \gloxy{server} da:
+\begin{center}
+\texttt{.constant('SERVER$\_$URL', 'http://localhost:3000');}
+\end{center}
+a:
+\begin{center}
+\texttt{.constant('SERVER$\_$URL', 'http://your-server-ip:3000');}
+\end{center}
+\Premi potrà successivamente essere avviata come spiegato in precedenza.

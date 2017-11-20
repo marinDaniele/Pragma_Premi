@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex guidaInstallazione.tex
+pdflatex guidaInstallazione.tex

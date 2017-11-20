@@ -1,0 +1,26 @@
+\newcommand{\documenttitle}{Piano di Qualifica}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt \\ & \proponente}
+\newcommand{\editorialstaff}{\gma \\ & \dm \\ & \ao}
+\newcommand{\teststaff}{\gmi}
+\newcommand{\approvalstaff}{\dm}
+\newcommand{\use}{Esterno}
+\input{../template/layout.tex}
+\input{../template/comandi.tex}
+\input{sezioni/partiRicorrenti.tex}
+\begin{document}
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\tableofcontents %indice
+\listoffigures
+\listoftables
+\pagebreak
+\input{sezioni/introduzione.tex}
+\input{sezioni/qualitaProcesso.tex}
+\input{sezioni/qualitaProdotto.tex}
+\input{sezioni/test.tex}
+\input{sezioni/tracciamenti.tex}
+\appendix
+\begin{appendices}
+\input{sezioni/resocontoVerifica.tex}
+\end{appendices}
+\end{document}

@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex normeDiProgetto.tex
+pdflatex normeDiProgetto.tex

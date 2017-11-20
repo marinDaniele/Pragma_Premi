@@ -1,0 +1,41 @@
+body{
+	font-family: sans-serif;
+	width: 80%;
+	margin: 0 auto;
+}
+h2.documentName{
+	display: inline;
+}
+h3.documentPath{
+	display: inline;
+}
+p.number{
+	margin: 0;
+	font-weight: bold;
+	display: inline-block;
+	width: 5%;
+	text-align: right;
+}
+div.changeLog{
+	display: inline-block;
+	width: 95%;
+}
+p.oldLine{
+	background-color: lightcoral;
+	padding: .5em;
+	margin: 0;
+}
+p.newLine{
+	background-color: darkseagreen;
+	padding: .5em;
+	margin: 0;
+}
+ul.listaModifiche{
+	list-style-type: none;
+	margin: 1em 0;
+	padding: 0;
+}
+.listaModifiche li{
+	margin: .5em 0;
+}
+

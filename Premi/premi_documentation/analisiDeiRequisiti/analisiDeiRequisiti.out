@@ -1,0 +1,152 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Scopo del documento}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Scopo del prodotto}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Glossario}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Riferimenti}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Normativi}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Informativi}{subsection.1.4}% 7
+\BOOKMARK [1][-]{section.2}{Descrizione generale}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Contesto d'uso del prodotto}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Funzioni del prodotto}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Caratteristiche degli utenti}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.4}{Vincoli generali}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.5}{Assunzione dipendenze}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Casi d'uso}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{UC1: Caso d'uso privato}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{UC1.1: Creazione di un nuovo progetto}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{UC1.1.1: Scelta del nome}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{UC1.1.2: Conferma creazione}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{UC1.1.3: Nome progetto non valido}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.6}{UC1.2: Modifica di un progetto}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.7}{UC1.2.1: Modifica del nome}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.8}{UC1.2.2: Modifica della struttura della mappa}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.9}{UC1.2.2.1: Selezione di un nodo}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.10}{UC1.2.2.2: Aggiunta di un nodo}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.11}{UC1.2.2.3: Modifica di un nodo}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.12}{UC1.2.2.3.1: Selezione di un elemento testuale}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.13}{UC1.2.2.3.2: Selezione di un immagine}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.14}{UC1.2.2.3.3: Selezione di un video}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.15}{UC1.2.2.3.4: Aggiunta di un elemento testuale}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.16}{UC1.2.2.3.5: Aggiunta di un immagine}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.17}{UC1.2.2.3.5.1: Scelta dell'immagine}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.18}{UC1.2.2.3.5.2: Conferma inserimento}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.19}{UC1.2.2.3.6: Aggiunta di un video}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.20}{UC1.2.2.3.6.1: Scelta del video}{section.3}% 34
+\BOOKMARK [2][-]{subsection.3.21}{UC1.2.2.3.6.2: Conferma inserimento}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.22}{UC1.2.2.3.7: Modifica di un elemento testuale}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.23}{UC1.2.2.3.8: Scelta del formato di un elemento testuale}{section.3}% 37
+\BOOKMARK [2][-]{subsection.3.24}{UC1.2.2.3.8.1: Scelta del font}{section.3}% 38
+\BOOKMARK [2][-]{subsection.3.25}{UC1.2.2.3.8.2: Scelta del colore}{section.3}% 39
+\BOOKMARK [2][-]{subsection.3.26}{UC1.2.2.3.9: Spostamento di un elemento testuale}{section.3}% 40
+\BOOKMARK [2][-]{subsection.3.27}{UC1.2.2.3.10: Spostamento di un'immagine}{section.3}% 41
+\BOOKMARK [2][-]{subsection.3.28}{UC1.2.2.3.11: Spostamento di un video}{section.3}% 42
+\BOOKMARK [2][-]{subsection.3.29}{UC1.2.2.3.12: Eliminazione di un elemento testuale}{section.3}% 43
+\BOOKMARK [2][-]{subsection.3.30}{UC1.2.2.3.13: Eliminazione di un immagine}{section.3}% 44
+\BOOKMARK [2][-]{subsection.3.31}{UC1.2.2.3.14: Eliminazione di un video}{section.3}% 45
+\BOOKMARK [2][-]{subsection.3.32}{UC1.2.2.4: Spostamento gerarchico di un nodo}{section.3}% 46
+\BOOKMARK [2][-]{subsection.3.33}{UC1.2.2.5: Eliminazione di un nodo}{section.3}% 47
+\BOOKMARK [2][-]{subsection.3.34}{UC1.2.2.6: Aggiunta di una associazione tra nodi}{section.3}% 48
+\BOOKMARK [2][-]{subsection.3.35}{UC1.2.2.7: Eliminazione di una associazione tra nodi}{section.3}% 49
+\BOOKMARK [2][-]{subsection.3.36}{UC1.2.2.8: Selezione di una associazione tra nodi}{section.3}% 50
+\BOOKMARK [2][-]{subsection.3.37}{UC1.2.2.9: Spostamento grafico di un nodo}{section.3}% 51
+\BOOKMARK [2][-]{subsection.3.38}{UC1.2.3: Creazione di un percorso personalizzato}{section.3}% 52
+\BOOKMARK [2][-]{subsection.3.39}{UC1.2.3.1: Scelta del nome}{section.3}% 53
+\BOOKMARK [2][-]{subsection.3.40}{UC1.2.3.2: Selezione del nodo di partenza}{section.3}% 54
+\BOOKMARK [2][-]{subsection.3.41}{UC1.2.3.3: Conferma creazione}{section.3}% 55
+\BOOKMARK [2][-]{subsection.3.42}{UC1.2.4: Modifica di un percorso di presentazione personalizzato}{section.3}% 56
+\BOOKMARK [2][-]{subsection.3.43}{UC1.2.4.1: Aggiunta di un frame al percorso}{section.3}% 57
+\BOOKMARK [2][-]{subsection.3.44}{UC1.2.4.2: Spostamento di un frame nel percorso}{section.3}% 58
+\BOOKMARK [2][-]{subsection.3.45}{UC1.2.4.3: Eliminazione di un frame dal percorso}{section.3}% 59
+\BOOKMARK [2][-]{subsection.3.46}{UC1.2.4.4: Scelta del percorso come principale}{section.3}% 60
+\BOOKMARK [2][-]{subsection.3.47}{UC1.2.4.5: Aggiunta di un effetto grafico di transizione}{section.3}% 61
+\BOOKMARK [2][-]{subsection.3.48}{UC1.2.5: Eliminazione di un percorso personalizzato}{section.3}% 62
+\BOOKMARK [2][-]{subsection.3.49}{UC1.2.5.1: Conferma eliminazione del percorso personalizzato}{section.3}% 63
+\BOOKMARK [2][-]{subsection.3.50}{UC1.2.6: Scelta delle impostazioni generali del progetto}{section.3}% 64
+\BOOKMARK [2][-]{subsection.3.51}{UC1.2.6.1: Scelta del formato di default per il testo}{section.3}% 65
+\BOOKMARK [2][-]{subsection.3.52}{UC1.2.6.1.1: Scelta del font di default per il testo}{section.3}% 66
+\BOOKMARK [2][-]{subsection.3.53}{UC1.2.6.1.2: Scelta del colore di default per il testo}{section.3}% 67
+\BOOKMARK [2][-]{subsection.3.54}{UC1.2.6.2: Scelta di uno sfondo per il frame dei nodi}{section.3}% 68
+\BOOKMARK [2][-]{subsection.3.55}{UC1.2.6.3: Conferma delle impostazioni}{section.3}% 69
+\BOOKMARK [2][-]{subsection.3.56}{UC1.2.7: Selezione di un percorso personalizzato}{section.3}% 70
+\BOOKMARK [2][-]{subsection.3.57}{UC1.3: Esecuzione di una presentazione}{section.3}% 71
+\BOOKMARK [2][-]{subsection.3.58}{UC1.3.1: Scelta del percorso di visualizzazione}{section.3}% 72
+\BOOKMARK [2][-]{subsection.3.59}{UC1.3.2: Spostamento al frame successivo}{section.3}% 73
+\BOOKMARK [2][-]{subsection.3.60}{UC1.3.3: Spostamento al frame precedente}{section.3}% 74
+\BOOKMARK [2][-]{subsection.3.61}{UC1.3.4: Spostamento ad un frame a scelta}{section.3}% 75
+\BOOKMARK [2][-]{subsection.3.62}{UC1.3.4.1: Visualizzazione frame disponibili}{section.3}% 76
+\BOOKMARK [2][-]{subsection.3.63}{UC1.3.4.2: Selezione del frame}{section.3}% 77
+\BOOKMARK [2][-]{subsection.3.64}{UC1.3.5: Chiusura della presentazione}{section.3}% 78
+\BOOKMARK [2][-]{subsection.3.65}{UC1.3.6: Spostamento ad un frame direttamente correlato}{section.3}% 79
+\BOOKMARK [2][-]{subsection.3.66}{UC1.3.6.1: Visualizzazione frame direttamente correlati}{section.3}% 80
+\BOOKMARK [2][-]{subsection.3.67}{UC1.3.6.2: Scelta del frame da visualizzare}{section.3}% 81
+\BOOKMARK [2][-]{subsection.3.68}{UC1.4: Eliminazione di un progetto}{section.3}% 82
+\BOOKMARK [2][-]{subsection.3.69}{UC1.4.1: Scelta del progetto}{section.3}% 83
+\BOOKMARK [2][-]{subsection.3.70}{UC1.4.2: Conferma eliminazione di un progetto}{section.3}% 84
+\BOOKMARK [2][-]{subsection.3.71}{UC1.5: Apertura di un progetto}{section.3}% 85
+\BOOKMARK [2][-]{subsection.3.72}{UC1.5.1: Visualizzazione dei progetti disponibili}{section.3}% 86
+\BOOKMARK [2][-]{subsection.3.73}{UC1.5.2: Scelta del progetto}{section.3}% 87
+\BOOKMARK [2][-]{subsection.3.74}{UC1.5.3: Conferma dell'apertura}{section.3}% 88
+\BOOKMARK [2][-]{subsection.3.75}{UC1.6: Esportazione di un progetto}{section.3}% 89
+\BOOKMARK [2][-]{subsection.3.76}{UC1.6.1: Esportazione della pagina web contenente una presentazione eseguibile}{section.3}% 90
+\BOOKMARK [2][-]{subsection.3.77}{UC1.6.1.1: Scelta del percorso di esportazione}{section.3}% 91
+\BOOKMARK [2][-]{subsection.3.78}{UC1.6.1.2: Scelta del nome del file}{section.3}% 92
+\BOOKMARK [2][-]{subsection.3.79}{UC1.6.1.3: Conferma esportazione}{section.3}% 93
+\BOOKMARK [2][-]{subsection.3.80}{UC1.6.2: Esportazione della mappa mentale in PDF}{section.3}% 94
+\BOOKMARK [2][-]{subsection.3.81}{UC1.6.2.1: Scelta del percorso di esportazione}{section.3}% 95
+\BOOKMARK [2][-]{subsection.3.82}{UC1.6.2.2: Scelta del nome del file}{section.3}% 96
+\BOOKMARK [2][-]{subsection.3.83}{UC1.6.2.3: Conferma esportazione}{section.3}% 97
+\BOOKMARK [2][-]{subsection.3.84}{UC1.6.3: Esportazione di una presentazione in PDF}{section.3}% 98
+\BOOKMARK [2][-]{subsection.3.85}{UC1.6.3.1: Scelta del percorso di visualizzazione}{section.3}% 99
+\BOOKMARK [2][-]{subsection.3.86}{UC1.6.3.2: Scelta del percorso di esportazione}{section.3}% 100
+\BOOKMARK [2][-]{subsection.3.87}{UC1.6.3.3: Scelta del nome del file}{section.3}% 101
+\BOOKMARK [2][-]{subsection.3.88}{UC1.6.3.4: Conferma esportazione}{section.3}% 102
+\BOOKMARK [2][-]{subsection.3.89}{UC1.7: Stampa di un progetto}{section.3}% 103
+\BOOKMARK [2][-]{subsection.3.90}{UC1.7.1: Stampa della mappa mentale}{section.3}% 104
+\BOOKMARK [2][-]{subsection.3.91}{UC1.7.1.1: Anteprima di stampa}{section.3}% 105
+\BOOKMARK [2][-]{subsection.3.92}{UC1.7.1.2: Scelta delle impostazioni di pagina}{section.3}% 106
+\BOOKMARK [2][-]{subsection.3.93}{UC1.7.1.3: Conferma stampa}{section.3}% 107
+\BOOKMARK [2][-]{subsection.3.94}{UC1.7.2: Stampa di una presentazione}{section.3}% 108
+\BOOKMARK [2][-]{subsection.3.95}{UC1.7.2.1: Scelta del percorso di visualizzazione}{section.3}% 109
+\BOOKMARK [2][-]{subsection.3.96}{UC1.7.2.2: Anteprima di stampa}{section.3}% 110
+\BOOKMARK [2][-]{subsection.3.97}{UC1.7.2.3: Scelte delle impostazioni di pagina}{section.3}% 111
+\BOOKMARK [2][-]{subsection.3.98}{UC1.7.2.4: Conferma stampa}{section.3}% 112
+\BOOKMARK [2][-]{subsection.3.99}{UC1.8: Chiusura del progetto corrente}{section.3}% 113
+\BOOKMARK [2][-]{subsection.3.100}{UC1.8.1: Conferma chiusura del progetto corrente}{section.3}% 114
+\BOOKMARK [2][-]{subsection.3.101}{UC1.9: Consultazione del manuale utente}{section.3}% 115
+\BOOKMARK [2][-]{subsection.3.102}{UC1.10: Gestione profilo utente}{section.3}% 116
+\BOOKMARK [2][-]{subsection.3.103}{UC1.10.1: Modifica password account}{section.3}% 117
+\BOOKMARK [2][-]{subsection.3.104}{UC1.10.1.1: Inserimento vecchia password}{section.3}% 118
+\BOOKMARK [2][-]{subsection.3.105}{UC1.10.1.2: Inserimento nuova password}{section.3}% 119
+\BOOKMARK [2][-]{subsection.3.106}{UC1.10.1.3: Conferma modifica password}{section.3}% 120
+\BOOKMARK [2][-]{subsection.3.107}{UC1.10.2: Cancellazione account}{section.3}% 121
+\BOOKMARK [2][-]{subsection.3.108}{UC1.10.2.1: Conferma cancellazione account}{section.3}% 122
+\BOOKMARK [2][-]{subsection.3.109}{UC1.11: Logout}{section.3}% 123
+\BOOKMARK [2][-]{subsection.3.110}{UC2: Caso d'uso pubblico}{section.3}% 124
+\BOOKMARK [2][-]{subsection.3.111}{UC2.1: Registrazione account}{section.3}% 125
+\BOOKMARK [2][-]{subsection.3.112}{UC2.1.1: Inserimento mail}{section.3}% 126
+\BOOKMARK [2][-]{subsection.3.113}{UC2.1.2: Inserimento password}{section.3}% 127
+\BOOKMARK [2][-]{subsection.3.114}{UC2.1.3: Conferma registrazione}{section.3}% 128
+\BOOKMARK [2][-]{subsection.3.115}{UC2.2: Login}{section.3}% 129
+\BOOKMARK [2][-]{subsection.3.116}{UC2.2.1: Inserimento mail}{section.3}% 130
+\BOOKMARK [2][-]{subsection.3.117}{UC2.2.2: Inserimento password}{section.3}% 131
+\BOOKMARK [2][-]{subsection.3.118}{UC2.2.3: Conferma login}{section.3}% 132
+\BOOKMARK [2][-]{subsection.3.119}{UC2.3: Errore sui dati di registrazione}{section.3}% 133
+\BOOKMARK [2][-]{subsection.3.120}{UC2.4: Autenticazione fallita}{section.3}% 134
+\BOOKMARK [2][-]{subsection.3.121}{UC3: Progetto esportato}{section.3}% 135
+\BOOKMARK [2][-]{subsection.3.122}{UC3.1: Chiusura della presentazione}{section.3}% 136
+\BOOKMARK [2][-]{subsection.3.123}{UC3.2: Spostamento al frame successivo}{section.3}% 137
+\BOOKMARK [2][-]{subsection.3.124}{UC3.3: Spostamento al frame precedente}{section.3}% 138
+\BOOKMARK [2][-]{subsection.3.125}{UC3.4: Spostamento ad un frame a scelta}{section.3}% 139
+\BOOKMARK [2][-]{subsection.3.126}{UC3.4.1: Visualizzazione frame disponibili}{section.3}% 140
+\BOOKMARK [2][-]{subsection.3.127}{UC3.4.2: Selezione del frame}{section.3}% 141
+\BOOKMARK [2][-]{subsection.3.128}{UC3.5: Spostamento ad un frame direttamente correlato}{section.3}% 142
+\BOOKMARK [2][-]{subsection.3.129}{UC3.5.1: Visualizzazione frame direttamente correlati}{section.3}% 143
+\BOOKMARK [2][-]{subsection.3.130}{UC3.5.2: Scelta del frame da visualizzare}{section.3}% 144
+\BOOKMARK [1][-]{section.4}{Requisiti}{}% 145
+\BOOKMARK [2][-]{subsection.4.1}{Requisiti Funzionali}{section.4}% 146
+\BOOKMARK [2][-]{subsection.4.2}{Requisiti di Qualit\340}{section.4}% 147
+\BOOKMARK [2][-]{subsection.4.3}{Requisiti di Vincolo}{section.4}% 148
+\BOOKMARK [2][-]{subsection.4.4}{Tracciamento Requisiti-Fonti}{section.4}% 149
+\BOOKMARK [2][-]{subsection.4.5}{Tracciamento Fonti-Requisiti}{section.4}% 150
+\BOOKMARK [2][-]{subsection.4.6}{Riepilogo Requisiti}{section.4}% 151
+\BOOKMARK [2][-]{subsection.4.7}{Requisiti accettati}{section.4}% 152

@@ -1,0 +1,31 @@
+\newcommand{\documenttitle}{Piano di Progetto}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt \\ & \proponente}
+\newcommand{\editorialstaff}{\dm}
+\newcommand{\teststaff}{\gma}
+\newcommand{\approvalstaff}{\dm}
+\newcommand{\use}{Esterno}
+\input{../template/layout.tex}
+\input{../template/comandi.tex}
+\begin{document}
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\tableofcontents %indice
+\listoffigures
+\listoftables
+\pagebreak
+\input{sezioni/introduzione.tex}
+\input{sezioni/vincoli.tex}
+\input{sezioni/analisiRischi.tex}
+\input{sezioni/strategie.tex}
+\input{sezioni/pianificazione.tex}
+\input{sezioni/preventivo.tex}
+\input{sezioni/consuntivo.tex}
+\input{sezioni/preventivoAfinire.tex}
+\appendix
+\begin{appendices}
+\input{sezioni/resocontoSEMAT.tex}
+\input{sezioni/totaliInvestimento.tex}
+\clearpage
+\input{sezioni/organigramma.tex}
+\end{appendices}
+\end{document}

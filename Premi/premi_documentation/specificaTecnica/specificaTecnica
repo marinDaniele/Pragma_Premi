@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex specificaTecnica.tex
+pdflatex specificaTecnica.tex

@@ -1,0 +1,31 @@
+\newcommand{\documenttitle}{Definizione di Prodotto}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt \\ & \proponente}
+\newcommand{\editorialstaff}{\gma \\ & \mb}
+\newcommand{\teststaff}{\fv }
+\newcommand{\approvalstaff}{\dm}
+\newcommand{\use}{Esterno}
+\input{../template/layout.tex}
+\input{../template/comandi.tex}
+\input{definizioniRicorrenti.tex}
+\usepackage{listings}
+\usepackage{xcolor}
+\begin{document} \sloppy
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\tableofcontents %indice
+\listoffigures
+\listoftables
+\pagebreak
+\input{sezioni/introduzione.tex}
+\input{sezioni/frontEnd.tex}
+\input{sezioni/backEnd.tex}
+\input{sezioni/diagrammiSequenza.tex}
+\input{sezioni/tracciamenti.tex}
+\appendix
+\begin{appendices}
+\input{sezioni/interfacciaREST.tex}
+\input{sezioni/designPatterns.tex}
+\input{sezioni/cytoscape.tex}
+\clearpage
+\end{appendices}
+\end{document}

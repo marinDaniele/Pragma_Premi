@@ -1,0 +1,378 @@
+\section{Resoconto attività di verifica}
+\label{resocontoVerifica}
+In questa sezione del documento verranno descritti e commentati gli esiti delle attività di verifica svolte sui vari documenti prodotti durante le varie fasi del \nogloxy{progetto}.
+\subsection{Fase di \fAt}
+Il tracciamento delle relazioni fra casi d'uso e requisiti, così come il tracciamento delle relazioni fra requisiti e fonti, è stato effettuato sfruttando l'applicativo \pragmadb, il quale facilita la verifica del tracciamento.
+\subsubsection{Analisi statica dei documenti}
+L'analisi dei documenti mediante \gloxy{walkthrough} ha portato all'individuazione di alcuni errori frequenti a partire dai quali è stata stilata una lista di controllo da usare per le future attività di verifica. \\
+Segue una lista degli errori riscontrati, ordinata dal più frequente al meno frequente.
+\begin{itemize}
+\item Mancato utilizzo dei comandi \LaTeX~ personalizzati;
+\item Mancato rispetto delle norme riguardanti gli elenchi puntati:
+\begin{itemize}
+\item La prima parola di una voce dell'elenco non iniziava con una lettera maiuscola;
+\item La voce dell'elenco terminava con un punto anziché con un punto e virgola (o viceversa).
+\end{itemize}
+\item Errori riguardanti la struttura delle frasi: alcune frasi erano scritte in modo più colloquiale che formale o con tempi verbali errati;
+\item Errori di battitura.
+\end{itemize}
+\subsubsubsection{Esiti verifiche automatizzate}
+Ogni documento è stato sottoposto anche a delle verifiche automatizzate per il calcolo dell'indice di Gulpease e per il controllo ortografico. Per maggiori informazioni si rimanda al processo \ref{soDocMgmt}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline Documento & \gloxy{Indice Gulpease} & Esito\\
+\hline
+\emph{Analisi dei Requisiti v1.0.0} & 71,70 & Superato \\
+\emph{Glossario v1.0.0} & 43,87 & Superato \\
+\emph{Norme di \nogloxy{Progetto} v1.0.0} & 56,89 & Superato \\
+\emph{Piano di \nogloxy{Progetto} v1.0.0} & 51,03 & Superato \\
+\emph{Piano di Qualifica v1.0.0} & 52,57  & Superato \\
+\studioDiFattibilita & 63,87 & Superato \\
+\iI & 58,40 & Superato \\
+\hline
+\end{tabular}
+\caption{Resoconto verifiche automatizzate  - Fase di \fAt}
+\end{center}
+\end{table}
+\FloatBarrier
+Dal calcolo dell'indice di Gulpease sono state escluse le tabelle e le didascalie.
+\subsubsection{Considerazioni finali}
+\begin{itemize}
+\item Lo svolgimento delle attività di verifica è ancora poco automatizzato, questo perché senza una prima lista di errori comuni non è stato possibile predisporre automatismi per rilevarli e correggerli. Per le verifiche successive si cercherà di automatizzare ulteriormente questo processo;
+\item La stesura dei documenti ha raggiunto un buon grado di automatizzazione; per quanto riguarda l'\AR e il \G, infatti, la maggior parte del codice \LaTeX~ viene generato in modo automatico a partire dai dati presenti all'interno di \pragmadb. Non è stato possibile raggiungere lo stesso livello di automazione per gli altri documenti a causa della natura del loro contenuto.
+\end{itemize}
+\subsection{Fase di \fADt}
+L'ampliamento di \pragmadb in vista della fase di progettazione ha permesso l'inserimento di nuovi script e funzionalità per il tracciamento e la verifica dei dati inseriti nei documenti.
+Un approccio così automatizzato alla stesura dei documenti ha permesso ai verificatori una maggiore facilità nell'individuazione degli errori e una maggiore facilità nell'individuazione delle singole componenti.
+In particolar modo si è cercato di facilitare l'analisi del tracciamento, che nella precedente fase è risultata particolarmente onerosa.
+\subsubsection{Analisi statica dei documenti}
+\subsubsubsection{Esiti verifiche automatizzate}
+Ogni documento è stato sottoposto anche a delle verifiche automatizzate per il calcolo dell'indice di Gulpease e per il controllo ortografico. Per maggiori informazioni si rimanda al processo \ref{soDocMgmt}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline Documento & \gloxy{Indice Gulpease} & Esito\\
+\hline
+\emph{Analisi dei Requisiti v1.7.2} & 67,82 & Superato \\
+\emph{Glossario v1.5.2} & 48,68 & Superato \\
+\emph{Norme di \nogloxy{Progetto} v2.0.0} & 58,06 & Superato \\
+\emph{Piano di \nogloxy{Progetto} v1.2.2} & 51,75 & Superato \\
+\emph{Piano di Qualifica v1.15.2} & 55,85  & Superato \\
+\eI & 57,82 & Superato \\
+\eII & 55,81 & Superato \\
+\hline
+\end{tabular}
+\caption{Resoconto verifiche automatizzate - Fase di \fADt}
+\end{center}
+\end{table}
+\FloatBarrier
+Dal calcolo dell'indice di Gulpease sono state escluse le tabelle e le didascalie.
+\subsubsection{Considerazioni finali}
+L'attività di verifica ha raggiunto un buon grado di automatizzazione.\\
+Il processo di verifica dei documenti è stato migliorato su due punti ritenuti fondamentali:
+\begin{itemize}
+\item Una maggiore automatizzazione dei processi mediante l'aggiunta di nuove funzionalità a \pragmadb legate alla verifica del tracciamento tra i vari dati presenti nell'applicazione;
+\item La realizzazione di una lista di errori comuni che viene utilizzata per l'inspection dei documenti, che ha permesso di individuare in modo più efficace gli errori triviali commessi dai redattori dei documenti.
+\end{itemize}
+\subsection{Fase di \fPAt}
+Per la fase di \fPAt si è deciso di ampliare le funzionalità di \pragmadb, affinché il processo di inserimento dei dati relativi a package, classi e il loro relativo tracciamento divenisse il più automatizzato possibile.
+Grazie a questi procedimenti le azioni di verifica e correzione sono risultate più semplici e immediate. Particolarmente utile è stato il sistema di verifica del tracciamento offerto da \pragmadb, che ha permesso di evitare la ricerca tramite  \gloxy{walkthrough} degli errori di tracciamento.
+\subsubsection{Analisi statica dei documenti}
+L'analisi dei documenti mediante \gloxy{walkthrough} ha portato all'individuazione di alcuni errori frequenti a partire dai quali è stata stilata una lista di controllo da usare per le future attività di verifica. \\
+Segue una lista degli errori riscontrati, ordinata dal più frequente al meno frequente:
+\begin{itemize}
+\item Mancato utilizzo dei comandi \LaTeX~ personalizzati;
+\item Mancato rispetto delle norme riguardanti gli elenchi puntati, specialmente quella riguardante l'inizio della voce con una lettera maiuscola;
+\item Alcune definizioni ricorrenti presenti nella descrizione dei componenti della \ST sono state scritte in modo diverso;
+\item Errori riguardanti la struttura delle frasi: alcune frasi erano scritte in modo più colloquiale che formale o con tempi verbali errati.
+\end{itemize}
+\subsubsubsection{Esiti verifiche automatizzate}
+Ogni documento è stato sottoposto anche a delle verifiche automatizzate per il calcolo dell'indice di Gulpease e per il controllo ortografico. Per maggiori informazioni si rimanda al processo \ref{soDocMgmt}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline Documento & \gloxy{Indice Gulpease} & Esito\\
+\hline
+\emph{Analisi dei Requisiti v1.11.2} & 60,59 & Superato \\
+\emph{Glossario v1.5.2} & 48,68 & Superato \\
+\emph{Norme di \nogloxy{Progetto} v2.0.0} & 58,06 & Superato \\
+\emph{Piano di \nogloxy{Progetto} v1.19.2} & 52,12 & Superato \\
+\emph{Piano di Qualifica v1.36.2} & 56,21  & Superato \\
+\iII & 59,80 & Superato \\
+\eIII & 57,53 & Superato \\
+\hline
+\end{tabular}
+\caption{Resoconto verifiche automatizzate  - Fase di \fAt}
+\end{center}
+\end{table}
+\FloatBarrier
+Dal calcolo dell'indice di Gulpease sono state escluse le tabelle e le didascalie.
+\subsubsection{Considerazioni finali}
+\begin{itemize}
+\item Il \gloxy{team} è soddisfatto della procedura di verifica attuale e del suo livello di automatizzazione.
+\item La stesura della \ST ha messo in rilievo alcune problematiche per quanto riguarda le definizione ricorrenti, gli elenchi puntati e gli accenti di determinati caratteri. Si sta lavorando nella creazione di script che possano uniformare la documentazione e rendere aspetti di questo tipo il più automatici possibili.
+\end{itemize}
+\subsection{Fase di \fPDt}
+Visti gli ottimi risultati ottenuti durante la fase di \fPA si è deciso di seguire un approccio simile nella stesura della \definizioneDiProdotto.\\
+A questo proposito si è deciso di ampliare le funzionalità di \pragmadb cercando di rendere il più automatico possibile l'inserimento all'interno della documentazione dei metodi e delle funzioni delle componenti definite nella \fPA.\\
+Questo ha permesso una maggiore facilità in fase di correzione del documento per quanto riguarda la verifica dei componenti inseriti e ha permesso una facile individuazione del tracciamento tra questi ultimi e i requisiti associati.\\
+Sono stati poi aggiunti dei nuovi comandi \LaTeX~ per le descrizioni ricorrenti tra più componenti, in questo modo si è riusciti ad ottenere uno stile uniforme per il documento e a facilitare le attività di verifica.\\
+Si è deciso in oltre di automatizzare la generazione delle tabelle per i vari test progettati. Per questo scopo \pragmadb è stato aggiornato con delle funzionalità in grado di creare automaticamente delle tabelle, volte a strutturare in maniera semplice ed elegante i test progettati con la loro descrizione ed il requisito o componente ad essi associato.\\
+Questo ovviamente ha permesso, come per tutti i processi di automatizzazione, di avere una certa agevolazione durante il procedimento di verifica, in quanto molti errori di tracciamento o di formattazione del testo sono stati individuati in maniera automatica.
+\subsubsection{Analisi statica dei documenti}
+L'analisi dei documenti mediante \gloxy{walkthrough} ha portato all'individuazione di alcuni errori frequenti a partire dai quali è stata stilata una lista di controllo da usare per le future attività di verifica. \\
+Segue una lista degli errori riscontrati, ordinata dal più frequente al meno frequente.
+\begin{itemize}
+\item Mancato rispetto delle norme riguardanti gli elenchi puntati:
+\begin{itemize}
+\item La prima parola di una voce dell'elenco non iniziava con una lettera maiuscola;
+\item La voce dell'elenco terminava con un punto anziché con un punto e virgola (o viceversa).
+\end{itemize}
+\item Errori riguardanti la struttura delle frasi: alcune frasi erano scritte in modo più colloquiale che formale o con tempi verbali errati;
+\item Errori di battitura.
+\end{itemize}
+\subsubsubsection{Esiti verifiche automatizzate}
+Ogni documento è stato sottoposto anche a delle verifiche automatizzate per il calcolo dell'indice di Gulpease e per il controllo ortografico. Per maggiori informazioni si rimanda al processo \ref{soDocMgmt}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline Documento & \gloxy{Indice Gulpease} & Esito\\
+\hline
+\emph{Analisi dei Requisiti v2.0.0} & 60,45 & Superato \\
+\emph{Glossario v2.0.0} & 47,12 & Superato \\
+\emph{Norme di \nogloxy{Progetto} v2.0.0} & 58,06 & Superato \\
+\emph{Piano di \nogloxy{Progetto} v2.0.0} & 52,42 & Superato \\
+\emph{Piano di Qualifica v2.0.0} & 55,08  & Superato \\
+\emph{Definizione di Prodotto v1.0.0} & 60,01 & Superato \\
+\eIV & 69,90 & Superato \\
+\hline
+\end{tabular}
+\caption{Resoconto verifiche automatizzate  - Fase di \fPDt}
+\end{center}
+\end{table}
+\FloatBarrier
+Dal calcolo dell'indice di Gulpease sono state escluse le tabelle e le didascalie.
+\subsubsection{Considerazioni finali}
+\begin{itemize}
+\item Il \gloxy{team} è molto soddisfatto del tempo speso nell'ampliamento di \pragmadb per quanto riguarda le procedure di stesura dei documenti. Infatti ciò ha facilitato la verifica e la correzione di essi;
+\item La stesura automatizzata dei test ha portato ancora una volta a degli errori per quanto riguarda la formattazione degli elenchi puntati. A tale proposito il \gloxy{team} ha deciso di rivedere gli script associati e si è impegnato ad adottare una procedura più ferrea e precisa nella scrittura, in modo da ottenere dei documenti che siano omogenei nello stile di stesura.
+\end{itemize}
+\subsection{Fase di \fCt}
+Nel corso di questa fase il \gloxy{team} ha puntato molto sulla misurazione dei livelli di qualità raggiunti e, a questo scopo, ha esteso \pragmadb con la funzionalità \textit{Dashboard Metriche}, che ha permesso di automatizzare il calcolo di un grande numero di metriche e monitorare il loro soddisfacimento.\\
+Questo miglioramento ha consentito di focalizzare l'attenzione sugli aspetti critici rilevati ed adottare delle strategie di correzione, al fine di far rientrare i valori delle metriche fra i parametri previsti.\\
+Le migliorie apportate a \pragmadb nella fase precedente, inoltre, hanno permesso di semplificare molto il lavoro di stesura e verifica dei test di unità, in quanto è stato possibile definire nuovi comandi \LaTeX~ per le descrizioni ricorrenti ed individuare in maniera automatica molti errori di tracciamento o di formattazione del testo.\\
+Grazie al lavoro svolto, inoltre, è stato possibile mantenere costantemente aggiornato il tracciamento degli esiti dei test che sono stati eseguiti e, parallelamente, sono stati automaticamente aggiornati i valori di tutte le metriche ad essi correlati.
+\subsubsection{Analisi statica dei documenti}
+La lista degli errori comuni individuati nelle fasi precedenti ha permesso di effettuare sui documenti un'analisi mediante \gloxy{inspection} e portare all'individuazione di nuove occorrenze di anomalie rilevate nelle fasi precedenti, consentendo una loro rapida correzione.\\
+Tale attività è stata comunque supportata anche da una parte di analisi mediante \gloxy{walkthrough}, la quale ha portato all'individuazione di alcuni nuovi errori frequenti a partire dai quali è stata aggiornata la lista di controllo in previsione di future attività di verifica. \\
+Segue una lista degli errori riscontrati, ordinata dal più frequente al meno frequente.
+\begin{itemize}
+\item Mancato rispetto delle norme riguardanti gli elenchi puntati:
+\begin{itemize}
+\item La prima parola di una voce dell'elenco non iniziava con una lettera maiuscola;
+\item La voce dell'elenco terminava con un punto anziché con un punto e virgola (o viceversa).
+\end{itemize}
+\item Presenza di termini con lettere accentate errate o mancanti;
+\item Errori di battitura.
+\end{itemize}
+Il secondo punto di questo elenco merita particolare attenzione.\\
+L'anomalia riguardante la \textit{presenza di lettere accentate errate o mancanti} era stata individuata già nel corso delle attività di verifica effettuate in fasi precedenti, ed aveva portato alla formulazione di una strategia di correzione tale da risolvere la maggior parte delle occorrenze rilevate.\\
+Le attività di verifica successive, però, non avevano fatto emergere che tale strategia risultava inefficace in alcuni documenti nei quali era stato usato un font \LaTeX particolare che, per motivi non chiari, permetteva l'inserimento di lettere accentate nel sorgente ma non consentiva una corretta resa di tali caratteri nel \gloxy{pdf} prodotto.\\
+A seguito di un'ulteriore segnalazione in sede di \RP, i verificatori hanno quindi effettuato un controllo approfondito dei documenti prodotti, individuando concentrazioni sospettosamente maggiori di questa anomalia nei documenti che utilizzavano il font incriminato. A seguito di questa azione, si è deciso di cambiare il font per tali documenti, ed il problema è stato risolto con successo.
+\subsubsubsection{Esiti verifiche automatizzate}
+Ogni documento è stato sottoposto anche a delle verifiche automatizzate per il calcolo dell'indice di Gulpease e per il controllo ortografico. Per maggiori informazioni si rimanda al processo \ref{soDocMgmt}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline Documento & \gloxy{Indice Gulpease} & Esito\\
+\hline
+\emph{Analisi dei Requisiti v2.0.0} & 60,45 & Superato \\
+\emph{Glossario v2.0.0} & 47,12 & Superato \\
+\emph{Norme di \nogloxy{Progetto} v3.0.0} & 57.66 & Superato \\
+\emph{Piano di \nogloxy{Progetto} v3.0.0} & 51.09 & Superato \\
+\emph{Piano di Qualifica v3.0.0} & 54.10  & Superato \\
+\emph{Definizione di Prodotto v2.0.0} & 67.19 & Superato \\
+\emph{Manuale Utente v1.0.0} & 46.18 & Superato \\
+\emph{Revisione di Bilancio v1.0.0} & 54.36 & Superato \\
+\emph{E5 v1.0.0} & 52.89 & Superato \\
+\emph{E6 v1.0.0} & 75.45 & Superato \\
+\hline
+\end{tabular}
+\caption{Resoconto verifiche automatizzate  - Fase di \fCt}
+\end{center}
+\end{table}
+\FloatBarrier
+Dal calcolo dell'indice di Gulpease sono state escluse le tabelle e le didascalie.
+\subsubsection{Soddisfacimento metriche}
+Al fine di monitorare costantemente il livelli di qualità raggiunti, grande attenzione è stata posta nella misurazione, secondo le metriche identificate, di processi (\customRef{qualitaProcesso}{sezione}) e prodotto (\customRef{qualitaProdotto}{sezione}). In particolare, per automatizzare il più possibile il calcolo di questi valori, la \gloxy{piattaforma} \pragmadb è stata arricchita della funzionalità \textit{Dashboard Metriche}, in grado di mantenere aggiornati i valori delle principali metriche nel corso dell'avanzamento dei lavori e di verificare il rispetto degli intervalli di accettabilità ed ottimalità fissati.\\
+\begin{longtable}{|>{\centering}m{5cm}|c|c|c|c|}
+\hline
+\textbf{Metrica} & \textbf{Unità di misura} & \textbf{Valore} & \textbf{Accettazione} & \textbf{Ottimalità}\\
+\hline
+\endhead
+\hyperref[dispPragmaDB]{Disponibilità \pragmadb} & \textit{Percentuale} & \textcolor{Green}{95.22} & $80 - 100$ & $90 - 100$\\ \hline
+\hyperref[tCorrIncoerPragmaDB]{Tempo correzione incoerenze \pragmadb} & \textit{Giorni} & \textcolor{Orange}{2.18} & $0 - 3$ & $0 - 1$\\ \hline
+\hyperref[errIndividTermGloss]{Errori individuazione termini glossario} & \textit{Termini} & \textcolor{Orange}{2.74} & $0 - 3$ & $0$\\ \hline
+\hyperref[scheduleVariance]{Schedule Variance} & \textit{Attività} & \textcolor{Green}{0} & $\geq 0$  & $\geq 0$\\ \hline
+\hyperref[budgetVariance]{Budget Variance} & \textit{Euro} & \textcolor{Green}{55.00} & $\geq 0$ & $\geq 0$\\ \hline
+\hyperref[riskNonPrev]{Rischi non preventivati} & \textit{Rischi} & \textcolor{Orange}{1} & $0 - 5$ & $0$\\ \hline
+\hyperref[effGestRischi]{Efficienza gestione rischi} & \textit{Giorni} & \textcolor{Red}{18.42} & $\geq 20$ & $\geq 60$\\ \hline
+\hyperref[sfin-ottimalita]{SFIN - Ottimalità} & \textit{Percentuale} & \textcolor{Orange}{41.38} & $\geq 30$ & $\geq 50$\\ \hline
+\hyperref[sfout-NonAcc]{SFOUT - Non Accettabilità} & \textit{Percentuale} & \textcolor{Orange}{5.75} & $0 - 6$ & $0 - 3$\\ \hline
+\hyperref[numMetodiClasseNA]{Metodi per classe - Non Accettabilità} & \textit{Percentuale} & \textcolor{Orange}{12.64} & $0 - 15$ & $0 - 5$\\ \hline
+\hyperref[numParMetodoNA]{Parametri per metodo - Non Accettabilità} & \textit{Percentuale} & \textcolor{Green}{0} & $0 - 5$ & $0 - 3$\\ \hline
+\hyperref[prodCod]{Produttività di codifica} & \textit{Media} & \textcolor{Green}{14.43} & $\geq 3$ & $\geq 10$\\ \hline
+\hyperref[complCiclomNA]{Complessità Ciclomatica - Non Accettabilità} & \textit{Percentuale} & \textcolor{Green}{0} & $0 - 1$ & $0$\\ \hline
+\hyperref[lineeCommento]{Linee commento su linee codice} & \textit{Percentuale} & \textcolor{Green}{34.93} & $\geq 25$ & $\geq 30$\\ \hline
+\hyperref[variabInutilizz]{Variabili inutilizzate} & \textit{Percentuale} & \textcolor{Green}{0} & $0$ & $0$\\ \hline
+\hyperref[halDiffNA]{Halstead Difficulty per-function - Non Accettabilità} & \textit{Percentuale} & \textcolor{Green}{0} & $0 - 1$ & $0$\\ \hline
+\hyperref[indManNA]{Indice di manutenibilità - Non Accettabilità} & \textit{Percentuale} & \textcolor{Orange}{5.26} & $0 - 10$ & $0 - 5$\\ \hline
+\hyperref[coperturaTest]{Branch Coverage} & \textit{Percentuale} & \textcolor{Green}{92} & $70 - 100$ & $80 - 100$\\ \hline
+\caption[Metriche principali]{Metriche principali}
+\end{longtable}
+\FloatBarrier
+Criticità principali rilevate:
+\begin{itemize}
+\item \hyperref[effGestRischi]{\textbf{Efficienza di gestione dei rischi}}
+\begin{itemize}
+\item \textbf{Problema}: il valore calcolato per questa metrica risulta particolarmente basso rispetto alle aspettative in seguito al manifestarsi di situazioni problematiche a causa della gestione non abbastanza efficace di due rischi:
+\begin{itemize}
+\item \textit{Problemi legati ad un errore di bilancio}: il rischio non era stato previsto nell'attività di \textit{analisi dei rischi} effettuata in precedenza, e questo ha portato tale problematica a trasformarsi in un problema serio in tempo molto breve rispetto alla sua individuazione, a causa della mancanza di una strategia precedentemente pianificata;
+\item \textit{Problemi tra i componenti del gruppo}: il rischio era già stato preventivato nell'attività di \textit{analisi dei rischi} effettuata in precedenza ed erano già state applicate delle strategie al fine di mitigarlo; le soluzioni adottate, però, non sono risultate pienamente soddisfacenti, costringendo il \gloxy{team} a utilizzare un approccio differente.
+\end{itemize}
+\item \textbf{Strategie}: si rimanda al documento \pianoDiProgetto.
+\end{itemize}
+\end{itemize}
+\subsubsection{Considerazioni finali}
+\begin{itemize}
+\item L'incremento di attenzione nei confronti delle metriche di qualità definite è stata molto proficua, in quanto ha permesso l'individuazione di criticità non note ed ha consentito di mettere in pratica alcune strategie volte ad elevare i livelli di qualità raggiunti;
+\item Le funzionalità di tracciamento implementate nelle fasi successive in \pragmadb si sono effettivamente rivelate fondamentali per mantenere costantemente aggiornati tutti i dati, in particolare quelli riguardanti requisiti, metriche e test definiti.
+\item L'attività di verifica ha sottolineato nuovamente delle problematiche inerenti alla formattazione degli elenchi puntati; in particolar modo è stato preso atto della grande difficoltà di definire delle norme tipografiche univoche che siano in grado di coprire tutti i diversi casi di utilizzo di tali elementi. Per questo motivo, il \gloxy{team} si è proposto di rivedere nelle fasi successive le norme correlate, al fine di permettere una maggiore copertura dei casi d'utilizzo emersi.
+\end{itemize}
+\subsection{Fase di \fVVt}
+Nel corso di questa fase il \gloxy{team} ha puntato ad ottenere delle prove e dei valori in grado di dimostrare che il lavoro svolto rispettasse le funzionalità e le aspettative del proponente.\\
+In tal senso, l'attività centrale di questa fase è stata, sicuramente, quella della produzione di test volti a verificare il corretto funzionamento dell'applicativo e la completa implementazione di tutte le funzionalità richieste.\\
+In particolare la grande quantità di \textit{Test di Unità} implementati e superati ha consentito di verificare il corretto funzionamento di quasi tutte le unità definite all'interno del software; questo buon risultato, inoltre, ha reso necessario implementare un numero inferiore di \textit{Test di Integrazione}, in quanto (partendo da delle unità sostanzialmente corrette) l'interazione fra le varie componenti integrate è risultato meno problematico del previsto, anche grazie al buon lavoro di integrazione effettuato nella fase precedente.\\
+Si è deciso, inoltre, di implementare un numero adeguato di \textit{Test di Sistema} per verificare che tutti i requisiti principali individuati durante l'attività di analisi fossero completamente soddisfatti da parte dell'applicativo attraverso una o più delle sue componenti e che nessuna delle unità implementate risultasse superflua o, comunque, non partecipante al soddisfacimento di un qualche requisito individuato.\\
+Ciò ha permesso a constatare il \textbf{pieno soddisfacimento} di \textbf{tutti} i \textbf{requisiti obbligatori} e i \textbf{requisiti accettati}; è risultato, inoltre, possibile implementare anche una piccola parte dei requisiti desiderabili o facoltativi non accettati.\\  
+Per quanto riguarda l'attività di verifica svolta sulla documentazione, l'elevata automazione fornita da \pragmadb e il consolidamento delle procedure definite nell'ambito delle attività di stesura e verifica dei documenti hanno portato ad un significativo miglioramento nell'individuazione degli errori presenti (in modo particolare per quelli frequenti) e ad un automatico e continuo aggiornamento dei tracciamenti fra i vari dati prodotti.
+\subsubsection{Analisi statica dei documenti}
+Anche in questa fase, la lista degli errori comuni individuati precedentemente ha consentito di effettuare sui documenti un'analisi mediante \gloxy{inspection} e portare all'individuazione di nuove occorrenze di anomalie rilevate nelle fasi precedenti, consentendo una loro rapida correzione.\\
+Tale attività è stata comunque supportata anche da una parte di analisi mediante \gloxy{walkthrough}, la quale ha portato all'individuazione di qualche nuovo errore frequente, prontamente inserito nella lista degli errori comuni, in modo tale da mantenerla costantemente aggiornata ad uso di tutti i verificatori. \\
+Segue una lista degli errori riscontrati, ordinata dal più frequente al meno frequente.
+\begin{itemize}
+\item Presenza di termini con lettere accentate errate o mancanti, anche se in numero sensibilmente inferiore rispetto alle fasi precedenti;
+\item Mancato rispetto delle norme riguardanti gli elenchi puntati:
+\begin{itemize}
+\item La prima parola di una voce dell'elenco non iniziava con una lettera maiuscola;
+\item La voce dell'elenco terminava con un punto anziché con un punto e virgola (o viceversa).
+\end{itemize}
+\item Errori di battitura.
+\end{itemize}
+Come per le frasi precedenti, le funzionalità offerte da \pragmadb e la definizione di nuovi comandi \LaTeX~ per le descrizioni ricorrenti ha permesso di ridurre al minimo il numero di errori introdotti ma, soprattutto, ha ridotto di molto la correzione di quelli individuati.\\
+\subsubsubsection{Esiti verifiche automatizzate}
+Ogni documento è stato sottoposto anche a delle verifiche automatizzate per il calcolo dell'indice di Gulpease e per il controllo ortografico. Per maggiori informazioni si rimanda al processo \ref{soDocMgmt}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline Documento & \gloxy{Indice Gulpease} & Esito\\
+\hline
+\analisiDeiRequisiti & 59.82 & Superato \\
+\glossario & 46.38 & Superato \\
+\normeDiProgetto & 57.41 & Superato \\
+\pianoDiProgetto & 51.24 & Superato \\
+\pianoDiQualifica & ???  & Superato \\
+\definizioneDiProdotto & 67.35 & Superato \\
+\manualeUtente & 48.89 & Superato \\
+\iIII & 70.19 & Superato \\
+\eVII & 79.27 & Superato \\
+\emph{Guida d'installazione v1.0.0} & 78.56 & Superato \\
+\hline
+\end{tabular}
+\caption{Resoconto verifiche automatizzate  - Fase di \fVVt}
+\end{center}
+\end{table}
+\FloatBarrier
+Dal calcolo dell'indice di Gulpease sono state escluse le tabelle e le didascalie.
+\subsubsection{Soddisfacimento metriche}
+A garanzia dei livelli di qualità raggiunti, i test sono stati affiancati dai valori rilevati secondo le metriche definite, sia in termini di \textit{qualità di processo} (\customRef{qualitaProcesso}{sezione}) che in termini di \textit{qualità di prodotto} (\customRef{qualitaProdotto}{sezione}).\\
+Anche le ultime metriche definite sono state implementate all'interno della funzionalità \textit{Dashboard Metriche} di \pragmadb, la quale ha consentito di mantenerne aggiornati i valori nel corso dell'avanzamento dei lavori e di verificare il rispetto degli intervalli di accettabilità ed ottimalità fissati.\\
+\subsubsubsection{Qualità di processo}
+\begin{longtable}{|>{\centering}m{5cm}|c|c|c|c|}
+\hline
+\textbf{Metrica} & \textbf{Unità di misura} & \textbf{Valore} & \textbf{Accettazione} & \textbf{Ottimalità}\\
+\hline
+\endhead
+\hyperref[dispPragmaDB]{Disponibilità \pragmadb} & \textit{Percentuale} & \textcolor{Green}{98.66} & $80 - 100$ & $90 - 100$\\ \hline
+\hyperref[tCorrIncoerPragmaDB]{Tempo correzione incoerenze \pragmadb} & \textit{Giorni} & \textcolor{Orange}{1.86} & $0 - 3$ & $0 - 1$\\ \hline
+\hyperref[errIndividTermGloss]{Errori individuazione termini glossario} & \textit{Termini} & \textcolor{Orange}{2.57} & $0 - 3$ & $0$\\ \hline
+\hyperref[scheduleVariance]{Schedule Variance} & \textit{Attività} & \textcolor{Green}{0} & $\geq 0$  & $\geq 0$\\ \hline
+\hyperref[budgetVariance]{Budget Variance} & \textit{Euro} & \textcolor{Red}{-45.00} & $\geq 0$ & $\geq 0$\\ \hline
+\hyperref[riskNonPrev]{Rischi non preventivati} & \textit{Rischi} & \textcolor{Orange}{1} & $0 - 5$ & $0$\\ \hline
+\hyperref[effGestRischi]{Efficienza gestione rischi} & \textit{Giorni} & \textcolor{Orange}{21.32} & $\geq 20$ & $\geq 60$\\ \hline
+\hyperref[reqObbSodd]{Requisiti obbligatori soddisfatti} & \textit{Percentuale} & \textcolor{Green}{100} & $100$ & $100$\\ \hline
+\hyperref[reqAccSodd]{Requisiti desiderabili/facoltativi accettati soddisfatti} & \textit{Percentuale} & \textcolor{Green}{100} & $100$ & $100$\\ \hline
+\hyperref[reqNonAccSodd]{Requisiti desiderabili/facoltativi non accettati soddisfatti} & \textit{Percentuale} & \textcolor{Orange}{20} & $0 - 100$ & $50 - 100$\\ \hline
+\hyperref[sfin-ottimalita]{SFIN - Ottimalità} & \textit{Percentuale} & \textcolor{Orange}{41.18} & $\geq 30$ & $\geq 50$\\ \hline
+\hyperref[sfout-NonAcc]{SFOUT - Non Accettabilità} & \textit{Percentuale} & \textcolor{Orange}{4.71} & $0 - 6$ & $0 - 3$\\ \hline
+\hyperref[numMetodiClasseNA]{Metodi per classe - Non Accettabilità} & \textit{Percentuale} & \textcolor{Orange}{11.76} & $0 - 15$ & $0 - 5$\\ \hline
+\hyperref[numParMetodoNA]{Parametri per metodo - Non Accettabilità} & \textit{Percentuale} & \textcolor{Green}{0} & $0 - 5$ & $0 - 3$\\ \hline
+\hyperref[prodCod]{Produttività di codifica} & \textit{Media} & \textcolor{Orange}{8.74} & $\geq 3$ & $\geq 10$\\ \hline
+\hyperref[complCiclomNA]{Complessità Ciclomatica - Non Accettabilità} & \textit{Percentuale} & \textcolor{Green}{0} & $0 - 1$ & $0$\\ \hline
+\hyperref[lineeCommento]{Linee commento su linee codice} & \textit{Percentuale} & \textcolor{Green}{35.40} & $\geq 25$ & $\geq 30$\\ \hline
+\hyperref[variabInutilizz]{Variabili inutilizzate} & \textit{Percentuale} & \textcolor{Green}{0} & $0$ & $0$\\ \hline
+%\hyperref[dipendenze]{Dipendenze} & \textit{Chiamate} & ??? & $0 - 10$ & $0 - 5$\\ \hline
+\hyperref[halDiffNA]{Halstead Difficulty per-function - Non Accettabilità} & \textit{Percentuale} & \textcolor{Green}{0} & $0 - 1$ & $0$\\ \hline
+\hyperref[indManNA]{Indice di manutenibilità - Non Accettabilità} & \textit{Percentuale} & \textcolor{Orange}{5.14} & $0 - 10$ & $0 - 5$\\ \hline
+\hyperref[compInt]{Componenti integrate} & \textit{Percentuale} & \textcolor{Green}{100} & $100$ & $100$\\ \hline
+\hyperref[tuniese]{Test di Unità eseguiti} & \textit{Percentuale} & \textcolor{Orange}{96.30} & $90 - 100$ & $100$\\ \hline
+\hyperref[tintese]{Test di Integrazione eseguiti} & \textit{Percentuale} & \textcolor{Orange}{66.67} & $60 - 100$ & $70 - 100$\\ \hline
+\hyperref[tsissup]{Test di Sistema eseguiti} & \textit{Percentuale} & \textcolor{Orange}{72.41} & $70 - 100$ & $80 - 100$\\ \hline
+\hyperref[tvalese]{Test di Validazione eseguiti} & \textit{Percentuale} & \textcolor{Orange}{100} & $100$ & $100$\\ \hline
+\hyperref[tsuperati]{Test superati} & \textit{Percentuale} & \textcolor{Green}{100} & $90 - 100$ & $100$\\ \hline
+\hyperref[coperturaTest]{Branch Coverage} & \textit{Percentuale} & \textcolor{Orange}{71.65} & $70 - 100$ & $80 - 100$\\ \hline
+\hyperref[codeCoverage]{Code Coverage} & \textit{Percentuale} & \textcolor{Green}{76.57} & $60 - 100$ & $70 - 100$\\ \hline
+\caption[Metriche principali di qualità di processo]{Metriche principali di qualità di processo}
+\end{longtable}
+\FloatBarrier
+Criticità principali rilevate:
+\begin{itemize}
+\item \hyperref[budgetVariance]{\textbf{Budget Variance}}
+\begin{itemize}
+\item \textbf{Problema}: il valore calcolato per questa metrica risulta fuori dal range di accettazione in quanto sono risultate necessarie più ore da \rpt e \rVt a seguito di alcune migliorie richieste dal proponente.
+\item \textbf{Strategie}: il costo aggiuntivo è stato bilanciato grazie alle risorse risparmiate nelle fasi precedenti; per un maggior dettaglio si rimanda al documento \pianoDiProgetto.
+\end{itemize}
+\end{itemize}
+\subsubsubsection{Qualità di prodotto}
+\begin{longtable}{|>{\centering}m{5cm}|c|c|c|c|}
+\hline
+\textbf{Metrica} & \textbf{Unità di misura} & \textbf{Valore} & \textbf{Accettazione} & \textbf{Ottimalità}\\
+\hline
+\endhead
+\hyperref[complImplFunz]{Completezza dell'implementazione funzionale} & \textit{Percentuale} & \textcolor{Green}{100} & $100$ & $100$\\ \hline
+\hyperref[accRispettoAttese]{Accuratezza rispetto attese} & \textit{Percentuale} & \textcolor{Orange}{91.22} & $90 - 100$ & $100$\\ \hline
+%\hyperref[controlloAccessi]{Controllo degli accessi} & \textit{Percentuale} & ??? & $0 - 10$ & $0$\\ \hline
+\hyperref[denFailure]{Densità di failure} & \textit{Percentuale} & \textcolor{Green}{0} & $0 - 10$  & $0$\\ \hline
+%\hyperref[bloccoOpNnCorr]{Blocco operazioni non corrette} & \textit{Percentuale} & ??? & $80 - 100$  & $100$\\ \hline
+\hyperref[comprFunzOfferte]{Comprensibilità funzioni offerte} & \textit{Percentuale} & \textcolor{Green}{92.28} & $80 - 100$  & $90 - 100$\\ \hline
+\hyperref[facilitaApprFunz]{Facilità apprendimento funzionalità} & \textit{Minuti} & \textcolor{Green}{7.42} & $0 - 30$ & $0 - 15$\\ \hline
+\hyperref[consistenzaOpInUso]{Consistenza operazionale in uso} & \textit{Percentuale} & \textcolor{Orange}{82.75} & $80 - 100$ & $90 - 100$\\ \hline
+\hyperref[elemPers]{Elementi personalizzabili} & \textit{Percentuale} & \textcolor{Orange}{64.41} & $60 - 100$ & $90 - 100$\\ \hline
+\hyperref[tempoRisposta]{Tempo di risposta} & \textit{Secondi} & \textcolor{Orange}{3.14} & $0 - 8$ & $0 - 3$\\ \hline
+%\hyperref[capacitaAnalisiFailure]{Capacità analisi failure} & \textit{Percentuale} & ??? & $60 - 100$ & $80 - 100$\\ \hline
+%\hyperref[impattoModifiche]{Impatto modifiche} & \textit{Percentuale} & ??? & $0 - 20$ & $0 - 10$\\ \hline
+\hyperref[versioniBrowserSupp]{Versioni \gloxy{browser} supportate} & \textit{Percentuale} & \textcolor{Green}{100} & $100$ & $100$\\ \hline
+\hyperref[inclFunzAltriProd]{Inclusione funzionalità altri prodotti} & \textit{Percentuale} & \textcolor{Red}{68.87} & $80 - 100$ & $90 - 100$\\ \hline
+\caption[Metriche principali di qualità di prodotto]{Metriche principali di qualità di prodotto}
+\end{longtable}
+\FloatBarrier
+Gran parte delle metriche di prodotto sono state ricavate in seguito a test-utente effettuati da persone terze al team.\\
+Ciò che è emerso da questi test è l'alta aspettativa di funzionalità da parte di un utente medio nei confronti di un software di presentazione, derivante dall'utilizzo di applicazioni complete quali \textit{Microsoft PowerPoint} o analoghi.\\
+In particolare, il valore riscontrato per la metrica \hyperref[inclFunzAltriProd]{Inclusione funzionalità altri prodotti} si spiega proprio a seguito della diversa entità dell'applicativo \Premi rispetto ai software di presentazione più diffusi.
+\subsubsection{Considerazioni finali}
+\begin{itemize}
+\item L'incremento di attenzione nei confronti delle metriche di qualità definite è stata molto proficua, in quanto ha permesso di perseguire e raggiungere importanti livelli di qualità.
+\item I test implementati hanno permesso di correggere alcuni malfunzionamenti nelle unità software ed hanno consentito di verificare la completa copertura dei requisiti da parte della soluzione realizzata.
+\item L'esperienza nell'attività di verifica della documentazione ha permesso di aumentare sensibilmente l'efficacia della rilevazione da parte dei \textit{verificatori}.
+\end{itemize}

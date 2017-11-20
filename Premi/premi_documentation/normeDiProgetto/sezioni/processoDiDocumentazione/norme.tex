@@ -1,0 +1,192 @@
+\subsubsection{Norme}
+\subsubsubsection{Template}
+Per agevolare e uniformare la redazione dei documenti è stato creato un \gloxy{template} \LaTeX~ contenente tutte le impostazioni stilistiche e i comandi citati in questo documento.\\
+Il \gloxy{template} è disponibile nel \gloxy{repository} \texttt{\pragmaDocs} all'interno della cartella \texttt{\nogloxy{template}}.
+\subsubsubsection{Norme tipografiche}\label{normeTipografiche}
+Questa sezione racchiude le convenzioni adottate da \gruppo per scrivere i documenti in modo uniforme.
+\subsubsubsubsection{Norme riguardo nomi}\label{norNome}
+Ogniqualvolta si debbano elencare i nomi completi dei componenti del gruppo, tale elenco dovrà essere ordinato lessicograficamente per cognome, e deve sempre essere indicato prima il nome e poi il cognome.
+\subsubsubsubsection{Stile del testo}
+\begin{itemize}
+\item \textbf{Corsivo:} deve essere usato quando ci si riferisce al nome di un documento o a un ruolo, quando si scrivono delle citazioni o abbreviazioni e in tutti gli altri casi in cui si ritiene sia utile mettere in rilievo del testo;
+\item \textbf{Grassetto:} può essere usato per evidenziare delle parole chiave oppure per evidenziare il concetto sviluppato da una voce in un elenco puntato;
+\item \textbf{\gloxy{Monospace}:} deve essere utilizzato quando si riportano parti di codice, comandi o \gloxy{percorsi} di file;
+\item \textbf{Maiuscolo:} l'utilizzo del maiuscolo è riservato solamente per le macro;
+\item \textbf{\LaTeX:} per riferirsi a \LaTeX~ è obbligatorio usare l'apposito comando $\backslash$LaTeX.
+\end{itemize}
+\subsubsubsubsection{Punteggiatura}
+\begin{itemize}
+\item \textbf{Punteggiatura:} un carattere di punteggiatura non deve mai essere preceduto da un carattere di spaziatura;
+\item \textbf{Parentesi:} il testo racchiuso tra parentesi non deve mai iniziare o terminare con un carattere di spaziatura o di punteggiatura, inoltre all'interno del testo racchiuso tra parentesi non deve esserci un altro gruppo di parentesi;
+\item \textbf{Lettere maiuscole:} le lettere maiuscole vanno usate per indicare il nome del \gloxy{team}, del \gloxy{progetto}, dei documenti, dei ruoli, delle fasi di lavoro, nelle parole \gloxy{Proponente} e \gloxy{Committente}, all'inizio di un punto di un elenco puntato e in tutte le occasioni in cui ne è previsto l'uso dalla lingua italiana;
+\item \textbf{Ritorno a capo:} la decisione riguardo l'uso del ritorno a capo è lasciata a chi scrive il documento, questo perché l'andare a capo dipende dal contesto.
+\end{itemize}
+Queste convenzioni possono essere trascurate solamente quando si inserisce del codice sorgente all'interno del documento.
+\subsubsubsubsection{Composizione del testo}
+\begin{itemize}
+\item \textbf{Elenchi puntati:} ogni punto dell'elenco deve terminare con un punto e virgola, fatta eccezione per l'ultimo elemento che deve terminare con un punto. La prima parola deve iniziare con una lettera maiuscola, salvo casi particolari in cui è richiesto l'uso della lettera minuscola (es: nome di un file);
+\item \textbf{Note a pié pagina:} ogni nota deve cominciare con l'iniziale della prima parola maiuscola e non deve essere preceduta da alcun carattere di spaziatura. Ogni nota deve inoltre terminare con un punto;
+\item \textbf{Sigle:} l'uso delle sigle è consentito solamente nei casi in cui sia necessario risparmiare spazio come per esempio nelle tabelle o diagrammi. Le sigle che si prevedono di utilizzare sono:
+\begin{itemize}
+\item \textbf{AdR:} \AR;
+\item \textbf{GL:} \G;
+\item \textbf{NdP:} \NP;
+\item \textbf{PdP:} \PP;
+\item \textbf{PdQ:} \PQ;
+\item \textbf{SdF:} \SF;
+\item \textbf{ST:} \ST;
+\item \textbf{RR:} \RR;
+\item \textbf{RP:} \RP;
+\item \textbf{RQ:} \RQ;
+\item \textbf{RA:} \RA;
+\item \textbf{Re:} \rRP;
+\item \textbf{Am:} \rAP;
+\item \textbf{An:} \rA;
+\item \textbf{Pt:} \rP;
+\item \textbf{Ve:} \rV;
+\item \textbf{Pr:} \rp.
+\end{itemize}
+\end{itemize}
+\subsubsubsubsection{Formati ricorrenti}
+\begin{itemize}
+\item \textbf{\gloxy{Percorsi}:} per gli indirizzi email e \gloxy{web} deve essere utilizzato il comando $\backslash$url, mentre per gli indirizzi relativi va usato il comando \LaTeX~$\backslash$texttt che usa il formato \gloxy{monospace};
+\item \textbf{Date:} le date dovranno seguire il formato
+\begin{center}
+AAAA-MM-GG
+\end{center}
+dove:
+\begin{itemize}
+\item[-] AAAA: rappresenta l'anno scritto utilizzando 4 cifre;
+\item[-] MM: rappresenta il mese scritto utilizzando sempre 2 cifre;
+\item[-] GG: rappresenta il giorni scritto utilizzando sempre 2 cifre.
+\end{itemize}
+\item \textbf{Numeri:} i numeri saranno formattati secondo lo standard [SI/ISO 31-0];
+\item \textbf{Nome dei file:} per riferirsi ad un file usandone solo il nome è necessario utilizzare il formato \gloxy{monospace};
+\item \textbf{Nome dei documenti:} per garantire la scrittura uniforme del nome dei documenti sono stati inseriti dei comandi distinti dalle iniziali maiuscole del nome del documento, ad esempio $\backslash$NP che stampa \NP. \\
+Nel caso sia necessario fare riferimento alla versione più aggiornata del documento sono stati predisposti dei comandi \LaTeX~$\backslash$nomeDelDocumento che stampano in modo corretto il nome del documento e l'ultima versione approvata, ad esempio \normeDiProgetto;
+\item \textbf{Ruoli di \gloxy{progetto}:} per garantire la scrittura uniforme dei ruoli di \gloxy{progetto} sono stati inseriti dei comandi distinti dalle iniziali maiuscole del nome del ruolo e che hanno come prefisso una ``r'', ad esempio $\backslash$rRP stampo \rRP;
+\item \textbf{Revisioni:} per garantire la scrittura uniforme delle revisioni sono stati inseriti dei comandi caratterizzati dalle iniziali maiuscole dei nomi delle revisioni, ad esempio $\backslash$RR stampa \RR;
+\item \textbf{Fasi del \gloxy{progetto}:} per garantire la scrittura uniforme del nome delle fasi sono stati inseriti dei comandi caratterizzati dalle iniziali maiuscole del nome delle fasi preceduti da un ``f'', ad esempio $\backslash$fAD stampa \fAD;
+\item \textbf{Nomi dei componenti:} per riferirsi ai componenti del \gloxy{team} sono state definite le seguenti macro:
+\begin{itemize}
+\item[-] \textbf{$\backslash$ao}: \ao;
+\item[-] \textbf{$\backslash$fv}: \fv;
+\item[-] \textbf{$\backslash$sm}: \sm;
+\item[-] \textbf{$\backslash$mb}: \mb;
+\item[-] \textbf{$\backslash$dm}: \dm;
+\item[-] \textbf{$\backslash$gmi}: \gmi;
+\item[-] \textbf{$\backslash$gma}: \gma.
+\end{itemize}
+\item \textbf{Nome del gruppo:} ci si riferirà al gruppo solamente con il nome \gruppo , per scrivere in modo corretto il nome è stata definita la macro $\backslash$gruppo;
+\item \textbf{Nome del \gloxy{Proponente}:} ci si riferirà al \gloxy{Proponente} come ``\proponente'' o con ``Proponente''. Per la corretta scrittura è stata definita la macro $\backslash$proponente;
+\item \textbf{Nome del referente del \gloxy{Proponente}:} ci si riferirà al referente del \gloxy{Proponente} come ``\referenteProponente'' o con ``Referente \proponente''. Per la corretta scrittura è stata definita la macro $\backslash$referenteProponente;
+\item \textbf{Nome del \gloxy{Committente}:} ci si riferirà al \gloxy{Committente} come ``\committente'' o con ``Committente''. Per la corretta scrittura è stata definita la macro $\backslash$committente;
+\item \textbf{Nome del \gloxy{progetto}:} ci si riferirà al \gloxy{progetto} solo come ``\progetto'' . Per la corretta scrittura è stata definita la macro $\backslash$progetto.
+\end{itemize}
+Un file con i comandi appena descritti è reperibile al seguente link: \\
+\url{https://docs.google.com/document/d/1dRy2r-Ewp7Ye8iP-YKJz3T5XkkRIbCOZEPJ-aZocWK4/edit}
+\subsubsubsection{Componenti grafiche}
+\subsubsubsubsection{Tabelle}
+Ad ogni tabella presente all'interno dei documenti deve essere associata una didascalia e un numero identificativo incrementale al fine di renderla tracciabile all'interno del documento.
+\subsubsubsubsection{Immagini}
+Il formato preferibile per le immagini è \gloxy{PDF}, ma qualora non fosse disponibile è desiderabile l'uso de formato \gloxy{PNG}.
+\subsubsubsection{Struttura dei documenti}
+\subsubsubsubsection{Frontespizio}
+La prima pagina di ogni documento contiene, nell'ordine, le seguenti informazioni:
+\begin{itemize}
+\item Nome del \gloxy{progetto};
+\item Logo e nome del gruppo;
+\item Titolo del documento;
+\item Versione del documento
+\item Nome e cognome dei redattori del documento;
+\item Nome e cognome dei \rVs del documento;
+\item Nome e cognome del \rRP, che dovrà approvare il documento;
+\item Uso del documento;
+\item Lista di distribuzione del documento;
+\item Descrizione del documento;
+\item Anno accademico;
+\item Mail del \gloxy{team}.
+\end{itemize}
+\subsubsubsubsection{Diario delle modifiche}\label{diarioModifiche}
+La seconda pagina di ogni documento contiene il diario delle modifiche, cioè una tabella contenente le seguenti informazioni:
+\begin{itemize}
+\item Data della modifica;
+\item Descrizione delle modifiche effettuate; specificandone, quando possibile, le sezioni interessate, e segnalando eventuali riferimenti a sezioni di documenti esterni coinvolti (per riferirsi a decisioni prese in verbali ufficiali si veda la \customRef{verbaliUfficiali}{sezione});
+\item Nome e cognome dell'autore;
+\item Ruolo ricoperto all'interno del gruppo dall'autore della modifica;
+\item Versione del documento dopo la modifica.
+\end{itemize}
+Le righe della tabella saranno ordinate per data decrescente, in modo che la prima riga della tabella corrisponda all'ultima modifica effettuata.
+\subsubsubsubsection{Indici}
+Dopo il diario delle modifiche è presente l'indice delle sezioni, e a seguire, solo nel caso siano presenti figure o tabelle, gli indici delle figure e delle tabelle.
+\subsubsubsubsection{Struttura generale di una pagina}
+L'intestazione di ogni pagina contiene:
+\begin{itemize}
+\item Il nome del gruppo;
+\item La sezione corrente del documento.
+\end{itemize}
+Il pié di pagina contiene:
+\begin{itemize}
+\item Il nome del documento;
+\item Il numero di pagina corrente espresso nella forma \textit{Pagina: X / Y}, dove X è il numero di pagina corrente e Y è il numero di pagine totali.
+\end{itemize}
+\subsubsubsection{Tipi di documenti}
+\subsubsubsubsection{Documenti interni}
+Rappresentano documenti redatti per un utilizzo interno a \gruppo, che non devono essere distribuiti all'esterno e
+che non necessitano di \gloxy{versionamento}. Questa tipologia di documentazione verrà archiviata su \gloxy{Google Drive}.
+A questa categoria di documenti appartengono le bozze di documento e i verbali interni informali.
+\subsubsubsubsubsection{Verbali interni informali}
+Un verbale interno informale è un documento che descrive gli argomenti discussi durante una riunione tra soli membri del \gloxy{team}, che dovrà restare a loro esclusiva disposizione. Verrà redatto da un membro del \gloxy{team}, condiviso mediante \gloxy{Google Drive}, e inviato a tutti i suoi componenti tramite posta elettronica.
+\subsubsubsubsubsection{Bozze di documenti ufficiali}
+Per velocizzare la stesura dei documenti informali è possibile iniziare a scrivere un bozza,
+in  modo che anche i membri del gruppo che non sono familiari con \LaTeX~ possano iniziare a produrre materiale fin da subito.
+Quando viene creata una bozza è necessario comunicarlo in \gloxy{mailing list} usando come oggetto:
+\begin{center}
+\texttt{[Bozza] Nome del documento}
+\end{center}
+In ogni caso è necessario che la bozza sia promossa a documento informale il prima possibile.
+\subsubsubsubsection{Documenti ufficiali}
+\subsubsubsubsubsection{Verbali ufficiali}\label{verbaliUfficiali}
+Un verbale ufficiale è un documento che descrive gli argomenti discussi durante una riunione con il \gloxy{Proponente} (verbale interno) o con il \gloxy{Committente} (verbale esterno), ed ha quindi valore normativo.
+\\Ogni sezione del documento dovrà essere dedicata ad un particolare problema trattato all'incontro, che dovrà essere presentato e ne dovrà essere descritta la relativa decisione presa con il \gloxy{Committente}.
+\\Il documento dovrà essere consultabile dal \gloxy{team} e dalle parti esterne, quindi verrà allegato ad un messaggio di risposta alla mail di convocazione della riunione esterna e inviato alla \gloxy{mailing list} del \gloxy{team}.
+Per agevolarne l'identificazione, i verbali interni verranno denominati con un codice univoco \emph{TN}, dove:
+\begin{itemize}
+\item \emph{T} rappresenta il tipo del verbale: \emph{E}, per i verbali esterni relativi a riunioni tenute con il \gloxy{Committente}, e \emph{I}, per i verbali interni relativi a riunioni con il \gloxy{Proponente};
+\item \emph{N} è un numero intero che parte da \emph{1} e viene incrementato per ogni nuovo verbale di tipo \emph{T} di verbale.
+\end{itemize}
+Per riferirsi ad una precisa decisione di un verbale ufficiale\footnote{I verbali dovranno comparire anche tra i riferimenti normativi del documento.}, è sufficiente indicare il codice univoco del verbale seguito da un trattino e dal numero della decisione interessata. Per fare ciò si deve utilizzare la notazione \emph{TN-D}, dove \emph{TN} è il codice dell’\emph{N}-esimo verbale ufficiale e \emph{D} è la \emph{D}-esima decisione.
+\subsubsubsubsubsection{Documenti informali}
+Un documento è ritenuto informale finché non viene approvato dal \rRP.
+Appartengono a questa categoria tutti i documenti che dovranno essere consegnati al \gloxy{Committente} o al \gloxy{Proponente},
+questi documenti sono memorizzati nel \gloxy{repository} \texttt{\pragmaDocs} e devono attenersi alle \NP.
+\subsubsubsubsubsection{Documenti formali}
+Un documento diventa formale quando viene approvato dal \rRP.
+Per raggiungere questo stato è necessario che il documento sia conforme alle \NP e che abbia seguito il \gloxy{percorso} di verifica e validazione in esse descritto.
+\subsubsubsubsubsection{\G}
+Il \G conterrà le \emph{parole} dei documenti che possono far parte del contesto dell'applicazione e i \emph{termini} che possono generare ambiguità d'interpretazione. Tali termini saranno disposti in ordine alfabetico ed ognuno di essi avrà una definizione, che dovrà essere sintetica e precisa, per non creare equivoci o ambiguità.
+Ogni membro del \gloxy{team} è invitato a inserire nel \G le parole da esso individuate, delle quali non esista ancora una definizione. L'inserimento dei termini nel \G avverrà parallelamente alla stesura dei documenti sfruttando le funzionalità offerte da \pragmadb.
+%I termini verranno inseriti nel \G parallelamente alla stesura degli altri documenti, in modo da evitare errori umani.\\
+\subsubsubsection{Versionamento}\label{versionamento}
+L'avanzamento di versione da parte dei documenti sarà espresso nella seguente forma:
+\begin{center}
+vX.Y.Z
+\end{center}
+dove:
+\begin{itemize}
+\item \textbf{X}: indica il numero di uscite formali del documento e viene incrementato in corrispondenza con l'ultima approvazione del \rRP prima del rilascio. L'incremento di \textbf{X} comporta l'azzeramento sia di \textbf{Y} che di \textbf{Z};
+\item \textbf{Y}: indica il numero di modifiche e correzioni effettuate al documento. L'incremento \textbf{Y} comporta l'azzeramento di \textbf{Z};
+\item \textbf{\textbf{Z}}: quando vale\begin{itemize}[label=\ding{212}]
+\item 0: indica che le ultime modifiche (successive all'ultima verifica) non sono state verificate;
+\item 1: indica che le ultime modifiche (successive all'ultima verifica) sono state verificate;
+\item 2: indica che l'ultima verifica è stata approvata.
+\end{itemize}
+\end{itemize}
+Quando si fa riferimento al contenuto di una specifica versione di un documento, ne è richiesta la sua precisazione usando la seguente sintassi:
+\begin{center}
+\textit{NomeDocumento vX.Y.Z}
+\end{center}
+Quando saranno creati i file, il loro nome dovrà seguire lo schema:
+\begin{center}
+\texttt{nomeDocumento\_vX.Y.Z.pdf}
+\end{center}

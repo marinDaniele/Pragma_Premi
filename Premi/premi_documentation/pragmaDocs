@@ -1,0 +1,91 @@
+#!/bin/bash
+cd glossario
+./glossario
+./glossario
+
+cd ../guidaInstallazione
+./guidaInstallazione
+./guidaInstallazione
+
+cd ../studioDiFattibilita
+./studioDiFattibilita
+./studioDiFattibilita
+
+cd ../normeDiProgetto
+./normeDiProgetto
+./normeDiProgetto
+
+cd ../pianoDiQualifica
+./pianoDiQualifica
+./pianoDiQualifica
+
+cd ../pianoDiProgetto
+./pianoDiProgetto
+./pianoDiProgetto
+
+cd ../analisiDeiRequisiti
+./analisiDeiRequisiti
+./analisiDeiRequisiti
+
+cd ../letteraDiPresentazione
+./letteraDiPresentazione
+./letteraDiPresentazione
+
+cd ../20150302E1
+./E1
+./E1
+
+cd ../20150302E2
+./E2
+./E2
+
+cd ../20150317E3
+./E3
+./E3
+
+cd ../20150331E4
+./E4
+./E4
+
+cd ../20141219I1
+./I1
+
+cd ../20150313I2
+./I1
+./I2
+
+cd ../definizioneDiProdotto
+./definizioneDiProdotto
+./definizioneDiProdotto
+
+cd ../revisioneDiBilancio
+./revisioneDiBilancio
+./revisioneDiBilancio
+
+cd ../20150510E5
+./E5
+./E5
+
+cd ../20150513E6
+./E6
+./E6
+
+cd ../manualeUtente
+./manualeUtente
+./manualeUtente
+
+cd ../letteraDiPresentazioneRA
+./letteraDiPresentazione
+./letteraDiPresentazione
+
+cd ../20150605I3
+./I3
+./I3
+
+cd ../20150608E7
+./E7
+./E7
+
+
+
+

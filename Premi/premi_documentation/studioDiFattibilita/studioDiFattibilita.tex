@@ -1,0 +1,26 @@
+\newcommand{\documenttitle}{Studio di Fattibilit\`a}
+\newcommand{\addressedto}{\committente \\ & \committenteAlt}
+\newcommand{\editorialstaff}{\gmi}
+\newcommand{\teststaff}{\fv}
+\newcommand{\approvalstaff}{\gma}
+\newcommand{\use}{Interno}
+
+\input{../template/layout.tex}
+\input{../template/comandi.tex}
+\begin{document}
+\input{../template/titlePage.tex}
+\input{../template/diario.tex}
+\tableofcontents %indice
+\listoftables
+\pagebreak
+
+\input{sezioni/introduzione.tex}
+\input{sezioni/capitolatoSelezionato.tex}
+\input{sezioni/capitolatiScartati.tex}
+
+\appendix
+\begin{appendices}
+\input{sezioni/analisiMercato.tex}
+\end{appendices}
+
+\end{document}
