@@ -1,0 +1,16 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Informazioni generali}{3}{section.1}
+\contentsline {section}{\numberline {2}Problemi e decisioni}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Fa\IeC {\c c}ade}{4}{subsection.2.1}
+\contentsline {paragraph}{Problema}{4}{paragraph*.1}
+\contentsline {subsubsection}{\numberline {2.1.1}\textbf {D1} - Correzione Fa\IeC {\c c}ade}{4}{subsubsection.2.1.1}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.2}
+\contentsline {subsection}{\numberline {2.2}Codici di Errore}{4}{subsection.2.2}
+\contentsline {paragraph}{Problema}{4}{paragraph*.3}
+\contentsline {subsubsection}{\numberline {2.2.1}\textbf {D2} - Ampliamento descrizione codici di errore}{4}{subsubsection.2.2.1}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.4}
+\contentsline {subsection}{\numberline {2.3}\$scope}{4}{subsection.2.3}
+\contentsline {paragraph}{Problema}{4}{paragraph*.5}
+\contentsline {subsubsection}{\numberline {2.3.1}\textbf {D3} - Ampliamento descrizione \texttt {\$scope}}{4}{subsubsection.2.3.1}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.6}

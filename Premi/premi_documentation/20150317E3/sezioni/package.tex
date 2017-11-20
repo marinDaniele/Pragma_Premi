@@ -1,0 +1,10 @@
+\subsection{Package}
+\paragraph{Problema}
+Decidere se mantenere la suddivisione in package imposta da \gloxy{AngularJS} oppure se adottarne una propria, su misura per il tipo di soluzione pensata. Inoltre non è chiaro quali siano i criteri da seguire per comporre un package.
+\paragraph{Decisione}
+Adottando un \gloxy{framework} ci si dovrà adeguare a ciò che il \gloxy{framework} fornisce. \\
+Sicuramente si dovrà mantenere la divisione view-controller-services perchè \gloxy{AngularJS} lo impone. \\
+Nel caso di \gloxy{AngularJS}, ad esempio, i \gloxy{controller} sono degli oggetti le cui primitive per la costruzione sono fornite dal \gloxy{framework} stesso e quindi non si dovrà definire una propria versione del \gloxy{controller} perché questa è già predisposta. \\
+I package devono racchiudere componenti o entità che siano tra loro fortemente correlate. \\
+I package devono essere consistenti.  \\
+Un package per la \gloxy{mappa mentale} è un buon esempio di package.

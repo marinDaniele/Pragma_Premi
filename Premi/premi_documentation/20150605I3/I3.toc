@@ -1,0 +1,9 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Informazioni generali}{3}{section.1}
+\contentsline {section}{\numberline {2}Problemi e decisioni}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Interfaccia grafica}{4}{subsection.2.1}
+\contentsline {paragraph}{Problema}{4}{paragraph*.1}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.2}
+\contentsline {subsection}{\numberline {2.2}Migliorie manuale utente}{4}{subsection.2.2}
+\contentsline {paragraph}{Problema}{4}{paragraph*.3}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.4}

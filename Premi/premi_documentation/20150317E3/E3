@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex E3.tex
+pdflatex E3.tex

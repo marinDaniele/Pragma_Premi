@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex I1.tex
+pdflatex I1.tex

@@ -1,0 +1,7 @@
+\subsection{Utilizzo di Facade}
+\paragraph{Problema}
+Abbiamo avuto dei problemi nell'utilizzo del \gloxy{design pattern} \gloxy{facade} in quanto ha aumentato notevolmente la complessità del Model progettato, quindi sono emersi dubbi riguardo a quando sia necessario usare un tale pattern.
+\paragraph{Decisione}
+Il \gloxy{design pattern} \gloxy{facade} verrà utilizzato quando sarà necessario fornire un interfaccia semplice ad un sottosistema complesso. \\
+Nel caso in cui si debbano organizzare i sottosistemi in una struttura a diversi livelli il \gloxy{facade} potrà essere una buona soluzione per definire un unico punto d’ingresso ad ogni livello.\\
+Quando sono presenti molte dipendenze tra i vari \gloxy{client} e le classi che implementano un’astrazione è utile utilizzare \gloxy{facade} per disaccoppiare il sistema dai \gloxy{client} e dagli altri sottosistemi. \\

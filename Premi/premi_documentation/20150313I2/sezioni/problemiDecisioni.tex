@@ -1,0 +1,21 @@
+\subsection{Salvataggio su file}
+\paragraph{Problema} Il salvataggio su file è un requisito obbligatorio per il nostro \gloxy{progetto}, ma \gloxy{JavaScript} non consente nativamente di effettuare tale operazione.
+\paragraph{Decisione} Poichè il salvataggio su file è possibile solo avendo a disposizione un \emph{\gloxy{server}}, si adotterà il \gloxy{framework} ``\gloxy{Node.js}'', che consente l'utilizzo di \emph{\gloxy{JavaScript} lato \gloxy{server}}.
+\subsection{Formato dei dati}
+\paragraph{Problema} È necessario scegliere un formato per i dati, ad esempio per la memorizzazione della struttura della \gloxy{mappa mentale} associata ad un \gloxy{progetto}.
+\paragraph{Decisione} Si adotterà il formato ``\gloxy{JSON}'' perché è:
+\begin{itemize}
+\item \emph{standard} \gloxy{Web};
+\item basato sul linguaggio \gloxy{JavaScript}, ossia quello principalmente utilizzato per l’applicazione;
+\item \emph{semplice} da utilizzare e comprendere;
+\item \emph{leggero}, qualità molto importante per il trasferimento dei dati via \gloxy{Web}.
+\end{itemize}
+\subsection{Formato del file di salvataggio}
+\paragraph{Problema} Può essere comodo effettuare il salvataggio di un \gloxy{progetto} su un \emph{unico file}, ma \gloxy{JSON} è un formato per la sola memorizzazione di dati, e non di contenuti multimediali.
+\paragraph{Decisione} Il salvataggio del \gloxy{progetto} avverrà in un unico file di \emph{formato archivio}, in modo da poter mantenere assieme sia i dati, in formato \gloxy{JSON}, sia eventuali contenuti multimediali.
+\subsection{Stack tecnologico}
+\paragraph{Problema} Per la realizzazione del \gloxy{progetto} potrebbe essere utile affidarsi ad uno \gloxy{stack} tecnologico dedicato allo sviluppo di applicazioni \gloxy{Web}.
+\paragraph{Decisione} Verrà adottato lo \gloxy{stack} ``\gloxy{MEAN}'', poiché permette la realizzazione rapida di applicazioni \gloxy{web} \emph{robuste} e \emph{manutenibili}, basate interamente su \gloxy{JavaScript}.
+\subsection{Applicazione residente sul web}
+\paragraph{Problema} L’\emph{installazione} dell’applicazione completa da parte del singolo utente, richiederebbe anche l’installazione di eventuali \emph{dipendenze} mancanti, come l’\gloxy{application server}, ma una procedura di questo tipo non è adatta all’utente medio.
+\paragraph{Decisione} L’applicazione verrà installata su un \emph{\gloxy{server} remoto} e sarà fruibile via \gloxy{web} tramite \gloxy{browser}.

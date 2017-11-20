@@ -1,0 +1,6 @@
+\subsection{Aggregazione e composizione nel package Model per il back-end}
+\paragraph{Problema}
+Sono sorti dei dubbi riguardo al corretto utilizzo delle aggregazioni e delle composizioni all'interno del package Model del \gloxy{back-end} tra le classi NodeModel, RelationModel, MapModel e PathModel.
+\paragraph{Decisione}
+In seguito alla conferma che la rappresentazione da noi utilizzata è da considerarsi corretta, è stato deciso di mantenere invariate le relazioni e quindi di non effettuare nessuna modifica.\\
+È stato consigliato di inglobare alcune classi che fungevano solamente da contenitore all'interno della classe ProjectModel. Pertanto le classi MapModel e ProjectListModel sono state rimosse.

@@ -1,0 +1,27 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Informazioni generali}{3}{section.1}
+\contentsline {section}{\numberline {2}Problemi e decisioni}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}View nel back-end}{4}{subsection.2.1}
+\contentsline {paragraph}{Problema}{4}{paragraph*.1}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.2}
+\contentsline {subsection}{\numberline {2.2}Relazione tra projectRouter e projectController}{4}{subsection.2.2}
+\contentsline {paragraph}{Problema}{4}{paragraph*.3}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.4}
+\contentsline {subsection}{\numberline {2.3}Modellazione sessioni}{4}{subsection.2.3}
+\contentsline {paragraph}{Problema}{4}{paragraph*.5}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.6}
+\contentsline {subsection}{\numberline {2.4}Aggregazione e composizione nel model}{4}{subsection.2.4}
+\contentsline {paragraph}{Problema}{4}{paragraph*.7}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.8}
+\contentsline {subsection}{\numberline {2.5}Divisione tra router e controller}{4}{subsection.2.5}
+\contentsline {paragraph}{Problema}{4}{paragraph*.9}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.10}
+\contentsline {subsection}{\numberline {2.6}Cytoscape}{4}{subsection.2.6}
+\contentsline {paragraph}{Problema}{4}{paragraph*.11}
+\contentsline {paragraph}{Decisione}{4}{paragraph*.12}
+\contentsline {subsection}{\numberline {2.7}Oggetti anonimi ritornati dalle directive}{5}{subsection.2.7}
+\contentsline {paragraph}{Problema}{5}{paragraph*.13}
+\contentsline {paragraph}{Decisione}{5}{paragraph*.14}
+\contentsline {subsection}{\numberline {2.8}Diagrammi di sequenza}{5}{subsection.2.8}
+\contentsline {paragraph}{Problema}{5}{paragraph*.15}
+\contentsline {paragraph}{Decisione}{5}{paragraph*.16}

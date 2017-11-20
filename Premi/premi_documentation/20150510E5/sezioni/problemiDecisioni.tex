@@ -1,0 +1,12 @@
+\subsection{Notazioni della Definizione di Prodotto}
+\paragraph{Problema}\label{pNotazioneController}
+Nella \DP non è chiaro che funzioni vengono inserite nello \texttt{\$scope} dei \gloxy{controller}.
+\subsubsection{\textbf{D1} - Controller di AngularJS}\label{dNotazioneController}
+\paragraph{Decisione}
+Evidenziare le funzioni che vengono inserite nell'oggetto \texttt{\$scope} dei \gloxy{controller} marcandole come pubbliche.
+\subsection{Componenti dell'architettura}
+\paragraph{Problema}\label{pLogoutController}
+Nella \DP \emph{v1.0.0} non è chiaro lo scopo di \texttt{LogoutController}.
+\subsubsection{\textbf{D2} - Front-End::Controllers::LogoutController}\label{dLogoutController}
+\paragraph{Decisione}
+Analizzando meglio la struttura dell'applicazione si è notato che tale \gloxy{controller} è poco utile, perciò scelto di rimuoverlo, spostando la funzionalità di logout nella barra di navigazione.
